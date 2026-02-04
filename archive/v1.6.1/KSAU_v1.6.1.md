@@ -339,4 +339,4 @@ Knot polynomial data sourced from the **KnotInfo Database** (Indiana University,
 
 **License:** CC BY 4.0  
 **Contact:** https://github.com/yui-synth-lab  
-**DOI:** [TBD - Zenodo submission pending]
+**DOI:** 10.5281/zenodo.18483445
