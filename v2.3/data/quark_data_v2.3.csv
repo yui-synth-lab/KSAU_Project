@@ -1,0 +1,7 @@
+quark,name,generation,type,mass_mev,link_id,hyperbolic_vol,linking_number_tot,signature
+u,Up,1,Up-type,2.16,"L6a5{0,0}",5.333,3,2
+d,Down,1,Down-type,4.67,"L6a4{0,0}",7.328,0,0
+s,Strange,2,Down-type,93.4,"L8a16{0,0}",9.802,1,0
+c,Charm,2,Up-type,1270.0,"L8a19{0,0}",10.667,2,2
+b,Bottom,3,Down-type,4180.0,"L10a140{0,0}",12.276,0,-2
+t,Top,3,Up-type,172690.0,"L10a142{0,0}",17.862,5,6
