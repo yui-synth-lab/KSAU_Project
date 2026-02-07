@@ -566,7 +566,7 @@ Special thanks to the mathematical constant $\pi/24$, which has patiently waited
 ## Data Availability
 
 All computational scripts, topological assignments, and validation tests are available at:
-**github.com/yui-synth-lab/KSAU_Project**
+github.com/yui-synth-lab/KSAU_Project
 
 The complete workflow is reproducible via:
 ```bash
@@ -581,8 +581,8 @@ All topology assignments are stored in `topology_assignments.json` generated fro
 ---
 
 **Submitted:** February 7, 2026
-**Correspondence:** yui@yui-protocol.org
-
+**Correspondence:**  yui.synth.lab@gmail.com
+**DOI:** 10.5281/zenodo.18521244
 ---
 
 *"Why are there six quarks? Why three generations? Why these specific masses? The answer may not lie in symmetries we impose, but in knots we discover."*
