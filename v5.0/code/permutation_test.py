@@ -167,7 +167,7 @@ def leave_one_out_cv() -> dict:
         'Strange': {'V': 9.532,  'C': 3, 'Twist':  0},
         'Charm':   {'V': 11.517, 'C': 2, 'Twist':  0},
         'Bottom':  {'V': 12.276, 'C': 3, 'Twist': +1},
-        'Top':     {'V': 15.271, 'C': 2, 'Twist': -1},
+        'Top':     {'V': 15.360, 'C': 2, 'Twist': -1},
         'Electron':{'N2': 9,  'IsTwist': False},
         'Muon':    {'N2': 36, 'IsTwist': True},
         'Tau':     {'N2': 49, 'IsTwist': False}
