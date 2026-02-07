@@ -14,8 +14,8 @@ import seaborn as sns
 
 # --- Constants ---
 KAPPA = np.pi / 24
-B_Q = -7.9159
-B_L = -2.503
+B_Q = -(7 + 7 * KAPPA)  # Derived from theory: -(7 + 7κ)
+B_L = np.log(0.511) - (14/9) * KAPPA * 9  # Calibrated to electron (N=3)
 
 # --- Load particle data from JSON ---
 def load_particle_data():

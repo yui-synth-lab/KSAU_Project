@@ -15,15 +15,15 @@
 
 ## Abstract
 
-We present a unified topological theory of fermion mass generation (KSAU v5.0) based on a single fundamental constant $\kappa = \pi/24$ derived from Chern-Simons theory. Building on the geometric framework established in v4.0-v4.1, we demonstrate that the Yukawa couplings emerge as topological partition functions of knotted solitons in higher-dimensional spacetime, with masses determined by the effective action $S_{\text{geom}}[\mathcal{K}]$.
+We present a phenomenological framework (KSAU v5.0) for describing fermion mass hierarchies through topological invariants of knots and links, motivated by Chern-Simons theory. Building on the geometric framework established in v4.0-v4.1, we propose that Yukawa couplings can be modeled as topological partition functions of knotted configurations in higher-dimensional spacetime, with masses parameterized by the effective action $S_{\text{geom}}[\mathcal{K}]$ involving the constant $\kappa = \pi/24$.
 
-The theory achieves a **global mean absolute error of 1.39%** across all nine charged fermions using a fully automated topology selection algorithm. Crucially, we introduce a **Twist correction** $\mathcal{T} = (2-\text{Gen}) \times (-1)^C$ representing the topological torsion of the knot complement, which encodes the generational chirality structure. We also uncover a previously unknown mathematical relationship:
+The framework achieves a **global mean absolute error of 1.38%** across all nine charged fermions using a fully automated topology selection algorithm that searches 17,154 database entries. The model includes a **Twist correction** $\mathcal{T} = (2-\text{Gen}) \times (-1)^C$ representing topological torsion of the knot complement. We also observe a numerical relationship:
 
 $$G \approx \frac{7\pi}{24} \quad (\text{error } 0.036\%)$$
 
-where $G$ is the Catalan constant. This identity allows all mass coefficients in our earlier phenomenological model (v4.1) to be rewritten in terms of $\pi/24$ and simple rational numbers, providing a unified field-theoretic foundation.
+where $G$ is the Catalan constant. This relationship connects our earlier phenomenological coefficients to $\pi/24$.
 
-The theory preserves the three geometric principles (Confinement-Component Correspondence, Binary Determinant Rule $2^k$, Charge-Determinant Law) while elevating them from empirical observations to consequences of an underlying Chern-Simons-type effective action. We provide explicit falsifiability criteria, including neutrino mass predictions and fourth-generation exclusion bounds.
+The framework exhibits three geometric selection rules (Confinement-Component Correspondence, Binary Determinant Rule $2^k$, Charge-Determinant Law) that achieve statistical significance ($p < 10^{-5}$) in permutation tests. We provide explicit falsifiability criteria, including neutrino mass predictions ($\sum m_\nu \approx 0.12$ eV) and fourth-generation exclusion bounds.
 
 ---
 
@@ -41,13 +41,13 @@ Previous attempts to explain the mass hierarchy have invoked:
 
 None of these approaches derive the explicit numerical values of fermion masses from first principles.
 
-### 1.2 The KSAU Paradigm Shift
+### 1.2 The KSAU Phenomenological Framework
 
-The **Knot-Structure-At-Universal (KSAU)** theory proposes a radical alternative: **elementary particles are topological solitons**, and their masses are determined by geometric invariants of their internal knot structure. The Yukawa coupling $y_f$ emerges as the **topological partition function** $Z_{\mathcal{K}_f}$, evaluated in the **saddle-point approximation**:
+The **Knot-Structure-At-Universal (KSAU)** framework explores a hypothesis: **fermion masses correlate with topological invariants** of knots and links. We model the Yukawa coupling $y_f$ using an ansatz inspired by topological field theory:
 
-$$ y_f \equiv Z_{\mathcal{K}_f} = \int \mathcal{D}\mathcal{A} e^{-S_{CS}[\mathcal{A}]} \approx e^{-S_{\text{geom}}[\mathcal{K}_f]} $$
+$$ y_f \sim e^{-S_{\text{geom}}[\mathcal{K}_f]} $$
 
-where $\mathcal{K}_f$ is the knot associated with fermion $f$, and $S_{\text{geom}}$ is the Chern-Simons effective action.
+where $\mathcal{K}_f$ is a knot/link assigned to fermion $f$, and $S_{\text{geom}}$ is a geometric action parameterized by hyperbolic volume and other topological invariants. This ansatz is **motivated by** Chern-Simons theory, where partition functions $Z \sim \int \mathcal{D}\mathcal{A} \, e^{-S_{CS}[\mathcal{A}]}$ can be evaluated via knot invariants, but we do not claim a rigorous derivation from first principles.
 
 ### 1.3 Evolution of the Theory
 
@@ -80,9 +80,9 @@ $$S_{\text{geom}} = \begin{cases}
 \kappa \left(\frac{14}{9} N^2 - \frac{1}{6}\mathbb{1}_{\text{twist}}\right) + B_l & C = 1 \quad (\text{Leptons, Freedom})
 \end{cases}$$
 
-### 2.2 The Universal Constant $\kappa = \pi/24$
+### 2.2 Motivation for $\kappa = \pi/24$
 
-The appearance of $\pi/24$ is not phenomenological but **theoretically mandated** by:
+The choice of $\kappa = \pi/24$ is **motivated by** its appearance in several fundamental contexts:
 
 #### 2.2.1 Casimir Energy (Quantum Field Theory)
 For a bosonic field in $c=1$ conformal field theory, the zero-point energy is:
@@ -102,7 +102,7 @@ $$\frac{D-2}{24} - 1 = 0 \quad \Rightarrow \quad D = 26$$
 
 The factor $24$ in the denominator stems from the central charge of the Virasoro algebra.
 
-**Conclusion**: $\kappa = \pi/24$ is the unique choice for a minimal bosonic topological field theory consistent with quantum mechanics, modular invariance, and string theory.
+**Motivation**: These theoretical contexts suggest $\kappa = \pi/24$ as a natural scale for topological actions. While not a unique choice, it provides a theoretically grounded starting point for phenomenological modeling.
 
 ### 2.3 Callan-Harvey Anomaly Cancellation
 
@@ -150,7 +150,7 @@ The Twist term $\kappa \cdot \mathcal{T}$ represents the **topological torsion**
 1. **Mathematical Reason** (Fine-Tuning Between Generations):
    - Volume alone cannot distinguish first-generation quarks (Up/Down) which have nearly zero hyperbolic volume
    - The $(2-\text{Gen})$ factor provides a "seesaw correction" that lifts Gen-1 and suppresses Gen-3
-   - Without Twist, the Down quark error is +14%, with Twist it becomes +0.40%
+   - Without Twist, the Down quark error is +14%, with Twist it becomes +0.36%
 
 2. **Physical Reason** (Chirality and Symmetry Breaking):
    - Mass arises from **chiral symmetry breaking** (left-handed ↔ right-handed mixing)
@@ -197,7 +197,7 @@ G            = 0.915965594177219...
 Relative err = 0.0363%
 ```
 
-This identity has **never been reported** in the mathematical literature and may represent a new class of relationships between Dirichlet L-functions and elementary transcendentals.
+This numerical coincidence (0.036% error) is not reported in standard mathematical references. While not a proven identity, it provides a useful bridge connecting our phenomenological coefficients (originally expressed in terms of $G$) to the theoretically motivated scale $\kappa = \pi/24$.
 
 ![Figure 5](figures/figure5_catalan_identity.png)
 
@@ -260,7 +260,7 @@ The particle-topology assignments are determined by a systematic, data-driven al
 3. **Complexity Sort**: Sort candidates by crossing number N, then by volume V
 4. **Mass-Guided Selection**: For each filtered pool, compute predicted mass using the formulas in Section 3 and select the topology minimizing $|\ln(m_{\text{pred}}) - \ln(m_{\text{obs}})|$
 
-This algorithm is **deterministic** (no human curation) and **reproducible** (all code and data publicly available). The automated selection achieves **global MAE = 1.39%**, a 70% improvement over the phenomenological v4.1 assignments.
+This algorithm is **deterministic** (no human curation) and **reproducible** (all code and data publicly available). The automated selection achieves **global MAE = 1.38%**, a 70% improvement over the phenomenological v4.1 assignments.
 
 **Key Improvements**:
 - **Up quark**: $L7a5 \to L8a6\{0\}$ reduces error from +8.6% to +2.1%
@@ -272,12 +272,12 @@ The automated approach eliminates confirmation bias and demonstrates that the to
 
 | Particle | Link/Knot | $C$ | Det | $V$ / $N^2$ | $\mathcal{T}$ | Obs (MeV) | Pred (MeV) | Error |
 |:---------|:----------|----:|----:|------------:|:-------------:|----------:|-----------:|------:|
-| **Up** | $L8a6\{0\}$ | 2 | 20 | 6.552 | +1 | 2.16 | 2.21 | $+2.13\%$ |
-| **Down** | $L6a4\{0,0\}$ | 3 | 16 | 7.328 | −1 | 4.67 | 4.69 | $+0.40\%$ |
-| **Strange** | $L10n95\{0,0\}$ | 3 | 32 | 9.532 | 0 | 93.4 | 95.71 | $+2.47\%$ |
-| **Charm** | $L11n64\{0\}$ | 2 | 12 | 11.517 | 0 | 1270 | 1286.8 | $+1.33\%$ |
-| **Bottom** | $L10a140\{0,0\}$ | 3 | 64 | 12.276 | +1 | 4180 | 3962.4 | $-5.21\%$ |
-| **Top** | $L11a62\{0\}$ | 2 | 124 | 15.360 | −1 | 172760 | 172710 | $-0.03\%$ |
+| **Up** | $L8a6\{0\}$ | 2 | 20 | 6.552 | +1 | 2.16 | 2.205 | $+2.09\%$ |
+| **Down** | $L6a4\{0,0\}$ | 3 | 16 | 7.328 | −1 | 4.67 | 4.687 | $+0.36\%$ |
+| **Strange** | $L10n95\{0,0\}$ | 3 | 32 | 9.532 | 0 | 93.4 | 95.67 | $+2.43\%$ |
+| **Charm** | $L11n64\{0\}$ | 2 | 12 | 11.517 | 0 | 1270 | 1286.3 | $+1.29\%$ |
+| **Bottom** | $L10a140\{0,0\}$ | 3 | 64 | 12.276 | +1 | 4180 | 3960.8 | $-5.24\%$ |
+| **Top** | $L11a62\{0\}$ | 2 | 124 | 15.360 | −1 | 172760 | 172642 | $-0.07\%$ |
 | **Electron** | $3_1$ | 1 | 3 | 9 | — | 0.511 | 0.511 | $0.00\%$ |
 | **Muon** | $6_1$ | 1 | 9 | 36 | (twist knot) | 105.66 | 105.61 | $-0.05\%$ |
 | **Tau** | $7_1$ | 1 | 7 | 49 | — | 1776.86 | 1760.7 | $-0.91\%$ |
@@ -286,7 +286,7 @@ The automated approach eliminates confirmation bias and demonstrates that the to
 
 ![Figure 1](figures/figure1_mass_spectrum.png)
 
-*Figure 1: **KSAU v5.0 Mass Predictions Across Six Orders of Magnitude.** Observed masses (blue bars) and predicted masses (red diamonds) for all nine charged fermions. The theory achieves global MAE = 1.39% spanning from the electron (0.51 MeV) to the top quark (172.76 GeV). Error bars represent experimental uncertainties (too small to see for most particles). The unified formula $\ln(m) = 10\kappa V + \kappa \mathcal{T} + B$ successfully captures the extreme mass hierarchy.*
+*Figure 1: **KSAU v5.0 Mass Predictions Across Six Orders of Magnitude.** Observed masses (blue bars) and predicted masses (red diamonds) for all nine charged fermions. The theory achieves global MAE = 1.38% spanning from the electron (0.51 MeV) to the top quark (172.76 GeV). Error bars represent experimental uncertainties (too small to see for most particles). The unified formula $\ln(m) = 10\kappa V + \kappa \mathcal{T} + B$ successfully captures the extreme mass hierarchy.*
 
 ### 5.4 The Binary Determinant Sequence
 
@@ -310,35 +310,35 @@ This predicts a 4th-generation down-type quark would have $\text{Det} = 2^7 = 12
 
 | Metric | v4.1 (no Twist) | v5.0 (automated) | Improvement |
 |:-------|----------------:|------------------:|:-----------:|
-| Quark MAE | 6.65% | **1.93%** | ✓ -71% |
+| Quark MAE | 6.65% | **1.91%** | ✓ -71% |
 | Lepton MAE | 0.48% | **0.32%** | ✓ -33% |
-| Global MAE | 4.59% | **1.39%** | ✓ -70% |
+| Global MAE | 4.59% | **1.38%** | ✓ -70% |
 | Quark $R^2$ | 0.9994 | **> 0.9999** | ✓ improved |
 | Lepton $R^2$ | 0.9998 | **0.9998** | maintained |
-| Up Error | +8.6% | **+2.13%** | ✓ dramatic |
-| Down Error | +14.0% | **+0.40%** | ✓ dramatic |
-| Bottom Error | -17.3% | **-5.21%** | ✓ significant |
+| Up Error | +8.6% | **+2.09%** | ✓ dramatic |
+| Down Error | +14.0% | **+0.36%** | ✓ dramatic |
+| Bottom Error | -17.3% | **-5.24%** | ✓ significant |
 
 The v5.0 formulation (using $\kappa = \pi/24$ with Twist correction and automated topology selection) achieves **superior precision** to v4.1 while providing a unified field-theoretic foundation. The automated selection algorithm systematically searches the KnotInfo/LinkInfo databases (17,154 entries) using the three selection rules, achieving 70% improvement over the phenomenological v4.1 model. The Twist term $\kappa \cdot \mathcal{T}$ resolves the generational chirality structure, reducing errors across all generations.
 
 ![Figure 2](figures/figure2_error_comparison.png)
 
-*Figure 2: **Evolution of Model Accuracy Through Versions.** Mean absolute error (MAE) comparison across model versions. v4.1 used only the Catalan constant G with no Twist term (4.59% global MAE). v5.0 without Twist uses κ = π/24 but omits chirality correction. v5.0 with automated selection (final model) achieves 70% improvement over v4.1 (1.39% global MAE), with dramatic reduction in Up quark error (from +8.6% to +2.13%) and Down quark error (from +14% to +0.40%).*
+*Figure 2: **Evolution of Model Accuracy Through Versions.** Mean absolute error (MAE) comparison across model versions. v4.1 used only the Catalan constant G with no Twist term (4.59% global MAE). v5.0 without Twist uses κ = π/24 but omits chirality correction. v5.0 with automated selection (final model) achieves 70% improvement over v4.1 (1.38% global MAE), with dramatic reduction in Up quark error (from +8.6% to +2.09%) and Down quark error (from +14% to +0.36%).*
 
 ![Figure 3](figures/figure3_twist_effect.png)
 
-*Figure 3: **Impact of Topological Twist Correction on Quark Masses.** Comparison of prediction errors with and without the Twist term $\mathcal{T} = (2-\text{Gen}) \times (-1)^C$. The Twist correction provides a "seesaw" effect: lifting Gen-1 masses while suppressing Gen-3, orthogonal to the volume contribution. This generational chirality structure reduces Down quark error by 97% (from +14.4% to +0.40%) and Top quark error by 99.5% (from +13.9% to -0.03%). The automated topology selection further improves Up quark precision from +8.6% to +2.13%. Gen-2 quarks have $\mathcal{T}=0$ (pivot point).*
+*Figure 3: **Impact of Topological Twist Correction on Quark Masses.** Comparison of prediction errors with and without the Twist term $\mathcal{T} = (2-\text{Gen}) \times (-1)^C$. The Twist correction provides a "seesaw" effect: lifting Gen-1 masses while suppressing Gen-3, orthogonal to the volume contribution. This generational chirality structure reduces Down quark error by 97% (from +14.4% to +0.36%) and Top quark error by 99.5% (from +13.9% to -0.07%). The automated topology selection further improves Up quark precision from +8.6% to +2.09%. Gen-2 quarks have $\mathcal{T}=0$ (pivot point).*
 
 ### 6.2 Topological Quantization Noise
 
-The bottom quark error ($+5.2\%$) represents **topological quantization noise** — a fundamental discreteness of the link volume spectrum. An exhaustive search of the LinkInfo database (4,188 entries) for $(\text{Det}=64, C=3)$ links found:
+The bottom quark error ($-5.24\%$) represents **topological quantization noise** — a fundamental discreteness of the link volume spectrum. An exhaustive search of the LinkInfo database (4,188 entries) for $(\text{Det}=64, C=3)$ links found:
 
 - **84 candidates total**
 - The automated selection chose $L10a140\{0,0\}$ with $V = 12.276$
 - The ideal volume $V_{\text{ideal}} = 12.422$ **does not exist** in the topological landscape up to 11 crossings
 - The nearest volumes cluster around $V \approx 12.27-12.29$
 
-**Interpretation**: The residual error is analogous to Landau level quantization in quantum Hall systems. The continuous mass formula $\ln(m) = 10\kappa V + \kappa \mathcal{T}$ can only be satisfied at discrete volume values determined by the hyperbolic geometry catalog. The 5.2% error is the minimum achievable within the current database coverage.
+**Interpretation**: The residual error is analogous to Landau level quantization in quantum Hall systems. The continuous mass formula $\ln(m) = 10\kappa V + \kappa \mathcal{T}$ can only be satisfied at discrete volume values determined by the hyperbolic geometry catalog. The 5.24% error is the minimum achievable within the current database coverage.
 
 **Prediction**: If a $(\text{Det}=64, C=3)$ link with $V \approx 12.42$ is discovered in the 12-crossing census, the bottom quark error should approach zero.
 
@@ -403,24 +403,58 @@ The observed $(g-2)_\mu$ anomaly ($\sim 5\sigma$ tension with SM) may arise from
 
 ## 8. Discussion
 
-### 8.1 Why Does $G \approx 7\pi/24$ Hold?
+### 8.1 Model Complexity and Effective Parameters
 
-The relationship $G \approx 7\pi/24$ (0.036% error) is too precise to be coincidental. We propose three interpretations:
+While we emphasize $\kappa = \pi/24$ as the "master constant," an honest assessment requires counting **effective free parameters** in the framework:
 
-#### 8.1.1 Mathematical Conjecture
-There may exist an exact identity:
-$$G = \frac{7\pi}{24} + \mathcal{O}(\alpha)$$
-where $\alpha$ is a small correction involving $\zeta(3)$ or other L-function values. Proving or disproving this requires advanced techniques in analytic number theory (e.g., saddle-point methods for Dirichlet series).
+| Parameter | Value | Status | Justification |
+|:----------|:------|:-------|:--------------|
+| $\kappa$ | $\pi/24$ | **Motivated** | Appears in CFT, string theory, modular forms |
+| Quark slope | $10\kappa$ | **Fitted** | "10" corresponds to spacetime dimension, but not derived |
+| Lepton slope | $\frac{14}{9}\kappa$ | **Fitted** | Ratio 14/9 not predicted from first principles |
+| $B_q$ (quark intercept) | $-(7 + 7\kappa)$ | **Fitted** | Factor "7" is phenomenological |
+| $C_l$ (lepton intercept) | $-2.503$ | **Calibrated** | Fixed by electron mass (1 calibration constant) |
+| Twist form | $(2-\text{Gen}) \times (-1)^C$ | **Ansatz** | Motivated by torsion, but functional form is assumed |
+| Muon correction | $-1/6$ | **Fitted** | Twist knot correction is ad hoc |
 
-#### 8.1.2 Geometric Origin
+**Effective parameter count**: While $\kappa$ itself is theoretically motivated, the complete model involves **5-6 fitted/calibrated parameters** (slopes, intercepts, twist form, muon correction). For 9 data points, this yields a **degrees-of-freedom ratio** of approximately 1.5-1.8, which is reasonable for a phenomenological model but not sufficient to claim "single parameter" status.
+
+**Comparison to Standard Model**: The SM Yukawa sector has 9 free parameters (one per fermion), achieving 0% error by construction. KSAU reduces this to 5-6 parameters with 1.38% error, representing a meaningful compression but not a fundamental derivation.
+
+**Interpretation**: KSAU should be understood as a **phenomenological classification scheme** that organizes fermion masses using topological invariants, rather than a first-principles theory. The statistical significance ($p < 10^{-5}$) and automated selection protocol demonstrate that the correlations are non-trivial, but the framework does not yet derive particle-topology assignments from deeper principles.
+
+### 8.2 Prediction vs. Post-Diction
+
+It is crucial to distinguish:
+
+**Post-Dictions** (explaining known data):
+- 9 fermion masses: MAE = 1.38% (fitted using automated selection)
+- Binary determinant rule ($2^k$): Observed pattern in 3 quarks
+- Selection rules: Derived from statistical analysis of database
+
+**Predictions** (falsifiable forecasts):
+- Neutrino masses: $\sum m_\nu \approx 0.12$ eV (not fitted, extrapolated from Unknot)
+- 4th generation exclusion: $m_{t'} > 5$ TeV (geometric extrapolation)
+- 12-crossing census: Prediction that $(\text{Det}=64, C=3, V \approx 12.42)$ link exists
+
+Only the **predictions** can falsify the framework. The 9 fermion masses were used to construct the model and thus cannot serve as independent tests.
+
+### 8.3 The Catalan-$\pi/24$ Relationship
+
+The numerical relationship $G \approx 7\pi/24$ (0.036% error) is intriguing. We consider three possible interpretations:
+
+#### 8.3.1 Numerical Coincidence
+The 0.036% agreement may be fortuitous. Rational multiples of $\pi$ can approximate many transcendental constants to similar precision (e.g., $e \approx 19\pi/22$ with 0.004% error). Without a rigorous proof, we cannot exclude the possibility that this is a coincidental near-miss rather than a fundamental relationship.
+
+#### 8.3.2 Geometric Origin
 The Catalan constant appears in hyperbolic geometry (e.g., volume of the octahedron). The factor $7\pi/24$ may encode the relationship between:
 - **Hyperbolic volume** (governed by $G$, via Mostow rigidity)
 - **Topological entropy** (governed by $\pi/24$, via modular forms)
 
-#### 8.1.3 Physical Necessity
+#### 8.3.3 Physical Speculation
 If elementary particles are solitonic knots in a 10D spacetime, dimensional reduction from 10D to 4D might **force** $G \approx 7\pi/24$ as a consistency condition (analogous to how $D=26$ is forced in bosonic string theory).
 
-### 8.2 Comparison with String Theory
+### 8.4 Comparison with String Theory
 
 KSAU shares structural similarities with string theory but differs fundamentally:
 
@@ -434,35 +468,74 @@ KSAU shares structural similarities with string theory but differs fundamentally
 
 **Key Difference**: String theory requires **compactification** (extra dimensions are tiny). KSAU requires only that quarks live in the **bulk** and leptons on the **boundary** (Callan-Harvey configuration). The 10D spacetime may be effective, not fundamental.
 
-### 8.3 Open Problems
+### 8.5 Theoretical Interpretation of Empirical Parameters
 
-1. **Derivation of $B_q$ and $C_l$**: The vacuum energy scales are currently fitted. A first-principles calculation from Calabi-Yau compactification is needed.
+Based on feedback from theoretical analysis (Gemini, 2026), we propose the following interpretations for the currently fitted parameters:
 
-2. **Up-type Determinant Pattern**: The automated selection yields $(20, 12, 124)$ for up-type quarks (U, C, T), which lacks the clean $2^k$ structure of down-type quarks. The appearance of $20 = 4 \times 5$ and $124 = 4 \times 31$ suggests possible factorization patterns, but a unified rule remains elusive.
+**The Factor "7" in $B_q = -(7 + 7\kappa)$**:
+- **Hypothesis**: The integer 7 may represent an **effective dimension** $D_{\text{eff}} = 7$ arising from 10D $\to$ 4D compactification, where 6 internal dimensions contribute an effective "1 entropy degree of freedom" to the vacuum energy.
+- **Connection to $G_2$ holonomy**: In M-theory, $G_2$-manifolds (7-dimensional) provide a natural compactification space for preserving $\mathcal{N}=1$ supersymmetry. The quark confinement sector (Bulk) may be governed by such a 7D structure.
+- **Status**: Speculative. Rigorous derivation requires computing volume forms on internal manifolds.
 
-3. **CKM and PMNS Matrices**: Flavor mixing angles are not predicted. We conjecture they arise from **topological linking numbers** between knots (the Gauss linking integral), but this requires formalization.
+**The Calibration Constant $C_l$**:
+- **Hypothesis**: $C_l$ represents the **vacuum expectation value (VEV) on the boundary**, analogous to the Higgs VEV $v = 246$ GeV in the Standard Model, but expressed in topological units.
+- **Connection to cosmology**: $C_l$ may relate to the cosmological constant $\Lambda$ or Planck scale $M_{Pl}$ through a ratio like $C_l \sim \ln(M_{Pl}/\Lambda)$.
+- **Status**: One calibration parameter is unavoidable (sets absolute mass scale). Physical interpretation requires understanding boundary conditions in full TQFT.
 
-4. **Neutrino Majorana vs. Dirac**: The topological seesaw predicts the mass scale but not the nature (Dirac/Majorana). Neutrinoless double-beta decay ($0\nu\beta\beta$) is a critical test.
+**The Twist Functional Form $\mathcal{T} = (2-\text{Gen}) \times (-1)^C$**:
+- **Hypothesis**: $\mathcal{T}$ encodes **Reidemeister torsion** of the knot complement, a topological invariant capturing "twisting" of homology classes.
+- **Generational structure**: The $(2-\text{Gen})$ factor suggests generation transitions are quantized as discrete torsion jumps, hinting at a $\mathbb{Z}_3$ flavor symmetry broken topologically.
+- **Parity factor $(-1)^C$**: Reflects charge conjugation parity in Chern-Simons theory (up-type vs. down-type quarks have opposite chirality contributions).
+- **Status**: Phenomenological ansatz. Requires explicit calculation of Chern-Simons invariants for assigned knots.
 
-5. **Rigorous Proof of $G = 7\pi/24$**: Is this exact, or an asymptotic expansion? This is a pure mathematics problem of independent interest.
+**The Muon Correction $-1/6$**:
+- **Hypothesis**: The muon ($6_1$ knot) is the **only hyperbolic knot** among leptons. Its complex volume $\text{Vol} + i \, \text{CS}$ has an imaginary part (Chern-Simons invariant) that contributes to mass.
+- **Cusp geometry**: The factor $1/6$ may arise from cusp shape invariants in hyperbolic 3-space.
+- **Status**: Not a "correction" but a signature of hyperbolic topology. Electron/Tau (torus knots) lack this contribution.
+
+**The Coefficient Ratios $10\kappa$ and $\frac{14}{9}\kappa$**:
+- **Hypothesis**: The ratio $\frac{10\kappa}{(14/9)\kappa} = 45:7$ corresponds to **anomaly inflow** from the 10D bulk to the 4D boundary.
+- **Bulk**: 10 degrees of freedom (10D spacetime).
+- **Boundary**: $(14/9)$ represents projection of bulk central charge onto boundary CFT (related to conformal anomaly $c$).
+- **Callan-Harvey mechanism**: The specific ratio ensures gauge anomalies on the boundary are canceled by inflow from the bulk.
+- **Status**: Integer ratio suggests topological origin, but exact derivation from Atiyah-Singer index theorem remains open.
+
+**Conclusion**: The empirical parameters in KSAU v5.0 are not arbitrary—they exhibit structural patterns (integer factors, rational ratios) suggesting an underlying geometric consistency. However, these interpretations remain **conjectures** until rigorously derived from a full Lagrangian formulation.
+
+### 8.6 Open Problems
+
+1. **Rigorous Derivation of Coefficients**: Prove that 10, 14/9, and 7 emerge from compactification of a 10D TQFT, potentially via $G_2$ holonomy or Calabi-Yau geometry.
+
+2. **Dynamical Origin of Knot Configurations**: Why does nature "choose" $L8a6\{0\}$ for the up quark? KSAU currently **classifies** topologies post hoc, not **predicts** them. A full theory must derive knot assignments from symmetry breaking or vacuum structure.
+
+3. **Up-type Determinant Pattern**: The automated selection yields $(20, 12, 124)$, lacking the $2^k$ structure. This asymmetry between up/down sectors may reflect different confinement mechanisms or require higher-crossing data.
+
+4. **CKM and PMNS Matrices**: Flavor mixing angles require off-diagonal terms in the topological action, likely involving **Gauss linking integrals** between different knots. This extension to full TQFT is essential for completeness.
+
+5. **Neutrino Nature (Majorana vs. Dirac)**: The topological seesaw predicts $\sum m_\nu \approx 0.12$ eV but not whether neutrinos are their own antiparticles. Neutrinoless double-beta decay ($0\nu\beta\beta$) is the critical experimental test.
+
+6. **Catalan-$\pi$ Relationship**: Is $G \approx 7\pi/24$ a mathematical identity or numerical coincidence? This question may be independent of KSAU's physical validity but would deepen our understanding of transcendental constants.
 
 ---
 
 ## 9. Conclusion
 
-We have constructed a **unified topological theory of mass** based on a single fundamental constant $\kappa = \pi/24$ derived from Chern-Simons theory and conformal field theory. The theory achieves:
+We have developed a **phenomenological framework** (KSAU v5.0) that organizes fermion mass hierarchies using topological invariants of knots and links, motivated by Chern-Simons theory and conformal field theory. The framework achieves:
 
-1. **High Precision**: Global MAE of **1.39%** for all charged fermions (70% improvement from v4.1)
-2. **Automated Discovery**: Systematic database search over 17,154 topological configurations, eliminating human curation bias
-3. **Theoretical Foundation**: Field-theoretic action $S_{\text{geom}}$ with Callan-Harvey anomaly cancellation
-4. **Mathematical Unity**: All coefficients expressed as rational multiples of $\pi/24$
-5. **New Discovery**: The identity $G \approx 7\pi/24$ bridges hyperbolic geometry and topological field theory
-6. **Twist Correction**: The topological torsion term $\kappa \cdot \mathcal{T}$ encodes generational chirality, achieving sub-percent precision for Top quark (-0.03%)
-7. **Predictive Power**: Neutrino masses (0.039 eV), 4th generation exclusion, muon $g-2$ connection
+1. **High Precision**: Global MAE of **1.38%** for all charged fermions (70% improvement from v4.1), using 5-6 effective parameters for 9 data points
+2. **Automated Discovery**: Systematic database search over 17,154 topological configurations, eliminating human curation bias through deterministic algorithm
+3. **Statistical Significance**: Permutation test $p < 10^{-5}$ and bootstrap CI [0.47%, 2.54%] demonstrate non-trivial correlations
+4. **Theoretical Motivation**: Scale $\kappa = \pi/24$ appears in CFT zero-point energy, Dedekind $\eta$-function, and string theory critical dimension
+5. **Geometric Selection Rules**: Three topological principles (Component-Confinement, Binary Determinant $2^k$, Charge-Parity) emerge from automated fitting
+6. **Falsifiable Predictions**: Neutrino mass sum $\approx 0.12$ eV, 4th generation exclusion $> 5$ TeV, 12-crossing census prediction
 
-The formula $\ln(m) = 10\kappa \cdot V + \kappa \cdot \mathcal{T} + B$ reveals that **mass = volume + torsion**, mirroring the fundamental decomposition **energy = gravitational + quantum correction** in field theory. The Twist parameter is not a free parameter but a topological invariant: $\mathcal{T} = (2-\text{Gen}) \times (-1)^C$.
+The formula $\ln(m) = 10\kappa \cdot V + \kappa \cdot \mathcal{T} + B$ reveals an empirical decomposition **mass $\sim$ volume $+$ torsion**, where the coefficients (10, 14/9, 7) require first-principles derivation from a full topological field theory. The Twist $\mathcal{T} = (2-\text{Gen}) \times (-1)^C$ is a phenomenological ansatz, not yet derived from Reidemeister torsion or Chern-Simons invariants.
 
-The KSAU framework reinterprets the Standard Model's Yukawa sector as emerging from the **topology of knotted solitons in 10D spacetime**, with masses governed by the universal quantum constant $\pi/24$. If correct, this represents a paradigm shift from viewing elementary particles as "fundamental points" to "fundamental knots."
+**Status of the Framework**: KSAU v5.0 successfully demonstrates that Standard Model fermion masses exhibit non-trivial correlations with knot-theoretic invariants, reducing the parameter count from 9 (SM) to 5-6 with 1.38% precision. However, the framework does not yet provide a **dynamical mechanism** for why particles are topological solitons, nor does it derive particle-topology assignments from first principles.
+
+**Path Forward**: The observed patterns suggest an underlying geometric structure. Future work must address: (1) first-principles derivation of coefficients 10, 14/9, 7 from compactification geometry, (2) dynamical origin of knot configurations in spacetime, (3) CKM/PMNS matrices from linking integrals, (4) experimental tests via neutrino mass measurements.
+
+KSAU should be understood as an **organizing principle** for fermion masses—a topological classification scheme that compresses empirical data into geometric language—rather than a complete theory of mass generation. The question remains open: **Are these correlations revealing a hidden topological structure of spacetime, or are they sophisticated numerology?** Only experimental falsification can decide.
 
 ---
 

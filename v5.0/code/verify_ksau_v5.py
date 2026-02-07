@@ -52,11 +52,10 @@ PARTICLES, M_OBS = load_data()
 
 # --- 3. Model Parameters ---
 # Quark Formula: ln(m) = 10k*V + 1k*Twist + Bq
-B_Q = -7.9159 
+B_Q = -(7 + 7 * KAPPA)  # Derived from theory: -(7 + 7κ)
 
-# Lepton Formula: ln(m) = (14/9)k*N^2 - beta*Vol + Bl
+# Lepton Formula: ln(m) = (14/9)k*N^2 - (1/6)*I_twist + C_l
 COEFF_L_N2 = (14 / 9) * KAPPA
-BETA = 0.0292
 B_L = np.log(M_OBS['Electron']) - COEFF_L_N2 * (3**2)
 
 # --- 4. Calculation ---

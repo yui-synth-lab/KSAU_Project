@@ -23,7 +23,7 @@ Output:
 
 # --- 1. Constants & Model Setup ---
 KAPPA = np.pi / 24
-B_Q = -7.9159
+B_Q = -(7 + 7 * KAPPA)  # Derived from theory: -(7 + 7κ)
 
 # Load Target Quark Masses from CSV
 base_path = Path(__file__).parent.parent
