@@ -1,11 +1,14 @@
 """
 KSAU v5.0: Exhaustive Search Visualization
-Shows the distribution of MAE across all possible topology assignments.
+Reads data from brute_force_ab_results.json and generates plots for MAE distribution 
+and the Complexity-Accuracy tradeoff.
 """
 
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
+import json
+from pathlib import Path
 
 # Set publication quality defaults
 rcParams['font.family'] = 'serif'
@@ -15,66 +18,48 @@ rcParams['figure.dpi'] = 300
 def plot_exhaustive_search_distribution():
     """
     Figure S1: Distribution of MAE from exhaustive search.
-
-    Based on the exhaustive search results:
-    - Total combinations: 160
-    - KSAU rank: 28/160 (top 17.5%)
-    - KSAU MAE: 3.03%
-    - Global minimum: 1.92%
+    Reads actual data from brute_force_ab_results.json.
     """
+    # Load data from JSON
+    base_path = Path(__file__).parent.parent.parent
+    json_path = base_path / "data" / "brute_force_ab_results.json"
+    
+    if not json_path.exists():
+        print(f"Error: {json_path} not found. Run brute_force_ab_test.py first.")
+        return
 
-    # Simulate the distribution (actual data would come from brute_force_ab_test.py)
-    # The distribution is likely log-normal or gamma-shaped
-    np.random.seed(42)
+    with open(json_path, 'r') as f:
+        data = json.load(f)
 
-    # Generate a realistic distribution
-    # Most combinations have MAE between 5-20%
-    # Best combinations cluster around 2-4%
-    # KSAU at 3.03% should be in the top quintile
+    all_mae = np.array(data['all_maes'])
+    ksau_mae = data['ksau_mae']
+    ksau_rank = data['ksau_rank']
+    total_combos = data['total_combinations']
+    global_min = data['best_mae']
+    top_percentile = (ksau_rank / total_combos) * 100
 
-    # Create a mixture distribution
-    best_cluster = np.random.gamma(2, 0.5, 30)  # Top performers (2-4%)
-    good_cluster = np.random.gamma(3, 1.5, 60)  # Good performers (4-10%)
-    poor_cluster = np.random.gamma(4, 3, 70)    # Poor performers (10-30%)
-
-    all_mae = np.concatenate([best_cluster, good_cluster, poor_cluster])
-    all_mae = np.clip(all_mae, 1.5, 30)  # Clip to reasonable range
-    all_mae = np.sort(all_mae)  # Sort for ranking
-
-    # Insert actual KSAU value at rank 28
-    ksau_mae = 3.03
-    ksau_rank = 28
-    all_mae[ksau_rank-1] = ksau_mae
-
-    # Insert global minimum
-    all_mae[0] = 1.92
+    all_mae = np.sort(all_mae)
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
 
     # Left panel: Histogram
-    counts, bins, patches = ax1.hist(all_mae, bins=30, color='lightblue',
+    counts, bins, patches = ax1.hist(all_mae, bins=20, color='lightblue',
                                      alpha=0.7, edgecolor='black', linewidth=0.5)
-
-    # Highlight KSAU bin
-    ksau_bin_idx = np.digitize([ksau_mae], bins)[0] - 1
-    if ksau_bin_idx < len(patches):
-        patches[ksau_bin_idx].set_facecolor('#2E86AB')
-        patches[ksau_bin_idx].set_linewidth(2)
 
     # Mark KSAU and global minimum
     ax1.axvline(ksau_mae, color='red', linestyle='--', linewidth=2,
                label=f'KSAU v5.0 ({ksau_mae:.2f}%)', alpha=0.8)
-    ax1.axvline(1.92, color='green', linestyle=':', linewidth=2,
-               label=f'Global Min ({1.92:.2f}%)', alpha=0.8)
+    ax1.axvline(global_min, color='green', linestyle=':', linewidth=2,
+               label=f'Global Min ({global_min:.2f}%)', alpha=0.8)
 
     ax1.set_xlabel('Mean Absolute Error (%)', fontweight='bold')
     ax1.set_ylabel('Frequency', fontweight='bold')
-    ax1.set_title('Distribution of MAE (160 Combinations)', fontweight='bold')
+    ax1.set_title(f'Distribution of MAE ({total_combos} Combinations)', fontweight='bold')
     ax1.legend(loc='upper right', fontsize=9)
     ax1.grid(True, alpha=0.3, axis='y')
 
     # Add annotation
-    ax1.text(0.98, 0.97, f'KSAU Rank: {ksau_rank}/160\nTop 17.5%',
+    ax1.text(0.98, 0.97, f'KSAU Rank: {ksau_rank}/{total_combos}\nTop {top_percentile:.1f}%',
             transform=ax1.transAxes, ha='right', va='top',
             fontsize=10, bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
 
@@ -83,11 +68,11 @@ def plot_exhaustive_search_distribution():
     percentiles = ranks / len(all_mae) * 100
 
     ax2.plot(all_mae, percentiles, 'b-', linewidth=2, alpha=0.7)
-    ax2.axhline(17.5, color='gray', linestyle=':', alpha=0.5)
+    ax2.axhline(top_percentile, color='gray', linestyle=':', alpha=0.5)
     ax2.axvline(ksau_mae, color='red', linestyle='--', linewidth=2, alpha=0.8)
 
     # Mark KSAU point
-    ax2.plot(ksau_mae, 17.5, 'ro', markersize=10, label='KSAU v5.0',
+    ax2.plot(ksau_mae, top_percentile, 'ro', markersize=10, label='KSAU v5.0',
             markeredgecolor='darkred', markeredgewidth=2)
 
     ax2.set_xlabel('Mean Absolute Error (%)', fontweight='bold')
@@ -102,8 +87,14 @@ def plot_exhaustive_search_distribution():
                      color='lightgreen', alpha=0.2, label='Top 20%')
 
     plt.tight_layout()
-    plt.savefig('../figures/figureS1_exhaustive_search.png', dpi=300, bbox_inches='tight')
-    print("Saved: ../figures/figureS1_exhaustive_search.png")
+    
+    # Ensure figures directory exists
+    fig_dir = Path(__file__).parent.parent / "figures"
+    fig_dir.mkdir(exist_ok=True)
+    
+    output_path = fig_dir / "figureS1_exhaustive_search.png"
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    print(f"Saved: {output_path}")
     plt.close()
 
 
@@ -173,8 +164,11 @@ def plot_complexity_vs_accuracy():
            verticalalignment='top', bbox=props, family='monospace')
 
     plt.tight_layout()
-    plt.savefig('../figures/figureS2_complexity_tradeoff.png', dpi=300, bbox_inches='tight')
-    print("Saved: ../figures/figureS2_complexity_tradeoff.png")
+    fig_dir = Path(__file__).parent.parent / "figures"
+    fig_dir.mkdir(exist_ok=True)
+    output_path = fig_dir / "figureS2_complexity_tradeoff.png"
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    print(f"Saved: {output_path}")
     plt.close()
 
 

@@ -1,12 +1,15 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import os
+import json
+from pathlib import Path
 import seaborn as sns
 
 # ==============================================================================
 # KSAU v5.0 Supplementary Figures Generator
 # Generates Figure S1 (Top-10 Candidates) and Figure S2 (Entropy Heatmap)
+#
+# DATA SOURCE: Loads from topology_assignments.json
 # ==============================================================================
 
 # --- Constants ---
@@ -14,15 +17,32 @@ KAPPA = np.pi / 24
 B_Q = -7.9159
 B_L = -2.503
 
-PARTICLES = {
-    'Up':      {'mass': 2.16,   'C': 2, 'Det_Rule': 'even', 'Gen': 1, 'Type': 'Quark'},
-    'Down':    {'mass': 4.67,   'C': 3, 'Det_Rule': '2^4',  'Gen': 1, 'Type': 'Quark'},
-    'Electron':{'mass': 0.511,  'C': 1, 'Det_Rule': 'odd',  'Gen': 1, 'Type': 'Lepton'},
-    'Muon':    {'mass': 105.7,  'C': 1, 'Det_Rule': 'odd',  'Gen': 2, 'Type': 'Lepton'}
-}
+# --- Load particle data from JSON ---
+def load_particle_data():
+    json_path = Path(__file__).parent.parent / 'data' / 'topology_assignments.json'
+    with open(json_path, 'r') as f:
+        data = json.load(f)
+
+    # Select representative particles for entropy analysis
+    particles = {}
+    for name in ['Up', 'Down', 'Electron', 'Muon']:
+        info = data[name]
+        det_rule = 'even' if info['charge_type'] == 'up-type' else \
+                   '2^4' if (info['charge_type'] == 'down-type' and info['generation'] == 1) else \
+                   'odd'
+        particles[name] = {
+            'mass': info['observed_mass'],
+            'C': info['components'],
+            'Det_Rule': det_rule,
+            'Gen': info['generation'],
+            'Type': 'Quark' if info['charge_type'] != 'lepton' else 'Lepton'
+        }
+    return particles
+
+PARTICLES = load_particle_data()
 
 # --- Load Data ---
-DATA_PATH = "KSAU/publish/data/linkinfo_data_complete.csv"
+DATA_PATH = Path(__file__).parent.parent.parent / 'data' / 'linkinfo_data_complete.csv'
 df = pd.read_csv(DATA_PATH, sep='|', header=1)
 df.columns = df.columns.str.strip()
 col_map = {'Determinant': 'determinant', 'Volume': 'volume', 'Components': 'components', 'Crossing Number': 'crossing'}
@@ -126,7 +146,7 @@ def plot_figure_s1(top_data):
     ax.legend(custom_lines, ['Electron (Unique Solution)', 'Up Quark (Degenerate)'])
 
     plt.tight_layout()
-    save_path = "KSAU/publish/v5.0/figures/figureS1_top10_errors.png"
+    save_path = Path(__file__).parent.parent / 'figures' / 'figureS1_top10_errors.png'
     plt.savefig(save_path, dpi=300)
     print(f"Saved {save_path}")
 
@@ -149,7 +169,7 @@ def plot_figure_s2(entropy_map):
     ax.set_xlabel('Particle Species', fontsize=12)
     
     plt.tight_layout()
-    save_path = "KSAU/publish/v5.0/figures/figureS2_entropy_heatmap.png"
+    save_path = Path(__file__).parent.parent / 'figures' / 'figureS2_entropy_heatmap.png'
     plt.savefig(save_path, dpi=300)
     print(f"Saved {save_path}")
 
