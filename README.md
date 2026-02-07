@@ -73,3 +73,5 @@ python v5.0/code/brute_force_ab_test.py
 ---
 **Contact:** https://github.com/yui-synth-lab  
 *"Mass is not a parameter; it is a knot."*
+
+[![Zenodo](https://img.shields.io/badge/Zenodo-Community%20KSAU%20Project-blue)](https://zenodo.org/communities/ksau-project)
