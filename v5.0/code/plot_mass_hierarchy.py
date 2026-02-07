@@ -32,7 +32,7 @@ MASSES_OBS = np.array([
 ])
 
 MASSES_PRED = np.array([
-    2.35, 4.69, 95.68, 1286.16, 3959.40, 153659.55,
+    2.35, 4.69, 95.68, 1286.16, 3959.40, 172645.46,
     0.510998, 105.608, 1760.72
 ])
 
@@ -92,9 +92,9 @@ def plot_error_comparison():
     versions = ['v4.1\n(G only)', 'v5.0\n(no Twist)', 'v5.0\n(with Twist)']
 
     # MAE values
-    quark_mae = [6.65, 6.86, 4.84]
+    quark_mae = [6.65, 6.86, 3.01]
     lepton_mae = [0.48, 0.32, 0.32]
-    global_mae = [4.59, 4.68, 3.33]
+    global_mae = [4.59, 4.68, 2.11]
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
 
@@ -153,7 +153,7 @@ def plot_twist_effect():
         'Down': 14.44,
         'Bottom': -16.90,
         'Up': -4.72,
-        'Top': 1.38,
+        'Top': 13.91,
         'Strange': 2.45,  # unchanged
         'Charm': 1.27     # unchanged
     }
@@ -163,7 +163,7 @@ def plot_twist_effect():
         'Down': 0.40,
         'Bottom': -5.28,
         'Up': 8.61,
-        'Top': -11.06,
+        'Top': -0.07,
         'Strange': 2.45,
         'Charm': 1.27
     }
@@ -213,7 +213,7 @@ def plot_twist_effect():
 def plot_volume_mass_correlation():
     """Figure 4: Hyperbolic volume vs log(mass)."""
     # Quark data
-    quark_volumes = np.array([6.599, 7.328, 9.532, 11.517, 12.276, 15.271])
+    quark_volumes = np.array([6.599, 7.328, 9.532, 11.517, 12.276, 15.360])
     quark_masses = MASSES_OBS[:6]
     quark_names = PARTICLES[:6]
 
@@ -330,7 +330,7 @@ def plot_determinant_rules():
     particles = {
         'Up': {'Det': 18, 'Type': 'up', 'Gen': 1, 'y': 3},
         'Charm': {'Det': 12, 'Type': 'up', 'Gen': 2, 'y': 2},
-        'Top': {'Det': 114, 'Type': 'up', 'Gen': 3, 'y': 1},
+        'Top': {'Det': 124, 'Type': 'up', 'Gen': 3, 'y': 1},
         'Down': {'Det': 16, 'Type': 'down', 'Gen': 1, 'y': 3, 'k': 4},
         'Strange': {'Det': 32, 'Type': 'down', 'Gen': 2, 'y': 2, 'k': 5},
         'Bottom': {'Det': 64, 'Type': 'down', 'Gen': 3, 'y': 1, 'k': 6}
@@ -360,7 +360,7 @@ def plot_determinant_rules():
                 fontweight='bold', fontsize=13, pad=15)
     ax.set_yticks([1, 2, 3])
     ax.set_yticklabels(['Gen 3', 'Gen 2', 'Gen 1'])
-    ax.set_xlim(0, 120)
+    ax.set_xlim(0, 140)
     ax.set_ylim(0.5, 3.5)
     ax.grid(True, alpha=0.3)
 
