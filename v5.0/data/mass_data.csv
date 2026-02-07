@@ -1,0 +1,10 @@
+particle,mass,group,generation,charge_type
+Up,2.16,Quark,1,up-type
+Down,4.67,Quark,1,down-type
+Strange,93.4,Quark,2,down-type
+Charm,1270.0,Quark,2,up-type
+Bottom,4180.0,Quark,3,down-type
+Top,172760.0,Quark,3,up-type
+Electron,0.511,Lepton,1,lepton
+Muon,105.66,Lepton,2,lepton
+Tau,1776.86,Lepton,3,lepton
