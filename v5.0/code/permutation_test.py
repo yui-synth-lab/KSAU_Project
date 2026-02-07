@@ -1,26 +1,34 @@
 """
 KSAU v5.0: Statistical Significance Testing
 Permutation test to verify that topology-mass correlation is not due to chance.
+
+DATA SOURCE: Loads from topology_assignments.json
 """
 
 import numpy as np
+import json
+from pathlib import Path
 from typing import Tuple
 import matplotlib.pyplot as plt
 
 # Set random seed for reproducibility
 np.random.seed(42)
 
-# Observed masses (MeV)
-MASSES_OBS = np.array([
-    2.16, 4.67, 93.4, 1270.0, 4180.0, 172760.0,
-    0.510998, 105.658, 1776.86
-])
+# Load data from JSON
+def load_prediction_data():
+    json_path = Path(__file__).parent.parent / 'data' / 'topology_assignments.json'
+    with open(json_path, 'r') as f:
+        data = json.load(f)
 
-# Predicted masses (v5.0 with Twist)
-MASSES_PRED = np.array([
-    2.35, 4.69, 95.68, 1286.16, 3959.40, 153659.55,
-    0.510998, 105.608, 1760.72
-])
+    particles = ['Up', 'Down', 'Strange', 'Charm', 'Bottom', 'Top',
+                'Electron', 'Muon', 'Tau']
+
+    obs = [data[p]['observed_mass'] for p in particles]
+    pred = [data[p]['predicted_mass'] for p in particles]
+
+    return np.array(obs), np.array(pred)
+
+MASSES_OBS, MASSES_PRED = load_prediction_data()
 
 
 def compute_mae(obs: np.ndarray, pred: np.ndarray) -> float:
@@ -160,18 +168,27 @@ def leave_one_out_cv() -> dict:
 
     KAPPA = np.pi / 24
 
-    # Topological parameters
-    TOPOLOGY = {
-        'Up':      {'V': 6.599,  'C': 2, 'Twist': +1},
-        'Down':    {'V': 7.328,  'C': 3, 'Twist': -1},
-        'Strange': {'V': 9.532,  'C': 3, 'Twist':  0},
-        'Charm':   {'V': 11.517, 'C': 2, 'Twist':  0},
-        'Bottom':  {'V': 12.276, 'C': 3, 'Twist': +1},
-        'Top':     {'V': 15.360, 'C': 2, 'Twist': -1},
-        'Electron':{'N2': 9,  'IsTwist': False},
-        'Muon':    {'N2': 36, 'IsTwist': True},
-        'Tau':     {'N2': 49, 'IsTwist': False}
-    }
+    # Load topological parameters from JSON
+    json_path = Path(__file__).parent.parent / 'data' / 'topology_assignments.json'
+    with open(json_path, 'r') as f:
+        data = json.load(f)
+
+    TOPOLOGY = {}
+    for particle, info in data.items():
+        gen = info['generation']
+        C = info['components']
+        twist = (2 - gen) * ((-1) ** C)
+        is_twist = (info['topology'] == '6_1')
+
+        if info['charge_type'] == 'lepton':
+            N = info['crossing_number']
+            TOPOLOGY[particle] = {'N2': N ** 2, 'IsTwist': is_twist}
+        else:
+            TOPOLOGY[particle] = {
+                'V': info['volume'],
+                'C': C,
+                'Twist': twist
+            }
 
     particles = ['Up', 'Down', 'Strange', 'Charm', 'Bottom', 'Top',
                 'Electron', 'Muon', 'Tau']

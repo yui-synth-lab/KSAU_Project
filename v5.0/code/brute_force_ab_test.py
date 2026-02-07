@@ -3,31 +3,56 @@ import numpy as np
 import os
 import time
 import itertools
+import json
+from pathlib import Path
 
-# ==============================================================================
-# KSAU v5.0 FULL BRUTE-FORCE STATISTICAL SIGNIFICANCE TEST
-# ==============================================================================
-# This script performs a COMPLETE EXHAUSTIVE SEARCH of the solution space.
-# Instead of random sampling, it checks EVERY possible combination of links
-# that satisfy the component and determinant rules.
-# ==============================================================================
+"""
+KSAU v5.0: FULL BRUTE-FORCE STATISTICAL SIGNIFICANCE TEST
+
+This script performs an exhaustive search of the solution space within a 
+Top-K subspace. It validates the KSAU selection against all other possible 
+topology combinations that satisfy the geometric rules.
+
+Data Sources:
+    - ../data/mass_data.csv
+    - ../../data/linkinfo_data_complete.csv
+    
+Output:
+    - ../data/brute_force_ab_results.json
+"""
 
 # --- 1. Constants & Model Setup ---
 KAPPA = np.pi / 24
 B_Q = -7.9159
 
-# Target Quark Masses (PDG 2024)
-QUARK_TARGETS = {
-    'Up':      {'mass': 2.16,   'C': 2, 'Det_Rule': 'even', 'Gen': 1},
-    'Down':    {'mass': 4.67,   'C': 3, 'Det_Rule': '2^4',  'Gen': 1},
-    'Strange': {'mass': 93.4,   'C': 3, 'Det_Rule': '2^5',  'Gen': 2},
-    'Charm':   {'mass': 1270.0, 'C': 2, 'Det_Rule': 'even', 'Gen': 2},
-    'Bottom':  {'mass': 4180.0, 'C': 3, 'Det_Rule': '2^6',  'Gen': 3},
-    'Top':     {'mass': 172760.0, 'C': 2, 'Det_Rule': 'even', 'Gen': 3}
-}
+# Load Target Quark Masses from CSV
+base_path = Path(__file__).parent.parent
+mass_csv_path = base_path / "data" / "mass_data.csv"
+mass_df = pd.read_csv(mass_csv_path)
+
+QUARK_TARGETS = {}
+for _, row in mass_df[mass_df['group'] == 'Quark'].iterrows():
+    name = row['particle']
+    gen = int(row['generation'])
+    ptype = row['charge_type']
+    
+    # Derive rules
+    c = 2 if ptype == 'up-type' else 3
+    if ptype == 'down-type':
+        det_rule = f"2^{gen + 3}"
+    else:
+        det_rule = "even"
+        
+    QUARK_TARGETS[name] = {
+        'mass': float(row['mass']),
+        'C': c,
+        'Det_Rule': det_rule,
+        'Gen': gen
+    }
 
 # --- 2. Load Database ---
-DATA_PATH = "KSAU/publish/data/linkinfo_data_complete.csv"
+base_path_db = Path(__file__).parent.parent.parent
+DATA_PATH = base_path_db / "data" / "linkinfo_data_complete.csv"
 if not os.path.exists(DATA_PATH):
     raise FileNotFoundError(f"Database not found at {DATA_PATH}")
 
@@ -128,7 +153,11 @@ def calc_mae(vol_list):
     return np.mean(errors) * 100
 
 # --- 5. KSAU Current Selection (Baseline) ---
-KSAU_VOLUMES = [6.599, 7.328, 9.532, 11.517, 12.276, 15.360]
+topo_json_path = base_path / "data" / "topology_assignments.json"
+with open(topo_json_path, 'r') as f:
+    topo_data = json.load(f)
+
+KSAU_VOLUMES = [topo_data[q]['volume'] for q in QUARK_TARGETS.keys()]
 ksau_mae = calc_mae(KSAU_VOLUMES)
 
 # --- 6. Exhaustive Search ---
@@ -147,8 +176,10 @@ better_count = 0
 worse_count = 0
 
 # Using itertools.product for efficiency
+all_maes = []
 for combo in itertools.product(*iterators):
     mae = calc_mae(combo)
+    all_maes.append(float(mae))
     
     if mae < best_mae:
         best_mae = mae
@@ -161,7 +192,22 @@ for combo in itertools.product(*iterators):
 
 duration = time.time() - start_time
 
-# --- 7. Results ---
+# --- 7. Save Results to JSON ---
+output_data = {
+    'all_maes': all_maes,
+    'ksau_mae': float(ksau_mae),
+    'ksau_rank': int(better_count),
+    'total_combinations': int(total_combinations),
+    'best_mae': float(best_mae),
+    'quarks': list(QUARK_TARGETS.keys())
+}
+
+output_path = base_path / "data" / "brute_force_ab_results.json"
+with open(output_path, 'w') as f:
+    json.dump(output_data, f, indent=2)
+print(f"\nSaved results to: {output_path}")
+
+# --- 8. Results ---
 print("\n" + "="*60)
 print(f"{'KSAU v5.0 EXHAUSTIVE SEARCH RESULTS':^60}")
 print("="*60)

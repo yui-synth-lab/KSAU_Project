@@ -19,11 +19,13 @@
 
 | Metric | Value |
 |:-------|------:|
-| **Global MAE** | **2.12%** |
-| Quark MAE | 3.01% |
+| **Global MAE** | **1.39%** |
+| Quark MAE | 1.85% |
 | Lepton MAE | 0.32% |
-| Quark R² | 0.9999 |
+| Quark R² | > 0.9999 |
 | Lepton R² | 0.9998 |
+| Database Coverage | **17,154** knots/links |
+| Selection Method | **Automated** (topology_selector.py) |
 | Topological Parameters | **1** (Twist: $\mathcal{T} = (2-\text{Gen}) \times (-1)^C$) |
 | Calibration Constants | 2 (quark/lepton vacuum scales) |
 
@@ -75,17 +77,22 @@ ln(m_l / MeV) = (14/9)κ · N² - (1/6) · I_twist + C_l
 
 ## 📊 Validation
 
-### Run the Verification Script
+### Run the Complete Workflow
 ```bash
 cd code/
-python ksau_v5_prediction.py
+python topology_selector.py      # Generate topology assignments from database
+python ksau_v5_prediction.py     # Compute mass predictions
+python plot_mass_hierarchy.py    # Generate all figures
+python permutation_test.py       # Statistical validation
 ```
 
-**Output**:
+**Output** (from ksau_v5_prediction.py):
+
 ```
-Global MAE: 2.11% (Target: < 5%) OK
+Global MAE: 1.39% (Target: < 5%) OK
 All selection rules satisfied OK
 Catalan identity verified (0.036% error) OK
+Automated topology selection: 17,154 candidates evaluated OK
 ```
 
 ### Dependencies
@@ -122,14 +129,14 @@ where Geometric Invariant = Volume (quarks) or N² (leptons)
 
 | Particle | Topology | C | Det | V / N² | Obs (MeV) | Pred (MeV) | Error |
 |:---------|:---------|--:|----:|-------:|----------:|-----------:|------:|
-| Up | L7a5 | 2 | 18 | 6.599 | 2.16 | 2.35 | +8.6% |
-| Down | L6a4 | 3 | 16 | 7.328 | 4.67 | 4.69 | +0.4% |
-| Strange | L10n95 | 3 | 32 | 9.532 | 93.4 | 95.68 | +2.5% |
-| Charm | L11n64 | 2 | 12 | 11.517 | 1270 | 1286 | +1.3% |
-| Bottom | L10a141 | 3 | 64 | 12.276 | 4180 | 3959 | -5.3% |
-| Top | L11a62 | 2 | 124 | 15.360 | 172760 | 172645 | -0.07% |
+| Up | L8a6{0} | 2 | 20 | 6.552 | 2.16 | 2.21 | +2.1% |
+| Down | L6a4{0,0} | 3 | 16 | 7.328 | 4.67 | 4.69 | +0.4% |
+| Strange | L10n95{0,0} | 3 | 32 | 9.532 | 93.4 | 95.67 | +2.4% |
+| Charm | L11n64{0} | 2 | 12 | 11.517 | 1270 | 1286 | +1.3% |
+| Bottom | L10a140{0,0} | 3 | 64 | 12.276 | 4180 | 3961 | +5.2% |
+| Top | L11a62{0} | 2 | 124 | 15.360 | 172760 | 172642 | +0.07% |
 | Electron | 3₁ | 1 | 3 | 9 | 0.511 | 0.511 | 0.0% |
-| Muon | 6₁ | 1 | 9 | 36 | 105.66 | 105.61 | -0.05% |
+| Muon | 6₁ | 1 | 9 | 36 | 105.66 | 105.61 | +0.05% |
 | Tau | 7₁ | 1 | 7 | 49 | 1776.9 | 1760.7 | -0.9% |
 
 ---
@@ -158,7 +165,7 @@ S_geom = (1/κ) × [∫_M L_Bulk + ∮_{∂M} L_Boundary + L_Twist]
 | v1.0-v3.4 | Empirical correlations | ~15% |
 | v4.0 | Three geometric rules | 7.9% |
 | v4.1 | Twist correction + database search | 4.6% |
-| **v5.0** | **Field theory foundation (κ=π/24) + Twist** | **2.12%** |
+| **v5.0** | **Automated selection + κ=π/24 + Twist** | **1.39%** |
 
 ---
 
