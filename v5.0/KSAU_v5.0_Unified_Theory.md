@@ -583,6 +583,7 @@ All topology assignments are stored in `topology_assignments.json` generated fro
 **Submitted:** February 7, 2026
 **Correspondence:**  yui.synth.lab@gmail.com
 **DOI:** 10.5281/zenodo.18521244
+
 ---
 
 *"Why are there six quarks? Why three generations? Why these specific masses? The answer may not lie in symmetries we impose, but in knots we discover."*
