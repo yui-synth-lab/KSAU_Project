@@ -186,7 +186,7 @@ S_geom = (1/κ) × [∫_M L_Bulk + ∮_{∂M} L_Boundary + L_Twist]
 
 - **Author**: Yui
 - **Affiliation**: Yui Protocol Project
-- **Email**: yui@yui-protocol.org
+- **Email**: yui.synth.lab@gmail.com
 - **GitHub**: [github.com/yui-synth-lab/KSAU_Project](https://github.com/yui-synth-lab/KSAU_Project)
 
 ---
