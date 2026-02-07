@@ -19,10 +19,10 @@
 
 | Metric | Value |
 |:-------|------:|
-| **Global MAE** | **3.33%** |
-| Quark MAE | 4.84% |
+| **Global MAE** | **2.12%** |
+| Quark MAE | 3.01% |
 | Lepton MAE | 0.32% |
-| Quark R² | 0.9997 |
+| Quark R² | 0.9999 |
 | Lepton R² | 0.9998 |
 | Topological Parameters | **1** (Twist: $\mathcal{T} = (2-\text{Gen}) \times (-1)^C$) |
 | Calibration Constants | 2 (quark/lepton vacuum scales) |
@@ -83,7 +83,7 @@ python ksau_v5_prediction.py
 
 **Output**:
 ```
-Global MAE: 4.68% (Target: < 5%) OK
+Global MAE: 2.11% (Target: < 5%) OK
 All selection rules satisfied OK
 Catalan identity verified (0.036% error) OK
 ```
@@ -122,12 +122,12 @@ where Geometric Invariant = Volume (quarks) or N² (leptons)
 
 | Particle | Topology | C | Det | V / N² | Obs (MeV) | Pred (MeV) | Error |
 |:---------|:---------|--:|----:|-------:|----------:|-----------:|------:|
-| Up | L7a5 | 2 | 18 | 6.599 | 2.16 | 2.06 | -4.7% |
-| Down | L6a4 | 3 | 16 | 7.328 | 4.67 | 5.34 | +14.4% |
+| Up | L7a5 | 2 | 18 | 6.599 | 2.16 | 2.35 | +8.6% |
+| Down | L6a4 | 3 | 16 | 7.328 | 4.67 | 4.69 | +0.4% |
 | Strange | L10n95 | 3 | 32 | 9.532 | 93.4 | 95.68 | +2.5% |
 | Charm | L11n64 | 2 | 12 | 11.517 | 1270 | 1286 | +1.3% |
-| Bottom | L10a141 | 3 | 64 | 12.276 | 4180 | 3474 | -16.9% |
-| Top | L11a144 | 2 | 114 | 15.271 | 172760 | 175149 | +1.4% |
+| Bottom | L10a141 | 3 | 64 | 12.276 | 4180 | 3959 | -5.3% |
+| Top | L11a62 | 2 | 124 | 15.360 | 172760 | 172645 | -0.07% |
 | Electron | 3₁ | 1 | 3 | 9 | 0.511 | 0.511 | 0.0% |
 | Muon | 6₁ | 1 | 9 | 36 | 105.66 | 105.61 | -0.05% |
 | Tau | 7₁ | 1 | 7 | 49 | 1776.9 | 1760.7 | -0.9% |
@@ -158,7 +158,7 @@ S_geom = (1/κ) × [∫_M L_Bulk + ∮_{∂M} L_Boundary + L_Twist]
 | v1.0-v3.4 | Empirical correlations | ~15% |
 | v4.0 | Three geometric rules | 7.9% |
 | v4.1 | Twist correction + database search | 4.6% |
-| **v5.0** | **Field theory foundation (κ=π/24)** | **4.7%** |
+| **v5.0** | **Field theory foundation (κ=π/24) + Twist** | **2.12%** |
 
 ---
 

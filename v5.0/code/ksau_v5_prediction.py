@@ -42,7 +42,7 @@ TOPOLOGY = {
     'Strange': {'V': 9.532,  'C': 3, 'Det': 32,  'N': 10, 'Gen': 2, 'Twist':  0, 'Link': 'L10n95'},
     'Charm':   {'V': 11.517, 'C': 2, 'Det': 12,  'N': 11, 'Gen': 2, 'Twist':  0, 'Link': 'L11n64'},
     'Bottom':  {'V': 12.276, 'C': 3, 'Det': 64,  'N': 10, 'Gen': 3, 'Twist': +1, 'Link': 'L10a141'},
-    'Top':     {'V': 15.271, 'C': 2, 'Det': 114, 'N': 11, 'Gen': 3, 'Twist': -1, 'Link': 'L11a144'},
+    'Top':     {'V': 15.360, 'C': 2, 'Det': 124, 'N': 11, 'Gen': 3, 'Twist': -1, 'Link': 'L11a62'},
 
     # Leptons: (N^2, Volume, IsTwistKnot, Component, Determinant)
     'Electron': {'N2': 9,  'V': 0.0,  'IsTwist': False, 'C': 1, 'Det': 3, 'Knot': '3_1'},

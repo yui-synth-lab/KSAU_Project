@@ -40,8 +40,8 @@ python catalan_pi24_verify.py
 
 **Output**:
 ```
-Global MAE: 3.33%
-Quark MAE:  4.84%
+Global MAE: 2.11%
+Quark MAE:  3.01%
 Lepton MAE: 0.32%
 ```
 
@@ -194,7 +194,7 @@ python catalan_pi24_verify.py > catalan.txt
 ```
 
 Expected outputs:
-- Global MAE: 3.33%
+- Global MAE: 2.11%
 - p-value: ~8×10⁻⁵
 - Catalan error: 0.036%
 - 7 publication-quality figures
