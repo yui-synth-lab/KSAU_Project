@@ -15,7 +15,7 @@ from pathlib import Path
 
 # --- 1. Constants ---
 KAPPA = np.pi / 24
-B_Q = -7.9159
+B_Q = -(7 + 7 * KAPPA)  # Derived from theory: -(7 + 7κ)
 
 # Complexity Penalty Factor (lambda)
 # Hypothesis: A small penalty for complexity makes KSAU the global optimum.
