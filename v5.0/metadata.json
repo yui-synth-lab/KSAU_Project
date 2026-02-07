@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "title": "Topological Mass Generation from TT/24: Unifying Chern-Simons Theory with Catalan Geometry",
+    "upload_type": "publication",
+    "publication_date": "2026-02-07",
+    "creators": [
+      {
+        "name": "Yui",
+        "affiliation": "Yui Protocol Project"
+      }
+    ],
+    "version": "v5.0 (Unified Theory)",
+    "description": "We present KSAU v5.0, a phenomenological framework that models fermion Yukawa couplings as topological partition functions of knotted configurations motivated by Chern-Simons theory. Introducing a master constant K = T/24, the framework maps nine charged fermions to knots/links from the KnotInfo/LinkInfo census using an automated topology selection algorithm (17,154 entries) and achieves a global MAE of 1.38%. Key ingredients include a geometric action combining bulk hyperbolic volume, boundary crossing contributions, and a generational Twist correction; three geometric selection rules; and a numerical bridge between the Catalan constant and 7T/24. The manuscript provides explicit falsifiability criteria (neutrino mass range, fourth-generation exclusion, and a 12-crossing link prediction) and discusses limitations and open mathematical questions.",
+    "keywords": [
+      "Chern-Simons theory",
+      "topological field theory",
+      "fermion mass hierarchy",
+      "TT/24",
+      "Catalan constant",
+      "knot invariants",
+      "hyperbolic volume",
+      "Yukawa couplings",
+      "topological selection rules"
+    ],
+    "license": "CC-BY-4.0",
+    "language": "en",
+    "access_right": "open",
+    "communities": [
+      {"identifier": "high-energy-physics"},
+      {"identifier": "mathematical-physics"},
+      {"identifier": "topology"}
+    ],
+    "funding": [],
+    "related_identifiers": []
+  },
+  "files": [
+    {
+      "filename": "KSAU_v5.0_Unified_Theory.pdf",
+      "title": "KSAU v5.0 Unified Theory manuscript"
+    }
+  ]
+}
