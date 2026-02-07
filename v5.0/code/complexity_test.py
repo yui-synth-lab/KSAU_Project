@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import os
 import itertools
+import json
+from pathlib import Path
 
 # ==============================================================================
 # KSAU v5.0 COMPLEXITY-PENALIZED STATISTICAL TEST
@@ -20,17 +22,34 @@ B_Q = -7.9159
 # 0.5% mass error equivalent per crossing is a reasonable physical ansatz.
 LAMBDA = 0.5 
 
-QUARK_TARGETS = {
-    'Up':      {'mass': 2.16,   'C': 2, 'Det_Rule': 'even', 'Gen': 1},
-    'Down':    {'mass': 4.67,   'C': 3, 'Det_Rule': '2^4',  'Gen': 1},
-    'Strange': {'mass': 93.4,   'C': 3, 'Det_Rule': '2^5',  'Gen': 2},
-    'Charm':   {'mass': 1270.0, 'C': 2, 'Det_Rule': 'even', 'Gen': 2},
-    'Bottom':  {'mass': 4180.0, 'C': 3, 'Det_Rule': '2^6',  'Gen': 3},
-    'Top':     {'mass': 172760.0, 'C': 2, 'Det_Rule': 'even', 'Gen': 3}
-}
+# Load Target Quark Masses from CSV
+base_path = Path(__file__).parent.parent
+mass_csv_path = base_path / "data" / "mass_data.csv"
+mass_df = pd.read_csv(mass_csv_path)
+
+QUARK_TARGETS = {}
+for _, row in mass_df[mass_df['group'] == 'Quark'].iterrows():
+    name = row['particle']
+    gen = int(row['generation'])
+    ptype = row['charge_type']
+    
+    # Derive rules
+    c = 2 if ptype == 'up-type' else 3
+    if ptype == 'down-type':
+        det_rule = f"2^{gen + 3}"
+    else:
+        det_rule = "even"
+        
+    QUARK_TARGETS[name] = {
+        'mass': float(row['mass']),
+        'C': c,
+        'Det_Rule': det_rule,
+        'Gen': gen
+    }
 
 # --- 2. Load and Prep Data ---
-DATA_PATH = "KSAU/publish/data/linkinfo_data_complete.csv"
+base_path_db = Path(__file__).parent.parent.parent
+DATA_PATH = base_path_db / "data" / "linkinfo_data_complete.csv"
 df = pd.read_csv(DATA_PATH, sep='|', header=1)
 df.columns = df.columns.str.strip()
 
@@ -108,15 +127,20 @@ def calc_cost(combo_list):
     return cost, mae, total_n
 
 # --- 5. KSAU Baseline ---
-# Define KSAU selection manually with known N
-KSAU_SELECTION = [
-    {'vol': 6.599, 'N': 7},   # Up (L7a5)
-    {'vol': 7.328, 'N': 6},   # Down (L6a4)
-    {'vol': 9.532, 'N': 10},  # Strange (L10n95)
-    {'vol': 11.517, 'N': 11}, # Charm (L11n64)
-    {'vol': 12.276, 'N': 10}, # Bottom (L10a141)
-    {'vol': 15.360, 'N': 11}  # Top (L11a62)
-]
+# Load current selection from JSON
+topo_json_path = base_path / "data" / "topology_assignments.json"
+with open(topo_json_path, 'r') as f:
+    topo_data = json.load(f)
+
+KSAU_SELECTION = []
+for q in QUARK_TARGETS.keys():
+    info = topo_data[q]
+    KSAU_SELECTION.append({
+        'vol': info['volume'],
+        'N': info['crossing_number'],
+        'name': info['topology']
+    })
+
 ksau_cost, ksau_mae, ksau_total_n = calc_cost(KSAU_SELECTION)
 
 # --- 6. Exhaustive Search ---

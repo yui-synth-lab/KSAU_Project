@@ -1,37 +1,54 @@
 import numpy as np
-import math
-import os
+import json
+from pathlib import Path
 
 # ==============================================================================
 # KSAU v5.0 PRECISION (Twist Restored) Verification Script
 # ==============================================================================
-# This script verifies the calculations for the KSAU v5.0 model where the 
+# This script verifies the calculations for the KSAU v5.0 model where the
 # Quark Twist correction is restored, achieving maximum precision.
+#
+# DATA SOURCE: Loads from topology_assignments.json
 # ==============================================================================
 
 # --- 1. Constants ---
 PI = np.pi
 KAPPA = PI / 24  # The Master Constant (pi/24)
 
-# --- 2. Particle Data & Invariants ---
-# Twist Rule: Twist = (2 - Gen) * (-1)^Comp
-PARTICLES = {
-    'Up':      {'Gen': 1, 'Comp': 2, 'V': 6.599,  'Type': 'Quark'},
-    'Down':    {'Gen': 1, 'Comp': 3, 'V': 7.328,  'Type': 'Quark'},
-    'Strange': {'Gen': 2, 'Comp': 3, 'V': 9.532,  'Type': 'Quark'},
-    'Charm':   {'Gen': 2, 'Comp': 2, 'V': 11.517, 'Type': 'Quark'},
-    'Bottom':  {'Gen': 3, 'Comp': 3, 'V': 12.276, 'Type': 'Quark'},
-    'Top':     {'Gen': 3, 'Comp': 2, 'V': 15.360, 'Type': 'Quark'}, # Using L11a62
-    'Electron':{'N': 3,  'Vol': 0.0,   'Type': 'Lepton', 'IsTwist': 0},
-    'Muon':    {'N': 6,  'Vol': 5.69,  'Type': 'Lepton', 'IsTwist': 1},
-    'Tau':     {'N': 7,  'Vol': 0.0,   'Type': 'Lepton', 'IsTwist': 0}
-}
+# --- 2. Load Data from JSON ---
+def load_data():
+    json_path = Path(__file__).parent.parent / 'data' / 'topology_assignments.json'
+    with open(json_path, 'r') as f:
+        data = json.load(f)
 
-M_OBS = {
-    'Up': 2.16, 'Down': 4.67, 'Strange': 93.4,
-    'Charm': 1270.0, 'Bottom': 4180.0, 'Top': 172760.0,
-    'Electron': 0.510998, 'Muon': 105.658, 'Tau': 1776.86
-}
+    PARTICLES = {}
+    M_OBS = {}
+
+    for name, info in data.items():
+        M_OBS[name] = info['observed_mass']
+
+        if info['charge_type'] == 'lepton':
+            N = info['crossing_number']
+            is_twist = (info['topology'] == '6_1')
+            PARTICLES[name] = {
+                'Type': 'Lepton',
+                'N': N,
+                'Vol': info['volume'],
+                'IsTwist': 1 if is_twist else 0
+            }
+        else:
+            gen = info['generation']
+            C = info['components']
+            PARTICLES[name] = {
+                'Type': 'Quark',
+                'Gen': gen,
+                'Comp': C,
+                'V': info['volume']
+            }
+
+    return PARTICLES, M_OBS
+
+PARTICLES, M_OBS = load_data()
 
 # --- 3. Model Parameters ---
 # Quark Formula: ln(m) = 10k*V + 1k*Twist + Bq
@@ -66,10 +83,14 @@ def run_verification():
             input_val = f"V={p['V']:.3f}"
             twist_val = f"{twist:+d}"
         else:
-            # Lepton Formula
-            log_m = COEFF_L_N2 * (p['N']**2) - BETA * p['Vol'] + B_L
+            # Lepton Formula (v5.0 Unified)
+            gamma_l = (14/9) * KAPPA
+            twist_corr = -1/6 if p['IsTwist'] else 0
+            # C_l is calibrated to electron (N=3)
+            C_l = np.log(M_OBS['Electron']) - gamma_l * (3**2)
+            log_m = gamma_l * (p['N']**2) + twist_corr + C_l
             input_val = f"N={p['N']}"
-            twist_val = "N/A"
+            twist_val = f"{twist_corr:.3f}" if twist_corr != 0 else "0.000"
             
         pred = np.exp(log_m)
         err = (pred - obs) / obs * 100

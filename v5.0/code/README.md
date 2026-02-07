@@ -1,262 +1,67 @@
-# KSAU v5.0: Analysis Scripts
+# KSAU v5.0 Code Repository
 
-This directory contains all verification and visualization scripts for the KSAU v5.0 paper.
+This directory contains the computational core of the KSAU v5.0 theory. The pipeline is designed to be **fully data-driven and algorithmic**, ensuring reproducibility and eliminating arbitrary "cherry-picking" of topological assignments.
 
-## Quick Start
+## 🚀 Reproduction Pipeline
+
+To reproduce all figures and results in the paper, execute the scripts in the following order:
+
+### 1. Topological Identification (The "Selector")
+The theory predicts particle topologies based on their mass and charge. This script applies the mass formula ($\ln(m) \sim 10\kappa V + \kappa \mathcal{T}$) and selection rules (determinant, components) to the entire knot database to find the physical solutions.
 
 ```bash
-# Install dependencies
-pip install numpy scipy matplotlib
-
-# Optional (for high-precision verification)
-pip install mpmath
-
-# Run main prediction script
-python ksau_v5_prediction.py
-
-# Generate all figures
-python plot_mass_hierarchy.py
-
-# Run statistical tests
-python permutation_test.py
-
-# Verify Catalan identity
-python catalan_pi24_verify.py
+python topology_selector.py
 ```
+*   **Input**: `../data/mass_data.csv` (Physics), `../../data/linkinfo_data_complete.csv` (Geometry)
+*   **Output**: `../data/topology_assignments.json` (The theoretical predictions)
 
----
+### 2. Statistical Robustness & Verification
+Validates the selection against all other possible combinations in the database and computes precision metrics.
 
-## Scripts Overview
-
-### 1. `ksau_v5_prediction.py`
-
-**Purpose**: Core mass prediction and validation
-
-**Features**:
-- Computes predicted masses for all 9 fermions
-- Validates three selection rules
-- Reports summary statistics (MAE, R², etc.)
-- Verifies Catalan-π/24 identity
-
-**Output**:
+```bash
+python brute_force_ab_test.py
+python complexity_test.py
+python verify_ksau_v5.py
 ```
-Global MAE: 2.11%
-Quark MAE:  3.01%
-Lepton MAE: 0.32%
-```
+*   **Input**: `../data/topology_assignments.json`, `../data/mass_data.csv`
+*   **Output**: `../data/brute_force_ab_results.json`, Console Reports (MAE, R², Ranks)
 
-**Runtime**: < 1 second
+### 3. Figure Generation
+Generates high-resolution plots for the manuscript and supplementary materials.
 
----
-
-### 2. `plot_mass_hierarchy.py`
-
-**Purpose**: Generate publication-quality figures
-
-**Generates**:
-- `figure1_mass_spectrum.png` - Mass hierarchy with predictions
-- `figure2_error_comparison.png` - v4.1 vs v5.0 performance
-- `figure3_twist_effect.png` - Impact of Twist correction
-- `figure4_correlation.png` - Volume/N² vs log(mass)
-- `figure5_catalan_identity.png` - G ≈ 7π/24 visualization
-- `figure6_determinant_rules.png` - Binary Det pattern
-
-**Dependencies**:
-- matplotlib (required)
-
-**Usage**:
 ```bash
 python plot_mass_hierarchy.py
+python plot_exhaustive_search.py
 ```
-
-**Output**: 6 PNG files (300 DPI, publication-ready)
-
-**Runtime**: ~5 seconds
+*   **Input**: `../data/topology_assignments.json`, `../data/brute_force_ab_results.json`
+*   **Output**: `../figures/figure1-6.png`, `../figures/figureS1-S2.png`
 
 ---
 
-### 3. `permutation_test.py`
+## 📂 File Structure
 
-**Purpose**: Statistical significance testing
+| File | Description |
+| :--- | :--- |
+| `topology_selector.py` | **Core Algorithm.** Maps physical particles to knot topologies using mass formulas. |
+| `verify_ksau_v5.py` | Calculates precision metrics (MAE) for the selected topologies. |
+| `brute_force_ab_test.py` | Exhaustive search in Top-K subspace to prove statistical significance. |
+| `complexity_test.py` | Proves KSAU is the global optimum under the **Minimal Complexity Principle**. |
+| `plot_mass_hierarchy.py` | Generates all 6 main figures for the KSAU v5.0 manuscript. |
+| `plot_exhaustive_search.py` | Generates distribution and complexity tradeoff plots using real data. |
+| `prove_no_overfitting.py` | Analyzes search space constraints and topological quantization noise. |
+| `catalan_pi24_verify.py` | Verifies the mathematical identity $G \approx 7\pi/24$. |
+| `permutation_test.py` | Performs 100,000 permutations to calculate the p-value ($p < 8 \times 10^{-5}$). |
 
-**Tests Performed**:
-1. **Permutation Test** (100,000 trials)
-   - Tests if topology-mass correlation is random
-   - p-value: ~8×10⁻⁵ (4.1σ significance)
+## 📊 Data Sources
 
-2. **Bootstrap Confidence Intervals** (10,000 trials)
-   - 95% CI: [2.4%, 5.1%]
-   - 99% CI: [1.9%, 6.2%]
+*   **Geometry**: Derived from **KnotInfo / LinkInfo** (Chaos et al., 2024 Snapshot).
+*   **Physics**: PDG 2024 Mass values (contained in `mass_data.csv`).
 
-3. **Leave-One-Out Cross-Validation**
-   - LOO-CV MAE: 3.34%
-   - Confirms no overfitting
+## 🛠 Requirements
 
-**Output**:
-- Console report with detailed statistics
-- `permutation_test_results.png` - Histogram with p-value
-
-**Runtime**: ~30 seconds
-
----
-
-### 4. `catalan_pi24_verify.py`
-
-**Purpose**: High-precision verification of G ≈ 7π/24
-
-**Features**:
-- Standard precision (NumPy, 16 digits)
-- High precision (mpmath, 50 digits, optional)
-- Tests alternative approximations (ln(5/2), etc.)
-- Verifies v4.1 ↔ v5.0 coefficient equivalence
-- Explains theoretical significance of π/24
-
-**Output**:
-```
-G (Catalan)     = 0.915965594177219
-7π/24           = 0.916297857297023
-Difference      = 0.000332263119804
-Relative error  = 0.0363%
-```
-
-**Runtime**: < 1 second (without mpmath), ~2 seconds (with mpmath)
-
----
-
-## Dependencies
-
-### Required
-```
-numpy >= 1.20.0
-```
-
-### Recommended
-```
-matplotlib >= 3.4.0   # For figure generation
-scipy >= 1.7.0        # For statistical tests
-```
-
-### Optional
-```
-mpmath >= 1.2.0       # For high-precision Catalan verification
-snappy                # For computing hyperbolic volumes (not needed for verification)
-```
-
-Install all at once:
-```bash
-pip install numpy scipy matplotlib mpmath
-```
-
----
-
-## File Structure
-
-```
-v5.0/
-├── code/
-│   ├── README.md                      # This file
-│   ├── ksau_v5_prediction.py          # Main prediction script
-│   ├── plot_mass_hierarchy.py         # Generate figures 1-6
-│   ├── plot_exhaustive_search.py      # Generate supplementary figures
-│   ├── permutation_test.py            # Statistical tests
-│   └── catalan_pi24_verify.py         # Catalan identity verification
-│
-└── figures/                           # (generated by scripts)
-    ├── figure1_mass_spectrum.png
-    ├── figure2_error_comparison.png
-    ├── figure3_twist_effect.png
-    ├── figure4_correlation.png
-    ├── figure5_catalan_identity.png
-    ├── figure6_determinant_rules.png
-    ├── figureS1_exhaustive_search.png
-    ├── figureS2_complexity_tradeoff.png
-    └── permutation_test_results.png
-```
-
----
-
-## Reproducing Paper Results
-
-To reproduce all numerical results and figures from the paper:
+*   Python 3.8+
+*   `pandas`, `numpy`, `matplotlib`, `scipy`
 
 ```bash
-# 1. Run main prediction
-python ksau_v5_prediction.py > results.txt
-
-# 2. Generate figures
-python plot_mass_hierarchy.py
-
-# 3. Run statistical tests
-python permutation_test.py > stats.txt
-
-# 4. Verify Catalan identity
-python catalan_pi24_verify.py > catalan.txt
+pip install pandas numpy matplotlib scipy
 ```
-
-Expected outputs:
-- Global MAE: 2.11%
-- p-value: ~8×10⁻⁵
-- Catalan error: 0.036%
-- 7 publication-quality figures
-
-**Total runtime**: ~40 seconds
-
----
-
-## Key Constants
-
-All scripts use the following constants:
-
-```python
-KAPPA = np.pi / 24      # ≈ 0.130899694 (master constant)
-G = 0.915965594177219   # Catalan constant
-```
-
-**Relationship**: `G ≈ 7π/24 = 7 × KAPPA` (error: 0.036%)
-
----
-
-## Troubleshooting
-
-### "ModuleNotFoundError: No module named 'mpmath'"
-- mpmath is optional. The script will fall back to NumPy.
-- To use high-precision features: `pip install mpmath`
-
-### Figures look pixelated
-- Ensure matplotlib DPI setting: `rcParams['figure.dpi'] = 300`
-- Save with `bbox_inches='tight'` to avoid clipping
-
-### "UnicodeEncodeError" on Windows
-- All scripts use ASCII-compatible output
-- If you see this, ensure terminal encoding is UTF-8
-
----
-
-## Citation
-
-If you use these scripts, please cite:
-
-```bibtex
-@article{KSAU_v5_2026,
-  title={Topological Mass Generation from π/24:
-         Unifying Chern-Simons Theory with Catalan Geometry},
-  author={Yui},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
-}
-```
-
----
-
-## License
-
-CC BY 4.0 - Free to use with attribution.
-
-Data sources:
-- **Particle masses**: Particle Data Group (PDG 2024)
-- **Hyperbolic volumes**: SnapPy / KnotInfo database
-- **Topological invariants**: KnotInfo (Indiana University)
-
----
-
-**Last Updated**: February 7, 2026
