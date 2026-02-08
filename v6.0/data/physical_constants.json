@@ -1,34 +1,32 @@
 {
+  "kappa": 0.1308996938995747,
+  "pi": 3.141592653589793,
+  "G": 0.915965594177219,
+  "alpha_s": 0.118,
+  "alpha_em": 0.0072973525693,
+  "sin2theta_w": 0.23122,
+  "higgs_vev_gev": 246.22,
   "ckm": {
     "matrix": [
       [0.9743, 0.2253, 0.0036],
-      [0.2252, 0.9734, 0.0410],
-      [0.0086, 0.0405, 0.9991]
+      [0.2252, 0.9734, 0.041],
+      [0.0086, 0.04, 0.9991]
     ],
-    "source": "PDG 2022"
-  },
-  "couplings": {
-    "alpha_s_mz": 0.118,
-    "alpha_em_mz": 0.00781860828,
-    "alpha_em_0": 0.00729735256,
-    "sin2theta_w": 0.2312,
-    "catalan_G": 0.915965594177219
-  },
-  "g_minus_2": {
-    "a_e_exp": 0.001159652180,
-    "a_mu_exp": 0.00116592061
-  },
-  "cp_violation": {
-    "jarlskog_J": 3.0e-5
+    "wolfenstein": {
+      "lambda": 0.225,
+      "A": 0.811,
+      "rho": 0.156,
+      "eta": 0.35
+    }
   },
   "neutrino": {
     "dm2_21": 7.42e-5,
     "dm2_31_NO": 0.002514,
     "dm2_32_IO": -0.002498,
-    "ksau_prediction_sum_meV": 55.2,
-    "ksau_prediction_m1_meV": 0.040,
-    "ksau_prediction_m2_meV": 8.05,
-    "ksau_prediction_m3_meV": 47.1,
-    "note": "KSAU v6.0 Corrected (Feb 8, 2026). Previous incorrect value was 59 meV."
+    "ksau_prediction_sum_meV": 59.08,
+    "ksau_prediction_m1_meV": 0.043,
+    "ksau_prediction_m2_meV": 8.61,
+    "ksau_prediction_m3_meV": 50.43,
+    "note": "KSAU v6.0 neutrino mass prediction (Normal Ordering). Exact solution of KSAU scaling law (lambda = 9pi/16) constrained by oscillation data."
   }
 }
