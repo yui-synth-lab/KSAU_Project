@@ -47,12 +47,15 @@ A profound discovery of v6.0 is that all sector-specific scaling constants are e
 
 The **$3^2$ (denominator) vs $3^3$ (numerator)** symmetry between charged leptons and neutrinos reveals a fundamental dimensional duality in the lepton sector, where mass generation transitions from surface-bound complexity to bulk-volume holonomy.
 
-### [Physical Foundation] The Quantum Origin of $\pi/24$
-The ubiquity of the factor **$1/24$** in the master constant $\kappa = \pi/24$ provides the definitive link between KSAU geometry and Quantum Mechanics.
-*   **Zero-Point Energy:** In quantum field theory, the regularization of vacuum fluctuations yields $\sum n \to -1/12$. Combined with the harmonic oscillator ground state ($1/2$), this produces the factor $-1/24$.
-*   **Geometric Planck Constant:** $\kappa$ acts as the exchange rate between Topology and Energy. It signifies that **mass is the manifestation of the quantum zero-point energy of the knotted vacuum.**
-    *   If $\hbar \to 0$, then $\kappa \to 0$, and all masses vanish.
-    *   The KSAU universe is intrinsically quantum mechanical.
+### [Physical Foundation] The Geometric Casimir Hypothesis
+The ubiquity of the master constant $\kappa = \pi/24$ provides the definitive link between KSAU geometry and Quantum Mechanics. KSAU v6.0 posits that fermion mass is not an arbitrary parameter but the **Casimir energy of the knotted vacuum**.
+
+This hypothesis is supported by the convergence of three fundamental theories on the factor $1/24$:
+1.  **QFT:** Zeta-function regularization of zero-point energy ($E_0 = -1/24$).
+2.  **String Theory:** Modular invariance of the torus boundary ($q^{1/24}$).
+3.  **TQFT:** Framing anomaly in Chern-Simons theory ($2\pi c / 24$).
+
+**Conclusion:** $\kappa$ acts as the exchange rate between Topology and Energy. If $\hbar \to 0$, then $\kappa \to 0$, and all masses vanish. The KSAU universe is intrinsically quantum mechanical.
 
 ## 4. Conclusion
 The KSAU v6.0 framework provides a self-consistent, data-driven geometric model of the universe. By separating the foundational results from the speculative extensions and grounding them in the quantum nature of vacuum energy, we provide a clear roadmap for both theoretical refinement and experimental verification.

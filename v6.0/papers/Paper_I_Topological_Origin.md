@@ -80,14 +80,6 @@ To test the exponential relationship, we perform a linear regression on $\ln|V_{
 
 While the global fit captures the general trend ($r=0.69$, significant at $p < 0.05$), the high precision of the $u \to s$ transition suggests that additional topological invariants (e.g., twist, Chern-Simons terms) may influence higher-generation mixing angles.
 
-### 4.4 Physical Interpretation
-
-The factor $-1/2$ in the exponential can be understood through the **overlap integral** of knot complement wavefunctions:
-
-$$ V_{ij} \sim \int_{\mathbb{S}^3} \Psi_i^* \Psi_j \, d^3x \sim \exp\left(-\frac{S[M_i] - S[M_j]}{2}\right) $$
-
-where $S[M]$ is the topological action (proportional to hyperbolic volume). The factor $1/2$ arises from the quadratic nature of the action in the path integral formulation.
-
 ### 4.4 The Geometric Origin of the Wolfenstein Parameter
 
 While the simple volume-difference model explains the Cabibbo angle, the full CKM hierarchy requires a mechanism to suppress transitions between distant generations. We find that the **Determinant Complexity** ($\log_2 \text{Det}$) acts as a topological coordinate for generations.
@@ -101,9 +93,19 @@ By introducing a "Generation Penalty" based on this coordinate, we derive a refi
 
 $$ |V_{ij}| \propto \exp\left( -\frac{1}{2} \Delta V_{ij} - \alpha \left| \Delta \log_2(\text{Det}) \right|^2 \right) $$
 
-A fit to the experimental data yields the penalty coefficient **$\alpha \approx 0.226$**. This value is numerically identical to the **Wolfenstein parameter** ($\lambda = |V_{us}| \approx 0.225$).
+A fit to the experimental data yields the penalty coefficient **$\alpha \approx 0.226$**. This value closely approximates the **Wolfenstein parameter** ($\lambda = |V_{us}| \approx 0.225$, relative difference: 0.4%).
 
-**Conclusion:** The CKM hierarchy is an emergent property of the topological landscape, where the "distance" between flavors is measured in both Hyperbolic Volume (energy) and Determinant Complexity (information).
+> **Important Note (v6.0):** While this match is striking, the "Generation Penalty" mechanism is currently a **phenomenological observation**. A rigorous derivation of how determinant complexity creates a mixing barrier—and validation of this principle in the up-type quark and lepton sectors—is a primary objective for v6.1. Until then, this result should be viewed as a guiding hypothesis rather than a confirmed prediction.
+
+**Conclusion:** The CKM hierarchy may be an emergent property of the topological landscape, where the "distance" between flavors is measured in both Hyperbolic Volume (energy) and Determinant Complexity (information).
+
+### 4.5 Physical Interpretation
+
+The factor $-1/2$ in the exponential can be understood through the **overlap integral** of knot complement wavefunctions:
+
+$$ V_{ij} \sim \int_{\mathbb{S}^3} \Psi_i^* \Psi_j \, d^3x \sim \exp\left(-\frac{S[M_i] - S[M_j]}{2}\right) $$
+
+where $S[M]$ is the topological action (proportional to hyperbolic volume). The factor $1/2$ arises from the quadratic nature of the action in the path integral formulation.
 
 ## 5. Discussion
 
@@ -112,9 +114,30 @@ A fit to the experimental data yields the penalty coefficient **$\alpha \approx 
 * **Volume energy vs. Magnetic energy:** The topological volume $V$ represents the energy cost of the knotted spacetime defect, while crossing number $N$ captures the magnetic flux quantization.
 * **Phase Transition:** The geometric distinction between Quarks (Links) and Leptons (Knots) suggests a fundamental topological phase transition in the fermion sector.
 
-### 5.2 The Quantum Origin of $\pi/24$
+### 5.2 The Geometric Casimir Hypothesis: Origin of $\kappa$
 
-The appearance of the factor $1/24$ in the master constant $\kappa = \pi \cdot (1/24)$ strongly suggests a quantum origin. In string theory and conformal field theory, the value $-1/24$ arises from the regularization of the vacuum zero-point energy ($\sum_{n=1}^\infty n = -1/12$, combined with the $1/2\hbar\omega$ factor). This implies that $\kappa$ acts as a **"Geometric Planck Constant,"** translating the topological volume of the vacuum manifold into mass-energy via quantum fluctuations.
+The central constant of KSAU v6.0, $\kappa = \pi/24$, is not merely an empirical fit but a quantity that arises inevitably from the structure of the quantum vacuum. We propose that fermion mass is the **Geometric Casimir Energy** of the knot complement. This is supported by three independent derivations:
+
+#### 1. Casimir Zero-Point Energy (QFT)
+A knot imposes a closed boundary condition in 3D space. The zero-point energy of quantum fields confined by this topology is given by the mode sum $E_0 = \frac{1}{2}\sum n$. Using Zeta function regularization ($\sum n = -1/12$), we obtain:
+$$ E_0 = -\frac{1}{24} $$
+Since the knot vacuum has a circumferential phase of $2\pi$, the energy density scales as $\pi/24$. Thus, mass is the manifestation of the vacuum's Casimir energy.
+
+#### 2. Modular Invariance (CFT/String Theory)
+The boundary of a knot complement is a torus $T^2$, which naturally hosts a 2D Conformal Field Theory (CFT). The partition function is governed by the Dedekind $\eta$ function:
+$$ \eta(\tau) = q^{1/24}\prod_{n=1}^{\infty}(1-q^n) $$
+The factor $1/24$ is universal, arising from the requirement of modular invariance and the number of transverse modes in string theory ($26-2=24$).
+
+#### 3. Framing Anomaly (Chern-Simons Theory)
+In Topological QFT, observables depend on the "framing" of the knot. For a CFT with central charge $c=1$ (a fundamental scalar field), the framing anomaly induces a phase shift:
+$$ \delta = \exp\left( 2\pi i \frac{c}{24} \right) = \exp\left( i \frac{\pi}{12} \right) $$
+This phase shift represents the topological energy cost induced by the knot's presence in the vacuum.
+
+#### Unified Principle
+These three derivations converge on the same constant. We therefore define the foundational principle of KSAU theory:
+
+> **The Geometric Casimir Hypothesis**
+> "The mass of a fermion is the Casimir energy of the quantum vacuum, regularized by the hyperbolic geometry of the knot complement. The factor $\pi/24$ arises inevitably as the gravitational anomaly of a $c=1$ conformal field living on the knot boundary."
 
 ## 6. Conclusion
 

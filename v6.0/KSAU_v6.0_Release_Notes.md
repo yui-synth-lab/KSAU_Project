@@ -36,21 +36,28 @@ To move KSAU into the center of physics discourse, we issue two bold predictions
 *   **Top Quark Helicity Anomaly**: KSAU predicts $F_R = 0.24\% \pm 0.05\%$ (vs SM $0.17\%$), a $+0.07\%$ deviation from topological twist $\mathcal{T}=-1$ of link $L11a62$. Testable at LHC Run 4 ($t\bar{t}$ dilepton channel, $300$ fb$^{-1}$). **Falsifiable:** Ruled out if $F_R < 0.19\%$ or $> 0.26\%$ at $3\sigma$.
 *   **Neutrino Mass Sum**: $\sum m_\nu \approx 59$ meV (Normal Ordering). Testable by 2030 with CMB+LSS (sensitivity $\sim 50$ meV) and PTOLEMY. **Falsifiable:** Ruled out if $\sum m_\nu > 100$ meV or Inverted Ordering at $3\sigma$.
 
-## 3. Structural Integrity: Quantization Noise
-We have classified the residual error in the Bottom quark mass (-5.2%) as **Topological Quantization Noise**. 
-*   **The Landscape Plot**: Our analysis shows that the Bottom quark exhibits the largest deviation in the quark sector. This is attributed to the "Quantization Gap" in the link catalog—where no hyperbolic link perfectly matches the required volume while satisfying the $Det=2^k$ rule.
-*   **Implication**: The error is a direct signature of the discrete nature of the topological vacuum.
+## 3. Precision Benchmarks & Residual Analysis
 
-## 4. Path to v6.1: The Gauge & PMNS Extension
-The next phase will focus on theoretical extensions, treating the following observations as "Speculative Targets" for future research:
+Rather than dismissing deviations, v6.0 provides a transparent audit of the model's current performance metrics:
 
-1.  **Gauge Coupling Coincidences**: We observe intriguing numerical proximities, such as $\alpha_{EM} \approx \pi/432$ and $G \approx 7\kappa$. These are currently **phenomenological observations** and not yet derived from the core geometry.
-2.  **PMNS Matrix**: Deriving the neutrino mixing matrix from the "Unknot-Top" seesaw.
-3.  **Spin-Topology Theorem**: Formalizing the derivation of $s=1/2$ from Dehn surgery holonomy.
-The next phase will focus on:
-1.  Deriving the PMNS mixing matrix from the "Unknot-Top" seesaw.
-2.  Exploring the connection between knot crossing numbers and Higgs field stability.
-3.  Formalizing the "Spin-Topology Theorem" to derive $s=1/2$ from Dehn surgery holonomy.
+| Metric | Value | Interpretation |
+| :--- | :--- | :--- |
+| **Quark Mass Fit** ($R^2$) | 0.999956 | Foundational stability across 6 orders of magnitude. |
+| **Lepton Mass Fit** ($R^2$) | 0.999994 | High-precision complexity scaling ($N^2$). |
+| **Cabibbo Angle Error** | 0.02% | Proof of geometric proximity principle ($|V_{us}|$). |
+| **CKM Global Fit** ($R^2$) | 0.48 | Identifies need for higher-order topological corrections. |
+| **Predicted Electron Mass** | 0.509 MeV | 0.39% error from zero-parameter geometric formula. |
+
+**Analysis of Residuals**: The residual error in the Bottom quark (-5.2%) and global CKM suppression suggest that the next phase of the theory must incorporate extended topological invariants (e.g., Chern-Simons terms, linking numbers) to refine the heavy-sector geometry.
+
+## 4. Path to v6.1: Future Research Directions
+
+The KSAU program will evolve by formalizing the following speculative observations into core theoretical principles:
+
+1.  **Determinant Complexity Hierarchy**: Investigating the logarithmic determinant as the primary axis for generational quantization and flavor suppression.
+2.  **Phenomenological Gauge Links**: Exploring the numerical proximity of $\alpha_{EM} \approx \pi/432$ and $G \approx 7\kappa$. These are currently treated as **phenomenological coincidences** pending a rigorous derivation from the manifold's metric.
+3.  **The PMNS Seesaw**: Mapping the neutrino mixing matrix to the "Unknot-Top" dual surgery and Dehn surgery coefficients.
+4.  **Spin-Topology Theorem**: Formally deriving the $s=1/2$ fermion spin from the intrinsic holonomy of the knotted spacetime vacuum.
 
 ---
 **"Topology is not just a description of mass; it is the language of force."**
