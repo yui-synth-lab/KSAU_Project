@@ -20,5 +20,15 @@
   },
   "cp_violation": {
     "jarlskog_J": 3.0e-5
+  },
+  "neutrino": {
+    "dm2_21": 7.42e-5,
+    "dm2_31_NO": 0.002514,
+    "dm2_32_IO": -0.002498,
+    "ksau_prediction_sum_meV": 55.2,
+    "ksau_prediction_m1_meV": 0.040,
+    "ksau_prediction_m2_meV": 8.05,
+    "ksau_prediction_m3_meV": 47.1,
+    "note": "KSAU v6.0 Corrected (Feb 8, 2026). Previous incorrect value was 59 meV."
   }
 }
