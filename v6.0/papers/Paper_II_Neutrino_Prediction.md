@@ -1,9 +1,9 @@
 # Paper II: Geometric Prediction of Absolute Neutrino Masses
-**Status:** Draft (Follow-up)
+**Status:** Draft (Verified)
 **Focus:** Neutrino Hierarchy, Absolute Mass Scale, Normal Ordering
 
 ## Abstract
-While the fundamental mass generation for charged fermions is robustly described by the Universal Geometric Mass Formula (KSAU Paper I), the neutrino sector allows for multiple geometric interpretations due to its extremely low energy scale. This paper explores a **phenomenological alternative** within the KSAU framework: a geometric ansatz where neutrino masses scale with a **Crossing Complexity Ratio** $\lambda = \frac{9\pi}{16}$. This constant, derived from the ratio of spatial to spacetime dimensions ($3^2/4^2 \times \pi$), suggests a dimensional duality in the neutrino sector. We demonstrate that this specific realization provides a high-resolution fit to neutrino oscillation data, favoring a **Normal Ordering (NO)** hierarchy with $\sum m_\nu \approx 0.059$ eV. This should be viewed not as a unique necessity of KSAU, but as a compelling geometric candidate for the neutrino sector.
+While the fundamental mass generation for charged fermions is robustly described by the Universal Geometric Mass Formula (KSAU Paper I), the neutrino sector allows for multiple geometric interpretations due to its extremely low energy scale. This paper explores a **phenomenological alternative** within the KSAU framework: a geometric ansatz where neutrino masses scale with a **Crossing Complexity Ratio** $\lambda = \frac{9\pi}{16}$. This constant, derived from the ratio of spatial to spacetime dimensions ($3^2/4^2 \times \pi$), suggests a dimensional duality in the neutrino sector. We demonstrate that this specific realization provides a high-resolution fit to neutrino oscillation data, favoring a **Normal Ordering (NO)** hierarchy with $\sum m_\nu \approx 59.1$ meV. This should be viewed not as a unique necessity of KSAU, but as a compelling geometric candidate for the neutrino sector.
 
 ## 1. Introduction
 *   The absolute mass scale of neutrinos remains one of the last frontiers in the Standard Model.
@@ -51,9 +51,9 @@ $$ m_2^2 - m_1^2 = \mu_0^2 \left( e^{2\lambda \cdot 6} - e^{2\lambda \cdot 3} \r
 
 This yields:
 
-* $\mu_0 \approx 2.0 \times 10^{-7}$ eV = 0.0002 meV (Base Scale)
+* $\mu_0 \approx 2.14 \times 10^{-7}$ eV (Base Scale)
 
-**Note:** The base scale $\mu_0$ is determined uniquely by the oscillation data once $\lambda$ is fixed. There are no additional free parameters.
+**Note:** The base scale $\mu_0$ is determined uniquely by the oscillation data once $\lambda$ is fixed.
 
 ### 3.2 Predicted Masses
 
@@ -63,14 +63,14 @@ This yields:
 
 ### 3.3 Implications
 *   **Hierarchy:** Normal Ordering is geometrically mandated (monotonic scaling with $N$).
-*   **Cosmology:** $\sum m_\nu \approx 0.059$ eV.
+*   **Cosmology:** $\sum m_\nu \approx 59.1$ meV.
     *   Compatible with Planck 2018 limit ($\sum < 0.12$ eV).
     *   Predicts minimal suppression of structure formation.
 *   **Beta Decay:** $m_\beta \approx m_1 \approx 0.04$ meV (Well below KATRIN limit).
 
 ## 4. Conclusion
 *   KSAU theory provides a rigid prediction for neutrino masses without free parameters (once oscillation data is input).
-*   The prediction of Normal Ordering and a specific mass sum ($\sim 60$ meV) serves as a falsifiable test of the topological mass generation hypothesis.
+*   The prediction of Normal Ordering and a specific mass sum ($\sim 59$ meV) serves as a falsifiable test of the topological mass generation hypothesis.
 
 ## References
 
