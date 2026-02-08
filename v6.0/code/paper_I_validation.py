@@ -16,7 +16,8 @@ def validate_paper_i():
         return
 
     kappa = ksau_config.KAPPA
-    bq = ksau_config.BQ_DEFAULT
+    # bq = ksau_config.BQ_DEFAULT  <-- OLD
+    bq = -(7 + 7 * kappa)        # <-- NEW Geometric Definition
     
     # 2. Quark Analysis
     quarks = ['Up', 'Down', 'Strange', 'Charm', 'Bottom', 'Top']
@@ -48,12 +49,16 @@ def validate_paper_i():
     l_obs = []
     l_pred = []
     
-    # Calibration for Leptons (Same as v5.0 logic for consistency)
+    # Calibration for Leptons (Parameter-Free)
     gamma_l = (14/9) * kappa
-    # Electron (N=3) is the reference for Cl
-    cl = np.log(0.511) - gamma_l * 9 
+    
+    # NEW GEOMETRIC CONSTANT for Cl
+    # Cl = kappa - (7/3)*(1 + kappa)
+    # This removes the dependency on Electron mass anchor.
+    cl = kappa - (7/3) * (1 + kappa)
     
     print(f"\n[SECTION 2: CHARGED LEPTON MASSES]")
+    print(f"Formula: ln(m) = (14/9)k N^2 + Twist + (k - 7/3(1+k))")
     print(f"{'Particle':<10} | {'N^2':<5} | {'Twist':<6} | {'Obs (MeV)':<10} | {'Pred (MeV)':<10} | {'Error (%)':<8}")
     print("-" * 90)
     
