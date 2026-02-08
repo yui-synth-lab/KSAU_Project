@@ -22,7 +22,7 @@ We present a geometric mass generation mechanism where the masses of Standard Mo
 
 The quark mass spectrum is described by the **Universal Geometric Mass Formula (Quark Sector)**:
 
-$$ \ln(m_q/	ext{MeV}) = 10\kappa V + \kappa \mathcal{T} - 7(1 + \kappa) $$
+$$ \ln(m_q/\text{MeV}) = 10\kappa V + \kappa \mathcal{T} - 7(1 + \kappa) $$
 
 Here, the intercept $B_q = -7(1 + \kappa)$ is no longer a free fitting parameter but a derived geometric constant. The integer 7 likely reflects the compactified dimensionality ($10D - 3D = 7D$) or the specific Euler characteristic of the embedding space.
 
@@ -33,7 +33,7 @@ Here, the intercept $B_q = -7(1 + \kappa)$ is no longer a free fitting parameter
 
 The charged lepton mass spectrum is described by the **Universal Geometric Mass Formula (Lepton Sector)**:
 
-$$ \ln(m_l/	ext{MeV}) = \frac{14}{9}\kappa N^2 + \delta_{twist} + \left[ \kappa - \frac{7}{3}(1 + \kappa) \right] $$
+$$ \ln(m_l/\text{MeV}) = \frac{14}{9}\kappa N^2 + \delta_{twist} + \left[ \kappa - \frac{7}{3}(1 + \kappa) \right] $$
 
 Remarkably, the intercept term is derived purely from geometric constants, combining the bulk dimensionality (7), lepton dimensionality (3), and the quantum coupling $\kappa$. This removes the electron mass as an input parameter.
 
