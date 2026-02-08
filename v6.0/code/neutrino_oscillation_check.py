@@ -10,8 +10,9 @@ def check_neutrino_oscillation():
     dm2_32_IO = -2.498e-3 # eV^2 (Inverted Ordering)
     
     # 2. KSAU Prediction Input
-    # v6.0 Prediction: Sum(m_nu) approx 0.12 eV
-    SUM_KSAU = 0.12
+    # v6.0 Prediction (CORRECTED Feb 8, 2026): Sum(m_nu) approx 55.2 meV = 0.0552 eV
+    # Previous incorrect value was 0.12 eV
+    SUM_KSAU = 0.0552
     
     print("="*80)
     print("KSAU v6.0: Neutrino Oscillation Consistency Check")
@@ -122,10 +123,10 @@ def check_neutrino_oscillation():
     # it STRONGLY favors Normal Ordering.
     
     print("Conclusion:")
-    print("1. KSAU's predicted scale (0.12 eV) is compatible with BOTH orderings.")
+    print(f"1. KSAU's predicted scale ({SUM_KSAU} eV = {SUM_KSAU*1000:.1f} meV) is compatible with BOTH orderings.")
     print("   However, the Geometric Hierarchy Principle (Mass ~ Complexity)")
     print("   decisively favors **Normal Ordering**.")
-    print(f"   Predicted lightest neutrino mass: ~{best_m1_no*1000:.1f} meV.")
+    print(f"   Predicted lightest neutrino mass: ~{best_m1_no*1000:.2f} meV.")
     print("="*80)
 
 if __name__ == "__main__":

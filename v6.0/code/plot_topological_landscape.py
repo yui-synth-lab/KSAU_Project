@@ -5,9 +5,10 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 
 def generate_landscape_plot():
+
     # Load v5.0 data
-    json_path = Path('v5.0/data/topology_assignments.json')
-    with open(json_path, 'r') as f:
+    v6_data_path = Path(__file__).parent.parent / 'data' / 'topology_assignments.json'
+    with open(v6_data_path, 'r') as f:
         data = json.load(f)
     
     kappa = np.pi / 24
