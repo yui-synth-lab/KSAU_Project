@@ -1,11 +1,14 @@
 import numpy as np
+import ksau_config
 
 def check_neutrino_oscillation():
     # ---------------------------------------------------------
-    # 1. Experimental Data (NuFIT 5.2 / PDG)
+    # 1. Experimental Data (Load from config)
     # ---------------------------------------------------------
-    dm2_21_exp = 7.42e-5  # eV^2
-    dm2_31_exp = 2.514e-3 # eV^2 (Normal Ordering)
+    phys = ksau_config.load_physical_constants()
+    osc = phys['neutrinos']['oscillation']
+    dm2_21_exp = osc['dm2_21_exp']
+    dm2_31_exp = osc['dm2_31_exp']
     
     # ---------------------------------------------------------
     # 2. KSAU Theoretical Prediction (Geometric Scaling)

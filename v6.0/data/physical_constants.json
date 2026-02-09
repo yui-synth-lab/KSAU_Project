@@ -1,12 +1,16 @@
 {
   "kappa": 0.1308996938995747,
   "pi": 3.141592653589793,
-  "G": 0.915965594177219,
+  "G_catalan": 0.915965594177219,
+  "v_borromean": 7.327724753,
   "alpha_s": 0.118,
   "alpha_em": 0.0072973525693,
   "couplings": {
     "alpha_em_0": 0.0072722052,
-    "sin2theta_w_geometric": 0.23198
+    "sin2theta_w_geometric": 0.23198,
+    "sin2theta_w": 0.23122,
+    "alpha_s_mz": 0.118,
+    "catalan_G": 0.915965
   },
   "g_minus_2": {
     "a_e_exp": 0.00115965218128,
@@ -16,38 +20,64 @@
   "sin2theta_w": 0.23122,
   "higgs_vev_gev": 246.22,
   "quarks": {
-    "Up": { "det": 20, "comp": 2, "mass_mev": 2.16, "gen": 1 },
-    "Charm": { "det": 12, "comp": 2, "mass_mev": 1270.0, "gen": 2 },
-    "Top": { "det": 124, "comp": 2, "mass_mev": 172760.0, "gen": 3 },
-    "Down": { "det": 16, "comp": 3, "mass_mev": 4.67, "gen": 1 },
-    "Strange": { "det": 32, "comp": 3, "mass_mev": 93.4, "gen": 2 },
-    "Bottom": { "det": 64, "comp": 3, "mass_mev": 4180.0, "gen": 3 }
+    "Up": { "observed_mass": 2.16, "generation": 1, "charge_type": "up-type" },
+    "Charm": { "observed_mass": 1270.0, "generation": 2, "charge_type": "up-type" },
+    "Top": { "observed_mass": 172760.0, "generation": 3, "charge_type": "up-type" },
+    "Down": { "observed_mass": 4.67, "generation": 1, "charge_type": "down-type" },
+    "Strange": { "observed_mass": 93.4, "generation": 2, "charge_type": "down-type" },
+    "Bottom": { "observed_mass": 4180.0, "generation": 3, "charge_type": "down-type" }
   },
   "leptons": {
-    "Electron": { "mass_mev": 0.511, "n": 3, "gen": 1 },
-    "Muon": { "mass_mev": 105.66, "n": 6, "gen": 2 },
-    "Tau": { "mass_mev": 1776.86, "n": 7, "gen": 3 }
+    "Electron": { "observed_mass": 0.511, "generation": 1, "charge_type": "lepton" },
+    "Muon": { "observed_mass": 105.66, "generation": 2, "charge_type": "lepton" },
+    "Tau": { "observed_mass": 1776.86, "generation": 3, "charge_type": "lepton" }
+  },
+  "neutrinos": {
+    "oscillation": {
+      "dm2_21_exp": 7.42e-5,
+      "dm2_31_exp": 2.514e-3
+    }
+  },
+  "top_helicity_sm": {
+    "F0": 0.687,
+    "FL": 0.311,
+    "FR": 0.0017,
+    "error_sm": 0.005
+  },
+  "bosons": {
+    "scaling": { "A": 0.39256, "C": 5.5414 },
+    "W": { "observed_mass": 80377.0, "charge_type": "boson" },
+    "Z": { "observed_mass": 91187.0, "charge_type": "boson" },
+    "Higgs": { "observed_mass": 125100.0, "charge_type": "boson", "mass_gev_obs": 125.25 }
   },
   "ckm": {
     "matrix": [
       [0.9743, 0.2253, 0.0036],
-      [0.2252, 0.9734, 0.041],
-      [0.0086, 0.04, 0.9991]
-    ],
-    "wolfenstein": {
-      "lambda": 0.225,
-      "A": 0.811,
-      "rho": 0.156,
-      "eta": 0.35
-    }
+      [0.2252, 0.9734, 0.0410],
+      [0.0086, 0.0405, 0.9991]
+    ]
   },
-  "neutrino": {
-    "dm2_21": 7.42e-5,
-    "dm2_31_NO": 0.002514,
-    "dm2_32_IO": -0.002498,
-    "ksau_prediction_sum_meV": 59.08,
-    "ksau_prediction_m1_meV": 0.043,
-    "ksau_prediction_m2_meV": 8.61,
-    "ksau_prediction_m3_meV": 50.43
+  "cp_violation": {
+    "jarlskog_J": 3.08e-5
+  },
+  "gravity": {
+    "G_newton_exp": 6.708e-39,
+    "G_ksau": 6.7135e-39,
+    "v_planck_factor": 6.0,
+    "k_c": 1.253314137,
+    "delta": 0.032724923,
+    "error_percent": 0.0815
+  },
+  "dimensions": {
+    "bulk_total": 10,
+    "bulk_compact": 7,
+    "boundary_projection": 9,
+    "time": 1
+  },
+  "topology_bases": {
+    "quark_components": 10,  
+    "lepton_components": 2,  
+    "boson_components": 3,  
+    "gravity_components": 6  
   }
 }

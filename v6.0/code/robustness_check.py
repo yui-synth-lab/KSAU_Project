@@ -14,6 +14,10 @@ def robustness_test():
     # Extract mass and invariants
     particles = []
     for name, info in data.items():
+        # Only process fermions for robustness mass fit
+        if info['charge_type'] == 'boson':
+            continue
+            
         particles.append({
             'name': name,
             'obs': info['observed_mass'],
@@ -36,10 +40,10 @@ def robustness_test():
         errors = []
         
         # Lepton Cl (fixed by electron at nominal or perturbed?)
-        # For robustness, we re-fix Cl for each k to see if the SHAPE holds.
         gamma_l = (14/9) * k
-        # Electron: obs=0.511, N=3 -> N^2=9, twist_corr=0
-        cl = np.log(0.511) - gamma_l * (3**2)
+        # Electron: load obs mass from config, N=3 -> N^2=9
+        m_e = ksau_config.load_physical_constants()['leptons']['Electron']['mass_mev']
+        cl = np.log(m_e) - gamma_l * (3**2)
         
         for p in particles:
             if p['type'] == 'lepton':

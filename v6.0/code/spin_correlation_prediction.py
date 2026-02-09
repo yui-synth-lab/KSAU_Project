@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import pandas as pd
+import ksau_config
 from pathlib import Path
 
 def predict_top_spin_data_driven():
@@ -16,19 +17,26 @@ def predict_top_spin_data_driven():
     vol_top = float(top_row['volume'])
     comp_top = int(top_row['components'])
     
-    # 2. SM Values
-    F0_SM = 0.687
-    FL_SM = 0.311
-    FR_SM = 0.0017
-    ERR_SM = 0.005 
+    # 2. SM Values (Load from config)
+    phys = ksau_config.load_physical_constants()
+    sm = phys['top_helicity_sm']
+    F0_SM = sm['F0']
+    FL_SM = sm['FL']
+    FR_SM = sm['FR']
+    ERR_SM = sm['error_sm'] 
 
     # 3. KSAU Prediction
     # Twist calculation: (2 - Gen) * (-1)^Comp
     gen_top = 3
+    topo = ksau_config.load_topology_assignments()
+    comp_top = topo['Top']['components']
+    
     twist = (2 - gen_top) * ((-1)**comp_top)
     twist_magnitude = abs(twist)
     
-    delta_FR = (KAPPA ** 2) * twist_magnitude
+    # KSAU Prediction: Anomaly ~ alpha_geom / 10
+    ALPHA_GEOM = ksau_config.ALPHA_GEOM
+    delta_FR = (ALPHA_GEOM / 10) * twist_magnitude
     
     FR_KSAU = FR_SM + delta_FR
     norm = (F0_SM + FL_SM)
@@ -42,7 +50,7 @@ def predict_top_spin_data_driven():
     print(f"Hyperbolic Volume (Data) : {vol_top:.5f}")
     print(f"Components (Data)        : {comp_top}")
     print(f"Calculated Twist         : {twist}")
-    print(f"Predicted Anomaly        : +{delta_FR:.5f} (kappa^2)")
+    print(f"Predicted Anomaly        : +{delta_FR:.5f} (alpha_geom/10)")
     print("-"*70)
     print(f"{'Helicity':<10} | {'SM Prediction':<15} | {'KSAU Prediction':<15} | {'Deviation':<10}")
     print("-"*70)
