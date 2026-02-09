@@ -1,8 +1,11 @@
 import numpy as np
+import ksau_config
 
 def search_cl():
-    kappa = np.pi / 24
-    cl_target = np.log(0.511) - 14 * kappa 
+    phys = ksau_config.load_physical_constants()
+    kappa = ksau_config.KAPPA
+    m_e = phys['leptons']['Electron']['mass_mev']
+    cl_target = np.log(m_e) - 14 * kappa 
     print(f"Target Cl: {cl_target:.6f}")
     print("-" * 50)
 

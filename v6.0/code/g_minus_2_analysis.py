@@ -8,7 +8,7 @@ import ksau_config
 def analyze_g2_data_driven():
     # 1. Load physical constants from config
     phys = ksau_config.load_physical_constants()
-    ALPHA_GEOM = phys['couplings']['alpha_em_0']  # More accurate than pi/432
+    ALPHA_GEOM = ksau_config.ALPHA_GEOM
     A_BASE = 1.0 / 864.0
 
     csv_knot = ksau_config.load_knotinfo_path()

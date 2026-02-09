@@ -10,20 +10,24 @@ def validate_paper_i():
     try:
         topo = ksau_config.load_topology_assignments()
         phys = ksau_config.load_physical_constants()
+        coeffs = ksau_config.get_kappa_coeffs()
     except Exception as e:
         print(f"Error loading data: {e}")
         return
 
     kappa = ksau_config.KAPPA
-    bq = ksau_config.BQ_DEFAULT
-    cl = ksau_config.CL_DEFAULT
-    gamma_l = ksau_config.LEPTON_GAMMA
+    
+    # Slopes and Intercepts derived from Dimensions and Bases
+    slope_q = coeffs['quark_vol_coeff']
+    bq = coeffs['quark_intercept']
+    slope_l = coeffs['lepton_n2_coeff']
+    cl = coeffs['lepton_intercept']
     
     # --- SECTION 1: QUARK MASSES (Bulk Volume Law) ---
     quarks = ['Up', 'Down', 'Strange', 'Charm', 'Bottom', 'Top']
     q_obs, q_pred = [], []
     
-    print(f"\n[SECTION 1: QUARK MASSES (Bulk Volume Law: 10kV)]")
+    print(f"\n[SECTION 1: QUARK MASSES (Bulk Volume Law: {slope_q/kappa:.0f}kV)]")
     print(f"{'Particle':<10} | {'Topology':<12} | {'Obs (MeV)':<10} | {'Pred (MeV)':<10} | {'Error (%)':<8}")
     print("-" * 90)
     
@@ -32,8 +36,8 @@ def validate_paper_i():
         obs = data['observed_mass']
         twist = (2 - data['generation']) * ((-1) ** data['components'])
         
-        # ln(m) = 10k*V + k*T + Bq
-        log_pred = 10 * kappa * data['volume'] + kappa * twist + bq
+        # ln(m) = Slope_q * V + k*T + Bq
+        log_pred = slope_q * data['volume'] + kappa * twist + bq
         pred = np.exp(log_pred)
         
         err = (pred - obs) / obs * 100
@@ -59,8 +63,8 @@ def validate_paper_i():
         n2 = n**2
         twist_corr = -1/6 if n == 6 else 0
         
-        # ln(m) = (14/9)k*N^2 + Twist + Cl
-        log_pred = gamma_l * n2 + twist_corr + cl
+        # ln(m) = Slope_l * N^2 + Twist + Cl
+        log_pred = slope_l * n2 + twist_corr + cl
         pred = np.exp(log_pred)
         
         err = (pred - obs) / obs * 100

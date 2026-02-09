@@ -1,12 +1,14 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+import ksau_config
 
 def analyze_higgs_proton():
     # Constants
-    KAPPA = np.pi / 24
-    M_TOP_OBS = 172.76 # GeV (Particle Data Group)
-    M_HIGGS_OBS = 125.25 # GeV (CMS/ATLAS Run 2)
+    phys = ksau_config.load_physical_constants()
+    KAPPA = ksau_config.KAPPA
+    M_TOP_OBS = phys['quarks']['Top']['observed_mass'] / 1000.0 # GeV
+    M_HIGGS_OBS = phys['bosons']['Higgs']['mass_gev_obs'] # GeV
     
     print("="*80)
     print("KSAU v6.0: Higgs Mass & Proton Stability Analysis")
