@@ -3,12 +3,11 @@
 **Focus:** Neutrino Hierarchy, Absolute Mass Scale, Normal Ordering
 
 ## Abstract
-While the fundamental mass generation for charged fermions is robustly described by the Universal Geometric Mass Formula (KSAU Paper I), the neutrino sector allows for multiple geometric interpretations due to its extremely low energy scale. This paper explores a **phenomenological alternative** within the KSAU framework: a geometric ansatz where neutrino masses scale with a **Crossing Complexity Ratio** $\lambda = \frac{9\pi}{16}$. This constant, derived from the ratio of spatial to spacetime dimensions ($3^2/4^2 \times \pi$), suggests a dimensional duality in the neutrino sector. We demonstrate that this specific realization provides a high-resolution fit to neutrino oscillation data, favoring a **Normal Ordering (NO)** hierarchy with $\sum m_\nu \approx 59.1$ meV. This should be viewed not as a unique necessity of KSAU, but as a compelling geometric candidate for the neutrino sector.
+While the mass generation for bulk-coupled fermions (quarks) is driven by hyperbolic volume, the lepton sector resides on the topological boundary. This paper explores a **phenomenological realization** of the neutrino sector within the KSAU **Holographic Dual Model**. We propose that neutrino masses scale with the boundary holonomy ratio $\lambda = \frac{9\pi}{16}$, derived from the spatial-to-spacetime dimensional transition ($3^2/4^2 \times \pi$). We demonstrate that this specific realization provides a high-resolution fit to neutrino oscillation data, favoring a **Normal Ordering (NO)** hierarchy with $\sum m_\nu \approx 59.1$ meV.
 
 ## 1. Introduction
 *   The absolute mass scale of neutrinos remains one of the last frontiers in the Standard Model.
-*   In KSAU Paper I, a baseline expectation for neutrinos was established via the "Topological See-Saw" (Neutrino as Unknot/Dual surgery).
-*   However, the richness of the KSAU vacuum allows for **alternative realizations** of mass hierarchy.
+*   In the KSAU Holographic Dual Model, leptons exist as **Boundary States** whose mass depends on boundary complexity and holonomy.
 *   This paper explores a specific **Geometric Ansatz**: $m \propto \exp(\lambda N)$ where $\lambda = \frac{27}{2}\kappa = \frac{9\pi}{16}$.
 
 ### 1.1 The Origin of $\lambda = \frac{9\pi}{16}$
@@ -17,13 +16,10 @@ The neutrino scaling constant emerges from the master constant $\kappa = \pi/24$
 
 $$ \lambda = \frac{27}{2} \kappa = \frac{27}{2} \cdot \frac{\pi}{24} = \frac{27\pi}{48} = \frac{9\pi}{16} \approx 1.7671 $$
 
-This can be understood as:
-
-* The factor $\frac{27}{2} = \frac{3^3}{2}$ reflects the **3D bulk-volume duality** of neutrino mass generation (see Unified Field Report Table).
-* The appearance of $3^3$ (numerator) contrasts with the charged lepton coefficient $\frac{14}{9} = \frac{14}{3^2}$ (denominator), revealing a fundamental dimensional transition:
-  * **Charged Leptons:** Mass from surface-bound complexity ($N^2$, 2D).
-  * **Neutrinos:** Mass from bulk-volume holonomy ($N$, 3D).
-* The factor $9\pi/16$ can also be interpreted geometrically as the ratio of spatial topology ($3^2=9$) to spacetime manifold dimensions ($4^2=16$), weighted by $\pi$.
+This represents the **dimensional transition** in the boundary sector:
+-   **Charged Leptons (Surface):** Coupled to $N^2$ (2D complexity).
+-   **Neutrinos (Linear):** Coupled to $N$ (1D holonomy).
+The factor $9\pi/16$ represents the projection of the 3D spatial topology ($3^2=9$) onto the 4D spacetime manifold ($4^2=16$), weighted by the vacuum phase $\pi$.
 
 ## 2. Theoretical Model
 ### 2.1 The Geometric Duality
