@@ -88,9 +88,12 @@ def search_dark_matter_csv():
             ax.annotate(display_pool.iloc[i]['name'], (dm_vols[i], dm_masses[i]), 
                         xytext=(5, 5), textcoords='offset points', fontsize=9)
 
-    # SM Quarks for Scale (Approximate for viz)
+    # SM Quarks for Scale (Load from config)
+    phys = ksau_config.load_physical_constants()
+    quarks = ['Up', 'Down', 'Strange', 'Charm', 'Bottom', 'Top']
+    sm_masses = [phys['quarks'][q]['mass_mev'] / 1000.0 for q in quarks]
+    # For visualization, approximate volumes are used
     sm_vols = [6.55, 7.33, 9.53, 11.52, 12.28, 15.36]
-    sm_masses = [0.0022, 0.0047, 0.093, 1.27, 4.18, 172.76]
     ax.scatter(sm_vols, sm_masses, s=100, c='red', marker='s', label='SM Quarks')
 
     ax.set_yscale('log')
