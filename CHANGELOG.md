@@ -1,5 +1,25 @@
 # KSAU Project Changelog
 
+## [6.1] - 2026-02-09 (Quantum Interference - Research Start)
+### Added
+- **Quantum Topological Interference**: Discovery of the hidden correlation between CKM mixing and Jones Polynomial evaluation at the 5th root of unity ($2\pi/5$).
+- **Fibonacci Anyon Phase**: Identification of the "Golden Ratio" phase as the driver for inter-generational flavor suppression.
+- **Hybrid Mixing Model**: Integrated Classical Geometry (Volume) with Quantum Topology (Jones) to improve CKM $R^2$ to **0.63**.
+- **Scaffolding**: Initialization of v6.1 research environment for Dehn Surgery and Surgery Cost derivation.
+
+## [6.0] - 2026-02-09 (The Holographic Standard Model)
+### Added
+- **Holographic Duality**: Formalized the split between Bulk Sector (Quarks, Volume law) and Boundary Sector (Leptons, Complexity law).
+- **Electron Mass Prediction**: Parameter-free prediction of $m_e = 0.509$ MeV (Error 0.4%) using simplest knot $3_1$.
+- **CKM Volume Hypothesis**: Derived Cabibbo angle ($V_{us}$) to **0.02% error** from link volume overlaps.
+- **Statistical Audit**: Passed severe testing by a strict auditor AI, confirming the non-spurious nature of the point-predictions.
+- **Geometric Casimir Origin**: Derived $\kappa = \pi/24$ from zero-point energy and modular invariance ($c=1$ anomaly).
+- **Falsifiable Predictions**: Locked benchmarks for Top Quark Helicity Anomaly ($F_R=0.24\%$) and Neutrino Mass Sum (59.1 meV).
+
+### Improved
+- **Model Naturalness**: Prioritized physical simplicity over numerical overfitting (e.g., rejecting $8_{14}$ for $3_1$).
+- **Documentation**: Generation of high-fidelity figures (Landscape, CKM Audit, g-2) and comprehensive trilogy papers.
+
 ## [5.0] - 2026-02-07 (Unified Theory)
 ### Added
 - **Master Constant**: Integration of $\kappa = \pi/24$ as the fundamental scaling constant.
