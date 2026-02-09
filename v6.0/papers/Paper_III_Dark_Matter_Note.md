@@ -3,7 +3,7 @@
 **Focus:** Dark Matter Candidates, Topologically Neutral Knots (Det=1)
 
 ## Abstract
-In the KSAU topological framework, fundamental particles are identified with knot and link complements in a 3-manifold. We observe that "Topologically Neutral" knots—defined by a link determinant of unity ($\Delta(-1) = 1$)—possess unique geometric properties: they carry zero electric charge coupling and are topologically stable. We propose that these neutral knots constitute the dark matter sector. A survey of the knot census reveals a multi-component dark matter spectrum, including a "Warm" candidate at $\sim 15$ keV and "WIMP-like" candidates in the $1-10$ GeV range.
+In the KSAU **Holographic Dual Model**, fundamental particles are identified with topological vacuum defects (knot and link complements). While visible matter is coupled to bulk volume (quarks) or boundary complexity (leptons), we observe that "Topologically Neutral" knots—defined by a link determinant of unity ($\text{Det} = 1$)—possess unique geometric properties: they carry zero electric charge coupling and are topologically stable. We propose that these neutral knots constitute the dark matter sector. A survey of the knot census reveals a multi-component dark matter spectrum, including a "Warm" candidate at $\sim 15$ keV and "WIMP-like" candidates in the $1-10$ GeV range.
 
 ## 1. Introduction
 *   The nature of Dark Matter and the lack of WIMP detection.
