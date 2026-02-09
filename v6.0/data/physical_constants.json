@@ -4,8 +4,30 @@
   "G": 0.915965594177219,
   "alpha_s": 0.118,
   "alpha_em": 0.0072973525693,
+  "couplings": {
+    "alpha_em_0": 0.0072722052,
+    "sin2theta_w_geometric": 0.23198
+  },
+  "g_minus_2": {
+    "a_e_exp": 0.00115965218128,
+    "a_mu_exp": 0.00116592061,
+    "a_tau_exp": 0.00117721
+  },
   "sin2theta_w": 0.23122,
   "higgs_vev_gev": 246.22,
+  "quarks": {
+    "Up": { "det": 20, "comp": 2, "mass_mev": 2.16, "gen": 1 },
+    "Charm": { "det": 12, "comp": 2, "mass_mev": 1270.0, "gen": 2 },
+    "Top": { "det": 124, "comp": 2, "mass_mev": 172760.0, "gen": 3 },
+    "Down": { "det": 16, "comp": 3, "mass_mev": 4.67, "gen": 1 },
+    "Strange": { "det": 32, "comp": 3, "mass_mev": 93.4, "gen": 2 },
+    "Bottom": { "det": 64, "comp": 3, "mass_mev": 4180.0, "gen": 3 }
+  },
+  "leptons": {
+    "Electron": { "mass_mev": 0.511, "n": 3, "gen": 1 },
+    "Muon": { "mass_mev": 105.66, "n": 6, "gen": 2 },
+    "Tau": { "mass_mev": 1776.86, "n": 7, "gen": 3 }
+  },
   "ckm": {
     "matrix": [
       [0.9743, 0.2253, 0.0036],
@@ -26,7 +48,6 @@
     "ksau_prediction_sum_meV": 59.08,
     "ksau_prediction_m1_meV": 0.043,
     "ksau_prediction_m2_meV": 8.61,
-    "ksau_prediction_m3_meV": 50.43,
-    "note": "KSAU v6.0 neutrino mass prediction (Normal Ordering). Exact solution of KSAU scaling law (lambda = 9pi/16) constrained by oscillation data."
+    "ksau_prediction_m3_meV": 50.43
   }
 }
