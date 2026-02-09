@@ -103,19 +103,20 @@ def evolve_theory():
             best_bq_diff = diff
             best_bq_name = name
 
-    # --- Leptons (C_l) ---
-    # Use Electron (N=3) as anchor
-    c_l = np.log(0.511) - (14/9)*kappa * (3**2)
-    print(f"\n  Fitted C_l (Lepton Intercept): {c_l:.4f}")
+        # --- Leptons (C_l) ---
+        # Use Electron (N=3) as anchor
+        m_e = ksau_config.load_physical_constants()['leptons']['Electron']['mass_mev']
+        c_l = np.log(m_e) - (14/9)*kappa * (3**2)
+        print(f"\n  Fitted C_l (Lepton Intercept): {c_l:.4f}")
     
-    l_targets = {
-        "-7 (Simple Integer)": -7.0,
-        "-5 * sqrt(2)": -5 * np.sqrt(2),
-        "ln(alpha_EM)": np.log(1/137.036),
-        "ln(m_pl / m_e) ... no": -100,
-        "-3 * pi": -3 * np.pi
-    }
-    
+        l_targets = {
+            "-7 (Simple Integer)": -7.0,
+            "-5 * sqrt(2)": -5 * np.sqrt(2),
+            "ln(alpha_EM)": np.log(1/137.036),
+            "ln(m_pl / m_e) ... no": -100,
+            "ln(m_electron) - 10": np.log(m_e) - 10,
+            "-3 * pi": -3 * np.pi
+        }    
     best_cl_name = ""
     best_cl_diff = 100
     for name, val in l_targets.items():

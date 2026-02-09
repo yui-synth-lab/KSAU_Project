@@ -18,9 +18,11 @@ def predict_future():
     print("  nu_tau <-> Tau      (N=7)")
     print("-" * 80)
     
-    # Experimental Splittings (NuFIT 5.2, Normal Ordering)
-    dm2_21_exp = 7.42e-5  # eV^2
-    dm2_31_exp = 2.514e-3 # eV^2
+    # Experimental Splittings (Load from config)
+    phys = ksau_config.load_physical_constants()
+    osc = phys['neutrinos']['oscillation']
+    dm2_21_exp = osc['dm2_21_exp']
+    dm2_31_exp = osc['dm2_31_exp']
     
     # Model: m(N) = m0 * exp(lambda * N)
     # m1 = m(3)
