@@ -8,27 +8,22 @@ def run_ckm_analysis():
     print("KSAU v6.1: CKM Quantum Interference Analysis")
     print("="*60)
 
-    # 1. Load Data
+    # 1. Load Data, Metadata and Constants
     _, links = utils_v61.load_data()
+    assignments = utils_v61.load_assignments()
+    consts = utils_v61.load_constants()
     
-    # 2. Define Topologies (v6.0 -> v6.1)
-    # Using 'startswith' to handle component suffixes like {0} or {0,0}
-    quark_map = {
-        "Up": "L8a6",
-        "Down": "L6a4",
-        "Strange": "L10n95",
-        "Charm": "L11n64",
-        "Bottom": "L10a140",
-        "Top": "L11a62"
-    }
-    
+    # 2. Extract Topologies from Central Metadata
+    quark_names = ["Up", "Down", "Strange", "Charm", "Bottom", "Top"]
     quarks = {}
     
     print("Loading Quark Topology Data...")
-    for q_name, topo_name in quark_map.items():
-        # Find row
-        # Note: names in CSV often have {0} or similar.
-        # We look for exact match or startswith if exact fails.
+    for q_name in quark_names:
+        topo_info = assignments.get(q_name)
+        if not topo_info:
+            continue
+            
+        topo_name = topo_info['topology'].split('{')[0] # Get base name
         row = links[links['name'] == topo_name]
         if row.empty:
              row = links[links['name'].str.startswith(topo_name + "{")]
@@ -54,12 +49,15 @@ def run_ckm_analysis():
         }
         print(f"  {q_name:8} | {row['name']:10} | Vol: {vol:.4f} | |J(5)|: {jones_mag:.4f}")
 
-    # 3. CKM Experimental Data (Magnitudes)
-    ckm_exp = {
-        ('Up', 'Down'): 0.9743, ('Up', 'Strange'): 0.2253, ('Up', 'Bottom'): 0.0036,
-        ('Charm', 'Down'): 0.2252, ('Charm', 'Strange'): 0.9734, ('Charm', 'Bottom'): 0.0410,
-        ('Top', 'Down'): 0.0086, ('Top', 'Strange'): 0.0400, ('Top', 'Bottom'): 0.9991
-    }
+    # 3. CKM Experimental Data from Central Constants
+    ckm_matrix = consts['ckm']['matrix']
+    up_types = ["Up", "Charm", "Top"]
+    down_types = ["Down", "Strange", "Bottom"]
+    
+    ckm_exp = {}
+    for i, u in enumerate(up_types):
+        for j, d in enumerate(down_types):
+            ckm_exp[(u, d)] = ckm_matrix[i][j]
 
     # 4. Prepare Regression Data
     # Formula: ln|Vij| = A * dV + B * d|J| + C
