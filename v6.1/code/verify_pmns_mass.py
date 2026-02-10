@@ -7,10 +7,11 @@ def verify_pmns_mass():
     print("KSAU v6.1: PMNS Mass Hierarchy Verification")
     print("="*60)
     
-    # 1. Load Data
+    # 1. Load Data and Constants
     knots, _ = utils_v61.load_data()
+    consts = utils_v61.load_constants()
     
-    # 2. Target Triplet
+    # 2. Target Triplet (Candidates discovered in v6.1)
     triplet_names = ['4_1', '7_2', '8_9']
     
     print("Retrieving Triplet Data...")
@@ -25,15 +26,8 @@ def verify_pmns_mass():
         
     # 3. Define Mass Scaling Law (Paper II)
     # The prompt says: lambda = 9*pi / 16 (~ 1.767)
-    # Assumption: Mass m ~ exp( - lambda * V ) or similar?
-    # Or Delta m^2 ~ ...
-    # KSAU usually implies m ~ exp(kV). 
-    # Let's test the hypothesis: m_i = m_0 * exp( - lambda * V_i ) (Inverted for Boundary?)
-    # Or m_i = m_0 * exp( lambda * V_i )?
-    # Neutrinos are very light, so maybe suppression?
-    # If quarks are exp(+kV), maybe neutrinos are exp(-kV) (Boundary vs Bulk duality).
-    
-    lam = (9 * np.pi) / 16
+    pi_val = consts.get('pi', np.pi)
+    lam = (9 * pi_val) / 16
     print(f"\nScaling Constant lambda = 9pi/16 = {lam:.4f}")
     
     # Let's calculate relative masses assuming m ~ exp(-lam * V)

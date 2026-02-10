@@ -36,6 +36,11 @@
     "oscillation": {
       "dm2_21_exp": 7.42e-5,
       "dm2_31_exp": 2.514e-3
+    },
+    "pmns_angles_deg": {
+      "theta12": 33.4,
+      "theta23": 49.0,
+      "theta13": 8.6
     }
   },
   "top_helicity_sm": {
