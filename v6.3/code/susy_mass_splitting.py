@@ -41,9 +41,9 @@ def calculate_susy_splitting():
     
     # 3. Parameters
     # ln(m) = A*V + B*CS + C
-    G_catalan = consts['G']
-    A = (10/7) * G_catalan 
-    C = -(7 + G_catalan)   
+    kappa = consts['kappa']
+    A = 10 * kappa
+    C = -(7 + 7 * kappa)   
     
     # Hypothesis: B (SUSY Coupling) is related to the "Geometric Phase"
     # Let's use B = 2*pi, as CS is periodic in 2pi^2? 

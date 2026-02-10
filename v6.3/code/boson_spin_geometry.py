@@ -16,18 +16,23 @@ def search_bosons_and_spin():
     consts = utils_v61.load_constants()
     
     # 2. Define Mass Parameters
-    G_catalan = consts['G']
-    A = (10/7) * G_catalan
-    C = -(7 + G_catalan)
+    kappa = consts['kappa']
+    A = 10 * kappa
+    C = -(7 + 7 * kappa)
     
     # 3. Target Boson Volumes
     # W: 80.377 GeV -> 14.681
     # Z: 91.187 GeV -> 14.777
-    # Higgs: 125.1 GeV -> ?
-    mh_mev = 125100.0
+    mw_mev = consts['bosons']['W']['observed_mass']
+    mz_mev = consts['bosons']['Z']['observed_mass']
+    mh_mev = consts['bosons']['Higgs']['observed_mass']
+    
+    vw_target = (np.log(mw_mev) - C) / A
+    vz_target = (np.log(mz_mev) - C) / A
     vh_target = (np.log(mh_mev) - C) / A
-    print(f"Target V_W: 14.681")
-    print(f"Target V_Z: 14.777")
+    
+    print(f"Target V_W: {vw_target:.4f}")
+    print(f"Target V_Z: {vz_target:.4f}")
     print(f"Target V_H: {vh_target:.4f}")
     
     # 4. Search Criterion: Braid Index

@@ -26,10 +26,10 @@ def run_dark_matter_scan():
     print(f"Found {len(candidates)} Det=1 Hyperbolic Knots.")
     
     # 3. Calculate Mass
-    # Formula: ln(m_MeV) = (10/7 * G) * V - (7 + G)
-    G = 0.915965594 # Catalan
-    slope = (10/7) * G
-    intercept = -(7 + G)
+    consts = utils_v61.load_constants()
+    kappa = consts['kappa']
+    slope = 10 * kappa
+    intercept = -(7 + 7 * kappa)
     
     candidates['predicted_mass_MeV'] = np.exp(slope * candidates['volume'] + intercept)
     candidates['predicted_mass_keV'] = candidates['predicted_mass_MeV'] * 1000
