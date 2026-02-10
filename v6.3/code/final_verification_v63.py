@@ -15,14 +15,14 @@ def final_verification_v63():
     knots, links = utils_v61.load_data()
     consts = utils_v61.load_constants()
     
-    # 2. Universal Scaling
-    G_catalan = consts['G']
-    A = (10/7) * G_catalan
-    C = -(7 + G_catalan)
+    # 2. Universal Scaling from config
+    kappa = consts['kappa']
+    A = 10 * kappa
+    C = -(7 + 7 * kappa)
     
     # 3. Z-Boson Verification (Target V ~ 14.78)
     print("\n[1. Z-Boson Search]")
-    mz_target = 91187.6
+    mz_target = consts['bosons']['Z']['observed_mass']
     vz_target = (np.log(mz_target) - C) / A
     print(f"Target V_Z: {vz_target:.4f}")
     
@@ -34,19 +34,15 @@ def final_verification_v63():
     ].sort_values('volume')
     
     print(f"Found {len(z_cands)} 3-component links near Z mass.")
-    # Looking for a "Partner" to L11n387 (W).
-    # L11n387 is Brunnian. Is there a Brunnian link for Z?
-    # L11n387 volume is 14.655.
-    # L11n404 volume? L11n113?
     
-    # Let's check L11n404
-    l11n404 = links[links['name'].str.startswith('L11n404')]
-    if not l11n404.empty:
-        print(f"  Candidate L11n404: Vol={float(l11n404.iloc[0]['volume']):.4f}")
+    # Let's check L11a431 (Official Z)
+    z_official = links[links['name'].str.startswith('L11a431')]
+    if not z_official.empty:
+        print(f"  Official Z (L11a431): Vol={float(z_official.iloc[0]['volume']):.4f}")
         
     # 4. Higgs Verification (Target V ~ 15.02)
     print("\n[2. Higgs Candidate (Spin 0)]")
-    mh_target = 125100.0
+    mh_target = consts['bosons']['Higgs']['observed_mass']
     vh_target = (np.log(mh_target) - C) / A
     print(f"Target V_H: {vh_target:.4f}")
     

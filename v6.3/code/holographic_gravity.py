@@ -19,9 +19,8 @@ def verify_holographic_gravity():
     # Universal Mass Law Parameters from v6.0 data
     # ln(m) = A * V + C
     kappa = consts['kappa']
-    G_catalan = consts['G']
-    A_theo = (10/7) * G_catalan # From v3.4 empirical discovery memory
-    C_theo = -(7 + G_catalan)
+    A_theo = 10 * kappa 
+    C_theo = -(7 + 7 * kappa)
     
     # Combine datasets
     data = pd.concat([knots, links], ignore_index=True)

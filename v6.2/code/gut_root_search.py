@@ -94,10 +94,11 @@ def search_root_link():
     if not row_63.empty:
         vol_63 = float(row_63.iloc[0]['volume'])
         
-        # Mass Formula: ln(m) = 1.3V - 7.9
-        G = 0.915965
-        slope = (10/7) * G
-        intercept = -(7 + G)
+        # Mass Formula from config
+        consts = utils_v61.load_constants()
+        kappa = consts['kappa']
+        slope = 10 * kappa
+        intercept = -(7 + 7 * kappa)
         mass_mev = np.exp(slope * vol_63 + intercept)
         
         print(f"  Knot: 6_3")

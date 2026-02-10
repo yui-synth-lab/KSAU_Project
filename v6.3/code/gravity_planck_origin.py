@@ -2,32 +2,36 @@ import numpy as np
 import sys
 import os
 
+# Add v6.1 code to path for utils_v61
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../v6.1/code'))
+import utils_v61
+
 def derive_planck_scale():
     print("="*60)
     print("KSAU v6.3 Phase 2: Quantum Gravity & Planck Origin")
     print("="*60)
     
-    # 1. Physical Constants
-    m_electron = 0.510998 # MeV
-    m_top = 172760.0 # MeV
-    m_planck = 1.2209e22 # MeV (1.22e19 GeV)
+    # 1. Physical Constants from Config
+    consts = utils_v61.load_constants()
+    m_electron = consts['leptons']['Electron']['observed_mass']
+    m_top = consts['quarks']['Top']['observed_mass']
+    m_planck = consts['gravity']['G_newton_exp']**(-0.5) * 1000.0 # Convert GeV to MeV
     
     print(f"Target Planck Mass: {m_planck:.4e} MeV")
     print(f"Log(M_Planck): {np.log(m_planck):.4f}")
     
     # 2. Geometric Constants
-    v_gieseking = 1.0149416 # Minimal Hyperbolic Volume
-    v_figure8 = 2.0298832  # 4_1 Knot Volume
+    v_gieseking = 1.0149416 
     
     # 3. Extension of Universal Mass Law
-    # ln(m) = A * V + C
-    # From v6.1/v6.2: A = (10/7 * G) ~ 1.3085, C = -(7 + G) ~ -7.9159
-    A = (10/7) * 0.915965594
-    C = -(7 + 0.915965594)
+    kappa = consts['kappa']
+    G = consts['G_catalan']
+    A = 10 * kappa
+    C = -(7 + 7 * kappa)
     
     print(f"\n[Universal Mass Law Parameters]")
-    print(f"  Slope A: {A:.6f}")
-    print(f"  Intercept C: {C:.6f}")
+    print(f"  Slope A (10k): {A:.6f}")
+    print(f"  Intercept C (-(7+7k)): {C:.6f}")
     
     # 4. Calculate Planck Volume V_P
     # 50.858 = 1.3085 * V_P - 7.916
