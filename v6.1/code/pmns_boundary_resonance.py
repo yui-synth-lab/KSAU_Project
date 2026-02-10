@@ -7,18 +7,19 @@ def run_pmns_analysis():
     print("KSAU v6.1: PMNS Boundary Resonance Analysis")
     print("="*60)
     
-    # 1. Load Knots
+    # 1. Load Knots and Constants
     knots, _ = utils_v61.load_data()
+    consts = utils_v61.load_constants()
     
     # Filter for low crossing number to find candidates
     candidates = knots[knots['crossing_number'] <= 9].copy()
     
-    # 2. Define PMNS Target Angles (degrees)
-    # Theta12 ~ 33.4, Theta23 ~ 49.0, Theta13 ~ 8.6
+    # 2. Define PMNS Target Angles (degrees) from Central Constants
+    pmns_data = consts['neutrinos']['pmns_angles_deg']
     targets = {
-        '12': 33.4,
-        '23': 49.0,
-        '13': 8.6
+        '12': pmns_data['theta12'],
+        '23': pmns_data['theta23'],
+        '13': pmns_data['theta13']
     }
     
     # 3. Compute Metrics
