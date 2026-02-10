@@ -44,9 +44,10 @@ def search_axion_knots():
         print(f"Found {len(axion_cands)} Low-Charge (Det < 10), Zero-CS Hyperbolic Knots.")
 
     # 4. Calculate Mass
-    G = 0.915965
-    slope = (10/7) * G
-    intercept = -(7 + G)
+    consts = utils_v61.load_constants()
+    kappa = consts['kappa']
+    slope = 10 * kappa
+    intercept = -(7 + 7 * kappa)
     
     axion_cands['mass_mev'] = np.exp(slope * axion_cands['volume'] + intercept)
     

@@ -30,11 +30,27 @@ def load_constants():
 
 def load_assignments():
     """
-    Loads topology assignments from v6.0/data/topology_assignments.json.
+    Loads topology assignments (unified with physical constants).
     """
+    phys = load_constants()
+    
+    # Base assignments (invariants)
     path = Path(__file__).parent.parent.parent / 'v6.0' / 'data' / 'topology_assignments.json'
     with open(path, 'r') as f:
-        return json.load(f)
+        assignments = json.load(f)
+
+    # Merge physical metadata into assignments
+    for sector in ['quarks', 'leptons', 'bosons']:
+        if sector not in phys: continue
+        for p_name, p_meta in phys[sector].items():
+            if not isinstance(p_meta, dict): continue
+            if p_name in assignments:
+                assignments[p_name].update(p_meta)
+                # Ensure 'sector' key exists for legacy script support
+                if 'sector' not in assignments[p_name]:
+                    assignments[p_name]['sector'] = sector.rstrip('s')
+    
+    return assignments
 
 def parse_polynomial(poly_str, variable='x', val=None):
     """

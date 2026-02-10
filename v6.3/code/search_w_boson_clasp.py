@@ -15,14 +15,13 @@ def search_w_boson_clasp():
     _, links = utils_v61.load_data()
     consts = utils_v61.load_constants()
     
-    # Universal Mass Law Parameters
-    G_catalan = consts['G']
-    A_theo = (10/7) * G_catalan
-    C_theo = -(7 + G_catalan)
+    # Universal Mass Law Parameters (Boson Sector)
+    A_boson = consts['bosons']['scaling']['A']
+    C_boson = consts['bosons']['scaling']['C']
     
     # W Boson Mass (Experimental)
-    mw_mev = 80377.0 # Standard value
-    target_vol = (np.log(mw_mev) - C_theo) / A_theo
+    mw_mev = consts['bosons']['W']['observed_mass']
+    target_vol = (np.log(mw_mev) - C_boson) / A_boson
     print(f"Target Volume for M_W ({mw_mev} MeV): {target_vol:.4f}")
     
     # 2. Filter for 'Clasp' Candidates

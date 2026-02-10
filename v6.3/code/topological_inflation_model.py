@@ -13,17 +13,18 @@ def simulate_topological_inflation():
     
     # 1. Constants
     consts = utils_v61.load_constants()
-    G_catalan = consts['G']
-    A_theo = (10/7) * G_catalan
-    C_theo = -(7 + G_catalan)
+    G_catalan = consts['G_catalan']
+    kappa = consts['kappa']
+    A_theo = 10 * kappa
+    C_theo = -(7 + 7 * kappa)
     
-    # Target Planck Mass (derived in Phase 2)
-    m_planck = 1.2209e22 # MeV
+    # Target Planck Mass (derived from G_N in config)
+    m_planck = consts['gravity']['G_newton_exp']**(-0.5) * 1000.0
     v_planck = (np.log(m_planck) - C_theo) / A_theo
     
     # Gen 1 Volume (Up + Down)
-    m_up = consts['quarks']['Up']['mass_mev']
-    m_down = consts['quarks']['Down']['mass_mev']
+    m_up = consts['quarks']['Up']['observed_mass']
+    m_down = consts['quarks']['Down']['observed_mass']
     v_up = (np.log(m_up) - C_theo) / A_theo
     v_down = (np.log(m_down) - C_theo) / A_theo
     v_gen1 = v_up + v_down
