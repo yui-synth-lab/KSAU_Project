@@ -1,4 +1,4 @@
-# KSAU v6.3: Topological Gravity (Network Resource Gradient)
+# KSAU v6.6: Topological Gravity (Network Resource Gradient)
 
 **Date:** 2026-02-09
 **Status:** DRAFT / EXPLORATORY
