@@ -1,7 +1,7 @@
 # KSAU v6.2 Phase 1: Gauge & PMNS Report
 
 **Date:** 2026-02-09
-**Kernel:** Gemini Simulation Core
+
 
 ## 1. Gauge Symmetry (Holonomy Scan)
 - **Objective:** Analyze relationship between geometric chirality and Standard Model chirality ($SU(2)_L$).
@@ -20,7 +20,8 @@ u_3$ (8_9): **Fully Amphicheiral**.
 - **Method:** Introduced "Cusp Shape Factor" $R_{cusp} = V_{cusp} / V_{hyp}$.
 - **New Scaling Law:**
   $$ m_
-u \propto V_{hyp}^{1.77} \cdot \left( \frac{V_{cusp}}{V_{hyp}} ight)^{0.91} \approx V_{hyp}^{0.86} \cdot V_{cusp}^{0.9} $$
+u \propto V_{hyp}^{1.77} \cdot \left( \frac{V_{cusp}}{V_{hyp}} 
+ight)^{0.91} \approx V_{hyp}^{0.86} \cdot V_{cusp}^{0.9} $$
 - **Results:**
   - **Corrected Ratio:** **33.11** (Matches observation 33.0 within 0.3%).
   - **Interpretation:** Neutrino mass is dominated by the **Maximal Cusp Volume** (Boundary Geometry), confirming the "Holographic Mass Generation" hypothesis for leptons.

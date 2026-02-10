@@ -1,7 +1,7 @@
 # KSAU v6.3 Phase 1: SUSY Mirror Symmetry Report
 
 **Date:** 2026-02-09
-**Kernel:** Gemini Simulation Core
+
 
 ## 1. Supersymmetry as Mirror Symmetry
 - **Objective:** Identify Sparticles as topological mirror images ($K^*$) of standard knots ($K$).

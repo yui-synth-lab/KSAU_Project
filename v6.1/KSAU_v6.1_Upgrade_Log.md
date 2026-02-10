@@ -1,7 +1,7 @@
 # KSAU v6.1 Upgrade Log
 
 **Date:** 2026-02-09
-**Kernel:** Gemini Simulation Core
+
 
 ## Executive Summary
 This update transitions the KSAU simulation from v6.0 (Geometric Description) to v6.1 (Topological Quantum Field Theory). The primary focus was implementing "Paper IV" Quantum Interference for CKM, "Paper II" Boundary Resonance for PMNS, and "Paper III" Exclusion Principle for Dark Matter.

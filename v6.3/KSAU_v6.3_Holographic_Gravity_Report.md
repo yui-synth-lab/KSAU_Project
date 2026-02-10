@@ -1,7 +1,7 @@
 # KSAU v6.3: Holographic Gravity Report
 
 **Date:** 2026-02-09
-**Kernel:** Gemini Simulation Core
+
 
 ## 1. Information Saturation
 - **Objective:** Test if the geometric ratio $R = 	ext{Area} / 	ext{Volume}$ converges or collapses at large volumes.

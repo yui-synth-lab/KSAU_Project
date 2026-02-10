@@ -1,7 +1,7 @@
 # KSAU v6.3 Phase 2: Quantum Gravity Report
 
 **Date:** 2026-02-09
-**Kernel:** Gemini Simulation Core
+
 
 ## 1. The Planck Scale as a Geometric Limit
 - **Objective:** Derive the Planck mass ($M_P \approx 1.22 	imes 10^{19}$ GeV) from hyperbolic invariants.

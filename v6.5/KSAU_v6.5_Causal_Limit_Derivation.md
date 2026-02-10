@@ -4,7 +4,7 @@
 ---
 
 **Date:** 2026-02-09  
-**Kernel:** Gemini Simulation Core (SWT v4.2)  
+
 **Status:** Refactored (Lorentz-Poincaré Interpretation)
 
 ---
