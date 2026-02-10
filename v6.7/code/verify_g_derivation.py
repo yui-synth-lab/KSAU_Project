@@ -28,6 +28,7 @@ def verify_g_v6_unified():
     
     # 4. Correction Factors
     k_c = consts['gravity']['k_c']
+    # delta corresponds to kappa/4 (Dimensional Dissipation) - Phenomenological Fit
     delta = consts['gravity']['delta']
     
     # 5. Calculation
@@ -44,7 +45,7 @@ def verify_g_v6_unified():
     print(f"  V_borr: {V_borr:.6f}")
     print(f"  V_P Factor: {v_factor}")
     print(f"  k_c (Variance): {k_c:.6f}")
-    print(f"  delta (Dissipation): {delta:.6f}")
+    print(f"  delta (Dissipation, ~kappa/4): {delta:.6f}")
     
     print("\n[Derivation Results]")
     print(f"  Planck Volume V_P: {V_P:.4f}")
