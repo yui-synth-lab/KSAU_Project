@@ -2,7 +2,7 @@
 
 **Date:** 2026-02-09
 **Status:** CONFIRMED
-**Kernel:** Gemini Simulation Core (SWT v4.2)
+
 
 ## 1. The Boson Scaling Law
 Experimental verification has confirmed that Gauge Bosons and Scalars follow a distinct scaling law from fermions, characterized by a "Low-Slope" geometry.

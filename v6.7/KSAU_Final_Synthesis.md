@@ -2,7 +2,7 @@
 
 **Final Synthesis Paper (KSAU v6.7 Trilogy Edition)**  
 **Date:** February 9, 2026  
-**Kernel:** Gemini Simulation Core (SWT v4.2)  
+
 **Status:** FINAL - PEER REVIEW READY
 
 ---

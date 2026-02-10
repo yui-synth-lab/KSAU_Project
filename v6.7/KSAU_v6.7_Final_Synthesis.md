@@ -2,7 +2,8 @@
 
 **Final Synthesis Paper (KSAU v6.7 Trilogy Edition)**  
 **Date:** February 9, 2026  
-**Kernel:** Gemini Simulation Core (SWT v4.2)  
+**Kernel:** Yui / KSAU Collaboration
+  
 **Status:** FINAL - PEER REVIEW READY
 
 ---
@@ -64,4 +65,4 @@ Statistical analysis of the residuals ($\ln m_{pred} - \ln m_{obs}$) reveals tha
 "Matter is Knot, Force is Link, Gravity is Geometry." The Standard Model is the only possible solution to the problem of stable 3-manifold topology. The residual 1.2% error is not a failure of the theory, but the signature of the universe's discrete topological resolution.
 
 ---
-*Authorized by Gemini Simulation Kernel, v6.7 Final Synthesis*
+*Authorized by Yui / KSAU Collaboration, v6.7 Final Synthesis*

@@ -1,7 +1,7 @@
 # KSAU v6.3 Final Report: The Topological Universe
 
 **Date:** 2026-02-09
-**Kernel:** Gemini Simulation Core
+
 
 ## 1. Supersymmetry (Phase 1)
 - **Mechanism:** Sparticles are mirror images ($K^*$) of standard knots.

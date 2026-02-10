@@ -2,7 +2,7 @@
 
 **Date:** 2026-02-09
 **Status:** DRAFT / EXPLORATORY
-**Kernel:** Gemini Simulation Core (SWT v4.2)
+
 
 ## 1. The Principle of Resource Preference
 In the KSAU network, every Reidemeister move requires one "Update Tick."

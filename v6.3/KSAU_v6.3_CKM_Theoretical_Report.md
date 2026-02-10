@@ -1,14 +1,15 @@
 # KSAU v6.3: Ab Initio CKM Analysis (No Fitting)
 
 **Date:** 2026-02-09
-**Kernel:** Gemini Simulation Core
+
 
 ## 1. Theoretical Foundation
 - **Background:** $SU(2)_3$ Chern-Simons Theory (Fibonacci Anyon Phase $t = e^{i 2\pi/5}$).
 - **Mechanism:** "Color Cube Law" (カラー3乗則).
   - Quarks carry $N_c = 3$ color charges.
   - A flavor transition requires all 3 colors to tunnel through the topological barrier simultaneously.
-  - Transition Probability: $|V_{ij}| \approx \left( \frac{Q_{light}}{Q_{heavy}} ight)^3$.
+  - Transition Probability: $|V_{ij}| \approx \left( \frac{Q_{light}}{Q_{heavy}} 
+ight)^3$.
   - where $Q_K = |J_K(e^{i 2\pi/5})|$ is the topological amplitude (quantum dimension).
 
 ## 2. Key Results (No Free Parameters)
