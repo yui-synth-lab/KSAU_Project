@@ -8,26 +8,30 @@ def run_final_ckm_model():
     print("KSAU v6.1: Final CKM Model (Log-Interference)")
     print("="*60)
 
-    # 1. Load Data
+    # 1. Load Data and Metadata
     _, links = utils_v61.load_data()
+    assignments = utils_v61.load_assignments()
+    consts = utils_v61.load_constants()
     
-    # 2. Define Topologies
-    quark_map = {
-        "Up": "L8a6",
-        "Down": "L6a4",
-        "Strange": "L10n95",
-        "Charm": "L11n64",
-        "Bottom": "L10a140",
-        "Top": "L11a62"
-    }
-    
+    # 2. Extract Topologies from Central Metadata
+    quark_names = ["Up", "Down", "Strange", "Charm", "Bottom", "Top"]
     quarks = {}
-    for q_name, topo_name in quark_map.items():
+    
+    for q_name in quark_names:
+        topo_info = assignments.get(q_name)
+        if not topo_info:
+            continue
+            
+        topo_name = topo_info['topology'].split('{')[0] # Get base name
         row = links[links['name'] == topo_name]
         if row.empty:
              row = links[links['name'].str.startswith(topo_name + "{")]
-        row = row.iloc[0]
         
+        if row.empty:
+            print(f"Warning: Topology {topo_name} not found in LinkInfo for {q_name}")
+            continue
+            
+        row = row.iloc[0]
         jones_val = utils_v61.get_jones_at_root_of_unity(row['jones_polynomial'], n=5)
         quarks[q_name] = {
             'V': float(row['volume']),
@@ -35,12 +39,18 @@ def run_final_ckm_model():
             'ln_J': np.log(abs(jones_val))
         }
 
-    # 3. Experimental Data
-    ckm_exp = {
-        ('Up', 'Down'): 0.9743, ('Up', 'Strange'): 0.2253, ('Up', 'Bottom'): 0.0036,
-        ('Charm', 'Down'): 0.2252, ('Charm', 'Strange'): 0.9734, ('Charm', 'Bottom'): 0.0410,
-        ('Top', 'Down'): 0.0086, ('Top', 'Strange'): 0.0400, ('Top', 'Bottom'): 0.9991
-    }
+    # 3. Experimental Data from Central Constants
+    ckm_matrix = consts['ckm']['matrix']
+    # Map matrix indices to (up-type, down-type) pairs
+    # Rows: Up (0), Charm (1), Top (2)
+    # Cols: Down (0), Strange (1), Bottom (2)
+    up_types = ["Up", "Charm", "Top"]
+    down_types = ["Down", "Strange", "Bottom"]
+    
+    ckm_exp = {}
+    for i, u in enumerate(up_types):
+        for j, d in enumerate(down_types):
+            ckm_exp[(u, d)] = ckm_matrix[i][j]
 
     # 4. Final Regression: ln|Vij| = A * dV + B * d(lnJ) + C
     X = []
