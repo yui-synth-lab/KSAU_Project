@@ -2,12 +2,22 @@
 ### Deriving the Standard Model and Gravity from the Borromean Volume
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-v6.7-green.svg)
+![Version](https://img.shields.io/badge/version-v6.9-red.svg)
+![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18521244-blue)
 ![Status](https://img.shields.io/badge/status-Grand_Unified-gold.svg)
 
 > **"Matter is Knot, Force is Link, Gravity is Geometry."**
 
 **KSAU (Knot-based Standard Model and Universal gravity)** is a theoretical physics simulation framework that derives the fundamental constants of the universe from pure geometry. By modeling elementary particles as topological defects in a 3D manifold network, KSAU calculates particle masses and gravitational strength with high precision, eliminating the need for arbitrary empirical parameters.
+
+---
+
+## 🚀 Latest Breakthrough (v6.9): The Geometric Axion
+We have identified a parameter-free prediction for a new neutral boson:
+- **Candidate:** $6_3$ knot (Amphicheiral/CP-invariant).
+- **Predicted Mass:** **$0.627 \pm 0.008$ MeV**.
+- **Signature:** Monochromatic $\gamma\gamma$ signal below the $e^+e^-$ threshold.
+- **Status:** Drafted for Physical Review Letters.
 
 ---
 
@@ -61,14 +71,20 @@ This confirms that spacetime is discrete, not continuous.
 ## 📂 Repository Structure
 * `src/`: Core simulation logic (`ksau_simulator.py`)
 * `data/`: Topology database (`KnotInfo`, `LinkInfo` assignments)
-* `config/`: Universal constants (`ksau_config.json`)
-* `docs/`: Theory papers and final synthesis.
+* `v6.9/`: Geometric Axion analysis and PRL Letter.
+* `v6.7/`: Final Synthesis and Gravity derivation.
+* `docs/`: Historical theory papers and figures.
 
 ---
 
 ## 📜 Citation
 If you use KSAU in your research, please cite:
-> **Yui & Gemini Simulation Core.** (2026). *The Geometry of Everything: Deriving the Standard Model from the Borromean Volume (v6.7).*
+
+**Current Version (v6.9):**
+> **Yui & Gemini Simulation Core.** (2026). *A Geometric Axion at 0.627 MeV: Testable Prediction from Vacuum Topology (v6.9).*
+
+**Published Unified Theory (v5.0):**
+> **Yui.** (2026). *Topological Mass Generation from π/24: Unifying Chern-Simons Theory with Catalan Geometry (v5.0).* Zenodo. [https://doi.org/10.5281/zenodo.18521244](https://doi.org/10.5281/zenodo.18521244)
 
 ---
 
