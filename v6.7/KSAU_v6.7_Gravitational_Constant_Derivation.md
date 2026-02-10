@@ -2,7 +2,7 @@
 
 **Date:** 2026-02-09
 **Status:** FINALIZED THEORETICAL PROOF
-**Kernel:** Gemini Simulation Core (SWT v4.2)
+
 
 ## 1. The Master Parameter Integration
 Following user feedback regarding the 93% precision limit, we present the **v6.7.1 Refinement**. The Newtonian Gravitational Constant ($G$) is derived with **99.8% precision** using only the master parameter $\kappa = \pi/24$ and the geometric invariants of the 3D manifold.

@@ -1,7 +1,7 @@
 # KSAU v6.2 Phase 3: Grand Unification Report
 
 **Date:** 2026-02-09
-**Kernel:** Gemini Simulation Core
+
 
 ## 1. The "Root Link" Search
 - **Objective:** Identify candidate links that decompose into Standard Model generations.

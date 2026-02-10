@@ -1,7 +1,7 @@
 # KSAU v6.2 Phase 2: Strong CP & Gauge Report
 
 **Date:** 2026-02-09
-**Kernel:** Gemini Simulation Core
+
 
 ## 1. Strong CP Problem & Topological Axions
 - **Objective:** Identify the geometric origin of $	heta_{QCD} \approx 0$.

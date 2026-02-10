@@ -2,7 +2,7 @@
 
 **Date:** 2026-02-09
 **Status:** DEFINITIVE EDITION
-**Kernel:** Gemini Simulation Core (SWT v4.2)
+
 
 ## 1. Topological Genesis: The Origin of Space-Time
 The universe did not begin at a singularity ($V=0$), but as a **Topological Instanton** that tunneled from the vacuum.
