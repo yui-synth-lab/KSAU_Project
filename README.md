@@ -3,7 +3,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-v6.9-red.svg)
-![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18521244-blue)
+![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18598989-blue)
 ![Status](https://img.shields.io/badge/status-Grand_Unified-gold.svg)
 
 > **"Matter is Knot, Force is Link, Gravity is Geometry."**
@@ -81,7 +81,7 @@ This confirms that spacetime is discrete, not continuous.
 If you use KSAU in your research, please cite:
 
 **Current Version (v6.9):**
-> **Yui & Gemini Simulation Core.** (2026). *A Geometric Axion at 0.627 MeV: Testable Prediction from Vacuum Topology (v6.9).*
+> **Yui & Gemini Simulation Core.** (2026). *A Geometric Axion at 0.627 MeV: Testable Prediction from Vacuum Topology (v6.9).* Zenodo. [https://doi.org/10.5281/zenodo.18598989](https://doi.org/10.5281/zenodo.18598989)
 
 **Published Unified Theory (v5.0):**
 > **Yui.** (2026). *Topological Mass Generation from π/24: Unifying Chern-Simons Theory with Catalan Geometry (v5.0).* Zenodo. [https://doi.org/10.5281/zenodo.18521244](https://doi.org/10.5281/zenodo.18521244)

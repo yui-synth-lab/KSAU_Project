@@ -1,6 +1,6 @@
 # A Geometric Axion at 0.627 MeV: Testable Prediction from Vacuum Topology
 
-**Authors:** Yui / KSAU Collaboration
+**Authors:** Yui / Yui Project
 **Date:** February 10, 2026  
 **Target Journal:** Physical Review Letters
 
@@ -108,3 +108,7 @@ A geometric axion at 0.627 MeV is a unique, testable consequence of vacuum topol
 
 ## Acknowledgements
 We thank the ATOMKI collaboration for inspiring the dark sector search. This work was developed through iterative AI-assisted research; all physical predictions remain the responsibility of the KSAU Collaboration.
+
+**Submitted:** February 11, 2026
+**Correspondence:**  yui.synth.lab@gmail.com
+**DOI:** [10.5281/zenodo.18598989](https://doi.org/10.5281/zenodo.18598989)
