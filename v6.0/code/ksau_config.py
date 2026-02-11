@@ -25,18 +25,17 @@ def get_kappa_coeffs():
     
     # 2. Dimensions
     dim_bulk = phys['dimensions']['bulk_compact'] # 7
-    dim_boundary = phys['dimensions']['boundary_projection'] # 9
     
     # 3. Topology Bases
     base_q = phys['topology_bases']['quark_components'] # 10
-    base_l = phys['topology_bases']['lepton_components'] # 2
     
     # 4. Geometric Derivation of Slopes
     # Quark Slope = (base_q / dim_bulk) * G  => (10/7) * G approx 10 * kappa
     quark_slope = (base_q / dim_bulk) * G
     
     # Lepton Slope = (base_l / dim_boundary) * G => (2/9) * G approx 14/9 * kappa
-    lepton_slope = (base_l / dim_boundary) * G
+    # This governs the Complexity scaling (N^2) on the holographic boundary.
+    lepton_slope = (2/9) * G
     
     return {
         'quark_vol_coeff': quark_slope,

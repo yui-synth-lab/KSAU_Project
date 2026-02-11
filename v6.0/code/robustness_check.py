@@ -42,7 +42,7 @@ def robustness_test():
         # Lepton Cl (fixed by electron at nominal or perturbed?)
         gamma_l = (14/9) * k
         # Electron: load obs mass from config, N=3 -> N^2=9
-        m_e = ksau_config.load_physical_constants()['leptons']['Electron']['mass_mev']
+        m_e = ksau_config.load_physical_constants()['leptons']['Electron']['observed_mass']
         cl = np.log(m_e) - gamma_l * (3**2)
         
         for p in particles:

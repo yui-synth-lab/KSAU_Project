@@ -4,66 +4,75 @@
     "volume": 6.551743287887868,
     "crossing_number": 8,
     "components": 2,
-    "determinant": 20
+    "determinant": 20,
+    "generation": 1
   },
   "Charm": {
     "topology": "L11n64{0}",
     "volume": 11.517101106360437,
     "crossing_number": 11,
     "components": 2,
-    "determinant": 12
+    "determinant": 12,
+    "generation": 2
   },
   "Top": {
-    "topology": "L11a62{0}",
-    "volume": 15.35998355198632,
+    "topology": "L11a32{0}",
+    "volume": 15.36374517656938,
     "crossing_number": 11,
     "components": 2,
-    "determinant": 124
+    "determinant": 116,
+    "generation": 3
   },
   "Down": {
     "topology": "L6a4{0,0}",
     "volume": 7.327724753417752,
     "crossing_number": 6,
     "components": 3,
-    "determinant": 16
+    "determinant": 16,
+    "generation": 1
   },
   "Strange": {
     "topology": "L10n95{0,0}",
     "volume": 9.531879835800977,
     "crossing_number": 10,
     "components": 3,
-    "determinant": 32
+    "determinant": 32,
+    "generation": 2
   },
   "Bottom": {
-    "topology": "L10a140{0,0}",
-    "volume": 12.276277578170491,
-    "crossing_number": 10,
+    "topology": "L11n427{0,0}",
+    "volume": 12.31251681631393,
+    "crossing_number": 11,
     "components": 3,
-    "determinant": 64
+    "determinant": 56,
+    "generation": 3
   },
   "Electron": {
     "topology": "3_1",
     "volume": 0.0,
     "crossing_number": 3,
     "components": 1,
-    "determinant": 3
+    "determinant": 3,
+    "generation": 1
   },
   "Muon": {
     "topology": "6_1",
-    "volume": 3.1639632288,
+    "volume": 0.0,
     "crossing_number": 6,
     "components": 1,
-    "determinant": 9
+    "determinant": 9,
+    "generation": 2
   },
   "Tau": {
     "topology": "7_1",
     "volume": 0.0,
     "crossing_number": 7,
     "components": 1,
-    "determinant": 7
+    "determinant": 7,
+    "generation": 3
   },
   "W": {
-    "topology": "L11n387{0,0,0}",
+    "topology": "L11n387{0,0}",
     "volume": 14.655449506835504,
     "crossing_number": 11,
     "components": 3,
@@ -71,19 +80,19 @@
     "is_brunnian": true
   },
   "Z": {
-    "topology": "L11a431{0,0,0}",
-    "volume": 15.027615015039348,
+    "topology": "L11a405{0,0}",
+    "volume": 14.972183465537412,
     "crossing_number": 11,
     "components": 3,
-    "determinant": 112,
+    "determinant": 108,
     "is_brunnian": true
   },
   "Higgs": {
-    "topology": "L11a55{0,0}",
-    "volume": 15.820714702540293,
+    "topology": "L11a212{0}",
+    "volume": 15.773717028698371,
     "crossing_number": 11,
     "components": 2,
-    "determinant": 136,
-    "is_brunnian": true
+    "determinant": 118,
+    "is_brunnian": false
   }
 }
