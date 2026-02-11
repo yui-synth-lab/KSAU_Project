@@ -7,14 +7,14 @@
 ---
 
 ## Abstract
-We present a falsifiable prediction of a neutral pseudoscalar particle with mass **$0.627 \pm 0.008$ MeV**, derived from knot theory applied to vacuum topology. Based on the Spacetime Weaving Theory (SWT), which successfully correlates Standard Model masses with knot volumes (MAE 1.2%), we identify the **$6_3$ knot** as the unique candidate for a CP-even, color-neutral dark sector boson. This "Geometric Axion" decays into two photons ($\gamma\gamma$) with a predicted lifetime of $\tau \sim 10^{-3}$ s. Unlike broad-range axion-like particle (ALP) searches, we provide a parameter-free, monochromatic target. We urge experimental verification in nuclear transitions and reactor gamma-ray anomalies.
+We present a falsifiable prediction of a neutral pseudoscalar particle with mass **$0.627 \pm 0.008$ MeV**, derived from knot theory applied to vacuum topology. Based on the Spacetime Weaving Theory (SWT), which successfully correlates Standard Model masses with knot volumes (MAE 0.78%), we identify the **$6_3$ knot** as the unique candidate for a CP-even, color-neutral dark sector boson. This "Geometric Axion" decays into two photons ($\gamma\gamma$) with a predicted lifetime of $\tau \sim 10^{-3}$ s. Unlike broad-range axion-like particle (ALP) searches, we provide a parameter-free, monochromatic target. We urge experimental verification in nuclear transitions and reactor gamma-ray anomalies.
 
 ---
 
 ## 1. Introduction
 The search for Axion-like particles (ALPs) remains a central theme in high-energy physics, addressing both the Strong CP problem and the nature of Dark Matter. While existing experiments such as ADMX [1] and CAST [2] scan broad mass ranges from $\mu$eV to eV, and LHC experiments target the GeV scale, the MeV region remains a sparsely explored "window."
 
-Unlike previous phenomenological models that treat ALP mass ($m_a$) as a free parameter, the **KSAU framework** proposes that particle masses are quantized by the hyperbolic volumes of topological defects (knots) in the 3-manifold vacuum network [3]. This approach has already demonstrated a 1.2% Mean Absolute Error (MAE) across 12 Standard Model particles.
+Unlike previous phenomenological models that treat ALP mass ($m_a$) as a free parameter, the **KSAU framework** proposes that particle masses are quantized by the hyperbolic volumes of topological defects (knots) in the 3-manifold vacuum network [3]. This approach has already demonstrated a 0.78% Mean Absolute Error (MAE) across 12 Standard Model particles.
 
 In this Letter, we predict a *unique* mass value (0.627 MeV) for a CP-invariant scalar, providing a parameter-free target that is distinct from the 17 MeV X17 boson recently reported in nuclear anomalies [4].
 
@@ -35,7 +35,7 @@ The selection criteria for a color-neutral dark sector boson are:
 2.  **Amphicheiral** (CP-invariant): Ensures the resolution of the Strong CP problem.
 3.  **Color-Neutral:** Must not mix with the QCD vacuum flux.
 
-The Figure-8 knot ($4_1$, $V \approx 2.0298$) is the simplest amphicheiral knot, predicting $m \approx 5$ MeV. However, we identify this state as a *colored* defect corresponding to the Down Quark. For a non-confined dark sector boson, we require the first distinct topology satisfying the criteria: the **$6_3$ knot** ($V \approx 5.6930$).
+The Figure-Eight knot ($4_1$, $V \approx 2.0298$) is the simplest amphicheiral knot, predicting $m \approx 5$ MeV. However, we identify this state as corresponding to the Down Quark in the standard assignment. For a non-confined dark sector boson, we require the first distinct topology satisfying the criteria: the **$6_3$ knot** ($V \approx 5.6930$).
 
 ![Figure 1: KSAU Mass Spectrum and Axion Prediction. The plot shows the correlation between topological invariants (volume/complexity) and observed masses for 12 Standard Model particles. The red star indicates the predicted 0.627 MeV geometric axion ($6_3$ knot), positioned on the bulk scaling line.](figures/figure_1_spectrum.png)
 
@@ -49,7 +49,8 @@ The signature is a **monochromatic 0.627 MeV line** in the center-of-mass frame.
 ### 3.2 Lifetime Estimation
 The topological stability is governed by the Crossing Number $C=6$. Based on the barrier scaling $\tau \propto \exp(C^2)$, we estimate the lifetime to be:
 $ \tau \approx 10^{-6} \text{ s} \sim 10^{-3} \text{ s} $
-This characterizes the axion as a **Long-Lived Particle (LLP)**, capable of traveling macroscopic distances (meters to kilometers) at high boosts.
+
+This range characterizes the axion as a **Long-Lived Particle (LLP)**, depending on the coupling strength to the vacuum. At the stronger coupling limit ($g_{a\gamma} \sim 10^{-4}$ GeV$^{-1}$), the lifetime approaches $10^{-6}$ s; at the weaker limit, it can extend to $10^{-3}$ s. In both cases, the axion is capable of traveling macroscopic distances (meters to kilometers) at high boosts.
 
 ## 4. Experimental Verification
 
@@ -75,7 +76,7 @@ A geometric axion at 0.627 MeV is a unique, testable consequence of vacuum topol
     Phys. Rev. Lett. 120, 151301 (2018).
 [2] CAST Collaboration, "New CAST Limit on the Axion-Photon 
     Interaction," Nature Phys. 13, 584–590 (2017).
-[3] KSAU Collaboration, "Topological Mass Generation from TT/24: 
+[3] KSAU Collaboration, "Topological Mass Generation from π/24: 
     Unifying Chern-Simons Theory with Catalan Geometry," 
     Zenodo (2026), DOI: 10.5281/zenodo.18521244.
 [4] Krasznahorkay, A. J. et al., "Observation of Anomalous Internal 
