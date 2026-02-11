@@ -3,7 +3,7 @@ import sys
 import os
 
 # Add v6.0 code path for config
-sys.path.append(os.path.join(os.path.dirname(__file__), '../../v6.0/code'))
+sys.path.append(os.path.abspath('v6.0/code'))
 import ksau_config
 
 def derive_c_from_rigidity():
@@ -25,8 +25,7 @@ def derive_c_from_rigidity():
     # At the causal limit, we set this ratio to define our units.
     # But we can derive the 'Lorentz Factor' gamma from the network deformation.
     
-    print("
-[1. Emergent Lorentz Invariance]")
+    print("\n[1. Emergent Lorentz Invariance]")
     v_target = 0.8 # Observer moving at 0.8c
     
     # Hypothesis: Length contraction is a physical result of knot deformation
@@ -42,8 +41,7 @@ def derive_c_from_rigidity():
     energy_ratio = gamma # Mass-energy increase in KSAU is the 'Tension' increase
     print(f"  KSAU Network Tension (E/m0): {energy_ratio:.4f}")
     
-    print("
-[2. The Light Speed Identity]")
+    print("\n[2. The Light Speed Identity]")
     # C is the saturation point where Tension -> Infinity (Topology change limit)
     # The speed of light is the 'Fracture Speed' of the vacuum braid.
     
@@ -53,8 +51,7 @@ def derive_c_from_rigidity():
     print("          exact proportion to the network resistance.")
 
     # 3. Falsifiable Claim
-    print("
-[3. Falsifiable Prediction]")
+    print("\n[3. Falsifiable Prediction]")
     print("  At extreme energies (Planck scale), Lorentz Invariance should break")
     print("  as the 'discreteness' of the kappa-network becomes visible.")
     print(f"  Threshold: E > M_Planck / CrossingNumber (C~74)")

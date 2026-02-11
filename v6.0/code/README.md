@@ -11,14 +11,16 @@ To reproduce the core results of KSAU v6.0 (Paper I & Field Report), run the fol
 # 1. Verify Mathematical Foundation (Neutrinos & Constants)
 python verify_neutrino_math.py
 
-# 2. Run Full Statistical Validation (Masses & Errors)
+# 2. Regenerate Official Assignments (Mass + CKM Dual Optimization)
+python topology_official_selector.py
+
+# 3. Run Full Statistical Validation (Masses & Errors)
 python paper_I_validation.py
 
-# 3. Analyze CKM Matrix & Tunneling Anomaly
-python analyze_ckm_full.py
+# 4. Final CKM Audit (Tunneling + Entropy Model)
 python ckm_final_audit.py
 
-# 4. Generate All Paper Figures
+# 5. Generate All Paper Figures
 python cabibbo_anomaly_plot.py
 python ckm_discovery_plot.py
 python plot_topological_landscape.py
@@ -30,10 +32,11 @@ python g_minus_2_analysis.py
 ## 2. File Structure & Descriptions
 
 ### Core Analysis (The Physics Engine)
-*   **`ksau_config.py`**: The central configuration file defining physical constants ($\kappa = \pi/24$, $\alpha_{geom}$), mass formulas, and file paths. **Edit this to change theoretical parameters.**
-*   **`topology_official_selector.py`**: The definitive source of truth for Quark/Lepton topology assignments. Generates `../data/topology_assignments.json`.
-*   **`paper_I_validation.py`**: The primary validation script for Paper I. verifying the Holographic Duality (Bulk vs Boundary scaling).
-*   **`analyze_ckm_full.py`**: Implements the Geometric CKM theory, calculating transition elements from volume overlaps.
+*   **`ksau_config.py`**: The central configuration file defining physical constants ($\kappa = \pi/24$, $\alpha_{geom}$), mass formulas, and file paths.
+*   **`topology_official_selector.py`**: The definitive source of truth for Quark/Lepton topology assignments. Implements the **Global Flavor Fit** (Mass + CKM optimization).
+*   **`paper_I_validation.py`**: The primary validation script for Paper I, verifying the Holographic Duality (Bulk vs Boundary scaling).
+*   **`ckm_final_audit.py`**: Detailed audit of the CKM matrix using the **Unified Lagrangian (Tunneling + Entropy)** model.
+
 
 ### Visualization (Figures)
 *   **`plot_topological_landscape.py`**: Generates the "Holographic Landscape" plot (Figure 1), visualizing the split between Quark (Volume) and Lepton (Complexity) scaling.
