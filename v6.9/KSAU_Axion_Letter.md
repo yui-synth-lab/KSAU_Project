@@ -21,8 +21,10 @@ In this Letter, we predict a *unique* mass value (0.627 MeV) for a CP-invariant 
 ## 2. The Geometric Derivation
 
 ### 2.1 The Mass Scaling Law
-The mass $m$ of a particle in the Bulk (confined/compact) sector is governed by:
-$ m = \Lambda_{QCD} \cdot \exp\left(\frac{10}{7}G \cdot V - C_{vac}\right) $
+The mass of a particle in the Bulk (confined/compact) sector is governed by:
+
+$$m = \Lambda_{QCD} \cdot \exp\left(\frac{10}{7}G \cdot V - C_{vac}\right)$$
+
 where:
 - $\Lambda_{QCD} \approx 217$ MeV (the standard QCD scale)
 - $G \approx 0.915965$ (Catalan's constant)
@@ -43,12 +45,15 @@ The Figure-Eight knot ($4_1$, $V \approx 2.0298$) is the simplest amphicheiral k
 
 ### 3.1 Decay Mode and Signature
 Since $m_a = 0.627$ MeV is significantly below the $e^+e^-$ production threshold (1.022 MeV), the only available visible decay channel is:
-$ a \to \gamma + \gamma $
+
+$$a \to \gamma + \gamma$$
+
 The signature is a **monochromatic 0.627 MeV line** in the center-of-mass frame.
 
 ### 3.2 Lifetime Estimation
 The topological stability is governed by the Crossing Number $C=6$. Based on the barrier scaling $\tau \propto \exp(C^2)$, we estimate the lifetime to be:
-$ \tau \approx 10^{-6} \text{ s} \sim 10^{-3} \text{ s} $
+
+$$\tau \approx 10^{-6} \text{ s} \sim 10^{-3} \text{ s}$$
 
 This range characterizes the axion as a **Long-Lived Particle (LLP)**, depending on the coupling strength to the vacuum. At the stronger coupling limit ($g_{a\gamma} \sim 10^{-4}$ GeV$^{-1}$), the lifetime approaches $10^{-6}$ s; at the weaker limit, it can extend to $10^{-3}$ s. In both cases, the axion is capable of traveling macroscopic distances (meters to kilometers) at high boosts.
 
@@ -71,41 +76,36 @@ A geometric axion at 0.627 MeV is a unique, testable consequence of vacuum topol
 ---
 
 ## References
-[1] ADMX Collaboration, "A Search for Invisible Axion Dark Matter 
-    with the Axion Dark Matter Experiment," 
-    Phys. Rev. Lett. 120, 151301 (2018).
-[2] CAST Collaboration, "New CAST Limit on the Axion-Photon 
-    Interaction," Nature Phys. 13, 584–590 (2017).
-[3] KSAU Collaboration, "Topological Mass Generation from π/24: 
-    Unifying Chern-Simons Theory with Catalan Geometry," 
-    Zenodo (2026), DOI: 10.5281/zenodo.18521244.
-[4] Krasznahorkay, A. J. et al., "Observation of Anomalous Internal 
-    Pair Creation in 8Be: A Possible Indication of a Light, Neutral 
-    Boson," Phys. Rev. Lett. 116, 042501 (2016).
-[5] Mention, G. et al., "Reactor Antineutrino Anomaly," 
-    Phys. Rev. D 83, 073006 (2011).
-[6] Peccei, R. D. and Quinn, H. R., "CP Conservation in the Presence 
-    of Pseudoparticles," Phys. Rev. Lett. 38, 1440 (1977).
-[7] Weinberg, S., "A New Light Boson?," 
-    Phys. Rev. Lett. 40, 223 (1978).
-[8] Wilczek, F., "Problem of Strong P and T Invariance in the 
-    Presence of Instantons," Phys. Rev. Lett. 40, 279 (1978).
-[9] Kim, J. E., "Weak-Interaction Singlet and Strong CP Invariance," 
-    Phys. Rev. Lett. 43, 103 (1979).
-[10] Shifman, M. A., Vainshtein, A. I., and Zakharov, V. I., 
-     "Can Confinement Ensure Natural CP Invariance of Strong 
-     Interactions?," Nucl. Phys. B 166, 493 (1980).
-[11] Maldacena, J., "The Large N Limit of Superconformal Field 
-     Theories and Supergravity," Adv. Theor. Math. Phys. 2, 231 (1998).
-[12] Witten, E., "Quantum Field Theory and the Jones Polynomial," 
-     Commun. Math. Phys. 121, 351 (1989).
-[13] Thurston, W. P., "Three-dimensional manifolds, Kleinian groups 
-     and hyperbolic geometry," Bull. Amer. Math. Soc. 6, 357 (1982).
-[14] Culler, M., Dunfield, N. M., Goerner, M., and Weeks, J. R., 
-     "SnapPy, a computer program for studying the geometry and 
-     topology of 3-manifolds," http://snappy.computop.org/.
-[15] Riordan, E. M. et al., "A Search for Short Lived Axions in an 
-     Electron Beam Dump Experiment," Phys. Rev. Lett. 59, 755 (1987).035017 (2017).
+
+[1] ADMX Collaboration, "A Search for Invisible Axion Dark Matter with the Axion Dark Matter Experiment," Phys. Rev. Lett. 120, 151301 (2018).
+
+[2] CAST Collaboration, "New CAST Limit on the Axion-Photon Interaction," Nature Phys. 13, 584–590 (2017).
+
+[3] KSAU Collaboration, "Topological Mass Generation from $\pi$/24: Unifying Chern-Simons Theory with Catalan Geometry," Zenodo (2026), DOI: 10.5281/zenodo.18521244.
+
+[4] Krasznahorkay, A. J. et al., "Observation of Anomalous Internal Pair Creation in 8Be: A Possible Indication of a Light, Neutral Boson," Phys. Rev. Lett. 116, 042501 (2016).
+
+[5] Mention, G. et al., "Reactor Antineutrino Anomaly," Phys. Rev. D 83, 073006 (2011).
+
+[6] Peccei, R. D. and Quinn, H. R., "CP Conservation in the Presence of Pseudoparticles," Phys. Rev. Lett. 38, 1440 (1977).
+
+[7] Weinberg, S., "A New Light Boson?," Phys. Rev. Lett. 40, 223 (1978).
+
+[8] Wilczek, F., "Problem of Strong P and T Invariance in the Presence of Instantons," Phys. Rev. Lett. 40, 279 (1978).
+
+[9] Kim, J. E., "Weak-Interaction Singlet and Strong CP Invariance," Phys. Rev. Lett. 43, 103 (1979).
+
+[10] Shifman, M. A., Vainshtein, A. I., and Zakharov, V. I., "Can Confinement Ensure Natural CP Invariance of Strong Interactions?," Nucl. Phys. B 166, 493 (1980).
+
+[11] Maldacena, J., "The Large N Limit of Superconformal Field Theories and Supergravity," Adv. Theor. Math. Phys. 2, 231 (1998).
+
+[12] Witten, E., "Quantum Field Theory and the Jones Polynomial," Commun. Math. Phys. 121, 351 (1989).
+
+[13] Thurston, W. P., "The Geometry and Topology of Three-Manifolds," Princeton University Press lecture notes (1982).
+
+[14] Culler, M., Dunfield, N. M., Goerner, M., and Weeks, J. R., "SnapPy, a computer program for studying the geometry and topology of 3-manifolds," http://snappy.computop.org/.
+
+[15] Riordan, E. M. et al., "A Search for Short Lived Axions in an Electron Beam Dump Experiment," Phys. Rev. Lett. 59, 755 (1987).
 
 ## Acknowledgements
 We thank the ATOMKI collaboration for inspiring the dark sector search. This work was developed through iterative AI-assisted research; all physical predictions remain the responsibility of the KSAU Collaboration.

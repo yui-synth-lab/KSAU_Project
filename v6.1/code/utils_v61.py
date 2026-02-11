@@ -64,6 +64,9 @@ def parse_polynomial(poly_str, variable='x', val=None):
     if pd.isna(poly_str):
         return 0.0
 
+    # DEBUG
+    # print(f"Raw poly: {poly_str}")
+
     # Replace specific variable if different
     # The dataset seems to use 'x' or 't' or 'q'.
     # We will standardize to 'x' for parsing.
@@ -85,9 +88,12 @@ def parse_polynomial(poly_str, variable='x', val=None):
         # Define x in local scope
         x = val
         try:
-            return eval(expr)
+            # Handle multivariable t1, t2, t3 by mapping them all to x
+            clean_expr = re.sub(r'x[0-9]+', 'x', expr)
+            # print(f"Eval expr: {clean_expr}")
+            return eval(clean_expr)
         except Exception as e:
-            print(f"Error evaluating {poly_str}: {e}")
+            # print(f"Error evaluating {poly_str}: {e}")
             return 0.0
     
     return None
