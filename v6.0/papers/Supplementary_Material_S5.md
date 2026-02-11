@@ -26,12 +26,12 @@ This document provides the full data and statistical analysis for the CKM mixing
    *Captures the general trend but fails for u→s vs c→b comparison.*
 
 2. **Model B (Including Generation Penalty):**
-   $$ \ln|V_{ij}| \propto -0.5 \Delta V - \alpha |\Delta 	ext{gen}| $$
+   $$ \ln|V_{ij}| \propto -0.5 \Delta V - \alpha |\Delta \text{gen}| $$
    R² = 0.70
    *Explains generation suppression but leaves the Cabibbo Anomaly unresolved.*
 
 3. **Model C (Full Three-Factor Model):**
-   $$ \ln|V_{ij}| \approx -0.5 \Delta V + \frac{\beta}{\bar{V}} - \gamma |\Delta 	ext{gen}|^2 $$
+   $$ \ln|V_{ij}| \approx -0.5 \Delta V + \frac{\beta}{\bar{V}} - \gamma |\Delta \text{gen}|^2 $$
    R² = 0.89
    *Best fit. Resolves the Cabibbo Anomaly through quantum tunneling amplification.*
 
