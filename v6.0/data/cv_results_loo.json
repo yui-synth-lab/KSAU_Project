@@ -1,0 +1,65 @@
+{
+  "Bottom": {
+    "observed_mass": 4180.0,
+    "predicted_mass": 3030.8098600559138,
+    "error_percent": 27.49258708000206,
+    "topology": "L10a140{0,0}"
+  },
+  "Charm": {
+    "observed_mass": 1270.0,
+    "predicted_mass": 1205.4200863095487,
+    "error_percent": 5.085032574051287,
+    "topology": "L9a9{0}"
+  },
+  "Down": {
+    "observed_mass": 4.67,
+    "predicted_mass": 6.068387500226614,
+    "error_percent": 29.944057820698383,
+    "topology": "L6a4{0,0}"
+  },
+  "Electron": {
+    "observed_mass": 0.511,
+    "predicted_mass": 0.5086805461452172,
+    "error_percent": 0.4539048639496726,
+    "topology": "3_1"
+  },
+  "Muon": {
+    "observed_mass": 105.66,
+    "predicted_mass": 123.94755032645641,
+    "error_percent": 17.307921944403194,
+    "topology": "6_1"
+  },
+  "Strange": {
+    "observed_mass": 93.4,
+    "predicted_mass": 95.2380220468741,
+    "error_percent": 1.9679036904433485,
+    "topology": "L10n95{0,0}"
+  },
+  "Tau": {
+    "observed_mass": 1776.86,
+    "predicted_mass": 1747.569636466611,
+    "error_percent": 1.6484339527812506,
+    "topology": "7_1"
+  },
+  "Top": {
+    "observed_mass": 172760.0,
+    "predicted_mass": 238931.7928000205,
+    "error_percent": 38.30272794629573,
+    "topology": "L10a43{0}"
+  },
+  "Up": {
+    "observed_mass": 2.16,
+    "predicted_mass": 1.6919885546748221,
+    "error_percent": 21.667196542832315,
+    "topology": "L8a6{0}"
+  },
+  "summary": {
+    "original_mae": 0.78,
+    "loo_mae": 15.985529601717474,
+    "loo_std": 13.4223637379222,
+    "loo_max": 38.30272794629573,
+    "loo_min": 0.4539048639496726,
+    "status": "OVERFITTING",
+    "num_particles": 9
+  }
+}
