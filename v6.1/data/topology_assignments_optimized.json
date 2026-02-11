@@ -2,49 +2,37 @@
   "Up": {
     "topology": "L11n13{0}{0}",
     "volume": 6.551743287887868,
-    "crossing_number": 11,
-    "components": 2,
     "determinant": 20,
     "generation": 1
+  },
+  "Charm": {
+    "topology": "L11n64{1}{0}",
+    "volume": 11.517101106360437,
+    "determinant": 12,
+    "generation": 2
+  },
+  "Top": {
+    "topology": "L11a32{1}{0}",
+    "volume": 15.36374517656938,
+    "determinant": 116,
+    "generation": 3
   },
   "Down": {
     "topology": "L9n25{1,1}{0}",
     "volume": 7.327724753417752,
-    "crossing_number": 9,
-    "components": 3,
     "determinant": 16,
     "generation": 1
   },
   "Strange": {
     "topology": "L10n95{1,1}{0}",
     "volume": 9.531879835800977,
-    "crossing_number": 10,
-    "components": 3,
     "determinant": 32,
-    "generation": 2
-  },
-  "Charm": {
-    "topology": "L11n64{1}{0}",
-    "volume": 11.517101106360437,
-    "crossing_number": 11,
-    "components": 2,
-    "determinant": 12,
     "generation": 2
   },
   "Bottom": {
     "topology": "L10a140{1,0}{0}",
     "volume": 12.276277578170491,
-    "crossing_number": 10,
-    "components": 3,
     "determinant": 64,
-    "generation": 3
-  },
-  "Top": {
-    "topology": "L11n102{1}{0}",
-    "volume": 15.358466927095867,
-    "crossing_number": 11,
-    "components": 2,
-    "determinant": 80,
     "generation": 3
   },
   "Electron": {
@@ -53,23 +41,32 @@
     "crossing_number": 3,
     "components": 1,
     "determinant": 3,
-    "generation": 1
+    "generation": 1,
+    "observed_mass": 0.511,
+    "charge_type": "lepton",
+    "sector": "lepton"
   },
   "Muon": {
-    "topology": "6_3",
+    "topology": "6_1",
     "volume": 0.0,
     "crossing_number": 6,
     "components": 1,
-    "determinant": 13,
-    "generation": 2
+    "determinant": 9,
+    "generation": 2,
+    "observed_mass": 105.66,
+    "charge_type": "lepton",
+    "sector": "lepton"
   },
   "Tau": {
-    "topology": "7_7",
+    "topology": "7_1",
     "volume": 0.0,
     "crossing_number": 7,
     "components": 1,
-    "determinant": 21,
-    "generation": 3
+    "determinant": 7,
+    "generation": 3,
+    "observed_mass": 1776.86,
+    "charge_type": "lepton",
+    "sector": "lepton"
   },
   "W": {
     "topology": "L11n387{0,0,0}",
@@ -77,7 +74,10 @@
     "crossing_number": 11,
     "components": 3,
     "determinant": 64,
-    "is_brunnian": true
+    "is_brunnian": true,
+    "observed_mass": 80377.0,
+    "charge_type": "boson",
+    "sector": "boson"
   },
   "Z": {
     "topology": "L11a431{0,0,0}",
@@ -85,7 +85,10 @@
     "crossing_number": 11,
     "components": 3,
     "determinant": 112,
-    "is_brunnian": true
+    "is_brunnian": true,
+    "observed_mass": 91187.0,
+    "charge_type": "boson",
+    "sector": "boson"
   },
   "Higgs": {
     "topology": "L11a55{0,0}",
@@ -93,6 +96,10 @@
     "crossing_number": 11,
     "components": 2,
     "determinant": 136,
-    "is_brunnian": false
+    "is_brunnian": false,
+    "observed_mass": 125100.0,
+    "charge_type": "boson",
+    "mass_gev_obs": 125.25,
+    "sector": "boson"
   }
 }
