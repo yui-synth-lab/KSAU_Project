@@ -3,13 +3,12 @@ import numpy as np
 import json
 from pathlib import Path
 import matplotlib.pyplot as plt
+import ksau_config
 
 def generate_landscape_plot():
 
-    # Load v5.0 data
-    v6_data_path = Path(__file__).parent.parent / 'data' / 'topology_assignments.json'
-    with open(v6_data_path, 'r') as f:
-        data = json.load(f)
+    # Load unified data (topology + physical constants)
+    data = ksau_config.load_topology_assignments()
     
     kappa = np.pi / 24
     bq = -(7 + 7 * kappa)

@@ -52,6 +52,9 @@ def validate_paper_i():
     leptons = ['Electron', 'Muon', 'Tau']
     l_obs, l_pred = [], []
     
+    # Use complexity coefficient (N^2) from config
+    slope_l = coeffs['lepton_n2_coeff']
+    
     print(f"\n[SECTION 2: CHARGED LEPTON MASSES (Boundary Complexity Law: N^2)]")
     print(f"{'Particle':<10} | {'Topology':<12} | {'N^2':<5} | {'Obs (MeV)':<10} | {'Pred (MeV)':<10} | {'Error (%)':<8}")
     print("-" * 90)
@@ -61,10 +64,9 @@ def validate_paper_i():
         obs = data['observed_mass']
         n = data['crossing_number']
         n2 = n**2
-        twist_corr = -1/6 if n == 6 else 0
         
-        # ln(m) = Slope_l * N^2 + Twist + Cl
-        log_pred = slope_l * n2 + twist_corr + cl
+        # ln(m) = Slope_l * N^2 + Cl
+        log_pred = slope_l * n2 + cl
         pred = np.exp(log_pred)
         
         err = (pred - obs) / obs * 100
