@@ -1,0 +1,102 @@
+{
+  "md_root": "v6.0",
+  "assignments_path": "v6.0/data/topology_assignments.json",
+  "official": {
+    "Up": "L11n13",
+    "Down": "L9n25",
+    "Strange": "L10n95",
+    "Charm": "L11n64",
+    "Bottom": "L10a140",
+    "Top": "L11n102",
+    "Electron": "3_1",
+    "Muon": "6_3",
+    "Tau": "7_7",
+    "W": "L11n387",
+    "Z": "L11a431",
+    "Higgs": "L11a55"
+  },
+  "mismatches": [
+    {
+      "particle": "Top",
+      "mentioned_topology": "L11a32",
+      "official_topology": "L11n102",
+      "file": "v6.0/KSAU_v6.0_Unified_Field_Report.md",
+      "line": 14,
+      "raw_line": "We discovered that for the Standard Model to exist as observed, the topology of the Top Quark must be **L11a32** (not L10a43), and the Charm Quark must be **L11n64**. These are not random choices; they are the *only* geometric solutions that satisfy the mass hierarchy while reproducing the CKM mixing matrix with a global precision of **$R^2 > 0.76$**."
+    },
+    {
+      "particle": "Up",
+      "mentioned_topology": "L8a6",
+      "official_topology": "L11n13",
+      "file": "v6.0/papers/Paper_I_Topological_Origin.md",
+      "line": 38,
+      "raw_line": "*   **Error Analysis:** The Mean Absolute Error (MAE) is 1.00%, confirming the high precision of the algorithmic selection (e.g., Up=$L8a6$, Down=$L6a4$, Strange=$L10n95$)."
+    },
+    {
+      "particle": "Down",
+      "mentioned_topology": "L6a4",
+      "official_topology": "L9n25",
+      "file": "v6.0/papers/Paper_I_Topological_Origin.md",
+      "line": 38,
+      "raw_line": "*   **Error Analysis:** The Mean Absolute Error (MAE) is 1.00%, confirming the high precision of the algorithmic selection (e.g., Up=$L8a6$, Down=$L6a4$, Strange=$L10n95$)."
+    },
+    {
+      "particle": "Up",
+      "mentioned_topology": "L8a6",
+      "official_topology": "L11n13",
+      "file": "v6.0/papers/submission/supplements/S1_Audit_Report.md",
+      "line": 29,
+      "raw_line": "-   Using Up ($L8a6$) and Top ($L11a62$) to predict the Charm quark yields a volume prediction error of only 4.87%."
+    }
+  ],
+  "simplest_claims": [
+    {
+      "type": "simplest_knots_list",
+      "claimed": [
+        "3_1",
+        "6_1",
+        "7_1"
+      ],
+      "official_leptons": [
+        "3_1",
+        "6_3",
+        "7_7"
+      ],
+      "file": "v6.0/KSAU_v6.0_Unified_Field_Report.md",
+      "line": 31,
+      "raw_line": "*   **Topology:** Simplest Knots ($3_1, 6_1, 7_1$), consistent with fundamental point-like states."
+    },
+    {
+      "type": "simplest_knots_list",
+      "claimed": [
+        "3_1",
+        "6_1",
+        "7_1"
+      ],
+      "official_leptons": [
+        "3_1",
+        "6_3",
+        "7_7"
+      ],
+      "file": "v6.0/papers/submission/KSAU_v6.0_Phenomenological_Study.md",
+      "line": 12,
+      "raw_line": "Rigorous validation confirms that the Quark Sector possesses genuine predictive power (LOOCV error 4.9%). In the Lepton Sector, we explicitly reject numerically superior but physically complex fits (e.g., Electron=$8_{14}$) in favor of the simplest knots ($3_1, 6_1, 7_1$), consistent with the boundary hypothesis. We propose falsifiable predictions for the Top Quark helicity anomaly ($F_R = 0.24\\% \\pm 0.05\\%$) at LHC Run 4."
+    },
+    {
+      "type": "simplest_knots_list",
+      "claimed": [
+        "3_1",
+        "6_1",
+        "7_1"
+      ],
+      "official_leptons": [
+        "3_1",
+        "6_3",
+        "7_7"
+      ],
+      "file": "v6.0/papers/submission/KSAU_v6.0_Phenomenological_Study.md",
+      "line": 28,
+      "raw_line": "Leptons are identified as the simplest knots ($3_1, 6_1, 7_1$)."
+    }
+  ]
+}
