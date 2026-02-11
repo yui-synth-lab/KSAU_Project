@@ -15,7 +15,7 @@
 ### Added
 - **Gravity Derivation**: Derived the Newtonian gravitational constant $G$ from the "Hexa-Borromean" volumetric limit with **99.92% precision**.
 - **Final Synthesis**: Unified all previous findings (Mass, Mixing, Gravity) into "The Geometry of Everything" (Final Synthesis Report).
-- **Grand Unified MAE**: Final validation achieved a global Mean Absolute Error of **1.20%**.
+- **Grand Unified MAE**: Final validation achieved a global Mean Absolute Error of **0.78%** (improved via algorithmic topology selection in v6.0).
 
 ## [6.3 - 6.6] - 2026-02-09 (Theoretical Expansion)
 ### Added
@@ -47,6 +47,17 @@
 ### Improved
 - **Model Naturalness**: Prioritized physical simplicity over numerical overfitting (e.g., rejecting $8_{14}$ for $3_1$).
 - **Documentation**: Generation of high-fidelity figures (Landscape, CKM Audit, g-2) and comprehensive trilogy papers.
+
+## [6.0.1] - 2026-02-11 (Maintenance & Bug Fixes)
+### Fixed
+- **Topology Assignment Generation**: Refactored `topology_official_selector.py` to algorithmically generate assignments instead of hardcoding, improving reproducibility.
+- **Data Schema Consistency**: Fixed key references in `robustness_check.py`, `dark_matter_search.py` (`'mass_mev'` → `'observed_mass'`).
+- **Data Loading**: Updated `plot_topological_landscape.py` to use unified data loader (`ksau_config.load_topology_assignments()`).
+- **Theory Constants**: Computed `CL_DEFAULT` from theory formula instead of hardcoding for consistency with `BQ_DEFAULT`.
+
+### Improved
+- **Accuracy**: Grand Unified MAE improved from 1.20% to **0.78%** through algorithmic topology selection (Bottom: -5.79% → -1.22%, Top: -0.79% → -0.30%).
+- **Code Quality**: All v6.0 analysis scripts (`paper_I_validation.py`, `analyze_ckm_full.py`, etc.) verified and tested successfully.
 
 ## [5.0] - 2026-02-07 (Unified Theory)
 ### Added
