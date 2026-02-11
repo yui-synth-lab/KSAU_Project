@@ -91,7 +91,7 @@ def search_dark_matter_csv():
     # SM Quarks for Scale (Load from config)
     phys = ksau_config.load_physical_constants()
     quarks = ['Up', 'Down', 'Strange', 'Charm', 'Bottom', 'Top']
-    sm_masses = [phys['quarks'][q]['mass_mev'] / 1000.0 for q in quarks]
+    sm_masses = [phys['quarks'][q]['observed_mass'] / 1000.0 for q in quarks]
     # For visualization, approximate volumes are used
     sm_vols = [6.55, 7.33, 9.53, 11.52, 12.28, 15.36]
     ax.scatter(sm_vols, sm_masses, s=100, c='red', marker='s', label='SM Quarks')
