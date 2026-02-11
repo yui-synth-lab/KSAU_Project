@@ -19,7 +19,8 @@ def analyze_det_charge_relationship():
     charge_map = {
         'up-type': +2/3,
         'down-type': -1/3,
-        'lepton': -1
+        'lepton': -1,
+        'boson': 0
     }
 
     # Extract data

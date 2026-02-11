@@ -52,15 +52,16 @@ def run_final_ckm_model():
         for j, d in enumerate(down_types):
             ckm_exp[(u, d)] = ckm_matrix[i][j]
 
-    # 4. Final Regression: ln|Vij| = A * dV + B * d(lnJ) + C
+    # 4. Final Regression: ln|Vij| = A * dV + B * ln(J_ratio) + C
     X = []
     y = []
     labels = []
     
     for (q1, q2), val in ckm_exp.items():
         dV = abs(quarks[q1]['V'] - quarks[q2]['V'])
-        dlnJ = abs(quarks[q1]['ln_J'] - quarks[q2]['ln_J'])
-        X.append([dV, dlnJ])
+        # Discovering Log-Ratio Coupling: ln(J1/J2)
+        lnJ_ratio = quarks[q1]['ln_J'] - quarks[q2]['ln_J']
+        X.append([dV, lnJ_ratio])
         y.append(np.log(val))
         labels.append(f"{q1}-{q2}")
         

@@ -9,13 +9,21 @@ def predict_top_spin_data_driven():
     # 1. Constants
     KAPPA = np.pi / 24
     
-    # Load linkinfo for Top quark (L11a62{0})
+    # Load official Top quark topology
+    topo = ksau_config.load_topology_assignments()
+    top_info = topo['Top']
+    top_name = top_info['topology']
+    
+    # Load linkinfo data
     csv_path = Path('data/linkinfo_data_complete.csv')
     df = pd.read_csv(csv_path, sep='|', skiprows=[1])
-    top_row = df[df['name'] == 'L11a62{0}'].iloc[0]
     
-    vol_top = float(top_row['volume'])
-    comp_top = int(top_row['components'])
+    # Extract row
+    base_name = top_name.split('{')[0]
+    row = df[df['name'].str.startswith(base_name)].iloc[0]
+    
+    vol_top = float(row['volume'])
+    comp_top = int(row['components'])
     
     # 2. SM Values (Load from config)
     phys = ksau_config.load_physical_constants()
@@ -27,9 +35,7 @@ def predict_top_spin_data_driven():
 
     # 3. KSAU Prediction
     # Twist calculation: (2 - Gen) * (-1)^Comp
-    gen_top = 3
-    topo = ksau_config.load_topology_assignments()
-    comp_top = topo['Top']['components']
+    gen_top = top_info['generation']
     
     twist = (2 - gen_top) * ((-1)**comp_top)
     twist_magnitude = abs(twist)
@@ -46,7 +52,7 @@ def predict_top_spin_data_driven():
     print("="*70)
     print("KSAU v6.0 Data-Driven: Top Quark Helicity Prediction")
     print("="*70)
-    print(f"Top Link                 : L11a62{{0}}")
+    print(f"Top Link                 : {row['name']}")
     print(f"Hyperbolic Volume (Data) : {vol_top:.5f}")
     print(f"Components (Data)        : {comp_top}")
     print(f"Calculated Twist         : {twist}")
