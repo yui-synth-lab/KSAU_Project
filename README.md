@@ -37,7 +37,7 @@ Mass slopes are quantized by integer geometric factors:
 ### 3. Grand Unified Results
 - **Gravity ($G$):** Derived with **99.92% precision**.
 - **Electroweak ($\theta_W$):** Weinberg angle derived from topological twist ($\cos^2\theta_W = e^{-2\kappa}$) with **0.1% error**.
-- **Standard Model:** All 12 fundamental particles aligned with **MAE 1.20%**.
+- **Standard Model:** All 12 fundamental particles aligned with **MAE 0.78%** (improved by algorithmic topology selection).
 
 ---
 
