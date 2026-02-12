@@ -65,10 +65,10 @@ $$ |V_{ij}| \propto \exp\left(-\frac{1}{2} \Delta Vol(i,j)\right) \cdot f(\Delta
 
 | Model | Parameters | R² | Physical Interpretation |
 |-------|------------|-----|---------|
-| A: ΔV only | 1 | 0.48 | Shape barrier alone insufficient |
-| B: ΔV + V̄ | 2 | 0.89 | Bulk tunneling effects critical |
+| A: ΔV only (fixed $A=-0.5$) | 0 | 0.44 | Shape barrier alone insufficient |
+| B: Unified regression (Entropy + Tunneling) | 2 | 0.70 | Improves global trend but remains incomplete |
 
-The improvement from R²=0.48→0.89 demonstrates that the **Holographic Duality** is essential: quantum tunneling effects in the confined bulk sector (quarks) are fundamentally different from boundary physics (leptons).
+The improvement from R²≈0.44→0.70 suggests that bulk-sector effects beyond simple shape overlap (e.g., entropy and mass-scale terms) matter, but also shows that additional constraints/invariants are still required to reproduce the full CKM hierarchy.
 
 ---
 
@@ -77,7 +77,7 @@ The improvement from R²=0.48→0.89 demonstrates that the **Holographic Duality
 We confirm the robustness of the KSAU framework through:
 1. **Constant Search**: $\pi/24$ remains the unique constant that unifies mass, EM, and Weak sectors.
 2. **Assignment Stability**: The fermion assignments are locked by the "Binary Determinant Rule" and "Component Law", preventing ad-hoc fitting.
-3. **CKM Bulk Physics**: The improved R²=0.89 validates the Holographic Duality hypothesis over single-parameter models.
+3. **CKM Bulk Physics**: The current unified regression reaches R²≈0.70, but the remaining residuals motivate further theory development beyond v6.0.
 
 ---
 
