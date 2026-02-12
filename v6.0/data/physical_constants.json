@@ -32,6 +32,11 @@
     "Muon": { "observed_mass": 105.66, "generation": 2, "charge_type": "lepton" },
     "Tau": { "observed_mass": 1776.86, "generation": 3, "charge_type": "lepton" }
   },
+  "boundary_ansatz": {
+    "cl_intercept": -2.38,
+    "scan_range": [3, 12],
+    "selection_principle": "minimal_determinant"
+  },
   "neutrinos": {
     "oscillation": {
       "dm2_21_exp": 7.42e-5,
@@ -51,9 +56,9 @@
   },
   "bosons": {
     "scaling": { "A": 0.39256, "C": 5.5414 },
-    "W": { "observed_mass": 80377.0, "charge_type": "boson" },
-    "Z": { "observed_mass": 91187.0, "charge_type": "boson" },
-    "Higgs": { "observed_mass": 125100.0, "charge_type": "boson", "mass_gev_obs": 125.25 }
+    "W": { "observed_mass": 80377.0, "charge_type": "boson", "is_brunnian_required": true, "target_crossing": 11 },
+    "Z": { "observed_mass": 91187.0, "charge_type": "boson", "is_brunnian_required": true, "target_crossing": 11 },
+    "Higgs": { "observed_mass": 125100.0, "charge_type": "boson", "is_brunnian_required": false, "target_crossing": 11, "mass_gev_obs": 125.25 }
   },
   "ckm": {
     "matrix": [
