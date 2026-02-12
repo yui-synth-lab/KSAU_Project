@@ -45,36 +45,31 @@ def refine_pmns_cusp():
         })
         print(f"  {name}: Vol={vol:.4f}, CuspVol={cusp_vol:.4f}, Ratio={aspect:.4f}")
 
-    # 3. Refined Mass Model
-    # Previous: m ~ V^1.77
-    # Ratio 21 vs 33. We need to increase the gap between m2 and m3, or decrease m2-m1.
-    # 4_1 (2.03), 7_2 (3.33), 8_9 (7.59).
-    # Power law gives decent fit.
+    # 3. Unified Mass Model (20*kappa Law)
+    consts = utils_v61.load_constants()
+    kappa = consts.get('kappa', np.pi/24)
+    slope_l = 20 * kappa
+    intercept_l = np.log(consts['leptons']['Electron']['observed_mass'])
     
-    # Hypothesis: Mass depends on "Geometry + Boundary correction".
-    # m = V^lambda * (Aspect)^k ?
-    # Let's test a correction factor.
+    # Observed Ratios from SSoT (Squared masses)
+    dm21_exp = consts['neutrinos']['oscillation']['dm2_21_exp']
+    dm31_exp = consts['neutrinos']['oscillation']['dm2_31_exp']
+    target_ratio = (dm31_exp - dm21_exp) / dm21_exp
     
-    print("\n[Testing Cusp-Corrected Mass Model]")
-    print("Formula: m = V^1.77 * (Aspect)^k")
-    
-    # We want Ratio = 33.
-    # Current Ratio ~ 21.
-    # We need to increase the effective "distance" of 8_9 or decrease 7_2.
-    # 4_1 Aspect ~ ?
-    # 7_2 Aspect ~ ?
-    # 8_9 Aspect ~ ?
-    
-    # Let's perform a scan for k.
+    print(f"\n[Testing Cusp-Corrected Unified Law]")
+    print(f"Base Formula: ln(m) = {slope_l:.4f} * V + C")
+    print(f"Cusp Correction: m = exp(slope*V + C) * (Aspect)^k")
+    print(f"Target Ratio (dm32/dm21): {target_ratio:.2f}")
     
     best_k = 0
-    best_err = 100
+    best_err = float('inf')
     best_ratio = 0
     
-    for k in np.linspace(-2, 2, 100):
+    for k in np.linspace(-5, 5, 200):
         m = []
         for c in candidates:
-            mass = (c['vol'] ** 1.767) * (c['aspect'] ** k)
+            # Applying 20*kappa law with cusp correction
+            mass = np.exp(slope_l * c['vol'] + intercept_l) * (c['aspect'] ** k)
             m.append(mass)
             
         dm21 = abs(m[1]**2 - m[0]**2)
@@ -82,14 +77,14 @@ def refine_pmns_cusp():
         
         if dm21 > 0:
             ratio = dm32 / dm21
-            err = abs(ratio - 33.0)
+            err = abs(ratio - target_ratio)
             if err < best_err:
                 best_err = err
                 best_k = k
                 best_ratio = ratio
                 
     print(f"\nBest Correction Power k: {best_k:.4f}")
-    print(f"Resulting Ratio: {best_ratio:.4f} (Target: 33.0)")
+    print(f"Resulting Ratio: {best_ratio:.4f} (Target: {target_ratio:.2f})")
     
     # Show Masses
     print("\nCorrected Masses (Relative):")
