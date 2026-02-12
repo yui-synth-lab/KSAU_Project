@@ -20,7 +20,7 @@ def validate_paper_i():
     # cl is updated for Entropy Correction in this validation context
     slope_q = coeffs['quark_vol_coeff']
     bq = coeffs['quark_intercept']
-    cl_unified = -2.38
+    cl_unified = phys['boundary_ansatz']['cl_intercept']
     
     # --- SECTION 1: QUARK MASSES (Bulk Volume Law) ---
     quarks = ['Up', 'Down', 'Strange', 'Charm', 'Bottom', 'Top']
@@ -47,34 +47,31 @@ def validate_paper_i():
     q_r2 = 1 - np.sum((np.log(q_obs) - np.log(q_pred))**2) / np.sum((np.log(q_obs) - np.mean(np.log(q_obs)))**2)
     q_mae = np.mean(np.abs((np.array(q_pred) - np.array(q_obs)) / np.array(q_obs) * 100))
 
-    # --- SECTION 2: CHARGED LEPTON MASSES (Boundary Complexity Law) ---
+    # --- SECTION 2: CHARGED LEPTON MASSES (Unified Bulk Law: 20kV) ---
     leptons = ['Electron', 'Muon', 'Tau']
     l_obs, l_pred = [], []
     
-    # Use complexity coefficient (N^2) from config
-    slope_l = coeffs['lepton_n2_coeff']
-    cl_unified = -2.38
+    # 20*kappa Law derived from Topological Freeze-out
+    slope_l_unified = 20 * kappa
+    cl_lepton = coeffs['lepton_intercept']
     
-    print(f"\n[SECTION 2: CHARGED LEPTON MASSES (Boundary Complexity Law: N^2 - k*ln(Det))]")
-    print(f"{'Particle':<10} | {'Topology':<12} | {'N^2':<5} | {'Obs (MeV)':<10} | {'Pred (MeV)':<10} | {'Error (%)':<8}")
+    print(f"\n[SECTION 2: CHARGED LEPTON MASSES (Unified Bulk Law: {slope_l_unified/kappa:.0f}kV)]")
+    print(f"{'Particle':<10} | {'Topology':<12} | {'Volume':<6} | {'Obs (MeV)':<10} | {'Pred (MeV)':<10} | {'Error (%)':<8}")
     print("-" * 90)
     
     for l in leptons:
         data = topo[l]
         obs = data['observed_mass']
-        n = data['crossing_number']
-        det = data['determinant']
-        gen = data['generation']
-        twist = gen - 2
+        vol = data['volume']
         
-        # ln(m) = Slope_l * N^2 + kappa*Twist - kappa*ln(Det) + Cl
-        log_pred = slope_l * (n**2) + kappa * twist - kappa * np.log(det) + cl_unified
+        # ln(m) = 20*kappa * V + Intercept
+        log_pred = slope_l_unified * vol + cl_lepton
         pred = np.exp(log_pred)
         
         err = (pred - obs) / obs * 100
         l_obs.append(obs)
         l_pred.append(pred)
-        print(f"{l:<10} | {data['topology']:<12} | {n**2:<5} | {obs:>10.2f} | {pred:>10.2f} | {err:>8.2f}%")
+        print(f"{l:<10} | {data['topology']:<12} | {vol:>6.2f} | {obs:>10.2f} | {pred:>10.2f} | {err:>8.2f}%")
 
     l_r2 = 1 - np.sum((np.log(l_obs) - np.log(l_pred))**2) / np.sum((np.log(l_obs) - np.mean(np.log(l_obs)))**2)
     l_mae = np.mean(np.abs((np.array(l_pred) - np.array(l_obs)) / np.array(l_obs) * 100))

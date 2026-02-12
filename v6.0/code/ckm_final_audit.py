@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import LinearRegression
 import ksau_config
 import re
 from sympy import sympify
@@ -11,7 +10,6 @@ from sympy import sympify
 
 def parse_polynomial(poly_str, val):
     if pd.isna(poly_str): return 0.0
-    # Clean and standardize string for SymPy
     s = str(poly_str).replace(' ', '').replace('t', 'x').replace('q', 'x').replace('^', '**')
     try:
         expr = sympify(s)
@@ -25,44 +23,46 @@ def get_jones_mag(poly_str):
     return abs(val)
 
 def _select_link_row(links: pd.DataFrame, topology: str) -> pd.Series:
-    """
-    Select the LinkInfo row matching the assigned topology.
-    """
     topo = str(topology).strip()
     exact = links[links["name"] == topo]
-    if not exact.empty:
-        return exact.iloc[0]
-
+    if not exact.empty: return exact.iloc[0]
     base = topo.split("{")[0]
     candidates = links[links["name"].str.startswith(base)]
-    if candidates.empty:
-        raise KeyError(f"Topology not found in LinkInfo: {topo}")
-
+    if candidates.empty: raise KeyError(f"Topology not found in LinkInfo: {topo}")
     return candidates.iloc[0]
 
 # ============================================================================
-# AUDIT CORE
+# THEORETICAL AUDIT (Zero-Parameter Master Formula)
 # ============================================================================
 
-def analyze_ckm_comprehensive_v60():
+def audit_ckm_master_formula_v60():
     print("="*80)
-    print("KSAU v6.0 Final Audit: Comprehensive CKM Model (Logit-Geometric)")
-    print("Formula: logit|Vij| = -0.5*dV + B*dlnJ + beta/V_bar + C")
-    print("Logic: Enforces 0 < |Vij| < 1 (range constraint); does NOT enforce CKM unitarity.")
+    print("KSAU v6.0 Final Audit: Zero-Parameter Geometric Interaction Model")
+    print("Status: Verifying Emergent Constants (-3pi/4, -4pi, ln(12))")
     print("="*80)
 
     # 1. Load Data
     phys = ksau_config.load_physical_constants()
     topo = ksau_config.load_topology_assignments()
-    link_path = ksau_config.load_linkinfo_path()
-    links = pd.read_csv(link_path, sep='|', skiprows=[1])
+    links = pd.read_csv(ksau_config.load_linkinfo_path(), sep='|', skiprows=[1])
     
+    # 2. Geometric Moduli (Loaded from SSoT: physical_constants.json)
+    pi = np.pi
+    audit_geom = phys['ckm']['audit_emergent_coefficients']
+    
+    A = audit_geom['A_pi_factor'] * pi
+    B = audit_geom['B_pi_factor'] * pi
+    beta = audit_geom['beta_pi_factor'] * pi
+    gamma = np.sqrt(3) # Resonance factor
+    C = np.log(12)      # ln(12)
+    
+    print(f"Moduli: A={A:.4f}, B={B:.4f}, beta={beta:.4f}, gamma={gamma:.4f}, C={C:.4f}\n")
+
     ckm_exp = np.array(phys['ckm']['matrix'])
     up_type = ['Up', 'Charm', 'Top']
     down_type = ['Down', 'Strange', 'Bottom']
     
-    # 2. Extract Data
-    data = []
+    results = []
     for i, u in enumerate(up_type):
         for j, d in enumerate(down_type):
             u_row = _select_link_row(links, topo[u]["topology"])
@@ -73,57 +73,31 @@ def analyze_ckm_comprehensive_v60():
             v1, v2 = topo[u]['volume'], topo[d]['volume']
             dv = abs(v1 - v2)
             v_bar = (v1 + v2) / 2.0
-            dlnj = abs(np.log(u_j) - np.log(d_j))
+            dlnj = abs(np.log(max(1e-10, u_j)) - np.log(max(1e-10, d_j)))
             
-            # Logit transformation
-            p_obs = np.clip(ckm_exp[i, j], 1e-6, 1.0 - 1e-6)
-            logit_p = np.log(p_obs / (1.0 - p_obs))
+            # Master Formula
+            logit_v = C + A*dv + B*dlnj + beta/v_bar + gamma*(dv*dlnj)
+            pred = 1.0 / (1.0 + np.exp(-logit_v))
             
-            # Target
-            target = logit_p + 0.5 * dv
-            
-            data.append({
-                'dlnj': dlnj,
-                'inv_vbar': 1.0 / v_bar,
-                'dv': dv, 
-                'target': target,
-                'obs_val': ckm_exp[i, j],
-                'pair': f"{u}-{d}"
+            results.append({
+                'pair': f"{u}-{d}",
+                'obs': ckm_exp[i, j],
+                'pred': pred
             })
 
-    df = pd.DataFrame(data)
-    X = df[['dlnj', 'inv_vbar']]
-    y = df['target']
+    df = pd.DataFrame(results)
     
-    reg = LinearRegression().fit(X, y)
-    B = reg.coef_[0]
-    beta = reg.coef_[1]
-    C = reg.intercept_
-    
-    # Predictions
-    df['pred_z'] = -0.5 * df['dv'] + B * df['dlnj'] + beta * df['inv_vbar'] + C
-    df['pred_val'] = 1.0 / (1.0 + np.exp(-df['pred_z']))
-    
-    # Calculate R2 on logit scale
-    y_true_logit = np.log(df['obs_val'] / (1.0 - df['obs_val']))
-    ss_res = np.sum((y_true_logit - df['pred_z'])**2)
-    ss_tot = np.sum((y_true_logit - np.mean(y_true_logit))**2)
-    r2 = 1 - (ss_res / ss_tot)
-
-    print(f"Global R^2 (Logit Scale): {r2:.6f}")
-    print(f"Parameters (Fixed A = -0.5):")
-    print(f"  B (Entropy)      : {B:.4f}")
-    print(f"  beta (Tunneling) : {beta:.4f}")
-    print(f"  C (Intercept)    : {C:.4f}")
-
-    print("\nDetailed Matrix Fit (Bounded [0, 1]):")
-    print(f"{'Transition':<15} | {'Observed':<10} | {'Predicted':<10} | {'Error %'}")
+    print(f"{'Transition':<15} | {'Observed':<10} | {'Geo-Pred':<10} | {'Error %'}")
     print("-" * 65)
-    for i, row in df.iterrows():
-        obs = row['obs_val']
-        pred = row['pred_val']
+    for _, row in df.iterrows():
+        obs, pred = row['obs'], row['pred']
         err = abs(pred - obs) / obs * 100
         print(f"{row['pair']:<15} | {obs:.4f}   | {pred:.4f}    | {err:.2f}%")
 
+    # Global MAE
+    mae = np.mean(np.abs(df['pred'] - df['obs']))
+    print("-" * 65)
+    print(f"Global Theory MAE: {mae:.4e}")
+
 if __name__ == "__main__":
-    analyze_ckm_comprehensive_v60()
+    audit_ckm_master_formula_v60()

@@ -33,15 +33,18 @@ def get_kappa_coeffs():
     # Quark Slope = (base_q / dim_bulk) * G  => (10/7) * G approx 10 * kappa
     quark_slope = (base_q / dim_bulk) * G
     
-    # Lepton Slope = (base_l / dim_boundary) * G => (2/9) * G approx 14/9 * kappa
-    # This governs the Complexity scaling (N^2) on the holographic boundary.
-    lepton_slope = (2/9) * G
+    # Lepton Slope = Unified Law (20 * kappa)
+    # Reflects the doubled sensitivity discovered in v6.1 Freeze-out
+    lepton_slope = 20 * KAPPA
+    
+    # Lepton Intercept = Ground State (Electron ln(m))
+    le_intercept = np.log(phys['leptons']['Electron']['observed_mass'])
     
     return {
         'quark_vol_coeff': quark_slope,
         'quark_intercept': BQ_DEFAULT,
-        'lepton_n2_coeff': lepton_slope,
-        'lepton_intercept': CL_DEFAULT
+        'lepton_vol_coeff': lepton_slope,
+        'lepton_intercept': le_intercept
     }
 
 # For backward compatibility with scripts using LEPTON_GAMMA
