@@ -65,7 +65,20 @@
       [0.9743, 0.2253, 0.0036],
       [0.2252, 0.9734, 0.0410],
       [0.0086, 0.0405, 0.9991]
-    ]
+    ],
+    "geometric_coefficients": {
+      "A_barrier_pi_factor": -0.5,
+      "B_complex_pi_factor": -5.0,
+      "beta_visc_alpha_factor": -0.5,
+      "gamma_res_sqrt": 3,
+      "C_drive_formula": "pi^2 + 2*pi"
+    },
+    "audit_emergent_coefficients": {
+      "A_pi_factor": -0.5,
+      "B_pi_factor": -0.75,
+      "beta_pi_factor": -4.0,
+      "C_formula": "ln(12)"
+    }
   },
   "cp_violation": {
     "jarlskog_J": 3.08e-5
