@@ -6,8 +6,9 @@ import os
 import ksau_config
 
 def analyze_g2_data_driven():
-    # 1. Load physical constants from config
+    # 1. Load physical constants and official assignments
     phys = ksau_config.load_physical_constants()
+    topo = ksau_config.load_topology_assignments()
     ALPHA_GEOM = ksau_config.ALPHA_GEOM
     A_BASE = 1.0 / 864.0
 
@@ -15,14 +16,15 @@ def analyze_g2_data_driven():
     df_k = pd.read_csv(csv_knot, sep='|', skiprows=[1])
 
     def get_vol(name):
-        row = df_k[df_k['name'] == name].iloc[0]
-        v = row['volume']
+        exact = df_k[df_k['name'] == name]
+        if exact.empty: return 0.0
+        v = exact.iloc[0]['volume']
         return float(v) if v != 'Not Hyperbolic' else 0.0
 
     leptons = {
-        'Electron': {'a_exp': phys['g_minus_2']['a_e_exp'], 'name': '3_1'},
-        'Muon':     {'a_exp': phys['g_minus_2']['a_mu_exp'],  'name': '6_1'},
-        'Tau':      {'a_exp': 0.00117721,     'name': '7_1'}  # Tau g-2 not in database yet
+        'Electron': {'a_exp': phys['g_minus_2']['a_e_exp'], 'name': topo['Electron']['topology']},
+        'Muon':     {'a_exp': phys['g_minus_2']['a_mu_exp'],  'name': topo['Muon']['topology']},
+        'Tau':      {'a_exp': 0.00117721,     'name': topo['Tau']['topology']}
     }
     
     for k in leptons:

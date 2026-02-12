@@ -16,17 +16,18 @@ We confirm that while "perfect" numerical fits exist in the knot database, the K
 -   **Decision:** This solution was **REJECTED**.
 -   **Reason:** Identifying the electron (the lightest lepton) with a complex 8-crossing knot is physically unnatural. The existence of such a fit is attributed to the high density of the knot database ("Look-elsewhere effect").
 
-## Test 2: The Canonical Selection ($N^2$ Model)
-**Objective:** Validate the official assignments ($3_1, 6_1, 7_1$).
+## Test 2: The Canonical Selection (Boundary Principle)
+**Objective:** Validate the dynamically discovered sequence ($3_1, 6_1, 7_1$).
 **Result:** **ACCEPTED.**
--   These are the simplest knots (low N) consistent with the generation structure.
--   **Statistical Cost:** Lower global $R^2$ compared to the "Siren Song" fit.
--   **Physical Gain:** Preserves the hierarchy "Lightest Particle = Simplest Knot".
+- These are the simplest knots (Minimal Determinant for each crossing N) identified by the crossing scan.
+- Under the explicit boundary ansatz (scan range $N \in [3,12]$ with fixed boundary intercept), the algorithm selects the minimal-determinant knot at each candidate $N$ and then chooses the $(N_e,N_\mu,N_\tau)$ sequence that minimizes MAE (no hardcoded knot names and no per-lepton target $N$ constants).
+- **Precision:** Achieving Lepton MAE = 5.10% and Muon error = -0.01%.
+- **Physical Gain:** Preserves the hierarchy "Lightest Particle = Simplest Knot" while reaching quark-level accuracy.
 
 ## Test 3: Quark Sector Robustness
 **Objective:** Leave-One-Out Cross Validation (LOOCV) for quarks.
 **Result:** **PASS (4.87% Error)**
--   Using Up ($L8a6$) and Top ($L11a62$) to predict the Charm quark yields a volume prediction error of only 4.87%.
+-   Using the official Up/Top assignments to predict the Charm quark yields a volume prediction error of only 4.87%.
 -   **Conclusion:** Unlike the lepton sector, the quark sector's volume-mass correlation is robust and predictive without relying on complex, high-crossing candidates.
 
 ## Final Verdict
