@@ -1,87 +1,117 @@
+"""
+KSAU v6.9: Mass Spectrum & Axion Prediction (Definitive Sync)
+===========================================================
+Dynamically loads all Standard Model data from v6.0 SSoT
+and projects the 6_3 Geometric Axion.
+"""
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import sys
+import os
 
-# Set style
-plt.style.use('seaborn-v0_8-paper')
-fig, ax = plt.subplots(figsize=(10, 7))
+# Add v6.0 code path for config
+sys.path.append(os.path.abspath('v6.0/code'))
+import ksau_config
 
-# --- Data Preparation ---
-data = [
-    # Leptons (Boundary) - Effective scaling
-    {'name': 'e',     'mass': 0.511,   'metric': 3.0, 'type': 'Lepton'},
-    {'name': 'mu',    'mass': 105.66,  'metric': 9.0, 'type': 'Lepton'},
-    {'name': 'tau',   'mass': 1776.86, 'metric': 11.0, 'type': 'Lepton'},
+def generate_spectrum_definitive():
+    print("="*60)
+    print("KSAU v6.9: Final Spectrum Synchronization")
+    print("="*60)
+
+    # 1. Load Data
+    phys = ksau_config.load_physical_constants()
+    topo = ksau_config.load_topology_assignments()
+    kappa = ksau_config.KAPPA
+    bq = -(7 + 7 * kappa)
+
+    # 2. Prepare Data Points from SSoT
+    plot_data = []
     
-    # Quarks (Bulk) - Hyperbolic Volume
-    {'name': 'd',     'mass': 4.7,     'metric': 2.0298, 'type': 'Quark'}, # 4_1
-    {'name': 's',     'mass': 95.0,    'metric': 5.333, 'type': 'Quark'},  # 6^3_2 (approx)
-    {'name': 'c',     'mass': 1275.0,  'metric': 11.0, 'type': 'Quark'},
-    {'name': 'b',     'mass': 4180.0,  'metric': 13.5, 'type': 'Quark'},
-    {'name': 't',     'mass': 173000.0,'metric': 18.5, 'type': 'Quark'},
+    # Standard Model Particles
+    for p_name, data in topo.items():
+        # Get category
+        if p_name in ['Electron', 'Muon', 'Tau']:
+            group = 'Lepton'
+            m_obs = phys['leptons'][p_name]['observed_mass']
+        elif p_name in ['Up', 'Down', 'Strange', 'Charm', 'Bottom', 'Top']:
+            group = 'Quark'
+            m_obs = phys['quarks'][p_name]['observed_mass']
+        else:
+            group = 'Boson'
+            m_obs = phys['bosons'][p_name]['observed_mass']
+            
+        plot_data.append({
+            'name': p_name,
+            'mass': m_obs,
+            'vol': data['volume'],
+            'type': group
+        })
+
+    # 3. PREDICTION: Geometric Axion (6_3 knot)
+    v_axion = 5.6930 # 6_3 knot volume
     
-    # Bosons
-    {'name': 'W',     'mass': 80379.0, 'metric': 14.655, 'type': 'Boson'}, # L11n387
-    {'name': 'Z',     'mass': 91187.6, 'metric': 15.027, 'type': 'Boson'}, # L11a431
-    {'name': 'H',     'mass': 125100.0,'metric': 15.55, 'type': 'Boson'},
+    # BULK LAW SYNC (Top-referenced intercept Bq)
+    # Using the current best fit from Phase 3 synchronization:
+    m_top_obs = phys['quarks']['Top']['observed_mass']
+    v_top = topo['Top']['volume']
+    bq_top = np.log(m_top_obs) - (10 * kappa * v_top)
     
-    # PREDICTION
-    {'name': 'Axion (6_3)', 'mass': 0.627, 'metric': 5.693, 'type': 'Prediction'} # 6_3 Volume
-]
+    # m_axion = exp(10*kappa * V_axion + Bq)
+    ln_ma = (10 * kappa) * v_axion + bq_top
+    m_axion = np.exp(ln_ma)
+    
+    plot_data.append({
+        'name': 'Axion (6_3)',
+        'mass': m_axion,
+        'vol': v_axion,
+        'type': 'Prediction'
+    })
 
-df = pd.DataFrame(data)
+    df = pd.DataFrame(plot_data)
+    print(f"Top-referenced Bq: {bq_top:.4f}")
+    print(f"Calculated Axion Mass: {m_axion:.4f} MeV")
 
-# Separate groups for plotting
-leptons = df[df['type'] == 'Lepton']
-quarks = df[df['type'] == 'Quark']
-bosons = df[df['type'] == 'Boson']
-pred = df[df['type'] == 'Prediction']
+    # 4. PLOTTING
+    plt.style.use('seaborn-v0_8-paper')
+    fig, ax = plt.subplots(figsize=(10, 7))
 
-# --- Plotting ---
+    # Groups
+    leptons = df[df['type'] == 'Lepton']
+    quarks = df[df['type'] == 'Quark']
+    bosons = df[df['type'] == 'Boson']
+    pred = df[df['type'] == 'Prediction']
 
-# 1. Scaling Lines (Simplified visual fit)
-x_lep = np.linspace(2, 12, 100)
-p_lep = np.polyfit(leptons['metric'], np.log(leptons['mass']), 1)
-y_lep = np.exp(p_lep[1]) * np.exp(p_lep[0] * x_lep)
-ax.plot(x_lep, y_lep, '--', color='blue', alpha=0.3, label='Boundary Scaling (Leptons)')
+    # Scatter Points
+    ax.scatter(leptons['vol'], leptons['mass'], color='blue', marker='o', s=100, label='Leptons', zorder=3)
+    ax.scatter(quarks['vol'], quarks['mass'], color='green', marker='s', s=100, label='Quarks', zorder=3)
+    ax.scatter(bosons['vol'], bosons['mass'], color='purple', marker='^', s=100, label='Bosons', zorder=3)
+    ax.scatter(pred['vol'], pred['mass'], color='red', marker='*', s=400, label='Axion Prediction', zorder=10, edgecolor='black')
 
-bulk = pd.concat([quarks, bosons])
-p_bulk = np.polyfit(bulk['metric'], np.log(bulk['mass']), 1)
-x_bulk = np.linspace(0, 20, 100)
-y_bulk = np.exp(p_bulk[1]) * np.exp(p_bulk[0] * x_bulk)
-ax.plot(x_bulk, y_bulk, '-', color='black', alpha=0.3, label='Bulk Scaling (Quarks/Bosons)')
+    # Annotations
+    for _, row in df.iterrows():
+        if row['type'] == 'Prediction':
+            label = f"{row['name']}\n{row['mass']:.3f} MeV"
+            ax.annotate(label, (row['vol'], row['mass']), xytext=(row['vol']+1, row['mass']*0.5),
+                        arrowprops=dict(arrowstyle='->', color='red'), fontsize=12, color='red', fontweight='bold')
+        else:
+            ax.text(row['vol']+0.2, row['mass']*0.8, row['name'], fontsize=9)
 
-# 2. Scatter Points
-ax.scatter(leptons['metric'], leptons['mass'], color='blue', marker='o', s=100, label='Leptons', zorder=3)
-ax.scatter(quarks['metric'], quarks['mass'], color='green', marker='s', s=100, label='Quarks', zorder=3)
-ax.scatter(bosons['metric'], bosons['mass'], color='purple', marker='^', s=100, label='Bosons', zorder=3)
+    # Scaling Lines (Bulk)
+    v_range = np.linspace(0, 20, 100)
+    ax.plot(v_range, np.exp((10*kappa)*v_range + bq), '--', color='black', alpha=0.2, label='Bulk Scaling Law')
 
-# 3. The Prediction (Axion)
-ax.scatter(pred['metric'], pred['mass'], color='red', marker='*', s=300, label='Axion Prediction', zorder=10, edgecolor='black')
+    ax.set_yscale('log')
+    ax.set_xlabel('Hyperbolic Volume (V)', fontsize=12)
+    ax.set_ylabel('Mass [MeV]', fontsize=12)
+    ax.set_title('Figure 1: KSAU Mass Spectrum & Definitive Axion Prediction', fontsize=14, fontweight='bold')
+    ax.grid(True, which="both", ls="-", alpha=0.2)
+    ax.legend(loc='lower right')
 
-# 4. Annotations
-for i, row in df.iterrows():
-    if row['name'] == 'Axion (6_3)':
-        label_text = f"{row['name']}\n{row['mass']} MeV"
-        ax.annotate(label_text, (row['metric'], row['mass']), 
-                    xytext=(row['metric']+2, row['mass']*0.5),
-                    arrowprops=dict(arrowstyle='->', color='red'),
-                    fontsize=12, color='red', fontweight='bold')
-    else:
-        ax.text(row['metric']+0.2, row['mass']*0.8, row['name'], fontsize=10)
+    plt.tight_layout()
+    os.makedirs('v6.9/figures', exist_ok=True)
+    plt.savefig('v6.9/figures/figure_1_spectrum.png', dpi=300)
+    print("Figure 1 saved to v6.9/figures/figure_1_spectrum.png")
 
-# 5. Styling
-ax.set_yscale('log')
-ax.set_xlabel('Topological Invariant (Volume / Complexity)', fontsize=12)
-ax.set_ylabel('Mass [MeV]', fontsize=12)
-ax.set_title('Figure 1: KSAU Mass Spectrum & Axion Prediction', fontsize=14, fontweight='bold')
-ax.grid(True, which="both", ls="-", alpha=0.2)
-ax.legend(loc='lower right')
-
-ax.text(2.3, 3, r'$4_1$ (Down)', color='green', fontsize=9)
-ax.text(5.5, 50, r'$6^3_2$ (Strange)', color='green', fontsize=9)
-ax.text(14.5, 60000, r'W ($L11n387$)', color='purple', fontsize=9)
-
-plt.tight_layout()
-plt.savefig('v6.9/figures/figure_1_spectrum.png', dpi=300)
-print("Figure 1 saved to v6.9/figures/figure_1_spectrum.png")
+if __name__ == "__main__":
+    generate_spectrum_definitive()
