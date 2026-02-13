@@ -15,34 +15,41 @@ def search_root_link():
     _, links = utils_v61.load_data()
     
     # 2. Target Volume for "Root Link"
-    # Quarks Vol: ~6.5 (Up) to ~15.36 (Top)
-    # W Boson Vol: ~14.68
-    # Total SM Generation 1 Vol: V_Up + V_Down + V_e + V_nue ?
-    # 6.55 + 7.33 + (Low) + (Low) ~ 14
-    
-    # GUT Scale is usually high energy. 
+    # Load quark volumes from SSoT (v6.0 final topology assignments)
+    # Updated 2026-02-13: Use SSoT instead of hardcoded values
+    assignments = utils_v61.load_assignments()
+
+    # Extract volumes
+    v_up = assignments['Up']['volume']
+    v_down = assignments['Down']['volume']
+    v_strange = assignments['Strange']['volume']
+    v_charm = assignments['Charm']['volume']
+    v_bottom = assignments['Bottom']['volume']
+    v_top = assignments['Top']['volume']
+
+    print(f"\nQuark Volumes (from v6.0 SSoT):")
+    print(f"  Up: {v_up:.4f}, Down: {v_down:.4f}")
+    print(f"  Charm: {v_charm:.4f}, Strange: {v_strange:.4f}")
+    print(f"  Top: {v_top:.4f}, Bottom: {v_bottom:.4f}")
+
+    # GUT Scale is usually high energy.
     # But geometrically, unification might mean "Decomposition".
     # A single complex link that decomposes into quarks + leptons.
-    
-    # Let's search for Links with Volume > 20 and Components >= 3 (Generation Structure)
-    # We hypothesize a "GUT Link" that contains sub-links matching SM particles.
-    
-    # In lieu of sub-link analysis (complex), let's look for Links with
-    # specific volume signatures.
-    
-    # Target: Sum of all Quark Volumes?
-    # Sum(V_q) = 6.55+7.33+11.52+9.53+15.36+12.28 ~ 62.57
-    # That's huge. 
-    
-    # Maybe "Generational" Root Links?
-    # Gen 1: Up(6.55) + Down(7.33) ~ 13.88
-    # Gen 2: Charm(11.52) + Strange(9.53) ~ 21.05
-    # Gen 3: Top(15.36) + Bottom(12.28) ~ 27.64
-    
+
+    # Generational Root Links (Sum of quark pairs)
+    gen1_root = v_up + v_down
+    gen2_root = v_charm + v_strange
+    gen3_root = v_top + v_bottom
+
+    print(f"\nGenerational Root Volumes:")
+    print(f"  Gen 1: Up+Down = {gen1_root:.4f}")
+    print(f"  Gen 2: Charm+Strange = {gen2_root:.4f}")
+    print(f"  Gen 3: Top+Bottom = {gen3_root:.4f}")
+
     targets = {
-        "Gen1_Root": 13.88,
-        "Gen2_Root": 21.05,
-        "Gen3_Root": 27.64
+        "Gen1_Root": gen1_root,
+        "Gen2_Root": gen2_root,
+        "Gen3_Root": gen3_root
     }
     
     print("Searching for Generational Root Links...")
