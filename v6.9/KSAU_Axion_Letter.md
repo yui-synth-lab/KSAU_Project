@@ -8,7 +8,7 @@
 ---
 
 ## Abstract
-We present a falsifiable prediction of a neutral pseudoscalar particle with mass **$0.627 \pm 0.008$ MeV**, derived from knot theory applied to vacuum topology. Based on the KSAU Unified Mass Law, which successfully correlates Standard Model masses with hyperbolic volumes, we identify the **$6_3$ knot** as the unique candidate for a CP-even, color-neutral dark sector boson. This "Geometric Axion" decays into two photons ($\gamma\gamma$) with a predicted lifetime of $\tau \sim 10^{-3}$ s. Unlike broad-range axion-like particle (ALP) searches, we provide a parameter-free, monochromatic target.
+We present a falsifiable prediction of a neutral pseudoscalar particle with mass **$0.392 \pm 0.001$ MeV**, derived from knot theory applied to vacuum topology. Based on the KSAU Unified Mass Law, which successfully correlates Standard Model masses with hyperbolic volumes, we identify the **$6_3$ knot** as the unique candidate for a CP-even, color-neutral dark sector boson. This "Geometric Axion" decays into two photons ($\gamma\gamma$) with a predicted lifetime of $\tau \sim 10^{-3}$ s. Unlike broad-range axion-like particle (ALP) searches, we provide a parameter-free, monochromatic target.
 
 ---
 
@@ -20,11 +20,11 @@ The KSAU framework proposes that particle masses are quantized by the hyperbolic
 ### 2.1 The Mass Scaling Law
 The mass of a particle in the Bulk (confined/compact) sector is governed by the **Universal Geometric Mass Formula**:
 
-$$\ln(m / \text{MeV}) = 10\kappa V + \kappa \mathcal{T} + B_q$$
+$$\ln(m / \text{MeV}) = 10\kappa V + B_q$$
 
 where:
 - $\kappa = \pi/24$ (the master constant)
-- $B_q = -(7 + 7\kappa) \approx -7.916$ (the 10D compactification intercept)
+- $B_q = \ln(m_{top}) - 10\kappa V_{top} \approx -8.388$ (the SSoT synchronized intercept)
 - $V$ is the hyperbolic volume of the corresponding knot/link.
 
 ### 2.2 Selection of the $6_3$ Knot
@@ -34,8 +34,11 @@ The selection criteria for a color-neutral dark sector boson (Geometric Axion) a
 3.  **Ground State:** Following the Topological Freeze-out principle, we select the simplest knot satisfying these symmetries.
 
 The $6_3$ knot ($V \approx 5.6930$) is the first stable amphicheiral knot following the first generation of matter. Applying the Bulk Volume Law:
-$\ln(m) = 10(\pi/24) \cdot 5.6930 - 7.916 \approx -0.466$
-$m \approx 0.627 \text{ MeV}$
+$\ln(m) = 10(\pi/24) \cdot 5.6930 - 8.388 \approx -0.936$
+$m \approx \mathbf{0.392 \text{ MeV}}$
+
+### 2.3 Exclusion of Minimal Amphicheiral States
+While the $4_1$ knot (Figure-eight) is the simplest amphicheiral knot, it is already assigned as the topological core of the **Muon** ($4_1$ lepton) within the Boundary Projection sector. In the KSAU framework, a topological state cannot manifest simultaneously as a boundary fermion and a bulk neutral boson. Thus, $6_3$ is the unique, mathematically minimal solution for a dark sector scalar that remains independent of the Standard Model fermion projection.
 
 ---
 
