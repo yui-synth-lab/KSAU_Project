@@ -154,7 +154,7 @@ def generate_v6_official_assignments():
         assignments[b_name] = {"topology": topo, "volume": float(match['volume']), "crossing_number": int(match['crossing_number']), "components": int(match['components']), "determinant": int(match['determinant']), "is_brunnian": (b_name != 'Higgs')}
         print(f"  {b_name:<10} -> {topo}")
 
-    output_path = Path('v6.0/data/topology_assignments.json')
+    output_path = Path(__file__).parent.parent / 'data' / 'topology_assignments.json'
     with open(output_path, 'w') as f: json.dump(assignments, f, indent=2)
     print(f"\nSuccess: Freeze-out complete. Assignments saved to {output_path}")
 
