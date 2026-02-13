@@ -26,10 +26,17 @@ def run_dark_matter_scan():
     print(f"Found {len(candidates)} Det=1 Hyperbolic Knots.")
     
     # 3. Calculate Mass
+    # Formula from physical theory (Upgrade Log): ln(m) = (10/7 * G) * V - (7 + G)
+    # where G = Catalan's constant
     consts = utils_v61.load_constants()
-    kappa = consts['kappa']
-    slope = 10 * kappa
-    intercept = -(7 + 7 * kappa)
+    G_catalan = consts['G_catalan']
+
+    # Use Catalan-based formula (matches Upgrade Log documentation)
+    slope = (10.0 / 7.0) * G_catalan  # ~ 1.3085
+    intercept = -(7.0 + G_catalan)    # ~ -7.9160
+
+    # Note: Alternative formulation uses kappa = G_catalan / 7 ≈ 0.1309
+    # Both are numerically equivalent but Catalan-based is more fundamental
     
     candidates['predicted_mass_MeV'] = np.exp(slope * candidates['volume'] + intercept)
     candidates['predicted_mass_keV'] = candidates['predicted_mass_MeV'] * 1000

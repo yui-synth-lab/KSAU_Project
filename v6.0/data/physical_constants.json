@@ -66,18 +66,25 @@
       [0.2252, 0.9734, 0.0410],
       [0.0086, 0.0405, 0.9991]
     ],
-    "geometric_coefficients": {
+    "r2_achieved": 0.9980,
+    "topology_version": "v6.0_constrained_optimization",
+    "selection_method": "constrained_optimization_200k_samples",
+    "last_updated": "2026-02-13",
+    "optimized_coefficients": {
+      "A": -6.3436,
+      "B": 12.3988,
+      "beta": -105.0351,
+      "gamma": 1.1253,
+      "C": 23.2475,
+      "formula": "logit(V_ij) = C + A*dV + B*dlnJ + beta/V_bar + gamma*(dV*dlnJ)"
+    },
+    "geometric_coefficients_deprecated": {
       "A_barrier_pi_factor": -0.5,
       "B_complex_pi_factor": -5.0,
       "beta_visc_alpha_factor": -0.5,
       "gamma_res_sqrt": 3,
-      "C_drive_formula": "pi^2 + 2*pi"
-    },
-    "audit_emergent_coefficients": {
-      "A_pi_factor": -0.5,
-      "B_pi_factor": -0.75,
-      "beta_pi_factor": -4.0,
-      "C_formula": "ln(12)"
+      "C_drive_formula": "pi^2 + 2*pi",
+      "note": "These are theoretical coefficients. Use optimized_coefficients for predictions."
     }
   },
   "cp_violation": {
