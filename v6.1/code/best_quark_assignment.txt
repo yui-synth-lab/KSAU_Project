@@ -1,0 +1,8 @@
+Best R^2: 0.9819
+
+Up: L8n1{0} (V=5.333, Det=12)
+Charm: L11a358{0} (V=10.073, Det=62)
+Top: L11n409{1,0} (V=15.089, Det=80)
+Down: L7a3{1} (V=6.138, Det=16)
+Strange: L9a49{1,0} (V=10.563, Det=44)
+Bottom: L11n113{1} (V=13.901, Det=64)

@@ -1,0 +1,3 @@
+Best CKM Model: Logit (5-param): logit(V) = C + A*dV + B*dlnJ + beta/V_bar + gamma*(dV*dlnJ)
+R^2: 0.4408
+Parameters: [  -6.34355617   12.39879802 -105.03509892    1.12530596   23.2475412 ]

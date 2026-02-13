@@ -1,0 +1,20 @@
+Hybrid Topology Selection Results (DETERMINISTIC)
+============================================================
+Top-N candidates per quark: 10
+Total combinations evaluated: 1,000,000
+Valid combinations: 1000000
+R^2: 0.4103
+
+Algorithm:
+  1. Compute target volumes from mass-volume correlation
+  2. Select top-10 volume-matched candidates per quark
+  3. Exhaustively evaluate all 10^6 combinations
+  4. Return best CKM R^2 satisfying mass hierarchy
+
+Final Assignment:
+Up: L8n4{1,0} (V=5.333, Det=12)
+Down: L7a3{0} (V=6.138, Det=16)
+Strange: L9a34{0} (V=9.181, Det=36)
+Charm: L10a90{0} (V=11.722, Det=64)
+Bottom: L11a162{0} (V=12.909, Det=82)
+Top: L11a135{0} (V=16.500, Det=140)

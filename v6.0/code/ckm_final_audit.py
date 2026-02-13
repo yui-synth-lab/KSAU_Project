@@ -46,22 +46,17 @@ def audit_ckm_master_formula_v60():
     topo = ksau_config.load_topology_assignments()
     links = pd.read_csv(ksau_config.load_linkinfo_path(), sep='|', skiprows=[1])
     
-    # 2. Geometric Moduli (Loaded from SSoT: physical_constants.json)
-    # CORRECTED: Use same coefficients as topology_official_selector.py
-    pi = np.pi
-    alpha = phys.get('alpha_em', 0.0072973525)
-    geom = phys['ckm']['geometric_coefficients']
+    # 2. CKM Coefficients (Loaded from SSoT: physical_constants.json)
+    # Updated 2026-02-13: Use optimized coefficients from constrained optimization
+    coeff = phys['ckm']['optimized_coefficients']
 
-    # Master Formula Constants (same as topology selector)
-    A = geom['A_barrier_pi_factor'] * pi
-    B = geom['B_complex_pi_factor'] * pi
-    beta = geom['beta_visc_alpha_factor'] / alpha
-    gamma = np.sqrt(geom['gamma_res_sqrt'])
+    A = coeff['A']
+    B = coeff['B']
+    beta = coeff['beta']
+    gamma = coeff['gamma']
+    C = coeff['C']
 
-    # C_drive formula: pi^2 + 2*pi
-    C = (pi**2) + (2*pi)
-
-    print(f"Moduli: A={A:.4f}, B={B:.4f}, beta={beta:.4f}, gamma={gamma:.4f}, C={C:.4f}\n")
+    print(f"Coefficients: A={A:.4f}, B={B:.4f}, beta={beta:.4f}, gamma={gamma:.4f}, C={C:.4f}\n")
 
     ckm_exp = np.array(phys['ckm']['matrix'])
     up_type = ['Up', 'Charm', 'Top']

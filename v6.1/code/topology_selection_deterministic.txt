@@ -1,0 +1,17 @@
+Deterministic Topology Selection Results
+============================================================
+R^2: -0.4705
+
+Selection Algorithm:
+  1. Target volumes from mass-volume correlation
+  2. Minimize |V_actual - V_target| per quark
+  3. Determinant structure constraints
+  4. Uniqueness (no topology reuse)
+
+Final Assignment:
+Up: L6a1{0} (V=5.333, Det=12)
+Down: L10n49{0} (V=6.290, Det=14)
+Strange: L11a275{0} (V=9.187, Det=52)
+Charm: L10a90{0} (V=11.722, Det=64)
+Bottom: L11a162{0} (V=12.909, Det=82)
+Top: L11n392{0,0} (V=16.509, Det=96)
