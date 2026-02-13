@@ -1,6 +1,7 @@
 # KSAU: The Geometry of Everything
 ### Deriving the Standard Model and Gravity from the Borromean Volume
 
+[![DOI](https://zenodo.org/badge/1148825711.svg)](https://doi.org/10.5281/zenodo.18631885)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-v6.9_Final-red.svg)
 ![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18598989-blue)
