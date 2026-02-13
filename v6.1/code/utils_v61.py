@@ -15,8 +15,8 @@ def load_data():
     knot_path = base_path / 'knotinfo_data_complete.csv'
     link_path = base_path / 'linkinfo_data_complete.csv'
 
-    knots = pd.read_csv(knot_path, sep='|', skiprows=[1])
-    links = pd.read_csv(link_path, sep='|', skiprows=[1])
+    knots = pd.read_csv(knot_path, sep='|', skiprows=[1], low_memory=False)
+    links = pd.read_csv(link_path, sep='|', skiprows=[1], low_memory=False)
     
     return knots, links
 

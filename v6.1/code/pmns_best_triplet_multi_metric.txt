@@ -1,0 +1,3 @@
+Best Metric: eff_genus
+MSE: 5.44 deg^2
+Triplet: ('10_67', '9_41', '10_31')

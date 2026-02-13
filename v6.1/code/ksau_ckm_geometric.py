@@ -8,15 +8,15 @@ class KSAUCKMGeometric:
         self.pi = self.consts.get('pi', np.pi)
         self.alpha = self.consts.get('alpha_em', 1/137.036)
         
-        # Derive Geometric Moduli from Central Metadata
-        ckm_geom = self.consts['ckm']['geometric_coefficients']
-        
-        self.A_barrier = ckm_geom['A_barrier_pi_factor'] * self.pi
-        self.B_complex = ckm_geom['B_complex_pi_factor'] * self.pi
-        self.beta_visc = ckm_geom['beta_visc_alpha_factor'] / self.alpha
-        self.gamma_res = np.sqrt(ckm_geom['gamma_res_sqrt'])
-        # C = pi^2 + 2*pi
-        self.C_drive = (self.pi**2) + (2 * self.pi)
+        # CKM Coefficients from SSoT (optimized via constrained optimization)
+        # Updated 2026-02-13
+        coeff = self.consts['ckm']['optimized_coefficients']
+
+        self.A_barrier = coeff['A']
+        self.B_complex = coeff['B']
+        self.beta_visc = coeff['beta']
+        self.gamma_res = coeff['gamma']
+        self.C_drive = coeff['C']
         
     def predict_element(self, V_i, lnJ_i, V_j, lnJ_j):
         """

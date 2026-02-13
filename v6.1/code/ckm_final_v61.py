@@ -13,19 +13,17 @@ def run_final_ckm_model():
     assignments = utils_v61.load_assignments()
     consts = utils_v61.load_constants()
     
-    # 2. Extract Topologies and Derived Constants
-    pi = consts.get('pi', np.pi)
-    alpha = consts.get('alpha_em', 0.00729735)
-    geom_coeffs = consts['ckm']['geometric_coefficients']
-    
-    # Define Master Formula Moduli
-    A = geom_coeffs['A_barrier_pi_factor'] * pi
-    B = geom_coeffs['B_complex_pi_factor'] * pi
-    beta = geom_coeffs['beta_visc_alpha_factor'] / alpha
-    gamma = np.sqrt(geom_coeffs['gamma_res_sqrt'])
-    C = (pi**2) + (2 * pi)
-    
-    print(f"Moduli: A={A:.4f}, B={B:.4f}, beta={beta:.4f}, gamma={gamma:.4f}, C={C:.4f}\n")
+    # 2. CKM Coefficients (from SSoT: physical_constants.json)
+    # Updated 2026-02-13: Use optimized coefficients from constrained optimization
+    coeff = consts['ckm']['optimized_coefficients']
+
+    A = coeff['A']
+    B = coeff['B']
+    beta = coeff['beta']
+    gamma = coeff['gamma']
+    C = coeff['C']
+
+    print(f"Coefficients: A={A:.4f}, B={B:.4f}, beta={beta:.4f}, gamma={gamma:.4f}, C={C:.4f}\n")
 
     quark_names = ["Up", "Down", "Strange", "Charm", "Bottom", "Top"]
     quarks = {}
