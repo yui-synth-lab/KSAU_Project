@@ -24,75 +24,78 @@
     "generation": 3
   },
   "Up": {
-    "topology": "L10a114{0}",
-    "volume": 5.082653841518961,
-    "crossing_number": 10,
-    "components": 2,
-    "determinant": 22,
-    "generation": 1
-  },
-  "Down": {
-    "topology": "L8n4{1,0}",
+    "topology": "L9n1{1}",
     "volume": 5.33348956689812,
-    "crossing_number": 8,
-    "components": 3,
+    "crossing_number": 9,
+    "components": 2,
     "determinant": 12,
     "generation": 1
   },
+  "Down": {
+    "topology": "L8a18{0,1}",
+    "volume": 6.551743287887868,
+    "crossing_number": 8,
+    "components": 3,
+    "determinant": 20,
+    "generation": 1
+  },
   "Strange": {
-    "topology": "L9a45{1,1}",
-    "volume": 9.66534641935737,
-    "crossing_number": 9,
+    "topology": "L11n330{0,1}",
+    "volume": 9.312341316558376,
+    "crossing_number": 11,
     "components": 3,
     "determinant": 36,
     "generation": 2
   },
   "Charm": {
-    "topology": "L10a100{1}",
-    "volume": 9.707186591328064,
-    "crossing_number": 10,
+    "topology": "L11a362{0}",
+    "volume": 11.215504015501589,
+    "crossing_number": 11,
     "components": 2,
-    "determinant": 48,
+    "determinant": 70,
     "generation": 2
   },
   "Bottom": {
-    "topology": "L11n309{1,1}",
-    "volume": 13.602302571413908,
+    "topology": "L11a528{0,1}",
+    "volume": 15.156670150795042,
     "crossing_number": 11,
     "components": 3,
-    "determinant": 60,
+    "determinant": 96,
     "generation": 3
   },
   "Top": {
-    "topology": "L10a69{1}",
-    "volume": 14.962630289692935,
-    "crossing_number": 10,
+    "topology": "L11a225{1}",
+    "volume": 15.62112812032806,
+    "crossing_number": 11,
     "components": 2,
-    "determinant": 90,
+    "determinant": 110,
     "generation": 3
   },
   "W": {
-    "topology": "L11n258{0,0}{0,0}{0,0,0}",
-    "volume": 14.967937204950056,
+    "topology": "L11n387{0,0}",
+    "volume": 14.655449506835504,
     "crossing_number": 11,
     "components": 3,
-    "determinant": 76,
-    "is_brunnian": true
+    "determinant": 64,
+    "is_brunnian": true,
+    "physical_meaning": "Double Borromean"
   },
   "Z": {
-    "topology": "L11a431{0,0}{0,0}{0,0,0}",
+    "topology": "L11a431{0,0}",
     "volume": 15.027615015039348,
     "crossing_number": 11,
     "components": 3,
     "determinant": 112,
-    "is_brunnian": true
+    "is_brunnian": true,
+    "physical_meaning": "Double Borromean"
   },
   "Higgs": {
-    "topology": "L11a427{0,0}{0,0}{0,0,0}",
-    "volume": 14.998835986255488,
+    "topology": "L11a55{0}",
+    "volume": 15.820714702540293,
     "crossing_number": 11,
-    "components": 3,
-    "determinant": 108,
-    "is_brunnian": false
+    "components": 2,
+    "determinant": 136,
+    "is_brunnian": true,
+    "physical_meaning": "Scalar Clasp (2-component saturation)"
   }
 }

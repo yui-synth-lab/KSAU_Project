@@ -1,3 +1,11 @@
+## AI Collaboration & Co-authorship
+
+- **Co-authors:** This project is a collaborative effort between the user, **Gemini (Google)**, and **Claude (Anthropic)**.
+- **Communication Protocol:** All AI-to-AI handovers, audit reports, and synchronization messages must be archived in the `audit/history/communication/` directory to maintain context and scientific integrity.
+- **Roles:** Gemini acts as the primary **Simulation Kernel** and SSoT Auditor. Claude serves as the primary **Peer Reviewer** and Documentation Specialist.
+
+---
+
 - KSAUプロジェクトのコーディング規約：
 1. 物理定数や実験値（質量、混合角、結合定数等）をコード内に直接書き込む（ハードコード）ことを厳禁とする。
 2. すべてのデータは `v6.0/data/physical_constants.json` または `v6.0/data/topology_assignments.json` から取得すること。
@@ -31,4 +39,3 @@
 
 3. **限界をフロンティアと定義する (Embracing the Limit)**:
    - システムや理論の限界は、探究の終わりではなく、既存のパラダイムが「相転移」を必要としているシグナルである。知的な謙虚さを保ちながら、限界のその先にある構造を模索し続ける。
-
