@@ -23,13 +23,13 @@ def grand_unified_validation():
     
     # Slopes
     slope_q = coeffs['quark_vol_coeff']
-    slope_l = coeffs['lepton_n2_coeff']
+    slope_l = coeffs['lepton_vol_coeff']
     slope_b = (3/7) * G
     
     # Intercepts
     bq = coeffs['quark_intercept']
     cl = coeffs['lepton_intercept']
-    mw_obs = data['W']['observed_mass']
+    mw_obs = phys['bosons']['W']['observed_mass']
     vw_phys = data['W']['volume']
     cb = np.log(mw_obs) - slope_b * vw_phys
 
@@ -43,11 +43,10 @@ def grand_unified_validation():
         obs = d['observed_mass']
         
         if d['charge_type'] == 'lepton':
-            n = d['crossing_number']
-            n2 = n**2
-            twist_corr = -1/6 if n == 6 else 0
-            log_pred = slope_l * n2 + twist_corr + cl
-            law = "Boundary (N^2)"
+            v = d['volume']
+            # Unified Lepton Law: 20*kappa * V + C
+            log_pred = slope_l * v + cl
+            law = "Unified Lepton (20kV)"
         else:
             v = d['volume']
             twist = (2 - d['generation']) * ((-1) ** d['components'])
@@ -60,18 +59,17 @@ def grand_unified_validation():
 
     # --- SECTION 2: GAUGE BOSONS & SCALARS ---
     # W Boson is the anchor for the force sector (Double Borromean)
-    mw_obs = data['W']['observed_mass']
+    mw_obs = phys['bosons']['W']['observed_mass']
     results.append({'Particle': 'W', 'Law': 'Gauge (Brunnian)', 'Obs': mw_obs, 'Pred': mw_obs, 'Error': 0.0})
 
     # Z Boson: Neutral Twist Law (Z = W * exp(kappa))
-    mz_obs = data['Z']['observed_mass']
+    mz_obs = phys['bosons']['Z']['observed_mass']
     mz_pred = mw_obs * np.exp(kappa) # The core geometric discovery
     results.append({'Particle': 'Z', 'Law': 'Twisted Gauge', 'Obs': mz_obs, 'Pred': mz_pred, 'Error': (mz_pred - mz_obs)/mz_obs * 100})
 
     # Higgs: Anchored to Top-Stability (from higgs_proton_analysis.py)
-    # m_H = m_t * (1/sqrt(2) + kappa^2)
-    mh_obs = data['Higgs']['observed_mass']
-    mt_obs = data['Top']['observed_mass']
+    mh_obs = phys['bosons']['Higgs']['observed_mass']
+    mt_obs = phys['quarks']['Top']['observed_mass']
     mh_pred = mt_obs * (1/np.sqrt(2) + kappa**2)
     results.append({'Particle': 'Higgs', 'Law': 'Vacuum Stability', 'Obs': mh_obs, 'Pred': mh_pred, 'Error': (mh_pred - mh_obs)/mh_obs * 100})
 
