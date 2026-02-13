@@ -14,11 +14,13 @@ def calculate_axion_mass(volume, twist=0):
     consts = utils_v61.load_constants()
     kappa = consts['kappa']
     
-    # Universal Bulk Parameters
-    slope_q = 10 * kappa
-    bq = -(7 + 7 * kappa)
+    # Synchronized Bulk Parameters (v6.9 Synced)
+    # bq = ln(m_top) - 10*kappa*V_top
+    m_top = consts['quarks']['Top']['observed_mass']
+    v_top = 15.62112812032806 # L11a225{1} from v6.0
+    bq = np.log(m_top) - (10 * kappa * v_top) # Approx -8.388
     
-    log_m = slope_q * volume + kappa * twist + bq
+    log_m = 10 * kappa * volume + kappa * twist + bq
     return np.exp(log_m)
 
 def verify_review_predictions():
