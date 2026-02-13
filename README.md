@@ -17,7 +17,7 @@ We have achieved **Numerical Sync 0.00** across all sectors, leading to a defini
 - **Candidate:** $6_3$ knot (Amphicheiral/CP-invariant).
 - **Predicted Mass:** **$0.392 \pm 0.001$ MeV**.
 - **Theoretical Basis:** SSoT-synchronized Bulk Volume Law (Top-referenced).
-- **Uniqueness:** Identified as the mathematically minimal available amphicheiral state.
+- **Uniqueness:** Identified as Rank 2 minimal amphicheiral state ($4_1$ manifested as Muon).
 - **Status:** Definitive PRL Letter drafted.
 
 ---
