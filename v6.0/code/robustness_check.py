@@ -38,29 +38,29 @@ def robustness_test():
     for d in deltas:
         k = kappa_nominal * d
         errors = []
-        
-        # Lepton Cl (fixed by electron at nominal or perturbed?)
-        gamma_l = (14/9) * k
-        # Electron: load obs mass from config, N=3 -> N^2=9
+
+        # Lepton formula: OFFICIAL 20κV law (unified with quarks)
+        slope_l = 20 * k
+        # Electron: ground state intercept
         m_e = ksau_config.load_physical_constants()['leptons']['Electron']['observed_mass']
-        cl = np.log(m_e) - gamma_l * (3**2)
-        
+        cl = np.log(m_e)  # Intercept is electron mass (V=0 ground state)
+
         for p in particles:
             if p['type'] == 'lepton':
-                twist_corr = -1/6 if p['is_twist'] else 0
-                log_pred = gamma_l * (p['n']**2) + twist_corr + cl
+                # ln(m) = 20κV + ln(m_e)
+                log_pred = slope_l * p['vol'] + cl
             else:
                 bq = -(7 + 7 * k)
                 twist = (2 - p['gen']) * ((-1)**p['comp'])
                 log_pred = 10 * k * p['vol'] + k * twist + bq
-            
+
             pred = np.exp(log_pred)
             errors.append(abs(pred - p['obs']) / p['obs'] * 100)
         
         maes.append(np.mean(errors))
     
     # Plotting
-    output_dir = Path('v6.0/figures')
+    output_dir = Path(__file__).parent.parent / 'figures'
     output_dir.mkdir(parents=True, exist_ok=True)
     
     plt.figure(figsize=(10, 6))

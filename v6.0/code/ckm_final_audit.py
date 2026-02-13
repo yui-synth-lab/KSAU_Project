@@ -47,15 +47,20 @@ def audit_ckm_master_formula_v60():
     links = pd.read_csv(ksau_config.load_linkinfo_path(), sep='|', skiprows=[1])
     
     # 2. Geometric Moduli (Loaded from SSoT: physical_constants.json)
+    # CORRECTED: Use same coefficients as topology_official_selector.py
     pi = np.pi
-    audit_geom = phys['ckm']['audit_emergent_coefficients']
-    
-    A = audit_geom['A_pi_factor'] * pi
-    B = audit_geom['B_pi_factor'] * pi
-    beta = audit_geom['beta_pi_factor'] * pi
-    gamma = np.sqrt(3) # Resonance factor
-    C = np.log(12)      # ln(12)
-    
+    alpha = phys.get('alpha_em', 0.0072973525)
+    geom = phys['ckm']['geometric_coefficients']
+
+    # Master Formula Constants (same as topology selector)
+    A = geom['A_barrier_pi_factor'] * pi
+    B = geom['B_complex_pi_factor'] * pi
+    beta = geom['beta_visc_alpha_factor'] / alpha
+    gamma = np.sqrt(geom['gamma_res_sqrt'])
+
+    # C_drive formula: pi^2 + 2*pi
+    C = (pi**2) + (2*pi)
+
     print(f"Moduli: A={A:.4f}, B={B:.4f}, beta={beta:.4f}, gamma={gamma:.4f}, C={C:.4f}\n")
 
     ckm_exp = np.array(phys['ckm']['matrix'])
