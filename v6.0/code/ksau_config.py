@@ -47,11 +47,6 @@ def get_kappa_coeffs():
         'lepton_intercept': le_intercept
     }
 
-# For backward compatibility with scripts using LEPTON_GAMMA
-# We derive it using the nominal theoretical values
-LEPTON_GAMMA = (2/9) * 0.915965594177219 # (2/9) * G
-
-
 # ============================================================================
 # DATA LOADING
 # ============================================================================
