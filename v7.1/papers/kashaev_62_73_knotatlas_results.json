@@ -1,0 +1,46 @@
+{
+  "target": {
+    "ln_tau_e": 8.15398872936122,
+    "expected_kashaev_3": 49.06975398711724
+  },
+  "knots": [
+    {
+      "name": "6_2",
+      "description": "Knot 6_2 (Primary Tau candidate)",
+      "volume": 4.4008325161,
+      "kashaev_3": 7.5498344352707525,
+      "factor": 4.233873387038641,
+      "error_log_percent": 48.07604563159212,
+      "error_kashaev_percent": 84.61407726386221,
+      "verdict": "REJECTED - No improvement",
+      "source": "KnotAtlas (incomplete - truncated)",
+      "reliable": false
+    },
+    {
+      "name": "7_3",
+      "description": "Knot 7_3 (EXCELLENT Tau candidate)",
+      "volume": 4.592125697,
+      "kashaev_3": 1.0000000000000022,
+      "factor": 4.6504913306781704e-15,
+      "error_log_percent": 99.99999999999993,
+      "error_kashaev_percent": 97.96208474926827,
+      "verdict": "REJECTED - No improvement",
+      "source": "KnotAtlas (complete)",
+      "reliable": true
+    }
+  ],
+  "best_match": {
+    "name": "7_3",
+    "description": "Knot 7_3 (EXCELLENT Tau candidate)",
+    "volume": 4.592125697,
+    "kashaev_3": 1.0000000000000022,
+    "factor": 4.6504913306781704e-15,
+    "error_log_percent": 99.99999999999993,
+    "error_kashaev_percent": 97.96208474926827,
+    "verdict": "REJECTED - No improvement",
+    "source": "KnotAtlas (complete)",
+    "reliable": true
+  },
+  "data_source": "KnotAtlas (katlas.org)",
+  "timestamp": "2026-02-14"
+}

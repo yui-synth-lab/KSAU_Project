@@ -1,0 +1,20 @@
+{
+  "knot": "4_1",
+  "volume": 2.0298832128,
+  "alexander_polynomial": "-x^{-1} + 3 - x",
+  "reidemeister_torsion": 5.0,
+  "ray_singer_coefficients": {
+    "standard": 0.15915494309189535,
+    "adjoint": 0.05305164769729845,
+    "ksau": 2.617993877991494
+  },
+  "discrepancy": {
+    "ksau_vs_standard": 16.44934066848226,
+    "ksau_vs_adjoint": 49.34802200544678
+  },
+  "kappa_analysis": {
+    "observed": 0.1308996938995747,
+    "pi_over_24": 0.1308996938995747,
+    "match": true
+  }
+}

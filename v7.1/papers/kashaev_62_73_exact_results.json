@@ -1,0 +1,68 @@
+{
+  "target": {
+    "ln_tau_e": 8.15398872936122,
+    "expected_kashaev_3": 49.06975398711724
+  },
+  "knots": [
+    {
+      "name": "4_1",
+      "description": "Figure-eight (Muon assignment)",
+      "volume": 2.0298832128,
+      "kashaev_3": 0.999999999999999,
+      "factor": -2.0927210988051802e-15,
+      "error_log_percent": 100.00000000000003,
+      "error_kashaev_percent": 97.96208474926827,
+      "verdict": "REJECTED - No improvement"
+    },
+    {
+      "name": "6_1",
+      "description": "Stevedore (v6.0 Tau assignment)",
+      "volume": 3.1639632288,
+      "kashaev_3": 0.9999999999999997,
+      "factor": -6.975736996017265e-16,
+      "error_log_percent": 100.0,
+      "error_kashaev_percent": 97.96208474926827,
+      "verdict": "REJECTED - No improvement"
+    },
+    {
+      "name": "6_2",
+      "description": "Knot 6_2 (Primary Tau candidate)",
+      "volume": 4.4008325161,
+      "kashaev_3": 0.9999999999999987,
+      "factor": -2.7902947984069074e-15,
+      "error_log_percent": 100.00000000000004,
+      "error_kashaev_percent": 97.96208474926827,
+      "verdict": "REJECTED - No improvement"
+    },
+    {
+      "name": "7_2",
+      "description": "Knot 7_2 (Control - low volume)",
+      "volume": 3.3317442316,
+      "kashaev_3": 0.9999999999999993,
+      "factor": -1.3951473992034531e-15,
+      "error_log_percent": 100.00000000000003,
+      "error_kashaev_percent": 97.96208474926827,
+      "verdict": "REJECTED - No improvement"
+    },
+    {
+      "name": "7_3",
+      "description": "Knot 7_3 (EXCELLENT Tau candidate)",
+      "volume": 4.592125697,
+      "kashaev_3": 0.9999999999999991,
+      "factor": -1.860196532271271e-15,
+      "error_log_percent": 100.00000000000003,
+      "error_kashaev_percent": 97.96208474926827,
+      "verdict": "REJECTED - No improvement"
+    }
+  ],
+  "best_match": {
+    "name": "6_1",
+    "description": "Stevedore (v6.0 Tau assignment)",
+    "volume": 3.1639632288,
+    "kashaev_3": 0.9999999999999997,
+    "factor": -6.975736996017265e-16,
+    "error_log_percent": 100.0,
+    "error_kashaev_percent": 97.96208474926827,
+    "verdict": "REJECTED - No improvement"
+  }
+}
