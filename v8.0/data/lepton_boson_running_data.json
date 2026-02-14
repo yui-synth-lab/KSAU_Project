@@ -1,0 +1,59 @@
+{
+  "project": "KSAU v8.0 Dynamic Coupling",
+  "data_points": [
+    {
+      "particle": "Electron",
+      "sector": "Lepton",
+      "topology": "3_1",
+      "volume": 0.0,
+      "mass_mev": 0.511,
+      "ln_m_over_me": 0.0
+    },
+    {
+      "particle": "Muon",
+      "sector": "Lepton",
+      "topology": "4_1",
+      "volume": 2.0298832128,
+      "mass_mev": 105.66,
+      "ln_m_over_me": 5.3316
+    },
+    {
+      "particle": "Tau",
+      "sector": "Lepton",
+      "topology": "6_1",
+      "volume": 3.1639632288,
+      "mass_mev": 1776.86,
+      "ln_m_over_me": 8.1540
+    },
+    {
+      "particle": "W",
+      "sector": "Boson",
+      "topology": "L11n387{0,0}",
+      "volume": 14.6554495068,
+      "mass_mev": 80377.0,
+      "ln_m_over_me": 11.9659
+    },
+    {
+      "particle": "Z",
+      "sector": "Boson",
+      "topology": "L11a431{0,0}",
+      "volume": 15.0276150150,
+      "mass_mev": 91187.0,
+      "ln_m_over_me": 12.0919
+    },
+    {
+      "particle": "Higgs",
+      "sector": "Boson",
+      "topology": "L11a55{0}",
+      "volume": 15.8207147025,
+      "mass_mev": 125100.0,
+      "ln_m_over_me": 12.4082
+    }
+  ],
+  "static_constants": {
+    "kappa_fermion": 0.1308996939,
+    "N_lepton": 20,
+    "slope_fermion": 2.61799,
+    "slope_boson_empirical": 0.39256
+  }
+}
