@@ -7,10 +7,16 @@
 
 ---
 
-## 1. Objective: The End of Static Constants
-The primary goal of v8.0 is to replace the static coupling $\kappa = \pi/24$ with a **Running Coupling $\kappa(V)$**. This transition aims to unify the fermion and boson sectors by interpreting the hyperbolic volume $V$ as a dynamical scale in the vacuum's modular flow.
+## 1. Objective: Beyond Static Constants to Stochastic Dynamics
+The primary goal of v8.0 is to evolve from the static geometric law $\kappa = \pi/24$ toward a **Stochastic Spacetime Fluid (TBD Model)**. We aim to unify the fermion and boson sectors by interpreting the hyperbolic volume $V$ as a dynamical "excluded volume" within a 24D Brownian flow.
 
-## 2. Priority 1: Running $\kappa$ Hypothesis (v8.0 Core)
+## 2. Priority 1: Temporal Brownian Dynamics (TBD) Integration
+- **Concept:** Spacetime is a fluid with viscosity $\kappa = \pi/24$. Time is a stochastic process.
+- **Task 1 (Emergence):** Prove that the speed of light $c$ emerges as the saturation limit of information diffusion in a 24D Leech-Lattice-based random walk.
+- **Task 2 (Mass as Drag):** Derivation of the mass formula $m = N \kappa V$ from the Stokes-Einstein relation in the 24D vacuum fluid.
+- **Task 3 (Flavor Reconnection):** Model CKM/PMNS mixing as stochastic reconnection events of topological vortices (knots).
+
+## 3. Priority 2: Running $\kappa$ Hypothesis (v8.0 Core)
 - **Problem:** Fermions follow $\kappa \approx 0.13$ while Bosons follow $k_{eff} \approx 0.40$. A static geometric law cannot reconcile this difference.
 - **Hypothesis:** The "Trapped 24D degrees of freedom" exhibit scale-dependent coupling. As the complexity (Volume) increases, the effective spectral weight $\kappa$ evolves according to a Modular Renormalization Group (RG) flow.
 - **Goal:** Derive a function $\kappa(V)$ such that $\kappa(V_{fermion}) \approx \pi/24$ and $\kappa(V_{boson}) \approx 10/24$ (or similar).

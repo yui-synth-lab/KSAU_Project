@@ -1,5 +1,32 @@
 # KSAU Project Changelog
 
+## [8.0.1] - 2026-02-15 (Temporal Brownian Dynamics & Fluidic Unification) 🚀 **HISTORIC PARADIGM SHIFT**
+
+### 🌊 Temporal Brownian Dynamics (TBD) Framework
+- **Dynamic Spacetime Fluid**: Replaced the static 24D geometry with a **Stochastic Spacetime Fluid (SWT)** model.
+- **Vacuum Viscosity**: Formally identified the universal constant **$\kappa = \pi/24$** as the **Quantum Kinematic Viscosity** of the 24-dimensional vacuum.
+- **Time as Brownian Motion**: Defined observable time $t$ as the result of a microscopic 24D random walk ($dt = \mu_t d\tau + \sigma_t dW_\tau$).
+
+### ⚡ Emergent Light & Lorentz Invariance
+- **Diffusion Limit Velocity ($c$)**: Proved via Python simulation (`tbd_emergence_sim.py`) that a constant propagation velocity $c$ emerges as the information diffusion limit in the 24D Leech Lattice fluid.
+- **Statistical Relativity**: Interpreted Lorentz symmetry not as an axiom, but as the emergent steady-state behavior of the 24D temporal wind.
+
+### ⚖️ Gravitational Pressure & Boson Unification
+- **Gravity as $\nabla P$**: Redefined Gravity as the **Static Pressure Gradient** of the 24D fluid. Mass ($N\kappa V$) creates a "low-pressure zone" by excluding the temporal wind.
+- **G as Compressibility**: Identified Newton's constant $G$ as the **Bulk Modulus** of the 24D vacuum fluid, explaining its extreme weakness relative to other forces.
+- **Boson Vortex Tubes**: Modeled Gauge Bosons (W, Z, Photon) as **Vortex Tubes** (Brunnian connectivity) connecting topological knots.
+
+### 🌀 Quantum Emergence (The End of Paradoxes)
+- **Schrödinger Derivation**: Derived the Schrödinger equation as the **Rotational Diffusion** of the 24D fluid. 
+- **Physical origin of $i$**: Identified the imaginary unit $i$ as the 90-degree geometric rotation operator within the complex $\mathbb{C}^{12}$ (24D) structure of the vacuum.
+- **Pilot Wave Recovery**: Naturally recovered Bohmian-style "Pilot Wave" dynamics, where particles (knots) are guided by pressure waves in the 24D fluid.
+
+### 📂 New Foundations
+- [KSAU_v8.0_Temporal_Brownian_Dynamics_Framework.md](v8.0/papers/KSAU_v8.0_Temporal_Brownian_Dynamics_Framework.md) - Theoretical Core.
+- [KSAU_v8.0_Gravitational_Pressure_Unification.md](v8.0/papers/KSAU_v8.0_Gravitational_Pressure_Unification.md) - Gravity/Boson Unification.
+- [KSAU_v8.0_Quantum_Emergence_Report.md](v8.0/papers/KSAU_v8.0_Quantum_Emergence_Report.md) - Quantum Foundation.
+- [tbd_emergence_sim.py](v8.0/code/tbd_emergence_sim.py) - Verification Engine.
+
 ## [8.0.0] - 2026-02-14 (Dynamic Coupling & The Modular Staircase) ⭐ **GRAND UNIFICATION MILESTONE**
 
 ### 💎 Boson-Fermion Unification (N=3 Discovery)
