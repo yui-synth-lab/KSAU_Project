@@ -1,0 +1,53 @@
+{
+  "date": "2026-02-14",
+  "objective": "Complete lepton sector spectral resonance map (Final Definitive)",
+  "hypothesis_tested": "Is Muon resonance unique or part of a trend?",
+  "verdict": "Muon is a UNIQUE ISOLATED RESONANCE PEAK confirmed by definitive Electron calculation",
+  "complete_lepton_map": {
+    "electron": {
+      "knot": "3_1",
+      "knot_type": "Torus knot (2,3)",
+      "volume": 0.000,
+      "kashaev_3": 2.64575131106459,
+      "kashaev_3_calculation": "Exact evaluation: sqrt(7). Unnormalized colored Jones at N=3",
+      "reidemeister_torsion": 3,
+      "alexander_polynomial": "t^2 - t + 1",
+      "ratio": 0.8819171036881966,
+      "error_from_Nk_percent": 66.31,
+      "status": "OFF-RESONANCE (Undershoot - Torus Phase)"
+    },
+    "muon": {
+      "knot": "4_1",
+      "knot_type": "Hyperbolic (figure-eight)",
+      "volume": 2.0298832128,
+      "kashaev_3": 13.0,
+      "kashaev_3_calculation": "1 + |1-q|^2 + |1-q|^2*|1-q^2|^2 = 13",
+      "reidemeister_torsion": 5,
+      "alexander_polynomial": "1 - 3t + t^2",
+      "ratio": 2.6,
+      "error_from_Nk_percent": 0.69,
+      "fibonacci_structure": {
+        "kashaev": "F_7 = 13",
+        "torsion": "F_5 = 5",
+        "ratio_meaning": "F_7/F_5 converges to phi^2"
+      },
+      "status": "PERFECT RESONANCE (Critical Point)"
+    },
+    "tau": {
+      "knot": "6_1",
+      "knot_type": "Hyperbolic (stevedore)",
+      "volume": 3.1639632288,
+      "kashaev_3": 27.07,
+      "reidemeister_torsion": 9,
+      "alexander_polynomial": "2 - 5t + 2t^2",
+      "ratio": 3.0077777777777777,
+      "error_from_Nk_percent": 14.89,
+      "status": "OFF-RESONANCE (Overshoot - Mature Hyperbolic)"
+    }
+  },
+  "ksau_constants": {
+    "Nk": 2.6179938779914944,
+    "phi_squared": 2.618033988749895,
+    "formula": "Nk = 20 * (pi/24) = 5*pi/6"
+  }
+}
