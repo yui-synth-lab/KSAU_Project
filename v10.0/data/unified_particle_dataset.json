@@ -221,6 +221,6 @@
     "unified_mass_formula": "ln(m) = N_sector * kappa * V + C_universal - shift_kappa * kappa",
     "shift_kappa_meaning": "Index of stabilizer subgroup in Co1 (Symmetry Breaking)",
     "boson_n_conclusion": "N=6 confirmed by Higgs (shift=0)",
-    "quark_shifts_conclusion": "Integer shifts derived from Conway/Niemeier structure"
+    "quark_shifts_conclusion": "Phenomenologically determined shifts (42, 48, 52, 53, 59) exhibit near-integer patterns suggestive of Conway/Niemeier lattice structure. Non-integer anomalies (82.5, -3.5, -2.2) require further theoretical investigation."
   }
 }
