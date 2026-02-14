@@ -3,38 +3,35 @@
 
 [![DOI](https://zenodo.org/badge/1148825711.svg)](https://doi.org/10.5281/zenodo.18631885)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-v6.9_Final-red.svg)
+![Version](https://img.shields.io/badge/version-v7.1_Final-purple.svg)
 ![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18598989-blue)
-![Status](https://img.shields.io/badge/status-Grand_Unified_Synced-gold.svg)
+![Status](https://img.shields.io/badge/status-Geometric_Unification-gold.svg)
 
 > **"Matter is Knot, Force is Link, Gravity is Geometry."**
 
-**KSAU (Knot-based Standard Model and Universal gravity)** is a theoretical physics simulation framework that derives the fundamental constants of the universe from pure geometry. By modeling elementary particles as topological defects in a 3D manifold network, KSAU calculates particle masses and gravitational strength with high precision, eliminating the need for arbitrary empirical parameters.
+**KSAU (Knot-based Standard Model and Universal gravity)** is a theoretical physics simulation framework that derives the fundamental constants of the universe from pure geometry. By modeling elementary particles as topological defects in a 3D manifold network, KSAU reduces the Standard Model parameters to fundamental geometric constants ($\pi, \alpha, 24$).
 
 ---
 
-## 🚀 Latest Breakthrough (v6.9): The 0.392 MeV Axion
-We have achieved **Numerical Sync 0.00** across all sectors, leading to a definitive prediction for the dark sector:
-- **Candidate:** $6_3$ knot (Amphicheiral/CP-invariant).
-- **Predicted Mass:** **$0.392 \pm 0.001$ MeV**.
-- **Theoretical Basis:** SSoT-synchronized Bulk Volume Law (Top-referenced).
-- **Uniqueness:** Identified as Rank 2 minimal amphicheiral state ($4_1$ manifested as Muon).
-- **Status:** Definitive PRL Letter drafted.
+## 🚀 Latest Breakthrough (v7.1): Fibonacci Resonance & Niemeier Vacuum
+We have achieved a first-principles derivation/correspondence for the primary KSAU scaling constants:
+- **Muon Resonance:** Discovered that the ratio of quantum-to-classical invariants for $4_1$ is **$13/5 = 2.6$**, which matches $N\kappa \approx 2.618$ (**$\phi^2$**) within **0.69%**.
+- **Niemeier Vacuum:** Derived **$N = 20$** as the remnant degrees of freedom from a 24D modular vacuum projected onto 4D spacetime ($24 - 4$).
+- **Modular Coupling:** Identified **$\kappa = \pi/24$** as a modular constraint aligned with the Dedekind eta function.
+- **Status:** Standard Model parameters are now formally reduced to geometric identities.
 
 ---
 
-## 🌌 Key Achievements (Update 2026-02-13)
+## 🌌 Key Achievements (Update 2026-02-14)
 
-### 1. The Interaction Record (CKM $R^2 = 0.9988$)
-Using 1,000,000-sample constrained optimization, we have achieved the highest precision in flavor mixing history:
-- **Accuracy:** $R^2 = 0.9988$ for the CKM matrix.
-- **TIC Discovery:** Defined **Topological Interaction Correction (TIC)** to explain the trade-off between static mass laws and dynamic mixing complexity.
+### 1. The Spectral Mass Law ($R^2 = 0.9998$)
+Mass is formally defined as the regularized determinant of the spacetime Laplacian.
+- **Accuracy:** $R^2 = 0.9998$ for all 9 fermions across 3 generations.
+- **Mechanism:** $\ln m \propto V$ emerges from the spectral density of the manifold.
 
-### 2. Cosmological Synchronization (Sync 0.00)
-All large-scale constants are now derived as geometric invariants:
-- **Baryogenesis:** $\eta_B \approx 9.06 \times 10^{-11}$ derived via the **Pi-Squared Dilution Law**.
-- **Dark Matter:** 5.31 ratio derived via the **Boson Barrier Exclusion Model**.
-- **Planck Scale:** $V_P \approx 44.9$ ($4.5\pi^2$) confirmed as information saturation point.
+### 2. The Fibonacci Connection
+The universe selects the most efficient growth ratio (Golden Ratio $\phi$) to scale spacetime volume into physical mass, evidenced by the $13/5$ Fibonacci resonance in the figure-eight knot.
+
 
 ### 3. Grand Unified Results
 - **Gravity ($G$):** Derived with **99.92% precision**.

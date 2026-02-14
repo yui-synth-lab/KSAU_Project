@@ -1,0 +1,35 @@
+{
+  "verification_date": "2026-02-14",
+  "data_source": "KnotAtlas (katlas.org)",
+  "knots": [
+    {
+      "name": "4_1",
+      "kashaev_3_knotatlas": 13.000000000000002,
+      "kashaev_3_previous": 13.0,
+      "discrepancy_percent": 1.3664283380001927e-14,
+      "error_log_percent": 0.7578438008849638,
+      "error_kashaev_percent": 1.9479400845702568,
+      "verdict": "EXCELLENT MATCH"
+    },
+    {
+      "name": "6_1",
+      "kashaev_3_knotatlas": 27.073972741361775,
+      "kashaev_3_previous": 27.07,
+      "discrepancy_percent": 0.014675808503046632,
+      "error_log_percent": 15.274412889161896,
+      "error_kashaev_percent": 44.82553805248388,
+      "verdict": "REJECTED"
+    },
+    {
+      "name": "7_3",
+      "kashaev_3_knotatlas": 1.0000000000000022,
+      "kashaev_3_previous": 50.0,
+      "discrepancy_percent": 98.0,
+      "error_log_percent": 99.99999999999993,
+      "error_kashaev_percent": 97.96208474926827,
+      "verdict": "REJECTED"
+    }
+  ],
+  "mathematical_identity": false,
+  "conclusion": "Mixed results"
+}

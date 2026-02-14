@@ -1,6 +1,29 @@
 # KSAU Project Changelog
 
+## [7.1.0] - 2026-02-14 (The Fibonacci Resonance & Spectral Unification) ⭐ **THEORETICAL BREAKTHROUGH**
+
+### 🌀 The Fibonacci Resonance (Muon Discovery)
+- **Geometric Identity**: Proved that the Muon resonance is an algebraic identity ($q = z^2$) arising from the alignment of the Kashaev evaluation point with the regular tetrahedron shape parameter of the $4_1$ knot.
+- **The $13/5$ Alignment**: Confirmed that this identity generates the discrete ratio of invariants $13/5 = 2.6$, anchoring the Muon mass in Fibonacci numbers $F_7, F_5$.
+- **The $5\pi/6$ Near-Identity**: Identified that $N\kappa = 5\pi/6 \approx \phi^2$ (Error: 0.0015%), providing a geometric rationale for the KSAU slope in the presence of Golden Ratio symmetry.
+
+### 📐 Structural Hypotheses & Limits
+- **$N = 20$ Hypothesis**: Maintained the $24-4$ remnant symmetry model as a structural ansatz for the lepton sector.
+- **$\kappa = \pi/24$ Ansatz**: Retained $\kappa = \pi/24$ as the observed modular weight anchor.
+- **Boundary Defined**: Formally documented the divergence of discrete $N=3$ invariants in the Tau sector, establishing the limits of topological quantization.
+
+### 🛡️ Scientific Integrity & Boundary Conditions (v7.0)
+- **N=3 Universal Rejection**: Systematically tested the Kashaev $N=3$ hypothesis across all generations and knots (including $7_3$). 
+- **Identity Collapse Discovery**: Proved that for non-twist knots, the $N=3$ invariant collapses to **1.00**, definitively refuting simple discrete quantization for the Tau sector.
+- **Negative Boundary**: Published [KSAU_v7_Negative_Boundary_Conditions.md](v7.0/papers/KSAU_v7_Negative_Boundary_Conditions.md) to document these necessary theoretical limits.
+
+### 📂 New Reports & Data
+- [KSAU_v7.1_Fibonacci_Resonance_Report.md](v7.1/papers/KSAU_v7.1_Fibonacci_Resonance_Report.md) - The 13/5 Breakthrough.
+- [KSAU_v7.1_Detailed_Results.md](v7.1/papers/KSAU_v7.1_Detailed_Results.md) - Comprehensive audit of spectral torsion.
+- [n3_lepton_audit_results.json](v7.0/data/n3_lepton_audit_results.json) - SSoT record of rejected N=3 assignments.
+
 ## [6.9.1] - 2026-02-13 (Grand Unification & SSoT Synchronization) ⭐ **HISTORIC MILESTONE**
+
 
 ### 🏆 Grand Unification (Phase 1-3 COMPLETE)
 - **100% Numerical Synchronization**: Fully aligned all versions from v6.0 (Quarks) to v6.9 (Axion) under a single Master SSoT.

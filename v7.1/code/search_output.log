@@ -1,0 +1,246 @@
+======================================================================
+Systematic Search for Tau Mass Knot (N=3)
+======================================================================
+
+Target:
+  ln(m_tau/m_e) = 8.153989
+  Expected <K>_3 ~ 49.07
+
+Downloading Garoufalidis database (twist knots K_m, m = -14 to 15)...
+
+Twist knot K_-14:
+  Downloading CJTwist.-14.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-84) - q**(-83) - q**(-82) + 
+  2* q**(-1)**81 - q**(-80) - 2* q**(-1)**79 + 3* q**(-1)**78 
+  Failed to evaluate
+Twist knot K_-13:
+  Downloading CJTwist.-13.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-78) - q**(-77) - q**(-76) + 2* q**(-1)**75 - q**(-74) - 
+  2* q**(-1)**73 + 3* q**(-1)**72 
+  Failed to evaluate
+Twist knot K_-12:
+  Downloading CJTwist.-12.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-72) - q**(-71) - q**(-70) + 2* q**(-1)**69 - q**(-68) - 2* q**(-1)**67 + 3* q**(-1)**66 - 
+
+  Failed to evaluate
+Twist knot K_-11:
+  Downloading CJTwist.-11.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-66) - q**(-65) - q**(-64) + 2* q**(-1)**63 - q**(-62) - 2* q**(-1)**61 + 3* q**(-1)**60 - 
+
+  Failed to evaluate
+Twist knot K_-10:
+  Downloading CJTwist.-10.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-60) - q**(-59) - q**(-58) + 
+  2* q**(-1)**57 - q**(-56) - 2* q**(-1)**55 + 3* q**(-1)**54 
+  Failed to evaluate
+Twist knot K_-9:
+  Downloading CJTwist.-9.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-54) - q**(-53) - q**(-52) + 2* q**(-1)**51 - q**(-50) - 
+  2* q**(-1)**49 + 3* q**(-1)**48 
+  Failed to evaluate
+Twist knot K_-8:
+  Downloading CJTwist.-8.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-48) - q**(-47) - q**(-46) + 2* q**(-1)**45 - q**(-44) - 2* q**(-1)**43 + 3* q**(-1)**42 - 
+
+  Failed to evaluate
+Twist knot K_-7:
+  Downloading CJTwist.-7.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-42) - q**(-41) - q**(-40) + 2* q**(-1)**39 - q**(-38) - 2* q**(-1)**37 + 3* q**(-1)**36 - 
+
+  Failed to evaluate
+Twist knot K_-6:
+  Downloading CJTwist.-6.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-36) - q**(-35) - q**(-34) + 
+  2* q**(-1)**33 - q**(-32) - 2* q**(-1)**31 + 3* q**(-1)**30 
+  Failed to evaluate
+Twist knot K_-5:
+  Downloading CJTwist.-5.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-30) - q**(-29) - q**(-28) + 2* q**(-1)**27 - q**(-26) - 
+  2* q**(-1)**25 + 3* q**(-1)**24 
+  Failed to evaluate
+Twist knot K_-4:
+  Downloading CJTwist.-4.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-24) - q**(-23) - q**(-22) + 2* q**(-1)**21 - q**(-20) - 2* q**(-1)**19 + 3* q**(-1)**18 - 
+
+  Failed to evaluate
+Twist knot K_-3:
+  Downloading CJTwist.-3.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 2 + q**(-18) - q**(-17) - q**(-16) + 2* q**(-1)**15 - q**(-14) - 2* q**(-1)**13 + 3* q**(-1)**12 - 
+
+  Failed to evaluate
+Twist knot K_-2:
+  Downloading CJTwist.-2.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 4 + q**(-12) - q**(-11) - q**(-10) + 2* q**(-1)**9 - q**(-8) - 2* q**(-1)**7 + 3* q**(-1)**6 - 3* q*
+  Failed to evaluate
+Twist knot K_-1:
+  Downloading CJTwist.-1.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: 3 + q**(-6) - q**(-5) - q**(-4) + 2* q**(-1)**3 - 
+  q**(-2) - q**(-1) - q**1 - q**2 + 2*q**3 - q**4
+  Failed to evaluate
+Twist knot K_0:
+  Downloading CJTwist.0.txt.gz... OK
+  Extracting... OK
+  <K_0>_3 = 1.00
+  (2ƒÎ/3)*ln(<K_0>_3) = 0.0000 (target: 8.1540)
+  Error: 100.00% (log), 97.96% (Kashaev)
+
+Twist knot K_1:
+  Downloading CJTwist.1.txt.gz... OK
+  Extracting... OK
+  <K_1>_3 = 5.57
+  (2ƒÎ/3)*ln(<K_1>_3) = 3.5961 (target: 8.1540)
+  Error: 55.90% (log), 88.65% (Kashaev)
+
+Twist knot K_2:
+  Downloading CJTwist.2.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 3*q**5 - 2*q**6 - q**7 + 
+  4*q**8 - 3*q**9 - q**10 + 3*q**11 - 2*q**12 - q**13 + 2*q*
+  Failed to evaluate
+Twist knot K_3:
+  Downloading CJTwist.3.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + q**7 + 3*q**8 - 4*q**9 + q**10 + 3*q**11 - 4*q**12 + 
+  3*q**14 - 3*
+  Failed to evaluate
+Twist knot K_4:
+  Downloading CJTwist.4.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 2*q**9 + 2*q**11 - 2*q**12 + 2*q**14 - 
+  3*q**15 + 3*q**17
+  Failed to evaluate
+Twist knot K_5:
+  Downloading CJTwist.5.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 3*q**9 + 4*q**11 - 3*q**12 - 
+  q**13 + 4*q**14 - 3*q**15 -
+  Failed to evaluate
+Twist knot K_6:
+  Downloading CJTwist.6.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 
+  3*q**9 + 3*q**11 - 3*q**12 + q**13 + 3*q**14 - 4*q**15 +
+  Failed to evaluate
+Twist knot K_7:
+  Downloading CJTwist.7.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 3*q**9 + 3*q**11 - 3*q**12 + 3*q**14 - 
+  2*q**15 + 2*q**17
+  Failed to evaluate
+Twist knot K_8:
+  Downloading CJTwist.8.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 3*q**9 + 3*q**11 - 3*q**12 + 3*q**14 - 
+  3*q**15 + 4*q**17
+  Failed to evaluate
+Twist knot K_9:
+  Downloading CJTwist.9.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 3*q**9 + 3*q**11 - 
+  3*q**12 + 3*q**14 - 3*q**15 + 3*q**17
+  Failed to evaluate
+Twist knot K_10:
+  Downloading CJTwist.10.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 
+  3*q**9 + 3*q**11 - 3*q**12 + 3*q**14 - 3*q**15 + 3*q**17
+  Failed to evaluate
+Twist knot K_11:
+  Downloading CJTwist.11.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 3*q**9 + 3*q**11 - 3*q**12 + 3*q**14 - 
+  3*q**15 + 3*q**17
+  Failed to evaluate
+Twist knot K_12:
+  Downloading CJTwist.12.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 3*q**9 + 3*q**11 - 3*q**12 + 3*q**14 - 
+  3*q**15 + 3*q**17
+  Failed to evaluate
+Twist knot K_13:
+  Downloading CJTwist.13.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 3*q**9 + 3*q**11 - 
+  3*q**12 + 3*q**14 - 3*q**15 + 3*q**17
+  Failed to evaluate
+Twist knot K_14:
+  Downloading CJTwist.14.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 
+  3*q**9 + 3*q**11 - 3*q**12 + 3*q**14 - 3*q**15 + 3*q**17
+  Failed to evaluate
+Twist knot K_15:
+  Downloading CJTwist.15.txt.gz... OK
+  Extracting... OK
+    Error evaluating polynomial: invalid syntax (<string>, line 1)
+    Expression: q**2 - q**3 + 2*q**5 - 2*q**6 + 3*q**8 - 3*q**9 + 3*q**11 - 3*q**12 + 3*q**14 - 
+  3*q**15 + 3*q**17
+  Failed to evaluate
+======================================================================
+SUMMARY: Best Matches for Tau
+======================================================================
+
+Knot       | <K>_3      | Target     | Error (K)    | Error (log) 
+----------------------------------------------------------------------
+K_1        | 5.57       | 49.07      |      88.65% |      55.90%  ** BEST **
+K_0        | 1.00       | 49.07      |      97.96% |     100.00% 
+
+======================================================================
+BEST MATCH
+======================================================================
+
+Twist Knot: K_1
+  <K_1>_3 = 5.5678
+  Target:     49.0698
+  Error:      88.65%
+
+  (2ƒÎ/3)*ln(<K_1>_3) = 3.596063
+  ln(m_tau/m_e)                 = 8.153989
+  Error:                         55.90%
+
+No good match found. Best error is 55.90%.
+The N=3 hypothesis is definitively rejected for Tau.
+
+Results saved to: E:\Obsidian\KSAU_Project\v7.1\papers\tau_knot_search_results.json
+

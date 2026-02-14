@@ -1,0 +1,103 @@
+{
+  "target": {
+    "ln_tau_e": 8.15398872936122,
+    "expected_kashaev_3": 49.06975398711724
+  },
+  "scaling": {
+    "alpha": 1.652543488266183,
+    "beta": 1.3949844928113038,
+    "formula": "<K>_3 ~ 4.035 * V^1.653"
+  },
+  "knots": [
+    {
+      "name": "4_1",
+      "description": "Figure-eight (Muon assignment)",
+      "volume": 2.0298832128,
+      "kashaev_3": 13.0,
+      "source": "Computed (kashaev_41.py)",
+      "factor": 5.372017372154016,
+      "error_log": 34.11792007008505,
+      "error_kas": 73.5071017404876
+    },
+    {
+      "name": "6_1",
+      "description": "Stevedore (v6.0 Tau assignment)",
+      "volume": 3.1639632288,
+      "kashaev_3": 27.07,
+      "source": "Garoufalidis database",
+      "factor": 6.908207477040604,
+      "error_log": 15.278182171564147,
+      "error_kas": 44.833634162692256
+    },
+    {
+      "name": "5_2",
+      "description": "Three-twist knot",
+      "volume": 2.8281220883,
+      "kashaev_3": 22.488184801538853,
+      "source": "Empirical scaling",
+      "factor": 6.519831117356675,
+      "error_log": 20.041205184895613,
+      "error_kas": 54.17098523167062
+    },
+    {
+      "name": "6_2",
+      "description": "Knot 6_2",
+      "volume": 4.4027680595,
+      "kashaev_3": 46.73249395050915,
+      "source": "Empirical scaling",
+      "factor": 8.051775730763298,
+      "error_log": 1.2535337242970366,
+      "error_kas": 4.763137873529404
+    },
+    {
+      "name": "6_3",
+      "description": "Knot 6_3",
+      "volume": 5.6937220037,
+      "kashaev_3": 71.47583477443229,
+      "source": "Empirical scaling",
+      "factor": 8.941725454139375,
+      "error_log": 9.660753171532352,
+      "error_kas": 45.661693745596395
+    },
+    {
+      "name": "7_2",
+      "description": "Knot 7_2",
+      "volume": 4.4176250652,
+      "kashaev_3": 46.9933825158576,
+      "source": "Empirical scaling",
+      "factor": 8.0634353740833,
+      "error_log": 1.1105405990058885,
+      "error_kas": 4.231469087464288
+    },
+    {
+      "name": "8_1",
+      "description": "Knot 8_1 (= K_3 twist knot)",
+      "volume": 4.0597664256,
+      "kashaev_3": 40.870364542806676,
+      "source": "Empirical scaling",
+      "factor": 7.771054514600833,
+      "error_log": 4.696280893564416,
+      "error_kas": 16.709660795249203
+    },
+    {
+      "name": "10_1",
+      "description": "Knot 10_1 (= K_4 twist knot)",
+      "volume": 5.0709514816,
+      "kashaev_3": 59.023513132820185,
+      "source": "Empirical scaling",
+      "factor": 8.540808960475275,
+      "error_log": 4.743938751364421,
+      "error_kas": 20.284917565138404
+    }
+  ],
+  "best_match": {
+    "name": "7_2",
+    "description": "Knot 7_2",
+    "volume": 4.4176250652,
+    "kashaev_3": 46.9933825158576,
+    "source": "Empirical scaling",
+    "factor": 8.0634353740833,
+    "error_log": 1.1105405990058885,
+    "error_kas": 4.231469087464288
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "investigation": "Kasahara Invariant (N=3) Lepton Hypothesis Audit",
+  "date": "2026-02-14",
+  "status": "REJECTED",
+  "investigators": ["Gemini (Simulation Kernel)", "Claude (Peer Reviewer)"],
+  "source": "Garoufalidis Database (CJTwist.-2.txt)",
+  "constants": {
+    "scaling_factor": "2π/3",
+    "target_observable": "ln(m/me)"
+  },
+  "results": {
+    "4_1": {
+      "particle": "Muon",
+      "K_3": 13.0,
+      "theoretical_log_value": 5.372,
+      "experimental_log_value": 5.332,
+      "error_percent_log": 0.76,
+      "verdict": "Suggestive Coincidence"
+    },
+    "6_1": {
+      "particle": "Tau",
+      "K_3": 27.0739727414,
+      "theoretical_log_value": 6.909,
+      "experimental_log_value": 8.154,
+      "error_percent_log": 15.27,
+      "error_percent_mass_ratio": 71.22,
+      "verdict": "FAILED"
+    }
+  },
+  "volume_conjecture_audit": {
+    "knot": "6_1",
+    "lhs_from_K3": 6.909,
+    "rhs_hyperbolic_volume": 3.1639632288,
+    "discrepancy_percent": 118.35
+  },
+  "conclusion": "The N=3 Kasahara scaling (discrete invariant) failed to generalize to the Tau sector. The agreement found in the Muon sector (4_1 knot) is identified as a low-volume arithmetic resonance. The continuous Hyperbolic Volume Law (v6.0 Master Formula) remains the only robust framework for cross-generational mass prediction."
+}
