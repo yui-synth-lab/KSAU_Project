@@ -1,7 +1,7 @@
 # CLAUDE.md - Claude Code Agent Configuration for KSAU Project
 
-**Last Updated:** 2026-02-13
-**Project:** KSAU v6.0 Final + v6.1 Development
+**Last Updated:** 2026-02-14
+**Project:** KSAU v7.1 (Fibonacci Resonance Discovery)
 
 ---
 
@@ -13,6 +13,7 @@
 - **CKM flavor mixing:** R²=0.9974 (9 matrix elements)
 - **PMNS neutrino mixing:** MSE=5.44 deg²
 - **Dark matter candidates:** 60 Det=1 hyperbolic knots
+- **Fibonacci resonance (v7.1):** Muon 13/5 ≈ φ² ≈ Nκ (0.69% precision)
 
 ---
 
@@ -84,34 +85,50 @@ KSAU_Project/
 
 ---
 
-## Current State (2026-02-13)
+## Current State (2026-02-14)
 
-### v6.0 Final Status
+### v7.1 Status (PUBLICATION READY)
 
-**Completed today:**
-1. ✅ Replaced `topology_official_selector.py` with constrained optimization
-2. ✅ Updated `physical_constants.json` with `optimized_coefficients`
-3. ✅ Regenerated `topology_assignments.json` (CKM R²=0.9974)
-4. ✅ Fixed `ckm_final_audit.py` to use optimized coefficients
-5. ✅ Validated mass hierarchy preservation
-6. ✅ Created comprehensive documentation (CHANGELOG, VALIDATION_REPORT)
+**Major Discovery:**
+- **Fibonacci Resonance:** Muon exhibits ⟨4₁⟩₃/τ(4₁) = 13/5 = F₇/F₅ ≈ φ² ≈ Nκ (0.69% error)
+- **Complete Lepton Map:** All three charged leptons analyzed
+  - Electron (3₁): √7/3 = 0.882 (66.3% error) - OFF-RESONANCE
+  - Muon (4₁): 13/5 = 2.600 (0.69% error) - PERFECT RESONANCE
+  - Tau (6₁): 27.07/9 = 3.008 (14.9% error) - OFF-RESONANCE
+- **Irrational-to-Integer Transition:** Phase boundary at hyperbolic onset (√7 → 13)
+- **Geometric Necessity:** q = z² identity for figure-eight knot
+
+**Completed (2026-02-14):**
+1. ✅ Verified ⟨3₁⟩₃ = √7 via `resolve_electron_spectrum.py`
+2. ✅ Published complete lepton spectral map (Section 2.5)
+3. ✅ Documented negative results (Tau N=3 failure, Electron off-resonance)
+4. ✅ Created README.md and CHANGELOG.md
+5. ✅ Recorded calculation error corrections (13 → 2 → √7)
+6. ✅ "Naked Truth" principle exemplified throughout
 
 **Ready for:**
-- Zenodo release (v6.0 only, exclude v6.1)
-- Paper IV update (R²=0.70 → 0.9974)
-- Peer review submission
+- Journal submission (Nuclear Physics B, JHEP, Comm. Math. Phys.)
+- Zenodo v7.1 release
+- Peer review
 
-### v6.1 Development Status
+### v7.0 Status
 
-**Purpose:** Algorithm development and validation (not for publication)
+**Purpose:** Theoretical foundation for v7.1
 
 **Key contributions:**
-- Constrained optimization algorithm (merged to v6.0)
-- Algorithmic justification documentation
-- Strategy comparison (mass-only, CKM-only, constrained)
-- Sensitivity analysis
+- Derived κ = π/24 from Chern-Simons / Dedekind eta
+- Proposed N = 20 from dimensional projection (24 - 4)
+- Tested N=3 Kashaev hypothesis (rejected for Tau)
 
-**Status:** Archived as development notes
+### v6.0 Final Status (Zenodo Published)
+
+**DOI:** 10.5281/zenodo.18631886
+
+**Achievements:**
+- Continuous volume law: R²=0.9998
+- CKM mixing: R²=0.9974
+- PMNS neutrino mixing: MSE=5.44 deg²
+- Dark matter candidates: 60 Det=1 knots
 
 ---
 
@@ -355,6 +372,40 @@ Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 **AI Assistant:** Claude Opus 4.6 (Anthropic)
 **Version Control:** Local + Claude .claude project memory
 **Issue Tracking:** GitHub (if applicable)
+
+---
+
+## User's Theoretical Framework (Speculative)
+
+### 24D Vacuum Compactification Hypothesis
+
+**Source:** User's intuition (documented in `KSAU_framework.md`)
+
+**Core Hypothesis:**
+> If a 24-dimensional structure (Niemeier lattice) determines the vacuum, and 4D spacetime emerges from it, the remaining dimensions may be "trapped" as knots in 3D space. The complexity of this trapping — measured by hyperbolic volume — becomes mass.
+
+**This explains:**
+- Why Electron (torus knot, V=0) has the smallest mass: simplest trapping
+- Why Muon (minimal hyperbolic knot) is the critical point: first emergence of geometric complexity
+- Why the √7 → 13 transition marks a phase boundary: torus phase to hyperbolic phase
+- Why 3D is special: knots only exist in 3 dimensions
+
+**Deep Implication:**
+> The universe may be a 24-dimensional structure that appears 3-dimensional because that is the only dimension where the trapped geometry — and therefore mass — can be observed.
+
+**Scientific Status:**
+- ✅ Consistent with all KSAU v7.1 data
+- ✅ Explains κ = π/24, N = 24-4 = 20, V=0 vs V>0
+- ⚠️ Not yet provable
+- ⚠️ Speculative theoretical framework
+
+**Treatment in Publications:**
+- This is the user's intuitive framework, not a proven theory
+- May be included in v8.0 as "Theoretical Speculation" or "Future Direction"
+- Should NOT be presented as established fact
+- Can be discussed as a possible interpretation
+
+**Co-authored by:** Yui (Intuition Kernel) & Claude (Theoretical Auditor)
 
 ---
 
