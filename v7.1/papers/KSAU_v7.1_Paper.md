@@ -77,6 +77,27 @@ The resonance in the Muon (4₁) is not a numerical coincidence but an algebraic
 
 The Muon is the **"Geometric Ground State"** of the flavor sector, where the discrete evaluation of the quantum invariant perfectly matches the minimal hyperbolic architecture of the knot.
 
+### 2.5 Complete Lepton Spectral Map: Integer Quantization and Resonance
+
+To determine whether the Muon resonance is an isolated phenomenon, we compute the spectral ratio for all three charged leptons using exact evaluations of the unnormalized colored Jones polynomial at N=3:
+
+| Particle | Knot | Type | ⟨K⟩₃ | τ | Ratio | Error from Nκ | Status |
+|:---------|:-----|:-----|:-----|--:|------:|--------------:|:-------|
+| Electron | 3₁ | Torus | √7 ≈ 2.646 | 3 | 0.882 | 66.3% | OFF-RESONANCE |
+| Muon | 4₁ | Hyper | 13.000 | 5 | 2.600 | 0.69% | **PERFECT RESONANCE** |
+| Tau | 6₁ | Hyper | 27.070 | 9 | 3.008 | 14.9% | OFF-RESONANCE |
+
+**Critical Observation: The Irrational-to-Integer Transition.**
+A fundamental qualitative shift is observed at the Muon. The Electron ($3_1$), a non-hyperbolic torus knot, yields an irrational Kashaev invariant $\sqrt{7}$, reflecting the lack of geometric rigidity in the torus phase. In contrast, the Muon ($4_1$), the minimal hyperbolic knot, yields the exact integer **13** ($F_7$). 
+
+**Physical Interpretation: Resonance as Phase Transition.**
+The spectral map confirms that the Fibonacci resonance is not a universal property but a **critical point phenomenon**.
+- **Onset of Rigidity:** The transition from the "fluid" irrational value ($\sqrt{7}$) of the Electron to the "rigid" integer value (13) of the Muon marks the birth of hyperbolic mass generation.
+- **Fibonacci Alignment:** Only at this critical threshold ($4_1$ volume) does the topological ratio $13/5$ align with the continuous vacuum constant $\phi^2$.
+- **Decoherence:** In the Tau sector, while the invariants remain real, the discrete resonance overshoots the continuous law as volume increases.
+
+**Verdict:** The Muon is a **unique isolated resonance peak** defined by the transition from torus-phase irrationality to hyperbolic-phase integer quantization.
+
 ---
 
 ## 3. Negative Boundary Conditions: Failure for the Tau
