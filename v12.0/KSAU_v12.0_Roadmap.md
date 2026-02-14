@@ -9,14 +9,14 @@
 ## 1. Objective: Building the Foundation
 Version 12.0 is transitioned into a long-term research phase. We move away from rapid phenomenological fitting to build the mathematical foundations required for first-principles derivation. No claims of "breakthroughs" will be made without rigorous proof.
 
-## 2. Priority 1: Mathematical Foundations (12+ Months)
-- **Task 1.1:** Rigorous derivation of $\kappa = \pi/24$ from the 24D vacuum partition function.
-- **Task 1.2:** Formalize the 24D $\to$ 4D projection operator $\mathcal{P}$ using Leech Lattice subgroup theory.
-- **Task 1.3:** Map Standard Model flavor symmetries ($SU(3), SU(2), U(1)$) to specific Niemeier lattice stabilizers.
+## 2. Priority 1: Temporal Brownian Dynamics (TBD) Foundations
+- **Task 1.1:** Model the hierarchy factor $X = \ln(M_{Pl}/m_e) \approx 16.4\pi$ as the **"Mean Hitting Time"** for a random walk on the 24D Leech lattice to reach the 4D spacetime manifold.
+- **Task 1.2:** Derive the $0.5\kappa$ (Spinor) and $0.8\kappa$ (A5) residues as **Quantum Phase Fluctuations** in the TBD path integral.
+- **Task 1.3:** Link the "Vacuum Viscosity" $\kappa = \pi/24$ to the diffusion coefficient of the Leech lattice fluid.
 
-## 3. Priority 2: Electroweak Coupling Theory
-- **Task 2.1:** Derive the $0.5\kappa$ and $0.8\kappa$ residues from field-theoretic calculations (avoiding metaphors).
-- **Task 2.2:** Explain the Weinberg angle $\exp(-2\kappa)$ as a topological linking probability.
+## 3. Priority 2: Mathematical Derivation of Coefficients
+- **Task 2.1:** Prove the origin of the integer **82** and divisor **5** from the TBD entropy production rate.
+- **Task 2.2:** Formulate the $\sqrt{3}$ neutrino projection cost as the Euclidean distance of the random walk's final exit from the bulk.
 
 ## 4. Priority 3: Absolute Scale Research
 - **Task 3.1:** Long-term investigation into the derivation of $C_{universal}$ from lattice invariants.
