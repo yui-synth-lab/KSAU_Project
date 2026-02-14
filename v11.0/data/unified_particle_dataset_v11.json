@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "project": "KSAU v11.0 Integrated SSoT",
+    "description": "True integration of v9.0 Shift Theory and v10.0 Boson N=6 with Neutrino Sector extensions.",
+    "version": "11.0.1",
+    "date": "2026-02-15",
+    "universal_constants": {
+      "kappa": 0.1308996938995747,
+      "C_universal": -0.6714,
+      "mu_0_neutrino_base": 2.14e-7,
+      "lambda_neutrino": 1.7671,
+      "lambda_neutrino_description": "9*pi/16 or 13.5*kappa"
+    }
+  },
+  "particles": [
+    {
+      "name": "Electron",
+      "sector": "Lepton",
+      "N": 20,
+      "V": 0.0,
+      "n_shift": 0.0,
+      "status": "Stable"
+    },
+    {
+      "name": "Muon",
+      "sector": "Lepton",
+      "N": 20,
+      "V": 2.0299,
+      "n_shift": 0.0,
+      "status": "Stable"
+    },
+    {
+      "name": "Tau",
+      "sector": "Lepton",
+      "N": 20,
+      "V": 3.1640,
+      "n_shift": 0.0,
+      "status": "Stable"
+    },
+    {
+      "name": "Up",
+      "sector": "Quark",
+      "N": 10,
+      "V": 5.3335,
+      "n_shift": 42.0,
+      "status": "Integer_Shift"
+    },
+    {
+      "name": "Down",
+      "sector": "Quark",
+      "N": 10,
+      "V": 6.5517,
+      "n_shift": 48.0,
+      "status": "Integer_Shift"
+    },
+    {
+      "name": "Strange",
+      "sector": "Quark",
+      "N": 10,
+      "V": 9.3123,
+      "n_shift": 53.0,
+      "status": "Integer_Shift"
+    },
+    {
+      "name": "Charm",
+      "sector": "Quark",
+      "N": 10,
+      "V": 11.2155,
+      "n_shift": 52.0,
+      "status": "Integer_Shift"
+    },
+    {
+      "name": "Bottom",
+      "sector": "Quark",
+      "N": 10,
+      "V": 15.1567,
+      "n_shift": 82.5,
+      "status": "Anomaly",
+      "note": "Mixing Cost residue (0.5 kappa) linked to W boson."
+    },
+    {
+      "name": "Top",
+      "sector": "Quark",
+      "N": 10,
+      "V": 15.6211,
+      "n_shift": 59.0,
+      "status": "Integer_Shift",
+      "note": "A5 symmetry (order 60) stabilizer."
+    },
+    {
+      "name": "W",
+      "sector": "Boson",
+      "N": 6,
+      "V": 14.6554,
+      "n_shift": -3.5,
+      "status": "Anomaly",
+      "note": "Negative shift from EWSB rotation."
+    },
+    {
+      "name": "Z",
+      "sector": "Boson",
+      "N": 6,
+      "V": 15.0276,
+      "n_shift": -2.2,
+      "status": "Anomaly",
+      "note": "Negative shift from EWSB rotation."
+    },
+    {
+      "name": "Higgs",
+      "sector": "Boson",
+      "N": 6,
+      "V": 15.8207,
+      "n_shift": 0.0,
+      "status": "Pure_Geometric"
+    },
+    {
+      "name": "Nu_e",
+      "sector": "Neutrino",
+      "N_topology": 3,
+      "scaling": "lambda",
+      "status": "In_Progress"
+    },
+    {
+      "name": "Nu_mu",
+      "sector": "Neutrino",
+      "N_topology": 6,
+      "scaling": "lambda",
+      "status": "In_Progress"
+    },
+    {
+      "name": "Nu_tau",
+      "sector": "Neutrino",
+      "N_topology": 7,
+      "scaling": "lambda",
+      "status": "In_Progress"
+    }
+  ],
+  "anomalies_to_solve": [
+    "Non-integer shift 82.5 (Bottom)",
+    "Negative shifts -3.5, -2.2 (W/Z)",
+    "Neutrino base scale mu_0 origin (Current hypothesis: B=216+residue)"
+  ]
+}
