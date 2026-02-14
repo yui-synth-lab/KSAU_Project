@@ -41,16 +41,22 @@ We explicitly acknowledge the numerical discrepancy ($0.5$ vs $0.4$) between the
 
 ## 6. Neutrino Sector: Algebraic Reformulation
 
-### 4.1 Fibonacci Resonance ($F_9$)
+### 6.1 Fibonacci Resonance ($F_9$)
 The neutrino mass-squared difference ratio $R = \Delta m^2_{31} / \Delta m^2_{21} \approx 33.88$ is reproduced with 1.16% precision ($R = 34.27$) using the parameters $\lambda = 9\pi/16$ and $N=\{3,6,7\}$. The proximity to the Fibonacci number $F_9 = 34$ suggests a fundamental resonance in the boundary-resident sector.
 
-### 4.2 Algebraic Expression for $\mu_0$
+### 6.2 Algebraic Expression for $\mu_0$
 We provide a new algebraic expression for the neutrino base mass scale $\mu_0 \approx 2.14 \times 10^{-7}$ eV (originally calculated in v6.0):
 $$\mu_0 = m_e \cdot \exp\left(-(216 + \sqrt{3})\kappa\right)$$
 - **Motivation:** $216 = 24 \times 9$ (Niemeier rank cycle) and $\sqrt{3}$ (spatial diagonal). This is a post-hoc algebraic representation and awaits formal first-principles derivation.
 
 ## 7. Conclusion: The Path Forward
 KSAU v11.0 establishes the "Electroweak-Topological Connection" as a robust working hypothesis. While the non-integer shifts remain unresolved, the sub-1% prediction of the Weinberg angle provides compelling evidence that the framework is capturing the underlying physics of the vacuum. Future work will focus on the rigorous derivation of the neutrino base scale and the reconciliation of the quark-boson entanglement cost.
+
+## 8. References
+[1] Particle Data Group, R.L. Workman et al., *Review of Particle Physics*, Prog. Theor. Exp. Phys. 2022, 083C01 (2022) and 2024 update.
+[2] NuFIT 5.2 (2022), www.nu-fit.org.
+[3] KSAU v6.0: *Topological Origin of Fermion Mass Hierarchy*, Zenodo DOI: 10.5281/zenodo.18631886.
+[4] KSAU v10.0: *Integrated Standard Model Mass Map*, Technical Report (2026).
 
 ---
 *KSAU v11.0 Technical Report - Final Revision*
