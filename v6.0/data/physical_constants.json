@@ -109,6 +109,7 @@
   "gravity": {
     "G_newton_exp": 6.708e-39,
     "G_ksau": 6.7135e-39,
+    "m_planck_gev": 1.22091e19,
     "v_planck_factor": 6.0,
     "k_c": 1.253314137,
     "delta": 0.032724923,
