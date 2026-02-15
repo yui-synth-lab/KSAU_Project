@@ -1,48 +1,47 @@
-# Quantized Vacuum Geometry: Integrating Modular Topology and Dynamic Spacetime Dissipation
+# Quantized Vacuum Geometry: Exploratory Correspondence Between Modular Topology and SM Scales
 
 **Authors:** KSAU Collaboration  
 **Date:** February 15, 2026  
-**Journal:** Physical Review Letters (Target)  
-**Status:** FINAL PRE-PRINT (v13.5) - INTEGRATED & VERIFIED
+**Journal:** Physical Review D (Target - Research Note)  
+**Status:** WORKING DRAFT (v13.7) - EXPLORATORY DATA ANALYSIS
 
 ---
 
 ## Abstract
-We present a unified geometric derivation of the Standard Model (SM) scaling parameters, reconciling static modular topology with the dynamical properties of the gravitational vacuum. We introduce the **Unified Scaling Law**, $X = \mathcal{R}(\pi N - (2g - 2))$, which derives the logarithmic mass hierarchy from the invariants of modular curves $X_0(N)$. We show that the choice between Standard and Reduced Planck Mass is dictated by the manifold's curvature $(2g-2)$. Furthermore, we identify the **Integration Constant** $(1 - \kappa/2)$ as the dynamic update cost required to project the static modular vacuum into a 4D dissipative spacetime, providing a seamless link to the first-principles derivation of the Newtonian gravitational constant $G$.
+We explore a potential parameter-free derivation of the Standard Model (SM) fermion mass hierarchy and gauge coupling scales using the topological invariants of modular curves $X_0(N)$. Following the **Minimal Prime Genus Hypothesis**, we investigate specific prime levels $p$ that minimize the modular index $\mu$ for each genus $g$. We report a scaling law $X = \mathcal{R}(\pi p - (2g-2))$, where $\mathcal{R}$ is the topological partition ratio. For $N=41$ ($g=3$), the identity yields a hierarchy factor $\ln(\bar{M}_{Pl}/m_e) \approx 49.922$, showing an exploratory agreement with observation within $0.012\%$. Statistical analysis across prime levels $N < 200$ indicates that this match is unique ($p = 0.022$), suggesting a non-trivial but preliminary correlation that warrants further investigation into the geometric stability of the vacuum.
 
 ---
 
-## 1. The Minimal Prime Genus Hypothesis
-The physical vacuum is stabilized on modular curves $X_0(p)$ of prime level $p$ that minimize the genus $g$ for a given topological sector.
-- **$g=1$ Sector (Gauge):** $X_0(11)$ is the minimal elliptic anchor, determining the GUT inverse coupling $\alpha_{GUT}^{-1}$.
-- **$g=3$ Sector (Mass):** $X_0(41)$ is the minimal genus-3 anchor, determining the fermion mass hierarchy.
+## 1. Introduction
+The values of Standard Model parameters are traditionally treated as empirical inputs. This paper investigates the hypothesis that these constants are quantized topological invariants emerging from modular geometry. We emphasize that the current findings represent **preliminary structural alignments** rather than a completed first-principles derivation.
 
-## 2. The Unified Scaling Law
-We define the static action $X_{static}$ based on the **Topological Partition Ratio** $\mathcal{R} = 
-u_\infty / (g + 
-u_\infty)$:
-$$ X_{static}(N) = \mathcal{R} \cdot (\pi N - (2g - 2)) $$
-where $(2g - 2)$ represents the degree of the canonical divisor (curvature). 
+## 2. Selection Principle: The Minimal Index State
+We hypothesize that for a given topological complexity (defined by genus $g$), the vacuum preferentially stabilizes on the modular level $N$ that minimizes the **Modular Index** $\mu = [SL_2(\mathbb{Z}) : \Gamma_0(N)]$. 
+- **$g=1$ Sector:** Ground state at **$N=11$** ($\mu=12$).
+- **$g=3$ Sector:** Ground state at **$N=41$** ($\mu=42$).
 
-### 2.1 Resolution of the $8\pi$ Factor
-The curvature term $(2g - 2)$ naturally accounts for the discrepancy between Standard and Reduced Planck Mass:
-- For **$g=1$ ($N=11$):** $(2g - 2) = 0$. The action is curvature-free, explaining the scale invariance of gauge couplings.
-- For **$g=3$ ($N=41$):** $(2g - 2) = 4$. The term $-4\mathcal{R} = -1.6$ precisely matches the $\ln\sqrt{8\pi}$ transition to the Reduced Planck Mass.
+This "Minimality Principle" provides a deterministic but still conjectural selection rule for Standard Model anchors.
 
-## 3. Dynamic Integration and Gravity (v13 to v6.7)
-While $X_{static}$ defines the geometric skeleton, the observed gravitational constant $G$ emerges from the **Dynamic Action** $X_{dynamic}$ in a dissipative 4D network (as identified in v6.7):
-$$ X_{dynamic} = X_{static} + \left(1 - \frac{\kappa}{2}ight) $$
-where $\kappa = \pi/24$ is the master modular weight. 
-For $N=41$, this yields $X_{dynamic} \approx 50.856$, matching the v6.7 derivation of $G$ with **99.94% precision**.
+## 3. The Scaling Law and Curvature Corrections
+The fundamental action $X$ is modeled by the curvature-corrected ratio:
+$$ X(N) = \frac{\nu_\infty}{g + \nu_\infty} \cdot (\pi N - (2g - 2)) $$
+The correction term $(2g - 2)$ corresponds to the Euler characteristic of the surface. 
+- For **$g=1$**, the term is zero, preserving the scale invariance required for gauge coupling unification ($X(11) \approx 23.04$). 
+- For **$g=3$**, the term generates a shift of $\sim 1.6$, aligning the bare modular action with the **Reduced Planck Mass** hierarchy.
 
-## 4. Discussion: The Information Cost of Spacetime
-The term $(1 - \kappa/2) \approx 0.934$ represents the irreducible information loss (Update Cost) incurred when a static modular invariant is manifested in a dynamical spacetime. This bridges the gap between pure mathematics and effective field theory, showing that the Standard Model parameters are "renormalized shadows" of quantized vacuum geometry.
+## 4. Statistical Analysis and Limitations
+A scan of all prime levels $N < 200$ (46 candidates) was performed to test the uniqueness of the $N=41$ match.
+- **Observation:** Only $N=41$ reproduces the observed hierarchy within $0.1\%$ accuracy.
+- **p-value:** $0.0217$.
+While this value is below the $0.05$ threshold for exploratory research, it does not meet the $5\sigma$ standard required for a physical discovery. Furthermore, we acknowledge that the formula for $X(N)$ was refined based on the observed data for $N=41$, which may introduce a selection bias in the statistical significance.
 
-## 5. Conclusion
-The KSAU v13.5 framework provides a complete, parameter-free unification of the gauge and mass sectors. By grounding the laws of physics in the rigid geometry of the 24-dimensional vacuum and the dissipative dynamics of the spacetime network, we eliminate the remaining arbitrariness in the Standard Model.
+## 5. Discussion and Future Work
+The current results identify $N=11$ and $N=41$ as intriguing topological anchors. The extension of this law to $g=2$ sectors (e.g., $N=23$) suggests potential links to intermediate scales, but the lack of a definitive Standard Model counterpart for this genus makes such identifications speculative. Future work must focus on a non-post-hoc derivation of the $(2g-2)$ correction from the Selberg trace formula and an independent verification of the $g+\nu_\infty$ partition sum.
+
+## 6. Conclusion
+KSAU v13.7 provides a structural framework suggesting that Standard Model scales are encoded in modular topology. While the 0.012% agreement for the mass hierarchy is suggestive and statistically notable ($p = 0.022$), it remains a **strong phenomenological hint** requiring rigorous mathematical proof from first principles.
 
 ---
 ## References
-[1] KSAU Collaboration, *Structural Correspondence Between Modular Topology and SM Scales*, Alpha Draft (2026).
-[2] KSAU Collaboration, *High-Precision Derivation of the Gravitational Constant*, v6.7 (2026).
-[3] J.H. Conway and N.J.A. Sloane, *Sphere Packings, Lattices and Groups*, Springer-Verlag (1999).
+[1] KSAU Collaboration, *Theoretical Supplement: Stability and Statistical Limitations*, v13.7 (2026).  
+[2] Particle Data Group, *Review of Particle Physics*, PTEP 2022, 083C01 (2022).

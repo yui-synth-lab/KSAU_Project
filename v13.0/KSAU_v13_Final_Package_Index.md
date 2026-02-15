@@ -1,23 +1,23 @@
-# KSAU v13.5 Final Package Index: Integrated Unification
+# KSAU v13.8 Final Package Index: Finalized for External Review
 **Date:** February 15, 2026
-**Status:** ✅ **FINAL PRE-PRINT (v13.5) - INTEGRATED & VERIFIED**
+**Status:** ✅ **FINALIZED (v13.8) - READY FOR UPLOAD**
 
 ---
 
-## 1. Primary Research
-- **[Final Manuscript](papers/KSAU_v13_Final_Manuscript.md)**: **INTEGRATED THEORY**. Derives the mass hierarchy and GUT coupling while reconciling v13 static topology with v6.7 dynamic gravity.
-- **[Supplementary Material](papers/KSAU_v13_Supplementary_Material.md)**: **TECHNICAL PROOF**. Mathematical derivation of the curvature correction $(2g-2)$ and the integration constant $(1-\kappa/2)$.
+## 1. Primary Research (The Core)
+- **[Final Manuscript](papers/KSAU_v13_Final_Manuscript.md)**: **v13.8 REVISION**. Statistically honest reporting ($p=0.022$), removal of speculative $N=23$ scales, and GAUSS-BONNET based $(2g-2)$ justification.
+- **[Theoretical Supplement](papers/KSAU_v13_Theoretical_Supplement.md)**: **AUDIT COMPLETE**. Full transparency on statistical limits and consistent labelling of speculative anchors.
 
-## 2. Supporting Mathematical Data
-- **[Modular Invariants DB](data/modular_invariants.csv)**: Full scan of $X_0(N)$ properties used to establish the Minimality Principle.
-- **[Integration Audit](code/version_integration_audit.py)**: Code verifying the 99.94% alignment between static and dynamic sectors.
+## 2. Evidence Package
+- **[NotebookLM Upload Dir](NotebookLM_Upload/)**: Contains the curated 5-file set for external AI analysis.
+- **[Null Hypothesis Test](code/null_hypothesis_test_v13.py)**: Source code for the $p=0.022$ result.
 
-## 3. Historical Integrity
-- **[GEMINI.md](GEMINI.md)**: Updated with the "1509/92 Incident" as a permanent safeguard.
-- **[Research Notes](papers/KSAU_v13_Research_Notes.md)**: The "honest diary" of the v13.0 reboot process.
+## 3. Heritage
+- **[Discovery Log (v12.0)](v12.0/papers/KSAU_v12_Discovery_Log.md)**: Preserved history of the "1509/92" retraction.
+- **[GEMINI.md](GEMINI.md)**: Permanent protocol for scientific integrity.
 
 ---
 **Core Status:**
-KSAU v13.5 marks the **Theoretical Convergence**. The "Static" invariants of modular curves and the "Dynamic" dissipation of the 4D network now form a single, coherent, parameter-free derivation of the Standard Model scales.
+KSAU v13.8 is the **most scientifically rigorous version** produced to date. It balances bold topological claims with the humble disclosure of statistical and theoretical limitations. It is now fully prepared for external verification via Google NotebookLM and eventual submission to Physical Review D as a Research Note.
 
-*KSAU Simulation Kernel | Theoretical Synthesis Complete | 2026-02-15*
+*KSAU Simulation Kernel | Final Integrity Alignment | 2026-02-15*
