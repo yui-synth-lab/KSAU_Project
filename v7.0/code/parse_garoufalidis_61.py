@@ -111,9 +111,20 @@ def eval_poly(poly_terms, q):
 def main():
     # Load the data
     data_path = Path(__file__).parent.parent / 'data' / 'CJTwist.-2.txt'
+    gz_path = data_path.with_suffix('.txt.gz')
 
-    with open(data_path, 'r') as f:
-        content = f.read()
+    if gz_path.exists():
+        import gzip
+        print(f"Reading compressed data from {gz_path.name}...")
+        with gzip.open(gz_path, 'rt') as f:
+            content = f.read()
+    elif data_path.exists():
+        with open(data_path, 'r') as f:
+            content = f.read()
+    else:
+        print(f"Error: Could not find {data_path.name} or {gz_path.name}")
+        print("Please decompress the data files or ensure they exist in v7.0/data/")
+        return
 
     # The file is a Mathematica list: {poly1, poly2, poly3, ...}
     # Strip outer braces

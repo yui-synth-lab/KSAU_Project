@@ -16,7 +16,8 @@ import json
 def main():
     print("="*70)
     print("Exact Kashaev Invariant Computation: 6_1 Knot")
-    print("Source: Garoufalidis database CJTwist.-2.txt")
+    print("Source: Garoufalidis database (v7.0/data/CJTwist.-2.txt.gz)")
+    print("Note: The source data file has been compressed to save repository space.")
     print("="*70)
     print()
 
