@@ -23,26 +23,13 @@ def run_master_verification():
     X_theory = np.pi * (16 + 24/60)
     error = (X_theory / X_obs - 1) * 100
     print(f"X_theory (16.4*pi):  {X_theory:.8f}")
-    print(f"Precision Score:     {100 - abs(error):.4f}%")
     print(f"Relative Error:      {error:+.6f}%")
     
-    # 3. Model Comparison (Pseudo-AIC)
-    # RSS for N=41 model
-    rss_41 = (X_theory - X_obs)**2
-    # RSS for random model (assume best random match from 100k test ~ 1e-5 error)
-    rss_null = (X_obs * 1e-5)**2
+    # Note: AIC comparison removed as per Auditor recommendation (Feb 15)
+    # The geometric preference for 16.4*pi rests on group-theoretic stability, 
+    # not pure numerical minimization.
     
-    # AIC = 2k + n*ln(RSS)
-    n = 1 # Number of observations (global scale)
-    aic_41 = 2*0 + n * np.log(rss_41)
-    aic_null = 2*2 + n * np.log(rss_null) # k=2 for p, q parameters
-    
-    print(f"\n--- Model Comparison ---")
-    print(f"AIC (Modular N=41):  {aic_41:.2f}")
-    print(f"AIC (Random Fit):    {aic_null:.2f}")
-    print(f"Delta AIC:           {aic_null - aic_41:.2f} (Value > 10 is Decisive)")
-    
-    # 4. CP Violation Check
+    # 3. CP Violation Check
     J_obs = phys['cp_violation']['jarlskog_J']
     J_theory = np.exp(-80 * kappa)
     j_error = (J_theory / J_obs - 1) * 100
