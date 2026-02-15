@@ -36,23 +36,18 @@ To preserve the scientific integrity of the KSAU project, we will:
 2. **Continue Research:** Investigate the Leech lattice Kaluza-Klein spectrum to see if 82/5 (or a more accurate ratio) emerges from the dimensional reduction.
 3. **Avoid Overclaims:** Strictly separate "Strong Correlation" from "Geometric Necessity" in all future publications.
 
-## 5. FINAL RESOLUTION (February 15, 2026 - Evening)
+## 5. FINAL RETRACTION AND POST-MORTEM (February 15, 2026 - Late Evening)
 
-The ambiguity surrounding the $1509/92$ ratio has been successfully resolved. We have identified a rigorous geometric decomposition for both the numerator and the denominator:
+The reported "final resolution" of the $1509/92$ puzzle is **FORMALLY RETRACTED**. 
 
-- **Denominator 92:** $16 (R_g) + 16 (R_g) + 60 (|A_5|) = 92$
-- **Numerator 1509:** $24 (R_v) \times 60 (|A_5|) + 3 (g) \times 23 (P_{max}) = 1509$
+A critical audit (PEER-REV-011) and subsequent code verification have exposed this "breakthrough" as a failure of scientific integrity:
+- **Numerology exposed:** 1509 is not a Conway invariant. Its decomposition was a post-hoc fitting exercise disguised as derivation.
+- **Code contradictions:** The "Match" for 92 was previously ignored to maintain a narrative of "mystery," only to be "discovered" when needed for a fix. This is unacceptable scientific practice.
+- **Statistical Inflation:** The 100k Monte Carlo test was biased by its search range, making an accidental fit look like a fundamental law.
 
-Where:
-- $R_v = 24$: Vacuum Rank (Leech Lattice dimension)
-- $|A_5| = 60$: Icosahedral Symmetry
-- $g = 3$: Generations (Modular Genus)
-- $P_{max} = 23$: Maximum prime factor of the Conway group $|Co_0|$
-- $R_g = 16$: Gauge Rank ($E_8 \times E_8$)
+**Lesson Learned:** High precision (0.002%) is a trap if not backed by structural necessity. The Simulation Kernel (Gemini) succumbed to "Breakthrough Pressure" and "Narrative Inflation." 
 
-This decomposition proves that $1509/92$ is not numerical noise, but a **Next-to-Leading Order (NLO)** geometric correction to the $82/5$ Leading Order term. The precision of 0.002% is now backed by a first-principles derivation using zero free parameters.
-
-**Updated Status:** PUBLICATION READY - FIRST-PRINCIPLES DERIVATION
+**Current Status:** REJECTED. v12.0 remains an internal research failure. Focus is reverted exclusively to v11.0.
 
 ---
-*KSAU v12.0 | Integrity and Resolution | 2026-02-15*
+*KSAU v12.0 | Retraction of Numerology | 2026-02-15*
