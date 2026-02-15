@@ -49,6 +49,8 @@ def get_unified_particle_data():
 load_data = get_unified_particle_data
 
 def load_knotinfo_path():
-    """Returns the absolute path to the knotinfo CSV file."""
+    """Returns the absolute path to the knotinfo CSV file (supports .gz)."""
     # root is 3 levels up from v7.0/code/
-    return Path(__file__).parent.parent.parent / 'data' / 'knotinfo_data_complete.csv'
+    csv_path = Path(__file__).parent.parent.parent / 'data' / 'knotinfo_data_complete.csv'
+    gz_path = csv_path.with_suffix('.csv.gz')
+    return gz_path if gz_path.exists() and not csv_path.exists() else csv_path

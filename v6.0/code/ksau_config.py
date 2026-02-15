@@ -94,8 +94,12 @@ def load_topology_assignments():
 
 def load_knotinfo_path():
     root_dir = Path(__file__).parent.parent.parent
-    return root_dir / 'data' / 'knotinfo_data_complete.csv'
+    csv_path = root_dir / 'data' / 'knotinfo_data_complete.csv'
+    gz_path = csv_path.with_suffix('.csv.gz')
+    return gz_path if gz_path.exists() and not csv_path.exists() else csv_path
 
 def load_linkinfo_path():
     root_dir = Path(__file__).parent.parent.parent
-    return root_dir / 'data' / 'linkinfo_data_complete.csv'
+    csv_path = root_dir / 'data' / 'linkinfo_data_complete.csv'
+    gz_path = csv_path.with_suffix('.csv.gz')
+    return gz_path if gz_path.exists() and not csv_path.exists() else csv_path
