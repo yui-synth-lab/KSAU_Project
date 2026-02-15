@@ -1,30 +1,27 @@
-# KSAU v12.0 Final Package Index: Modular Mass Hierarchy
+# KSAU v12.0 Internal Package Index: Modular Mass Hints
 **Date:** February 15, 2026
-**Status:** ✅ **READY FOR SUBMISSION (PHYSICS LETTERS B or PRL)**
+**Status:** ⚠️ **INTERNAL RESEARCH ONLY - NOT FOR SUBMISSION**
 
 ---
 
-## 1. Primary Manuscripts
-- **[Main Manuscript](papers/KSAU_v12_Main_Manuscript.md)**: The core Letter. Establishing $X=16.4\pi$ and $N=41$ selection rule.
-- **[Supplementary Material](papers/KSAU_v12_Supplementary_Material.md)**: Technical appendix. Detailed error analysis, AIC/BIC metrics, and holographic action derivation.
+## 1. Primary Research Note
+- **[Phenomenological Observation](papers/KSAU_v12_Main_Manuscript.md)**: Reports the N=41 Genus-3 correspondence and the electron hierarchy match. Clearly acknowledges the non-uniqueness problem.
 
-## 2. Theoretical Foundations
-- **[Modular Investigation Log](papers/Systematic_Geometric_Investigation_of_41_and_82.md)**: Selection rule justification (non-hyperellipticity).
-- **[Mass Formula Analysis](papers/First_Principles_Mass_Formula_v12.md)**: Generational gap quantization ($41\kappa$).
+## 2. Supporting Analysis
+- **[Investigation Roadmap](papers/Systematic_Geometric_Investigation_of_41_and_82.md)**: Updated roadmap for long-term rigor.
+- **[SSoT Data Analysis](papers/KSAU_v12_Supplementary_Material.md)**: Technical analysis of Planck scale sensitivity and statistical significance.
 
-## 3. Reproducibility Package (Python 3.9+)
-- **[Master Verification](code/rigorous_value_verification.py)**: Execute to verify the 0.01% match and Decisive AIC score.
-- **[Statistical Significance](code/null_hypothesis_test_100k.py)**: 100,000 trial Monte Carlo ($p < 0.001$).
-- **[Modular Search](code/modular_genus_search.py)**: Prove $N=41$ uniqueness for genus-3.
+## 3. Verified Verification Code (SSoT Compliant)
+- **[Master Verification](code/rigorous_value_verification.py)**: Compliance check for mass ratios.
+- **[Statistical Audit](code/null_hypothesis_test_100k.py)**: Evidence of numerical coincidence probability ($p < 0.001$).
+- **[Genus Verification](code/modular_genus_search.py)**: Confirms X0(41) has genus 3.
 
-## 4. Integrity and Governance
-- **[Project Status](KSAU_PROJECT_STATUS_2026-02-15.md)**: Official classification of results.
-- **[Retraction Notice](audit/history/communication/2026-02-15_Gemini_to_Claude_v12_Retraction.md)**: Formal withdrawal of speculative TBD metaphors.
+## 4. Integrity Documents
+- **[Discovery Log](papers/KSAU_v12_Discovery_Log.md)**: The foundational document of the v12.0 rigor shift.
+- **[Retraction Notice](audit/history/communication/2026-02-15_Gemini_to_Claude_v12_Retraction.md)**: Formal withdrawal of the speculative TBD approach.
 
 ---
-**Established Rigorous Identities:**
-1.  $X = \ln(M_{Pl}/m_e) \equiv \pi(16 + 24/60)$ (Error: 0.011%)
-2.  $J_{CP} \equiv \exp(-2(N-1)\kappa)$ (Error: 8.0%)
-3.  $X_0(41)$ is the minimal non-hyperelliptic prime level with $g=3$.
+**Core Status:**
+The v12.0 results are **phenomenological hints**. They demonstrate interesting correlations between modular levels and the SM hierarchy but lack the first-principles derivation required for publication.
 
-*KSAU Simulation Kernel | Rigor Phase Complete | 2026-02-15*
+*KSAU Simulation Kernel | Integrity Alignment Complete | 2026-02-15*
