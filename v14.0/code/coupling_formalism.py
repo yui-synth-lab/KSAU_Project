@@ -34,7 +34,8 @@ def coupling_constant_formalism():
     kappa = consts['kappa']
     
     print("="*80)
-    print(f"{'KSAU v14.0: Unified Gauge Couplings (Integrity Revision)':^80}")
+    print(f"{'KSAU v14.0: Gauge Coupling Numerical Coincidences (EXPLORATORY)':^80}")
+    print(f"{'STATUS: These are NOT claimed as derivations':^80}")
     print("="*80)
 
     # 1. Weak Sector (Weinberg Angle)
@@ -67,7 +68,13 @@ def coupling_constant_formalism():
     print(f"   Observed : {alpha_s_exp:.4f}")
     print(f"   Error    : {(alpha_s_pred - alpha_s_exp)/alpha_s_exp*100:.2f}%")
     print("-" * 80)
-    print("Note: All predictions are considered 'Bare' or 'Reference' values.")
+    print("IMPORTANT CAVEATS:")
+    print("  - sin^2(theta_W): Structurally motivated (v11.0). Most robust claim.")
+    print("  - alpha = kappa/18: '18 fermion DOFs' is post-hoc. No group-theoretic proof.")
+    print("  - alpha_s = 0.90*kappa: 0.90 is a pure fit. No theoretical derivation.")
+    print("  - Alpha Directionality: geometric value (1/137.51) < observed (1/137.04).")
+    print("    Standard QED running goes the WRONG direction for a 'bare' interpretation.")
+    print("STATUS: Internal research only. Not publication-ready.")
     print("="*80)
 
 if __name__ == "__main__":

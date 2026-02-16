@@ -1,12 +1,12 @@
-# KSAU v14.0 Technical Report: Dark Matter Observational Alignment (Revised)
-**Title:** Topological Solitons as Dark Matter: Alignment with PeV Neutrinos and the 511 keV Line
-**Status:** OBSERVATIONAL VERIFICATION PHASE
+# KSAU v14.0 Technical Report: Dark Matter Mass Spectrum from Modular Topology
+**Title:** Topological Solitons as Dark Matter Candidates: Predicted Mass Spectrum and Observational Constraints
+**Status:** EXPLORATORY INTERNAL REPORT
 **Date:** February 16, 2026
 
 ---
 
 ## 1. Abstract
-We present a comparative analysis between the KSAU v14.0 topological dark matter (DM) mass predictions and current astrophysical observational data. Our model, which interprets DM as non-generational "vacuum clots" (solitons), identifies resonance peaks at 2.2 PeV, 83 keV, and 0.3 MeV. We also identify a trans-Planckian Primordial Sector ($N=2$) potentially linked to primordial black holes.
+We present the KSAU v14.0 topological dark matter (DM) mass predictions derived from the modular soliton model. Our model, which interprets DM as non-generational "vacuum clots" (solitons), predicts resonance peaks at 2.2 PeV ($N=6$), 83 keV ($N=12$), and 0.3 MeV ($N=24$), plus a trans-Planckian sector ($N=2$). We compare these predictions against current astrophysical data, noting both potential correspondences and significant kinematic and interpretive constraints.
 
 ---
 
@@ -14,21 +14,21 @@ We present a comparative analysis between the KSAU v14.0 topological dark matter
 
 ### A. The 2.2 PeV Peak ($N=6$, Hexagonal Packing)
 - **KSAU Prediction:** $\approx 2.2 \text{ PeV}$.
-- **Alignment:** Matches the energy scale of high-energy starting events (HESE) at **IceCube**.
-- **Significance:** Provides a structural source for the trans-PeV neutrino flux.
+- **Observational Context:** This energy scale overlaps with IceCube high-energy starting events (HESE). However, the current consensus attributes most PeV-scale neutrino events to **conventional astrophysical sources** (AGN, TDE, starburst galaxies). A DM decay/annihilation origin remains a non-mainstream hypothesis.
+- **Status:** Numerical coincidence with an astrophysical energy band. **Not an independent confirmation.**
 
 ### B. The 0.3 MeV Peak ($N=24$, Leech Rank)
 - **KSAU Prediction:** $\approx 0.3 \text{ MeV}$.
-- **Alignment:** Consistent with the **511 keV line** source from the Galactic Center.
-- **Significance:** A 0.3 MeV DM candidate annihilating into $e^+e^-$ pairs explains the emission without violating standard BBN constraints (which primarily limit particles $> 1$ MeV during nucleosynthesis).
+- **⚠️ Kinematic Constraint:** $m_{DM} = 0.3$ MeV $< m_e = 0.511$ MeV. The annihilation channel $DM + DM \to e^+e^-$ is **kinematically forbidden** because the DM mass is below the electron mass threshold. Therefore, this candidate **cannot directly explain the Galactic 511 keV positron annihilation line** via $e^+e^-$ production.
+- **Remaining Significance:** The 0.3 MeV peak is a geometric prediction of the modular topology. Its physical role (if any) would require alternative decay channels (e.g., $\gamma\gamma$, neutrino mixing) that do not involve $e^+e^-$ pair production.
 
 ### C. The 83 keV Peak ($N=12$, Modular Weight)
 - **KSAU Prediction:** $\approx 83 \text{ keV}$.
-- **Context:** Warm Dark Matter (WDM) window. While currently outside definitive detection, it serves as a predictive target for next-generation missions.
+- **Context:** Falls within the Warm Dark Matter (WDM) window. Currently outside definitive X-ray line constraints (strongest below 40 keV). Serves as a predictive target for next-generation X-ray missions (e.g., ATHENA, Lynx).
 
 ### D. The Primordial Sector ($N=2$, Binary Clot)
-- **KSAU Prediction:** Trans-Planckian / Extreme mass.
-- **Significance:** This sector represents the absolute limit of modular stability and is hypothesized to be the seed for **Primordial Black Holes (PBHs)**.
+- **KSAU Prediction:** Trans-Planckian mass ($\sim 10^{78}$ MeV from the soliton formula).
+- **Status:** This is a mathematical extrapolation of the soliton model to its extreme limit. The physical interpretation of trans-Planckian objects is speculative and model-dependent.
 
 ---
 
@@ -36,13 +36,19 @@ We present a comparative analysis between the KSAU v14.0 topological dark matter
 
 While the predicted mass peaks align with astrophysical anomalies, we acknowledge significant constraints from the early universe record:
 
-### A. The 0.3 MeV BBN Challenge
-Standard Big Bang Nucleosynthesis (BBN) and CMB observations of $N_{eff}$ (effective number of neutrino species) strictly constrain thermal dark matter below ~1 MeV. 
-- **The Gap:** A 0.3 MeV particle in thermal equilibrium would significantly alter the expansion rate during the lepton era, potentially violating helium-4 abundance limits.
-- **KSAU Resolution (Hypothesis):** Dark matter in the KSAU framework is not a thermally produced particle but a **topological soliton (vacuum clot)**. If these solitons were produced non-thermally (e.g., via a topological phase transition during inflation), they could exist at 0.3 MeV without contributing to the relativistic degrees of freedom ($N_{eff}$) at the BBN threshold.
+### A. The 0.3 MeV BBN and Kinematic Challenges
+The $N=24$ candidate faces two independent constraints:
+1. **Kinematic Threshold (FATAL for 511 keV):** Since $m_{DM} = 0.3$ MeV $< m_e = 0.511$ MeV, the $e^+e^-$ annihilation channel is kinematically closed. The previous claim of alignment with the Galactic 511 keV line is **retracted**.
+2. **BBN / $N_{eff}$ Constraint:** Standard BBN and CMB observations strictly constrain thermal dark matter below ~1 MeV. A 0.3 MeV particle in thermal equilibrium would alter the expansion rate during the lepton era.
+- **KSAU Hypothesis (Partial):** If these solitons were produced non-thermally (e.g., via a topological phase transition), they could potentially evade $N_{eff}$ bounds. However, the absence of a viable annihilation channel to SM particles makes the observational relevance of this candidate unclear.
 
 ### B. Life-time and Decay
 The stability of the $N=6$ (PeV) and $N=12$ (keV) sectors must exceed the age of the universe. The non-generational genus ($g < 3$) naturally suppresses standard gauge decays, providing a geometric explanation for their extreme longevity.
 
 ## 5. Conclusion
-The alignment of KSAU's predicted mass peaks with the IceCube PeV data and the 511 keV Galactic anomaly provides strong phenomenological support for the 24-dimensional fluid model. By framing these candidates as non-thermal solitons, the KSAU framework offers a viable path to reconcile MeV-scale dark matter with cosmological constraints.
+The KSAU soliton model generates a discrete DM mass spectrum from modular topology. However, we must clearly distinguish between **geometric predictions** (the mass values themselves) and **observational claims** (their correspondence to specific astrophysical signals):
+- The 511 keV alignment is **retracted** due to kinematic impossibility ($m_{DM} < m_e$).
+- The IceCube PeV coincidence is **not an independent confirmation**, as conventional astrophysical sources dominate that energy band.
+- The 83 keV WDM candidate remains a **genuinely testable prediction** for future X-ray missions.
+
+The framework's value lies in producing a finite, discrete spectrum from first principles of modular geometry — not in premature observational claims.

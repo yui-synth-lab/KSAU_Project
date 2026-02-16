@@ -57,8 +57,8 @@ def dark_matter_mass_solver():
     print("="*80)
     print(f"{'KSAU v14.0: Dark Matter Mass Specificity Solver':^80}")
     print("="*80)
-    print(f"{'N':<4} | {'Index':<6} | {'Predicted Mass':<25} | {'Nature'}")
-    print("-" * 80)
+    print(f"{'N':<4} | {'Index':<6} | {'Predicted Mass':<25} | {'Kinematic':<15} | {'Nature'}")
+    print("-" * 100)
     
     for c in candidates:
         row = df[df['N'] == c['N']].iloc[0]
@@ -78,6 +78,14 @@ def dark_matter_mass_solver():
         ln_ratio = (s_41 - action) * density_factor * tension_factor
         m_dm = m_e * np.exp(ln_ratio)
         
+        # Kinematic threshold check
+        if m_dm >= m_e:
+            kin_status = "e+e- OPEN"
+        elif m_dm >= 0:
+            kin_status = "e+e- FORBIDDEN"
+        else:
+            kin_status = "UNPHYSICAL"
+        
         if m_dm > 1e12:
             val_str = f"{m_dm/1e6/1e6:>18.2e} PeV"
         elif m_dm > 1e9:
@@ -87,10 +95,14 @@ def dark_matter_mass_solver():
         else:
             val_str = f"{m_dm:>18.2f} MeV"
             
-        print(f"{c['N']:<4} | {mu:<6} | {val_str:<25} | {c['label']}")
+        print(f"{c['N']:<4} | {mu:<6} | {val_str:<25} | {kin_status:<15} | {c['label']}")
 
     print("="*80)
-    print("Note: N=2 candidate points to trans-Planckian/Primordial region.")
+    print("WARNINGS:")
+    print("  - N=24 (0.3 MeV): m_DM < m_e => e+e- annihilation KINEMATICALLY FORBIDDEN.")
+    print("    Previous 511 keV line alignment claim is RETRACTED.")
+    print("  - N=2: Trans-Planckian extrapolation (speculative).")
+    print("  - N=6: IceCube PeV band overlap is not evidence (AGN is standard source).")
     print("="*80)
 
 if __name__ == "__main__":

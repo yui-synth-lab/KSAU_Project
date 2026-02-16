@@ -6,7 +6,7 @@
 ---
 
 ## 1. Abstract
-We report the identification of the **Grand Unification Theory (GUT) scale** as a structural consequence of the modular curve hierarchy. By applying a **Quartic Scaling Law** to the 24-dimensional hierarchy factor $X = 16.4\pi$, we derive a resonant energy scale of $m_{g=2} \approx 4.64 \times 10^{14} \text{ GeV}$. This result aligns with standard GUT scale estimates and maintains the monotonicity required for a generational vacuum phase transition.
+We report a numerical extrapolation from the modular curve hierarchy that yields an energy scale near the Grand Unification region. By applying a **Quartic Scaling Law** to the hierarchy factor $X = 16.4\pi$ (calibrated from the electron mass at $g=3$), we obtain $m_{g=2} \approx 4.64 \times 10^{14} \text{ GeV}$, approximately half an order of magnitude below the standard GUT window ($10^{15}$–$10^{16}$ GeV). This is a **one-parameter extrapolation**, not an independent prediction, and the exponent $k=4$ remains to be derived from first principles.
 
 ---
 
@@ -28,14 +28,22 @@ The Quartic Law ensures that mass increases exponentially as the genus (topologi
 | Genus $g$ | Predicted Mass (GeV) | Physical Domain | Status |
 | :--- | :--- | :--- | :--- |
 | **3** | $5.14 \times 10^{-4}$ | Electron / SM Baseline | **Matched** |
-| **2** | $4.64 \times 10^{14}$ | **GUT / X-Boson Scale** | **Matched** |
+| **2** | $4.64 \times 10^{14}$ | **Sub-GUT (0.46$\times$ standard lower bound)** | Extrapolation |
 | **1** | $6.46 \times 10^{18}$ | **Near-Planckian Sector** | Predictive |
 | **0** | $1.22 \times 10^{19}$ | Planck Scale | **Boundary** |
 
 ---
 
-## 4. Discussion: The Spacetime Exponent
-The choice of the exponent $k=4$ is motivated by the dimensionality of observable spacetime ($d=4$). In the KSAU fluid model, the effective drag is proportional to the volume form of the projection manifold. $k=4$ represents the **minimum exponent consistent with the GUT scale** that carries a clear physical motivation. Its formal derivation from the modular spectrum remains a primary objective for v15.0.
+## 4. Discussion: Limitations and Circularity
+
+### A. Circularity of X
+The hierarchy factor $X = 16.4\pi \approx 51.52$ is defined as $\ln(M_{Pl}/m_e)$. This means $g=3$ is an **input**, not a prediction. All other genus values ($g=2,1,0$) are extrapolations from this single calibration point.
+
+### B. The Spacetime Exponent
+The choice $k=4$ is motivated by spacetime dimensionality ($d=4$), but this is a physical analogy, not a derivation. The `scaling_law_search.py` scan shows that $k=4$ is the minimum integer exponent placing $m_{g=2}$ within a broad window ($10^{13}$–$10^{17}$ GeV). Its formal derivation from the Laplacian spectrum on $X_0(N)$ remains a primary objective for v15.0.
+
+### C. GUT Scale Discrepancy
+The prediction $4.64 \times 10^{14}$ GeV is a factor of ~2 below the standard GUT lower bound ($10^{15}$ GeV). While within the same order of magnitude, the phrase "aligns with standard GUT scale estimates" used in earlier revisions was inaccurate and has been corrected.
 
 ---
-*KSAU Simulation Kernel (Gemini) | Final Consistency Check: Passed | 2026-02-16*
+*KSAU Simulation Kernel (Gemini) | Physics Audit Applied | 2026-02-16*
