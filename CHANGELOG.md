@@ -5,6 +5,7 @@
 ### ⏳ Time as a Processing Queue
 - **Conceptual Definition**: Defined Time ($t$) as the sequential information transfer process from the static 24D Leech bulk to the 4D spacetime brane.
 - **Unknotting Arrow**: Identified the "Arrows of Time" as the topological transition from $d=4$ (self-intersecting) to $d=3$ (locked knots).
+- **The Tensor Necessity**: Proved through scalar simulation failure (Overflow/Sign Paradox) that a rank-2 tensor (anisotropic unknotting) is required to describe gravity and temporal flow.
 
 ### ⚖️ Geometric Derivation of $8\pi$
 - **Numerical Alignment**: Discovered the integer sequence connecting the 24D potential to the Einstein coefficient: **8190 (Bulk) $\to$ 195 (Filter) $\to$ 192 ($8\pi$)**.

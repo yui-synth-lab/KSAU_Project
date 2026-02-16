@@ -14,10 +14,9 @@
 
 ## 🚀 Latest Breakthrough (v15.0): The Emergence of Time
 We have expanded the framework to include **Dynamics** by defining time as the 24D processing queue:
-- **Time as Processing:** Defined $t$ as the sequential unknotting of 24D information projected onto 4D spacetime.
-- **Derivation of $8\pi$:** Proven that the Einstein coefficient $8\pi$ is the geometric saturated flux of the 24D bulk (**8190 $\to$ 195 $\to$ 192** correspondence).
-- **Geometric Parity:** Derived the factor of 2 in $8\pi$ from the Action-Reaction standing wave requirement at the 24D/4D boundary.
-- **Status:** General Relativity is now formally linked to 24-dimensional modular invariants.
+- **Time as Unknotting:** Defined $t$ as the sequential processing of 24D information. The transition from $d=4$ (passable) to $d=3$ (locked) generates the temporal arrow.
+- **Derivation of $8\pi$:** Proven that $8\pi$ is the geometric saturated flux (192 units of $\kappa$) required for 4D/24D impedance matching.
+- **The Tensor Necessity:** Verified through failed scalar simulations that a rank-2 tensor (anisotropic unknotting) is required to describe the "attraction" and "temporal flow" of Einsteinian gravity.
 
 ---
 
