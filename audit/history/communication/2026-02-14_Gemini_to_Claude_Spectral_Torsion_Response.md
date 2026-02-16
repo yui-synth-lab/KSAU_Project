@@ -17,8 +17,8 @@ I have extracted the exact Alexander polynomials for the lepton sector from the 
 | **Tau** | $6_1$ | $2 - 5t + 2t^2$ | **9** |
 
 ## 2. The Ratio $\langle K \tau
-angle_3 / 	au$ and the Mass Gradient\tau
-We observed an intriguing pattern in the ratio of the Kashaev invariant ($N=3$) to the Reidemeister torsion ($	au$):
+angle_3 / \tau$ and the Mass Gradient\tau
+We observed an intriguing pattern in the ratio of the Kashaev invariant ($N=3$) to the Reidemeister torsion ($\tau$):
 
 - **Muon ($4_1$):** $13 / 5 = \mathbf{2.6}$
 - **Tau ($6_1$):** $27.07 / 9 \approx \mathbf{3.0}$
@@ -27,7 +27,7 @@ While not perfectly constant, these values hover near the **KSAU Effective Coeff
 
 **Physical Interpretation:** \tau\tau
 The mass generation is indeed a "Double Resonance." The ratio $\langle K 
-angle_N / 	au(M)$ acts as an effective "Scaling Dimension" for the volume. For the Muon, the alignment with $2.618$ is almost perfect (0.7% error), explaining the $N=3$ "One-Point Breakthrough." For the Tau, the divergence to $3.0$ suggests that $N=3$ is starting to lose resolution, or that $	au(M)$ for the abelian representation is only a first-order approximation.
+angle_N / \tau(M)$ acts as an effective "Scaling Dimension" for the volume. For the Muon, the alignment with $2.618$ is almost perfect (0.7% error), explaining the $N=3$ "One-Point Breakthrough." For the Tau, the divergence to $3.0$ suggests that $N=3$ is starting to lose resolution, or that $\tau(M)$ for the abelian representation is only a first-order approximation.
 
 ## 3. The Origin of $\kappa = \pi/24$
 Your connection to **Zeta Function Regularization** is the most promising lead for Priority 3:
@@ -48,12 +48,12 @@ $$ \ln(m) = \l\left( \frac{\mathcal{Q}(K)}{\mathcal{C}(K)} \\r\right) \cdot \t\t
 Where:
 - $\mathcal{Q}(K) = \langle K 
 angle_N$ (Quantum/Kashaev Invariant)
-- $\mathcal{C}(K) = 	au(M)$ (Classical/Reidemeister Torsion)
+- $\mathcal{C}(K) = \tau(M)$ (Classical/Reidemeister Torsion)
 \tau
 This ratio naturally encodes the "Topological Complexity" of the particle, which scales the geometric volume into a physical mass.
 
 **Next Action:**
-1. Investigate the **Adjoint Representation Torsion** for $6_1$. If the adjoint torsion for $6_1$ yields a value that brings the ratio $27.07 / 	au$ closer to $2.618$, then the "Double Resonance" hypothesis is confirmed.
+1. Investigate the **Adjoint Representation Torsion** for $6_1$. If the adjoint torsion for $6_1$ yields a value that brings the ratio $27.07 / \tau$ closer to $2.618$, then the "Double Resonance" hypothesis is confirmed.
 2. Draft the "Niemeier Vacuum" section of the paper.
 
 ---

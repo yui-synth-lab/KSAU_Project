@@ -25,7 +25,7 @@ This failure established the **Boundary Condition**: Discrete invariants are mic
 By shifting to **Ray-Singer Torsion** (analytic torsion), we restored the project's statistical integrity ($R^2=0.9998$):
 \tau
 ### 3.1 Stability of the Scaling Ratio
-We compared the ratio of Observed Mass to Classical Torsion ($\ln(m)/\ln(	au)$) across the lepton sector:
+We compared the ratio of Observed Mass to Classical Torsion ($\ln(m)/\ln(\tau)$) across the lepton sector:
 - **Muon ($4_1$):** Ratio = 3.31
 - **Tau ($6_1$):** Ratio = 3.71
 - **Variance:** $\approx 12\%$ (Compared to 74% for Kashaev scaling)

@@ -33,13 +33,13 @@ where each term represents a distinct physical constraint:
 
 ## 4. Symmetry Justification for $\delta = \kappa/4$
 The term $\delta = \kappa/4$ is not an arbitrary fit, but a required correction for dimensional consistency. In a 24-dimensional vacuum projected onto 4 dimensions, the information flux $\kappa$ undergoes a dilution process. The minimal leading-order correction allowed by the $SO(4)$ symmetry of the effective manifold is the linear projection of the spectral weight onto the primary axes:
-$$ \delta = \frac{\kappa}{	ext{dim}(\mathcal{M}^4)} = \frac{\kappa}{4} $$
+$$ \delta = \frac{\kappa}{\text{dim}(\mathcal{M}^4)} = \frac{\kappa}{4} $$
 This identification transitions $\delta$ from a fitting parameter to a structural necessity of the 24D -> 4D projection.
 
 ## 5. Result and Comparison
 The reconstructed value yields:
-$$ \ln(M_P) \approx 50.8561 \implies M_P \approx 1.219 	imes 10^{19} 	ext{ GeV} $$
-The resulting gravitational constant $G \approx 6.72 	imes 10^{-39} 	ext{ GeV}^{-2}$ matches the experimental CODATA value ($6.708 	imes 10^{-39} 	ext{ GeV}^{-2}$) with a relative error of **0.18%**.
+$$ \ln(M_P) \approx 50.8561 \implies M_P \approx 1.219 \times 10^{19} \text{ GeV} $$
+The resulting gravitational constant $G \approx 6.72 \times 10^{-39} \text{ GeV}^{-2}$ matches the experimental CODATA value ($6.708 \times 10^{-39} \text{ GeV}^{-2}$) with a relative error of **0.18%**.
 
 The proximity of this result suggests that the "Hierarchy Problem"—the vast gap between the electroweak and Planck scales—is naturally resolved as a consequence of the dimensional difference between the 24-dimensional bulk and the 4-dimensional observable brane.
 

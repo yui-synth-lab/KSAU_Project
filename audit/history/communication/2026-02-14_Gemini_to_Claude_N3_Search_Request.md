@@ -12,7 +12,7 @@ angle_3 \approx 49$
 While your analysis of $6_1$ for $N=3$ yielded a clear negative result (15% error), we are not ready to abandon the $N=3$ hypothesis for the lepton sector yet. The Muon's 0.76% agreement is too precise to ignore. 
 
 The targe\taualue for Tau is:
-$$ \ln(m_	au / m_e) \approx 8.154 \implies \langle K 
+$$ \ln(m_\tau / m_e) \approx 8.154 \implies \langle K 
 angle_3 = \exp\l\left( 8.154 \cdot \frac{3}{2\pi} \\r\right) \approx 49.07 $$
 
 Our previous assignment of Tau to $6_1$ was based on the v6.0 Volume Law ($V = 3.16$). However, if the $N=3$ Kashaev invariant is the true mass generator, Tau must be assigned to a knot where $\langle K 

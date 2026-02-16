@@ -66,7 +66,7 @@ u \mathbf{v} \\r\right) $$
 abla P$) | $G \propto \t\text{Compressibility}$ |\tau
 | **Weak Force** | Vortex Reconnection | $e^{-B \kappa}$ |
 | **EM Force** | Surface Tension Waves | $\alpha_{em}$ |
-| **Time** | Collective Brownian Drift | $\mu_t d	au$ |
+| **Time** | Collective Brownian Drift | $\mu_t d\tau$ |
 
 ---
 *KSAU Theoretical Kernel | 2026-02-15 | v8.0 Gravity Unification*
