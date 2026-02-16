@@ -1,0 +1,24 @@
+{
+  "sync_list": [
+    {
+      "source": "v11.0/papers/PLB_Letter_Electroweak_Geometry_Final.md",
+      "target": "PLB_Letter_Electroweak_Geometry_Final.md"
+    },
+    {
+      "source": "v13.0/papers/KSAU_v13_Mass_Hierarchy_Reconstruction.md",
+      "target": "Mass_Hierarchy_v14.0_Revision.md"
+    },
+    {
+      "source": "v13.0/papers/KSAU_v13_Final_Manuscript.md",
+      "target": "KSAU_v13.9_Main_Manuscript.md"
+    },
+    {
+      "source": "v13.0/papers/KSAU_v13_Gravitational_Constant_Reconstruction.md",
+      "target": "KSAU_v13_Gravitational_Constant_Reconstruction.md"
+    },
+    {
+      "source": "v13.0/papers/KSAU_v13_Theoretical_Supplement_24D_Geometry.md",
+      "target": "KSAU_v13_Theoretical_Supplement_24D_Geometry.md"
+    }
+  ]
+}
