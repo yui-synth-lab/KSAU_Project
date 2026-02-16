@@ -30,7 +30,7 @@ u_\infty)$?
 **Our Interpretation: Holographic Flux Partitioning**
 The modular curve $X_0(N)$ represents the compactified geometry of the vacuum.
 - **Total Degrees of Freedom:** The topological complexity is determined by the Euler characteristic $\chi \sim g$ and the number of punctures $
-u_\infty$. The sum $g + 
+u_\infty$. The\sum $g + 
 u_\infty$ represents the total capacity for information flux.
 - **Observable Flux:** Only flux lines ending on the cusps ($
 u_\infty$) can couple to external asymptotic states (the observable universe). The genus $g$ represents "internal loops" where flux is trapped.

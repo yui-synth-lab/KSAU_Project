@@ -8,7 +8,7 @@
 
 ## 1. Summary of Observation: The Electron Mass Ratio
 We have identified a striking numerical relationship between the electron mass $m_e$ and the Planck mass $M_{Pl}$:
-$$ m_e \approx M_{Pl} \cdot \exp\left(-\frac{82\pi}{5}\right) $$
+$$ m_e \approx M_{Pl} \cdot \exp\l\left(-\frac{82\pi}{5}\r\right) $$
 - **Relative Error:** +0.58%
 - **Initial Motivation:** The integer 82 appears in the Bottom quark mass shift ($n=82.5$), and 5 relates to icosahedral symmetry ($60/12=5$).
 
@@ -18,7 +18,7 @@ $$ m_e \approx M_{Pl} \cdot \exp\left(-\frac{82\pi}{5}\right) $$
 Following the recommendation of the Theoretical Auditor (Claude), we executed a Monte Carlo Null Hypothesis Test ($N=10,000$). The results demand scientific caution:
 
 - **p-value:** 0.0016 (Passed the 5% threshold).
-- **Critical Finding:** Multiple other ratios reproduce the electron mass with equal or greater precision. For instance, **$1509/92$** yields an error of only **0.11%**, which is 5 times more accurate than the $82/5$ formula.
+- **Critical Finding:** Multiple other ratios reproduce the electron mass with equal or greater precision. For instance, **$1509/92$** yields an error of only **0.11%**, which is 5\times more accurate than the $82/5$ formula.
 - **Interpretation:** While $82/5$ is the simplest rational (lowest Kolmogorov complexity), it is not uniquely determined by the data. The "significance" reflects the density of simple rationals near the observed ratio, not necessarily a fundamental geometric necessity.
 
 ---

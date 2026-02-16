@@ -1,6 +1,6 @@
 # Data Compression Notice
 
-The large text files in this directory (`CJTwist.*.txt`) have been compressed to `.gz` format to reduce the repository size.
+The large\text files in this directory (`CJTwist.*.txt`) have been compressed to `.gz` format to reduce the repository size.
 
 ## How to use these files:
 

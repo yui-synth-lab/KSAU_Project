@@ -12,7 +12,7 @@ The Monte Carlo null hypothesis test provides **decisive evidence** that the KSA
 
 **Key Finding:** The probability that the observed correlation arose from random topology selection is **p < 0.0001** (less than 1 in 10,000).
 
-This result **resolves the overfitting concern** by demonstrating that while specific topology assignments may be data-driven, the underlying **geometric principle** (mass ∝ exp(κV)) is statistically robust and not a coincidence.
+This result **resolves the overfitting concern** by demonstrating that while specific topology assignments may be data-driven, the underlying **geometric principle** (mass ∝\exp(κV)) is statistically robust and not a coincidence.
 
 ---
 
@@ -30,8 +30,8 @@ The mass-volume correlation in KSAU is a statistical artifact that could arise f
    - Randomly assign 2-component links to up-type quarks (Up, Charm, Top)
    - Randomly assign 3-component links to down-type quarks (Down, Strange, Bottom)
    - Fit the same mass formulas used by KSAU:
-     - Quarks: ln(m) = 10κV + B_q
-     - Leptons: ln(m) = 20κV + C_l
+     - Quarks:\ln(m) = 10κV + B_q
+     - Leptons:\ln(m) = 20κV + C_l
    - Calculate R² and MAE
 3. Compare KSAU's metrics to null distribution
 
@@ -157,7 +157,7 @@ Even with p < 0.0001, the following caveats apply:
 
 1. **Sample size:** 12 particles is small (but Monte Carlo accounts for this)
 2. **Search space:** KnotInfo/LinkInfo is finite (~8,000 topologies) → could miss exotic solutions
-3. **Formula choice:** We assumed exp(κV) functional form → other forms untested
+3. **Formula choice:** We assumed\exp(κV) functional form → other forms untested
 4. **Component constraints:** Quarks MUST be links (C≥2) → reduces search space
 
 **These are acceptable limitations** for a phenomenological discovery, analogous to:
@@ -185,7 +185,7 @@ KSAU's statistical strength is **comparable to the positron discovery** (p ~ 10�
 ### 6.1 For Publication
 
 **Abstract (Revised):**
-> "We report a statistically significant correlation (p < 0.0001, Monte Carlo) between the hyperbolic volumes of knot/link complements and the masses of Standard Model fermions. The relationship ln(m) ∝ κV, with κ = π/24, achieves R² = 0.9997 across nine orders of magnitude. While specific topology assignments remain provisional (subject to cross-validation uncertainty), the geometric scaling law is robust against null hypothesis testing with 10,000 random assignments. This result suggests a deep connection between 3-manifold geometry and mass generation, motivating further theoretical investigation and experimental falsification."
+> "We report a statistically significant correlation (p < 0.0001, Monte Carlo) between the hyperbolic volumes of knot/link complements and the masses of Standard Model fermions. The relationship\ln(m) ∝ κV, with κ = π/24, achieves R² = 0.9997 across nine orders of magnitude. While specific topology assignments remain provisional (subject to cross-validation uncertainty), the geometric scaling law is robust against null hypothesis testing with 10,000 random assignments. This result suggests a deep connection between 3-manifold geometry and mass generation, motivating further theoretical investigation and experimental falsification."
 
 **Key Changes:**
 - Lead with **statistical significance** (p < 0.0001)
@@ -197,7 +197,7 @@ KSAU's statistical strength is **comparable to the positron discovery** (p ~ 10�
 **Immediate (v6.1):**
 - [ ] Bayesian topology assignment (probability distributions, not point estimates)
 - [ ] Bootstrap resampling (complement Monte Carlo with data perturbation)
-- [ ] Alternative functional forms (test κV², log(V), etc.)
+- [ ] Alternative functional forms (test κV²,\log(V), etc.)
 
 **Medium-term (v6.2-6.5):**
 - [ ] Chern-Simons theoretical derivation of κ = π/24
@@ -223,7 +223,7 @@ While the framework remains **phenomenological** (lacking first-principles deriv
 
 1. **Publish the correlation** (Physical Review D, with honest caveats)
 2. **Develop the theory** (derive κ from Chern-Simons / modular invariance)
-3. **Test experimentally** (Top quark helicity, neutrino mass sum)
+3. **Test experimentally** (Top quark helicity, neutrino mass\sum)
 
 **Verdict:** KSAU v6.0 has transitioned from "speculative idea" to **"statistically validated empirical pattern awaiting theoretical explanation."**
 

@@ -59,11 +59,10 @@ Hits within 0.6% error: 7 / 10,000
 
 ```
 AIC (Modular N=41):  -10.32
-AIC (Random Fit):    -11.14
-Delta AIC:           -0.82  ← NOT DECISIVE
+AIC (Random Fit):    -11.14\Delta AIC:           -0.82  ← NOT DECISIVE
 ```
 
-**Critical Issue:** The script claims "Value > 10 is Decisive" but the actual Delta AIC is **−0.82**, meaning:
+**Critical Issue:** The script claims "Value > 10 is Decisive" but the actual\Delta AIC is **−0.82**, meaning:
 - The random fit has *better* AIC than the N=41 model
 - This is the opposite of what the "VERDICT: All v12.0 core identities verified" message suggests
 
@@ -132,7 +131,7 @@ Co_0 order: 2^22 * 3^9 * 5^4 * 7^2 * 11 * 13 * 23 (no factor of 41)
 **Test:** `leech_entropy_analysis.py`
 
 ```
-4 * ln(196560) = 48.755  (94.6% of X_obs)
+4 *\ln(196560) = 48.755  (94.6% of X_obs)
 Residual = 2.773 = 21.18κ
 ```
 
@@ -143,7 +142,7 @@ Residual = 2.773 = 21.18κ
 **Possible Interpretations:**
 - 21 = 24 - 3 (vacuum rank minus generation number)
 - 21 = 7 × 3 (heptagonal × generational)
-- 0.18κ ≈ ln(φ)/12 (golden ratio residue?)
+- 0.18κ ≈\ln(φ)/12 (golden ratio residue?)
 
 **Recommendation:** This "entropy interpretation" is interesting but highly speculative. It should be labeled as such.
 

@@ -15,13 +15,13 @@
 
 ## Abstract
 
-We propose a principled extension of the KSAU v4.1 topological mass framework to the neutrino sector. Starting from the observation that the v4.1 lepton formula predicts $m(\text{unknot}) = 82 \text{ keV}$ for $N=0$, we perform a systematic search over all suppression factors $S$ expressible as combinations of KSAU fundamental constants $\{G, \pi, 7, 9, 10\}$. Among 14 viable candidates satisfying $\sum m_\nu < 0.12 \text{ eV}$, we identify a unique solution with remarkable internal consistency:
+We propose a principled extension of the KSAU v4.1 topological mass framework to the neutrino sector. Starting from the observation that the v4.1 lepton formula predicts $m(\t\text{unknot}) = 82 \t\text{ keV}$ for $N=0$, we perform a systematic search over all suppression factors $S$ expressible as combinations of KSAU fundamental constants $\{G, \pi, 7, 9, 10\}$. Among 14 viable candidates satisfying $\sum m_\nu < 0.12 \t\text{ eV}$, we identify a unique solution with remarkable internal consistency:
 
 $$S = 2|B'| = 2(7+G)$$
 
-This suppression — exactly **twice the quark intercept magnitude** — predicts $m_1 = 0.0109 \text{ eV}$ and $\sum m_\nu = 0.076 \text{ eV}$. Crucially, this prediction implies
+This suppression — exactly **twice the quark intercept magnitude** — predicts $m_1 = 0.0109 \t\text{ eV}$ and $\sum m_\nu = 0.076 \t\text{ eV}$. Crucially, this prediction implies
 
-$$\ln\!\left(\frac{m_3}{m_2}\right) = \Gamma_Q = \frac{10}{7}G$$
+$$\ln\!\l\left(\frac{m_3}{m_2}\r\right) = \Gamma_Q = \frac{10}{7}G$$
 
 where $\Gamma_Q$ is the established KSAU quark slope, verified to **0.02% precision** against experimental $\Delta m^2$ data (NuFIT 5.3, 2024). This "atmospheric ratio = quark slope" relation emerges as a **non-trivial self-consistency check**, not an input, revealing a deep connection between the quark and neutrino sectors.
 
@@ -44,9 +44,9 @@ The v4.1 lepton formula at $N=0$:
 
 $$\ln(m_\nu) = \frac{2}{9}G \cdot 0 + C_l = C_l = -2.503$$
 
-$$m_\nu = e^{C_l} \approx 0.082 \text{ MeV} = 81{,}800 \text{ eV}$$
+$$m_\nu = e^{C_l} \approx 0.082 \t\text{ MeV} = 81{,}800 \t\text{ eV}$$
 
-This exceeds the cosmological bound ($\sum m_\nu < 0.12 \text{ eV}$) by a factor of $\sim 10^6$, requiring a **suppression mechanism** unique to the unknot.
+This exceeds the cosmological bound ($\sum m_\nu < 0.12 \t\text{ eV}$) by a factor of $\sim 10^6$, requiring a **suppression mechanism** unique to the unknot.
 
 ### 1.2 Analogy with the Standard Model
 
@@ -60,7 +60,7 @@ This gap is not a flaw but a feature: in the Standard Model, neutrino masses als
 
 We parameterize the neutrino mass as:
 
-$$\ln(m_\nu / \text{MeV}) = C_l - S$$
+$$\ln(m_\nu / \t\text{MeV}) = C_l - S$$
 
 where $S > 0$ is a suppression factor. We enumerate **all** $S$ expressible as simple combinations of KSAU constants and filter by:
 
@@ -100,7 +100,7 @@ We then check whether the **mass ratios** $\ln(m_3/m_2)$, $\ln(m_2/m_1)$, $\ln(m
 | $10G + 7$ | 1.471 | — | — |
 | $(2/9)G \times 81$ | 1.589 | — | — |
 
-**Only $S = 2(7+G)$ produces a sub-percent match to an established KSAU constant.** The match $\ln(m_3/m_2) \approx \Gamma_Q = (10/7)G$ holds to **0.12% precision**, five times tighter than the nearest competitor ($S = 9G+7$, where $\ln(m_3/m_2) \approx G$ with 0.6% error).
+**Only $S = 2(7+G)$ produces a sub-percent match to an established KSAU constant.** The match $\ln(m_3/m_2) \approx \Gamma_Q = (10/7)G$ holds to **0.12% precision**, five\times tighter than the nearest competitor ($S = 9G+7$, where $\ln(m_3/m_2) \approx G$ with 0.6% error).
 
 ---
 
@@ -108,7 +108,7 @@ We then check whether the **mass ratios** $\ln(m_3/m_2)$, $\ln(m_2/m_1)$, $\ln(m
 
 ### 3.1 The Formula
 
-$$\ln(m_\nu / \text{MeV}) = C_l - 2(7 + G) = C_l - 2|B'|$$
+$$\ln(m_\nu / \t\text{MeV}) = C_l - 2(7 + G) = C_l - 2|B'|$$
 
 where $B' = -(7+G)$ is the quark intercept from the v4.1 quark formula $\ln(m_q) = \Gamma_Q \cdot V + B'$.
 
@@ -122,13 +122,13 @@ In the KSAU framework:
 
 The suppression $S = 2|B'|$ can be interpreted as a **double decoupling**: neutrinos are suppressed by $|B'|$ for lacking strong interactions (like all leptons) AND by an additional $|B'|$ for lacking electromagnetic interactions (unlike charged leptons). The quark intercept magnitude $|B'| = 7+G$ thus serves as the universal scale of each interaction channel.
 
-$$m_\nu \sim m_{\text{lepton}} \cdot e^{-|B'|} \cdot e^{-|B'|} = m_{\text{lepton}} \cdot e^{-2(7+G)}$$
+$$m_\nu \sim m_{\t\text{lepton}} \cdot e^{-|B'|} \cdot e^{-|B'|} = m_{\t\text{lepton}} \cdot e^{-2(7+G)}$$
 
 ### 3.3 The Atmospheric Ratio as a Self-Consistency Check
 
 The suppression $S = 2(7+G)$ determines $m_1$, which together with experimental $\Delta m^2$ yields $m_2$ and $m_3$. The ratio $\ln(m_3/m_2)$ is then a **derived quantity**, not an input. We find:
 
-$$\ln\!\left(\frac{m_3}{m_2}\right) = 1.3070 \approx \frac{10}{7}G = 1.3085$$
+$$\ln\!\l\left(\frac{m_3}{m_2}\r\right) = 1.3070 \approx \frac{10}{7}G = 1.3085$$
 
 **Precision check (NuFIT 5.3, 2024):**
 
@@ -139,7 +139,7 @@ $$\ln\!\left(\frac{m_3}{m_2}\right) = 1.3070 \approx \frac{10}{7}G = 1.3085$$
 
 The fact that **two independent KSAU relations** — $S = 2|B'|$ for the suppression and $\ln(m_3/m_2) = \Gamma_Q$ for the atmospheric ratio — are simultaneously satisfied to sub-percent precision constitutes strong evidence for internal consistency.
 
-**Robustness:** Using older $\Delta m^2$ values (Gemini's $\Delta m^2_{31} = 2.437 \times 10^{-3}$), the $S$ match remains at 0.18% — still sub-percent. The result is insensitive to experimental input uncertainties.
+**Robustness:** Using older $\Delta m^2$ values (Gemini's $\Delta m^2_{31} = 2.437 \\times 10^{-3}$), the $S$ match remains at 0.18% — still sub-percent. The result is insensitive to experimental input uncertainties.
 
 ---
 
@@ -177,7 +177,7 @@ The fact that **two independent KSAU relations** — $S = 2|B'|$ for the suppres
 
 ## 5. Comparison with Alternative Models
 
-### 5.1 Model A (Gemini): ln(m₃/m₂) = G
+### 5.1 Model A (Gemini):\ln(m₃/m₂) = G
 
 | Metric | Model A (Gemini) | Model B (This work) |
 | :--- | :--- | :--- |
@@ -188,7 +188,7 @@ The fact that **two independent KSAU relations** — $S = 2|B'|$ for the suppres
 | KSAU constant used | $G$ (raw Catalan) | $(10/7)G$ (established slope $\Gamma_Q$) |
 | Robustness to $\Delta m^2$ | $G/10$ breaks at 5.4% | $S$ match stable at 0.02-0.18% |
 
-Model A's claim that $\ln(m_2/m_1) = G/10$ relies on outdated $\Delta m^2_{31} = 2.437 \times 10^{-3}$. With current NuFIT 5.3 data ($2.514 \times 10^{-3}$), the error grows to 5.4%, rendering the claim fragile.
+Model A's claim that $\ln(m_2/m_1) = G/10$ relies on outdated $\Delta m^2_{31} = 2.437 \\times 10^{-3}$. With current NuFIT 5.3 data ($2.514 \\times 10^{-3}$), the error grows to 5.4%, rendering the claim fragile.
 
 Model B uses $(10/7)G$, which is already established as the quark slope $\Gamma_Q$ in v4.1, providing a structural connection rather than a numerical coincidence.
 
@@ -198,7 +198,7 @@ Model B uses $(10/7)G$, which is already established as the quark slope $\Gamma_
 | :--- | :--- |
 | Analytic continuation ($N^2 \to -70$) | $\sum m_\nu = 0.18$ eV (Excluded) |
 | Universal seesaw ($m_\nu = m_l^2/M$) | Ratio $m_{\nu_\tau}/m_{\nu_e}$ too large by $10^5$ |
-| $N_{\text{eff}}^2 = 81 = 9^2$ | Viable ($\sum = 0.066$) but no self-consistency match |
+| $N_{\t\text{eff}}^2 = 81 = 9^2$ | Viable ($\sum = 0.066$) but no self-consistency match |
 | $S = 2\pi^2$ (Gemini Preview) | $m_1 = 0.00022$ eV, no ratio match |
 | Framing-dependent unknot | Non-integer framings required |
 | Combined Model A+B | $\Delta m^2_{31}$ error = 127% (Excluded) |
@@ -247,11 +247,11 @@ The most immediate test is the $\sum m_\nu$ measurement from DESI + CMB-S4. A co
 
 The KSAU v4.2 neutrino extension identifies a unique suppression mechanism for the unknot:
 
-$$\boxed{S = 2(7+G) = 2|B'| \implies m_1 = 0.0109 \text{ eV}, \quad \sum m_\nu = 0.076 \text{ eV}}$$
+$$\boxed{S = 2(7+G) = 2|B'| \implies m_1 = 0.0109 \t\text{ eV}, \quad \sum m_\nu = 0.076 \t\text{ eV}}$$
 
 with the self-consistency check:
 
-$$\boxed{\ln\!\left(\frac{m_3}{m_2}\right) = \frac{10}{7}G = \Gamma_Q \quad (\text{0.12\% precision})}$$
+$$\boxed{\ln\!\l\left(\frac{m_3}{m_2}\r\right) = \frac{10}{7}G = \Gamma_Q \quad (\t\text{0.12\% precision})}$$
 
 This "atmospheric ratio = quark slope" relation connects the neutrino and quark sectors through the same geometric constant, extending the KSAU framework's explanatory reach to all twelve Standard Model fermions.
 
@@ -261,7 +261,7 @@ This "atmospheric ratio = quark slope" relation connects the neutrino and quark 
 
 1. KSAU v4.0 Full Manuscript — Topological Mass Generation Framework
 2. KSAU v4.1 Full Manuscript — Twist Correction and Top Quark Reassignment
-3. NuFIT 5.3 (2024): $\Delta m^2_{21} = 7.42 \times 10^{-5}$ eV$^2$, $|\Delta m^2_{31}| = 2.514 \times 10^{-3}$ eV$^2$
+3. NuFIT 5.3 (2024): $\Delta m^2_{21} = 7.42 \\times 10^{-5}$ eV$^2$, $|\Delta m^2_{31}| = 2.514 \\times 10^{-3}$ eV$^2$
 4. Planck 2018: $\sum m_\nu < 0.12$ eV (95% CL)
 5. DESI 2024: $\sum m_\nu < 0.072$ eV (95% CL, preliminary)
 

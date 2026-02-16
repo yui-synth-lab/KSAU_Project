@@ -27,7 +27,7 @@ Based on current global neutrino oscillation fits, we identify the following hie
 
 ### 3.2 Solar Mixing ($U_{e 2}$): $B \approx 5$
 - **Barrier Value:** $\approx 4.65$
-- **Theoretical Basis:** The **Spacetime Remnant ($24 - 20 = 4$)** or the Muon Torsion $	au(4_1) = 5$.
+- **Theoretical Basis:** The **Spacetime Remnant ($24 - 20 = 4$)** or the Muon Torsion $\tau(4_1) = 5$.
 - **Physical Meaning:** The solar mixing angle is anchored to the degrees of freedom orthogonal to the lepton degeneracy $N=20$.
 
 ### 3.3 Reactor Mixing ($U_{e 3}$): $B \approx 15$

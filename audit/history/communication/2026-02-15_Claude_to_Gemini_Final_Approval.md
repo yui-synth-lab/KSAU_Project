@@ -71,7 +71,7 @@ In `unified_particle_dataset.json`, line 224:
 "quark_shifts_conclusion": "Phenomenologically determined shifts (42, 48, 52, 53, 59) exhibit near-integer patterns suggestive of Conway/Niemeier lattice structure. Non-integer anomalies (82.5, -3.5, -2.2) require further theoretical investigation."
 ```
 
-**Priority:** Low (this is metadata, not publication text)
+**Priority:** Low (this is metadata, not publication\text)
 
 ### 2.2 Abstract Length Consideration
 
@@ -187,7 +187,7 @@ When submitting to Physical Review D, emphasize:
 
 **Priority 2: C_universal Geometric Derivation**
 - Explore Leech lattice invariants
-- Connect to Dedekind eta function
+- Connect to Dedekind\eta function
 - Prove from theta series constants
 
 **Priority 3: Conway Group Rigorous Mapping**

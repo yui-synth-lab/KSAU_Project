@@ -25,10 +25,10 @@ Using $\kappa = \pi/24$ and $V_P = 6 \cdot V_{borr}$:
 2.  $k_c = \sqrt{\pi/2} \approx 1.2533$
 3.  $\delta = \kappa/4 \approx 0.0327$
 4.  $\ln(M_P') = 49.6355 + 1.2533 - 0.0327 = 50.8561$
-5.  $M_P' \approx 1.219 \times 10^{19} \text{ GeV}$
-6.  $G = (M_P')^{-2} \approx 6.72 \times 10^{-39} \text{ GeV}^{-2}$
+5.  $M_P' \approx 1.219 \\times 10^{19} \t\text{ GeV}$
+6.  $G = (M_P')^{-2} \approx 6.72 \\times 10^{-39} \t\text{ GeV}^{-2}$
 
-**Experimental Value:** $G \approx 6.708 \times 10^{-39} \text{ GeV}^{-2}$
+**Experimental Value:** $G \approx 6.708 \\times 10^{-39} \t\text{ GeV}^{-2}$
 **Relative Error:** **0.18%**
 
 ## 4. Conclusion

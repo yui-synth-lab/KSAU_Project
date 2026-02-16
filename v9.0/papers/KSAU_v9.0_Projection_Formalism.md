@@ -25,7 +25,7 @@ We propose that the projection is sensitive to the **Topological Charge** $Q$ of
 
 ### 3.1 The Neutral Channel (Leptons)
 For charge-neutral defects (or those without color), the projection is "transparent," interacting with the full residue:
-$$ N_{eff} = 	ext{Tr}(\mathbb{I}_{\mathcal{T}^{20}}) = 20 $$
+$$ N_{eff} = \t\text{Tr}(\mathbb{I}_{\mathcal{T}^{20}}) = 20 $$
 
 ### 3.2 The Colored Channel (Quarks)
 For defects carrying color $SU(3)$, the projection is constrained by the **Holographic Principle**. The information is restricted to a 10-dimensional critical manifold (the string theory limit):

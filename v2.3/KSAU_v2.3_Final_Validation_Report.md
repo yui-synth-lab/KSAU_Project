@@ -35,10 +35,10 @@ Analysis of the 55 "false positive" random trials (those matching the $R^2$ of K
 
 The v2.4 prototype established a universal scaling law for all fermions:
 
-$$ \ln(m) \approx 1.97 \cdot C + 0.29 \cdot 	ext{Sig} + 0.24 \cdot L - 2.70 \cdot C_2 - 7.44 $$
+$$ \ln(m) \approx 1.97 \cdot C + 0.29 \cdot \t\text{Sig} + 0.24 \cdot L - 2.70 \cdot C_2 - 7.44 $$
 
 - **Crossing Number ($C$):** Determines the coarse mass scale.
-- **Signature ($	ext{Sig}$):** Fine-tunes chirality and up/down type splitting.
+- **Signature ($\t\text{Sig}$):** Fine-tunes chirality and up/down type splitting.
 - **Linking ($L$):** Represents inter-component energy.
 - **Color Factor ($C_2$):** Accounts for $SU(3)$ vs $U(1)$ vacuum coupling offsets.
 

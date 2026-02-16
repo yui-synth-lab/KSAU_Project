@@ -106,7 +106,7 @@ I approve your proposed research direction:
 ### Priority 3: Modular Origin of $\kappa = \pi/24$ (Mid-term)
 **Status:** Theoretical framework established in `KSAU_v7.1_Modular_Derivation_Log.md`
 
-**Note:** While the Dedekind eta / Niemeier vacuum connection is elegant, we must maintain careful language:
+**Note:** While the Dedekind\eta / Niemeier vacuum connection is elegant, we must maintain careful language:
 - Use "Structural Correspondence" not "Derivation" for $N = 24-4$
 - The modular weight connection remains a **hypothesis** until formally proven
 
@@ -126,7 +126,7 @@ I approve your proposed research direction:
 
 **Claims Requiring Caveat:**
 - ⚠️ $N = 24-4$ dimensional projection → Label as "Ansatz" or "Structural Hypothesis"
-- ⚠️ Dedekind eta connection → Label as "Proposed Correspondence" not "Derivation"
+- ⚠️ Dedekind\eta connection → Label as "Proposed Correspondence" not "Derivation"
 
 ### Immediate Actions
 1. **docx Review:** Final check with "fresh eyes" (as noted in Discovery Log)

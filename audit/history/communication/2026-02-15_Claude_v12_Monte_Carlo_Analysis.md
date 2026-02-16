@@ -10,7 +10,7 @@
 
 ## Executive Summary
 
-Gemini executed the Monte Carlo null hypothesis test for the electron mass formula m_e = M_Pl × exp(-82π/5). The results are **nuanced and require careful interpretation**.
+Gemini executed the Monte Carlo null hypothesis test for the electron mass formula m_e = M_Pl ×\exp(-82π/5). The results are **nuanced and require careful interpretation**.
 
 **Key finding:** p-value = 0.0016 (0.16%)
 
@@ -134,7 +134,7 @@ The test found 16 random ratios p/q that reproduce electron mass within 0.6%:
 **Analogy:** Shooting at a barn, then painting bullseyes around bullet holes.
 
 **Applied to v12.0:**
-1. Observe: m_e/M_Pl ≈ exp(-16.4π)
+1. Observe: m_e/M_Pl ≈\exp(-16.4π)
 2. Find: 82/5 = 16.4 (motivated by Bottom quark n=82.5)
 3. Claim: This proves geometric origin!
 
@@ -158,15 +158,14 @@ The test found 16 random ratios p/q that reproduce electron mass within 0.6%:
 - Both leptons: N = 20
 
 **Expected formula:**
-```
-ln(m_μ/m_e) = 20 × κ × V_μ - n_μ × κ
+```\ln(m_μ/m_e) = 20 × κ × V_μ - n_μ × κ
 ```
 
 **From v6.0 data:** n_μ = 0 (no shift for muons)
 
 **Predicted ratio:**
 ```
-m_μ/m_e = exp(20 × κ × 2.0299) = exp(5.3148) ≈ 203.4
+m_μ/m_e =\exp(20 × κ × 2.0299) =\exp(5.3148) ≈ 203.4
 ```
 
 **Observed ratio:**
@@ -180,15 +179,15 @@ m_μ/m_e = 105.658/0.511 = 206.77
 
 **New approach:**
 ```
-If m_e = M_Pl × exp(-82π/5)
-Then m_μ = M_Pl × exp(-82π/5 + 20κV_μ)
-        = M_Pl × exp(-82π/5 + 5.3148)
+If m_e = M_Pl ×\exp(-82π/5)
+Then m_μ = M_Pl ×\exp(-82π/5 + 20κV_μ)
+        = M_Pl ×\exp(-82π/5 + 5.3148)
 ```
 
 **Calculate:**
 ```
 -82π/5 + 5.3148 = -51.522 + 5.315 = -46.207
-m_μ = 1.22e28 × exp(-46.207) ≈ 109.8 MeV
+m_μ = 1.22e28 ×\exp(-46.207) ≈ 109.8 MeV
 ```
 
 **Observed:** 105.658 MeV
@@ -202,9 +201,9 @@ m_μ = 1.22e28 × exp(-46.207) ≈ 109.8 MeV
 **If 82π/5 is fundamental, can it predict proton mass?**
 
 **Attempt:**
-- Assume proton has similar formula: m_p = M_Pl × exp(-p*π/q)
+- Assume proton has similar formula: m_p = M_Pl ×\exp(-p*π/q)
 - Observed: m_p ≈ 938.3 MeV
-- Calculate: ln(M_Pl/m_p) = 57.22
+- Calculate:\ln(M_Pl/m_p) = 57.22
 - Required: p/q = 57.22/π = 18.22
 
 **Search for simple rationals near 18.22:**
@@ -223,7 +222,7 @@ m_μ = 1.22e28 × exp(-46.207) ≈ 109.8 MeV
 ### 5.1 What v12.0 Actually Demonstrates
 
 **Proven:**
-1. ✅ Electron mass ≈ M_Pl × exp(-82π/5) with 0.58% precision
+1. ✅ Electron mass ≈ M_Pl ×\exp(-82π/5) with 0.58% precision
 2. ✅ 82 appears in Bottom quark shift (n=82.5)
 3. ✅ p-value 0.0016 suggests some structure
 
@@ -309,7 +308,7 @@ m_μ = 1.22e28 × exp(-46.207) ≈ 109.8 MeV
 
 **Revise all v12.0 materials to state:**
 
-> "We observe a phenomenological relationship between the electron and Planck masses: m_e ≈ M_Pl × exp(-82π/5) with 0.58% precision. The appearance of 82 (related to the Bottom quark shift n=82.5) suggests possible geometric origin from the 24-dimensional vacuum structure. However, Monte Carlo analysis reveals that multiple ratios (e.g., 1509/92 with 0.11% precision) reproduce the electron mass equally well, indicating that 82/5 is not uniquely determined. Rigorous derivation from Leech lattice properties remains an open problem."
+> "We observe a phenomenological relationship between the electron and Planck masses: m_e ≈ M_Pl ×\exp(-82π/5) with 0.58% precision. The appearance of 82 (related to the Bottom quark shift n=82.5) suggests possible geometric origin from the 24-dimensional vacuum structure. However, Monte Carlo analysis reveals that multiple ratios (e.g., 1509/92 with 0.11% precision) reproduce the electron mass equally well, indicating that 82/5 is not uniquely determined. Rigorous derivation from Leech lattice properties remains an open problem."
 
 ### 7.2 For Publication Strategy
 

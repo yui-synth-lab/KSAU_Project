@@ -174,13 +174,13 @@ Rigorous derivation from Conway group representation theory.
 ### 2.4 C_universal: The Remaining Free Parameter
 
 **Current status:**
-C_universal = -0.6714 is **fitted** to match electron mass (by definition, V=0 → ln(m_e) = C_universal)
+C_universal = -0.6714 is **fitted** to match electron mass (by definition, V=0 →\ln(m_e) = C_universal)
 
 **What's needed for "first-principles":**
 Derive C_universal from:
 - Leech lattice minimum norm vectors?
 - Theta function constant term?
-- Dedekind eta special values?
+- Dedekind\eta special values?
 
 **External reviewer:**
 > "Leech格子の最小ノルムベクトルや theta 級数の定数項など、格子の内在的な量からこの定数を導けるかどうかが、v10.0の成否を決める鍵となる。"

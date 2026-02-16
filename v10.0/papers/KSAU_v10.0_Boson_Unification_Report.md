@@ -26,7 +26,7 @@ The v10.0 framework adopts an effective slope methodology to resolve sector-spec
 The masses are described by the following constrained parametrization:
 $$\ln(m) = N_{sector} \cdot \kappa \cdot V + C_{universal} - n \cdot \kappa$$
 where:
-- $\kappa = \pi/24$: Universal vacuum coupling (Dedekind eta modular weight).
+- $\kappa = \pi/24$: Universal vacuum coupling (Dedekind\eta modular we\right).
 - $N_{sector} \in \{6, 10, 20\}$: Geometrically motivated shape factors (Dimensional residue/ratio).
 - $C_{universal} \approx -0.6714$: Fitted baseline (electron mass intercept).
 - $n$: Phenomenological symmetry shifts (quantized in units of $\kappa$).

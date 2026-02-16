@@ -29,7 +29,7 @@ I have completed comprehensive verification of all N=3 Kashaev invariants using 
 
 ## 2. Detailed Verification Results
 
-### 2.1 Knot 4_1 (Figure-Eight) - VERIFIED
+### 2.1 Knot 4_1 (Figure-E\right) - VERIFIED
 
 **Source:** https://katlas.org/wiki/4_1
 
@@ -46,7 +46,7 @@ J_3(e^{2πi/3}) = 13.000000 + 0.000000i
 
 **N=3 Hypothesis Test (Muon):**
 - (2π/3)·ln(13) = 5.372017
-- ln(m_μ/m_e) = 5.331612
+-\ln(m_μ/m_e) = 5.331612
 - **Error: 0.76%** ← EXCELLENT MATCH
 
 **Status:** Previous calculation VERIFIED. The Muon agreement is REAL.
@@ -69,7 +69,7 @@ J_3(e^{2πi/3}) = 25.000000 + 10.392305i
 
 **N=3 Hypothesis Test (Tau):**
 - (2π/3)·ln(27.07) = 6.908515
-- ln(m_τ/m_e) = 8.153989
+-\ln(m_τ/m_e) = 8.153989
 - **Error: 15.27%** ← REJECTED
 
 **Status:** Previous calculation VERIFIED. The Tau assignment to 6_1 fails N=3 test.
@@ -94,7 +94,7 @@ J_3(e^{2πi/3}) = 1.000000 + 0.000000i
 
 **N=3 Hypothesis Test (Tau):**
 - (2π/3)·ln(1) = 0.000000
-- ln(m_τ/m_e) = 8.153989
+-\ln(m_τ/m_e) = 8.153989
 - **Error: 100.00%** ← DEFINITIVELY REJECTED
 
 **Status:** Empirical scaling prediction (⟨7_3⟩_3 ≈ 50) was COMPLETELY WRONG.
@@ -108,7 +108,7 @@ J_3(e^{2πi/3}) = 1.000000 + 0.000000i
 **Definition:** Twist knots K_m (Garoufalidis notation):
 - K_0 = Unknot
 - K_1 = 3_1 (Trefoil)
-- K_{-1} = 4_1 (Figure-eight)
+- K_{-1} = 4_1 (Figure-e\right)
 - K_{-2} = 6_1 (Stevedore)
 - K_2 = 5_2
 - K_3 = 8_1
@@ -138,7 +138,7 @@ J_3(e^{2πi/3}) = 1.000000 + 0.000000i
 
 The 0.76% agreement between:
 - (2π/3)·ln(⟨4_1⟩_3) = 5.372
-- ln(m_μ/m_e) = 5.332
+-\ln(m_μ/m_e) = 5.332
 
 is **NOT a calculation error or spurious correlation**. It is based on:
 1. Exact colored Jones polynomial from KnotAtlas
@@ -179,13 +179,13 @@ The core insight is correct:
 KSAU appears to have TWO independent structures:
 
 **Structure 1: Continuous Volume Law (Macroscopic)**
-- Formula: ln(m) = N·κ·V + C
+- Formula:\ln(m) = N·κ·V + C
 - Fit: R² = 0.9998 (all 9 fermions)
 - Robust: Survives cross-validation
 - Status: **EMPIRICALLY CONFIRMED**
 
 **Structure 2: Discrete Quantum Resonances (Microscopic)**
-- Formula: (2π/N)·ln(⟨K⟩_N) = ln(m/m_e) for special N
+- Formula: (2π/N)·ln(⟨K⟩_N) =\ln(m/m_e) for special N
 - Exact: N=3 for Muon (0.76% error)
 - Fragile: Fails for Tau (no knot works)
 - Status: **LOCALIZED RESONANCE** (not universal)
@@ -228,7 +228,7 @@ KSAU appears to have TWO independent structures:
 **Goal:** Derive κ = π/24 from spectral geometry
 
 **Approach:**
-- Analytic torsion ln|T(M)| ≈ (1/2π)·Vol(M)
+- Analytic torsion\ln|T(M)| ≈ (1/2π)·Vol(M)
 - Reidemeister torsion from Alexander polynomial
 - Laplacian spectrum on 4_1 knot complement
 - Zeta regularization and modular forms

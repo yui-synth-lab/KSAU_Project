@@ -20,9 +20,9 @@ Standard Model parameters (Yukawa couplings, mixing angles) are historically tre
 We postulate that the mass-energy of a particle is the elastic resistance of the vacuum against topological complexity.
 ### 2.1 The Hamiltonian Origin
 Mass is derived from the **Topological Tension Action**:
-$$\mathcal{H} \propto \kappa \sum_{i} \text{Writhe}_i \cdot \delta(V - V_i)$$
+$$\mathcal{H} \propto \kappa \sum_{i} \t\text{Writhe}_i \cdot \delta(V - V_i)$$
 This dynamic origin explains the exponential relationship between hyperbolic volume ($V$) and observed mass ($m$):
-$$\ln(m/m_0) = \text{Slope} \cdot V + \text{Intercept}$$
+$$\ln(m/m_0) = \t\text{Slope} \cdot V + \t\text{Intercept}$$
 
 ## 3. The Borromean Hierarchy and Slope Quantization
 A major discovery of v6.7 is the quantization of mass slopes based on dimensionality and component counts:
@@ -59,7 +59,7 @@ The Grand Unified Simulation confirms the validity of the framework across 12 fu
 - **R² (Log Scale):** 0.999979
 - **Quantization Noise Floor:** $\approx 3.3$ GeV.
 
-Statistical analysis of the residuals ($\ln m_{pred} - \ln m_{obs}$) reveals that the error is constant in log-space ($\sigma \approx 0.068$) across all mass scales, from the electron to the top quark. Furthermore, the residuals normalized by the master constant $\kappa$ do not follow a uniform distribution but exhibit clustering, suggesting that the discrepancy is not a random fitting error but a structural "Resolution Floor" inherent to the discrete topological network.
+Statistical analysis of the residuals ($\ln m_{pred} - \ln m_{obs}$) reveals that the error is constant in\log-space ($\sigma \approx 0.068$) across all mass scales, from the electron to the top quark. Furthermore, the residuals normalized by the master constant $\kappa$ do not follow a uniform distribution but exhibit clustering, suggesting that the discrepancy is not a random fitting error but a structural "Resolution Floor" inherent to the discrete topological network.
 
 ## 8. Conclusion
 "Matter is Knot, Force is Link, Gravity is Geometry." The Standard Model is the only possible solution to the problem of stable 3-manifold topology. The residual 0.78% error is not a failure of the theory, but the signature of the universe's discrete topological resolution.

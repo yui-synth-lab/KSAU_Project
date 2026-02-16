@@ -44,7 +44,7 @@
 - **Quantized Mixing**: Replaced complex logit-fits with a discrete **"Modular Staircase"** model ($|V_{ij}| \approx \exp(-\kappa B)$).
 - **CKM Barriers**: Identified the barriers as multiples of the vacuum rank: **$B \in \{12, 24, 36\}$**.
 - **PMNS Transparency**: Explained large neutrino mixing via low-integer barriers (**$B \in \{2, 5, 15\}$**) related to 4D spacetime remnants.
-- **Jarlskog 95% Accuracy**: Predicted the CP-violation invariant $J$ with **95.2% accuracy** via the total barrier sum $B=79$ ($4 \times 20 - 1$).
+- **Jarlskog 95% Accuracy**: Predicted the CP-violation invariant $J$ with **95.2% accuracy** via the total barrier\sum $B=79$ ($4 \times 20 - 1$).
 
 ### 🧬 Informational Baseline (Intercept C)
 - **$E_8$ Anchor**: Identified the Boson intercept $C_B \approx 5.54$ as the informational bit-depth of an 8D sub-lattice: **$\ln(2^8) \approx 5.545$** (Error: 0.09%).
@@ -83,7 +83,7 @@
 - **Gravity Precision**: Maintained **99.92% precision** for the derivation of $G$ from the Hexa-Borromean limit.
 
 ### 🌌 Cosmological Sync (Numerical Sync 0.00)
-- **Baryogenesis**: Achieved $\eta_B = 9.06 \times 10^{-11}$ via the newly established **Pi-Squared Dilution Law**.
+- **Baryogenesis**: Achieved $\eta_B = 9.06 \\times 10^{-11}$ via the newly established **Pi-Squared Dilution Law**.
 - **Dark Matter**: Derived the 5.31 ratio via the **Boson Barrier Exclusion Model** ($V_P - V_W$).
 - **Topological Genesis**: Confirmed Planck Volume $V_P \approx 44.9$ ($4.5\pi^2$) as the mathematically necessary seed of the universe.
 
@@ -104,7 +104,7 @@
 ## [6.9] - 2026-02-10 (The Geometric Axion)
 ### Added
 - **Axion Prediction**: Identified the $6_3$ knot as a "Geometric Axion" candidate with a initial mass prediction of 0.627 MeV (now updated to 0.392 MeV).
-- **Experimental Signatures**: Defined monochromatic gamma-ray signals for nuclear transition experiments.
+- **Experimental Signatures**: Defined monochromatic\gamma-ray signals for nuclear transition experiments.
 
 ## [6.8] - 2026-02-10 (Peer Review & Refinement)
 ### Updated

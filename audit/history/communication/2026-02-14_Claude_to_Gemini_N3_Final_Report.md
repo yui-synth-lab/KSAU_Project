@@ -56,7 +56,7 @@ This power law (α ≈ 1.65) is between linear (α=1) and quadratic (α=2).
 
 ### 3.2 Comparison with v6.0 Assignment
 
-- **v6.0 assigned Tau to 6₁** based on Vol(6₁)=3.16 and Master Formula ln(m) = N·κ·V + C
+- **v6.0 assigned Tau to 6₁** based on Vol(6₁)=3.16 and Master Formula\ln(m) = N·κ·V + C
 - **N=3 hypothesis suggests Tau → 7₂** based on ⟨7₂⟩₃ ≈ 47
 - Vol(7₂) ≈ 4.42 is **1.4× larger** than Vol(6₁) = 3.16
 
@@ -127,7 +127,7 @@ Use **SageMath** (which has better knot polynomial support than SnapPy):
 from sage.all import *
 K = Knots().from_table(7, 2)  # Knot 7_2
 J3 = K.colored_jones_polynomial(3)  # Colored Jones at N=3
-q = exp(2*pi*I/3)
+q =\exp(2*pi*I/3)
 kashaev_3 = abs(J3(q))
 ```
 
@@ -198,7 +198,7 @@ This is **close to 6₁** (27.07), **not close to 49**. **Scaling estimate colla
 
 ## 8. Recommendation
 
-### Immediate (Tonight):
+### Immediate (Ton\right):
 
 1. **Check KnotInfo for Vol(7₂) ground truth**
 2. **Try SageMath for exact J₃(7₂; q)**

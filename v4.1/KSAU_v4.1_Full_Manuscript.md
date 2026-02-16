@@ -26,7 +26,7 @@ We present an improved topological mass generation framework (KSAU v4.1), buildi
 In the preceding paper (KSAU v4.0), we established that Standard Model fermion masses can be understood through three geometric principles:
 
 1. **Confinement-Component Correspondence:** Quarks (confined) $\leftrightarrow$ Links ($C \ge 2$); Leptons (free) $\leftrightarrow$ Knots ($C = 1$).
-2. **Charge-Determinant Law:** Fractional charge ($\pm 1/3, \pm 2/3$) $\to$ Even determinant; Integer charge ($\pm 1$) $\to$ Odd determinant. Down-type quarks follow the strict **Binary Rule** ($\text{Det} = 2^k$).
+2. **Charge-Determinant Law:** Fractional charge ($\pm 1/3, \pm 2/3$) $\to$ Even determinant; Integer charge ($\pm 1$) $\to$ Odd determinant. Down-type quarks follow the strict **Binary Rule** ($\t\text{Det} = 2^k$).
 3. **Geometric Mass Scaling:** Mass is generated via the Catalan constant $G \approx 0.9160$ through channel-specific formulas with zero (quarks) or one (leptons) continuous parameter.
 
 The v4.0 model achieved a global MAE of **7.9%** with statistical significance $p < 10^{-5}$.
@@ -63,7 +63,7 @@ Nine distinct correction models were applied to the v4.0 quark formula, each eva
 | (A) Quadratic $V$ | $+\alpha V^2$ | 7.53 | 18.13 | 9.69 | 1 | $-25.59$ |
 | (B) Crossing Number | $+\alpha N_c$ | 8.63 | 17.79 | 10.46 | 1 | $-25.70$ |
 | (C) Component | $+\alpha C$ | 8.50 | 17.82 | 10.22 | 1 | $-25.72$ |
-| (D) Determinant | $+\alpha \ln(\text{Det})$ | 8.54 | 18.23 | 10.37 | 1 | $-25.64$ |
+| (D) Determinant | $+\alpha \ln(\t\text{Det})$ | 8.54 | 18.23 | 10.37 | 1 | $-25.64$ |
 | (E) Type Slope | $\gamma_{up} \ne \gamma_{down}$ | 9.03 | 17.43 | 10.76 | 1 | $-25.80$ |
 | (F) Sigmoid | $+\alpha/(1+e^{-\beta(V-V_0)})$ | 7.36 | 16.07 | — | 3 | $-21.12$ |
 | (G) OLS Linear | Free $\gamma, b'$ | 8.38 | 17.98 | 14.90 | 2 | $-23.00$ |
@@ -87,7 +87,7 @@ Three decisive results emerged:
 
 ### 3.1 The Muon Anomaly
 
-The v4.0 lepton formula $\ln(m_l) = \frac{2}{9}G \cdot N^2 + C_l$ produces a systematic $+17.8\%$ over-prediction for the muon, while the electron (by construction) and tau ($-1.2\%$) are well-described. This pattern suggests a correction specific to the muon's knot topology rather than a global formula revision.
+The v4.0 lepton formula $\ln(m_l) = \frac{2}{9}G \cdot N^2 + C_l$ produces a systematic $+17.8\%$ over-prediction for the muon, while the electron (by construction) and\tau ($-1.2\%$) are well-described. This pattern suggests a correction specific to the muon's knot topology rather than a global formula revision.
 
 ### 3.2 Topological Distinction: Twist vs. Torus Knots
 
@@ -102,7 +102,7 @@ The three lepton knots belong to distinct topological families, leading to the i
 #### 3.2.1 The Geometric Origin of -1/6
 The correction $\delta = -1/6$ for the Muon is not an empirical fit but is rooted in the **Chern-Simons (CS) density** of the $J(2,n)$ twist knot series. For the $6_1$ knot (the first hyperbolic twist knot in the lepton spectrum), the CS invariant $CS(6_1) \approx 0.156$ is numerically close to $1/6 \approx 0.1667$. 
 
-In the context of 10D Calabi-Yau compactification, this term represents a **topological torsion** that only manifests when the manifold is hyperbolic. Since the electron ($3_1$) and tau ($7_1$) correspond to torus knots with zero hyperbolic volume and zero CS invariant, they remain uncorrected. The Muon, as the unique hyperbolic representative, experiences a "mass-loss" proportional to its winding density:
+In the context of 10D Calabi-Yau compactification, this term represents a **topological torsion** that only manifests when the manifold is hyperbolic. Since the electron ($3_1$) and\tau ($7_1$) correspond to torus knots with zero hyperbolic volume and zero CS invariant, they remain uncorrected. The Muon, as the unique hyperbolic representative, experiences a "mass-loss" proportional to its winding density:
 
 $$ \delta_{twist} \approx -CS(K) \approx -\frac{1}{6} $$
 
@@ -110,19 +110,19 @@ This identifies the Muon anomaly in v4.0 as a missing contribution from the imag
 
 The muon is the **only** lepton assigned to a twist knot. Twist knots are characterized by a single clasp with multiple half-twists, fundamentally different from the closed-braid structure of torus knots. This topological distinction motivates a correction term:
 
-$$\ln(m_l) = \frac{2}{9}G \cdot N^2 + \delta \cdot \mathbb{1}_{\text{twist}} + C_l$$
+$$\ln(m_l) = \frac{2}{9}G \cdot N^2 + \delta \cdot \mathbb{1}_{\t\text{twist}} + C_l$$
 
-where $\mathbb{1}_{\text{twist}} = 1$ for twist knots and $0$ otherwise.
+where $\mathbb{1}_{\t\text{twist}} = 1$ for twist knots and $0$ otherwise.
 
 ### 3.3 Optimization and Clean Expression
 
 Optimizing $\delta$ over the three lepton masses yields:
 
-$$\delta_{\text{opt}} = -0.1642$$
+$$\delta_{\t\text{opt}} = -0.1642$$
 
 This is within **1.5%** of the fraction $-1/6 \approx -0.16\overline{6}$:
 
-$$\left| \frac{\delta_{\text{opt}} - (-1/6)}{-1/6} \right| = 0.015$$
+$$\left| \frac{\delta_{\t\text{opt}} - (-1/6)}{-1/6} \right| = 0.015$$
 
 The probability of a random parameter falling this close to a simple fraction $p/q$ with $|q| \le 10$ is approximately $2\%$, providing moderate evidence that $\delta = -1/6$ is the true theoretical value.
 
@@ -130,11 +130,11 @@ The probability of a random parameter falling this close to a simple fraction $p
 
 The twist correction $\delta = -1/6$ admits a natural interpretation:
 
-$$m_{\text{twist}} = m_{\text{torus}} \cdot e^{-1/6} \approx 0.846 \cdot m_{\text{torus}}$$
+$$m_{\t\text{twist}} = m_{\t\text{torus}} \cdot e^{-1/6} \approx 0.846 \cdot m_{\t\text{torus}}$$
 
 A twist knot lepton is predicted to be $\sim 15.4\%$ lighter than a hypothetical torus knot of the same crossing number. Physically, this may reflect a **reduced topological complexity** of the twist knot family: the single-clasp structure encodes less "winding energy" than the closed-braid torus structure, resulting in a lower effective mass.
 
-The factor $1/6$ resonates with several structures in the Standard Model: it is the hypercharge of the left-handed quark doublet ($Y_Q = 1/6$), appears in the triangle anomaly cancellation conditions, and equals $1/(D-4)$ for the critical dimension $D = 10$ of superstring theory divided by $5/3$ (the GUT normalization factor). While these connections are suggestive, establishing a rigorous derivation requires further theoretical work.
+The factor $1/6$ resonates with several structures in the Standard Model: it is the hypercharge of the\left-handed quark doublet ($Y_Q = 1/6$), appears in the triangle anomaly cancellation conditions, and equals $1/(D-4)$ for the critical dimension $D = 10$ of superstring theory divided by $5/3$ (the GUT normalization factor). While these connections are suggestive, establishing a rigorous derivation requires further theoretical work.
 
 ### 3.5 Correction Models Comparison
 
@@ -142,9 +142,9 @@ Nine lepton correction models were tested. The top candidates:
 
 | Model | Formula | MAE (%) | Max (%) | Free Params | Note |
 | :--- | :--- | ---: | ---: | ---: | :--- |
-| **(i) Twist** | $+\delta \cdot \mathbb{1}_{\text{twist}}$ | **0.48** | **1.20** | **1** | $\delta \approx -1/6$ (clean) |
+| **(i) Twist** | $+\delta \cdot \mathbb{1}_{\t\text{twist}}$ | **0.48** | **1.20** | **1** | $\delta \approx -1/6$ (clean) |
 | (b) Genus | $+\beta \cdot g$ | 0.00 | 0.00 | 2 | $\beta \approx 1/2$; perfect but 3pt/3param |
-| (e) ln(Det) | $-\frac{1}{3}\ln(\text{Det})$ | 0.00 | 0.00 | 2 | $\beta \approx -1/3$; over-determined |
+| (e)\ln(Det) | $-\frac{1}{3}\ln(\t\text{Det})$ | 0.00 | 0.00 | 2 | $\beta \approx -1/3$; over-determined |
 | (a) $N^p$ | Power law | 0.00 | 0.00 | 1 | $p = 2.275$; no clean expression |
 
 **Selection rationale:** Model (i) is chosen for v4.1 because it (a) preserves the v4.0 structure completely, (b) adds only one parameter with a clean rational value, (c) has a clear topological motivation, and (d) avoids over-determination (3 data points / 2 effective parameters, vs 3/3 for Models b and e).
@@ -159,7 +159,7 @@ To determine whether the top quark error ($+13.1\%$ in v4.0) can be reduced with
 
 - **Component number:** $C = 2$ (up-type quark, Confinement-Component Correspondence)
 - **Determinant parity:** Even (Charge-Determinant Law, $Q = +2/3$)
-- **Volume range:** $V \in [15.0, 15.3]$ (centered on $V_{\text{ideal}} = 15.266$)
+- **Volume range:** $V \in [15.0, 15.3]$ (centered on $V_{\t\text{ideal}} = 15.266$)
 
 ### 4.2 Search Results
 
@@ -176,7 +176,7 @@ The search identified a superior candidate:
 
 $L11a144$ satisfies all three selection rules:
 1. $C = 2$ (link, confined particle) $\checkmark$
-2. $\text{Det} = 114 = 2 \times 3 \times 19$ (even) $\checkmark$
+2. $\t\text{Det} = 114 = 2 \times 3 \times 19$ (even) $\checkmark$
 3. $V = 15.271$ yields $\ln(m_t) = \frac{10}{7}G \times 15.271 - (7+G) = 12.066$, giving $m_t = 173{,}919$ MeV $\checkmark$
 
 ### 4.3 Preservation of Up-type Pattern
@@ -189,16 +189,16 @@ All three share the factor $2 \times 3 = 6$, giving the sequence $6 \times \{3, 
 
 ### 4.4 Why Not Change the Bottom Quark?
 
-The bottom quark ($-17.3\%$) exhibits the largest residual error. A complete search of the LinkInfo database for $\text{Det} = 64 = 2^6$, $C = 3$ links found **84 candidates**, but their volumes cluster tightly:
+The bottom quark ($-17.3\%$) exhibits the largest residual error. A complete search of the LinkInfo database for $\t\text{Det} = 64 = 2^6$, $C = 3$ links found **84 candidates**, but their volumes cluster tightly:
 
-| Rank | Closest $\text{Det}=64$, $C=3$ links | Volume | Error |
+| Rank | Closest $\t\text{Det}=64$, $C=3$ links | Volume | Error |
 | :--- | :--- | ---: | ---: |
 | 1 | $L10a141$ (current) | 12.2763 | $-17.3\%$ |
 | 2 | $L11n352$ | 12.2763 | $-17.3\%$ |
 | 3 | $L11n341$ | 12.2763 | $-17.3\%$ |
 | ... | (all nearest) | 12.2763 | $-17.3\%$ |
 
-Every $\text{Det}=64$, $C=3$ link near the bottom mass has essentially the **same volume** ($V \approx 12.276$). The ideal volume $V_{\text{ideal}}^{(b)} = 12.422$ does not exist in the topological landscape up to 11 crossings. This gap of $\Delta V = 0.146$ is a fundamental property of the discrete link catalog and cannot be closed by formula corrections.
+Every $\t\text{Det}=64$, $C=3$ link near the bottom mass has essentially the **same volume** ($V \approx 12.276$). The ideal volume $V_{\t\text{ideal}}^{(b)} = 12.422$ does not exist in the topological landscape up to 11 crossings. This gap of $\Delta V = 0.146$ is a fundamental property of the discrete link catalog and cannot be closed by formula corrections.
 
 This finding establishes that the bottom quark error is **irreducible within the current topological framework** — a phenomenon we characterize as **topological quantization noise** (Section 6).
 
@@ -214,9 +214,9 @@ Unchanged from v4.0. The Catalan constant $G = 0.915965594\ldots$ and the effect
 
 ### 5.2 Lepton Channel (9D, One Free Parameter + One Topological Correction)
 
-$$\ln(m_l) = \frac{2}{9}G \cdot N_l^2 - \frac{1}{6}\mathbb{1}_{\text{twist}} + C_l$$
+$$\ln(m_l) = \frac{2}{9}G \cdot N_l^2 - \frac{1}{6}\mathbb{1}_{\t\text{twist}} + C_l$$
 
-where $C_l = \ln(0.510998) - \frac{2}{9}G \times 9 = -2.5033$ is fixed by the electron mass. The twist indicator $\mathbb{1}_{\text{twist}} = 1$ only for the muon ($6_1$, a twist knot).
+where $C_l = \ln(0.510998) - \frac{2}{9}G \times 9 = -2.5033$ is fixed by the electron mass. The twist indicator $\mathbb{1}_{\t\text{twist}} = 1$ only for the muon ($6_1$, a twist knot).
 
 ### 5.3 Link-Particle Assignments
 
@@ -264,13 +264,13 @@ where $C_l = \ln(0.510998) - \frac{2}{9}G \times 9 = -2.5033$ is fixed by the el
 
 ### 6.1 The Concept
 
-The mass formula $\ln(m_q) = \frac{10}{7}G \cdot V - (7+G)$ maps a **continuous** function of volume to mass, but the input volume $V$ is drawn from a **discrete** catalog of link complements. This creates an inherent mismatch: the ideal volume $V_{\text{ideal}}$ that would reproduce the observed mass exactly may not correspond to any existing link.
+The mass formula $\ln(m_q) = \frac{10}{7}G \cdot V - (7+G)$ maps a **continuous** function of volume to mass, but the input volume $V$ is drawn from a **discrete** catalog of link complements. This creates an inherent mismatch: the ideal volume $V_{\t\text{ideal}}$ that would reproduce the observed mass exactly may not correspond to any existing link.
 
-We define the **topological quantization noise** $\epsilon_{\text{TQ}}$ for a particle as:
+We define the **topological quantization noise** $\epsilon_{\t\text{TQ}}$ for a particle as:
 
-$$\epsilon_{\text{TQ}} = \frac{m_{\text{pred}}(V_{\text{nearest}}) - m_{\text{obs}}}{m_{\text{obs}}}$$
+$$\epsilon_{\t\text{TQ}} = \frac{m_{\t\text{pred}}(V_{\t\text{nearest}}) - m_{\t\text{obs}}}{m_{\t\text{obs}}}$$
 
-where $V_{\text{nearest}}$ is the volume of the link closest to $V_{\text{ideal}}$ within the allowed determinant and component constraints.
+where $V_{\t\text{nearest}}$ is the volume of the link closest to $V_{\t\text{ideal}}$ within the allowed determinant and component constraints.
 
 ### 6.2 Evidence from the Exhaustive Search
 
@@ -278,7 +278,7 @@ The complete LinkInfo search (Section 4.4) demonstrates that the bottom quark's 
 
 **Table 3: Ideal vs. Available Volumes**
 
-| Quark | $V_{\text{ideal}}$ | $V_{\text{nearest}}$ | $\Delta V$ | $\epsilon_{\text{TQ}}$ | Constrained by |
+| Quark | $V_{\t\text{ideal}}$ | $V_{\t\text{nearest}}$ | $\Delta V$ | $\epsilon_{\t\text{TQ}}$ | Constrained by |
 | :--- | ---: | ---: | ---: | ---: | :--- |
 | Up | 6.638 | 6.599 | 0.039 | $-5.0\%$ | Even Det, $C=2$ |
 | Down | 7.227 | 7.328 ($= 8G$) | 0.100 | $+14.0\%$ | $2^k$ Binary, $C=3$ |
@@ -287,17 +287,17 @@ The complete LinkInfo search (Section 4.4) demonstrates that the bottom quark's 
 | Bottom | 12.422 | 12.276 | **0.146** | $-17.3\%$ | $2^k$ Binary, $C=3$ |
 | Top | 15.266 | 15.271 | 0.005 | $+0.7\%$ | Even Det, $C=2$ |
 
-The down quark is uniquely constrained: $L6a4$ (Borromean Rings, $V = 8G$) is the **only** link with $\text{Det} = 16$, $C = 3$ at this volume scale. All 88 candidates with $\text{Det} = 16$, $C = 3$ have volumes clustered at $V = 7.328$ — a topological rigidity phenomenon.
+The down quark is uniquely constrained: $L6a4$ (Borromean Rings, $V = 8G$) is the **only** link with $\t\text{Det} = 16$, $C = 3$ at this volume scale. All 88 candidates with $\t\text{Det} = 16$, $C = 3$ have volumes clustered at $V = 7.328$ — a topological rigidity phenomenon.
 
-The bottom quark shows the largest volume gap ($\Delta V = 0.146$) precisely because the $2^k$ Binary Rule ($\text{Det} = 64$) imposes a severe constraint. An exhaustive search confirms that **no link** in the database up to 11 crossings has $\text{Det} = 64$, $C = 3$, and $V$ closer to 12.422 than $L10a141$.
+The bottom quark shows the largest volume gap ($\Delta V = 0.146$) precisely because the $2^k$ Binary Rule ($\t\text{Det} = 64$) imposes a severe constraint. An exhaustive search confirms that **no link** in the database up to 11 crossings has $\t\text{Det} = 64$, $C = 3$, and $V$ closer to 12.422 than $L10a141$.
 
 ### 6.3 Implications
 
-Topological quantization noise is not a weakness of the model but a **prediction**: if the fundamental mass-topology correspondence is correct, then the residual errors should be bounded by the spacing of available volumes in the allowed topological class. The $-17.3\%$ bottom error represents the worst case within 11 crossings. Higher-crossing links ($\ge 12$) would provide a denser volume landscape and potentially reduce this noise floor. This makes a concrete prediction: **if a $\text{Det} = 64$, $C = 3$ link with $V \approx 12.42$ is discovered in the 12-crossing census, the bottom quark error should decrease substantially.**
+Topological quantization noise is not a weakness of the model but a **prediction**: if the fundamental mass-topology correspondence is correct, then the residual errors should be bounded by the spacing of available volumes in the allowed topological class. The $-17.3\%$ bottom error represents the worst case within 11 crossings. Higher-crossing links ($\ge 12$) would provide a denser volume landscape and potentially reduce this noise floor. This makes a concrete prediction: **if a $\t\text{Det} = 64$, $C = 3$ link with $V \approx 12.42$ is discovered in the 12-crossing census, the bottom quark error should decrease substantially.**
 
 ### 6.4 The Down Quark and the Borromean Rings
 
-The Down quark assignment to $L6a4$ (Borromean Rings) with $V = 8G$ is especially noteworthy. The Borromean Rings — three loops where no two are linked, yet the three together are inseparable — provide a direct geometric analog to color confinement in baryons. The fact that $V = 8G$ (exactly eight times the Catalan constant) serves as a "quantization condition" for the lightest 3-component link, though it produces a $+14.0\%$ mass error, may be theoretically significant: the Borromean topology appears to be the unique $\text{Det} = 16$ ground state, with no alternative at nearby volumes.
+The Down quark assignment to $L6a4$ (Borromean Rings) with $V = 8G$ is especially noteworthy. The Borromean Rings — three loops where no two are linked, yet the three together are inseparable — provide a direct geometric analog to color confinement in baryons. The fact that $V = 8G$ (exactly eight\times the Catalan constant) serves as a "quantization condition" for the lightest 3-component link, though it produces a $+14.0\%$ mass error, may be theoretically significant: the Borromean topology appears to be the unique $\t\text{Det} = 16$ ground state, with no alternative at nearby volumes.
 
 ---
 
@@ -305,20 +305,20 @@ The Down quark assignment to $L6a4$ (Borromean Rings) with $V = 8G$ is especiall
 
 ### 7.1 Chern-Simons Correction (Rejected)
 
-An alternative approach using the Chern-Simons invariant ($\text{CS}$) as a quark correction term was investigated:
+An alternative approach using the Chern-Simons invariant ($\t\text{CS}$) as a quark correction term was investigated:
 
-$$\ln(m_q) = \frac{10}{7}G \cdot V + \alpha \cdot \text{CS} - (7+G)$$
+$$\ln(m_q) = \frac{10}{7}G \cdot V + \alpha \cdot \t\text{CS} - (7+G)$$
 
 This approach faces fundamental obstacles:
-- The electron ($3_1$) and tau ($7_1$) are **non-hyperbolic knots** with no well-defined Chern-Simons invariant. Values obtained from SnapPy for these knots are Dehn surgery artifacts, not intrinsic invariants.
+- The electron ($3_1$) and\tau ($7_1$) are **non-hyperbolic knots** with no well-defined Chern-Simons invariant. Values obtained from SnapPy for these knots are Dehn surgery artifacts, not intrinsic invariants.
 - Optimizing $\alpha$ provides marginal improvement in quark MAE while the parameter lacks a clean mathematical expression.
 - The approach does not address the muon anomaly.
 
 ### 7.2 Link Reassignment with $16k$ Pattern (Rejected)
 
-A competing proposal suggested reassigning the bottom quark to $L11n422$ ($\text{Det} = 48$, $V = 12.447$) and introducing a $16k$ arithmetic progression for down-type determinants: $16, 32, 48$. While this achieves a lower numerical MAE ($\sim 3\%$), it was rejected on scientific grounds:
+A competing proposal suggested reassigning the bottom quark to $L11n422$ ($\t\text{Det} = 48$, $V = 12.447$) and introducing a $16k$ arithmetic progression for down-type determinants: $16, 32, 48$. While this achieves a lower numerical MAE ($\sim 3\%$), it was rejected on scientific grounds:
 
-1. **Abandons the $2^k$ Binary Rule.** The v4.0 framework explicitly rejected $\text{Det} = 48$ candidates because $48 = 2^4 \times 3 \ne 2^k$. Adopting such a candidate retroactively undermines the predictive content of the third principle.
+1. **Abandons the $2^k$ Binary Rule.** The v4.0 framework explicitly rejected $\t\text{Det} = 48$ candidates because $48 = 2^4 \times 3 \ne 2^k$. Adopting such a candidate retroactively undermines the predictive content of the third principle.
 
 2. **The $16k$ pattern is weaker than $2^k$.** The sequence $16, 32, 48 = 2^4 \times (1, 2, 3)$ is an arithmetic progression modulated by the generation number, which is a less restrictive (and hence less informative) constraint than the geometric progression $2^{k+3}$.
 
@@ -350,7 +350,7 @@ The $2^k$ sequence for down-type quarks remains intact in v4.1:
 
 $$d: 2^4 = 16, \quad s: 2^5 = 32, \quad b: 2^6 = 64$$
 
-This progression predicts $\text{Det} = 2^7 = 128$ for a hypothetical 4th-generation down-type quark. The exhaustive search found 68 links with $\text{Det} = 128$, $C = 3$, with volumes starting at $V \approx 15.8$ — placing the predicted 4th-generation mass at $\sim 300{-}500$ TeV, well above current collider reach but within the range of future experiments.
+This progression predicts $\t\text{Det} = 2^7 = 128$ for a hypothetical 4th-generation down-type quark. The exhaustive search found 68 links with $\t\text{Det} = 128$, $C = 3$, with volumes starting at $V \approx 15.8$ — placing the predicted 4th-generation mass at $\sim 300{-}500$ TeV, well above current collider reach but within the range of future experiments.
 
 ### 8.3 Remaining Open Problems
 
@@ -372,7 +372,7 @@ KSAU v4.1 achieves a global MAE of **4.6%** through two targeted, principle-pres
 
 2. **Top quark reassignment** ($L11a62 \to L11a144$): Identifies a superior 2-component, even-determinant link within the existing database. The top error improves from $+13.1\%$ to $+0.7\%$.
 
-The irreducible bottom quark error ($-17.3\%$) is understood as **topological quantization noise** — a consequence of the discrete link landscape rather than a formula deficiency — and makes a testable prediction: discovery of a $\text{Det} = 64$, $C = 3$ link with $V \approx 12.42$ in higher-crossing censuses would reduce this error.
+The irreducible bottom quark error ($-17.3\%$) is understood as **topological quantization noise** — a consequence of the discrete link landscape rather than a formula deficiency — and makes a testable prediction: discovery of a $\t\text{Det} = 64$, $C = 3$ link with $V \approx 12.42$ in higher-crossing censuses would reduce this error.
 
 All three founding principles (Confinement-Component Correspondence, Charge-Determinant Law, Geometric Mass Scaling) are fully preserved. The quark formula retains zero continuous parameters, and the lepton formula adds one discrete topological correction with a clean rational value.
 
@@ -394,9 +394,9 @@ For each quark q:
 ```
 
 Key findings per particle:
-- **Bottom ($\text{Det}=64$, $C=3$):** 84 candidates found. All nearest candidates have $V = 12.2763$. No $V > 12.28$ exists in the database.
-- **Down ($\text{Det}=16$, $C=3$):** 88 candidates found. 7 unique volumes, all clustered at $V = 7.328$. Topologically rigid assignment.
-- **Top (even Det, $C=2$, $V \in [15.0, 15.3]$):** $L11a144$ ($\text{Det}=114$, $V=15.271$) identified as the optimal candidate with $+0.7\%$ error.
+- **Bottom ($\t\text{Det}=64$, $C=3$):** 84 candidates found. All nearest candidates have $V = 12.2763$. No $V > 12.28$ exists in the database.
+- **Down ($\t\text{Det}=16$, $C=3$):** 88 candidates found. 7 unique volumes, all clustered at $V = 7.328$. Topologically rigid assignment.
+- **Top (even Det, $C=2$, $V \in [15.0, 15.3]$):** $L11a144$ ($\t\text{Det}=114$, $V=15.271$) identified as the optimal candidate with $+0.7\%$ error.
 
 ### S2. Lepton Correction Model Details
 
@@ -408,11 +408,11 @@ All nine models tested:
 | (b) $N^2 + g$ | $\alpha N^2 + \beta g + C$ | $\alpha=0.179, \beta=0.492$ | 0.00 | $\beta \approx 1/2$ |
 | (c) $N^2 + \sigma$ | $\alpha N^2 + \beta \sigma + C$ | — | 0.00 | — |
 | (d) Hybrid $V$ | Uses hyperbolic volume | — | 0.00 | No |
-| (e) $N^2 + \ln(\text{Det})$ | $\alpha N^2 + \beta \ln(\text{Det}) + C$ | $\beta=-0.327$ | 0.00 | $\beta \approx -1/3$ |
-| (f) $N^2 + \text{Det}$ | $\alpha N^2 + \beta \text{Det} + C$ | — | 0.00 | — |
+| (e) $N^2 + \ln(\t\text{Det})$ | $\alpha N^2 + \beta \ln(\t\text{Det}) + C$ | $\beta=-0.327$ | 0.00 | $\beta \approx -1/3$ |
+| (f) $N^2 + \t\text{Det}$ | $\alpha N^2 + \beta \t\text{Det} + C$ | — | 0.00 | — |
 | (g) Optimized $\alpha N^2$ | $\alpha N^2 + C$ | $\alpha=0.206$ | 6.27 | $\alpha \approx (2/9)G$ |
 | (h) $\alpha N + \beta N^2$ | Linear + quadratic | — | 0.00 | No |
-| **(i) Twist** | $\gamma_l N^2 + \delta \cdot \mathbb{1}_{\text{twist}} + C$ | $\delta=-0.164$ | **0.48** | **$\delta \approx -1/6$** |
+| **(i) Twist** | $\gamma_l N^2 + \delta \cdot \mathbb{1}_{\t\text{twist}} + C$ | $\delta=-0.164$ | **0.48** | **$\delta \approx -1/6$** |
 
 Models (a)–(f) and (h) achieve perfect fits but are over-determined (3 points, $\ge 2$ free parameters). Model (i) is the unique model that maintains the v4.0 coefficient $\gamma_l = (2/9)G$ exactly, adds only one parameter, and admits a clean rational value.
 
@@ -426,7 +426,7 @@ The v4.0 permutation test ($p < 10^{-5}$) remains valid for v4.1, as the quark f
 | :--- | :--- | :--- | :--- |
 | Top quark link | $L11a62$ ($V=15.360$) | $L11a144$ ($V=15.271$) | Better volume match; same rules satisfied |
 | Top quark Det | 124 | 114 | Both even; up-type pattern remains open |
-| Lepton formula | $\frac{2}{9}G \cdot N^2 + C_l$ | $\frac{2}{9}G \cdot N^2 - \frac{1}{6}\mathbb{1}_{\text{twist}} + C_l$ | Twist/torus knot distinction |
+| Lepton formula | $\frac{2}{9}G \cdot N^2 + C_l$ | $\frac{2}{9}G \cdot N^2 - \frac{1}{6}\mathbb{1}_{\t\text{twist}} + C_l$ | Twist/torus knot distinction |
 | Down-type Det rule | $2^k$: 16, 32, 64 | $2^k$: 16, 32, 64 | **Unchanged** |
 | Quark formula | $\frac{10}{7}G \cdot V - (7+G)$ | $\frac{10}{7}G \cdot V - (7+G)$ | **Unchanged** |
 | Global MAE | 7.93% | **4.58%** | |

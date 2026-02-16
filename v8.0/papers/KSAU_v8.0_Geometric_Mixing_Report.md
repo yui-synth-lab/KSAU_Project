@@ -14,7 +14,7 @@ This report redefines the CKM (Cabibbo-Kobayashi-Maskawa) quark mixing matrix fr
 ## 2. The Modular Barrier Hypothesis
 The strength of the mixing between generations $i$ and $j$ is hypothesized to follow a Boltzmann-like suppression law:
 
-$$ |V_{ij}| \approx \exp\left( - \kappa \cdot B_{ij} ight) $$
+$$ |V_{ij}| \approx \exp\l\left( - \kappa \cdot B_{ij} \right\ight) $$
 
 where $\kappa = \pi/24$ is the universal modular weight and $B_{ij}$ is a discrete integer representing the "Geometric Distance" between the symmetries of the two generations.
 
@@ -36,7 +36,7 @@ Based on the analysis of PDG 2024 CKM values, we identify the following hierarch
 
 ### 3.3 Level 3 Mixing ($1 \leftrightarrow 3$): $B = 36$
 - **Transitions:** $V_{td}$
-- **Theoretical Basis:** The sum of barriers ($12 + 24 = 36$).
+- **Theoretical Basis:** The\sum of barriers ($12 + 24 = 36$).
 - **Prediction:** $\exp(-36 \cdot \pi/24) = \exp(-3\pi/2) \approx \mathbf{0.00898}$
 - **Observed:** $\approx \mathbf{0.0086}$ (Error: $\approx 4\%$)
 

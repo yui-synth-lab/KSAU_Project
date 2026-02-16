@@ -17,7 +17,7 @@
 We have achieved a first-principles derivation/correspondence for the primary KSAU scaling constants:
 - **Muon Resonance:** Discovered that the ratio of quantum-to-classical invariants for $4_1$ is **$13/5 = 2.6$**, which matches $N\kappa \approx 2.618$ (**$\phi^2$**) within **0.69%**.
 - **Niemeier Vacuum:** Derived **$N = 20$** as the remnant degrees of freedom from a 24D modular vacuum projected onto 4D spacetime ($24 - 4$).
-- **Modular Coupling:** Identified **$\kappa = \pi/24$** as a modular constraint aligned with the Dedekind eta function.
+- **Modular Coupling:** Identified **$\kappa = \pi/24$** as a modular constraint aligned with the Dedekind\eta function.
 - **Status:** Standard Model parameters are now formally reduced to geometric identities.
 
 ---

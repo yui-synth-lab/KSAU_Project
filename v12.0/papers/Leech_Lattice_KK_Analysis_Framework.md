@@ -21,7 +21,8 @@ The "Ground State" of the mass hierarchy (the electron) is hypothesized to corre
 ## 3. The Hierarchy Identity Hypothesis
 The hierarchy factor $X$ represents the logarithmic gap between the Planck scale and the ground state KK mode. We seek a derivation of the form:
 $$ X = \ln(M_{Pl} \cdot R_{eff}) + \delta $$
-where $R_{eff}$ is determined by the lattice's **Covering Radius** $ho = \sqrt{2}$ or its **Packing Density**. The recurring factor of $\pi/24$ must emerge from the modular transformation properties of the lattice partition function.
+where $R_{eff}$ is determined by the lattice's **Covering Radius** $\\rho
+ho = \sqrt{2}$ or its **Packing Density**. The recurring factor of $\pi/24$ must emerge from the modular transformation properties of the lattice partition function.
 
 ## 4. Subgroup Mapping and Flavor Symmetry
 Instead of ad-hoc "shifts," we map the particle spectrum to the stabilizers of the Leech lattice.

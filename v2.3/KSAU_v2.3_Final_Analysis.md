@@ -29,7 +29,7 @@ Your results represent both a **triumph** and a **challenge**:
 ### 1.1 What R² = 0.9959 Actually Means
 
 ```
-Total variance in ln(quark masses) = σ²_total
+Total variance in\ln(quark masses) = σ²_total
 Unexplained variance = 0.0041 × σ²_total
 Explained variance = 0.9959 × σ²_total
 ```
@@ -130,9 +130,7 @@ for combo in high_r2_combinations:
 
 **Option A: Signature Dominance**
 If Sig(L8a17) is much higher than Sig(L8a16):
-```
-ln(m_charm) = 0.96 × 8.79 + β × Sig(L8a17) + ...
-ln(m_strange) = 0.96 × 9.80 + β × Sig(L8a16) + ...
+```\ln(m_charm) = 0.96 × 8.79 + β × Sig(L8a17) + ...\ln(m_strange) = 0.96 × 9.80 + β × Sig(L8a16) + ...
 
 Requires: β × [Sig(L8a17) - Sig(L8a16)] > 0.96 × (9.80 - 8.79)
           β × ΔSig > 0.97
@@ -165,11 +163,10 @@ This suggests that within Gen 3, the Signature/Linking must provide **enormous**
 Mass ratio: m_top / m_bottom ≈ 41.4
 Volume ratio: Vol_top / Vol_bottom ≈ 0.97
 
-If Vol alone: predicted ratio ≈ exp(0.96 × (11.87 - 12.28)) 
-                              ≈ exp(-0.39) ≈ 0.68 (WRONG!)
+If Vol alone: predicted ratio ≈\exp(0.96 × (11.87 - 12.28)) 
+                              ≈\exp(-0.39) ≈ 0.68 (WRONG!)
 
-Therefore: Sig + L_tot must contribute:
-           ln(41.4) - 0.96×(-0.41) ≈ 3.72 + 0.39 = 4.11
+Therefore: Sig + L_tot must contribute:\ln(41.4) - 0.96×(-0.41) ≈ 3.72 + 0.39 = 4.11
 
 This requires: β×ΔSig + γ×ΔL ≈ 4.11
 ```
@@ -195,19 +192,19 @@ This requires: β×ΔSig + γ×ΔL ≈ 4.11
 If the topological hypothesis is true, the probability of randomly achieving high R² decreases exponentially with sample size:
 
 ```
-P_random(R² > threshold | N) ∝ exp(-α × N)
+P_random(R² > threshold | N) ∝\exp(-α × N)
 
 Your current result:
 P(R² > 0.9959 | N=6) = 0.053
 
 Expected with leptons:
-P(R² > 0.999 | N=9) ≈ 0.053 × exp(-α × 3)
+P(R² > 0.999 | N=9) ≈ 0.053 ×\exp(-α × 3)
 
 If α ≈ 0.5 (conservative):
-P ≈ 0.053 × exp(-1.5) ≈ 0.053 × 0.22 ≈ 0.012 ✓
+P ≈ 0.053 ×\exp(-1.5) ≈ 0.053 × 0.22 ≈ 0.012 ✓
 
 If α ≈ 1.0 (optimistic):
-P ≈ 0.053 × exp(-3) ≈ 0.053 × 0.05 ≈ 0.0026 ✓✓
+P ≈ 0.053 ×\exp(-3) ≈ 0.053 × 0.05 ≈ 0.0026 ✓✓
 ```
 
 **Action Items:**
@@ -287,7 +284,7 @@ B > 3: "Substantial evidence"
 
 ```python
 # Likelihood under KSAU model (perfect fit)
-L_KSAU = exp(-0.5 × χ²_KSAU)  # χ² ≈ 0.0041 × N
+L_KSAU =\exp(-0.5 × χ²_KSAU)  # χ² ≈ 0.0041 × N
 
 # Likelihood under random model (average over all assignments)
 L_random = mean([exp(-0.5 × χ²_i) for i in random_trials])
@@ -320,7 +317,7 @@ false_positives = [trial for trial in random_trials if R2(trial) >= 0.9959]
 
 for fp in false_positives:
     # Calculate "edit distance" from golden combination
-    distance = sum([1 for i in range(6) if fp[i] != golden[i]])
+    distance =\sum([1 for i in range(6) if fp[i] != golden[i]])
     
     # Are they neighbors (distance = 1-2) or distant (distance > 4)?
 ```
@@ -358,7 +355,7 @@ If false positives are mostly **neighbors** (differ by 1-2 swaps), this suggests
 **Goal:** Expand to 9 particles
 
 1. ✅ **Lepton-Quark Unification**
-   - Add electron (3_1 knot?), muon, tau from v1.6
+   - Add electron (3_1 knot?), muon,\tau from v1.6
    - Run 9-particle regression
    - **Target: p < 0.01**
 

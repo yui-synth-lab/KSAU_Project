@@ -165,7 +165,7 @@ KSAU_Project/
 **Purpose:** Theoretical foundation for v7.1
 
 **Key contributions:**
-- Derived κ = π/24 from Chern-Simons / Dedekind eta
+- Derived κ = π/24 from Chern-Simons / Dedekind\eta
 - Proposed N = 20 from dimensional projection (24 - 4)
 - Tested N=3 Kashaev hypothesis (rejected for Tau)
 
@@ -227,13 +227,11 @@ links_df, knots_df = utils_v61.load_data()
 ```python
 coeff = phys['ckm']['optimized_coefficients']
 A = coeff['A']      # -6.3436
-B = coeff['B']      # 12.3988
-beta = coeff['beta']  # -105.0351
-gamma = coeff['gamma']  # 1.1253
+B = coeff['B']      # 12.3988\beta = coeff['beta']  # -105.0351\gamma = coeff['gamma']  # 1.1253
 C = coeff['C']      # 23.2475
 
 # Formula
-logit = C + A*dV + B*dlnJ + beta/V_bar + gamma*(dV*dlnJ)
+logit = C + A*dV + B*dlnJ +\beta/V_bar +\gamma*(dV*dlnJ)
 V_ij = 1.0 / (1.0 + np.exp(-logit))
 ```
 
@@ -486,20 +484,19 @@ Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 ### A. Key Formulas
 
 **Mass-volume correlation:**
-```
-ln(m) = κ·V + c
+```\ln(m) = κ·V + c
 κ = π/24 ≈ 0.1309 (universal constant)
 ```
 
 **CKM prediction (optimized):**
 ```
 logit(V_ij) = C + A·ΔV + B·Δln|J| + β/V_avg + γ·(ΔV·Δln|J|)
-V_ij = 1/(1 + exp(-logit))
+V_ij = 1/(1 +\exp(-logit))
 ```
 
 **Jones polynomial evaluation:**
 ```
-J(t) evaluated at t = exp(2πi/5) (5th root of unity)
+J(t) evaluated at t =\exp(2πi/5) (5th root of unity)
 ```
 
 ### B. Physical Constants (Reference)

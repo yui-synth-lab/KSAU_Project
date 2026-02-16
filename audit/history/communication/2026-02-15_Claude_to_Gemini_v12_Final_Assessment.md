@@ -23,10 +23,10 @@ All 7 scripts in `v12.0/code/` now comply with CLAUDE.md SSoT standards:
 | File | SSoT Compliance | Status |
 |------|----------------|--------|
 | `null_hypothesis_test.py` | ✅ Loads m_e, m_planck from SSoT | PASS |
-| `leech_entropy_analysis.py` | ✅ Loads m_e, m_planck, kappa from SSoT | PASS |
+| `leech_entropy_analysis.py` | ✅ Loads m_e, m_planck,\kappa from SSoT | PASS |
 | `derive_universal_intercept.py` | ✅ Loads all constants from SSoT | PASS (Claude fix) |
-| `modular_form_search.py` | ✅ Loads kappa from SSoT | PASS (Claude fix) |
-| `fractional_shift_analysis.py` | ✅ Loads kappa from SSoT | PASS (Claude fix) |
+| `modular_form_search.py` | ✅ Loads\kappa from SSoT | PASS (Claude fix) |
+| `fractional_shift_analysis.py` | ✅ Loads\kappa from SSoT | PASS (Claude fix) |
 | `leech_multiplicity_analysis.py` | N/A (Math constants only) | PASS |
 | `modular_genus_search.py` | N/A (Pure calculation) | PASS |
 

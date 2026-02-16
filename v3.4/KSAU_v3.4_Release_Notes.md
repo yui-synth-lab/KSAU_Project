@@ -32,7 +32,7 @@ The fundamental scaling law $ln(m) = \gamma V + b'$ has been recalibrated:
 
 ## 4. Known Issues & Future Directions (v4.0)
 *   **Top/Bottom Tension:** While v3.4 maintains v3.3 assignments for stability, analysis suggests alternative candidates ($L10a146$ for Bottom, $L10a107$ for Top) could halve the global error. These are reserved for v4.0 pending theoretical justification.
-*   **Theoretical Basis:** Deriving the linear log-mass relation from first-principles TQFT remains the primary goal for v4.0.
+*   **Theoretical Basis:** Deriving the linear\log-mass relation from first-principles TQFT remains the primary goal for v4.0.
 
 ## 5. Files Included
 

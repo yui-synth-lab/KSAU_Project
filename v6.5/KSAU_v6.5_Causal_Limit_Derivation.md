@@ -14,7 +14,7 @@ KSAU v6.5 provides a geometric foundation for the universal speed limit ($c$). U
 
 ## 2. The Rigidity-Speed Identity
 The speed of information propagation ($c$) is determined by the relationship between the vacuum's topological tension ($\kappa$) and its local information density ($\rho$).
-$$c = \sqrt{\frac{\text{Topological Modulus } (\kappa)}{\text{Network Density } (\rho)}}$$
+$$c = \sqrt{\frac{\t\text{Topological Modulus } (\kappa)}{\t\text{Network Density } (\rho)}}$$
 In natural units derived from the Borromean volume, this ratio is identically **1**, establishing $c$ as the fundamental link between space (Volume) and time (Update Complexity).
 
 ## 3. Emergent Lorentz Invariance

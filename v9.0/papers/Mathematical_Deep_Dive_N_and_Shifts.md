@@ -40,13 +40,13 @@ In the 24D Leech lattice, 6 is the dimensionality of the hexacode $H_6$ used in 
 
 | Sector | Particle | $n = S/\kappa$ (Observed) | Theoretical Candidate | Symmetry/Lattice Origin |
 |--------|----------|---------------------------|-----------------------|-------------------------|
-| Lepton | e, $\mu$, $	au$ | 0 | 0 | Maximal Symmetry |
-| Quark | Down | 48.3 | $2 	imes 24$ | Dual Niemeier Rank |
+| Lepton | e, $\mu$, $\tau$ | 0 | 0 | Maximal Symmetry |
+| Quark | Down | 48.3 | $2 \times 24$ | Dual Niemeier Rank |
 | Quark | Up | 42.0 | $48 - 6$ | Steiner-6 Reduction |
 | Quark | Charm | 52.1 | $48 + 4$ | $D_4$ Root System? |
 | Quark | Strange | 53.0 | $48 + 5$ | $A_5$ Local Stability? |
 | Quark | Top | 58.7 | 60 | $A_5$ (Icosahedral) Order |
-| Quark | Bottom | 82.5 | $84 - 1.5$ | $3.5 	imes 24$ Deficit |
+| Quark | Bottom | 82.5 | $84 - 1.5$ | $3.5 \times 24$ Deficit |
 
 ## 4. The "22" Gap in the 3rd Generation
 The gap between Bottom (82.5) and Top (59) is $\approx 23.5$.
@@ -54,7 +54,7 @@ As 24 is the Niemeier rank, 23 is the number of "Real" Niemeier lattices (exclud
 
 ## 5. Next Analytical Steps
 1. **Indicator Table Search:** Map the indices of maximal subgroups of $Co_1$ (the sporadic simple group) to the shift values.
-2. **Modular Weight Analysis:** Relate $\kappa = \pi/24$ to the weight of the Dedekind eta function and check if shifts correspond to holomorphic anomalies.
+2. **Modular Weight Analysis:** Relate $\kappa = \pi/24$ to the weight of the Dedekind\eta function and check if shifts correspond to holomorphic anomalies.
 3. **Isospin Formula:** Derive $n_{Up} - n_{Down}$ directly from the projection of the Lee lattice to the 4D subspace.
 
 ---

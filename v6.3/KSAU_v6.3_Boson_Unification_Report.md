@@ -21,17 +21,17 @@ Experimental verification has confirmed that Gauge Bosons and Scalars follow a d
 The selection of these specific links is not empirical but driven by the **Borromean Multiplicity Rule**. All bosons are derived from the volume of the Borromean Rings ($V_{borr} = 7.327725$).
 
 ### A. W-Boson: The Double Borromean ($L11n387$)
-- **Identity:** $V_W = 2.0000 	imes V_{borr}$
+- **Identity:** $V_W = 2.0000 \times V_{borr}$
 - **Topology:** 3-component Brunnian Link.
 - **Meaning:** The W-field is a perfect geometric doublet of the Borromean interaction.
 
 ### B. Z-Boson: The Twisted Borromean ($L11a431$)
-- **Identity:** $V_Z = 2.0508 	imes V_{borr} \approx 2 V_{borr} + \frac{\pi}{8}$
+- **Identity:** $V_Z = 2.0508 \times V_{borr} \approx 2 V_{borr} + \frac{\pi}{8}$
 - **Topology:** 3-component Brunnian Link.
 - **Meaning:** The Z-field is a W-boson with a topological phase shift (Twist), corresponding to the Electroweak mixing angle.
 
 ### C. Higgs Boson: The Scalar Bond ($L11a55$)
-- **Identity:** $V_H = 2.1590 	imes V_{borr}$
+- **Identity:** $V_H = 2.1590 \times V_{borr}$
 - **Topology:** 2-component Brunnian Link.
 - **Meaning:** A reduced Brunnian structure that acts as a scalar "glue" between fields, with a volume defined by the 2-component saturation limit.
 

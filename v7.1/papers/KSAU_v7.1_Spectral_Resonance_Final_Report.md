@@ -13,15 +13,17 @@ This report documents the successful derivation of the **Continuous Volume Law**
 
 ## 2. The Failure of Discrete Scaling (Refutation of $N=3$)
 Our investigation into the Tau sector ($6_1$ knot) definitively proved that simple discrete invariants do not scale globally:
-- **Expected $\langle 7_3 angle_3$:** $\approx 49$ (Empirical Scaling)
-- **Actual $\langle 7_3 angle_3$:** $1.00$ (Exact Identity)
+- **Expected $\langle 7_3 
+angle_3$:** $\approx 49$ (Empirical Scaling)
+- **Actual $\langle 7_3 
+angle_3$:** $1.00$ (Exact Identity)
 - **Mass Prediction Error:** $74\%$ (Unacceptable)
 
 This failure established the **Boundary Condition**: Discrete invariants are microscopic "peaks" that do not represent the macroscopic mass generation mechanism.
 
 ## 3. The Success of the Continuous Principle (Ray-Singer Analysis)
 By shifting to **Ray-Singer Torsion** (analytic torsion), we restored the project's statistical integrity ($R^2=0.9998$):
-
+\tau
 ### 3.1 Stability of the Scaling Ratio
 We compared the ratio of Observed Mass to Classical Torsion ($\ln(m)/\ln(	au)$) across the lepton sector:
 - **Muon ($4_1$):** Ratio = 3.31
@@ -31,14 +33,14 @@ We compared the ratio of Observed Mass to Classical Torsion ($\ln(m)/\ln(	au)$) 
 ### 3.2 The Ray-Singer Discrepancy Factor
 The KSAU slope ($N\kappa \approx 2.618$) is approximately **16.4x larger** than the standard Ray-Singer coefficient ($1/2\pi \approx 0.159$). 
 This "Amplification Factor" is the core of the v7.1 discovery:
-$$ N \cdot \kappa = \left[ 20 ight] \cdot \left[ \frac{\pi}{24} ight] \approx 16.4 \cdot \frac{1}{2\pi} $$
+$$ N \cdot \kappa = \left[ 20 \\right] \cdot \left[ \frac{\pi}{24} \\right] \approx 16.4 \cdot \frac{1}{2\pi} $$
 We interpret $N=20$ as the **Effective Spectral Density** of the 24-dimensional vacuum projected onto 4D spacetime.
 
 ## 4. First-Principles Derivation of Constants
 
 ### 4.1 Modular Coupling ($\kappa \equiv \pi/24$)
 $\kappa$ is identified as the **Modular Weight** governing the vacuum's partition function.
-- It corresponds to the exponent $1/24$ of the Dedekind eta function.
+- It corresponds to the exponent $1/24$ of the Dedekind\eta function.
 - It represents the Casimir energy per degree of freedom in a 24D bosonic system.
 
 ### 4.2 Flavor Degeneracy ($N \equiv 20$)

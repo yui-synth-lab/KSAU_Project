@@ -3,7 +3,7 @@
 **Focus:** Fermion Masses, Universal Scaling ($\pi/24$), Monte Carlo Validation
 
 ## Abstract
-We report a statistically significant correlation (p < 0.0001, Monte Carlo validated) between Standard Model fermion masses and the hyperbolic volumes $V$ of knot/link complements in 3-manifolds. Using the universal constant $\kappa = \pi/24 \approx 0.131$, we demonstrate that the fermion mass spectrum is governed by geometric scaling laws: quarks (bulk modes) follow $\ln(m) \propto 10\kappa V$ and leptons (boundary modes) follow $\ln(m) \propto 20\kappa V$. These formulas achieve log-scale fits of $R^2 = 0.9998$ (quarks) and $R^2 = 0.9995$ (leptons), with Mean Absolute Errors of 4.59% and 5.17% respectively, across nine orders of magnitude (electron to top quark).
+We report a statistically significant correlation (p < 0.0001, Monte Carlo validated) between Standard Model fermion masses and the hyperbolic volumes $V$ of knot/link complements in 3-manifolds. Using the universal constant $\kappa = \pi/24 \approx 0.131$, we demonstrate that the fermion mass spectrum is governed by geometric scaling laws: quarks (bulk modes) follow $\ln(m) \propto 10\kappa V$ and leptons (boundary modes) follow $\ln(m) \propto 20\kappa V$. These formulas achieve\log-scale fits of $R^2 = 0.9998$ (quarks) and $R^2 = 0.9995$ (leptons), with Mean Absolute Errors of 4.59% and 5.17% respectively, across nine orders of magnitude (electron to top quark).
 
 Crucially, we identify the origin of the lepton mass hierarchy as a **Topological Phase Transition** from a torus phase (Electron, $V=0$) to a hyperbolic phase (Muon/Tau, $V>0$). Monte Carlo null hypothesis testing with 10,000 random topology assignments confirms this correlation cannot arise by chance. While lacking first-principles theoretical derivation of $\kappa$, the universality of this constant and its connection to conformal field theory anomalies suggest a deep geometric origin of mass generation. These results establish 3-manifold topology as a validated phenomenological framework for understanding the Standard Model mass hierarchy.
 
@@ -28,7 +28,7 @@ Crucially, we identify the origin of the lepton mass hierarchy as a **Topologica
 
 The quark mass spectrum is described by the **Universal Geometric Mass Formula (Quark Sector)**:
 
-$$ \ln(m_q/\text{MeV}) = 10\kappa V + \kappa \mathcal{T} + B_q $$
+$$ \ln(m_q/\t\text{MeV}) = 10\kappa V + \kappa \mathcal{T} + B_q $$
 
 *   **Fit Performance:** This parameter-free formula achieves an **$R^2 = 0.9998$** (log-scale) with an MAE of **4.59%**.
 *   **The Strange Ground State:** A critical refinement in v6.0 is the identification of the Strange quark as **$L10n95$** ($N=10$). By prioritizing ground states (lowest complexity $N$ for a given volume), we achieve a nearly perfect fit (1.97% error) for the second generation.
@@ -37,7 +37,7 @@ $$ \ln(m_q/\text{MeV}) = 10\kappa V + \kappa \mathcal{T} + B_q $$
 
 Leptons, previously modeled by complexity alone, are now understood through the **Topological Freeze-out** principle. They follow a Unified Bulk Law but exhibit a doubled coupling to spacetime curvature ($20\kappa V$).
 
-$$ \ln(m_l/\text{MeV}) = 20\kappa V + C_l $$
+$$ \ln(m_l/\t\text{MeV}) = 20\kappa V + C_l $$
 
 where $C_l = \ln(m_e) \approx -0.67$ is the base energy of the topological ground state.
 
@@ -83,7 +83,7 @@ To determine whether the observed mass-volume correlation could arise by chance,
 
 ### 4.2 Cross-Validation Analysis
 
-Leave-One-Out Cross-Validation (LOO-CV) reveals that while the **geometric law** (mass ∝ exp(κV)) is robust, **specific topology assignments** are provisional:
+Leave-One-Out Cross-Validation (LOO-CV) reveals that while the **geometric law** (mass ∝\exp(κV)) is robust, **specific topology assignments** are provisional:
 
 | Sector | Training MAE | LOO-CV MAE | Stability |
 |--------|-------------|------------|-----------|
@@ -137,7 +137,7 @@ While the Geometric Casimir Hypothesis provides a qualitative framework, a rigor
 ### 6.3 Experimental Falsification
 
 * **Top quark helicity:** Predicted F_R = 0.24% ± 0.05% (testable at LHC Run 4)
-* **Neutrino mass sum:** Predicted Σm_ν ≈ 59 meV (testable via CMB+LSS by 2030)
+* **Neutrino mass\sum:** Predicted Σm_ν ≈ 59 meV (testable via CMB+LSS by 2030)
 * **Topology verification:** Direct tests via lattice QCD calculations of knot complement volumes
 
 ## 7. Conclusion

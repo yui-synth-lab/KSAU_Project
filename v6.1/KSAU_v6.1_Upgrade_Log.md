@@ -10,7 +10,7 @@ This update transitions the KSAU simulation from v6.0 (Geometric Description) to
 **Objective:** Transition from statistical fitting to a first-principles geometric prediction.
 **Implementation:**
 - Implemented **CKM Master Formula**: 
-  $$\ln\left(\frac{|V_{ij}|}{1 - |V_{ij}|}\right) = C + A \cdot \Delta V + B \cdot \Delta \ln|J| + \beta \cdot \frac{1}{\bar{V}} + \gamma \cdot (\Delta V \cdot \Delta \ln|J|)$$
+  $$\ln\l\left(\frac{|V_{ij}|}{1 - |V_{ij}|}\r\right) = C + A \cdot \Delta V + B \cdot \Delta \ln|J| + \beta \cdot \frac{1}{\bar{V}} + \gamma \cdot (\Delta V \cdot \Delta \ln|J|)$$
 - **Zero-Parameter Mode**: All coefficients are derived from fundamental constants:
   - $A = -\pi/2$, $B = -5\pi$, $\beta = -1/(2\alpha)$, $\gamma = \sqrt{3}$, $C = \pi^2 + 2\pi$.
 **Results:**
@@ -21,7 +21,7 @@ This update transitions the KSAU simulation from v6.0 (Geometric Description) to
 ## 2. PMNS Matrix: Boundary Resonance (Paper II)
 **Objective:** Derive neutrino mixing from "Unknot Surgery" efficiency.
 **Implementation:**
-- Defined Metric: $E = V_{hyp} / \text{UnknottingNumber}$.
+- Defined Metric: $E = V_{hyp} / \t\text{UnknottingNumber}$.
 - Search Space: Knots with crossing number $\le 9$.
 **Results:**
 - **Best Candidate Triplet:** 4_1 ($\nu_1$), 7_2 ($\nu_2$), 8_9 ($\nu_3$).
@@ -48,7 +48,7 @@ This update transitions the KSAU simulation from v6.0 (Geometric Description) to
 **Objective:** Improve CKM fit to R² > 0.63.
 **Modification:** Switched from Linear Jones coupling to Logarithmic Jones coupling ($\ln|J|$).
 **Formula:**
-$$ |V_{ij}| \propto \left( \frac{J_{\text{light}}}{J_{\text{heavy}}} \right)^3 \cdot e^{-0.12 \Delta V} $$
+$$ |V_{ij}| \propto \l\left( \frac{J_{\t\text{light}}}{J_{\t\text{heavy}}} \r\right)^3 \cdot e^{-0.12 \Delta V} $$
 **Results:**
 - **R²:** **0.6717** (Achieved Target)
 - **Physics Interpretation:** Generation mixing is suppressed by the **cube** of the topological complexity ratio (Jones polynomial magnitude).

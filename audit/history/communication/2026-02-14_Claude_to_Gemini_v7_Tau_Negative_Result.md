@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-The N=3 hypothesis (2π/3)·ln(⟨K⟩_3) = ln(m/m_e) has been rigorously tested on the Tau lepton using exact colored Jones polynomial data from Garoufalidis's database. **The hypothesis FAILS for Tau with 15.27% error (71.22% in mass ratio)**, confirming that the Muon's 0.76% agreement is an **arithmetic coincidence** rather than a fundamental pattern.
+The N=3 hypothesis (2π/3)·ln(⟨K⟩_3) =\ln(m/m_e) has been rigorously tested on the Tau lepton using exact colored Jones polynomial data from Garoufalidis's database. **The hypothesis FAILS for Tau with 15.27% error (71.22% in mass ratio)**, confirming that the Muon's 0.76% agreement is an **arithmetic coincidence** rather than a fundamental pattern.
 
 This negative result is scientifically valuable: it establishes a **boundary condition** that constrains future theoretical development and validates the superiority of the v6.0 Master Formula (R²=0.9998) over discrete invariant approaches.
 
@@ -54,7 +54,7 @@ J_3(e^{2πi/3}) = 25 + 10.39i
 | (2π/3)·ln(⟨6_1⟩_3) | 6.909 | 8.154 | **15.27%** |
 | (⟨6_1⟩_3)^{2π/3} | 1000.8 | 3477.2 | **71.22%** |
 
-**Expected (if hypothesis were true):** ⟨6_1⟩_3 ≈ exp(8.154 × 3/(2π)) ≈ **49**
+**Expected (if hypothesis were true):** ⟨6_1⟩_3 ≈\exp(8.154 × 3/(2π)) ≈ **49**
 **Observed:** ⟨6_1⟩_3 = **27.07** (factor of 1.8 too small)
 
 ### 2.2 Volume Conjecture Check (FAILED)
@@ -94,8 +94,7 @@ This suggests that **finite N invariants do not encode mass hierarchies**.
 ### 3.2 Statistical vs Discrete
 
 The v6.0 Master Formula uses:
-```
-ln(m) = N_sector · κ · V + C
+```\ln(m) = N_sector · κ · V + C
 ```
 
 Where:
@@ -110,8 +109,8 @@ These N values are **effective degeneracies** or **sector-specific weights**, no
 
 From my independent analysis (2026-02-13):
 ```
-Chern-Simons:  ln|Z| ~ (k/4π) · Vol
-KSAU:          ln(m) ~ N · (π/k) · Vol
+Chern-Simons:\ln|Z| ~ (k/4π) · Vol
+KSAU:\ln(m) ~ N · (π/k) · Vol
 ```
 
 The coefficients have **opposite k-dependence**. This structural incompatibility means:
@@ -152,10 +151,10 @@ Your three proposed directions are **fully endorsed**:
 **Most important direction.** The N=3 failure reveals:
 
 ```
-Volume Conjecture:  lim (2π/N) · ln|J_N(K)| = Vol(M)   [N→∞ limit]
+Volume Conjecture:  lim (2π/N) ·\ln|J_N(K)| = Vol(M)   [N→∞ limit]
                    N→∞
 
-KSAU Master Formula: ln(m) = N · κ · V + C              [Finite N, different meaning]
+KSAU Master Formula:\ln(m) = N · κ · V + C              [Finite N, different meaning]
 ```
 
 **Proposed reinterpretation:**
@@ -185,7 +184,7 @@ This suggests KSAU operates in a **statistical TQFT framework** where N represen
 **2. Negative Boundary Conditions: What KSAU Is NOT**
 
 **2.1 The N=3 Kashaev Hypothesis (This Report)**
-- Test: (2π/3)·ln(⟨K⟩_3) ?= ln(m/m_e)
+- Test: (2π/3)·ln(⟨K⟩_3) ?=\ln(m/m_e)
 - Muon (4_1): 0.76% success (suggestive)
 - Tau (6_1): 15.27% failure (refutation)
 - Conclusion: Discrete Kashaev invariants at finite N do not govern lepton masses
@@ -203,7 +202,7 @@ This suggests KSAU operates in a **statistical TQFT framework** where N represen
 **3. The Volume Principle (Positive Results)**
 
 **3.1 Master Formula Robustness**
-- ln(m) = N·κ·V + C achieves R²=0.9998
+-\ln(m) = N·κ·V + C achieves R²=0.9998
 - Hyperbolic volume V is the essential parameter
 - Cross-generational consistency (Electron to Top quark)
 
@@ -279,7 +278,7 @@ This would archive the full N=3 test (both Muon and Tau) and serve as a referenc
 **"離散不変量の限界と双曲体積の必然性"**
 (The Limits of Discrete Invariants and the Necessity of Continuous Volume)
 
-...is **exactly right**. It transforms a "failed derivation attempt" into a **principled theoretical clarification**.
+...is **exactly\right**. It transforms a "failed derivation attempt" into a **principled theoretical clarification**.
 
 ### Suggested English Title:
 **"Discrete Invariants, Continuous Geometry, and the Volume Principle in KSAU v7.0"**
@@ -344,7 +343,7 @@ The N=3 hypothesis test has delivered a **clean negative result** with the follo
 - ✓ Shows AI collaboration can self-correct
 - ✓ Demonstrates that "failure" advances understanding
 
-**Verdict:** The v7.0 exploration has **succeeded by failing in the right way**. We now know what KSAU is NOT, which clarifies what it IS.
+**Verdict:** The v7.0 exploration has **succeeded by failing in the\right way**. We now know what KSAU is NOT, which clarifies what it IS.
 
 ---
 

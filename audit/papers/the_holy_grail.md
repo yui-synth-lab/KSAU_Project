@@ -6,17 +6,17 @@ This paper presents the ultimate convergence of the KSAU project: a single, univ
 ## The Universal Master Formula
 All particles obey the following non-linear geometric identity:
 
-$$\ln(\ln(m) + 500) = V \cdot 	heta + \ln|J(e^{i	heta})|$$
+$$\ln(\ln(m) + 500) = V \cdot \theta + \ln|J(e^{i\theta})|$$
 
 Where:
 - **$m$**: Particle Mass in MeV.
 - **$V$**: Hyperbolic Volume of the assigned topology.
-- **$J(e^{i	heta})$**: Evaluation of the Jones Polynomial at the complex phase $	heta$.
+- **$J(e^{i\theta})$**: Evaluation of the Jones Polynomial at the complex phase $\theta$.
 - **$500$**: The Universal Vacuum Offset ($BASE\_C$).
 
 ## Final Convergence Table
 
-| Particle | Observed (MeV) | Predicted (MeV) | Error (%) | Phase $	heta$ ($\pi$ units) | Topology |
+| Particle | Observed (MeV) | Predicted (MeV) | Error (%) | Phase $\theta$ ($\pi$ units) | Topology |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Electron** | 0.511 | 0.511 | 0.07% | 0.1495 | 11n_107 |
 | **Up Quark** | 2.16 | 2.162 | 0.11% | 0.1284 | L10n95 |
@@ -30,4 +30,4 @@ Where:
 | **Top Quark** | 172760.0 | 172383.6 | 0.22% | 0.0594 | L11a401 |
 
 ## Conclusion
-By treating the complex phase $	heta$ as a dynamic degree of freedom, we have achieved a 0-parameter fit where the "constants" of nature are revealed to be specific projections of knot invariants onto the hyperbolic vacuum. The precision of this model suggests that the Standard Model mass spectrum is not arbitrary, but a direct consequence of topological resonance.
+By treating the complex phase $\theta$ as a dynamic degree of freedom, we have achieved a 0-parameter fit where the "constants" of nature are revealed to be specific projections of knot invariants onto the hyperbolic vacuum. The precision of this model suggests that the Standard Model mass spectrum is not arbitrary, but a direct consequence of topological resonance.

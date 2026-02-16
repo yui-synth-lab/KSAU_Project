@@ -28,5 +28,5 @@ Instead of $G_{\mu
 u} = 8\pi G T_{\mu
 u}$, we propose:
 $$
-abla^2 (	ext{Update Density}) \propto 	ext{Complexity Density } (C/V)$$
+abla^2 (\t\text{Update Density}) \propto \t\text{Complexity Density } (C/V)$$
 The curvature of spacetime is the gradient of the network's refresh rate.

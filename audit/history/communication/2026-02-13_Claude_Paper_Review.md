@@ -67,15 +67,13 @@
 The Volume Conjecture (Kashaev-Murakami-Murakami, 1995-2002) states that
 for a hyperbolic knot K in S³:
 
-lim_{N→∞} (2π/N) log|J_N(K; exp(2πi/N))| = Vol(S³\K)
+lim_{N→∞} (2π/N)\log|J_N(K;\exp(2πi/N))| = Vol(S³\K)
 
 where J_N is the N-colored Jones polynomial. For CS theory on knot complement M:
 
-Z_CS(M, k) = ∑_ρ d_ρ exp(i k CS(ρ))
+Z_CS(M, k) = ∑_ρ d_ρ\exp(i k CS(ρ))
 
-where the sum is over flat connections ρ. The semiclassical (k→∞) limit gives:
-
-log|Z_CS(M, k)| ≈ (k/4π) Vol(M) + i CS(M) + O(1/k)
+where the\sum is over flat connections ρ. The semiclassical (k→∞) limit gives:\log|Z_CS(M, k)| ≈ (k/4π) Vol(M) + i CS(M) + O(1/k)
 ```
 
 **Why this matters:** Without the explicit formula, the reader cannot verify how
@@ -88,20 +86,16 @@ log|Z_CS(M, k)| ≈ (k/4π) Vol(M) + i CS(M) + O(1/k)
 ```latex
 The KSAU hypothesis is that the fermion mass eigenvalue arises as:
 
-m_fermion = Λ_QCD · exp(holographic_depth)
+m_fermion = Λ_QCD ·\exp(holographic_depth)
 
 where the holographic depth is proportional to the hyperbolic volume of the
 fermion's topological charge carrier (knot complement). In the semiclassical
-limit of CS theory:
-
-ln(m / Λ_QCD) ∝ Vol(M) / (2π/k_eff) = (k_eff / 2π) Vol(M)
+limit of CS theory:\ln(m / Λ_QCD) ∝ Vol(M) / (2π/k_eff) = (k_eff / 2π) Vol(M)
 
 Identifying κ = π/k_eff and N as the number of "transverse oscillation modes"
-(from string theory):
+(from string theory):\ln(m) = N κ V + C
 
-ln(m) = N κ V + C
-
-where C = ln(Λ_QCD) + corrections.
+where C =\ln(Λ_QCD) + corrections.
 ```
 
 #### Gap 2.3: Why k=24 Specifically?
@@ -207,14 +201,14 @@ QUARKS:
 - Scaling: N_q = rank(E₈) = 8
 
 LEPTONS:
-- Arise from Yukawa couplings involving right-handed neutrino singlets
+- Arise from Yukawa couplings involving\right-handed neutrino singlets
 - Masses sensitive to complex structure moduli VEVs
 - Right-handed neutrinos often localized on CY cycles or branes
 - Scaling: N_l ≈ h^{2,1} = 21
 
 This separation reflects the visible/hidden sector split in E₈×E₈ heterotic
 theory, where one E₈ contains the Standard Model gauge group and the other
-provides the hidden sector (including right-handed neutrinos).
+provides the hidden sector (including\right-handed neutrinos).
 ```
 
 #### Gap 4.3: Examples of h^{2,1} ≈ 21
@@ -410,7 +404,7 @@ Testable Predictions:
 ### 7.1 Chern-Simons Theory on Knot Complements
 
 The Chern-Simons action for SU(2) gauge field A on 3-manifold M:
-$$S_{CS}[A] = \frac{k}{4\pi} \int_M \text{Tr}\left(A \wedge dA + \frac{2}{3} A \wedge A \wedge A\right)$$
+$$S_{CS}[A] = \frac{k}{4\pi} \int_M \t\text{Tr}\l\left(A \wedge dA + \frac{2}{3} A \wedge A \wedge A\r\right)$$
 
 Partition function:
 $$Z_{CS}(M, k) = \int \mathcal{D}A \, e^{i S_{CS}[A]}$$
@@ -419,7 +413,7 @@ $$Z_{CS}(M, k) = \int \mathcal{D}A \, e^{i S_{CS}[A]}$$
 
 For hyperbolic M with volume V, the dominant contribution comes from flat
 connections. Witten (1989) showed:
-$$Z_{CS}(M, k) \sim \exp\left(\frac{k}{4\pi} V + i \cdot \text{CS}(M)\right)$$
+$$Z_{CS}(M, k) \sim \exp\l\left(\frac{k}{4\pi} V + i \cdot \t\text{CS}(M)\r\right)$$
 
 ### 7.3 Level Renormalization
 
@@ -430,7 +424,7 @@ where h = dual Coxeter number (h=2 for SU(2)).
 ### 7.4 Connection to Fermion Mass
 
 KSAU hypothesis: Fermion mass eigenvalue is the exponential of holographic depth:
-$$m = \Lambda_{ref} \exp\left(\alpha \cdot \text{Vol}(knot\_complement)\right)$$
+$$m = \Lambda_{ref} \exp\l\left(\alpha \cdot \t\text{Vol}(knot\_complement)\r\right)$$
 
 Matching to CS partition function:
 $$\alpha = \frac{k_{eff}}{4\pi} \cdot N_{oscillators}$$
@@ -453,7 +447,7 @@ $$\ln(m) = N \kappa V + C$$
 - KSAU naturally accommodates three generations via knot theory
 
 ### 8.2 Randall-Sundrum / Warped Extra Dimensions
-- Warped geometry uses exponential warp factor: m ∝ exp(-krc φ)
+- Warped geometry uses exponential warp factor: m ∝\exp(-krc φ)
 - KSAU replaces AdS₅ warp factor with hyperbolic volume in 3D
 - Connection: Both use holographic principle, but KSAU is topological (discrete)
 
@@ -523,7 +517,7 @@ Agreement: within 0.7% (well within 1σ uncertainty)
 Bayesian optimization yields N_q = 8.020 ± 0.05 (95% CI).
 The small deviation from the integer value 8 likely arises from:
 1. Experimental uncertainty in quark pole masses (especially u, d)
-2. Higher-order corrections to the ln(m) = N κ V + C formula
+2. Higher-order corrections to the\ln(m) = N κ V + C formula
 3. Mixing between mass eigenstates and flavor eigenstates
 
 For theoretical interpretation, we identify N_q = 8 (rank of E₈) as the
@@ -535,7 +529,7 @@ fundamental value, with the 0.02 excess treated as a correction term.
 
 **This needs explicit calculation:**
 ```
-v6.0 (κ=π/24, N_q=10): MAE = ??? (NOT STATED)
+v6.0 (κ=π/24, N_q=10): MAE =  ? (NOT STATED)
 v7.0 (κ=π/26, N_q=8):  MAE = 1.83%
 
 If v6.0 MAE was 8.5%:  (8.5 - 1.83) / 8.5 = 78.5%  ✓
@@ -718,7 +712,7 @@ Before finalizing the paper, please address:
 2. **Does N_q=8 maintain CKM R²=0.9974?** (or does it drop to ~0.996?)
 3. **Which specific CY threefold has h^{2,1}=21?** (survey literature)
 4. **Are neutrinos included in the 12 fermions?** (MAE table needs clarification)
-5. **What is Λ_ref?** (the reference mass scale in ln(m) = ... + C)
+5. **What is Λ_ref?** (the reference mass scale in\ln(m) = ... + C)
 6. **Have you checked for overfitting?** (LOOCV or bootstrap validation)
 7. **What about anti-quarks?** (Do they use same topologies as quarks?)
 

@@ -33,7 +33,7 @@ The primary goal of v8.0 is to evolve from the static geometric law $\kappa = \p
 
 ## 5. Implementation Strategy
 1. **[Data]** Extract precise Boson (W, Z, Higgs) mass and volume data into `v8.0/data/`.
-2. **[Math]** Research "Modular Flow" and "Holomorphic Anomalies" in the context of Dedekind eta weight evolution.
+2. **[Math]** Research "Modular Flow" and "Holomorphic Anomalies" in the context of Dedekind\eta weight evolution.
 3. **[Simulation]** Fit the Running $\kappa$ curve using the combined Fermion-Boson dataset.
 4. **[Audit]** Strictly separate "Correlation" from "Causation" as per `GEMINI.md`.
 

@@ -7,7 +7,7 @@
 
 ## 📄 REVISED PUBLICATION STRATEGY
 ### 1. PLB Letter (Electroweak Mixing) - [v11.0/papers/PLB_Letter_Electroweak_Geometry_Final.md]
-- **Focus:** $\cos^2 	heta_W = \exp(-2\kappa)$.
+- **Focus:** $\cos^2 \theta_W = \exp(-2\kappa)$.
 - **Status:** **RE-SUBMISSION READY.** Framed as "Phenomenological Reconstruction" with RGE considerations.
 - **Priority:** HIGH (Most robust result).
 

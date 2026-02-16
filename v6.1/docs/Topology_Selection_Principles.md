@@ -21,7 +21,7 @@ These principles transform topology assignment from an empirical search into a *
 
 **Principle:** Hyperbolic volume MUST monotonically increase with fermion mass.
 
-**Formula:** ln(m) ∝ κV (κ = π/24 for quarks)
+**Formula:**\ln(m) ∝ κV (κ = π/24 for quarks)
 
 **Requirement:**
 ```
@@ -44,7 +44,7 @@ V(Up) < V(Down) < V(Strange) < V(Charm) < V(Bottom) < V(Top)
 **Volume Ranges:**
 | Generation | Up-Type | Down-Type |
 |------------|---------|-----------|
-| **Gen 1** (Light) | V < 7 | 6 < V < 8 |
+| **Gen 1** (L\right) | V < 7 | 6 < V < 8 |
 | **Gen 2** (Medium) | 10 < V < 12 | 8 < V < 10 |
 | **Gen 3** (Heavy) | V > 14 | 12 < V < 15 |
 
@@ -88,7 +88,7 @@ logit(|V_ij|) = f(ΔV, ΔlnJ, V̄)
 
 Where:
 - ΔV = |V_i - V_j| (volume difference)
-- ΔlnJ = |ln|J_i| - ln|J_j|| (Jones entropy difference)
+- ΔlnJ = |ln|J_i| -\ln|J_j|| (Jones entropy difference)
 - V̄ = (V_i + V_j)/2 (average volume)
 
 **Prediction:**
@@ -214,7 +214,7 @@ Jones polynomial J_K(t) encodes **quantum braiding** properties:
 
 Determinant of knot K relates to **Chern-Simons coupling**:
 ```
-Det(K) ~ exp(2πi k S_CS[A])
+Det(K) ~\exp(2πi k S_CS[A])
 ```
 
 Where k is the level (integer).

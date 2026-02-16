@@ -37,7 +37,7 @@
 - [ ] **Calculate $V_{ub}$:** Refine the "Cubic Generation Barrier" model to output precise number (Target: $0.0036 \pm 0.0001$).
 - [ ] **Spin Correlation ($t 	o bW$):**
   - SM: $C = -0.41$
-  - KSAU: $C = -0.41 + \delta_{topo}$ (where $\delta_{topo} \propto 	ext{Signature}(L_{top})$).
+  - KSAU: $C = -0.41 + \delta_{topo}$ (where $\delta_{topo} \propto \t\text{Signature}(L_{top})$).
   - Calculate magnitude of $\delta_{topo}$.
 
 ## 5. Conceptual Unification

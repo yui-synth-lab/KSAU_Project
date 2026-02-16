@@ -12,7 +12,7 @@ Version 12.0 is transitioned into a long-term research phase. We move away from 
 ## 2. Priority 1: Leech Lattice Entropy and Mass Scale
 - **Task 1.1:** Formalize the hierarchy factor $X = \ln(M_{Pl}/m_e)$ as the **"Projected Information Entropy"** of the 24D Leech lattice vacuum in 4D spacetime ($X \approx 4 \ln(196560)$).
 - **Task 1.2:** Derive the residual $21.14\kappa$ from the stabilizer subgroup hierarchy of the Conway group $Co_0$.
-- **Task 1.3:** Prove the origin of $\kappa = \pi/24$ from the modular weight of the Dedekind eta function as applied to the vacuum partition function.
+- **Task 1.3:** Prove the origin of $\kappa = \pi/24$ from the modular weight of the Dedekind\eta function as applied to the vacuum partition function.
 
 ## 3. Priority 2: Mathematical Derivation of Coefficients
 - **Task 2.1:** Identify the geometric origin of the recurring integer **82** from the representation theory of the Conway group (potential link to the Bottom quark anomaly).

@@ -9,10 +9,10 @@ Dear Editors,
 
 We are pleased to submit our manuscript, **"Geometric Origin of the Electroweak Mixing Angle from 24-Dimensional Topology,"** for consideration as a Letter in Physics Letters B.
 
-This work addresses one of the most fundamental unresolved questions in the Standard Model: the origin of the electroweak mixing angle (Weinberg angle), $	heta_W$. While the Standard Model successfully incorporates $	heta_W$ as an empirical parameter, its specific value has lacked a first-principles geometric or algebraic explanation for decades.
+This work addresses one of the most fundamental unresolved questions in the Standard Model: the origin of the electroweak mixing angle (Weinberg angle), $\theta_W$. While the Standard Model successfully incorporates $\theta_W$ as an empirical parameter, its specific value has lacked a first-principles geometric or algebraic explanation for decades.
 
 In this Letter, we identify a precise relationship between the mixing angle and the modular spectral weight of the 24-dimensional Leech lattice vacuum. Specifically, we demonstrate that:
-1.  The identity $\cos^2 	heta_W = \exp(-\pi/12)$ predicts $\sin^2 	heta_W \approx 0.2303$, matching the experimental value at the $M_Z$ scale with an unprecedented precision of **0.38%**.
+1.  The identity $\cos^2 \theta_W = \exp(-\pi/12)$ predicts $\sin^2 \theta_W \approx 0.2303$, matching the experimental value at the $M_Z$ scale with an unprecedented precision of **0.38%**.
 2.  The W/Z boson mass ratio follows a related quantized scaling law, $\ln(M_W/M_Z) \approx -\pi/24$.
 
 These findings suggest that the structure of electroweak symmetry breaking is not an accidental dynamical outcome but is fundamentally encoded in the topological invariants of a 24-dimensional vacuum structure. The statistical significance of this framework has been independently validated through rigorous Monte Carlo null-hypothesis testing ($p < 0.0001$ in related mass-sector studies).

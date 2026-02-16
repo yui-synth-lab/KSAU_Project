@@ -60,23 +60,23 @@ The Muon's agreement is a "low-volume resonance." At small volumes ($V \approx 2
 ### 3.2 Volume Conjecture Mismatch
 
 The Volume Conjecture states [2]:
-$$\lim_{N \to \infty} \frac{2\pi}{N} \ln |J_N(K; e^{2\pi i/N})| = \text{Vol}(S^3 \setminus K)$$
+$$\lim_{N \to \infty} \frac{2\pi}{N} \ln |J_N(K; e^{2\pi i/N})| = \t\text{Vol}(S^3 \setminus K)$$
 
 For the 6_1 knot at $N=3$:
 - $(2\pi/3)\ln(27.07) = 6.909$
-- $\text{Vol}(6_1) = 3.164$
+- $\t\text{Vol}(6_1) = 3.164$
 - **Error: 118.35%**
 
 This failure is independent of the mass prediction failure and demonstrates that **$N=3$ is not in the asymptotic regime** for higher-volume knots. Discrete invariants at low $N$ do not "see" the hyperbolic geometry required for KSAU.
 
 ### 3.3 Continuous vs. Discrete $N$
 
-The $N$ in the KSAU Master Formula ($N_{\text{lepton}}=20$, $N_{\text{quark}}=8$) must be interpreted as a **continuous statistical degeneracy** or a sector-specific renormalization weight, not a discrete quantum color level. The values $N=20$ and $N=3$ are fundamentally different objects.
+The $N$ in the KSAU Master Formula ($N_{\t\text{lepton}}=20$, $N_{\t\text{quark}}=8$) must be interpreted as a **continuous statistical degeneracy** or a sector-specific renormalization weight, not a discrete quantum color level. The values $N=20$ and $N=3$ are fundamentally different objects.
 
 ### 3.4 Chern-Simons Structural Mismatch
 
 Independent analysis [3] reveals a deeper incompatibility. The Chern-Simons partition function on a 3-manifold $M$ scales as:
-$$\ln |Z_{\text{CS}}(M, k)| \sim \frac{k}{4\pi} \cdot \text{Vol}(M)$$
+$$\ln |Z_{\t\text{CS}}(M, k)| \sim \frac{k}{4\pi} \cdot \t\text{Vol}(M)$$
 
 where the coefficient is **proportional to $k$**. In contrast, the KSAU Master Formula is:
 $$\ln(m) = N \cdot \frac{\pi}{k} \cdot V + C$$
@@ -84,7 +84,7 @@ $$\ln(m) = N \cdot \frac{\pi}{k} \cdot V + C$$
 where the coefficient is **inversely proportional to $k$**. This opposite $k$-dependence means:
 - Direct derivation of KSAU from CS theory is not possible in the current formulation
 - The "level renormalization" $k \to k+2$ (for SU(2)) cannot reconcile this structural difference
-- $k_{\text{eff}}$ measured from KSAU data is a **re-parameterization** of the empirical formula, not an independent CS observable
+- $k_{\t\text{eff}}$ measured from KSAU data is a **re-parameterization** of the empirical formula, not an independent CS observable
 
 ## 4. Re-establishing the Volume Principle
 The rejection of discrete invariants strengthens the case for the **Continuous Volume Law** established in v6.0. The fact that the $R^2=0.9998$ fit persists across generations while discrete invariants fail confirms that:
@@ -106,7 +106,7 @@ The v7.0 exploration establishes the following constraints:
    - Level renormalization does not resolve this structural mismatch
 
 3. **$N$ in KSAU Master Formula is not a quantum color**
-   - $N_{\text{lepton}} = 20 \neq 3$ (Kashaev level)
+   - $N_{\t\text{lepton}} = 20 \neq 3$ (Kashaev level)
    - Interpretation: effective degeneracy or sector weight, not topological index
 
 ### 5.2 What Remains Robust (Positive Results)
@@ -137,7 +137,7 @@ This suggests $\kappa$ reflects a **vacuum constraint** from 24-dimensional modu
 
 ### 6.2 Open Questions
 
-1. **Origin of sector-specific $N$ values:** Why $N_{\text{lepton}} = 20$ and $N_{\text{quark}} = 8$?
+1. **Origin of sector-specific $N$ values:** Why $N_{\t\text{lepton}} = 20$ and $N_{\t\text{quark}} = 8$?
 2. **Microscopic mechanism:** What replaces Chern-Simons as the fundamental theory?
 3. **Beyond volume:** Does $V$ encode other geometric invariants (torsion, analytic invariants)?
 

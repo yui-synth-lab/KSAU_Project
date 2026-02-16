@@ -44,7 +44,7 @@ The "magic number" in string theory is not the spacetime dimension D itself, but
 **Physical Interpretation:**
 - **Transverse dimensions** = degrees of freedom for string oscillation
 - These oscillations generate particle masses via Virasoro/Ramond-Neveu-Schwarz operators
-- **KSAU mass formula** ln(m) ∝ N·V is a **holographic projection** of these oscillations onto hyperbolic volumes
+- **KSAU mass formula**\ln(m) ∝ N·V is a **holographic projection** of these oscillations onto hyperbolic volumes
 
 ### 2.2 The k → k+2 Shift and Dimensional Reduction
 
@@ -156,8 +156,7 @@ The **E8×E8 heterotic string** has gauge group E8×E8 in 10D, where:
 
 With Nq=8 instead of 10, the mass formula becomes:
 ```
-Quarks:   ln(m_q) = κ · 8 · V_q + C_q  (v7.0)
-          ln(m_q) = κ · 10 · V_q + C_q (v6.0)
+Quarks:\ln(m_q) = κ · 8 · V_q + C_q  (v7.0)\ln(m_q) = κ · 10 · V_q + C_q (v6.0)
 ```
 
 **Expected shift in C_q:**
@@ -170,14 +169,14 @@ If we hold V_q fixed and adjust κ: 0.1309 → 0.1208 and Nq: 10 → 8:
 
 For typical quark volume V_avg ≈ 5-7 (geometric mean of 6 quarks):
 ```
-ΔC_q ≈ 0.343 × 6 ≈ 2.06 (natural log units)
-     ≈ exp(2.06) ≈ 7.8 (multiplicative scale factor)
+ΔC_q ≈ 0.343 × 6 ≈ 2.06 (natural\log units)
+     ≈\exp(2.06) ≈ 7.8 (multiplicative scale factor)
 ```
 
 **Physical Interpretation:**
 The intercept C_q represents a **reference mass scale**. Shifting from Nq=10 to Nq=8 requires adjusting this scale by ~8×, which could correspond to:
-1. **GUT scale** vs **electroweak scale** (factor ~10¹⁴ in mass, ~32 in log)
-2. **String scale** vs **Planck scale** (factor ~20 in log if M_string ≈ 10¹⁷ GeV)
+1. **GUT scale** vs **electroweak scale** (factor ~10¹⁴ in mass, ~32 in\log)
+2. **String scale** vs **Planck scale** (factor ~20 in\log if M_string ≈ 10¹⁷ GeV)
 3. **Borromean volume** normalization (V_Borr ≈ 7.328)
 
 ### 4.2 Borromean Volume and Intercept Duality
@@ -291,7 +290,7 @@ The **hyperbolic volume V_q** of a quark's knot complement measures its **"dista
 **Question:** E8 has 240 roots. Why Nq=8 and not Nq=240?
 
 **Answer:**
-The mass formula ln(m) ∝ N·V uses N as a **slope coefficient**, not a particle count. The correct interpretation:
+The mass formula\ln(m) ∝ N·V uses N as a **slope coefficient**, not a particle count. The correct interpretation:
 
 - **240 roots:** Total number of gauge bosons + matter fields in E8 adjoint representation
 - **8 = rank:** Dimension of **Cartan subalgebra** = number of independent "charges" (like electric charge, color charge, etc.)

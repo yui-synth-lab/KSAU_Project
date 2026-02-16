@@ -24,7 +24,7 @@ $$2.617993877991494 \approx 2.618033988749895$$
 
 **Error:** $|5\pi/6 - \phi^2| = 0.000040110758401$
 
-**Relative error:** $\frac{|5\pi/6 - \phi^2|}{\phi^2} = 1.532 \times 10^{-5} = \mathbf{0.0015\%}$
+**Relative error:** $\frac{|5\pi/6 - \phi^2|}{\phi^2} = 1.532 \\times 10^{-5} = \mathbf{0.0015\%}$
 
 ---
 
@@ -35,12 +35,12 @@ $$2.617993877991494 \approx 2.618033988749895$$
 **Source:** [Pi, Phi and Fibonacci - The Golden Ratio](https://www.goldennumber.net/pi-phi-fibonacci/)
 
 **Direct Quote:**
-> "6/5 * Phi^2 = 3.1416, which approximates pi."
+> "6/5 * Phi^2 = 3.1416, which approximates\pi."
 
 **Numerical verification:**
 $$\frac{6}{5}\phi^2 = 1.2 \times 2.618033988749895 = 3.141640786499874$$
 $$\pi = 3.141592653589793$$
-$$\text{Error: } 0.000048132910081 \text{ (4 decimal places accuracy)}$$
+$$\t\text{Error: } 0.000048132910081 \t\text{ (4 decimal places accuracy)}$$
 
 **Status:** This is a **well-known approximation** in recreational mathematics and pyramid geometry.
 
@@ -64,12 +64,12 @@ $$\text{Error: } 0.000048132910081 \text{ (4 decimal places accuracy)}$$
 **Source:** [Pi, Phi and Fibonacci - The Golden Ratio](https://www.goldennumber.net/pi-phi-fibonacci/)
 
 **Quote:**
-> "From the Giza pyramid one derives the simple relation between pi and phi that is **5/6 of pi minus 1 is phi**."
+> "From the Giza pyramid one derives the simple relation between\pi and\phi that is **5/6 of\pi minus 1 is\phi**."
 
 **Verification:**
 $$\frac{5\pi}{6} - 1 = 2.617993877991494 - 1 = 1.617993877991494$$
 $$\phi = 1.6180339887498948$$
-$$\text{Error: } 0.000040110758401 \text{ (same as } 5\pi/6 - \phi^2\text{!)}$$
+$$\t\text{Error: } 0.000040110758401 \t\text{ (same as } 5\pi/6 - \phi^2\t\text{!)}$$
 
 **This is identical to our identity** because:
 $$\phi^2 = \phi + 1$$
@@ -169,10 +169,8 @@ This involves $\pi/3$ (hexagon/tetrahedron) and $\pi/5$ (pentagon/golden ratio).
 ### 5.2 Exact Calculation
 
 ```python
-import math
-
-phi = (1 + math.sqrt(5)) / 2
-phi_squared = phi ** 2
+import math\phi = (1 + math.sqrt(5)) / 2
+phi_squared =\phi ** 2
 five_pi_over_six = 5 * math.pi / 6
 
 print(f"φ² = {phi_squared:.16f}")
@@ -206,7 +204,7 @@ Relative error = 0.0015%
 - Appears in honeycomb tessellation
 
 **Ratio:**
-$$\frac{\text{Pentagon central}}{\text{Hexagon central}} = \frac{2\pi/5}{\pi/3} = \frac{6}{5}$$
+$$\frac{\t\text{Pentagon central}}{\t\text{Hexagon central}} = \frac{2\pi/5}{\pi/3} = \frac{6}{5}$$
 
 This is the coefficient in $\pi \approx (6/5)\phi^2$!
 
@@ -310,13 +308,13 @@ appears to be **novel in this context**.
 
 ### 9.2 Significance for π/24
 
-**The question "What does π/24 mean?" now has a partial answer:**
+**The question "What does π/24 mean?" now has a\partial answer:**
 
 $$\kappa = \frac{\pi}{24}$$
 $$N\kappa = 20 \cdot \frac{\pi}{24} = \frac{5\pi}{6} \approx \phi^2$$
 
 **Interpretation chain:**
-1. $\pi/24$ is the modular weight (Dedekind eta)
+1. $\pi/24$ is the modular weight (Dedekind\eta)
 2. $20 = 24 - 4$ is dimensional projection (Niemeier vacuum)
 3. $(20) \times (\pi/24) = 5\pi/6$ is pentagon-hexagon ratio
 4. $5\pi/6 \approx \phi^2$ connects to Fibonacci growth

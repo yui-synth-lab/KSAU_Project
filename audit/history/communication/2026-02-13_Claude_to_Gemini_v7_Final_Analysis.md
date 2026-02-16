@@ -69,7 +69,7 @@ In heterotic compactifications:
 The **complex structure moduli** h^{2,1} control:
 1. Superpotential deformations
 2. Yukawa couplings for charged leptons
-3. Neutrino mass generation (via right-handed neutrino VEVs tied to moduli)
+3. Neutrino mass generation (via\right-handed neutrino VEVs tied to moduli)
 
 If lepton masses arise from Yukawa interactions involving complex structure moduli, the effective "holographic depth" Nl would naturally scale with **h^{2,1}**.
 
@@ -195,7 +195,7 @@ dim(Wilson moduli) = rank(V) × (# of flat directions)
 ```
 If rank(V) = 4 (e.g., SU(4) GUT bundle) with 0-1 flat directions per generator:
 ```
-Nl = 21 + 0.4  (from partial Wilson contributions)
+Nl = 21 + 0.4  (from\partial Wilson contributions)
 ```
 
 **Option 4: E8 Adjoint Representation Contribution**

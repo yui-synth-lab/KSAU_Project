@@ -38,7 +38,7 @@ While this does not meet the $5\sigma$ standard required for a physical discover
 ## 5. Discussion and Future Work
 The current results identify $N=11$ and $N=41$ as intriguing topological anchors. Notably, the master parameter $\kappa = \pi/24$ used in this framework is identical to the one governing the geometric origin of the electroweak mixing angle ($\cos^2 \theta_W = \exp(-\pi/12)$) identified in previous work [4]. This cross-sector consistency suggests that the modular vacuum configuration is simultaneously responsible for both mass hierarchies and electroweak symmetry breaking.
 
-The extension of this law to $g=2$ sectors (e.g., $N=23$) suggests potential links to intermediate scales, but the lack of a definitive Standard Model counterpart for this genus makes such identifications speculative. Future work must focus on a non-post-hoc derivation of the $(2g-2)$ correction from the Selberg trace formula and an independent verification of the $g+\nu_\infty$ partition sum.
+The extension of this law to $g=2$ sectors (e.g., $N=23$) suggests potential links to intermediate scales, but the lack of a definitive Standard Model counterpart for this genus makes such identifications speculative. Future work must focus on a non-post-hoc derivation of the $(2g-2)$ correction from the Selberg trace formula and an independent verification of the $g+\nu_\infty$ partition\sum.
 
 ## 6. Conclusion
 KSAU v13.9 provides a structural framework suggesting that Standard Model scales are encoded in modular topology. While the 0.012% agreement for the mass hierarchy is suggestive and statistically notable ($p = 0.0051$, composite test over all $N < 200$), it remains a **strong phenomenological hint** requiring rigorous mathematical proof from first principles.

@@ -12,7 +12,7 @@ In this Letter, we present a paradigm-shifting solution: elementary particles ar
 
 **Key Breakthroughs in this Letter:**
 1.  **First Ab Initio CKM Prediction:** We derive the Cabibbo angle with 8.5% accuracy using a "Color Cube Law" based on $SU(2)_3$ topological field theory. This connects flavor physics directly to Fibonacci anyons.
-2.  **Geometric Solution to Strong CP:** We demonstrate that a vacuum dominated by the simplest hyperbolic knot ($4_1$) naturally enforces CP conservation ($	heta=0$) due to its amphicheiral symmetry, eliminating the need for the elusive Axion particle.
+2.  **Geometric Solution to Strong CP:** We demonstrate that a vacuum dominated by the simplest hyperbolic knot ($4_1$) naturally enforces CP conservation ($\theta=0$) due to its amphicheiral symmetry, eliminating the need for the elusive Axion particle.
 3.  **W Boson Identification:** We identify the W boson as a Brunnian link with a mass prediction accurate to **0.1%**.
 
 These are not post-hoc fits but genuine predictions arising from the rigidity of knot geometry. We believe this work represents a fundamental advance in understanding the topological structure of the vacuum and will be of broad interest to the particle physics, cosmology, and mathematical physics communities.

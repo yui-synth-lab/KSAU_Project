@@ -15,7 +15,7 @@ KSAU理論（Knot-based Standard Model Architecture for Universe）は、素粒�
 
 - **CKMマスター・フォーミュラ:**
   制約付き最適化により、クォークの混合角は、体積障壁 ($\Delta V$)、トポロジカル・エントロピー ($\Delta \ln|J|$)、および質量依存トンネル効果 ($1/\bar{V}$) の均衡として **$R^2 = 0.9980$** という極めて高い精度で予言される。
-  $$ \text{logit}|V_{ij}| = C + A \cdot \Delta V + B \cdot \Delta \ln|J| + \beta \cdot \frac{1}{\bar{V}} + \gamma \cdot (\Delta V \cdot \Delta \ln|J|) $$
+  $$ \t\text{logit}|V_{ij}| = C + A \cdot \Delta V + B \cdot \Delta \ln|J| + \beta \cdot \frac{1}{\bar{V}} + \gamma \cdot (\Delta V \cdot \Delta \ln|J|) $$
 
 - **動的多様体力学 (Interacting Manifolds):**
   v6.2 において、素粒子は静的なカタログではなく、**位相幾何学的結合エネルギー（Volume Defect）**を介して相互作用する動的な存在として再定義された。これにより Top → W + Bottom 崩壊などの動的プロセスが幾何学的に記述可能となった。

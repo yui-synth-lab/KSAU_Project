@@ -22,7 +22,7 @@
 - **Observation:** Amphicheiral particles (where $K = K^*$ and $CS = 0$) do not undergo SUSY splitting.
 - **Prediction:** The **Electron Neutrino ($
 u_e = 4_1$)** and **Tau Neutrino ($
-u_	au = 8_9$)** are their own sparticles (Symmetry Restored). This predicts that their scalar counterparts (Sneutrinos) are degenerate in mass with the neutrinos, or the distinction vanishes.
+u_\tau = 8_9$)** are their own sparticles (Symmetry Restored). This predicts that their scalar counterparts (Sneutrinos) are degenerate in mass with the neutrinos, or the distinction vanishes.
 
 ## 4. Next Steps (Phase 2 Preview)
 - **Gravity (Planck Scale):** Investigate the $V 	o 0$ limit for "Self-Dual" knots to derive the Planck length.

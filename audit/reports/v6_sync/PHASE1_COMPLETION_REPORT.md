@@ -113,10 +113,8 @@ for n in [1.0, 1.5, 2.0, 2.5, 3.0]:
 ```python
 # Boson-specific scaling (v6.3)
 A_b = (3/7) * G_catalan ≈ 0.393  # Boson slope
-C_b = -16.155                     # Boson intercept
-
-ln(m) = A_b * V + C_b
-m_pred = exp(A_b * V + C_b)
+C_b = -16.155                     # Boson intercept\ln(m) = A_b * V + C_b
+m_pred =\exp(A_b * V + C_b)
 error = |m_pred - m_obs| / m_obs
 ```
 
@@ -316,7 +314,7 @@ Phase 1 boson integration is **algorithmically complete**. All three v6.3 candid
 | CKM R² | >0.95 | **0.9988** | ✅ EXCEED |
 | Algorithmic (no hardcode) | Required | ✅ `select_boson_fast()` | ✅ PASS |
 | SSoT compliance | Required | ✅ All from JSON | ✅ PASS |
-| Reproducibility | Deterministic | ✅ seed=42 + alpha sort | ✅ PASS |
+| Reproducibility | Deterministic | ✅ seed=42 +\alpha sort | ✅ PASS |
 
 ### Next Steps
 

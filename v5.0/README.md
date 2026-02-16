@@ -26,7 +26,7 @@
 | Lepton R² | 0.9998 |
 | Database Coverage | **17,154** knots/links |
 | Selection Method | **Automated** (topology_selector.py) |
-| Topological Parameters | **1** (Twist: $\mathcal{T} = (2-\text{Gen}) \times (-1)^C$) |
+| Topological Parameters | **1** (Twist: $\mathcal{T} = (2-\t\text{Gen}) \times (-1)^C$) |
 | Calibration Constants | 2 (quark/lepton vacuum scales) |
 
 ---
@@ -54,15 +54,13 @@ This identity bridges:
 All coefficients expressed as rational multiples of κ = π/24:
 
 **Quarks** (C ≥ 2, Confinement):
-```
-ln(m_q / MeV) = 10κ · V + κ · 𝒯 - (7 + 7κ)
+```\ln(m_q / MeV) = 10κ · V + κ · 𝒯 - (7 + 7κ)
 
 where 𝒯 = (2 - Gen) × (-1)^C  (Topological Twist)
 ```
 
 **Leptons** (C = 1, Freedom):
-```
-ln(m_l / MeV) = (14/9)κ · N² - (1/6) · I_twist + C_l
+```\ln(m_l / MeV) = (14/9)κ · N² - (1/6) · I_twist + C_l
 ```
 
 ---
@@ -119,7 +117,7 @@ Leptons (Q=-1):     Det(K) ≡ 1 (mod 2)
 
 ### 3. Geometric Mass Scaling
 ```
-Mass ~ exp(κ × Geometric Invariant)
+Mass ~\exp(κ × Geometric Invariant)
 where Geometric Invariant = Volume (quarks) or N² (leptons)
 ```
 
@@ -145,7 +143,7 @@ where Geometric Invariant = Volume (quarks) or N² (leptons)
 
 ### Chern-Simons Effective Action
 ```
-y_f = exp(-S_geom[K_f])
+y_f =\exp(-S_geom[K_f])
 
 S_geom = (1/κ) × [∫_M L_Bulk + ∮_{∂M} L_Boundary + L_Twist]
 ```

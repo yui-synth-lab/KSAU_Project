@@ -82,12 +82,12 @@ This section addresses my primary critique from the first review. Much better!
 **Technical note:**
 The Volume Conjecture is typically stated for colored Jones polynomial J_N(K):
 ```latex
-lim_{N→∞} (2π/N) log|J_N(K; exp(2πi/N))| = Vol(S³\K)
+lim_{N→∞} (2π/N)\log|J_N(K;\exp(2πi/N))| = Vol(S³\K)
 ```
 
 The CS partition function connection is:
 ```latex
-Z_CS(S³\K, k) ~ ∑_N J_N(K) d_N exp(...)
+Z_CS(S³\K, k) ~ ∑_N J_N(K) d_N\exp(...)
 ```
 
 **Suggestion:** Add one sentence connecting these:
@@ -133,7 +133,7 @@ Line 33: "Identifying the particle mass scale with the partition function amplit
 The KSAU hypothesis is that fermion masses arise from the exponential hierarchy
 in string theory:
 
-m_fermion = Λ_string · exp(-S_effective)
+m_fermion = Λ_string ·\exp(-S_effective)
 
 where S_effective is the effective action for the fermion wavefunction localized
 on a topological defect (knot complement) in the internal manifold. In the
@@ -141,27 +141,25 @@ semiclassical limit, S_effective is proportional to the CS action:
 
 S_effective ~ (k_eff / 4π) Vol(M)
 
-Thus:
-ln(m/Λ) = -S_effective = -(k_eff / 4π) Vol(M)
+Thus:\ln(m/Λ) = -S_effective = -(k_eff / 4π) Vol(M)
 
-Rewriting in terms of κ = π/k_eff:
-ln(m/Λ) = -(π / 4κ) Vol(M)
+Rewriting in terms of κ = π/k_eff:\ln(m/Λ) = -(π / 4κ) Vol(M)
 ```
 
-**But wait!** This gives a negative sign, which doesn't match KSAU formula ln(m) = +N κ V.
+**But wait!** This gives a negative sign, which doesn't match KSAU formula\ln(m) = +N κ V.
 
 **Resolution:** The sign depends on whether we're computing:
-- **Amplitude** (mass itself): m ~ exp(+Vol)
-- **Action** (suppression): S ~ exp(-Vol)
+- **Amplitude** (mass itself): m ~\exp(+Vol)
+- **Action** (suppression): S ~\exp(-Vol)
 
 For KSAU, we need the amplitude interpretation:
 ```
-Z ~ exp(i k Vol) → |Z| ~ exp(Re[...])
+Z ~\exp(i k Vol) → |Z| ~\exp(Re[...])
 
 In Euclidean signature:
-Z_E ~ exp(-S_E) where S_E ~ -i k Vol → +k Vol
+Z_E ~\exp(-S_E) where S_E ~ -i k Vol → +k Vol
 
-Thus: ln|Z| ~ (k/4π) Vol → ln(m) ~ (k/4π) Vol
+Thus:\ln|Z| ~ (k/4π) Vol →\ln(m) ~ (k/4π) Vol
 ```
 
 **Critical fix needed:**
@@ -170,11 +168,9 @@ Lines 34-36 should read:
 We identify the fermion mass hierarchy with the exponential of the CS action
 in Euclidean signature:
 
-m_fermion ∝ exp[α · CS_action] ∝ exp[α · (k_eff/4π) Vol(M)]
+m_fermion ∝\exp[α · CS_action] ∝\exp[α · (k_eff/4π) Vol(M)]
 
-Taking logarithms and absorbing constants into N and C:
-
-ln(m) = N · (π/k_eff) · Vol(M) + C = N κ V + C
+Taking logarithms and absorbing constants into N and C:\ln(m) = N · (π/k_eff) · Vol(M) + C = N κ V + C
 
 where N represents the number of transverse oscillator modes contributing
 to the mass generation mechanism.
@@ -196,10 +192,9 @@ the full string theory:
 - For leptons: Additional moduli from CY compactification → N_l ≈ 21
 
 Mathematically, N counts the effective degrees of freedom in the path integral:
-Z_effective = ∫ [∏_{i=1}^N dφ_i] exp[i k ∑_i Vol_i]
+Z_effective = ∫ [∏_{i=1}^N dφ_i]\exp[i k ∑_i Vol_i]
 
-In the large-k limit with correlated volumes Vol_i ≈ Vol:
-ln|Z| ≈ N · (k/4π) Vol
+In the large-k limit with correlated volumes Vol_i ≈ Vol:\ln|Z| ≈ N · (k/4π) Vol
 ```
 
 **Status:** NEEDS REVISION - Add 2-3 sentences explaining the holographic dictionary and the origin of N
@@ -320,17 +315,16 @@ Leptons (by mass):
 ```python
 import numpy as np
 
-# Using electron as anchor: C_l = ln(0.511) - N_l * κ * 0 = ln(0.511) = -0.6707
+# Using electron as anchor: C_l =\ln(0.511) - N_l * κ * 0 =\ln(0.511) = -0.6707
 C_l = np.log(0.511)
-N_l = 21.4
-kappa = np.pi / 26
+N_l = 21.4\kappa = np.pi / 26
 V_muon = 2.0299
 
-m_muon_pred = np.exp(N_l * kappa * V_muon + C_l)
+m_muon_pred = np.exp(N_l *\kappa * V_muon + C_l)
 print(f"Predicted muon mass: {m_muon_pred:.2f} MeV")
 
-# Expected: exp(21.4 * 0.1208 * 2.0299 - 0.6707)
-#         = exp(5.247 - 0.6707) = exp(4.576) = 97.1 MeV ✓
+# Expected:\exp(21.4 * 0.1208 * 2.0299 - 0.6707)
+#         =\exp(5.247 - 0.6707) =\exp(4.576) = 97.1 MeV ✓
 ```
 
 **Result:** 97.1 MeV (matches your 97.26 - good!)
@@ -605,7 +599,7 @@ We identify fermion masses with the exponential hierarchy arising from localizat
 in the internal manifold. In string theory, matter field wavefunctions localized
 on topological defects acquire exponentially suppressed couplings:
 
-m_fermion ∝ Λ_string · exp[- S_localization]
+m_fermion ∝ Λ_string ·\exp[- S_localization]
 
 where S_localization is the effective action governing the wavefunction profile.
 For KSAU, we propose that fermions are localized on knot complement geometries
@@ -615,17 +609,15 @@ S_localization ∝ (k_eff / 4π) Vol(knot complement)
 
 In Euclidean signature, the CS partition function amplitude scales as:
 
-|Z_CS| ~ exp[(k_eff / 4π) Vol(M)]
+|Z_CS| ~\exp[(k_eff / 4π) Vol(M)]
 
-Identifying ln(m/Λ) with ln|Z|, and introducing N as the number of transverse
-oscillator modes contributing to the mass eigenvalue:
+Identifying\ln(m/Λ) with\ln|Z|, and introducing N as the number of transverse
+oscillator modes contributing to the mass eigenvalue:\ln(m) = N · (π / k_eff) · Vol(M) + C
 
-ln(m) = N · (π / k_eff) · Vol(M) + C
-
-where C = ln(Λ) incorporates the string scale and other universal factors.
+where C =\ln(Λ) incorporates the string scale and other universal factors.
 
 This yields the KSAU mass law:
-$$ \ln(m) = N \kappa V + C \quad \text{where} \quad \kappa = \frac{\pi}{k_{eff}} $$
+$$ \ln(m) = N \kappa V + C \quad \t\text{where} \quad \kappa = \frac{\pi}{k_{eff}} $$
 
 The prefactor N arises from dimensional reduction: in 10D superstring theory,
 there are 8 transverse spatial dimensions (D-2=10-2=8). For quarks, all 8 modes

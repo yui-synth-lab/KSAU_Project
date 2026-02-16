@@ -13,7 +13,7 @@ I independently verified the v7.0 claims by:
 1. Computing lepton/quark predictions from SSoT data
 2. Verifying Gemini's k_eff values in Table 1
 3. Attempting to derive KSAU mass law from CS partition function
-4. Testing the uniqueness of the kappa decomposition
+4. Testing the uniqueness of the\kappa decomposition
 
 All calculations were performed from scratch using only SSoT data
 (`physical_constants.json`, `topology_assignments.json`).
@@ -24,7 +24,7 @@ All calculations were performed from scratch using only SSoT data
 
 ### 2.1 Lepton sector (Muon, Tau) with v6.0 parameters
 
-With Nl=20, kappa=pi/24, Electron anchor (V=0):
+With Nl=20,\kappa=pi/24, Electron anchor (V=0):
 
 | Particle | Observed | Predicted | Error |
 |----------|----------|-----------|-------|
@@ -37,7 +37,7 @@ The Muon is well-predicted (1.72%). The Tau has 13.8% error---not the
 
 ### 2.2 Gemini's k_eff values (Table 1) are correct
 
-Using the formula kappa = (ln(m) - C) / (N*V) and k = pi/kappa:
+Using the formula\kappa = (ln(m) - C) / (N*V) and k =\pi/kappa:
 
 | Particle | k_eff (Gemini) | k_eff (My calculation) | Match? |
 |----------|----------------|----------------------|--------|
@@ -55,23 +55,23 @@ empirical observation, not a calculation error.
 
 This is the most important finding. The Volume Conjecture states:
 
-$$\ln|Z(M, k)| \sim \frac{k}{4\pi} \cdot \text{Vol}(M)$$
+$$\ln|Z(M, k)| \sim \frac{k}{4\pi} \cdot \t\text{Vol}(M)$$
 
 The KSAU mass law states:
 
-$$\ln(m) = N \cdot \frac{\pi}{k} \cdot \text{Vol}(M) + C$$
+$$\ln(m) = N \cdot \frac{\pi}{k} \cdot \t\text{Vol}(M) + C$$
 
 **These have OPPOSITE k-dependence:**
 
 | Formula | Coefficient of Vol(M) | Behavior as k increases |
 |---------|----------------------|------------------------|
 | CS partition function | k / (4*pi) | GROWS |
-| KSAU mass law | N * pi / k | SHRINKS |
+| KSAU mass law | N *\pi / k | SHRINKS |
 
 For the 4_1 knot (Vol = 2.0299) at k=24:
 
-- CS gives: ln|Z| = (24/4pi) * 2.0299 = **3.877**
-- KSAU gives: ln(m_muon) = 20*(pi/24)*2.0299 - 0.671 = **4.643**
+- CS gives:\ln|Z| = (24/4pi) * 2.0299 = **3.877**
+- KSAU gives:\ln(m_muon) = 20*(pi/24)*2.0299 - 0.671 = **4.643**
 
 These are different numbers, and more importantly, they have
 **fundamentally different functional forms**. You cannot derive one
@@ -88,14 +88,14 @@ But KSAU uses Nl=20 (or 10 for quarks). Neither is 14.59.
 **Conclusion:** The statement "KSAU mass law is derived from the CS
 partition function" is **not mathematically valid** in its current form.
 
-### 3.2 The Decomposition kappa = pi/k Is Not Unique
+### 3.2 The Decomposition\kappa =\pi/k Is Not Unique
 
 The lepton data (3 points: Electron, Muon, Tau) determines exactly
-ONE free parameter: the slope of ln(m) vs V.
+ONE free parameter: the slope of\ln(m) vs V.
 
 Best-fit slope (electron-anchored): **2.5916**
 
-This slope can be decomposed as Nl * kappa infinitely many ways:
+This slope can be decomposed as Nl *\kappa infinitely many ways:
 
 | Nl | k | Nl * (pi/k) | Matches slope? |
 |----|---|-------------|----------------|
@@ -105,15 +105,15 @@ This slope can be decomposed as Nl * kappa infinitely many ways:
 | 21.4 | 25.96 | 2.5916 | Exact |
 | 1 | 1.212 | 2.5916 | Exact |
 
-**Without an independent measurement of either Nl or kappa separately,
-the decomposition is arbitrary.** Saying "kappa = pi/24" requires
-knowing that Nl = 20. Saying "kappa = pi/26" requires knowing Nl = 8.
+**Without an independent measurement of either Nl or\kappa separately,
+the decomposition is arbitrary.** Saying "kappa =\pi/24" requires
+knowing that Nl = 20. Saying "kappa =\pi/26" requires knowing Nl = 8.
 Neither Nl is derived from first principles.
 
 ### 3.3 The Quark Sector Does Not Fit With Simple Parameters
 
 Using v6.0 SSoT topologies (which are links, not knots!) with
-Nq=10, kappa=pi/24, Top-anchored:
+Nq=10,\kappa=pi/24, Top-anchored:
 
 | Particle | Observed | Predicted | Error |
 |----------|----------|-----------|-------|
@@ -134,15 +134,15 @@ not work for the quark sector.
 
 The argument is:
 1. There are 24 Niemeier lattices in rank 24
-2. KSAU uses kappa = pi/24
-3. Therefore kappa comes from Niemeier lattices
+2. KSAU uses\kappa =\pi/24
+3. Therefore\kappa comes from Niemeier lattices
 
 This is a **numerological observation**, not a derivation. The number
 24 appears in many places in mathematics:
 
 - 24 = 4! (factorial)
 - 24 hours in a day
-- 24 = sum of first 4 positive odd primes (3+5+7+9... no)
+- 24 =\sum of first 4 positive odd primes (3+5+7+9... no)
 - Ramanujan's 24 in the modular discriminant
 - 24 in the Bernoulli number B_12 denominator
 - 24 cells in the 24-cell polytope
@@ -160,11 +160,11 @@ Despite the problems above, there are genuine findings:
 ### 4.1 Lepton k_eff Stability Is Real
 
 The fact that Muon and Tau give k_eff = 23.9 and 24.4 when computed
-from the formula kappa = (ln(m) - ln(m_e)) / (Nl * V) with Nl=20 is
+from the formula\kappa = (ln(m) -\ln(m_e)) / (Nl * V) with Nl=20 is
 a **real empirical observation**. It means the slope is remarkably
-close to 20 * pi/24 for these two particles.
+close to 20 *\pi/24 for these two particles.
 
-But note: this is equivalent to saying "the linear fit ln(m) = slope*V
+But note: this is equivalent to saying "the linear fit\ln(m) = slope*V
 is good for leptons." The k_eff ≈ 24 is a restatement, not an
 explanation.
 
@@ -189,12 +189,12 @@ much into what is simply a bad fit with wrong parameters.
 
 ### 5.1 The Honest State of KSAU
 
-**What KSAU has:** A strong empirical correlation between ln(m) and
+**What KSAU has:** A strong empirical correlation between\ln(m) and
 hyperbolic volume V for the 3 charged leptons (R^2 > 0.99 for a
 2-parameter fit to 3 points).
 
 **What KSAU does not have:**
-1. A first-principles derivation of kappa (or the slope Nl*kappa)
+1. A first-principles derivation of\kappa (or the slope Nl*kappa)
 2. A working quark model with comparable precision
 3. A causal mechanism linking knot topology to particle mass
 4. A way to predict which knot corresponds to which particle
@@ -220,7 +220,7 @@ reproducing it numerically would build the computational foundation.
 
 Then ask: is there ANY choice of N and q where:
 
-$$\text{some function of } J_N(4_1; q) = 105.66 \text{ MeV (Muon mass)}$$
+$$\t\text{some function of } J_N(4_1; q) = 105.66 \t\text{ MeV (Muon mass)}$$
 
 If yes, we've found the bridge. If no, we've honestly shown it
 doesn't work this way.
@@ -229,7 +229,7 @@ doesn't work this way.
 
 The CS partition function has subleading terms:
 
-$$\ln|Z| \approx \frac{k}{4\pi} V + \frac{3}{2}\ln k + \text{Reidemeister torsion} + ...$$
+$$\ln|Z| \approx \frac{k}{4\pi} V + \frac{3}{2}\ln k + \t\text{Reidemeister torsion} + ...$$
 
 Perhaps the KSAU slope arises not from the leading term (k/4pi)V
 but from a combination of leading and subleading terms. Investigate
@@ -237,8 +237,8 @@ whether any combination of these gives the observed slope 2.59.
 
 **Option C: Abandon the CS Derivation Route**
 
-Accept that kappa = pi/24 is currently an empirical constant
-(like the fine structure constant alpha was before QED). Focus
+Accept that\kappa =\pi/24 is currently an empirical constant
+(like the fine structure constant\alpha was before QED). Focus
 instead on:
 1. Why do knot volumes correlate with lepton masses?
 2. What determines the topology assignments?
@@ -253,11 +253,11 @@ This is the most scientifically honest path if Options A and B fail.
 | Claim | Status | Evidence |
 |-------|--------|----------|
 | Lepton masses correlate with knot volumes | **SUPPORTED** | R^2 > 0.99 (2 params, 3 points) |
-| kappa ≈ pi/24 empirically | **SUPPORTED** | Best-fit k = 24.24 |
-| kappa = pi/24 derived from CS theory | **NOT SUPPORTED** | k-dependence is opposite |
-| kappa = pi/24 from Niemeier lattices | **UNPROVEN** | Coincidence, not derivation |
-| Nq = 8 from E8 rank | **NOT SUPPORTED** | Degenerate with kappa choice |
-| Nl = 21.4 from CY moduli | **NOT SUPPORTED** | Degenerate with kappa choice |
+|\kappa ≈\pi/24 empirically | **SUPPORTED** | Best-fit k = 24.24 |
+|\kappa =\pi/24 derived from CS theory | **NOT SUPPORTED** | k-dependence is opposite |
+|\kappa =\pi/24 from Niemeier lattices | **UNPROVEN** | Coincidence, not derivation |
+| Nq = 8 from E8 rank | **NOT SUPPORTED** | Degenerate with\kappa choice |
+| Nl = 21.4 from CY moduli | **NOT SUPPORTED** | Degenerate with\kappa choice |
 | Boson "hierarchical phase" k≈80 | **ARTIFACT** | Wrong parameters applied |
 | Quark sector precision | **NOT VERIFIED** | Depends heavily on fitting procedure |
 

@@ -27,7 +27,7 @@ To address these flaws, the KSAU v4.1 strategy has been pivoted away from the "G
 - **New Assignments:**
     - **Bottom:** $L10a141 	o L11n422$ ($V=12.447$, Det=48). Error reduced to **+3.4%**.
     - **Top:** $L11a62 	o L11a144$ ($V=15.271$, Det=114). Error reduced to **+0.7%**.
-- **Theoretical Gain:** Discovered a consistent **Arithmetic Progression** for Down-type determinants ($16, 32, 48$) and a $6 	imes 	ext{prime}$ rule for Up-type ($18, 12, 114$).
+- **Theoretical Gain:** Discovered a consistent **Arithmetic Progression** for Down-type determinants ($16, 32, 48$) and a $6 \times \t\text{prime}$ rule for Up-type ($18, 12, 114$).
 
 ### 2.3 Updated Validation Status
 The flawed `KSAU_v4.1_Validation_Report.md` has been superseded by **`KSAU_v4.1_Final_Proposal.md`**, which documents the results of the `v4_1_comprehensive_validator.py` script.

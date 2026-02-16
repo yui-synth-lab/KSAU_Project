@@ -11,7 +11,7 @@ Unlike previous iterations that selected topologies based solely on mass (Volume
 1.  **Mass (Volume Law):** The hyperbolic volume dictates the energy scale.
 2.  **Interaction (Cubic Suppression Law):** The topological entropy (Jones Polynomial) dictates the mixing probability.
 
-We discovered that for the Standard Model to exist as observed, the topology of the Top Quark must be **L11n102** (not L10a43), and the Charm Quark must be **L11n64**. These are not random choices; under the physical constraints of charge-determinant and link-component rules, they form a canonical solution set that satisfies the mass hierarchy and yields a global CKM log-fit of **$R^2 \approx 0.70$** in the current unified regression model (Test 5).
+We discovered that for the Standard Model to exist as observed, the topology of the Top Quark must be **L11n102** (not L10a43), and the Charm Quark must be **L11n64**. These are not random choices; under the physical constraints of charge-determinant and link-component rules, they form a canonical solution set that satisfies the mass hierarchy and yields a global CKM\log-fit of **$R^2 \approx 0.70$** in the current unified regression model (Test 5).
 
 An exhaustive search of the link database (up to 12 crossings) confirms that alternative configurations either violate the charge-determinant rules or fail to achieve statistical significance in the global CKM fit. Detailed logs of the exclusion process and the convergence of the Global Flavor Fit are provided in **Supplementary Material S1 (Audit Report)**.
 
@@ -25,7 +25,7 @@ Instead of forcing all particles into a single volume law, we respect the fundam
 *   **Physics:** Quarks are confined within the QCD vacuum (Bulk). Their mass reflects the **Hyperbolic Volume ($V$)** of the knotted flux tube.
 *   **Law:** $\ln(m) = 10\kappa V + \kappa T + B_q$
 *   **Selection:** Global Flavor Fit (Mass + CKM Entropy).
-*   **Precision:** Mass fit (log-scale) $R^2 = 0.999952$ (MAE 1.88%); CKM log-fit $R^2 \approx 0.70$ in the current unified regression.
+*   **Precision:** Mass fit (log-scale) $R^2 = 0.999952$ (MAE 1.88%); CKM\log-fit $R^2 \approx 0.70$ in the current unified regression.
 
 ### [Boundary Sector: Leptons]
 *   **Physics:** Leptons are unconfined and reside on the topological boundary. Their mass reflects the **Complexity ($N^2$)** of the knot projection on the holographic screen.
@@ -75,7 +75,7 @@ The CKM hierarchy is an emergent property of the topological vacuum. The transit
 To enforce the physical range constraint $0 < |V_{ij}| < 1$, we fit the logit model $\mathrm{logit}|V_{ij}| = -0.5\,\Delta V + B\,\Delta\ln|J| + \beta/\bar{V} + C$ over the 9 transitions, yielding $R^2 = 0.671914$ with $(B,\beta,C)=(-6.5027,-50.6608,10.7652)$. Given the small sample size and lack of CKM unitarity constraints in the regression, these values should be treated as exploratory.
 
 **Conclusion:**
-The Cabibbo precision remains a notable geometric landmark, while the current unified regression increases the global CKM log-fit from R²≈0.44 (volume-only baseline) to R²≈0.70, but does not yet reproduce the full hierarchy. This motivates additional constraints and/or invariants beyond the present ansatz.
+The Cabibbo precision remains a notable geometric landmark, while the current unified regression increases the global CKM\log-fit from R²≈0.44 (volume-only baseline) to R²≈0.70, but does not yet reproduce the full hierarchy. This motivates additional constraints and/or invariants beyond the present ansatz.
 
 ## 6. Conclusion
 The Standard Model mass hierarchy is an emergent property of vacuum geometry, structured by a Holographic Duality between Bulk Volume (Quarks) and Boundary Complexity (Leptons). This framework resolves the "arbitrariness" of the mass parameters by linking them to the fundamental constant $\kappa = \pi/24$.

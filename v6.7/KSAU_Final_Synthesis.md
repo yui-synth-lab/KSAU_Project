@@ -19,9 +19,9 @@ Standard Model parameters (Yukawa couplings, mixing angles) are historically tre
 We postulate that the mass-energy of a particle is the elastic resistance of the vacuum against topological complexity.
 ### 2.1 The Hamiltonian Origin
 Mass is derived from the **Topological Tension Action**:
-$$\mathcal{H} \propto \kappa \sum_{i} \text{Writhe}_i \cdot \delta(V - V_i)$$
+$$\mathcal{H} \propto \kappa \sum_{i} \t\text{Writhe}_i \cdot \delta(V - V_i)$$
 This dynamic origin explains the exponential relationship between hyperbolic volume ($V$) and observed mass ($m$):
-$$\ln(m/m_0) = \text{Slope} \cdot V + \text{Intercept}$$
+$$\ln(m/m_0) = \t\text{Slope} \cdot V + \t\text{Intercept}$$
 
 ## 3. The Borromean Hierarchy and Slope Quantization
 A major discovery of v6.7 is the quantization of mass slopes based on dimensionality and component counts:

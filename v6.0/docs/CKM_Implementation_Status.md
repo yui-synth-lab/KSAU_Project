@@ -87,7 +87,7 @@ The geometric_coefficients may have been **empirically fitted** to a specific to
 ### Hypothesis 3: R² = 0.70 is on Log-Scale
 The paper may report R² for **log(|V_ij|)** rather than |V_ij| directly.
 
-**Test:** Calculate R² on log-scale:
+**Test:** Calculate R² on\log-scale:
 ```python
 log_obs = np.log(ckm_obs)
 log_pred = np.log(ckm_pred)

@@ -28,7 +28,7 @@ Where:
 ### What Was Found
 
 ```python
-# Search for combinations of {16, 24, 41, 60} that sum to 92
+# Search for combinations of {16, 24, 41, 60} that\sum to 92
 Result: 16 + 16 + 60 = 92 ✅
 ```
 
@@ -236,7 +236,7 @@ The v12.0 pattern is **not** a simple LO formula. It may be a **systematic expan
 
 ## 8. Recommended Actions
 
-### Immediate (Tonight)
+### Immediate (Ton\right)
 
 1. ✅ Document the 92 = 16+16+60 discovery
 2. ⏳ Calculate Leech lattice shells 7-10 multiplicities

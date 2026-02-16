@@ -45,7 +45,7 @@ This document addresses the **critical statistical concerns** raised by cross-va
 **Interpretation:**
 - **Leptons** (knots with V-based law): Errors remain stable → law is robust
 - **Light quarks** (U, D): Severe degradation → topology assignments are data-driven, not principle-driven
-- **Heavy quarks** (B, T): Moderate degradation → partial overfitting
+- **Heavy quarks** (B, T): Moderate degradation →\partial overfitting
 
 ---
 

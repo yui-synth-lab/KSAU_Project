@@ -63,7 +63,7 @@ Top:     L11a24{1}     V=16.908  Det=132  Gen=3
 **Det=1 Hyperbolic Knots:** 60 candidates
 **Warm DM (15 keV):** 12n_242
 **WIMP (1-10 GeV):** 12n_430, 13n_1756, 12n_210
-**Formula:** ln(m) = (10/7 · G_catalan) · V - (7 + G_catalan) ✅ Unified
+**Formula:**\ln(m) = (10/7 · G_catalan) · V - (7 + G_catalan) ✅ Unified
 **Status:** ✅ Candidate catalog complete
 
 ---
@@ -93,7 +93,7 @@ Top:     L11a24{1}     V=16.908  Det=132  Gen=3
 ### The Fundamental Conflict
 
 KSAU has **two independent requirements:**
-1. **Mass:** ln(m) ∝ V → Volume ordering = Mass hierarchy
+1. **Mass:**\ln(m) ∝ V → Volume ordering = Mass hierarchy
 2. **CKM:** |V_ij| ∝ f(ΔV, ΔlnJ) → Geometric proximity
 
 **Three strategies tested:**

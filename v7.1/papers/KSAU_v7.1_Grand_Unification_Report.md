@@ -21,7 +21,7 @@ The universal coupling constant of the mass generation operator is identified no
 $$ \kappa \equiv \frac{\pi}{24} \approx 0.1309 $$
 
 **Structural Correspondence:** 
-Identified with the modular weight ($1/24$) of the Dedekind eta function $\eta(	au) = q^{1/24}\prod(1-q^n)$, which governs the conformal symmetry of the bosonic string vacuum. This replaces the earlier heuristic derivation from $\zeta(-1)$.
+Identified with the modular weight ($1/24$) of the Dedekind\eta function $\eta(\tau) = q^{1/24}\prod(1-q^n)$, which governs the conformal symmetry of the bosonic string vacuum. This replaces the earlier heuristic derivation from $\zeta(-1)$.
 
 ### Identity II: Dimensional Projection ($N$)
 The effective degeneracy factor $N=20$ is derived as a geometric constraint arising from the compactification of the vacuum.
@@ -35,14 +35,14 @@ Assuming the fundamental vacuum is described by a 24-dimensional Niemeier lattic
 In the low-volume limit (Muon sector), the continuous scaling law resonates with discrete topological invariants, governed by the Fibonacci sequence and the Golden Ratio.
 
 $$ \frac{\langle 4_1 
-angle_3}{	au(4_1)} = \frac{13}{5} = 2.600 \approx \phi^2 $$
+angle_3}{\tau(4_1)} = \frac{13}{5} = 2.600 \approx \phi^2 $$
 
 **Observation:**
 The ratio of the Kashaev invariant ($N=3$) to the Reidemeister torsion for the figure-eight knot ($4_1$) matches the KSAU slope ($N\kappa = 5\pi/6 \approx 2.618$) with **0.69% precision**. 
 - $13 = F_7$ (7th Fibonacci number)
 - $5 = F_5$ (5th Fibonacci number)
 
-This suggests that the "Mass Slope" is anchored to the Golden Ratio squared ($\phi^2 = \phi + 1$). This approximation ($5\pi/6 \approx \phi^2$) is a known mathematical relationship (precision $1.2 \times 10^{-5}$) documented in Wolfram MathWorld; KSAU's uniqueness lies in the physical discovery that the Muon mass is precisely realized at this geometric resonance point.
+This suggests that the "Mass Slope" is anchored to the Golden Ratio squared ($\phi^2 = \phi + 1$). This approximation ($5\pi/6 \approx \phi^2$) is a known mathematical relationship (precision $1.2 \\times 10^{-5}$) documented in Wolfram MathWorld; KSAU's uniqueness lies in the physical discovery that the Muon mass is precisely realized at this geometric resonance point.
 
 ## 3. Integration of Continuous and Discrete Laws
 
@@ -50,7 +50,7 @@ The "Incompatibility Crisis" (v7.0) is resolved by defining a **Dual Regime**:
 
 1.  **Macroscopic Regime (Global Scaling):** 
     Governed by the **Continuous Volume Law** ($R^2 = 0.9998$).
-    $$ \ln(m/m_e) = N\kappa \cdot 	ext{Vol}(K) + C $$
+    $$ \ln(m/m_e) = N\kappa \cdot \t\text{Vol}(K) + C $$
     This law holds for all fermions and represents the vacuum's "elastic" response to topological defects.
 
 2.  **Microscopic Regime (Local Resonance):**

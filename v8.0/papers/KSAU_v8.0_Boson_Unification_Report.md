@@ -15,7 +15,7 @@ This report documents a major theoretical breakthrough in the unification of the
 
 In v6.0, the boson sector was fitted with an empirical scaling factor $A \approx 0.39256$. Using the v7.1 refined constant $\kappa = \pi/24$, we observe the following resonance:
 
-$$ N_{boson} \cdot \kappa = 3 	imes \frac{\pi}{24} = \frac{\pi}{8} \approx \mathbf{0.392699} $$
+$$ N_{boson} \cdot \kappa = 3 \times \frac{\pi}{24} = \frac{\pi}{8} \approx \mathbf{0.392699} $$
 
 **Comparison:**
 - **Empirical Fit:** $0.39256$

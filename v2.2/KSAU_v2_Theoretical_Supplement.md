@@ -31,7 +31,7 @@ Interpreting the Levine-Tristram signature as an eigenvalue of a physical Hamilt
 
 ### 2.1 Topological Hamiltonian (Effective Model)
 Let $V$ be the Seifert matrix of link $L$. We define a Hermitian matrix $H(\theta)$ on the parameter space $\theta \in [0, 2\pi)$ as follows:
-$$ H(\theta) = i \left( (1-e^{i\theta})V - (1-e^{-i\theta})V^T \right) $$
+$$ H(\theta) = i \l\left( (1-e^{i\theta})V - (1-e^{-i\theta})V^T \r\right) $$
 **Physical Meaning**:
 This $H(\theta)$ is not the actual QCD Hamiltonian itself, but an **Effective Topological Hamiltonian** describing the excited states of the topological vacuum. The signature of its eigenvalues quantifies the chirality (left-right asymmetry) of the vacuum.
 
@@ -50,7 +50,7 @@ $$ \Omega_n(\theta) = \frac{\partial}{\partial \theta} \mathcal{A}_n(\theta) $$
 Results of numerical calculations for real link candidates (Strange=$L6a4$, Top=$L10a142$).
 
 **Figure A: Eigenvalue Spectrum Comparison**
-Strange (left) has a symmetric eigenvalue distribution with Signature($\pi$) = 0, while Top (right) shows a significant bias in eigenvalues with Signature($\pi$) = 6. This twist in the spectrum is the origin of the CP phase.
+Strange (left) has a symmetric eigenvalue distribution with Signature($\pi$) = 0, while Top (r\right) shows a significant bias in eigenvalues with Signature($\pi$) = 6. This twist in the spectrum is the origin of the CP phase.
 ![Topological Spectral Flow](figures/refined_spectrum.png)
 
 **Figure B: Convergence of Numerical Calculation**

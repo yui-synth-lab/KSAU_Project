@@ -76,7 +76,7 @@ The user wants to complete the lepton spectral resonance map:
 from sage.knots.knot import Knots
 K = Knots().from_table(3, 1)  # Trefoil
 J3 = K.colored_jones_polynomial(3)  # N=3 colored Jones
-q = exp(2*pi*I/3)
+q =\exp(2*pi*I/3)
 kashaev_3 = J3(q)
 ```
 
@@ -111,7 +111,7 @@ M = snappy.Link('3_1')
 
 1. **If ⟨3₁⟩₃ / τ(3₁) ≈ Nκ (within ~2% error):**
    - Resonance extends to low-volume regime
-   - Pattern: electron + muon are resonant, tau is not
+   - Pattern: electron + muon are resonant,\tau is not
    - Interpretation: Volume < 2.5 exhibits resonance
 
 2. **If ⟨3₁⟩₃ / τ(3₁) ≠ Nκ (large error):**
@@ -178,7 +178,7 @@ M = snappy.Link('3_1')
 **Do NOT use the figure-eight formula:**
 $$\langle 4_1\rangle_3 = \sum_{n=0}^{2} \prod_{j=1}^{n} |1-e^{2\pi ij/3}|^2 = 13$$
 
-This is specific to 4₁. The trefoil has a **different state sum structure**.
+This is specific to 4₁. The trefoil has a **different state\sum structure**.
 
 ---
 
@@ -203,6 +203,6 @@ This is specific to 4₁. The trefoil has a **different state sum structure**.
 
 ---
 
-**Thank you for taking on this critical calculation. The integrity of v7.1 depends on getting this right.**
+**Thank you for taking on this critical calculation. The integrity of v7.1 depends on getting this\right.**
 
 *Claude (Theoretical Auditor) | 2026-02-14*

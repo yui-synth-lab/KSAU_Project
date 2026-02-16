@@ -30,12 +30,12 @@ This is because KnotInfo contains the **ordinary Jones polynomial** J(t), which 
 ### 1.2 Why This Happened
 
 The ordinary Jones polynomial J(t) satisfies:
-$$J(K; e^{2\pi i/3}) = 1 \quad \text{for ALL knots}$$
+$$J(K; e^{2\pi i/3}) = 1 \quad \t\text{for ALL knots}$$
 
 This is a well-known identity related to the fact that q = e^{2πi/3} is a root of the quantum dimension formula for N=2.
 
 The Kashaev invariant requires the **colored** Jones polynomial:
-$$J_N(K; q) = \text{Trace of quantum R-matrix in N-dimensional representation}$$
+$$J_N(K; q) = \t\text{Trace of quantum R-matrix in N-dimensional representation}$$
 
 For N=3, this is a completely different polynomial than the ordinary J(t).
 

@@ -61,7 +61,7 @@ KSAU v3.4 addresses these concerns through:
 
 The core hypothesis of KSAU v3.4 is a discrete symmetry between quantum charge and topological structure:
 
-$$\boxed{\text{Component Number } (C) \leftrightarrow \text{Electric Charge } (Q)}$$
+$$\boxed{\t\text{Component Number } (C) \leftrightarrow \t\text{Electric Charge } (Q)}$$
 
 Specifically:
 
@@ -89,7 +89,7 @@ The volume functional in hyperbolic geometry has deep connections to topological
 
 1. **Chern-Simons Theory:** The hyperbolic volume appears as the classical action in 3D gravity [1].
 2. **Volume Conjecture:** Relates quantum knot invariants (colored Jones polynomial) to hyperbolic volume [2, 3].
-3. **AdS/CFT Correspondence:** Hyperbolic 3-manifolds are quotients of $\text{AdS}_3$ space, potentially linking to boundary conformal field theories.
+3. **AdS/CFT Correspondence:** Hyperbolic 3-manifolds are quotients of $\t\text{AdS}_3$ space, potentially linking to boundary conformal field theories.
 
 While a first-principles derivation of the linear $\ln(m)$-$V$ relation remains a goal for future work, the empirical evidence presented here suggests this connection is more than coincidental.
 
@@ -154,7 +154,7 @@ To verify that the observed correlation is not an artifact of selection bias or 
 | 4 | $L10n82$ | 9.4883 | 10 | 8.85 | |
 | 5 | $L10a156$ | 9.5843 | 10 | 9.47 | |
 
-**Interpretation:** The v3.3 candidate ($L11n345$) was a local minimum. The new candidate ($L10n95$) is the unique rank-1 solution, separated by $\Delta(\text{MAE}) = 0.14\%$ from the second-best candidate.
+**Interpretation:** The v3.3 candidate ($L11n345$) was a local minimum. The new candidate ($L10n95$) is the unique rank-1 solution, separated by $\Delta(\t\text{MAE}) = 0.14\%$ from the second-best candidate.
 
 #### Charm Quark (2-Component Links)
 
@@ -172,7 +172,7 @@ To verify that the observed correlation is not an artifact of selection bias or 
 
 ![Figure 2: Predicted vs Observed Quark Masses](figures/Fig3_Predicted_vs_Observed_v34.png)
 
-**Figure 2.** Predicted masses (from the linear regression on $\ln(m)$ vs $V$) plotted against observed PDG values on log-log axes [8]. The diagonal line represents perfect agreement. All six quarks lie close to the diagonal, with charm (C) showing the closest agreement ($0.1\%$ error).
+**Figure 2.** Predicted masses (from the linear regression on $\ln(m)$ vs $V$) plotted against observed PDG values on\log-log axes [8]. The diagonal line represents perfect agreement. All six quarks lie close to the diagonal, with charm (C) showing the closest agreement ($0.1\%$ error).
 
 **Statistical Metrics:**
 - **Pearson $R^2$:** $0.9992$ (variance explained)
@@ -258,7 +258,7 @@ where $N$ is the knot crossing number. This implies an exponential relationship 
 
 The combined lepton-quark results suggest a broader principle:
 
-$$\boxed{\text{Topological Structure} \longleftrightarrow \text{Quantum Identity (Flavor, Charge, Generation)}}$$
+$$\boxed{\t\text{Topological Structure} \longleftrightarrow \t\text{Quantum Identity (Flavor, Charge, Generation)}}$$
 
 - **Leptons:** Knots (single-component) → $\ln(m) \propto N^2$ scaling
 - **Quarks:** Multi-component links ($C = 2$ or $C = 3$) → $\ln(m) \propto V$ scaling

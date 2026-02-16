@@ -35,7 +35,7 @@ The measured value κ ≈ 0.1200 is **not a discrepancy** but rather evidence of
 
 **Key Results:**
 - Wilson loop expectation value in SU(2)_k CS theory = **Jones polynomial**
-- Partition function parameter: `q = exp(2πi/(k+h))` where h = dual Coxeter number
+- Partition function parameter: `q =\exp(2πi/(k+h))` where h = dual Coxeter number
 - **For SU(2):** h = 2, so effective level shifts k → k+2
 - Partition function exhibits **modular form** structure
 
@@ -56,7 +56,7 @@ Quantum correction: κ_eff  = π/26 ≈ 0.1208
 **Key Results:**
 - For hyperbolic knot K, asymptotic expansion of colored Jones polynomial:
   ```
-  lim_{N→∞} (2π/N) log|J_N(K; q)| = Vol(S³\K)
+  lim_{N→∞} (2π/N)\log|J_N(K; q)| = Vol(S³\K)
   ```
 - **Complexified version** (Murakami et al., 2002):
   `Complex Volume = Vol(M) + i · 2π² · cs(M)`
@@ -64,7 +64,7 @@ Quantum correction: κ_eff  = π/26 ≈ 0.1208
 - Recent work (Feb 2025) extends this to n-colored Jones polynomials with improved phase predictions
 
 **Implication for KSAU:**
-The Volume Conjecture provides the **rigorous theoretical framework** for the mass-volume correlation ln(m) ∝ V. The coupling κ naturally appears in the asymptotic expansion of CS path integrals as π/k_eff. This validates KSAU's phenomenological approach as consistent with quantum topology.
+The Volume Conjecture provides the **rigorous theoretical framework** for the mass-volume correlation\ln(m) ∝ V. The coupling κ naturally appears in the asymptotic expansion of CS path integrals as π/k_eff. This validates KSAU's phenomenological approach as consistent with quantum topology.
 
 ### 2.3 Borromean Rings Hyperbolic Geometry
 
@@ -169,11 +169,10 @@ A possible route:
 **Mathematical hint:**
 The Lobachevsky function satisfies:
 ```
-Л(θ) = −∫₀^θ log|2sin(t)| dt
+Л(θ) = −∫₀^θ\log|2sin(t)| dt
 ```
 Evaluated at θ=π/4, this may relate to the CS action on the octahedral triangulation. Investigate whether:
-```
-exp(C_q / κ) or exp(C_l / κ) ~ V_Borr / V_reference
+```\exp(C_q / κ) or\exp(C_l / κ) ~ V_Borr / V_reference
 ```
 
 ### Q3: Documentation Standards for v7.0 Roadmap

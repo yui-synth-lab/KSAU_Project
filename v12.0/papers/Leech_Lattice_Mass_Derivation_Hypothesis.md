@@ -12,10 +12,10 @@ We propose a candidate first-principles derivation of the electron mass hierarch
 
 ## 2. The Identity: $16.4\pi$
 The observed hierarchy factor $X \approx 51.5221$ matches the following geometric construction:
-$$ X = \pi \left( \text{Rank}_{Gauge} + \frac{\text{Rank}_{Vacuum}}{|A_5|} \right) $$
+$$ X = \pi \l\left( \t\text{Rank}_{Gauge} + \frac{\t\text{Rank}_{Vacuum}}{|A_5|} \r\right) $$
 Where:
-- $\text{Rank}_{Gauge} = 16$ (The rank of $E_8 \times E_8$ or the dimensionality of two $E_8$ sublattices).
-- $\text{Rank}_{Vacuum} = 24$ (The rank of the Leech lattice $\Lambda_{24}$).
+- $\t\text{Rank}_{Gauge} = 16$ (The rank of $E_8 \times E_8$ or the dimensionality of two $E_8$ sublattices).
+- $\t\text{Rank}_{Vacuum} = 24$ (The rank of the Leech lattice $\Lambda_{24}$).
 - $|A_5| = 60$ (The order of the icosahedral rotational group, a key stabilizer in $Co_0$).
 
 Calculation:

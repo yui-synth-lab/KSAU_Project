@@ -37,12 +37,12 @@ The choice of $N=3$ in the Kashaev invariant is not a fit parameter; it is a **p
 The Kashaev invariant for the figure-eight knot ($4_1$) at $N=3$ is mathematically defined and exactly equal to an integer:
 $$\langle 4_1 \rangle_3 = \sum_{n=0}^{2} \prod_{j=1}^{n} |1 - e^{2\pi i j / 3}|^2 = 1 + 3 + 9 = \mathbf{13.0}$$
 This is an **algebraic identity**, not an approximation. The resulting mass prediction:
-$$\frac{2\pi}{3} \ln(13) = 5.372 \quad \text{vs} \quad \ln(m_\mu/m_e) = 5.332$$
+$$\frac{2\pi}{3} \ln(13) = 5.372 \quad \t\text{vs} \quad \ln(m_\mu/m_e) = 5.332$$
 **Accuracy: 0.75% error.** This agreement with a discrete mathematical constant (13) strongly suggests that the Muon mass is "topologically locked."
 
 ### 4.2 Tau: The "49" Target
 The Tau mass ratio $\ln(m_\tau/m_e) \approx 8.154$ requires a Kashaev value of **49**.
-$$\frac{2\pi}{3} \ln(49) = 8.151 \quad (\text{Error: 0.04%})$$
+$$\frac{2\pi}{3} \ln(49) = 8.151 \quad (\t\text{Error: 0.04%})$$
 The integer $49 = 7^2$ suggests that the Tau corresponds to a **Connected Sum ($K \# K$)** or a cabling where the base invariant is 7. The search for a knot with $\langle K \rangle_3 = 7$ is the primary objective for v7.1.
 
 ---

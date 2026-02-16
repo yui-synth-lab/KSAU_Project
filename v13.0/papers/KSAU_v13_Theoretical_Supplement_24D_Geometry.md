@@ -18,10 +18,10 @@ The Standard Model does not provide a mechanism for the absolute values of the f
 
 ## 3. The 16.4$\pi$ Alignment
 We observe that the hierarchy factor $X$ can be reconstructed using a minimal set of integers derived from the Niemeier lattice hierarchy:
-$$ X \approx \pi \left( 	ext{Rank}_{Gauge} + \frac{	ext{Rank}_{Vacuum}}{|A_5|} ight) = \pi \left( 16 + \frac{24}{60} ight) = 16.4\pi \approx 51.522 $$
-
+$$ X \approx \pi \l\left( \t\text{Rank}_{Gauge} + \frac{\t\text{Rank}_{Vacuum}}{|A_5|} \\r\right) = \pi \l\left( 16 + \frac{24}{60} \\r\right) = 16.4\pi \approx 51.522 $$
+\times
 Where the coefficients are physically motivated as follows:
-- **16 (Gauge Rank):** The dimensionality of the $E_8 	imes E_8$ lattice, a common feature in heterotic string theory and a sub-lattice of the Niemeier series.
+- **16 (Gauge Rank):** The dimensionality of the $E_8\times E_8$ lattice, a common feature in heterotic string theory and a sub-lattice of the Niemeier series.
 - **24 (Vacuum Rank):** The rank of the Leech lattice $\Lambda_{24}$, representing the total dimensionality of the topological bulk.
 - **60 (Symmetry Order):** The order of the icosahedral group $A_5$, which acts as a stabilizer in the 24D $	o$ 4D projection.
 

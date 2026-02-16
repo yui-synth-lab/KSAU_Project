@@ -14,17 +14,17 @@ KSAU v8.0 identifies the universe as a 24-dimensional modular vacuum governed by
 ## 2. Fundamental Equations of TBD
 
 ### 2.1 The Temporal Langevin Equation
-Time is not a smooth parameter but the result of a microscopic stochastic process. The observable time $t$ evolves relative to an internal causal step $	au$:
+Time is not a smooth parameter but the result of a microscopic stochastic process. The observable time $t$ evolves relative to an internal causal step $\tau$:
 
-$$dt = \mu_t d	au + \sigma_t dW_	au$$
+$$dt = \mu_t d\tau + \sigma_t dW_\tau$$
 
-Where $dW_	au$ is a Wiener process in the 24D vacuum. The constancy of the speed of light $c$ emerges as the **diffusion limit velocity** of information within this fluid.
+Where $dW_\tau$ is a Wiener process in the 24D vacuum. The constancy of the speed of light $c$ emerges as the **diffusion limit velocity** of information within this fluid.
 
 ### 2.2 The Topological Navier-Stokes Equation
 The vacuum is a fluid with quantum kinematic viscosity $
 u_{vac} \equiv \kappa = \pi/24$. The evolution of the fluid velocity $\mathbf{v}$ (Temporal Wind) is governed by:
 
-$$\frac{\partial \mathbf{v}}{\partial 	au} + (\mathbf{v} \cdot 
+$$\frac{\partial \mathbf{v}}{\partial \tau} + (\mathbf{v} \cdot 
 abla) \mathbf{v} = -
 abla P + \kappa 
 abla^2 \mathbf{v} + \mathbf{F}_{top}$$
@@ -38,7 +38,7 @@ In TBD, mass is reinterpreted as the **Viscous Drag** experienced by a topologic
 1. **Excluded Volume ($V$):** The hyperbolic volume $V$ of a knot represents the amount of spacetime fluid excluded by the defect.
 2. **Viscosity ($\kappa$):** The constant $\kappa = \pi/24$ determines the resistance of the vacuum to structural changes.
 3. **Mass-Energy ($m$):** The energy required to maintain the knot against the "Temporal Wind" follows a scaling law:
-   $$ \ln(m) \approx - N \cdot \kappa \cdot V + 	ext{const} $$
+   $$ \ln(m) \approx - N \cdot \kappa \cdot V + \t\text{const} $$
 This explains why heavier particles are associated with larger hyperbolic volumes and higher crossing numbers.
 
 ## 4. Flavor Mixing as Stochastic Reconnection

@@ -7,7 +7,7 @@
 
 KSAU framework has **two independent physical requirements**:
 
-1. **Mass Hierarchy:** ln(m) ∝ V → Volume must monotonically increase with mass
+1. **Mass Hierarchy:**\ln(m) ∝ V → Volume must monotonically increase with mass
 2. **CKM Mixing:** |V_ij| ∝ f(ΔV, ΔlnJ) → Small geometric distance → Large mixing
 
 **Problem:** These requirements are **NOT automatically compatible**.

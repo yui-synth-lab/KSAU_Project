@@ -27,7 +27,7 @@ This suggests the Muon mass is governed by a localized **Golden Ratio resonance*
 
 ### 1.2 Structural Correspondence of Constants
 We identify deep geometric anchors for the KSAU parameters, treated as **Structural Correspondences**:
-- **$\kappa = \pi/24$**: Corresponds to the modular weight ($1/24$) of the Dedekind eta function governing the vacuum.
+- **$\kappa = \pi/24$**: Corresponds to the modular weight ($1/24$) of the Dedekind\eta function governing the vacuum.
 - **$N = 20$**: Hypothesized as the remnant degrees of freedom of a 24D vacuum projected onto 4D spacetime ($24-4=20$).
 
 ### 1.3 The Geometric Necessity of the 4_1 Resonance
@@ -35,7 +35,7 @@ The resonance in the Muon ($4_1$) is not a numerical coincidence but an algebrai
 1. **Tetrahedral Alignment**: The $4_1$ knot is composed of exactly **two ideal regular tetrahedra**, whose shape parameter is $z = e^{i\pi/3}$.
 2. **Evaluation Point Identity**: The $N=3$ Kashaev invariant evaluates the colored Jones polynomial at $q = e^{2\pi i/3}$. This is identically $z^2$, the square of the $4_1$ shape parameter.
 3. **Integer Quantization**: This precise alignment at the "regular" point forces the quantum terms $|1-q|^2$ to become the integer **3**.
-4. **The Fibonacci Bridge**: The resulting Habiro-type sum ($1 + 3 + 3^2 = 13$) and the Alexander torsion ($3 + 2 = 5$) generate the consecutive odd Fibonacci numbers $F_7$ and $F_5$.
+4. **The Fibonacci Bridge**: The resulting Habiro-type\sum ($1 + 3 + 3^2 = 13$) and the Alexander torsion ($3 + 2 = 5$) generate the consecutive odd Fibonacci numbers $F_7$ and $F_5$.
 
 We conclude that the Muon is the **"Geometric Ground State"** of the flavor sector, where the discrete evaluation of the vacuum ($N=3$) perfectly matches the minimal hyperbolic architecture of the knot.
 

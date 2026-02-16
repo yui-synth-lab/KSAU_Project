@@ -51,7 +51,7 @@ KSAU v6.0-v6.7 の全同期プロジェクトが完了しました。Phase 1-3 �
 **Verified metrics:**
 | Parameter | Predicted | Observed | Error |
 |-----------|-----------|----------|-------|
-| η_B | 9.06×10⁻¹¹ | 1.0×10⁻¹⁰ | <0.05 log-units |
+| η_B | 9.06×10⁻¹¹ | 1.0×10⁻¹⁰ | <0.05\log-units |
 | V_P | 44.90 | 44.90 (SSoT) | 1.1% |
 | DM ratio | 5.31 | 5.36 | 0.88% |
 
@@ -184,12 +184,10 @@ Phase 3 で多目的最適化 (CKM + Mass) を試行した結果、100万サン�
 **All constants from JSON:**
 ```python
 # Good practice (v6.7)
-consts = utils_v61.load_constants()
-kappa = consts['kappa']
+consts = utils_v61.load_constants()\kappa = consts['kappa']
 V_borr = consts['v_borromean']
 
-# Bad practice (avoided)
-kappa = 0.1309  # Hardcoded
+# Bad practice (avoided)\kappa = 0.1309  # Hardcoded
 ```
 
 ### 5.2 Algorithmic Selection (no hardcoding)
@@ -249,7 +247,7 @@ else:
 | **CKM R²** | 0.9988 | 🏆 Record |
 | **G derivation** | 99.92% | 🏆 Excellent |
 | **Boson masses** | 0.01-2.02% | 🏆 Excellent |
-| **Baryogenesis η_B** | <0.05 log-units | 🏆 Excellent |
+| **Baryogenesis η_B** | <0.05\log-units | 🏆 Excellent |
 | **DM ratio** | 0.88% | 🏆 Excellent |
 
 ---

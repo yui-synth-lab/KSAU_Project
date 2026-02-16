@@ -13,8 +13,8 @@ The KSAU framework has long relied on the empirical constant $\kappa = \pi/24$. 
 
 ## 2. Theoretical Foundation: Chern-Simons Level $k=24$
 The relationship between the coupling $\kappa$ and the Chern-Simons level $k$ is suggested by the Volume Conjecture. We treat the KSAU mass law as an effective proxy for the logarithmic partition function $\ln|Z(M, k)|$:
-$$ \ln |Z(M, k)| \sim \frac{k_{eff}}{2\pi} \text{Vol}(M) \implies k_{eff} \equiv \frac{2\pi}{N \text{Vol}(M)} (\ln m - C) $$
-Here, $\text{Vol}(M)$ corresponds precisely to the hyperbolic volume of the knot complement $M$. We propose that the fundamental "bare" geometry of 3-manifolds is constrained by the **Niemeier lattice classification**, which dictates exactly 24 even unimodular lattices in rank 24. This integer '24' appears as a dual signature: (i) as the rank of these unique lattices, and (ii) as the denominator of the established KSAU coupling $\kappa = \pi/24$. We interpret this coincidence as a geometric hint that the bare level of 3D Chern-Simons theory is identified with the Niemeier rank, grounding the ground-state level for topological mass generation.
+$$ \ln |Z(M, k)| \sim \frac{k_{eff}}{2\pi} \t\text{Vol}(M) \implies k_{eff} \equiv \frac{2\pi}{N \t\text{Vol}(M)} (\ln m - C) $$
+Here, $\t\text{Vol}(M)$ corresponds precisely to the hyperbolic volume of the knot complement $M$. We propose that the fundamental "bare" geometry of 3-manifolds is constrained by the **Niemeier lattice classification**, which dictates exactly 24 even unimodular lattices in rank 24. This integer '24' appears as a dual signature: (i) as the rank of these unique lattices, and (ii) as the denominator of the established KSAU coupling $\kappa = \pi/24$. We interpret this coincidence as a geometric hint that the bare level of 3D Chern-Simons theory is identified with the Niemeier rank, grounding the ground-state level for topological mass generation.
 
 ## 3. The Lepton Sector: Stability of the $\pi/24$ Phase
 Empirical measurement of $k_{eff}$ for charged leptons (Muon and Tau) reveals an extraordinary consistency:
@@ -33,9 +33,9 @@ Quarks exhibit the highest degree of parametric sensitivity. While a quantum-cor
 
 ## 5. Empirical Audit (Selected Results)
 **Table 1: Stability of $k_{eff}$ across Sectors**  
-*(Calculated using $N_q=8, C_q=-8.05$ for quarks; $N_{l,b}=20, C_{l,b}=-0.67$ for leptons and bosons. 'Volume' refers to hyperbolic volume $\text{Vol}(M)$.)*
+*(Calculated using $N_q=8, C_q=-8.05$ for quarks; $N_{l,b}=20, C_{l,b}=-0.67$ for leptons and bosons. 'Volume' refers to hyperbolic volume $\t\text{Vol}(M)$.)*
 
-| Particle | Sector | ln(m) | Volume | $k_{eff}$ (Measured) | Phase |
+| Particle | Sector |\ln(m) | Volume | $k_{eff}$ (Measured) | Phase |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Muon** | Lepton | 4.66 | 2.03 | **23.9** | **$\pi/24$ (Bare)** |
 | **Tau** | Lepton | 7.48 | 3.16 | **24.4** | **$\pi/24$ (Bare)** |

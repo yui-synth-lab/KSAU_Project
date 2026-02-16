@@ -32,7 +32,7 @@ We evaluate the Jones polynomial $V_K(t)$ at $t = e^{2\pi i/5}$.
 | Bottom | L10a140 | 21.5623 |
 | Top | L11a62 | 40.3199 |
 
-Using the Color Cube Law $|V_{ij}| = (d_{	ext{light}}/d_{	ext{heavy}})^3$:
+Using the Color Cube Law $|V_{ij}| = (d_{\t\text{light}}/d_{\t\text{heavy}})^3$:
 - **Cabibbo:** $(7.85/13.30)^3 \approx 0.206$ (Obs: 0.225)
 - **Vtd:** $(8.47/40.32)^3 \approx 0.0093$ (Obs: 0.0086)
 
@@ -48,4 +48,4 @@ The vacuum selects $4_1$ due to its minimal volume ($V_{4_1} \approx 2.03 < V_{6
 ## S5. Derivation of $\kappa = \pi/24$
 The coupling constant $\kappa$ appears in the central charge of 2D CFT ($c=1$) and the regularization of 1-loop determinants in hyperbolic geometry.
 $$ \kappa = \frac{\pi}{24} $$
-This is not a fitted parameter but a geometric constant related to the Dedekind eta function and the Casimir energy of the string worldsheet.
+This is not a fitted parameter but a geometric constant related to the Dedekind\eta function and the Casimir energy of the string worldsheet.

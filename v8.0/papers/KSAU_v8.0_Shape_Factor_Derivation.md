@@ -31,13 +31,13 @@ The value $N=20$ is highly significant in 24-dimensional geometry.
 
 ## 3. The Quarks: Multiples of 12 and 60
 For quarks, the $N$ values are larger ($N=60$ for Top/Bottom, $N=12$ for others).
-- **$12$:** This is the **Modular Weight** of the Dedekind eta function ($\eta^{24}$).
+- **$12$:** This is the **Modular Weight** of the Dedekind\eta function ($\eta^{24}$).
 - **$60$:** This is the order of the **Icosahedral Group ($A_5$)**, the smallest non-abelian simple group, representing the "Colored" degrees of freedom in the fluid.
 
 ## 4. Relationship between N and Crossing Number
 The simulation in `tbd_emergence_sim.py` suggests that the effective resistance is proportional to the number of nodes where the fluid must "swerve."
 
-$$ N \propto 	ext{Sym}(	ext{Knot}) \cdot 	ext{CrossingNumber} $$
+$$ N \propto \t\text{Sym}(\t\text{Knot}) \cdot \t\text{CrossingNumber} $$
 
 For heavy quarks (Top), the high crossing number combined with the icosahedral symmetry ($N=60$) creates a massive "drag," resulting in the highest observed mass.
 

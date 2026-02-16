@@ -17,8 +17,8 @@
 -----------------
 A) 公式の限界（最も有力）
 - 現行スケール則は近似であり、追加修正項 δ(N) が必要かもしれない。
-- 提案形:  ln(m) = (2/9) G · N^2 + C_L + δ(N)
-  - μ の場合 δ(6) ≈ ln(105.66/123.95) ≈ -0.157 が必要
+- 提案形:\ln(m) = (2/9) G · N^2 + C_L + δ(N)
+  - μ の場合 δ(6) ≈\ln(105.66/123.95) ≈ -0.157 が必要
 
 B) より良い候補の不存在
 - データベースを再検索したが、Det=odd で N≈5.93 を満たすノットは見つからず。
@@ -46,7 +46,7 @@ delta_by_N = {6: -0.157}  # example estimated from residuals
 # 既存の target_n2 計算の前に
 target_log_m = np.log(l_meta['observed_mass'])
 deltaN = delta_by_N.get(round(target_n), 0.0)
-target_n2 = (target_log_m - cl - kappa*twist + kappa*np.log(avg_det) - deltaN) / slope_l
+target_n2 = (target_log_m - cl -\kappa*twist +\kappa*np.log(avg_det) - deltaN) / slope_l
 ```
 
 - ただし今回の指示に従い、コードは変更しない（上記は将来案）。

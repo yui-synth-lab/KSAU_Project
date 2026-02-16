@@ -295,7 +295,7 @@ Expected: R² drops by >0.05 → Shows solution is locally optimal
 ```
 Run topology_selector_hybrid.py with increasing N
 N=5:  R²=0.20
-N=10: R²=??? (running)
+N=10: R²= ? (running)
 N=20: R²→0.99 (expected to converge to constrained search result)
 ```
 

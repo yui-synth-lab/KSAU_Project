@@ -31,15 +31,14 @@ The v2.3 roadmap demonstrates excellent responsiveness to critical review. The p
 - R² improvement: +1.2%
 
 **Critical Question:** What is the new regression formula?
-```math
-ln(m) = α·Vol + β·Sig(π) + γ·L_tot + δ·N_c + ε_gen
+```math\ln(m) = α·Vol + β·Sig(π) + γ·L_tot + δ·N_c + ε_gen
 ```
 
 **Request:** Provide the actual fitted parameters and their standard errors:
 ```
 α = 0.96 ± 0.XX
-β = ??.?? ± 0.XX
-γ = ??.?? ± 0.XX
+β =  .  ± 0.XX
+γ =  .  ± 0.XX
 ...
 ```
 
@@ -65,9 +64,9 @@ writhe = M.writhe()  # If available
 def calculate_writhe(crossing_list):
     """
     crossing_list: [(over_strand, under_strand, sign), ...]
-    sign = +1 for right-handed, -1 for left-handed
+    sign = +1 for\right-handed, -1 for\left-handed
     """
-    return sum(sign for _, _, sign in crossing_list)
+    return\sum(sign for _, _, sign in crossing_list)
 ```
 
 **Specific Recommendation:**
@@ -79,8 +78,7 @@ Since you already have Hyperbolic Volume data from LinkInfo Database, check if t
 - **Recommended Alternative:** Use a single "generation penalty" function
 
 ```python
-# Instead of separate C_gen for each generation:
-ln(m) = α·Vol + β·Sig + γ·L_tot + δ·(gen_index)²
+# Instead of separate C_gen for each generation:\ln(m) = α·Vol + β·Sig + γ·L_tot + δ·(gen_index)²
 
 # This adds only ONE parameter instead of three
 # Physical interpretation: vacuum expectation value increases 
@@ -181,12 +179,12 @@ def select_quark_link(generation, quark_type, candidate_db):
     # Step 3: Minimize "distance" from target mass scale
     # (This requires iterative fitting, but for first pass:)
     target_mass_scale = {
-        (1, 'up-type'): 2.2,      # log(2.16 MeV) + offset
-        (1, 'down-type'): 4.7,    # log(4.67 MeV) + offset
-        (2, 'up-type'): 7.15,     # log(1270 MeV)
-        (2, 'down-type'): 4.5,    # log(93.4 MeV)
-        (3, 'up-type'): 12.06,    # log(173 GeV)
-        (3, 'down-type'): 8.34    # log(4.18 GeV)
+        (1, 'up-type'): 2.2,      #\log(2.16 MeV) + offset
+        (1, 'down-type'): 4.7,    #\log(4.67 MeV) + offset
+        (2, 'up-type'): 7.15,     #\log(1270 MeV)
+        (2, 'down-type'): 4.5,    #\log(93.4 MeV)
+        (3, 'up-type'): 12.06,    #\log(173 GeV)
+        (3, 'down-type'): 8.34    #\log(4.18 GeV)
     }
     
     target = target_mass_scale[(generation, quark_type)]
@@ -274,7 +272,7 @@ print(f"p-value: {p_value}")  # Should be < 0.05 for significance
 ### 3.X Abelian Projection and Wilson Loops
 
 The Wilson loop in full QCD is:
-$$W_C[A] = \text{Tr}\left[P \exp\left(ig \oint_C A_\mu dx^\mu\right)\right]$$
+$$W_C[A] = \t\text{Tr}\left[P \exp\l\left(ig \oint_C A_\mu dx^\mu\r\right)\right]$$
 
 Under **Maximal Abelian Gauge** (MAG):
 $$A_\mu = A_\mu^{diag} + A_\mu^{off-diag}$$
@@ -285,7 +283,7 @@ where $A_\mu^{diag} \in \mathfrak{h}$ (Cartan subalgebra).
 In the confinement phase, off-diagonal gluons are suppressed by 
 monopole condensation, and the dominant contribution becomes:
 
-$$\langle W_C \rangle \approx \exp\left(ig \oint_C A_\mu^{diag} dx^\mu\right)
+$$\langle W_C \rangle \approx \exp\l\left(ig \oint_C A_\mu^{diag} dx^\mu\r\right)
                          = \exp(i\theta_R + i\theta_G + i\theta_B)$$
 
 where $\theta_c \in U(1)$ for each color $c \in \{R,G,B\}$.
@@ -322,7 +320,7 @@ by our 3-component link $L = K_R \cup K_G \cup K_B$.
 ```
 where $D_{ub} = w_c(\Delta n_c)^2 + w_g(\Delta n_g)^3 + w_l|\Delta L|$
 
-**Numerical Target:** $(3.82 \pm 0.24) \times 10^{-3}$ (PDG 2024)
+**Numerical Target:** $(3.82 \pm 0.24) \\times 10^{-3}$ (PDG 2024)
 
 **Required Precision Calculation:**
 
@@ -341,7 +339,7 @@ D_ub = w_c * delta_nc**2 + w_g * delta_ng**3 + w_l * delta_L
 
 # Fit to get w_c, w_g, w_l from ALL CKM elements
 # Then predict:
-V_ub_predicted = exp(-k * D_ub)
+V_ub_predicted =\exp(-k * D_ub)
 
 # Report with uncertainty:
 print(f"|V_ub| = {V_ub_predicted:.4e} ± {uncertainty:.4e}")
@@ -353,7 +351,7 @@ print(f"|V_ub| = {V_ub_predicted:.4e} ± {uncertainty:.4e}")
 
 **SM Prediction:** 
 ```math
-C_{SM} = \frac{N_{\text{same}} - N_{\text{opposite}}}{N_{\text{total}}} = -0.41
+C_{SM} = \frac{N_{\t\text{same}} - N_{\t\text{opposite}}}{N_{\t\text{total}}} = -0.41
 ```
 
 **KSAU Correction:**
@@ -364,15 +362,15 @@ The Signature of the top link introduces a chiral asymmetry:
 # Signature at θ=π: Sig(π) = 6 (from your data)
 
 # Proposed correction formula:
-delta_topo = (Sig_top / Max_Sig_observed) * epsilon
-           = (6 / 14) * epsilon  # Normalize to max observed Sig
+delta_topo = (Sig_top / Max_Sig_observed) *\epsilon
+           = (6 / 14) *\epsilon  # Normalize to max observed Sig
 
-# Tune epsilon to match experimental constraints:
+# Tune\epsilon to match experimental constraints:
 # Current LHC measurement: C_exp = -0.43 ± 0.04
 C_KSAU = C_SM + delta_topo
        = -0.41 + delta_topo
 
-# Fit epsilon such that |C_KSAU - C_exp| is minimized
+# Fit\epsilon such that |C_KSAU - C_exp| is minimized
 ```
 
 **Prediction for LHC Run 4:**
@@ -395,14 +393,14 @@ the topological Signature contribution is ruled out.
 
 The Higgs Yukawa coupling for quark $q$ is:
 ```math
-\mathcal{L}_{Yukawa} = -y_q \bar{Q}_L H q_R + \text{h.c.}
+\mathcal{L}_{Yukawa} = -y_q \bar{Q}_L H q_R + \t\text{h.c.}
 ```
 
 After EWSB: $m_q = y_q \langle H \rangle / \sqrt{2}$
 
 **KSAU Hypothesis:**
 ```math
-y_q = y_0 \exp(\alpha \cdot \text{Vol}(L_q) + \beta \cdot \text{Sig}(L_q))
+y_q = y_0 \exp(\alpha \cdot \t\text{Vol}(L_q) + \beta \cdot \t\text{Sig}(L_q))
 ```
 
 where $y_0$ is a universal coupling constant (maybe related to Planck scale?).
@@ -417,16 +415,14 @@ where $y_0$ is a universal coupling constant (maybe related to Planck scale?).
 If this is correct, there should be a correlation between:
 - Quark mass ratios: $m_t / m_b$
 - Yukawa coupling ratios: $y_t / y_b$  
-- Hyperbolic volume ratios: $\text{Vol}(L_t) / \text{Vol}(L_b)$
+- Hyperbolic volume ratios: $\t\text{Vol}(L_t) / \t\text{Vol}(L_b)$
 
 ```python
 # Check this relation:
 mass_ratio = m_top / m_bottom  # ≈ 41.4
 vol_ratio = Vol_L10a56 / Vol_L10a140  # = 17.86 / 12.28 ≈ 1.45
 
-# If KSAU is correct:
-ln(mass_ratio) ≈ α * (Vol_top - Vol_bottom)
-ln(41.4) ≈ α * (17.86 - 12.28)
+# If KSAU is correct:\ln(mass_ratio) ≈ α * (Vol_top - Vol_bottom)\ln(41.4) ≈ α * (17.86 - 12.28)
 3.72 ≈ α * 5.58
 α ≈ 0.67  # Compare to your fitted α ≈ 0.96
 ```
@@ -577,7 +573,7 @@ ways to compactify hyperbolic 3-space consistent with:
 
 3. **Comparison with Koide Formula** (Week 3)
    - Koide formula for charged leptons: $(m_e + m_\mu + m_\tau)^2 / (m_e^2 + m_\mu^2 + m_\tau^2) = 2/3$
-   - Check if similar sum rules exist for quarks in KSAU
+   - Check if similar\sum rules exist for quarks in KSAU
    - Could strengthen connection to mass ratios
 
 4. **Preprint to Journal Submission** (Week 6-8)

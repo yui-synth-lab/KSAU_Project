@@ -18,7 +18,7 @@
 
 ## Abstract
 
-We present a working hypothesis proposing that lepton masses originate from topological properties of knots, specifically their Möbius energy. By assigning specific knots to each lepton generation—the trefoil (3₁) to the electron, the achiral knot 6₃ to the muon, and the torus knot 7₁ to the tau—we find that the mass ratios can be reproduced with notable accuracy.
+We present a working hypothesis proposing that lepton masses originate from topological properties of knots, specifically their Möbius energy. By assigning specific knots to each lepton generation—the trefoil (3₁) to the electron, the achiral knot 6₃ to the muon, and the torus knot 7₁ to the\tau—we find that the mass ratios can be reproduced with notable accuracy.
 
 A key empirical observation is that the mass scaling constant γ_m ≈ 0.373 closely matches 1/e ≈ 0.368 (Euler's number inverse), with a relative deviation of only 1.4%. This suggests a potential connection between mass generation and information-theoretic principles, though this interpretation remains speculative at present.
 
@@ -59,7 +59,7 @@ However, it does not yet:
 
 The Möbius energy E(K) of a knot K, introduced by O'Hara (1991), is defined as:
 
-$$E(K) = \iint_{K \times K} \left( \frac{1}{|x - y|^2} - \frac{1}{d_K(x,y)^2} \right) |dx| |dy|$$
+$$E(K) = \iint_{K \times K} \l\left( \frac{1}{|x - y|^2} - \frac{1}{d_K(x,y)^2} \r\right) |dx| |dy|$$
 
 where d_K(x,y) is the arc length along the knot. This energy is conformally invariant and provides a measure of knot complexity.
 
@@ -160,7 +160,7 @@ The proximity of γ to 1/e is intriguing but should be interpreted cautiously. W
 
 If γ = 1/e holds exactly, the mass formula becomes:
 
-$$m(K) = m_0 \cdot \exp\left(\frac{E(K) - E_0}{e}\right)$$
+$$m(K) = m_0 \cdot \exp\l\left(\frac{E(K) - E_0}{e}\r\right)$$
 
 This form is aesthetically appealing and **consistent with** an information-theoretic interpretation where mass represents "exponentiated complexity," but such an interpretation remains speculative.
 

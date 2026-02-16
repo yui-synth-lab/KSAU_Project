@@ -48,8 +48,7 @@ E ∝ Vol  (correlation R ≈ 0.85 for prime knots)
 For 3-component links (quarks):
 Vol is the primary invariant, E is harder to compute
 
-Unified framework:
-ln(m) = α₁·I₁ + α₂·I₂ + α₃·I₃ + β
+Unified framework:\ln(m) = α₁·I₁ + α₂·I₂ + α₃·I₃ + β
 
 where:
 - Leptons: I₁ = E (Möbius energy), I₂ = I₃ = 0
@@ -64,10 +63,10 @@ Combining lepton and quark masses creates an even wider hierarchy:
 
 | Particle | Mass (MeV) | log₁₀(m/MeV) | Range |
 |----------|-----------|--------------|-------|
-| Electron | 0.511 | -0.29 | Lepton (light) |
+| Electron | 0.511 | -0.29 | Lepton (l\right) |
 | Muon | 105.7 | 2.02 | Lepton (medium) |
 | **Up** | **2.16** | **0.33** | **Quark (lightest)** |
-| **Down** | **4.67** | **0.67** | **Quark (light)** |
+| **Down** | **4.67** | **0.67** | **Quark (l\right)** |
 | **Strange** | **93.4** | **1.97** | **Quark (medium)** |
 | **Charm** | **1270** | **3.10** | **Quark (heavy)** |
 | Tau | 1776.9 | 3.25 | Lepton (heavy) |
@@ -84,7 +83,7 @@ This is an even more stringent test than either sector alone!
 
 ### 2.1 Data Table for 9-Particle Regression
 
-| Particle | Type | Topology | E (if knot) | Vol | Sig(π) | L_tot | ln(m_obs) |
+| Particle | Type | Topology | E (if knot) | Vol | Sig(π) | L_tot |\ln(m_obs) |
 |----------|------|----------|-------------|-----|--------|-------|-----------|
 | **e** | Lepton | 3₁ knot | 78.5 | ~7.0* | 0 | 0 | -0.67 |
 | **μ** | Lepton | 6₃ knot | 87.8 | ~9.5* | 0 | 0 | 4.66 |
@@ -125,9 +124,7 @@ def unified_predictor(particle):
 
 **Model B: Dual-Channel Architecture**
 ```python
-# Keep E and Vol separate, let regression find relationship
-
-ln(m) = α_E * E + α_V * Vol + β * Sig + γ * L + intercept
+# Keep E and Vol separate, let regression find relationship\ln(m) = α_E * E + α_V * Vol + β * Sig + γ * L + intercept
 
 # For leptons: Vol = 0 (or estimated), E = measured
 # For quarks: E = 0 (unavailable), Vol = measured
@@ -173,8 +170,8 @@ N = 9 particles
 Combinatorial space increases exponentially
 
 Estimate using binomial approximation:
-p(N=9) ≈ p(N=6) × exp(-k × ΔN)
-       ≈ 0.053 × exp(-k × 3)
+p(N=9) ≈ p(N=6) ×\exp(-k × ΔN)
+       ≈ 0.053 ×\exp(-k × 3)
 
 If k ≈ 0.5:  p ≈ 0.053 × 0.22 ≈ 0.012 ✓ (significant)
 If k ≈ 0.8:  p ≈ 0.053 × 0.09 ≈ 0.005 ✓✓ (highly significant)
@@ -407,8 +404,8 @@ fig, axes = plt.subplots(2, 3, figsize=(18, 12))
 
 # Panel 1: Mass predictions (log scale)
 ax = axes[0, 0]
-ax.scatter(y, y_pred, s=100, alpha=0.7, c=['blue']*3 + ['red']*6)
-ax.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', alpha=0.5)
+ax.scatter(y, y_pred, s=100,\alpha=0.7, c=['blue']*3 + ['red']*6)
+ax.plot([y.min(), y.max()], [y.min(), y.max()], 'k--',\alpha=0.5)
 for i, p in enumerate(data['particle']):
     ax.annotate(p, (y.iloc[i], y_pred[i]), fontsize=10)
 ax.set_xlabel('ln(Observed Mass)')
@@ -420,47 +417,47 @@ ax = axes[0, 1]
 masses_obs = np.exp(y)
 masses_pred = np.exp(y_pred)
 x_pos = np.arange(9)
-ax.bar(x_pos - 0.2, masses_obs, 0.4, label='Observed', alpha=0.7)
-ax.bar(x_pos + 0.2, masses_pred, 0.4, label='Predicted', alpha=0.7)
+ax.bar(x_pos - 0.2, masses_obs, 0.4, label='Observed',\alpha=0.7)
+ax.bar(x_pos + 0.2, masses_pred, 0.4, label='Predicted',\alpha=0.7)
 ax.set_xticks(x_pos)
 ax.set_xticklabels(data['particle'])
 ax.set_yscale('log')
 ax.set_ylabel('Mass (MeV)')
 ax.set_title('9-Particle Mass Hierarchy')
 ax.legend()
-ax.grid(True, alpha=0.3, axis='y')
+ax.grid(True,\alpha=0.3, axis='y')
 
 # Panel 3: Residuals by particle type
 ax = axes[0, 2]
 lepton_residuals = residuals[data['type'] == 'lepton']
 quark_residuals = residuals[data['type'] == 'quark']
 ax.boxplot([lepton_residuals, quark_residuals], labels=['Leptons', 'Quarks'])
-ax.axhline(0, color='r', linestyle='--', alpha=0.5)
+ax.axhline(0, color='r', linestyle='--',\alpha=0.5)
 ax.set_ylabel('Residual (ln scale)')
 ax.set_title('Sector-Specific Residual Analysis')
-ax.grid(True, alpha=0.3, axis='y')
+ax.grid(True,\alpha=0.3, axis='y')
 
 # Panel 4: Volume vs Mass correlation
 ax = axes[1, 0]
-ax.scatter(data['Vol'], y, s=100, alpha=0.7, 
+ax.scatter(data['Vol'], y, s=100,\alpha=0.7, 
           c=['blue' if t == 'lepton' else 'red' for t in data['type']])
 for i, p in enumerate(data['particle']):
     ax.annotate(p, (data['Vol'].iloc[i], y.iloc[i]), fontsize=10)
 ax.set_xlabel('Hyperbolic Volume')
 ax.set_ylabel('ln(Mass)')
 ax.set_title('Universal Volume-Mass Relation')
-ax.grid(True, alpha=0.3)
+ax.grid(True,\alpha=0.3)
 
 # Panel 5: Signature contribution (quarks only)
 ax = axes[1, 1]
 quark_data = data[data['type'] == 'quark']
-ax.scatter(quark_data['Sig'], quark_data['ln_mass'], s=100, alpha=0.7)
+ax.scatter(quark_data['Sig'], quark_data['ln_mass'], s=100,\alpha=0.7)
 for i, row in quark_data.iterrows():
     ax.annotate(row['particle'], (row['Sig'], row['ln_mass']), fontsize=10)
 ax.set_xlabel('Signature (π)')
 ax.set_ylabel('ln(Mass)')
 ax.set_title('Signature Effect (Quarks Only)')
-ax.grid(True, alpha=0.3)
+ax.grid(True,\alpha=0.3)
 
 # Panel 6: Statistical summary
 ax = axes[1, 2]
@@ -500,7 +497,7 @@ summary_text += interp
 
 ax.text(0.05, 0.95, summary_text, transform=ax.transAxes,
         fontsize=9, family='monospace', verticalalignment='top',
-        bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.8))
+        bbox=dict(boxstyle='round', facecolor='lightblue',\alpha=0.8))
 ax.axis('off')
 
 plt.tight_layout()
@@ -609,8 +606,7 @@ plt.show()
 
 **If E-Vol correlation is weak (R < 0.7):**
 ```python
-# Use indicator variables
-ln(m) = α_E·E·I_lepton + α_V·Vol·I_quark + β·Sig + γ·L + intercept
+# Use indicator variables\ln(m) = α_E·E·I_lepton + α_V·Vol·I_quark + β·Sig + γ·L + intercept
 ```
 
 **If p-value stays > 0.05:**

@@ -32,7 +32,7 @@ In v9.0, we interpret this factor of $10\pi^2$ as the **Holographic Information 
 $$ G_N \propto e^{- (\dim_{bulk} - \dim_{spacetime}) \cdot \pi^2 / 2} $$
 
 ## 5. The Cosmological Constant $\Lambda$
-The residual energy density of the 24D fluid (the "Zero Point Energy") acts as the cosmological constant $\Lambda$. In the Leech lattice vacuum, this is related to the **Modular Discriminant** $\Delta(	au)$, providing a natural explanation for the smallness of $\Lambda$ via modular suppression.
+The residual energy density of the 24D fluid (the "Zero Point Energy") acts as the cosmological constant $\Lambda$. In the Leech lattice vacuum, this is related to the **Modular Discriminant** $\Delta(\tau)$, providing a natural explanation for the smallness of $\Lambda$ via modular suppression.
 
 ---
 *KSAU Theoretical Kernel | v9.0 TBD-Einstein Gravity*

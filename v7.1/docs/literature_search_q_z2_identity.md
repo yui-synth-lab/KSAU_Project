@@ -42,7 +42,7 @@ Source: [Ideal polyhedron - Wikipedia](https://en.wikipedia.org/wiki/Ideal_polyh
 
 Source: [CHAPTER 9 Volume and angle structures](https://users.monash.edu/~jpurcell/book/09AngleStructures.pdf)
 
-> "Opposite dihedral angles of an ideal tetrahedron are pairwise equal and the sum of dihedral angles at the edges adjacent to one vertex is A + B + C = π."
+> "Opposite dihedral angles of an ideal tetrahedron are pairwise equal and the\sum of dihedral angles at the edges adjacent to one vertex is A + B + C = π."
 
 For a **regular** ideal tetrahedron: $A = B = C = \pi/3$ ✅
 
@@ -71,7 +71,7 @@ Source: Multiple geometry textbooks (WebSearch results)
 
 **Known relation:** For a tetrahedron with dihedral angles $A, B, C$:
 - Shape parameters: $z, \frac{1}{1-z}, \frac{z-1}{z}$ (associated with opposite edge pairs)
-- Volume formula involves $\text{Lobachevsky}(\alpha)$ where $\alpha$ is the dihedral angle
+- Volume formula involves $\t\text{Lobachevsky}(\alpha)$ where $\alpha$ is the dihedral angle
 
 **For regular tetrahedron** ($A = B = C = \pi/3$):
 - The shape parameter should satisfy symmetry: $z = \frac{1}{1-z} = \frac{z-1}{z}$
@@ -106,7 +106,7 @@ Source: Multiple geometry textbooks (WebSearch results)
 
 ### 3.2 Implicit in the Volume Conjecture
 The volume conjecture relates:
-$$\lim_{N \to \infty} \frac{2\pi \ln |\langle K \rangle_N|}{N} = \text{Vol}(K)$$
+$$\lim_{N \to \infty} \frac{2\pi \ln |\langle K \rangle_N|}{N} = \t\text{Vol}(K)$$
 
 For the figure-eight knot:
 - Volume = $2.029883... = 6 \Lambda(\pi/3)$ where $\Lambda$ is the Lobachevsky function

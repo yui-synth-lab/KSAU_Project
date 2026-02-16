@@ -24,7 +24,7 @@ $$ \ln(m) = 10\kappa V + \kappa T + B_q $$
 Quarks are identified as links ($C \ge 2$), consistent with their composite/confined nature in the QCD vacuum.
 
 ### 2.3 Leptons: The Complexity Law (Boundary)
-$$ \ln(m) \approx \frac{14}{9}\kappa N^2 - \kappa \ln(\text{Det}) + C_l $$
+$$ \ln(m) \approx \frac{14}{9}\kappa N^2 - \kappa \ln(\t\text{Det}) + C_l $$
 Leptons are identified as the simplest canonical knots ($3_1, 6_1, 7_1$), discovered via dynamic crossing scan. This refined boundary model yields a high-precision fit where the Muon mass is predicted to -0.01% accuracy.
 
 ### 2.4 The Holographic Duality Hypothesis

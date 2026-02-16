@@ -50,7 +50,7 @@ This confirms the empirical scaling was based on:
 **Coverage:** Twist knots K_m only
 - K_0 = Unknot
 - K_1 = 3_1 (Trefoil)
-- K_{-1} = 4_1 (Figure-eight)
+- K_{-1} = 4_1 (Figure-e\right)
 - K_{-2} = 6_1 (Stevedore)
 - K_2 = 5_2
 - K_3 = 8_1
@@ -70,7 +70,7 @@ This confirms the empirical scaling was based on:
 
 2. **arXiv:math/0203119**
    - URL: https://arxiv.org/pdf/math/0203119
-   - **Status:** PDF format, heavily compressed, text extraction failed
+   - **Status:** PDF format, heavily compressed,\text extraction failed
 
 3. **"On the Colored Jones Polynomial and the Kashaev invariant"**
    - Authors: Thang T. Q. Lê

@@ -37,7 +37,7 @@ Leptons are modeled using the squared crossing number ($N^2$) as the topological
 
 We compare the **Empirical Fit** (v3.4, 2 free parameters) against the **Geometric Theory** (v4.0, 0 free parameters) for the **quark channel only**. The lepton channel uses one additional normalization constant ($C_l$) fixed by the electron mass.
 
-| Metric | Empirical v3.4 ($\gamma, b'$) | Geometric v4.0 ($\frac{10}{7}G, -(7+G)$) | Delta |
+| Metric | Empirical v3.4 ($\gamma, b'$) | Geometric v4.0 ($\frac{10}{7}G, -(7+G)$) |\Delta |
 | :--- | :--- | :--- | :--- |
 | **Slope ($\gamma$)** | 1.3079 | 1.3085 | +0.0006 |
 | **Intercept ($b'$)** | -7.9159 | -7.9160 | -0.0001 |

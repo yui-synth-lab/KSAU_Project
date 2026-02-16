@@ -17,7 +17,7 @@ Following rigorous peer review and systematic perturbation analysis of v3.3, we 
 *   **Statistical Significance:** The global MAE drops from 8.76% to ~8.4%.
 
 ## 3. Addressing Critique
-*   **Uniqueness:** We openly acknowledge that $L11n345$ was a local minimum. $L10n95$ is the global minimum within the explored subset.
+*   **Uniqueness:** We openly acknowledge that $L11n345$ was a local minimum. $L10n95$ is the global minimum within the explored\subset.
 *   **Prediction:** We predict that if KSAU is correct, the Strange quark's physical properties (e.g. form factors) should exhibit symmetries compatible with the $L10n95$ link group.
 
 ## 4. Next Steps

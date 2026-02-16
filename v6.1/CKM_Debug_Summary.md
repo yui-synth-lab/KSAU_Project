@@ -70,8 +70,8 @@ Similar geometric distance, opposite mixing → No monotonic function can fit.
 All 4 model variants achieved **R²=0.44**:
 - Logit 5-param (with γ interaction)
 - Logit 4-param (without γ)
-- Log-linear: ln(V) = ...
-- Exponential: V = exp(...)
+- Log-linear:\ln(V) = ...
+- Exponential: V =\exp(...)
 
 **All predict Charm-Bottom = 1.000 (obs=0.0410) → 2339% error**
 
@@ -104,7 +104,7 @@ Tested 3 variants:
 
 | Source | Formula | Coefficients | R² Claimed | Code Exists? |
 |--------|---------|--------------|------------|--------------|
-| Paper IV | ln\|V\| = ... | B=-2.36, β=-12.22 | 0.7017 | ❌ NO |
+| Paper IV |\ln\|V\| = ... | B=-2.36, β=-12.22 | 0.7017 | ❌ NO |
 | SSoT/Code | logit(\|V\|) = ... | B=-5π, β=-68.5 | - | ✅ YES (Error 290%) |
 | Upgrade Log §4 | V ∝ (J)³·exp(...) | k=0.12 | 0.6717 | ❌ NO |
 
@@ -162,7 +162,7 @@ The R²=0.70 result may have been obtained with a **completely different topolog
 Paper IV and Upgrade Log describe different formulas from the implemented code. Perhaps R²=0.70 refers to a **never-implemented alternative model**.
 
 **Evidence:**
-- Paper IV: 4-term ln-model (no γ), coefficients B=-2.36
+- Paper IV: 4-term\ln-model (no γ), coefficients B=-2.36
 - Code: 5-term logit-model (with γ), coefficients B=-15.7
 - Complete mismatch
 

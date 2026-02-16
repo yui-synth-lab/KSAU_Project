@@ -40,7 +40,7 @@ I confirm completion of all assigned Priority 1 and Priority 2 investigations wi
 **Key findings:**
 - τ(3_1) = 3, τ(4_1) = 5, τ(6_1) = 9 (exact via Alexander polynomials)
 - ⟨4_1⟩₃ / τ(4_1) = 13/5 = 2.6 ≈ N·κ (0.69% error)
-- First-principles derivation: κ = π/24 from zeta regularization
+- First-principles derivation: κ = π/24 from\zeta regularization
 - First-principles derivation: N = 20 from Niemeier vacuum (24 - 4)
 
 **Verdict:** KSAU parameters are NOT arbitrary—they are geometric constraints from 24D modular vacuum.
@@ -222,7 +222,7 @@ where **every parameter is now geometrically justified**.
 - Continuous volume law remains superior
 
 **✓ First-principles origin of κ and N**
-- κ = π/24 from zeta regularization on 24D lattice
+- κ = π/24 from\zeta regularization on 24D lattice
 - N = 20 from dimensional reduction (24 - 4)
 - These are NOT arbitrary fittings
 

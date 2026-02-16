@@ -22,7 +22,7 @@
 *   **Concrete Prediction:** Formulate a prediction regarding the **top quark decay width** or **Higgs coupling** deviations based on the specific geometry of $L11a62$, or predict the mass of a specific 4th generation lepton/quark pair if the pattern holds.
 
 ## 4. Toning Down "Discovery"
-**Critique:** "5 sigma is for pre-defined tests."
+**Critique:** "5\sigma is for pre-defined tests."
 **Action:**
 *   **Revise Abstract/Intro:** Change "Discovery" to "Strong Evidence for".
 *   **Revise Significance:** Rephrase ">5σ" to "Statistically significant against random topological assignment ($p < 10^{-5}$)".

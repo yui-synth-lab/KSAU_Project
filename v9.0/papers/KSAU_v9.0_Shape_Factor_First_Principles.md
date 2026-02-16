@@ -18,7 +18,7 @@ The fundamental vacuum is described by a 24-dimensional even unimodular lattice 
 
 ### 2.1 Dimensional Residue
 The transverse space $\mathcal{T}$ available for internal degrees of freedom (flavor) has dimension:
-$$ N_{lepton} = \dim(\text{Vacuum}) - \dim(\text{Spacetime}) = 24 - 4 = 20 $$
+$$ N_{lepton} = \dim(\t\text{Vacuum}) - \dim(\t\text{Spacetime}) = 24 - 4 = 20 $$
 For the lepton sector, the topological defect interacts with all 20 transverse dimensions of the 24D bulk. This explains the observed slope $20\kappa$ in the mass formula, which achieves a near-perfect fit for the Electron, Muon, and Tau ($R^2 > 0.999$).
 
 ## 3. Modular Weight and the Quark Sector ($N=10$ to $12$)
@@ -44,7 +44,7 @@ This explains the extreme mass of the Top quark as a result of its interaction w
 ## 5. The Unified Slope-Shift Model (v9.0 Success)
 The numerical failure of the initial linear model led to the discovery of the **Shift Theory**. We now propose that the Shape Factor $N$ is a composite of a sector-wide slope and discrete symmetry shifts.
 
-$$ \ln(m) = N_{sector} \cdot \kappa \cdot V + C_{univ} - \text{SymmetryShift} $$
+$$ \ln(m) = N_{sector} \cdot \kappa \cdot V + C_{univ} - \t\text{SymmetryShift} $$
 
 ### 5.1 Verified Sector Slopes
 - **Lepton Sector ($N=20$):** Direct 24D -> 4D projection residue. Verified for $e, \mu, \tau$ with $R^2 > 0.999$.

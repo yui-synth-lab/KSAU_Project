@@ -13,13 +13,12 @@ The KSAU v6.0 codebase contains **two distinct formulas** for lepton mass predic
 ### Formula A: Volume-Based Law (20κV)
 **Location:** [paper_I_validation.py](../code/paper_I_validation.py), [lepton_mass_unification.py](../code/lepton_mass_unification.py)
 
-```
-ln(m) = 20κ · V + C_l
+```\ln(m) = 20κ · V + C_l
 ```
 
 where:
 - V = hyperbolic volume from topology_assignments.json
-- C_l = ln(m_e) = lepton intercept (electron mass as ground state)
+- C_l =\ln(m_e) = lepton intercept (electron mass as ground state)
 - κ = π/24
 
 **Justification:** "Unified Bulk Law with doubled sensitivity" (Release Notes, Section 2.0)
@@ -27,8 +26,7 @@ where:
 ### Formula B: Complexity-Based Law ((14/9)κN²)
 **Location:** [robustness_check.py](../code/robustness_check.py:47-50)
 
-```
-ln(m) = (14/9)κ · N² + C_l
+```\ln(m) = (14/9)κ · N² + C_l
 ```
 
 where:
@@ -45,13 +43,13 @@ where:
 
 | Particle | Topology | V | N | Formula A (20κV) | Formula B ((14/9)κN²) |
 |----------|----------|---|---|------------------|----------------------|
-| Electron | 3₁ | 0.00 | 3 | ln(m) = C_l | ln(m) = (14/9)κ·9 + C_l |
-| Muon | 4₁ | 2.03 | 4 | ln(m) = 20κ·2.03 + C_l | ln(m) = (14/9)κ·16 + C_l |
-| Tau | 6₁ | 3.16 | 6 | ln(m) = 20κ·3.16 + C_l | ln(m) = (14/9)κ·36 + C_l |
+| Electron | 3₁ | 0.00 | 3 |\ln(m) = C_l |\ln(m) = (14/9)κ·9 + C_l |
+| Muon | 4₁ | 2.03 | 4 |\ln(m) = 20κ·2.03 + C_l |\ln(m) = (14/9)κ·16 + C_l |
+| Tau | 6₁ | 3.16 | 6 |\ln(m) = 20κ·3.16 + C_l |\ln(m) = (14/9)κ·36 + C_l |
 
 **Key observation:** Electron (V=0) creates **fundamental divergence**:
-- Formula A: Electron mass = ground state (C_l is directly ln(m_e))
-- Formula B: Electron mass = exp((14/9)κ·9 + C_l) → requires C_l adjustment
+- Formula A: Electron mass = ground state (C_l is directly\ln(m_e))
+- Formula B: Electron mass =\exp((14/9)κ·9 + C_l) → requires C_l adjustment
 
 ### Theoretical Consistency
 
@@ -84,8 +82,7 @@ However, Formula A has **better extrapolation properties**:
 ### Official Lepton Mass Formula (v6.0+)
 
 ```python
-# Charged Lepton Mass (Official)
-ln(m_lepton / MeV) = 20κ · V + ln(m_e)
+# Charged Lepton Mass (Official)\ln(m_lepton / MeV) = 20κ · V +\ln(m_e)
 ```
 
 where:

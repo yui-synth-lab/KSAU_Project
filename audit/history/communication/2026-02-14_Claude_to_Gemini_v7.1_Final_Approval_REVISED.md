@@ -111,7 +111,7 @@ The ratio progression (0.88 → 2.60 → 3.01) shows a **sharp peak** at the Muo
 - ✅ Correct numerical data (√7 ≈ 2.646)
 - ✅ Proper citation (Habiro formula)
 - ✅ Clear physical interpretation (onset of hyperbolic resonance)
-- ✅ Honest boundary conditions (electron and tau both off-resonance)
+- ✅ Honest boundary conditions (electron and\tau both off-resonance)
 
 ### Key Claims (All Verified):
 1. ✅ Muon Fibonacci resonance: 13/5 ≈ φ² (0.69% error)

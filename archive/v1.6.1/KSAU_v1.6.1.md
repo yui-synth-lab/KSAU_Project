@@ -14,13 +14,13 @@
 
 ## Abstract
 
-This paper presents a comprehensive verification of the hypothesis that lepton masses and generation structure originate from topological knot invariants. The KSAU model maps electron, muon, and tau to knots $3_1$ (trefoil), $6_3$, and $7_1$ respectively, reproducing observed mass ratios with <3% error through Möbius energy scaling.
+This paper presents a comprehensive verification of the hypothesis that lepton masses and generation structure originate from topological knot invariants. The KSAU model maps electron, muon, and\tau to knots $3_1$ (trefoil), $6_3$, and $7_1$ respectively, reproducing observed mass ratios with <3% error through Möbius energy scaling.
 
 **Key Results in v1.6.1:**
 
 1. **Multi-Invariant Convergence:** Three independent topological measures (3-genus, smooth concordance genus, TD clasp number) all identify knot $9_1$ as the unique minimal fourth-generation candidate, demonstrating topological robustness.
 
-2. **Alexander Polynomial Verification:** Generation number satisfies $\text{Span}(\Delta_K) = 2n_g$ for all three leptons, establishing an algebraic genus-generation correspondence.
+2. **Alexander Polynomial Verification:** Generation number satisfies $\t\text{Span}(\Delta_K) = 2n_g$ for all three leptons, establishing an algebraic genus-generation correspondence.
 
 3. **Chirality Pattern:** Jones polynomial analysis reveals muon ($6_3$) as the only amphicheiral lepton, suggesting symmetry-based generation distinction.
 
@@ -74,7 +74,7 @@ KSAU v1.6.1 is positioned as a **Working Hypothesis** with quantitative predicti
 
 The Möbius energy $E(K)$ of a knot $K$ (O'Hara 1991; Freedman et al. 1994) is a conformally invariant functional measuring geometric self-interaction. We propose that particle mass follows:
 
-$$m(K) = m_0 \cdot \exp\left(\gamma \cdot (E(K) - E_0)\right)$$
+$$m(K) = m_0 \cdot \exp\l\left(\gamma \cdot (E(K) - E_0)\r\right)$$
 
 where:
 - $E_0 = 4.0$ (unknot energy)
@@ -100,7 +100,7 @@ The KSAU mapping:
 **Alexander Polynomial** $\Delta_K(t)$:
 - Derived from the knot group's commutator subgroup
 - Satisfies $\Delta_K(t) = \Delta_K(t^{-1})$ and $\Delta_K(1) = 1$
-- The span $\text{Span}(\Delta_K) = \max \deg - \min \deg$ provides a lower bound on genus: $\text{Span}(\Delta_K) \leq 2g$
+- The span $\t\text{Span}(\Delta_K) = \max \deg - \min \deg$ provides a lower bound on genus: $\t\text{Span}(\Delta_K) \leq 2g$
 
 **Jones Polynomial** $V_K(q)$:
 - Quantum invariant from von Neumann algebra index theory
@@ -116,7 +116,7 @@ $$q^{-1}V(L_+) - qV(L_-) = (q^{1/2} - q^{-1/2})V(L_0)$$
 
 Using ropelength-optimized knot configurations from KnotInfo database:
 
-| Knot | $E(K)$ | $m_{\text{obs}}$ | $m_{\text{pred}}$ | Error |
+| Knot | $E(K)$ | $m_{\t\text{obs}}$ | $m_{\t\text{pred}}$ | Error |
 |:----:|:------:|:----------------:|:-----------------:|:-----:|
 | $3_1$ | 78.5 | 0.511 MeV | 0.511 MeV | 0.0% |
 | $6_3$ | 87.8 | 105.7 MeV | 108.4 MeV | 2.6% |
@@ -130,17 +130,17 @@ The exceptional agreement between topological geometry and observed particle mas
 
 **Genus-Generation Rule:** For the KSAU knots, the Alexander polynomial span satisfies:
 
-$$\text{Span}(\Delta_K) = 2n_g$$
+$$\t\text{Span}(\Delta_K) = 2n_g$$
 
 where $n_g$ is generation number.
 
-| Gen $n_g$ | Knot | $\Delta_K(t)$ | Span | $g = \text{Span}/2$ | ✓ |
+| Gen $n_g$ | Knot | $\Delta_K(t)$ | Span | $g = \t\text{Span}/2$ | ✓ |
 |:---------:|:----:|:-------------:|:----:|:-------------------:|:-:|
 | **1** | $3_1$ | $t - 1 + t^{-1}$ | 2 | **1** | ✓ |
 | **2** | $6_3$ | $t^2 - 3t + 5 - 3t^{-1} + t^{-2}$ | 4 | **2** | ✓ |
 | **3** | $7_1$ | $t^3 - t^2 + t - 1 + t^{-1} - t^{-2} + t^{-3}$ | 6 | **3** | ✓ |
 
-**Key Observation:** The saturation of the inequality $\text{Span}(\Delta_K) = 2g$ (equality holds for all three cases) indicates these knots are **genus-minimal representatives** — the simplest topological configurations realizing each generation's complexity.
+**Key Observation:** The saturation of the inequality $\t\text{Span}(\Delta_K) = 2g$ (equality holds for all three cases) indicates these knots are **genus-minimal representatives** — the simplest topological configurations realizing each generation's complexity.
 
 ### 3.3 Symmetry Verification: Jones Polynomial Chirality
 
@@ -163,9 +163,9 @@ Analysis of Jones polynomial coefficient symmetry reveals a striking pattern:
 From 14 prime knots with crossing number $N \leq 7$, we enumerated all $\binom{14}{3} = 364$ unordered triplets. Applying:
 
 1. **Geometric Constraint:** $\frac{\Delta E_{12}}{\Delta E_{23}} \approx 1.89 \pm 0.1$ (Logarithmic ratio of observed mass ratios)
-2. **Algebraic Constraint:** $\text{Span}(\Delta_{K_i}) = 2i$ (Genus-Generation correspondence)
+2. **Algebraic Constraint:** $\t\text{Span}(\Delta_{K_i}) = 2i$ (Genus-Generation correspondence)
 
-Candidates were reduced to **120 combinations**. Error evaluation using $S = \sqrt{\sum (\ln m_{\text{obs}} - \ln m_{\text{pred}})^2}$:
+Candidates were reduced to **120 combinations**. Error evaluation using $S = \sqrt{\sum (\ln m_{\t\text{obs}} - \ln m_{\t\text{pred}})^2}$:
 
 | Rank | Triplet (Knots) | Error Score $S$ | Remarks |
 |:----:|:---------------:|:---------------:|:--------|
@@ -202,11 +202,11 @@ strongly suggests that **$9_1$ is the unique universal minimal realization of ge
 
 Using Buck-Simon asymptotic scaling $E(N) \sim N^{4/3}$ for crossing number extrapolation:
 
-$$E(9_1) \approx E(7_1) \times \left(\frac{9}{7}\right)^{4/3} \approx 96.3 \times 1.405 \approx 135.3$$
+$$E(9_1) \approx E(7_1) \times \l\left(\frac{9}{7}\r\right)^{4/3} \approx 96.3 \times 1.405 \approx 135.3$$
 
 Mass prediction via exponential formula:
 
-$$m_{L_4} = m_\tau \cdot \exp\left(\frac{E(9_1) - E(7_1)}{e}\right) \approx 1.78 \text{ GeV} \cdot \exp(14.35) \approx \boxed{3.0 \text{ PeV}}$$
+$$m_{L_4} = m_\tau \cdot \exp\l\left(\frac{E(9_1) - E(7_1)}{e}\r\right) \approx 1.78 \t\text{ GeV} \cdot \exp(14.35) \approx \boxed{3.0 \t\text{ PeV}}$$
 
 **Alternative conservative estimate** using ropelength scaling ($\alpha \approx 1.3$) yields $E \approx 109$, corresponding to $m_{L_4} \approx 190$ GeV.
 
@@ -257,11 +257,11 @@ If $m_{L_4} \sim$ PeV, the fourth generation must have decayed during **electrow
 
 Relic abundance constraint:
 
-$$\Omega_{L_4} h^2 < 0.12 \implies \tau_{L_4} < 10^{-10} \text{ sec}$$
+$$\Omega_{L_4} h^2 < 0.12 \implies \tau_{L_4} < 10^{-10} \t\text{ sec}$$
 
 This predicts an **extremely short lifetime**, consistent with heavy lepton decay.
 
-Primordial nucleosynthesis (BBN) constraints on light degree of freedom $N_{\text{eff}}$ also strongly disfavor fourth-generation particles at sub-TeV scales, supporting the PeV prediction.
+Primordial nucleosynthesis (BBN) constraints on light degree of freedom $N_{\t\text{eff}}$ also strongly disfavor fourth-generation particles at sub-TeV scales, supporting the PeV prediction.
 
 ### 5.4 Why $6_3$ and Not $5_1$ for Second Generation?
 
@@ -281,7 +281,7 @@ KSAU v1.6.1 establishes a comprehensive topological foundation for lepton mass g
 
 1. **Energy verification:** Möbius energy scaling reproduces observed mass ratios with <3% error (statistical rank 1, $p < 0.01$)
 
-2. **Algebraic verification:** Alexander polynomial span satisfies $\text{Span}(\Delta_K) = 2n_g$ for all three generations, saturating the genus inequality
+2. **Algebraic verification:** Alexander polynomial span satisfies $\t\text{Span}(\Delta_K) = 2n_g$ for all three generations, saturating the genus inequality
 
 3. **Symmetry verification:** Jones polynomial reveals unique amphicheirality of the muon, establishing a chirality pattern across generations
 

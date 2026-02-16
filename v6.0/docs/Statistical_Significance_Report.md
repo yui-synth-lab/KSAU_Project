@@ -57,7 +57,7 @@ This report provides a comprehensive statistical analysis of the KSAU v6.0 frame
 | Quark volume slope | 1 | 1 | Fixed at 10κ |
 | Quark intercept B_q | 1 | 1 | Theoretically derived: -(7+7κ) |
 | Lepton volume slope | 1 | 1 | Fixed at 20κ |
-| Lepton intercept C_l | 0 | 0 | Fixed at ln(m_e) |
+| Lepton intercept C_l | 0 | 0 | Fixed at\ln(m_e) |
 | **Subtotal (formulas)** | **4** | **4** | |
 | Topology assignments | 0 | **4-5** | Combinatorial search + scoring weights |
 | **Total** | **4** | **8-9** | |
@@ -104,7 +104,7 @@ KSAU: 12 / 8.5 ≈ **1.4** → **High overfitting risk** ✗
 To determine if the observed mass-volume correlation could arise by chance:
 1. Randomly assign topologies to particles (respecting component constraints)
 2. Fit the same volume laws (10κV for quarks, 20κV for leptons)
-3. Repeat 10,000 times
+3. Repeat 10,000\times
 4. Compare KSAU's R² to null distribution
 
 **Script:** [monte_carlo_null_hypothesis.py](../code/monte_carlo_null_hypothesis.py)
@@ -135,7 +135,7 @@ To determine if the observed mass-volume correlation could arise by chance:
 3. **MAE comparison:** Random assignments produce errors of 969-388 billion percent vs. KSAU's 4.88%
 
 **Resolution of Overfitting Paradox:**
-- ✅ The **geometric law** (mass ∝ exp(κV)) is **statistically robust** (survives Monte Carlo)
+- ✅ The **geometric law** (mass ∝\exp(κV)) is **statistically robust** (survives Monte Carlo)
 - ❌ The **specific topologies** (e.g., L10a43 for Top) are **data-optimized** (fail LOO-CV)
 - **Analogy:** F=ma is real (law), but measuring "a" for a specific object has uncertainty (data)
 
@@ -148,8 +148,8 @@ To determine if the observed mass-volume correlation could arise by chance:
 ### 4.1 Lepton Mass Formula (RESOLVED ✓)
 
 **Problem:** Two conflicting formulas in codebase
-- Formula A: ln(m) = 20κV + ln(m_e) ([paper_I_validation.py](../code/paper_I_validation.py))
-- Formula B: ln(m) = (14/9)κN² + C ([robustness_check.py](../code/robustness_check.py))
+- Formula A:\ln(m) = 20κV +\ln(m_e) ([paper_I_validation.py](../code/paper_I_validation.py))
+- Formula B:\ln(m) = (14/9)κN² + C ([robustness_check.py](../code/robustness_check.py))
 
 **Resolution:**
 - **Adopted:** Formula A (20κV law)
@@ -264,7 +264,7 @@ To transition from phenomenology to fundamental theory, KSAU must:
 ### 7.3 Experimental Falsification
 **Near-term targets:**
 - Top quark helicity: F_R = 0.24% ± 0.05% (LHC Run 4, 2026-2029)
-- Neutrino mass sum: Σm_ν ≈ 59 meV (CMB+LSS, 2028-2030)
+- Neutrino mass\sum: Σm_ν ≈ 59 meV (CMB+LSS, 2028-2030)
 
 **If experiments agree:** Elevates KSAU to "serious theoretical candidate"
 **If experiments disagree:** Requires topology reassignment or framework revision
@@ -306,7 +306,7 @@ The KSAU v6.0 framework has been **statistically validated** and occupies a sign
 
 ### Abstract Template (PRL-style, 150 words)
 
-> We report the discovery of a statistically significant correlation (p < 0.0001) between Standard Model fermion masses and the hyperbolic volumes of knot/link complements in 3-manifold topology. The empirical law ln(m) ∝ κV, with κ = π/24 ≈ 0.131, achieves R² = 0.9997 across nine orders of magnitude (electron to top quark). Monte Carlo null hypothesis testing with 10,000 random topology assignments confirms this correlation cannot arise by chance. While lacking first-principles theoretical derivation, the universality of κ and its connection to conformal field theory anomalies suggest a deep geometric origin of mass generation. We propose experimental tests via top quark helicity measurements (LHC Run 4) and neutrino mass sum determination (CMB+LSS). This result establishes 3-manifold geometry as a novel phenomenological framework for understanding the Standard Model mass hierarchy.
+> We report the discovery of a statistically significant correlation (p < 0.0001) between Standard Model fermion masses and the hyperbolic volumes of knot/link complements in 3-manifold topology. The empirical law\ln(m) ∝ κV, with κ = π/24 ≈ 0.131, achieves R² = 0.9997 across nine orders of magnitude (electron to top quark). Monte Carlo null hypothesis testing with 10,000 random topology assignments confirms this correlation cannot arise by chance. While lacking first-principles theoretical derivation, the universality of κ and its connection to conformal field theory anomalies suggest a deep geometric origin of mass generation. We propose experimental tests via top quark helicity measurements (LHC Run 4) and neutrino mass\sum determination (CMB+LSS). This result establishes 3-manifold geometry as a novel phenomenological framework for understanding the Standard Model mass hierarchy.
 
 ---
 

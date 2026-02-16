@@ -14,9 +14,9 @@ The universe did not begin at a singularity ($V=0$), but as a **Topological Inst
 ## 2. Baryogenesis: The Pi-Squared Dilution Law
 The imbalance between matter and antimatter is a direct consequence of the initial Skein Bias ($\epsilon$) of the Master Link, diluted by the curvature of the vacuum ($\pi^2$).
 
-- **Initial Bias ($\epsilon$):** Derived from the Jones polynomial asymmetry scaling law $\epsilon \approx C^{-1.2159}$. At $C=74$, $\epsilon \approx 5.33 \times 10^{-3}$.
+- **Initial Bias ($\epsilon$):** Derived from the Jones polynomial asymmetry scaling law $\epsilon \approx C^{-1.2159}$. At $C=74$, $\epsilon \approx 5.33 \\times 10^{-3}$.
 - **Dilution Mechanism:** As the Master Link unzips, the bias is suppressed by the geometric ratio $(V_{borr} / V_{planck})^{\pi^2}$, where $\pi^2$ represents the vacuum curvature invariant.
-- **Predicted Ratio ($\eta_B$):** **$9.06 \times 10^{-11}$** (Observed: $1.0 \times 10^{-10}$).
+- **Predicted Ratio ($\eta_B$):** **$9.06 \\times 10^{-11}$** (Observed: $1.0 \\times 10^{-10}$).
 - **Conclusion:** Matter exists because of the topological rigidity of the early universe.
 
 ## 3. Dark Matter: The Boson Barrier Model
@@ -24,7 +24,7 @@ Dark Matter is not a new particle, but the **Excluded Volume** of the vacuum's r
 
 - **Structure:** Satellite Knots (Nested JSJ-decompositions).
 - **The Barrier Effect:** The density of dark matter is determined by the total information volume at the Planck Scale ($V_P$) minus the volume occupied by the Electroweak active states ($V_W$).
-- **The Prediction:** $\text{Ratio} = (V_P - V_W) / V_{Axion} \approx \mathbf{5.31}$ (Observed: $5.36$).
+- **The Prediction:** $\t\text{Ratio} = (V_P - V_W) / V_{Axion} \approx \mathbf{5.31}$ (Observed: $5.36$).
 - **Conclusion:** The 5:1 ratio is a geometric consequence of the electroweak interaction's topological footprint.
 
 ## 4. The Arrow of Time: Reidemeister Irreversibility
@@ -44,7 +44,7 @@ The universe is a 3-dimensional manifold undergoing a transition from a state of
 To ensure the KSAU model is free from "P-picking" (arbitrary data selection), we establish the **Component Scaling Law**.
 
 - **The Law of n:** The mass slope $A$ is not a variable, but a constant fixed by the number of components $n$:
-  $$A(n) = n \cdot \left( \frac{G}{7} \right)$$
+  $$A(n) = n \cdot \l\left( \frac{G}{7} \r\right)$$
   - **Fermions ($n=10$):** $A = 1.3085$ (Perfect fit for Quarks/Leptons).
   - **Gauge Bosons ($n=3$):** $A = 0.3926$ (Perfect fit for W/Z/Higgs).
 - **Topological Uniqueness:** Within the entire 3-component Brunnian class (only 3.7% of all links), **L11n387** is the unique link that achieves the exact volume of **$2.0000 \times V_{borr}$**.

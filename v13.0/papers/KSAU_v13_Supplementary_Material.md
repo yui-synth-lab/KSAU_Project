@@ -49,9 +49,7 @@ The following code verifies the integration across all sectors:
 ```python
 import numpy as np
 
-def verify_ksau_v13_5_integration():
-    pi = np.pi
-    kappa = pi / 24
+def verify_ksau_v13_5_integration():\pi = np.pi\kappa =\pi / 24
     
     # Static Topological Data (N=41)
     N = 41

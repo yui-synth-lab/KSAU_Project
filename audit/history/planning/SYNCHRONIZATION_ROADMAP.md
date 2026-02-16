@@ -74,8 +74,7 @@
 3. その限界値として、SSOTと数学的に接続
 
 **数学的接続:**
-```
-ln(M_Planck) = 10κ × V_Planck + B_q
+```\ln(M_Planck) = 10κ × V_Planck + B_q
 V_Planck ≈ 44.91 ≈ 4.5π²
 
 Master Link:
@@ -104,7 +103,7 @@ Master Link:
 - [x] Master Link数値の検証 ✅ (C=74, V≈44.9≈4.5π²)
 - [x] バリオジェネシス計算の再実行 ✅ (η_B = 9.06×10⁻¹¹, π²希釈法則)
 - [x] ダークマター候補リストの更新 ✅ (Boson Barrier Exclusion, 5:1比率)
-- [x] 時間の矢の式確認 ✅ (S = ln(V/C), Reidemeister不可逆性)
+- [x] 時間の矢の式確認 ✅ (S =\ln(V/C), Reidemeister不可逆性)
 - [x] 検証スクリプト作成（validate_cosmology_ssot.py等） ✅
 - [x] ドキュメント更新（PHASE2_VERIFICATION_REPORT） ✅
 
@@ -191,12 +190,11 @@ python grand_unified_validation.py  # 全12粒子の再検証
 
 ```python
 # v6.4/code/validate_master_link.py
-def validate_master_link():
-    kappa = 0.1309  # v6.0 SSoT
+def validate_master_link():\kappa = 0.1309  # v6.0 SSoT
     V_planck = 44.91
 
     # Planck質量の計算
-    ln_m_planck = 10 * kappa * V_planck + B_q
+    ln_m_planck = 10 *\kappa * V_planck + B_q
     m_planck = np.exp(ln_m_planck)
 
     # Master Linkの複雑性
@@ -217,15 +215,14 @@ def validate_master_link():
 # v6.4/code/recalculate_baryogenesis.py
 def recalculate_baryo():
     # Jones多項式非対称性
-    C = 74  # Master Link
-    epsilon = C ** (-1.2159)  # ε ≈ 9.16×10⁻³
+    C = 74  # Master Link\epsilon = C ** (-1.2159)  # ε ≈ 9.16×10⁻³
 
     # 幾何学的抑制
     V_borr = 7.327725  # v6.0 SSoT
     V_planck = 44.91
     suppression = (V_borr / V_planck) ** (C / 10)
 
-    eta_B = epsilon * suppression  # ≈ 10⁻¹⁰
+    eta_B =\epsilon * suppression  # ≈ 10⁻¹⁰
 
     return eta_B
 ```

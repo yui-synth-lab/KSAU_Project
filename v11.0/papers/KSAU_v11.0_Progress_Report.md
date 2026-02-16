@@ -44,8 +44,8 @@ We explicitly acknowledge the numerical discrepancy ($0.5$ vs $0.4$) between the
 The neutrino mass-squared difference ratio $R = \Delta m^2_{31} / \Delta m^2_{21} \approx 33.88$ is reproduced with 1.16% precision ($R = 34.27$) using the parameters $\lambda = 9\pi/16$ and $N=\{3,6,7\}$. The proximity to the Fibonacci number $F_9 = 34$ suggests a fundamental resonance in the boundary-resident sector.
 
 ### 6.2 Algebraic Expression for $\mu_0$
-We provide a new algebraic expression for the neutrino base mass scale $\mu_0 \approx 2.14 \times 10^{-7}$ eV (originally calculated in v6.0):
-$$\mu_0 = m_e \cdot \exp\left(-(216 + \sqrt{3})\kappa\right)$$
+We provide a new algebraic expression for the neutrino base mass scale $\mu_0 \approx 2.14 \\times 10^{-7}$ eV (originally calculated in v6.0):
+$$\mu_0 = m_e \cdot \exp\l\left(-(216 + \sqrt{3})\kappa\r\right)$$
 - **Motivation:** $216 = 24 \times 9$ (Niemeier rank cycle) and $\sqrt{3}$ (spatial diagonal). This is a post-hoc algebraic representation and awaits formal first-principles derivation.
 
 ## 7. Conclusion: The Path Forward

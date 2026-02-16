@@ -79,7 +79,7 @@ $$\ln(m_l) = \frac{2}{9}G \cdot N^2 + C_l \quad (C_l = -2.503)$$
 | 1 | **(h) αN + βN²** | **0.000** | 0.000 | 1 | α=-0.574, β=0.261; ugly |
 | 1 | **(b) N² + Genus** | **0.000** | 0.000 | 2 | **genus = {1,2,3} は物理的に透明** |
 | 1 | **(c) N² + Signature** | **0.000** | 0.000 | 2 | signature = {-2, 0, -6} |
-| 1 | **(e) N² + ln(Det)** | **0.000** | 0.000 | 2 | **β ≈ -1/3（電荷と一致！）** |
+| 1 | **(e) N² +\ln(Det)** | **0.000** | 0.000 | 2 | **β ≈ -1/3（電荷と一致！）** |
 | 1 | **(d) Hybrid Volume** | **0.000** | 0.000 | 2 | γ_hyp=2.265（clean なし） |
 | 7 | **(i) Twist correction** | **0.400** | **1.200** | 1 | **δ ≈ -1/6（最も clean）** |
 | 8 | (g) Optimized α·N² | 6.271 | 18.795 | 0 | α ≈ (2/9)G |
@@ -97,9 +97,9 @@ $$\ln(m_l) = \frac{2}{9}G \cdot N^2 - \frac{1}{6}\mathbb{1}_{twist} + C_l$$
 - 物理的意味: twist knot は torus knot より「ねじれ」が少なく、質量が $e^{1/6} ≈ 1.18$ 倍軽くなる
 - **問題:** -1/6 が正確に成立する理由の理論的根拠が必要
 
-#### 候補 B: N² + ln(Det) 補正（Model e）— 最も数論的に美しい
+#### 候補 B: N² +\ln(Det) 補正（Model e）— 最も数論的に美しい
 
-$$\ln(m_l) = \alpha \cdot N^2 - \frac{1}{3}\ln(\text{Det}) + C$$
+$$\ln(m_l) = \alpha \cdot N^2 - \frac{1}{3}\ln(\t\text{Det}) + C$$
 
 - 完全フィット（MAE = 0%）
 - β = -0.3272 ≈ **-1/3**（誤差 0.006、1.8% 以内）
@@ -123,7 +123,7 @@ $$\ln(m_l) = \alpha \cdot N^2 + \beta \cdot g + C$$
 
 推奨順位:
 1. **Model (i) Twist correction**: v4.0 互換、δ ≈ -1/6、MAE = 0.4%
-2. **Model (e) N² + ln(Det)**: β ≈ -1/3 が電荷と共鳴、MAE = 0%
+2. **Model (e) N² +\ln(Det)**: β ≈ -1/3 が電荷と共鳴、MAE = 0%
 3. **Model (b) N² + Genus**: 物理的に最も透明、MAE = 0%
 
 ---
@@ -149,15 +149,15 @@ $$\ln(m_l) = \alpha \cdot N^2 + \beta \cdot g + C$$
 ### v4.1 の推奨構成
 
 **クォーク公式（v4.0 維持）:**
-$$\ln(m_q) = \frac{10}{7}G \cdot V - (7+G) \quad \text{(0 free params)}$$
+$$\ln(m_q) = \frac{10}{7}G \cdot V - (7+G) \quad \t\text{(0 free params)}$$
 
 **レプトン公式（新提案）:**
 
 Option A（保守的）:
-$$\ln(m_l) = \frac{2}{9}G \cdot N^2 - \frac{1}{6}\mathbb{1}_{twist} + C_l \quad \text{(1 free param: } C_l \text{)}$$
+$$\ln(m_l) = \frac{2}{9}G \cdot N^2 - \frac{1}{6}\mathbb{1}_{twist} + C_l \quad \t\text{(1 free param: } C_l \t\text{)}$$
 
 Option B（野心的）:
-$$\ln(m_l) = \alpha \cdot N^2 - \frac{1}{3}\ln(\text{Det}) + C \quad \text{(2 free params)}$$
+$$\ln(m_l) = \alpha \cdot N^2 - \frac{1}{3}\ln(\t\text{Det}) + C \quad \t\text{(2 free params)}$$
 
 ### Global MAE の改善見込み
 

@@ -135,7 +135,7 @@ This suggests **N might decrease with volume**, not increase. This is opposite t
 
 Your request to investigate κ = π/24 from analytic torsion is excellent. The known relation:
 
-$$\ln |T(M)| \approx \frac{1}{2\pi} \text{Vol}(M)$$
+$$\ln |T(M)| \approx \frac{1}{2\pi} \t\text{Vol}(M)$$
 
 is **structurally similar** to KSAU:
 
@@ -153,7 +153,7 @@ But KSAU uses κ = π/24 ≈ 0.1309, which is **16.4× larger**.
 
 I will investigate:
 1. Müller's formula for analytic torsion of hyperbolic 3-manifolds
-2. Yoshida's eta invariant calculations for 4₁
+2. Yoshida's\eta invariant calculations for 4₁
 3. SnapPy's `M.homology()` and Alexander polynomial → Reidemeister torsion
 
 ---

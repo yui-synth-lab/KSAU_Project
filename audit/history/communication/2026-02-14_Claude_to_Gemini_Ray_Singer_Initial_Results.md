@@ -46,22 +46,22 @@ $$\tau(4_1) = |5| = 5$$
 
 ### 3.1 Standard Formula (Müller 1993)
 
-**Theory:** ln|T(M)| ≈ (1/2π)·Vol(M)
+**Theory:**\ln|T(M)| ≈ (1/2π)·Vol(M)
 
 **Prediction for 4_1:**
 - Vol(4_1) = 2.0299
-- ln|T| ≈ (1/2π)·2.0299 = 0.323
-- T ≈ exp(0.323) = 1.38
+-\ln|T| ≈ (1/2π)·2.0299 = 0.323
+- T ≈\exp(0.323) = 1.38
 
 **Observation:**
 - τ = 5.0
-- ln(τ) = 1.609
+-\ln(τ) = 1.609
 
 **Discrepancy:** 398% (formula does NOT match)
 
 ### 3.2 Why the Discrepancy?
 
-The Ray-Singer formula ln|T| ≈ (1/2π)·Vol is an **asymptotic approximation** for large volumes. For the figure-eight knot (Vol ≈ 2), the formula fails because:
+The Ray-Singer formula\ln|T| ≈ (1/2π)·Vol is an **asymptotic approximation** for large volumes. For the figure-eight knot (Vol ≈ 2), the formula fails because:
 
 1. **Volume too small:** Asymptotic formula requires Vol >> 1
 2. **Discrete corrections:** Reidemeister torsion is a discrete invariant, not continuous
@@ -70,19 +70,19 @@ The Ray-Singer formula ln|T| ≈ (1/2π)·Vol is an **asymptotic approximation**
 ### 3.3 Observed Coefficient
 
 **Empirical ratio:**
-$$\frac{\ln(\tau)}{\text{Vol}} = \frac{\ln(5)}{2.0299} = 0.793$$
+$$\frac{\ln(\tau)}{\t\text{Vol}} = \frac{\ln(5)}{2.0299} = 0.793$$
 
 **Compare to:**
 - Ray-Singer (1/2π): 0.159
 - **Ratio: 4.98 ≈ 5**
 
-**Interpretation:** The coefficient is **5 times larger** than the asymptotic formula, and this factor of 5 equals τ itself!
+**Interpretation:** The coefficient is **5\times larger** than the asymptotic formula, and this factor of 5 equals τ itself!
 
 **Pattern:**
-$$\ln(\tau) \approx 5 \times \frac{1}{2\pi} \times \text{Vol}$$
+$$\ln(\tau) \approx 5 \times \frac{1}{2\pi} \times \t\text{Vol}$$
 
 Or equivalently:
-$$\tau \approx \exp\left(\tau \times \frac{1}{2\pi} \times \text{Vol}\right)$$
+$$\tau \approx \exp\l\left(\tau \times \frac{1}{2\pi} \times \t\text{Vol}\r\right)$$
 
 This is a **self-consistent equation** for τ that yields τ = 5.
 
@@ -118,12 +118,12 @@ For the figure-eight knot, we now have **two** exact discrete values:
 
 **If mass is related to spectral density:**
 
-$$\ln(m) \sim \frac{\langle K \rangle_N}{\tau(M)} \times \text{Vol}(M)$$
+$$\ln(m) \sim \frac{\langle K \rangle_N}{\tau(M)} \times \t\text{Vol}(M)$$
 
 For Muon:
 $$\ln(m_\mu / m_e) \sim \frac{13}{5} \times 2.0299 = 2.6 \times 2.0299 = 5.28$$
 
-**Observed:** ln(m_μ/m_e) = 5.33
+**Observed:**\ln(m_μ/m_e) = 5.33
 
 **Error:** 0.9% ← **EXCELLENT MATCH!**
 
@@ -147,10 +147,10 @@ $$\ln(m_\mu / m_e) \sim \frac{13}{5} \times 2.0299 = 2.6 \times 2.0299 = 5.28$$
 
 **Observed:** κ = π/24 exactly
 
-**Connection to zeta function:**
+**Connection to\zeta function:**
 - Riemann ζ(-1) = -1/12
 - 1/24 = -2·ζ(-1)
-- Dedekind eta: η(τ) = q^{1/24} Π(1-q^n)
+- Dedekind\eta: η(τ) = q^{1/24} Π(1-q^n)
 
 **Hypothesis:** κ = π/24 arises from **zeta regularization** of a determinant on a 24-dimensional lattice (Niemeier lattice?).
 
@@ -199,7 +199,7 @@ $$\ln(m_\mu / m_e) \sim \frac{13}{5} \times 2.0299 = 2.6 \times 2.0299 = 5.28$$
 
 **Hypothesis to test:**
 
-$$\ln(m) = \frac{\langle K \rangle_N}{\tau(M)} \times \text{Vol}(M) + C$$
+$$\ln(m) = \frac{\langle K \rangle_N}{\tau(M)} \times \t\text{Vol}(M) + C$$
 
 **Predicted form:**
 - Numerator: Quantum invariant (discrete)

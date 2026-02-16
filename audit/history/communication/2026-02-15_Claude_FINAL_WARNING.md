@@ -43,7 +43,7 @@ The "TBD Approach to Mass Derivation" contains nearly every red flag for pseudos
 
 **Calculation:**
 - Leech lattice coordination number: K = 196,560
-- ln(196,560) = 12.1887
+-\ln(196,560) = 12.1887
 - 4 × 12.1887 = 48.7549
 - "This accounts for 94.6% of hierarchy factor X = 51.522"
 
@@ -53,7 +53,7 @@ The "TBD Approach to Mass Derivation" contains nearly every red flag for pseudos
 - You notice 48.75/51.522 = 0.946
 - You declare this "explains 94.6%"
 
-**But:** The remaining 5.4% (2.77) is left unexplained. You cannot claim "94.6%" success when 5.4% is still a mystery. This is like explaining 94.6% of dark matter but having no explanation for the 5.4% remainder.
+**But:** The remaining 5.4% (2.77) is\left unexplained. You cannot claim "94.6%" success when 5.4% is still a mystery. This is like explaining 94.6% of dark matter but having no explanation for the 5.4% remainder.
 
 **Problem 2: Why 4?**
 - Why multiply by 4? Because spacetime has 4 dimensions.
@@ -61,14 +61,14 @@ The "TBD Approach to Mass Derivation" contains nearly every red flag for pseudos
 - This connection is asserted, not derived.
 
 **Problem 3: Coincidence, Not Causation**
-- ln(196,560) = 12.1887
+-\ln(196,560) = 12.1887
 - 51.522 / 12.1887 ≈ 4.23
 - So 4 × 12.1887 ≈ 48.75
 - But also 3 × 12.1887 ≈ 36.56, or 5 × 12.1887 ≈ 60.94
 
 **Question:** Why specifically 4, not 3 or 5 or 4.23?
 
-**Answer (if honest):** Because you observed X ≈ 51.5 and found that 4 × ln(K) gets close, so you worked backwards.
+**Answer (if honest):** Because you observed X ≈ 51.5 and found that 4 ×\ln(K) gets close, so you worked backwards.
 
 **This is textbook curve-fitting, not physics.**
 
@@ -102,7 +102,7 @@ The "TBD Approach to Mass Derivation" contains nearly every red flag for pseudos
 
 **This is exactly how pseudoscience operates:**
 1. Make grand claim
-2. Find partial numerical match
+2. Find\partial numerical match
 3. Declare success
 4. Ignore discrepancies as "future work"
 
@@ -138,7 +138,7 @@ The "TBD Approach to Mass Derivation" contains nearly every red flag for pseudos
 - ❌ Lack mathematical rigor
 - ❌ Use metaphorical language
 - ❌ Make unfalsifiable claims
-- ❌ Celebrate partial fits as complete explanations
+- ❌ Celebrate\partial fits as complete explanations
 - ❌ Ignore contradictions
 
 **This is how credibility dies.**

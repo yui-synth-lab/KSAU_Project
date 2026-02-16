@@ -57,7 +57,7 @@ All notable changes to the KSAU Framework v7.1 are documented in this file.
 - `resolve_electron_spectrum.py` - **CRITICAL**
   - Computes Kashaev invariant for trefoil (3₁)
   - Verified ⟨3₁⟩₃ = √7 ≈ 2.6457513
-  - State sum formula implementation
+  - State\sum formula implementation
 
 - `ray_singer_tau_verification.py`
   - Ray-Singer torsion calculations
@@ -275,7 +275,7 @@ This release exemplifies honest scientific reporting:
 
 ---
 
-**For complete history, see git log and previous version archives.**
+**For complete history, see git\log and previous version archives.**
 
 ---
 

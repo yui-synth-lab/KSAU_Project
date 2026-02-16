@@ -36,7 +36,7 @@
 
 ## Verification Table
 
-| Particle | Observed ln(m) | Predicted ln(m) | Residual |
+| Particle | Observed\ln(m) | Predicted\ln(m) | Residual |
 | :--- | :--- | :--- | :--- |
 | Electron | -0.671386 | -0.671386 | -3.33e-15 |
 | Muon | 4.660226 | 4.660226 | -2.73e-13 |

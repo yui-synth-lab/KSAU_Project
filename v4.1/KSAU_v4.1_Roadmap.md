@@ -17,7 +17,7 @@
 | **Down (d)** | $L6a4$ | **+14.0%** | Borromean rings, V=8G |
 | **Top (t)** | $L11a62$ | **+13.1%** | 系統的過大予測（V=15.360） |
 
-- Bottom と Top の偏差が逆方向 → 線形 ln(m) ∝ V が V > 12 で破綻する兆候
+- Bottom と Top の偏差が逆方向 → 線形\ln(m) ∝ V が V > 12 で破綻する兆候
 - Muon は lepton チャンネル最大の異常値
 
 ### 1.2 構造的課題
@@ -47,10 +47,10 @@
 - v4.1 候補公式（高次補正付き）:
   $$\ln(m_q) = \frac{10}{7}G \cdot V - (7+G) + \alpha \cdot f(V)$$
 - 補正関数 $f(V)$ の候補:
-  - **(a)** Bridge number 補正: $f = \beta \cdot \text{bridge}(L)$
-  - **(b)** Writhe 補正: $f = \beta \cdot \text{writhe}(L) / N_{cross}$
+  - **(a)** Bridge number 補正: $f = \beta \cdot \t\text{bridge}(L)$
+  - **(b)** Writhe 補正: $f = \beta \cdot \t\text{writhe}(L) / N_{cross}$
   - **(c)** 二次体積補正: $f = \beta \cdot (V - V_0)^2$（$V_0$ は中央値）
-  - **(d)** 複素体積/CS項補正: $f = \beta \cdot \text{Im}(Vol_{complex})$ (Chern-Simons不変量)
+  - **(d)** 複素体積/CS項補正: $f = \beta \cdot \t\text{Im}(Vol_{complex})$ (Chern-Simons不変量)
 
 #### 1B. 検証手順
 1. SnapPy で全候補リンクの bridge number, writhe, Chern-Simons不変量を取得
@@ -69,7 +69,7 @@
 #### 2A. Lepton 質量公式の改良
 - v4.0: $\ln(m_l) = \frac{2}{9}G \cdot N^2 + C_l$
 - 改良候補:
-  - **(a)** Twist number 補正: $\ln(m_l) = \frac{2}{9}G \cdot N^2 + \delta \cdot \text{twist}(K) + C_l$
+  - **(a)** Twist number 補正: $\ln(m_l) = \frac{2}{9}G \cdot N^2 + \delta \cdot \t\text{twist}(K) + C_l$
   - **(b)** 双曲体積ハイブリッド: Muon ($6_1$) と Tau ($7_1$) は双曲的 → V を活用、Electron ($3_1$) のみ N² を使用
   - **(c)** 統一不変量の探索（Phase 3 と連動）
 

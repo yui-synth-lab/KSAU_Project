@@ -25,8 +25,7 @@
 ```
 KSAU v6.7: Verification of G (Refactored using utils_v61)
 ============================================================
-[Constants Used]
-  kappa: 0.130900
+[Constants Used]\kappa: 0.130900
   V_borr: 7.327725
   V_P Factor: 6.0
   k_c (Variance): 1.253314
@@ -57,8 +56,7 @@ KSAU v6.7: Verification of G (Refactored using utils_v61)
 ### 2.3 導出方法の確認
 
 **Formula:**
-```
-ln(M_P) = A·V_P + C_off + k_c - delta
+```\ln(M_P) = A·V_P + C_off + k_c - delta
 
 Where:
 - A = 10κ (universal mass slope)
@@ -97,7 +95,7 @@ Simulation saved to: v6.6/figures/topological_gravity_bending.png
 **Key parameters:**
 - Central mass: Top quark (V=15.62, C=11)
 - Complexity density: ρ_c = C/V = 0.7042
-- Update density: ρ_u = 1 - drain_strength × exp(-R²/σ²)
+- Update density: ρ_u = 1 - drain_strength ×\exp(-R²/σ²)
 
 **Result:**
 - Geodesic trajectory successfully simulated

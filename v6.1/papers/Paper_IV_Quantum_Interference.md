@@ -28,7 +28,7 @@ The suppression of inter-generational mixing emerges naturally from the **topolo
 The suppression of inter-generational mixing (e.g., $V_{cb}, V_{ub}$) is no longer an arbitrary penalty but emerges from the **topological dissimilarity** measured by the Jones evaluation.
 
 ## 3. Physical Significance of $2\pi/5$
-The phase $	heta = 2\pi/5$ corresponds to the **Golden Ratio** ($\phi$) structure in topological quantum field theory (TQFT). This suggests a deep connection between flavor physics and non-abelian anyons, specifically:
+The phase $\theta = 2\pi/5$ corresponds to the **Golden Ratio** ($\phi$) structure in topological quantum field theory (TQFT). This suggests a deep connection between flavor physics and non-abelian anyons, specifically:
 - Flavor generations may be interpreted as distinct braid configurations.
 - Mixing is the result of quantum interference during the "untwisting" of these braids.
 

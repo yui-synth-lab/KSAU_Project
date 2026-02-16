@@ -22,7 +22,7 @@ The observed fermion spectrum requires exactly three generations ($g=3$). In the
 ## 3. Connection to the Selberg Trace Formula
 We propose that the mass spectrum is not a set of independent values but the discrete eigenvalues of the Laplacian $\Delta$ on the hyperbolic surface $X_0(41)$. According to the **Selberg Trace Formula**, the spectral density of the vacuum is linked to the lengths of closed geodesics on the modular curve.
 
-In this reconstruction, the log-mass formula $\ln(m) = N\kappa g + s\kappa$ is interpreted as the asymptotic distribution of these eigenvalues. The constant $\kappa = \pi/24$ acts as the "spectral gap" determined by the 24-dimensional Niemeier rank, representing the minimal quantum of action required to excite a topological defect in the vacuum fluid.
+In this reconstruction, the\log-mass formula $\ln(m) = N\kappa g + s\kappa$ is interpreted as the asymptotic distribution of these eigenvalues. The constant $\kappa = \pi/24$ acts as the "spectral gap" determined by the 24-dimensional Niemeier rank, representing the minimal quantum of action required to excite a topological defect in the vacuum fluid.
 
 ## 4. Sector Shifts and Sub-Lattice Symmetries
 The residues observed in the mass formula (shifts $s$) are identified as the stabilizers of the 24D lattice projection:

@@ -9,7 +9,7 @@
 ## Background
 
 The KSAU v7.1 investigation discovered a Fibonacci resonance in the Muon sector:
-$$\frac{\langle 4_1 \rangle_3}{\tau(4_1)} = \frac{13}{5} = 2.600 \approx N\kappa = 2.618 \quad (0.69\% \text{ error})$$
+$$\frac{\langle 4_1 \rangle_3}{\tau(4_1)} = \frac{13}{5} = 2.600 \approx N\kappa = 2.618 \quad (0.69\% \t\text{ error})$$
 
 To determine whether this is an **isolated resonance** or part of a **broader trend**, we need to compute the same ratio for the Electron (trefoil knot, 3₁).
 
@@ -37,7 +37,7 @@ To determine whether this is an **isolated resonance** or part of a **broader tr
 - Propagated to: `kashaev_electron_31.py`, `electron_spectral_resonance.json`, paper Section 2.5
 - **All removed/invalidated**
 
-**Root cause:** Different knots have different state sum formulas. The trefoil requires its own dedicated calculation.
+**Root cause:** Different knots have different state\sum formulas. The trefoil requires its own dedicated calculation.
 
 ---
 

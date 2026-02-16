@@ -92,7 +92,7 @@ These produce:
 - A = -1.57 (= -π/2)
 - B = -2.36 (= -3π/4)
 - β = -12.57 (= -4π)
-- C = 2.48 (= ln(12))
+- C = 2.48 (=\ln(12))
 
 **But these coefficients produce catastrophically wrong predictions!**
 
@@ -220,18 +220,15 @@ The file [ckm_final_audit.py](../code/ckm_final_audit.py) should use the **same 
 ```python
 # CURRENT (WRONG)
 audit_geom = phys['ckm']['audit_emergent_coefficients']
-A = audit_geom['A_pi_factor'] * pi  # -π/2
-B = audit_geom['B_pi_factor'] * pi  # -3π/4
-beta = audit_geom['beta_pi_factor'] * pi  # -4π
+A = audit_geom['A_pi_factor'] *\pi  # -π/2
+B = audit_geom['B_pi_factor'] *\pi  # -3π/4\beta = audit_geom['beta_pi_factor'] *\pi  # -4π
 C = np.log(12)
 
 # SHOULD BE (CORRECT)
 geom = phys['ckm']['geometric_coefficients']
-A = geom['A_barrier_pi_factor'] * pi  # -π/2
-B = geom['B_complex_pi_factor'] * pi  # -5π
-beta = geom['beta_visc_alpha_factor'] / alpha  # -0.5/α
-gamma = np.sqrt(geom['gamma_res_sqrt'])  # √3
-C = pi**2 + 2*pi  # π² + 2π
+A = geom['A_barrier_pi_factor'] *\pi  # -π/2
+B = geom['B_complex_pi_factor'] *\pi  # -5π\beta = geom['beta_visc_alpha_factor'] /\alpha  # -0.5/α\gamma = np.sqrt(geom['gamma_res_sqrt'])  # √3
+C =\pi**2 + 2*pi  # π² + 2π
 ```
 
 **Alternative:** If "audit_emergent_coefficients" are intentionally different (e.g., for a different theoretical model), then:

@@ -1,7 +1,7 @@
 # KSAU v6.1: Verification Report
 
 ## 1. CKM Model Update (v6.1 Final - Master Formula)
-- **Model:** $\ln\text{logit}|V_{ij}| = C + A \cdot \Delta V + B \cdot \Delta \ln|J| + \frac{\beta}{\bar{V}} + \gamma \cdot (\Delta V \cdot \Delta \ln|J|)$
+- **Model:** $\ln\t\text{logit}|V_{ij}| = C + A \cdot \Delta V + B \cdot \Delta \ln|J| + \frac{\beta}{\bar{V}} + \gamma \cdot (\Delta V \cdot \Delta \ln|J|)$
 - **Geometric Constants (First Principles):**
   - $A = -1.5708$ ($-\pi/2$: Barrier)
   - $B = -15.7080$ ($-5\pi$: Complexity)
@@ -28,9 +28,9 @@ u_3$).
 ## 3. Dark Matter Cross-Section (Shadow Topology)
 - **Candidate:** 12n_430 (Mass ~ 1.1 GeV).
 - **Shadow Proxy:** Crossing Number $C = 12$.
-- **Calculated Cross-Section:** $\sigma \approx 2.8 	imes 10^{-46} 	ext{ cm}^2$.
+- **Calculated Cross-Section:** $\sigma \approx 2.8 \\times 10^{-46} \t\text{ cm}^2$.
 - **Detection Status:**
-  - **LZ Limit:** $\sim 1.0 	imes 10^{-46} 	ext{ cm}^2$.
+  - **LZ Limit:** $\sim 1.0 \\times 10^{-46} \t\text{ cm}^2$.
   - **Verdict:** The candidate is **marginally excluded** (2.8x above limit).
   - **Correction:** A slightly higher suppression factor (e.g., $C \ge 13$ or effective shadow coefficient $> 1.0$) would push it into the allowed region. The Warm DM candidate (12n_242, 15 keV) is safely undetectable ($\sigma \sim 10^{-42}$ but below threshold for nuclear recoil detectors).
 

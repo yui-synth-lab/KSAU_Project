@@ -13,7 +13,7 @@ Following an external review, we have refined the theoretical claims of v7.1 to 
 ## 2. Refined Grand Identities
 We have updated the v7.1 canon with the following corrections:
 
-1.  **$\kappa \equiv \pi/24$ (Modular Correspondence)**: We identify $\kappa$ as a structural correspondence with the modular weight ($1/24$) of the Dedekind eta function governing the vacuum, rather than a direct derivation from $\zeta(-1)$.
+1.  **$\kappa \equiv \pi/24$ (Modular Correspondence)**: We identify $\kappa$ as a structural correspondence with the modular weight ($1/24$) of the Dedekind\eta function governing the vacuum, rather than a direct derivation from $\zeta(-1)$.
 2.  **$N_{lepton} \equiv 20$ (Dimensional Projection Hypothesis)**: Derived as a geometric ansatz from the remnant degrees of freedom of the 24D vacuum projected onto 4D spacetime ($24 - 4 = 20$).
 3.  **Fibonacci/Golden Ratio Resonance**: We identify that the Muon ratio $\langle 4_1 \rangle_3 / \tau(4_1) = 13/5$ involves consecutive Fibonacci numbers ($13, 5$) and approximates $\phi^2 \approx 2.618$ (the KSAU coefficient $N \cdot \kappa$). This anchors the localized spectral resonance in the geometry of the Golden Ratio.
 

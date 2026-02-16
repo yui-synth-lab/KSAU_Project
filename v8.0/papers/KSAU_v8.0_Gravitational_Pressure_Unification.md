@@ -20,11 +20,13 @@ The force experienced by another particle is the result of the pressure gradient
 $$ \mathbf{F}_{grav} = - V_{eff} \cdot 
 abla P $$
 By identifying the pressure $P$ with the energy density of the 24D vacuum, we derive the relationship:
-$$ G \propto \frac{\kappa^2 \cdot \sigma_t^2}{ho_{vac}} $$
-Where $\sigma_t$ is the temporal fluctuation width (from our simulation) and $ho_{vac}$ is the modular density of the Leech Lattice.
+$$ G \propto \frac{\kappa^2 \cdot \sigma_t^2}{
+ho_{vac}} $$
+Where $\sigma_t$ is the temporal fluctuation width (from our simulation) and $
+ho_{vac}$ is the modular density of the Leech Lattice.
 
 ## 2. Newton's Constant $G$: The 24D Compressibility
-Current KSAU v8.0 value $G \approx 6.71 	imes 10^{-39}$ is now interpreted as the **Bulk Modulus** of the 24D vacuum.
+Current KSAU v8.0 value $G \approx 6.71 \\times 10^{-39}$ is now interpreted as the **Bulk Modulus** of the 24D vacuum.
 - **Why is Gravity so weak?** Because the 24D fluid is almost perfectly incompressible. Only extremely large topological "displacements" (Planetary masses) create measurable pressure gradients.
 - **The $N=6$ Factor:** In `physical_constants.json`, we noted a `v_planck_factor: 6.0`. This corresponds to the **6-dimensional projection** required to map 24D pressure onto our 3+1D observable spacetime.
 
@@ -47,10 +49,10 @@ The Einstein Field Equations are replaced by the **Steady-State TBD Equation**:
 
 $$ R_{\mu
 u} - \frac{1}{2}g_{\mu
-u}R = \frac{1}{P_{vac}} \left( 
+u}R = \frac{1}{P_{vac}} \l\left( 
 abla_\mu \mathbf{v} \cdot 
 abla_
-u \mathbf{v} ight) $$
+u \mathbf{v} \\r\right) $$
 
 **Physical Meaning:** Curvature is the **Vorticity Squared** of the Temporal Wind. Gravity is simply the "weather" of the 24D vacuum fluid.
 
@@ -61,7 +63,7 @@ u \mathbf{v} ight) $$
 | :--- | :--- | :--- |
 | **Mass** | Excluded Volume Displacement | $N \kappa V$ |
 | **Gravity** | Static Pressure Gradient ($
-abla P$) | $G \propto 	ext{Compressibility}$ |
+abla P$) | $G \propto \t\text{Compressibility}$ |\tau
 | **Weak Force** | Vortex Reconnection | $e^{-B \kappa}$ |
 | **EM Force** | Surface Tension Waves | $\alpha_{em}$ |
 | **Time** | Collective Brownian Drift | $\mu_t d	au$ |

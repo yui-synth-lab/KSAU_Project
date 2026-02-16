@@ -66,7 +66,7 @@ To avoid "cherry-picking," candidate links were selected using a deterministic p
 ### 2.3 The Unified Mass Formula
 We propose the following semi-empirical relation for the mass $m$:
 
-$$ \ln\left(\frac{m}{\mu}\right) = \alpha \cdot Vol(K) + \beta \cdot \sigma(K) + \gamma \cdot L_{tot}(K) - \delta \cdot C_2 $$
+$$ \ln\l\left(\frac{m}{\mu}\r\right) = \alpha \cdot Vol(K) + \beta \cdot \sigma(K) + \gamma \cdot L_{tot}(K) - \delta \cdot C_2 $$
 
 Where $C_2$ is the quadratic Casimir invariant ($0$ for leptons, $4/3$ for quarks).
 

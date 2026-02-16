@@ -17,7 +17,7 @@
 
 ```python
 for N in test_levels:
-    # Test N-based prediction: X = pi * (16 + 24/N)
+    # Test N-based prediction: X =\pi * (16 + 24/N)
     X_pred = np.pi * (16 + 24/N)  # ← BUG: N should not be in denominator
     error = (X_pred / X_obs_non_red - 1) * 100
 ```
@@ -25,7 +25,7 @@ for N in test_levels:
 ### Problem
 
 The actual v12.0 hypothesis is:
-$$X = \pi \left(16 + \frac{24}{60}\right) = 16.4\pi$$
+$$X = \pi \l\left(16 + \frac{24}{60}\r\right) = 16.4\pi$$
 
 Where:
 - 16 = $E_8 \times E_8$ rank (gauge sector)
@@ -48,7 +48,7 @@ This suggests N=53 is superior to N=41, which contradicts the v12.0 hypothesis.
 
 **Option A: Test if N appears in the denominator at all**
 ```python
-# Test hypothesis: X = pi * (16 + 24/N) for various N
+# Test hypothesis: X =\pi * (16 + 24/N) for various N
 # If N=60 gives best fit, it suggests |A_5| is the correct divisor
 ```
 

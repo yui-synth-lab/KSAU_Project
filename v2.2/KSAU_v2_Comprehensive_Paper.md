@@ -19,9 +19,9 @@ By redefining quarks as **"3-component Links"**, we derive the 3 degrees of free
 
 ### 1.1 Theoretical Motivation
 
-In previous research (KSAU v1.6), it was shown that the masses of leptons (electron, muon, tau) are determined by the Möbius energy of single knots. However, the extension to the quark sector presented the following challenges:
+In previous research (KSAU v1.6), it was shown that the masses of leptons (electron, muon,\tau) are determined by the Möbius energy of single knots. However, the extension to the quark sector presented the following challenges:
 1.  **Color Charge (RGB)**: A single knot cannot represent the 3 degrees of freedom of SU(3) color symmetry.
-2.  **Mass Hierarchy Asymmetry**: The phenomenon where masses differ by more than 40 times within the same generation (e.g., Top and Bottom) cannot be explained by a single topological invariant (such as crossing number).
+2.  **Mass Hierarchy Asymmetry**: The phenomenon where masses differ by more than 40\times within the same generation (e.g., Top and Bottom) cannot be explained by a single topological invariant (such as crossing number).
 3.  **Strong Mixing**: Unlike leptons (PMNS), quarks (CKM) exhibit hierarchical mixing.
 
 ### 1.2 Quark Structure Axioms
@@ -33,7 +33,7 @@ A quark is an **Oriented 3-Component Link** $L = K_R \cup K_G \cup K_B$ in the s
 
 **Axiom 2 (Mass Axiom - Extended)**:
 Quark mass $m$ is an exponential function of the geometric complexity (topological energy) of the link. Here, we introduce **Hyperbolic Volume ($Vol$)** as an indicator of complexity.
-$$ \ln(m/m_0) = \alpha \cdot \text{Vol}(L) + \beta \cdot L_{tot} + \gamma \cdot N_c $$
+$$ \ln(m/m_0) = \alpha \cdot \t\text{Vol}(L) + \beta \cdot L_{tot} + \gamma \cdot N_c $$
 
 This is a natural extension of the Möbius energy hypothesis $m \sim \exp(E_{Mob})$ in v1.6 (since there is a correlation of $Vol \propto E_{Mob}$ in hyperbolic knots).
 
@@ -45,7 +45,7 @@ This is a natural extension of the Möbius energy hypothesis $m \sim \exp(E_{Mob
 
 Regression analysis using the hyperbolic volume of quark candidate links revealed an extremely high correlation ($R^2 = 0.951$) with mass.
 
-**Regression Formula**: $\ln(m) \approx 0.96 \cdot \text{Vol} - 4.43$
+**Regression Formula**: $\ln(m) \approx 0.96 \cdot \t\text{Vol} - 4.43$
 
 | Generation | Quark | Candidate Link | Hyperbolic Volume (Vol) | Predicted Mass | Observed Mass | Error |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -69,11 +69,11 @@ Regression analysis using the hyperbolic volume of quark candidate links reveale
 
 The CKM matrix elements $V_{ij}$ are transition probability amplitudes between quark states. In KSAU v2.1, this is formulated as a tunneling probability based on the "topological distance $D(i,j)$" between link structures:
 
-$$|V_{ij}| \approx \exp\left(-k \cdot D(i,j)\right)$$
+$$|V_{ij}| \approx \exp\l\left(-k \cdot D(i,j)\r\right)$$
 
 
 The distance function $D(i,j)$ consists of the following three terms:
-$$D(i,j) = \underbrace{w_c (\Delta n_c)^2}_{\text{Structural Barrier}} + \underbrace{w_g (\Delta n_g)^3}_{\text{Generation Tunneling}} + \underbrace{w_l |\Delta l|}_{\text{Rearrangement Cost}}$$
+$$D(i,j) = \underbrace{w_c (\Delta n_c)^2}_{\t\text{Structural Barrier}} + \underbrace{w_g (\Delta n_g)^3}_{\t\text{Generation Tunneling}} + \underbrace{w_l |\Delta l|}_{\t\text{Rearrangement Cost}}$$
 
 ### 3.2 Derivation Results
 
@@ -103,11 +103,11 @@ In KSAU v2.2, the CP phase $\delta_{CP}$ is interpreted as a **geometric phase (
     - Orientation {1,1}: Signature = **2**
 
 This orientation dependence suggests that heavy quarks are "topologically volatile". The transition amplitude becomes a complex number, and its phase term gives rise to CP symmetry violation:
-$$V_{AB} = |V_{AB}| \cdot \exp\left(i \oint \mathcal{A}_{topo}\right)$$
+$$V_{AB} = |V_{AB}| \cdot \exp\l\left(i \oint \mathcal{A}_{topo}\r\right)$$
 
 ### 4.2 Jarlskog Invariant
 
-The Jarlskog invariant $J \approx 3 \times 10^{-5}$ corresponds to the area of the unitary triangle. In this theory, this is interpreted as the "loop area of chiral asymmetry". The reason $J$ is small is that the $V_{ub}$ transition, which forms part of the loop, is strongly suppressed by the aforementioned "cubic generation barrier".
+The Jarlskog invariant $J \approx 3 \\times 10^{-5}$ corresponds to the area of the unitary triangle. In this theory, this is interpreted as the "loop area of chiral asymmetry". The reason $J$ is small is that the $V_{ub}$ transition, which forms part of the loop, is strongly suppressed by the aforementioned "cubic generation barrier".
 
 ---
 

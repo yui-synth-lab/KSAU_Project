@@ -20,7 +20,7 @@ The KSAU framework proposes that particle masses are topological invariants of t
 ### 2.1 The Synchronized Mass Scaling Law
 The mass of a Bulk sector particle is governed by the **Top-referenced Scaling Law**:
 
-$$\ln(m / \text{MeV}) = 10\kappa V + B_q^{sync}$$
+$$\ln(m / \t\text{MeV}) = 10\kappa V + B_q^{sync}$$
 
 where:
 - $\kappa = \pi/24$ (the universal vacuum rigidity)
@@ -38,7 +38,7 @@ The Geometric Axion is identified as the **simplest non-trivial amphicheiral kno
 
 Applying the Synchronized Law:
 $\ln(m_a) = 10(\pi/24) \cdot 5.6930 - 8.388 \approx -0.936$
-$m_a \approx \mathbf{0.392 \text{ MeV}}$
+$m_a \approx \mathbf{0.392 \t\text{ MeV}}$
 
 ![Figure 1: KSAU Mass Spectrum & Axion Prediction](figures/figure_1_spectrum.png)
 *Figure 1: The Unified Mass Spectrum. The prediction (0.392 MeV) is the unique solution satisfying both the Bulk Scaling Law and the mass-volume hierarchy constraint.*
@@ -50,13 +50,13 @@ $m_a \approx \mathbf{0.392 \text{ MeV}}$
 ### 3.1 Decay Mode and Lifetime Derivation
 The axion decays into two photons ($a \to \gamma\gamma$). We estimate the lifetime $\tau_a$ by scaling from the neutral pion ($\pi^0$) and applying a **Topological Suppression Factor** $\mathcal{S}_T$:
 
-$$\Gamma_a = \Gamma_{\pi^0} \cdot \left( \frac{m_a}{m_{\pi^0}} \right)^3 \cdot \mathcal{S}_T$$
+$$\Gamma_a = \Gamma_{\pi^0} \cdot \l\left( \frac{m_a}{m_{\pi^0}} \r\right)^3 \cdot \mathcal{S}_T$$
 
 Taking $\mathcal{S}_T \approx e^{-(C_a - C_{\pi})}$, where we assume an **effective crossing number $C_{\pi} = 3$** for the $\pi^0$ (approximated by the simplest non-trivial knot $3_1$):
-- $m_{\pi^0} \approx 135$ MeV, $\tau_{\pi^0} \approx 8.4 \times 10^{-17}$ s
+- $m_{\pi^0} \approx 135$ MeV, $\tau_{\pi^0} \approx 8.4 \\times 10^{-17}$ s
 - For $m_a = 0.392$ MeV and $\Delta C = 3$:
-- $\tau_{scaled} \approx \mathbf{3 \times 10^{-9} \text{ s}}$.
-- Including the topological suppression factor $\mathcal{S}_T \approx 20$, we obtain a baseline of $\sim 7 \times 10^{-8}$ s. However, the exact magnitude of additional suppression arising from the complex topological structure of the $6_3$ configuration (high tunneling barrier to the unknot) is yet to be determined; we therefore provide the lifetime range **$10^{-6}$ s to $10^{-3}$ s** as a conservative estimate. A definitive calculation of the topological matrix element remains a subject for future investigation.
+- $\tau_{scaled} \approx \mathbf{3 \\times 10^{-9} \t\text{ s}}$.
+- Including the topological suppression factor $\mathcal{S}_T \approx 20$, we obtain a baseline of $\sim 7 \\times 10^{-8}$ s. However, the exact magnitude of additional suppression arising from the complex topological structure of the $6_3$ configuration (high tunneling barrier to the unknot) is yet to be determined; we therefore provide the lifetime range **$10^{-6}$ s to $10^{-3}$ s** as a conservative estimate. A definitive calculation of the topological matrix element remains a subject for future investigation.
 
 ![Figure 2: Experimental Signatures](figures/figure_2_signatures.png)
 *Figure 2: Predicted monochromatic 0.392 MeV signal.*

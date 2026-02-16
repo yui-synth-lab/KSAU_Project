@@ -16,7 +16,7 @@ We report a discovery within the KSAU topological mass framework: the figure-eig
 
 ## 1. Introduction
 
-The KSAU framework posits that elementary particle masses are encoded in the hyperbolic geometry of knot complements. The empirical mass law ln(m) = NκV + C, with κ = π/24, achieves R² = 0.9998 across 9 fermions spanning 9 orders of magnitude in mass. However, the physical origin of the constant κ = π/24 and the scaling parameter N remained unexplained.
+The KSAU framework posits that elementary particle masses are encoded in the hyperbolic geometry of knot complements. The empirical mass law\ln(m) = NκV + C, with κ = π/24, achieves R² = 0.9998 across 9 fermions spanning 9 orders of magnitude in mass. However, the physical origin of the constant κ = π/24 and the scaling parameter N remained unexplained.
 
 Version 7.0 identified that the Chern-Simons level k=24 and the Niemeier lattice classification provide structural motivation for these values. Version 7.1 tests whether discrete topological invariants — specifically the Kashaev invariant at N=3 — can replace or ground the continuous volume law. The answer is nuanced: a localized Fibonacci resonance exists for the Muon, but the global N=3 hypothesis fails.
 
@@ -62,7 +62,7 @@ $$N \times \kappa = 20 \times \frac{\pi}{24} = \frac{5\pi}{6} = 2.61799\ldots$$
 
 **Error: |2.6000 − 2.6180| / 2.6180 = 0.69%**
 
-This 0.69% agreement involves the discrete ratio $13/5 = 2.600$ derived from the $4_1$ topology and the continuous KSAU coefficient $5\pi/6 \approx 2.618$. While $5\pi/6 \approx \phi^2$ (precision $1.2 \times 10^{-5}$) is a documented mathematical approximation, the KSAU framework observes that the Muon mass is situated at this resonance point with an error of 0.69%.
+This 0.69% agreement involves the discrete ratio $13/5 = 2.600$ derived from the $4_1$ topology and the continuous KSAU coefficient $5\pi/6 \approx 2.618$. While $5\pi/6 \approx \phi^2$ (precision $1.2 \\times 10^{-5}$) is a documented mathematical approximation, the KSAU framework observes that the Muon mass is situated at this resonance point with an error of 0.69%.
 
 > **Data Point:** $N\kappa = 5\pi/6 \approx 2.618$, whereas $\langle 4_1 \rangle_3 / \tau(4_1) = 13/5 = 2.600$.
 
@@ -73,7 +73,7 @@ The resonance in the Muon (4₁) is not a numerical coincidence but an algebraic
 1. **Tetrahedral Alignment:** The 4₁ knot is composed of exactly two ideal regular tetrahedra with shape parameter z = e^{iπ/3}.
 2. **Evaluation Point Identity:** The N=3 Kashaev invariant evaluates at q = e^{2πi/3} = z², the square of the shape parameter.
 3. **Integer Quantization:** This alignment forces |1−q|² = 3 exactly, generating the integer 13.
-4. **Fibonacci Bridge:** The resulting sum (1 + 3 + 9 = 13 = F₇) and Alexander torsion (5 = F₅) are consecutive odd Fibonacci numbers.
+4. **Fibonacci Bridge:** The resulting\sum (1 + 3 + 9 = 13 = F₇) and Alexander torsion (5 = F₅) are consecutive odd Fibonacci numbers.
 
 The Muon is the **"Geometric Ground State"** of the flavor sector, where the discrete evaluation of the quantum invariant perfectly matches the minimal hyperbolic architecture of the knot.
 
@@ -122,11 +122,11 @@ For the Tau, ⟨6₁⟩₃ = 27.07 (Garoufalidis) yields (2π/3)ln(27.07) = 6.90
 
 ### 3.3 Double Resonance Failure
 
-The formula ln(m) = (⟨K⟩₃ / τ) × V + C, which succeeds for the Muon (1.01% error), fails catastrophically for the Tau: predicted mass 6941 MeV vs. observed 1777 MeV (290% error). The Tau torsion τ(6₁) = 9 and ⟨6₁⟩₃ / τ = 27.07/9 = 3.008 ≠ Nκ = 2.618.
+The formula\ln(m) = (⟨K⟩₃ / τ) × V + C, which succeeds for the Muon (1.01% error), fails catastrophically for the Tau: predicted mass 6941 MeV vs. observed 1777 MeV (290% error). The Tau torsion τ(6₁) = 9 and ⟨6₁⟩₃ / τ = 27.07/9 = 3.008 ≠ Nκ = 2.618.
 
 ### 3.4 Conclusion: The Resonance is Muon-Specific
 
-The N=3 Kashaev hypothesis is **NOT** a universal lepton principle. The Muon-4₁ alignment is a localized Fibonacci resonance at a specific topological energy (Vol ≈ 2.03). The continuous volume law ln(m) = NκV + C with R²=0.9998 remains the only globally robust framework.
+The N=3 Kashaev hypothesis is **NOT** a universal lepton principle. The Muon-4₁ alignment is a localized Fibonacci resonance at a specific topological energy (Vol ≈ 2.03). The continuous volume law\ln(m) = NκV + C with R²=0.9998 remains the only globally robust framework.
 
 ---
 
@@ -134,7 +134,7 @@ The N=3 Kashaev hypothesis is **NOT** a universal lepton principle. The Muon-4�
 
 ### 4.1 Modular Correspondence for κ
 
-The Dedekind eta function governing modular properties of the vacuum features a characteristic exponent of 1/24:
+The Dedekind\eta function governing modular properties of the vacuum features a characteristic exponent of 1/24:
 
 $$\eta(\tau) = q^{1/24} \prod_{n=1}^{\infty} (1 - q^n), \quad q = e^{2\pi i\tau}$$
 
@@ -144,7 +144,7 @@ This provides a structural correspondence (not a derivation) between the vacuum'
 
 The lepton scaling N = 20 can be motivated by the following dimensional projection ansatz: in a vacuum constrained by the rank-24 Niemeier structure, the internal flavor degrees of freedom available after embedding 4-dimensional spacetime are:
 
-$$N_\text{lepton} = 24 - 4 = 20$$
+$$N_\t\text{lepton} = 24 - 4 = 20$$
 
 This is presented as a geometric ansatz, not a rigorous derivation.
 

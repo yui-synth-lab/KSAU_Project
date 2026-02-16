@@ -32,7 +32,7 @@ each N and can be computed exactly.
 
 The Volume Conjecture states:
 
-$$\lim_{N \to \infty} \frac{2\pi}{N} \ln|\langle K \rangle_N| = \text{Vol}(S^3 \setminus K)$$
+$$\lim_{N \to \infty} \frac{2\pi}{N} \ln|\langle K \rangle_N| = \t\text{Vol}(S^3 \setminus K)$$
 
 I verified this numerically for 4_1 (Vol = 2.0298832128...):
 
@@ -45,7 +45,7 @@ I verified this numerically for 4_1 (Vol = 2.0298832128...):
 
 Convergence confirmed. The subleading term fits:
 
-$$\ln|\langle 4_1 \rangle_N| = \frac{N}{2\pi}\text{Vol} + \frac{3}{2}\ln N + b + O(1/N)$$
+$$\ln|\langle 4_1 \rangle_N| = \frac{N}{2\pi}\t\text{Vol} + \frac{3}{2}\ln N + b + O(1/N)$$
 
 with fitted coefficient 1.4992 (theory: 3/2 = 1.5000, deviation 0.05%).
 
@@ -89,7 +89,7 @@ Equivalently: $13^{2\pi/3} = 215.3$ vs $m_\mu/m_e = 206.8$.
 
 ### 3.3 Other N Values as "Mass Predictions"
 
-If we interpret $m_e \cdot \exp\left(\frac{2\pi}{N}\ln\langle 4_1\rangle_N\right)$ as a "predicted mass":
+If we interpret $m_e \cdot \exp\l\left(\frac{2\pi}{N}\ln\langle 4_1\rangle_N\r\right)$ as a "predicted mass":
 
 | N | $\langle 4_1 \rangle_N$ | Predicted mass (MeV) | Closest particle? |
 |---|---|---|---|
@@ -107,7 +107,7 @@ N=3 gives the closest match to any known particle.
 ### 4.1 What This IS
 
 - A **numerical observation**: $(2\pi/3)\ln(13) \approx \ln(m_\mu/m_e)$
-  to 0.76% in log space
+  to 0.76% in\log space
 - Computed from **first principles**: no free parameters, no fitting
 - Uses a **well-defined mathematical object**: the Kashaev invariant
   of the figure-eight knot evaluated at N=3

@@ -38,7 +38,7 @@ Leptons follow a sequence of **Torus Knots $T(2, N)$** where $N$ is an odd integ
 | :--- | :--- | :--- | :--- | :--- |
 | **Electron ($e$)** | **$3_1$ (Trefoil)** | 3 | 3 | $T(2,3)$ - Simplest non-trivial knot. |
 | **Muon ($\mu$)** | **$6_1$ (Stevedore)** | 6 | 9 ($3^2$) | Twist knot sequence. |
-| **Tau ($	au$)** | **$7_1$ (Septafoil)** | 7 | 7 | $T(2,7)$ - Next prime torus knot. |
+| **Tau ($\tau$)** | **$7_1$ (Septafoil)** | 7 | 7 | $T(2,7)$ - Next prime torus knot. |
 
 *   **Unity:** The sequence $N=3, 6, 7$ is no longer arbitrary. It represents the progression through the simplest stable knots in the $N \le 7$ domain that maintain specific determinant properties.
 

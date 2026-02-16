@@ -15,13 +15,13 @@ KSAU v2.3 addresses the "Systematic Mass Deviation" identified in the peer revie
 ### 2.1 Extended Mass Formula
 The pure "Hyperbolic Volume" model (v2.2) has been extended to a 3-parameter topological model:
 
-$$ \ln(m) \approx 1.01 \cdot 	ext{Vol}(L) + 0.64 \cdot L_{tot} - 0.56 \cdot 	ext{Sig}(L) - 5.30 $$
+$$ \ln(m) \approx 1.01 \cdot \t\text{Vol}(L) + 0.64 \cdot L_{tot} - 0.56 \cdot \t\text{Sig}(L) - 5.30 $$
 
 | Parameter | Coefficient | Physical Interpretation |
 | :--- | :--- | :--- |
-| **Volume ($	ext{Vol}$)** | **+1.01** | Primary Mass Source (Vacuum Hole Energy) |
+| **Volume ($\t\text{Vol}$)** | **+1.01** | Primary Mass Source (Vacuum Hole Energy) |
 | **Complexity ($L_{tot}$)** | **+0.64** | Twist Energy (Writhe Proxy) |
-| **Chirality ($	ext{Sig}$)** | **-0.56** | **Chiral Correction** (New in v2.3) |
+| **Chirality ($\t\text{Sig}$)** | **-0.56** | **Chiral Correction** (New in v2.3) |
 
 **Impact on Prediction:**
 - **Top Quark Error:** Reduced from **+107%** (v2.2) to **+54%** (v2.3).
@@ -35,7 +35,7 @@ A verified dataset `data/quark_data_v2.3.csv` has been released, containing:
 - **Physical Mappings:** Mass, Generation, and Quark Type.
 
 ## 3. CKM Matrix Re-evaluation
-The "Topological Distance" hypothesis was tested using Volume Difference ($|\Delta 	ext{Vol}|$) instead of the previous structural proxy ($N_c$).
+The "Topological Distance" hypothesis was tested using Volume Difference ($|\Delta \t\text{Vol}|$) instead of the previous structural proxy ($N_c$).
 
 **Result:**
 The optimization suggests that **Generation Gap** ($\Delta g$) is the dominant factor for mixing suppression ($w_{gen} \approx 2.3$), while geometric volume differences play a minor role.

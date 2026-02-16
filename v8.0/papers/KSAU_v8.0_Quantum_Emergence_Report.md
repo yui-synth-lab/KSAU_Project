@@ -17,21 +17,24 @@ Standard Quantum Mechanics starts with:
 $$ i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} 
 abla^2 \psi + V \psi $$
 
-In TBD, we start with the **Stochastic Diffusion Equation** for the fluid density $ho$ in the Leech Lattice, where the fluid undergoes both **Diffusion** (Brownian motion) and **Rotation** (Vorticity) in the 24D space.
+In TBD, we start with the **Stochastic Diffusion Equation** for the fluid density $
+ho$ in the Leech Lattice, where the fluid undergoes both **Diffusion** (Brownian motion) and **Rotation** (Vorticity) in the 24D space.
 
 ### 2.1 The Origin of $i$ (Imaginary Unit)
 Why does $i$ appear? In 24D geometry, diffusion isn't just radial. The vacuum has a **Modular Structure** (lattices).
 A particle moving in this lattice experiences a constant geometric rotation of 90 degrees ($\pi/2$) due to the complex structure of the Leech Lattice (which can be viewed as 12 complex dimensions $\mathbb{C}^{12}$).
 
-The **Imaginary Unit $i$** is physically the **Rotation Operator $J$** in the 24D plane:
-$$ i \equiv J \quad 	ext{where} \quad J^2 = -I 	ext{ (90-degree rotation)} $$
+The **Imaginary Unit\text** is physically the **\texttion Operator $J$** in the 24D plane:
+$$ i \equiv J \quad 	\text{where} \quad J^2 = -I 	\text{ (90-degree rotation)} $$
 
-Thus, the diffusion equation $\frac{\partial ho}{\partial t} = D 
-abla^2 ho$ naturally acquires a complex phase when projected onto our 3D slice, becoming the Schrödinger equation.
-
+Thus, the diffusion equation $\frac{\partial 
+ho}{\partial t} = D 
+abla^2 
+ho$ naturally acquires a complex phase when projected onto our 3D slice, becoming the Schrödinger equation.
+\text
 ### 2.2 Planck's Constant $\hbar$ as Fluid Viscosity
 Comparing the Diffusion equation with Schrödinger's equation:
-$$ D_{	ext{diff}} \sim \frac{\hbar}{2m} $$
+$$ D_{	\text{diff}} \sim \frac{\hbar}{2m} $$
 Since we defined mass as $m \sim N \kappa V$, and viscosity as $
 u \sim \kappa$:
 $$ \hbar \sim 2 \cdot N \cdot \kappa^2 \cdot V $$

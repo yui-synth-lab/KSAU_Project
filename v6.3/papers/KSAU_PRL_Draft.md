@@ -5,7 +5,7 @@
 **Date:** 2026-02-09
 
 ## Abstract
-The Standard Model of particle physics contains approximately 19 arbitrary parameters. We propose a geometric framework, **Knot-based Standard Model Architecture (KSAU)**, where these parameters emerge from the hyperbolic geometry of knot complements in 3-manifold. Without introducing free tuning parameters, our model derives: (1) the CKM matrix elements via a "Color Cube Law" based on $SU(2)_3$ topological field theory (predicting the Cabibbo angle with 8.5% precision); (2) the vanishing Strong CP angle $	heta \approx 0$ via an amphicheiral vacuum condensate; and (3) the W boson mass with 0.1% accuracy as a double Borromean link. These results suggest that the flavor hierarchy and gauge symmetries are topological necessities of the spacetime fabric.
+The Standard Model of particle physics contains approximately 19 arbitrary parameters. We propose a geometric framework, **Knot-based Standard Model Architecture (KSAU)**, where these parameters emerge from the hyperbolic geometry of knot complements in 3-manifold. Without introducing free tuning parameters, our model derives: (1) the CKM matrix elements via a "Color Cube Law" based on $SU(2)_3$ topological field theory (predicting the Cabibbo angle with 8.5% precision); (2) the vanishing Strong CP angle $\theta \approx 0$ via an amphicheiral vacuum condensate; and (3) the W boson mass with 0.1% accuracy as a double Borromean link. These results suggest that the flavor hierarchy and gauge symmetries are topological necessities of the spacetime fabric.
 
 ## 1. Introduction
 Despite its success, the Standard Model (SM) does not explain the origin of its parameters. Why are there three generations? Why are neutrino masses so small? Why is CP preserved in the strong sector? Here, we demonstrate that **hyperbolic knot geometry** [1] provides a unified answer. We posit that elementary particles are topological solitons (knots/links) whose physical mass $m$ is determined by their hyperbolic volume $V$:
@@ -20,16 +20,16 @@ The most striking result is the *ab initio* derivation of the CKM matrix. We mod
 The topological amplitude of a quark $q$ is given by the Jones polynomial $J_q(t)$ evaluated at the root of unity $t = e^{2\pi i/5}$:
 $$ Q_q = |J_q(e^{2\pi i/5})| $$
 Since quarks carry $N_c=3$ color charges, a flavor transition requires the simultaneous tunneling of three color flux tubes. The transition probability (mixing angle magnitude) is therefore governed by the **Color Cube Law**:
-$$ |V_{ij}| \approx \left( \frac{Q_{	ext{light}}}{Q_{	ext{heavy}}} ight)^3 $$
+$$ |V_{ij}| \approx \l\left( \frac{Q_{\t\text{light}}}{Q_{\t\text{heavy}}} \\r\right)^3 $$
 **Result:** Using the assigned topologies (Up=L8a6, Strange=L10n95), this formula predicts the Cabibbo angle $|V_{us}|$:
-$$ |V_{us}|_{	ext{pred}} = 0.2061 \quad (	ext{Observed: } 0.2253) $$
+$$ |V_{us}|_{\t\text{pred}} = 0.2061 \quad (\t\text{Observed: } 0.2253) $$
 This matches within **8.5%** with **zero free parameters**. Similarly, $|V_{td}|$ and $|V_{ts}|$ are predicted with ~10% accuracy. This strongly implies that flavor mixing is a 3-strand braiding interaction.
 
-## 4. The Amphicheiral Vacuum: Solving Strong CP
-The Strong CP problem asks why the vacuum angle $	heta_{QCD}$ is zero. We propose that the QCD vacuum ground state is a condensate of the simplest hyperbolic knot, the **Figure-Eight knot ($4_1$)**.
+## 4. The Amphicheiral Vacuum: Solving Strong CP\theta
+The Strong CP problem asks why the vacuum angle $\theta_{QCD}$ is zero. We propose that the QCD vacuum ground state is a condensate of the simplest hyperbolic knot, the **Figure-Eight knot ($4_1$)**.
 Unlike chiral knots (e.g., Trefoil $3_1$), the $4_1$ knot is **Amphicheiral** (identical to its mirror image). Consequently, its Chern-Simons invariant ($CS$) is strictly zero:
-$$ CS(4_1) \equiv 0 $$
-A vacuum dominated by amphicheiral defects possesses macroscopic mirror symmetry, forcing the effective $	heta$ parameter to vanish. Thus, **CP conservation is a geometric theorem**, eliminating the need for an Axion particle.
+$$ CS(4_1) \equiv 0 $$\theta
+A vacuum dominated by amphicheiral defects possesses macroscopic mirror symmetry, forcing the effective $\theta$ parameter to vanish. Thus, **CP conservation is a geometric theorem**, eliminating the need for an Axion particle.
 
 ## 5. The W Boson as a Brunnian Clasp
 We identify the W boson with the link **L11n387**.

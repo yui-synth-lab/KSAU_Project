@@ -43,7 +43,7 @@ Version 10.0 aims to achieve **complete unification** of the Standard Model mass
 **Goal:** Resolve the N = 3 vs N = 6 discrepancy through rigorous re-analysis
 
 **Tasks:**
-- [ ] **Task 1.1:** Recalculate boson effective slopes using standardized ln(m/m_e)/V methodology
+- [ ] **Task 1.1:** Recalculate boson effective slopes using standardized\ln(m/m_e)/V methodology
 - [ ] **Task 1.2:** Apply Shift Theory to bosons: separate slope from symmetry shifts
 - [ ] **Task 1.3:** Test both hypotheses:
   - Hypothesis A: N_boson = 3, with additional symmetry shifts
@@ -60,8 +60,7 @@ Version 10.0 aims to achieve **complete unification** of the Standard Model mass
 **Goal:** Unified formula covering all fundamental particles
 
 **Master Formula (v10.0 Candidate):**
-```
-ln(m) = N_sector · κ · V + C_universal - Σ SymmetryShifts
+```\ln(m) = N_sector · κ · V + C_universal - Σ SymmetryShifts
 ```
 
 **Sector Parameters:**
@@ -115,7 +114,7 @@ N_sector = dim(T_⊥) where T_⊥ is transverse space available to particle type
 - N is sector-dependent (Running N Hypothesis) ← **Current leading model**
 
 **Tasks:**
-- [ ] **Task 4.1:** Plot ln(m) vs V for all particles on single graph with sector coloring
+- [ ] **Task 4.1:** Plot\ln(m) vs V for all particles on single graph with sector coloring
 - [ ] **Task 4.2:** Test linear fit: single κ with multiple N_sector values
 - [ ] **Task 4.3:** Test nonlinear fit: κ(V) function with fixed N
 - [ ] **Task 4.4:** Compare Akaike Information Criterion (AIC) for model selection
@@ -131,7 +130,7 @@ N_sector = dim(T_⊥) where T_⊥ is transverse space available to particle type
 - Mass = Viscous drag in 24D fluid
 - N = Effective dimensional drag coefficient
 - V = Excluded volume of topological defect
-- Mixing = Stochastic reconnection with barrier exp(-B·κ)
+- Mixing = Stochastic reconnection with barrier\exp(-B·κ)
 
 **Tasks:**
 - [ ] **Task 5.1:** Simulate 24D random walks with different projection rules (N=20, 10, 6, 3)
@@ -188,7 +187,7 @@ N_sector = dim(T_⊥) where T_⊥ is transverse space available to particle type
 ## Key Questions to Resolve
 
 1. **Is N_boson = 3 or 6?** (Or neither? N=4, N=8?)
-2. **Do bosons follow Shift Theory?** (Color shifts don't apply, but symmetry-breaking shifts might)
+2. **Do bosons follow Shift Theory?** (Color shifts don't apply, but symmetry-breaking shifts m\right)
 3. **Why are bosons Brunnian?** (Topological necessity vs coincidence)
 4. **Can we predict new particles?** (If framework is truly universal)
 5. **What is the ontology of the 24D vacuum?** (Niemeier? Leech? Both?)

@@ -58,7 +58,7 @@ No independent verification available without:
 - Conclusion: N=3 hypothesis fails for Tau
 
 **Section 4-6: Structural Motivation & Conclusions**
-- κ = π/24 (Dedekind eta correspondence)
+- κ = π/24 (Dedekind\eta correspondence)
 - N = 20 (dimensional projection ansatz)
 - Continuous volume law R² = 0.9998 (foundation)
 

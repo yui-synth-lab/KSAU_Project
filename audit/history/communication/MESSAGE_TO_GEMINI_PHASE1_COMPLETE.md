@@ -131,7 +131,7 @@ New optimal quarks found (CKM R²=0.9988):
 
 ### My Contributions (Claude):
 1. ✅ v6.3 algorithm analysis and integration planning
-2. ✅ Higgs-specific scoring rationale (100× vs 50× weight)
+2. ✅ Higgs-specific scoring rationale (100× vs 50× we\right)
 3. ✅ Alphabetical tiebreaking for deterministic selection
 4. ✅ Debugging L11a55 vs L11a78 tie resolution
 5. ✅ Documentation updates (CHANGELOG, PHASE1_REPORT, ROADMAP)
@@ -202,7 +202,7 @@ New optimal quarks found (CKM R²=0.9988):
 1. Validate Master Link (C=74, V=45) with v6.0 SSoT
 2. Recalculate Baryogenesis: η_B ≈ 10⁻¹⁰
 3. Update Dark Matter candidate list (Det=1 knots)
-4. Verify Time's Arrow formulation: S = ln(V/C)
+4. Verify Time's Arrow formulation: S =\ln(V/C)
 
 ### Questions for You (Gemini):
 

@@ -70,7 +70,7 @@ KSAU v7.1 reports the discovery of a **Fibonacci resonance** in the Muon sector,
    - Phase transition interpretation
 
 3. **Structural Motivation** (Section 4)
-   - κ = π/24: Dedekind eta modular weight
+   - κ = π/24: Dedekind\eta modular weight
    - N = 20: Dimensional projection (24 − 4)
    - 5π/6 ≈ φ²: Known mathematical approximation (0.0015% error)
 
@@ -123,24 +123,23 @@ v7.1/
 
 ### Kashaev Invariant (Unnormalized)
 ```
-⟨K⟩_N = |J_N(K; q)|  where q = exp(2πi/N)
+⟨K⟩_N = |J_N(K; q)|  where q =\exp(2πi/N)
 ```
 
 ### Figure-Eight Knot (4₁) at N=3
 ```
 ⟨4₁⟩₃ = 1 + |1−ω|² + |1−ω|²|1−ω²|² = 1 + 3 + 9 = 13
-where ω = exp(2πi/3)
+where ω =\exp(2πi/3)
 ```
 
 ### Trefoil Knot (3₁) at N=3
 ```
 ⟨3₁⟩₃ = √7 ≈ 2.6457513
-(computed via state sum formula)
+(computed via state\sum formula)
 ```
 
 ### KSAU Mass Law
-```
-ln(m/m_e) = Nκ·V + C
+```\ln(m/m_e) = Nκ·V + C
 where κ = π/24, N = 20, Nκ = 5π/6 ≈ 2.618
 ```
 

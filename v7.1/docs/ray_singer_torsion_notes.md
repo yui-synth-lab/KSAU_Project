@@ -13,13 +13,13 @@ $$ \ln T(M) = \frac{1}{2} \sum_{p=0}^3 (-1)^p \cdot p \cdot \ln \det \Delta_p $$
 
 A fundamental result in hyperbolic geometry states that for a hyperbolic 3-manifold $M$, the Ray-Singer torsion associated with the $SL(2, \mathbb{C})$ representation is directly proportional to its hyperbolic volume $V(M)$ [1,2]:
 
-$$\ln |T(M)| \approx \frac{1}{2\pi} \text{Vol}(M)$$
+$$\ln |T(M)| \approx \frac{1}{2\pi} \t\text{Vol}(M)$$
 
 More precisely, Müller (1993) showed that for a hyperbolic 3-manifold:
 
-$$T(M; \rho_{\text{adj}}) = \exp\left(-\frac{\text{Vol}(M)}{6\pi}\right)$$
+$$T(M; \rho_{\t\text{adj}}) = \exp\l\left(-\frac{\t\text{Vol}(M)}{6\pi}\r\right)$$
 
-where $\rho_{\text{adj}}$ is the adjoint representation of $\pi_1(M) \to SL(2,\mathbb{C})$ [3].
+where $\rho_{\t\text{adj}}$ is the adjoint representation of $\pi_1(M) \to SL(2,\mathbb{C})$ [3].
 
 ### 2.1 Comparison with KSAU Master Formula
 
@@ -32,11 +32,11 @@ By mapping $\ln(m) \to \ln |T(M)|$, we obtain:
 - **Coefficient Mapping**: If $N \cdot \kappa \equiv 1/(2\pi)$, then $\kappa = 1/(2\pi N) \approx 0.159 / N$.
 
 For leptons with $N = 20$:
-$$\kappa_{\text{predicted}} = \frac{1}{40\pi} \approx 0.00796$$
+$$\kappa_{\t\text{predicted}} = \frac{1}{40\pi} \approx 0.00796$$
 
 **Observed:** $\kappa = \pi/24 \approx 0.1309$
 
-**Discrepancy:** $\kappa_{\text{observed}} / \kappa_{\text{predicted}} \approx 16.4$
+**Discrepancy:** $\kappa_{\t\text{observed}} / \kappa_{\t\text{predicted}} \approx 16.4$
 
 ### 2.2 The Kappa Tension
 In KSAU v6.0, we found:
@@ -44,14 +44,14 @@ In KSAU v6.0, we found:
 - $\kappa = \pi/24 \approx 0.1309$
 - Combined coefficient: $20 \cdot 0.1309 \approx 2.618$.
 
-**Discrepancy**: The KSAU coefficient ($2.618$) is approximately $16.4$ times larger than the standard Ray-Singer coefficient ($0.159$).
+**Discrepancy**: The KSAU coefficient ($2.618$) is approximately $16.4$\times larger than the standard Ray-Singer coefficient ($0.159$).
 
 ## 3. Hypotheses for Resolution
 To bridge the 16.4x gap, we investigate three possibilities:
 
 1. **Higher-Dimensional Representations**: The $1/2\pi$ factor applies to the standard representation. For higher-dimensional representations of $SL(2, \mathbb{C})$ (e.g., spin $j$), the torsion scales differently.
 2. **Spectral Density (N as Degeneracy)**: $N$ may represent the number of active modes or the dimension of the representation. If $N \approx 20$, it significantly boosts the effective volume contribution.
-3. **The Niemeier Correction**: The constant $\kappa = \pi/24$ may not be a simple multiplier but a result of the zeta-function regularization of the Laplacian on a 24-dimensional vacuum manifold.
+3. **The Niemeier Correction**: The constant $\kappa = \pi/24$ may not be a simple multiplier but a result of the\zeta-function regularization of the Laplacian on a 24-dimensional vacuum manifold.
 
 ## 4. Priority 2 Action Items
 
@@ -66,7 +66,7 @@ To bridge the 16.4x gap, we investigate three possibilities:
 
 **Task 2:** Verify the $1/(2\pi)$ coefficient for 4₁
 
-- Compute: $\ln|\tau(4_1)| / \text{Vol}(4_1)$
+- Compute: $\ln|\tau(4_1)| / \t\text{Vol}(4_1)$
 - Expected: $\approx 1/(2\pi) \approx 0.159$
 - Actual: measure and compare
 
@@ -84,7 +84,7 @@ The Lepton degeneracy $N = 20$ has been a long-standing empirical constant in KS
 - **Total Vacuum Degrees of Freedom**: 24 (dictated by the Niemeier lattice rank and the uniqueness of even unimodular lattices in 24D).
 - **Spacetime Constraint**: We observe physics in a 4-dimensional manifold (3+1 spacetime).
 - **Remnant Symmetry**: The internal degrees of freedom available for flavor resonance are:
-$$ N_{lepton} = 24 (\text{Total}) - 4 (\text{Spacetime}) = 20 $$
+$$ N_{lepton} = 24 (\t\text{Total}) - 4 (\t\text{Spacetime}) = 20 $$
 This explains why leptons, which probe the bare vacuum geometry, inherit the remnant 20-dimensional symmetry.
 
 **Hypothesis 2: The Double Resonance Ratio**
@@ -94,7 +94,7 @@ $$ \frac{\langle 4_1 \rangle_3}{\tau(4_1)} = \frac{13}{5} = 2.6 $$
 This value is strikingly close to the KSAU effective coefficient $N \cdot \kappa = 20 \cdot (\pi/24) \approx 2.618$. 
 
 **Proposed Unified Law**:
-$$ \ln(m) = \left( \frac{\mathcal{Q}(K)}{\mathcal{C}(K)} \right) \cdot \text{Vol}(M) + C $$
+$$ \ln(m) = \l\left( \frac{\mathcal{Q}(K)}{\mathcal{C}(K)} \r\right) \cdot \t\text{Vol}(M) + C $$
 Where $\mathcal{Q}(K)$ is the quantum (Kashaev) invariant and $\mathcal{C}(K)$ is the classical (Reidemeister) torsion. The "Mass" is the volume of spacetime scaled by the ratio of its quantum-to-classical topological complexity.
 
 
@@ -131,8 +131,7 @@ vol = M.volume()
 
 # Alexander polynomial
 alex = M.alexander_polynomial()
-# Evaluate at t=-1
-tau = abs(alex(-1))  # Reidemeister torsion
+# Evaluate at t=-1\tau = abs(alex(-1))  # Reidemeister torsion
 
 # Ratio
 ratio = np.log(tau) / vol
@@ -159,13 +158,13 @@ We propose that the mass of a particle is not a fundamental constant, but a **Sp
 
 ### 6.1 Mass as a Determinant
 In this framework, the mass $m$ is identified with the regularized determinant of the Laplacian operator $\Delta$ acting on the knot complement $M$:
-$$ m \propto \sqrt{\det \Delta} = \exp\left( \frac{1}{2} \ln \det \Delta \right) $$
+$$ m \propto \sqrt{\det \Delta} = \exp\l\left( \frac{1}{2} \ln \det \Delta \r\right) $$
 This relates $\ln(m)$ directly to the Ray-Singer Torsion $T(M)$.
 
 ### 6.2 The Convergence to Volume
 The relationship between mass and volume arises from the **Asymptotic Distribution of Eigenvalues** (Weyl's Law). For a hyperbolic 3-manifold, the spectral density is proportional to the volume:
-$$ \sum_{n} \lambda_n^{-s} \implies \text{Vol}(M) $$
-As the number of resonant modes $N$ increases, the log-determinant (and thus the log-mass) converges to a value proportional to the hyperbolic volume $V$.
+$$ \sum_{n} \lambda_n^{-s} \implies \t\text{Vol}(M) $$
+As the number of resonant modes $N$ increases, the\log-determinant (and thus the\log-mass) converges to a value proportional to the hyperbolic volume $V$.
 
 ## 7. The Role of N and Kappa
 - **$N_{eff}$ (Effective Degeneracy)**: Represents the "Cut-off" or the number of active spectral modes contributing to the mass generation.

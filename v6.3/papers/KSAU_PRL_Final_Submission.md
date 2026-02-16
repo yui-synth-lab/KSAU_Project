@@ -5,15 +5,15 @@
 **Target Journal:** Physical Review Letters
 
 ## Abstract
-We demonstrate that Standard Model parameters emerge from hyperbolic knot geometry with zero free parameters. Our framework predicts: (1) Fermion masses via holographic duality ($R^2 > 0.999$), (2) Cabibbo angle via topological "Color Cube Law" (8.5% error), (3) Strong CP conservation via amphicheiral vacuum ($	heta=0$ exact), and (4) W boson mass as a Brunnian link (0.1% error). Topology appears fundamental to particle physics.
+We demonstrate that Standard Model parameters emerge from hyperbolic knot geometry with zero free parameters. Our framework predicts: (1) Fermion masses via holographic duality ($R^2 > 0.999$), (2) Cabibbo angle via topological "Color Cube Law" (8.5% error), (3) Strong CP conservation via amphicheiral vacuum ($\theta=0$ exact), and (4) W boson mass as a Brunnian link (0.1% error). Topology appears fundamental to particle physics.
 
 ## 1. Introduction
 The Standard Model (SM) contains $\sim 19$ free parameters whose origins remain unexplained. We propose a geometric framework, **Knot-based Standard Model Architecture (KSAU)**, where fermions correspond to hyperbolic knot complements in 3-manifold.
 We posit that the physical mass $m$ of a particle is determined by the hyperbolic volume $V$ of its knot complement via a holographic scaling law:
 **Quarks (Bulk):**
-$$ \ln(m/	ext{MeV}) = 10\kappa V + \kappa T - 7(1+\kappa) $$
+$$ \ln(m/\t\text{MeV}) = 10\kappa V + \kappa T - 7(1+\kappa) $$
 **Leptons (Boundary):**
-$$ \ln(m/	ext{MeV}) = \frac{14}{9}\kappa N^2 + \delta + [\kappa - \frac{7}{3}(1+\kappa)] $$
+$$ \ln(m/\t\text{MeV}) = \frac{14}{9}\kappa N^2 + \delta + [\kappa - \frac{7}{3}(1+\kappa)] $$
 where $\kappa = \pi/24$ is a universal coupling derived from Casimir/String convergence (see Supp. Mat. S5).
 
 ## 2. Holographic Mass-Volume Duality
@@ -27,15 +27,16 @@ In $SU(2)_k$ Chern-Simons theory at level $k=3$ (Fibonacci Anyons), the topologi
 Each quark topology $K$ has a "quantum dimension":
 $$ d_K = |J_K(e^{2\pi i/5})| $$
 Since quarks carry $N_c=3$ color charges, flavor mixing requires the simultaneous tunneling of a color triplet. The transition probability is governed by the **Color Cube Law**:
-$$ |V_{ij}| \approx \left( \frac{d_{	ext{light}}}{d_{	ext{heavy}}} ight)^3 $$
+$$ |V_{ij}| \approx \l\left( \frac{d_{\t\text{light}}}{d_{\t\text{heavy}}} \\r\right)^3 $$
 **Result:** With zero free parameters, this predicts the Cabibbo angle $|V_{us}|$:
-$$ |V_{us}|_{	ext{pred}} = 0.2061 \quad (	ext{Observed: } 0.2253, 	ext{Error: } 8.5\%) $$
+$$ |V_{us}|_{\t\text{pred}} = 0.2061 \quad (\t\text{Observed: } 0.2253, \t\text{Error: } 8.5\%) $$
 Similarly, $|V_{td}|$ (Error 7.9%) and $|V_{ts}|$ (Error 10.3%) are predicted. The phase $2\pi/5$ is not fitted but is the unique signature of $SU(2)_3$ TQFT. The statistical significance of this agreement is $p < 0.001$ against a random topology null hypothesis.
-
-## 4. Amphicheiral Vacuum and $	heta=0$
-The Strong CP problem asks why the vacuum angle $	heta_{QCD}$ is zero. We propose the **Amphicheiral Vacuum Hypothesis**: the ground state of the QCD vacuum is a condensate of the **Figure-Eight knot ($4_1$)**.
-The $4_1$ knot has three unique properties: (1) Minimum hyperbolic volume ($V \approx 2.0298$), ensuring stability; (2) Amphicheirality ($4_1 \cong 4_1^*$); (3) Vanishing Chern-Simons invariant ($CS \equiv 0$).
-A vacuum dominated by such defects enforces $\langle CS angle = 0$, leading to $	heta_{	ext{eff}} = 0$ geometrically. This solves the Strong CP problem without an Axion particle.
+\theta
+## 4. Amphicheiral Vacuum and $\theta=0$\theta
+The Strong CP problem asks why the vacuum angle $\theta_{QCD}$ is zero. We propose the **Amphicheiral Vacuum Hypothesis**: the ground state of the QCD vacuum is a condensate of the **Figure-Eight knot ($4_1$)**.
+The $4_1$ knot has three unique properties: (1) Minimum hyperbolic volume ($V \ap\theta2.0298$), ensuring stability; (2) Amphicheirality ($4_1 \cong 4_1^*$); (3) Vanishing Chern-Simons invariant ($CS \equiv 0$).
+A vacuum dominated by such defects enforces $\langle CS 
+angle = 0$, leading to $\theta_{\t\text{eff}} = 0$ geometrically. This solves the Strong CP problem without an Axion particle.
 
 ## 5. Gauge and Scalar Boson Topology
 We identify the electroweak bosons as topological "clasps" binding fermion generations.

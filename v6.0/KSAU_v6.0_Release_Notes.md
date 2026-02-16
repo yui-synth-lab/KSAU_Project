@@ -26,7 +26,7 @@ KSAU v6.0 introduces the **Holographic Dual Model** to explain the bifurcation i
 ### 2.1 Topological CKM Mixing
 The CKM matrix hierarchy is proposed as an emergent property of link overlaps.
 *   **Cabibbo Angle**: $|V_{us}| \approx \exp(-\frac{1}{2} \Delta Vol)$ is verified to be accurate to **0.02%** for the $u \leftrightarrow s$ transition.
-*   **Wolfenstein Parameter**: By modeling generation distance using Determinant Complexity ($\log_2 \text{Det}$), we derive a suppression coefficient $\alpha \approx 0.226$, which matches the experimental Cabibbo angle ($\lambda \approx 0.225$).
+*   **Wolfenstein Parameter**: By modeling generation distance using Determinant Complexity ($\log_2 \t\text{Det}$), we derive a suppression coefficient $\alpha \approx 0.226$, which matches the experimental Cabibbo angle ($\lambda \approx 0.225$).
 
 ### 2.2 Experimental Challenges (Falsifiability)
 
@@ -41,13 +41,13 @@ Rather than dismissing deviations, v6.0 provides a transparent audit of the mode
 
 | Metric | Value | Interpretation |
 | :--- | :--- | :--- |
-| **Quark Mass Fit** ($R^2$) | 0.999952 | Foundational stability (MAE 1.88%, log-scale). |
-| **Lepton Mass Fit** ($R^2$) | 0.999327 | Boundary model accuracy (MAE 5.10%, log-scale). |
+| **Quark Mass Fit** ($R^2$) | 0.999952 | Foundational stability (MAE 1.88%,\log-scale). |
+| **Lepton Mass Fit** ($R^2$) | 0.999327 | Boundary model accuracy (MAE 5.10%,\log-scale). |
 | **Cabibbo Angle Error** | 0.02% | Proof of geometric proximity principle ($\|V_{us}\|$). |
 | **Predicted Muon Mass** | 105.65 MeV | -0.01% error using canonical $6_1$ (Boundary Principle). |
 | **Predicted Electron Mass** | 0.44 MeV | -14.05% error (first-generation topological ground state). |
 
-**Analysis of Residuals**: The integration of the **Determinant Entropy Principle** ($-\kappa \ln \text{Det}$) combined with the dynamically discovered canonical sequence ($3_1, 6_1, 7_1$) has effectively resolved the heavy-lepton anomalies. The near-perfect Muon alignment (-0.01%) confirms that information entropy is a critical component of boundary-mode mass generation. The residual Electron deviation indicates that the first generation resides in a ground state where additional curvature or quantum corrections are dominant.
+**Analysis of Residuals**: The integration of the **Determinant Entropy Principle** ($-\kappa \ln \t\text{Det}$) combined with the dynamically discovered canonical sequence ($3_1, 6_1, 7_1$) has effectively resolved the heavy-lepton anomalies. The near-perfect Muon alignment (-0.01%) confirms that information entropy is a critical component of boundary-mode mass generation. The residual Electron deviation indicates that the first generation resides in a ground state where additional curvature or quantum corrections are dominant.
 
 ## 4. Path to v6.1: Future Research Directions
 

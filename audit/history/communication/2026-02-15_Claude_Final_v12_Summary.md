@@ -21,7 +21,7 @@ After exhaustive testing today (February 15, 2026), v12.0 presents a **fascinati
 - ❌ 1509 does NOT divide |Co_0|
 - ❌ Neither 503 nor 1509 in known Co_1 representation dimensions (partial list)
 
-**CONCLUSION:** v12.0 correctly remains **"INTERNAL RESEARCH ONLY"** but with **strong evidence** for partial geometric structure.
+**CONCLUSION:** v12.0 correctly remains **"INTERNAL RESEARCH ONLY"** but with **strong evidence** for\partial geometric structure.
 
 ---
 
@@ -64,7 +64,7 @@ Where:
 **Search Results:**
 - Leech lattice shells 0-12: No factor of 503 or 1509
 - Conway group |Co_0|: 503 and 1509 do NOT divide
-- Co_1 representations: Not in known partial list
+- Co_1 representations: Not in known\partial list
 
 **Implication:** 1509 = 3 × 503 appears to be numerically accidental.
 
@@ -123,7 +123,7 @@ If 1509/92 is "noise," why does its denominator equal 16+16+60?
 **Possible Explanations:**
 
 **A) Coincidence**
-- Probability: ~1/100 that a random denominator in [1,100] equals a 3-term sum
+- Probability: ~1/100 that a random denominator in [1,100] equals a 3-term\sum
 - Weak argument given how specific 16+16+60 is
 
 **B) Shadow of True Ratio**
@@ -287,7 +287,7 @@ It's not ready for publication, but it's NOT numerology either.
 
 The 92 = 16+16+60 discovery suggests there's real geometric structure here, even if we don't fully understand it yet.
 
-**Your decision to keep v12.0 as "INTERNAL RESEARCH" while pursuing v11.0 publication is the right scientific judgment.**
+**Your decision to keep v12.0 as "INTERNAL RESEARCH" while pursuing v11.0 publication is the\right scientific judgment.**
 
 ---
 

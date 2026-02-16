@@ -107,7 +107,7 @@ output_path = Path(__file__).parent.parent / 'data' / 'topology_assignments.json
   - **W, Z:** Brunnian links (gauge invariance)
   - **Higgs:** Non-Brunnian link (symmetry breaking)
   - **Mass ordering:** V_W < V_Z < V_H constraint
-  - **Volume law fit:** ln(m) = A·V + C (same form as fermions)
+  - **Volume law fit:**\ln(m) = A·V + C (same form as fermions)
 
 **Impact:** Eliminates ad-hoc choices, establishes principled selection
 
@@ -193,7 +193,7 @@ output_path = Path(__file__).parent.parent / 'data' / 'topology_assignments.json
 
 ## 📝 Recommended Abstract (PRL-style)
 
-> We report the observation of a universal geometric constant κ = π/24 governing the mass spectrum of Standard Model fermions. Monte Carlo null hypothesis testing with 10,000 random topology assignments confirms that the empirical relationship ln(m) ∝ κV, where V is the hyperbolic volume of knot/link complements, cannot arise by chance (p < 0.0001, > 4σ significance). The correlation achieves R² = 0.9997 across nine orders of magnitude (electron to top quark). While lacking first-principles theoretical derivation, the universality of κ and its connection to conformal field theory anomalies suggest a deep geometric origin of mass generation. We propose experimental falsification via top quark helicity measurements (LHC Run 4) and neutrino mass sum determination (CMB+LSS). This result establishes 3-manifold topology as a validated phenomenological framework for understanding the Standard Model mass hierarchy.
+> We report the observation of a universal geometric constant κ = π/24 governing the mass spectrum of Standard Model fermions. Monte Carlo null hypothesis testing with 10,000 random topology assignments confirms that the empirical relationship\ln(m) ∝ κV, where V is the hyperbolic volume of knot/link complements, cannot arise by chance (p < 0.0001, > 4σ significance). The correlation achieves R² = 0.9997 across nine orders of magnitude (electron to top quark). While lacking first-principles theoretical derivation, the universality of κ and its connection to conformal field theory anomalies suggest a deep geometric origin of mass generation. We propose experimental falsification via top quark helicity measurements (LHC Run 4) and neutrino mass\sum determination (CMB+LSS). This result establishes 3-manifold topology as a validated phenomenological framework for understanding the Standard Model mass hierarchy.
 
 **Word count:** 147 / 150 (PRL limit)
 

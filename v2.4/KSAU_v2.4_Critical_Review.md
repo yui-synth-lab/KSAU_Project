@@ -69,7 +69,7 @@ For context:
 
 ### 1.3 Bayesian Evidence (NEEDS QUANTIFICATION)
 
-**Current text:**
+**Current\text:**
 > "Bayesian model comparison ... yields a Bayes Factor indicating 'Strong Evidence'"
 
 **Required addition:**
@@ -96,13 +96,13 @@ Let me reconstruct the complete error table from your formula:
 | Particle | Type | Observed (MeV) | Predicted (MeV) | Error (%) | Assessment |
 |----------|------|----------------|-----------------|-----------|------------|
 | **e** | Lepton | 0.511 | 0.323 | **-36.8%** | ❌ POOR |
-| **μ** | Lepton | 105.7 | ??? | ??? | ? |
-| **τ** | Lepton | 1776.9 | ??? | ??? | ? |
-| **u** | Quark | 2.16 | ??? | ??? | ? |
+| **μ** | Lepton | 105.7 |  ? |  ? | ? |
+| **τ** | Lepton | 1776.9 |  ? |  ? | ? |
+| **u** | Quark | 2.16 |  ? |  ? | ? |
 | **d** | Quark | 4.67 | 3.99 | **-14.5%** | ⚠️ FAIR |
-| **s** | Quark | 93.4 | ??? | ??? | ? |
-| **c** | Quark | 1270 | ??? | ??? | ? |
-| **b** | Quark | 4180 | ??? | ??? | ? |
+| **s** | Quark | 93.4 |  ? |  ? | ? |
+| **c** | Quark | 1270 |  ? |  ? | ? |
+| **b** | Quark | 4180 |  ? |  ? | ? |
 | **t** | Quark | 173000 | 168400 | **-2.7%** | ✅ EXCELLENT |
 
 **Critical observation:** You only report 3 errors (e, d, t). This is incomplete.
@@ -113,14 +113,14 @@ Let me reconstruct the complete error table from your formula:
 
 1. **Systematic bias:** If the lightest particle has the worst fit, this suggests the model fails at low energies
 2. **Physical significance:** Electron mass is extremely precisely measured (relative uncertainty: 10⁻⁹)
-3. **Model credibility:** Readers will question the entire framework if it can't get the most fundamental particle right
+3. **Model credibility:** Readers will question the entire framework if it can't get the most fundamental particle\right
 
 **Possible explanations:**
 
 **Explanation A: QED Radiative Corrections**
 The electron's "bare mass" vs "pole mass" differs due to vacuum polarization:
 ```
-m_e(observed) = m_e(bare) × [1 + α/π × log(Λ/m_e) + ...]
+m_e(observed) = m_e(bare) × [1 + α/π ×\log(Λ/m_e) + ...]
 ```
 
 Your model predicts the **bare topological mass**, but experiments measure the **renormalized mass**. For the electron (lightest charged particle), this correction is largest in relative terms.
@@ -134,7 +134,7 @@ Perhaps 3₁ (trefoil) is not the correct electron knot. Have you considered:
 - Composite knots?
 
 **Explanation C: Non-hyperbolic Geometry**
-If the electron's spacetime defect is NOT hyperbolic (e.g., Euclidean or flat), then Vol is not the right invariant. This would require a separate "light fermion regime."
+If the electron's spacetime defect is NOT hyperbolic (e.g., Euclidean or flat), then Vol is not the\right invariant. This would require a separate "light fermion regime."
 
 ### 2.3 Missing Error Values
 
@@ -188,10 +188,10 @@ Why this specific value? Is it related to:
 Show that:
 ```
 Effective volume in Yang-Mills vacuum:
-Vol_eff = Vol_geometric - κ × C₂ × log(Λ_QCD / m)
+Vol_eff = Vol_geometric - κ × C₂ ×\log(Λ_QCD / m)
 ```
 
-Where κ and Λ_QCD are theoretical constants, and δ ≈ κ × log(Λ_QCD/⟨m⟩).
+Where κ and Λ_QCD are theoretical constants, and δ ≈ κ ×\log(Λ_QCD/⟨m⟩).
 
 **Option B: Reframe as empirical**
 Be honest: "We introduce C₂ as a phenomenological correction factor to account for the different vacuum structures of QCD vs QED."
@@ -305,7 +305,7 @@ From v2.2, you have topological distance formulas:
 
 ```markdown
 Our framework predicts:
-|V_ub| = exp(-k × D_ub) ≈ 0.0036
+|V_ub| =\exp(-k × D_ub) ≈ 0.0036
 
 where D_ub is the topological distance between L6a5 and L10a141.
 
@@ -339,7 +339,7 @@ Run 3 measurement (higher precision) will test this.
 ### 5.4 Extension to Neutrinos
 
 This model addresses only *charged* fermions. Neutrino masses 
-(m_ν ~ 0.01 - 0.1 eV, 10⁷ times lighter than electrons) likely 
+(m_ν ~ 0.01 - 0.1 eV, 10⁷\times lighter than electrons) likely 
 require a different geometric regime:
 
 Hypothesis: Neutrinos correspond to "virtual" or "algebraic" 
@@ -365,7 +365,7 @@ m_f = y_f × v / √2
 where y_f is the Yukawa coupling and v ≈ 246 GeV is the Higgs VEV.
 
 Our model implies:
-y_f = y_0 × exp(α·Vol + β·σ + γ·L - δ·C₂)
+y_f = y_0 ×\exp(α·Vol + β·σ + γ·L - δ·C₂)
 
 where y_0 ~ 10⁻⁵ is a universal base coupling.
 
@@ -422,7 +422,7 @@ topological constraints on vacuum defect geometry.
 **Essential figures for publication:**
 
 **Figure 1: Mass Predictions (Main Result)**
-- Panel A: ln(m_pred) vs ln(m_obs) scatter plot with error bars
+- Panel A:\ln(m_pred) vs\ln(m_obs) scatter plot with error bars
 - Panel B: Residual plot showing no systematic bias
 - Panel C: Error distribution (box plots for leptons vs quarks)
 
@@ -432,7 +432,7 @@ topological constraints on vacuum defect geometry.
 - Panel C: Clustering analysis of false positives
 
 **Figure 3: Topological Invariants**
-- Panel A: Vol vs ln(m) correlation
+- Panel A: Vol vs\ln(m) correlation
 - Panel B: σ (Signature) contribution to mass
 - Panel C: 3D visualization of links (3₁, L6a5, L10a153)
 
@@ -494,7 +494,7 @@ making it suitable as a mass invariant:
    suggesting a gauge-theoretic origin for mass.
 
 3. **Quantum Corrections:** In 3D quantum gravity (Witten), 
-   the partition function is Z ~ exp(iS_CS) where S_CS ∝ Vol. 
+   the partition function is Z ~\exp(iS_CS) where S_CS ∝ Vol. 
    This provides a path integral interpretation of mass generation.
 
 4. **Empirical Correlation:** Vol correlates (R ≈ 0.85) with 
@@ -610,7 +610,7 @@ validation.
 **Referee:** "-36.8% error on the most precisely known particle undermines the entire model."
 
 **Your response:**
-1. **Logarithmic scale**: Error is 0.19 in ln(m), comparable to heavier particles
+1. **Logarithmic scale**: Error is 0.19 in\ln(m), comparable to heavier particles
 2. **QED corrections**: Bare vs renormalized mass discrepancy
 3. **Statistical weight**: Cross-validation shows model generalizes well
 4. **Future work**: Will incorporate radiative corrections in v3.0
@@ -629,7 +629,7 @@ Preliminary work suggests a Chern-Simons action with Higgs
 coupling:
 L = L_CS[A] + |Dφ|² - V(φ) + y(K) φ ψ̄ψ
 
-where the Yukawa coupling y(K) ~ exp(α·Vol(K)) emerges from 
+where the Yukawa coupling y(K) ~\exp(α·Vol(K)) emerges from 
 integrating out topological defects.
 
 However, even without a complete UV theory, phenomenological 

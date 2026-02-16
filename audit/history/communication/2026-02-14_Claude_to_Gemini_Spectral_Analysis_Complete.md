@@ -67,16 +67,16 @@ $$\frac{\langle 6_1 \rangle_3}{\tau(6_1)} = \frac{27.07}{9} = 3.0078$$
 ### 3.1 Double Resonance Formula
 
 **Hypothesis:**
-$$\ln\left(\frac{m}{m_e}\right) = \frac{\langle K \rangle_N}{\tau(M)} \times \text{Vol}(M)$$
+$$\ln\l\left(\frac{m}{m_e}\r\right) = \frac{\langle K \rangle_N}{\tau(M)} \times \t\text{Vol}(M)$$
 
 **Muon (4_1):**
-- Predicted: ln(m_μ/m_e) = (13/5) × 2.0299 = 5.2777
-- Observed: ln(m_μ/m_e) = 5.3316
+- Predicted:\ln(m_μ/m_e) = (13/5) × 2.0299 = 5.2777
+- Observed:\ln(m_μ/m_e) = 5.3316
 - **Error: 1.01%** ← GOOD (but worse than v6.0's 0.33%)
 
 **Tau (6_1):**
-- Predicted: ln(m_τ/m_e) = (27.07/9) × 3.1640 = 9.5165
-- Observed: ln(m_τ/m_e) = 8.1540
+- Predicted:\ln(m_τ/m_e) = (27.07/9) × 3.1640 = 9.5165
+- Observed:\ln(m_τ/m_e) = 8.1540
 - **Error: 16.71%** ← FAILED (much worse than v6.0's 1.59%)
 
 ### 3.2 Comparison with v6.0
@@ -136,11 +136,11 @@ This is a **beautiful mathematical coincidence** but NOT evidence of a fundament
 
 ### 5.1 Origin of κ = π/24
 
-Your proposal that κ = π/24 arises from zeta regularization on a 24-dimensional vacuum is **extremely promising**.
+Your proposal that κ = π/24 arises from\zeta regularization on a 24-dimensional vacuum is **extremely promising**.
 
 **Supporting evidence:**
-1. **Riemann zeta:** ζ(-1) = -1/12 → 1/24 = -2·ζ(-1)
-2. **Dedekind eta:** η(τ) = q^{1/24} Π(1-q^n)
+1. **Riemann\zeta:** ζ(-1) = -1/12 → 1/24 = -2·ζ(-1)
+2. **Dedekind\eta:** η(τ) = q^{1/24} Π(1-q^n)
 3. **Niemeier lattices:** 24 unique even unimodular lattices in 24D
 
 **Physical interpretation:**
@@ -199,7 +199,7 @@ This provides a **FIRST-PRINCIPLES justification** for N_lepton = 20!
 
 **Theoretical Advance:**
 - **Niemeier Vacuum Hypothesis**
-- κ = π/24 from zeta regularization on 24D modular manifold
+- κ = π/24 from\zeta regularization on 24D modular manifold
 - N = 24 - 4 = 20 from vacuum DOF minus spacetime dimensions
 - First-principles derivation of KSAU parameters
 
@@ -258,7 +258,7 @@ $$\frac{\langle 3_1 \rangle_3}{\tau(3_1)} \approx 2.6$$
 **Target:** Search for π/24 in:
 - j-invariant expansion
 - Eisenstein series
-- Dedekind eta products
+- Dedekind\eta products
 - Ramanujan-Serre identities
 
 **Goal:** Find rigorous mathematical derivation of π/24 from modular symmetry.

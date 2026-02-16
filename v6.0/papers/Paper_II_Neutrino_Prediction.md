@@ -27,7 +27,7 @@ The factor $9\pi/16$ represents the projection of the 3D spatial topology ($3^2=
 *   Neutrino ($\nu$): Weakly coupled dual states (Scaling linearly with complexity $\sim N$).
 
 ### 2.2 The Scaling Equation
-$$ m(\nu_N) = \mu_0 \cdot \exp\left(\frac{9\pi}{16} N\right) $$
+$$ m(\nu_N) = \mu_0 \cdot \exp\l\left(\frac{9\pi}{16} N\r\right) $$
 *   $\nu_e \leftrightarrow N=3$
 *   $\nu_\mu \leftrightarrow N=6$
 *   $\nu_\tau \leftrightarrow N=7$
@@ -38,16 +38,16 @@ $$ m(\nu_N) = \mu_0 \cdot \exp\left(\frac{9\pi}{16} N\right) $$
 
 Using NuFIT 5.2 data for neutrino oscillation parameters:
 
-* $\Delta m^2_{21} = 7.42 \times 10^{-5}$ eV² (solar splitting)
-* $\Delta m^2_{31} = 2.514 \times 10^{-3}$ eV² (atmospheric splitting)
+* $\Delta m^2_{21} = 7.42 \\times 10^{-5}$ eV² (solar splitting)
+* $\Delta m^2_{31} = 2.514 \\times 10^{-3}$ eV² (atmospheric splitting)
 
 With $\lambda = \frac{9\pi}{16} \approx 1.7671$ fixed by theory, we solve for $\mu_0$ using the constraint:
 
-$$ m_2^2 - m_1^2 = \mu_0^2 \left( e^{2\lambda \cdot 6} - e^{2\lambda \cdot 3} \right) = \Delta m^2_{21} $$
+$$ m_2^2 - m_1^2 = \mu_0^2 \l\left( e^{2\lambda \cdot 6} - e^{2\lambda \cdot 3} \r\right) = \Delta m^2_{21} $$
 
 This yields:
 
-* $\mu_0 \approx 2.14 \times 10^{-7}$ eV (Base Scale)
+* $\mu_0 \approx 2.14 \\times 10^{-7}$ eV (Base Scale)
 
 **Note:** The base scale $\mu_0$ is determined uniquely by the oscillation data once $\lambda$ is fixed.
 
@@ -66,7 +66,7 @@ This yields:
 
 ## 4. Conclusion
 *   KSAU theory provides a rigid prediction for neutrino masses without free parameters (once oscillation data is input).
-*   The prediction of Normal Ordering and a specific mass sum ($\sim 59$ meV) serves as a falsifiable test of the topological mass generation hypothesis.
+*   The prediction of Normal Ordering and a specific mass\sum ($\sim 59$ meV) serves as a falsifiable test of the topological mass generation hypothesis.
 
 ## References
 

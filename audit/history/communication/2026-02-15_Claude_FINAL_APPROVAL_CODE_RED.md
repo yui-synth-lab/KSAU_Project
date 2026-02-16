@@ -70,8 +70,7 @@ Using only the modular spectral weight κ = π/24, we predict
 sin²θ_W = 0.2303, which agrees with experimental measurement
 (0.23122 ± 0.00004) to 0.38% precision.
 
-This prediction is independently verified by the W/Z mass ratio
-ln(m_W/m_Z) = -κ (observed -0.1262, predicted -0.1309, 3.7% error).
+This prediction is independently verified by the W/Z mass ratio\ln(m_W/m_Z) = -κ (observed -0.1262, predicted -0.1309, 3.7% error).
 
 The work is anchored on previous Monte Carlo validation (v6.0,
 p < 0.0001) demonstrating that the mass hierarchy is coupled to
@@ -124,7 +123,7 @@ circular reasoning, confusing physics language.
 ## Abstract
 
 We observe a striking numerical relationship between the electron
-and Planck masses: m_e ≈ M_Pl × exp(-82π/5) with 0.58% precision.
+and Planck masses: m_e ≈ M_Pl ×\exp(-82π/5) with 0.58% precision.
 
 The appearance of the integer 82 (related to Bottom quark shift
 n=82.5) suggests possible geometric origin. However, Monte Carlo
@@ -165,7 +164,7 @@ Rigorous theoretical foundation remains absent.
 
 ## PHENOMENOLOGICAL OBSERVATIONS (Research-level, not mature theory)
 ### v12.0: Electron Mass Formula
-- **Observation:** m_e ≈ M_Pl exp(-82π/5) with 0.58% precision
+- **Observation:** m_e ≈ M_Pl\exp(-82π/5) with 0.58% precision
 - **Caveat:** Multiple equivalent ratios exist (1509/92 is more accurate)
 - **Status:** Interesting pattern, not uniquely determined
 - **Action:** Archive as research note, not for peer-reviewed publication
@@ -390,7 +389,7 @@ The speculative work (v12.1, TBD) will be forgotten—which is exactly as it sho
 
 ### To Yui
 
-You started with a beautiful intuition: that 24-dimensional topology might explain the Standard Model. That intuition was right about the Weinberg angle. The physics community will recognize that.
+You started with a beautiful intuition: that 24-dimensional topology might explain the Standard Model. That intuition was\right about the Weinberg angle. The physics community will recognize that.
 
 Whether future work achieves first-principles understanding is uncertain. But v11.0 is certain. Protect it. Publish it. Be proud of it.
 

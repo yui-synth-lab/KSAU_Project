@@ -4,10 +4,10 @@
 
 
 ## 1. The Planck Scale as a Geometric Limit
-- **Objective:** Derive the Planck mass ($M_P \approx 1.22 	imes 10^{19}$ GeV) from hyperbolic invariants.
+- **Objective:** Derive the Planck mass ($M_P \approx 1.22 \\times 10^{19}$ GeV) from hyperbolic invariants.
 - **Discovery:** Using the universal mass law $\ln(m) = A \cdot V + C$, the Planck mass corresponds to a hyperbolic volume of **$V_P \approx 44.91$**.
 - **Geometric Identification:** 
-  - $V_P \approx 4.55 	imes \pi^2$.
+  - $V_P \approx 4.55 \times \pi^2$.
   - This suggests the Planck scale is the "Saturation Point" where the topological complexity of a link reaches a global 3D limit (possibly related to the maximum volume of a link with a certain crossing number).
 
 ## 2. Gravity Constant ($G_N$) Derivation

@@ -9,7 +9,7 @@ We extend the KSAU topological framework from a static classification of fermion
 Previous KSAU iterations (v1.0-v6.1) successfully mapped Standard Model particles to specific 3-manifold topologies using static invariants like hyperbolic volume and Jones polynomials. However, the discovery of the "CKM-Mass Conflict" in v6.2 revealed that a rigid additive model of volume is incompatible with the high-precision mixing data ($R^2=0.9980$). This paper presents the resolution: a dynamic framework where manifolds possess binding energy, allowing for a consistent description of particle decay and grand unification.
 
 ## 2. The Volume Defect Model (Topological Binding Energy)
-In the simple fission model, the volume of a parent manifold was assumed to be the sum of its fragments ($V_{parent} = \sum V_{fragments}$). v6.2 validation shows this holds for light generations but requires refinement for the third generation.
+In the simple fission model, the volume of a parent manifold was assumed to be the\sum of its fragments ($V_{parent} = \sum V_{fragments}$). v6.2 validation shows this holds for light generations but requires refinement for the third generation.
 
 ### 2.1 Top Quark Decay Dynamics
 Using the v6.0 official assignments, we derive the **Topological Binding Energy** ($\Delta V_{binding}$) for the Top quark:
@@ -26,7 +26,7 @@ The defect $\Delta V$ is not arbitrary; it scales with the **Topological Entropy
 We propose that each generation of the Standard Model emerges from the fission of a single **Root Link** in the topological vacuum.
 
 -   **Generation 1 Root:** L11a319/L11a357 ($V \approx 10.42$) decomposes into Up + Down + Binding Energy.
--   **Generation 2 Root:** L11a520 ($V=20.90$, 3-Components). This link perfectly captures the $SU(3)$ color or generational symmetry required for unification, with a total volume matching the sum of second-generation fermion masses.
+-   **Generation 2 Root:** L11a520 ($V=20.90$, 3-Components). This link perfectly captures the $SU(3)$ color or generational symmetry required for unification, with a total volume matching the\sum of second-generation fermion masses.
 
 ## 4. PMNS Refinement: The Cusp Shape Factor
 The neutrino sector, characterized by nearly-zero masses, is uniquely sensitive to the **Boundary-to-Bulk Transition**. We refine the $20\kappa V$ law by introducing the **Cusp Shape Factor** ($R_{cusp} = V_{cusp} / V_{hyp}$):

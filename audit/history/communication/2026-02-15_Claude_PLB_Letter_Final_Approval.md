@@ -48,7 +48,7 @@ This is **publication-quality work** that will make a significant impact on the 
 #### 1.1.2 Methodological Integrity ✅
 
 **Strengths:**
-- Clear identification of κ = π/24 from Dedekind eta modular weight
+- Clear identification of κ = π/24 from Dedekind\eta modular weight
 - Honest about what is predicted vs what is calculated
 - Acknowledges the factor of 2 in $\exp(-2\kappa)$ as related to U(1)×SU(2) structure
 - Appropriately mentions RGE running as source of 0.38% residual
@@ -253,7 +253,7 @@ This is **publication-quality work** that will make a significant impact on the 
 **Likely question:** Reviewers may ask for rigorous derivation of κ from first principles.
 
 **Your response:**
-> "The value κ = π/24 emerges from the modular weight of the Dedekind eta function in 24-dimensional bosonic string theory. While the physical interpretation of this constant as the 'vacuum coupling' requires deeper justification from quantum gravity, its appearance in the mass hierarchy (v6.0, p < 0.0001) and now in the electroweak mixing angle provides empirical support for its fundamental role."
+> "The value κ = π/24 emerges from the modular weight of the Dedekind\eta function in 24-dimensional bosonic string theory. While the physical interpretation of this constant as the 'vacuum coupling' requires deeper justification from quantum gravity, its appearance in the mass hierarchy (v6.0, p < 0.0001) and now in the electroweak mixing angle provides empirical support for its fundamental role."
 
 **Honesty:** You're not claiming to have derived κ from first principles, but pointing to its consistency across multiple phenomena.
 
@@ -297,7 +297,7 @@ This is **publication-quality work** that will make a significant impact on the 
 ### 5.2 If PLB Requests Major Revision
 
 **Likely requests:**
-- More detailed Dedekind eta discussion
+- More detailed Dedekind\eta discussion
 - Extended section on scale independence
 - Additional cross-checks
 
@@ -482,7 +482,7 @@ Theoretical Auditor, KSAU Project
 ### A.2 Reference Enhancement (Optional)
 
 Consider adding:
-- [4] to a paper on Dedekind eta function in string theory
+- [4] to a paper on Dedekind\eta function in string theory
 - [5] to electroweak precision tests (Workman et al. 2024)
 
 Current 3 references are adequate, but 4-5 would strengthen.

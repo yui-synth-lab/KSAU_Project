@@ -14,23 +14,23 @@ This report identifies the geometric origin of CP violation in the quark sector.
 ## 2. Numerical Result: The 95% Convergence
 
 The Jarlskog invariant $J$ is hypothesized to follow the exponential suppression of the total mixing action:
-$$ J_{theo} \approx \exp\left( - \kappa \cdot B_{total} ight) $$
-where $\kappa = \pi/24$ and $B_{total}$ is the sum of the generational barriers.
+$$ J_{theo} \approx \exp\l\left( - \kappa \cdot B_{total} \\r\right) $$
+where $\kappa = \pi/24$ and $B_{total}$ is the\sum of the generational barriers.
 
 **Calculation:**
 - **$B_{total} = B_{12} + B_{23} + B_{13}$**
-- Using identified barriers: $12$ (Weight) + $24$ (Rank) + $43$ (Lepton Offset) = **$79$**
-- $J_{theo} = \exp(-79 \cdot \pi/24) \approx \mathbf{3.23 	imes 10^{-5}}$
+- Using identified barriers: $12$ (We\right) + $24$ (Rank) +\times (Lepton Offset) = **$79$**
+- $J_{theo} = \exp(-79 \cdot \pi/24) \approx \mathbf{3.23\\times 10^{-5}}$
 
-**Comparison:**
-- **Observed (PDG 2024):** $\mathbf{3.08 	imes 10^{-5}}$
+**Comparison:**\times
+- **Observed (PDG 2024):** $\mathbf{3.08\\times 10^{-5}}$
 - **Agreement:** $\mathbf{95.2\%}$
+\times
+## 3. Structural Interpretation: $B=79$ and the $4\times 20$ Rule
 
-## 3. Structural Interpretation: $B=79$ and the $4 	imes 20$ Rule
-
-The total barrier sum $B=79$ is not an arbitrary integer. It exhibits a deep structural correspondence with the KSAU fundamental constants:
-
-$$ B_{total} = (4 	imes 20) - 1 $$
+The total barrier\sum $B=79$ is not an arbitrary integer. It exhibits a deep structural correspondence with the KSAU fundamental constants:
+\times
+$$ B_{total} = (4\times 20) - 1 $$
 
 - **$20$:** The Lepton Degeneracy Factor ($24 - 4$).
 - **$4$:** The spacetime dimensionality.

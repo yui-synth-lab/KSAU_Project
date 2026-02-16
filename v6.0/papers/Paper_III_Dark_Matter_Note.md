@@ -3,7 +3,7 @@
 **Focus:** Dark Matter Candidates, Topologically Neutral Knots (Det=1)
 
 ## Abstract
-In the KSAU **Holographic Dual Model**, fundamental particles are identified with topological vacuum defects (knot and link complements). While visible matter is coupled to bulk volume (quarks) or boundary complexity (leptons), we observe that "Topologically Neutral" knots—defined by a link determinant of unity ($\text{Det} = 1$)—possess unique geometric properties: they carry zero electric charge coupling and are topologically stable. We propose that these neutral knots constitute the dark matter sector. A survey of the knot census reveals a multi-component dark matter spectrum, including a "Warm" candidate at $\sim 15$ keV and "WIMP-like" candidates in the $1-10$ GeV range.
+In the KSAU **Holographic Dual Model**, fundamental particles are identified with topological vacuum defects (knot and link complements). While visible matter is coupled to bulk volume (quarks) or boundary complexity (leptons), we observe that "Topologically Neutral" knots—defined by a link determinant of unity ($\t\text{Det} = 1$)—possess unique geometric properties: they carry zero electric charge coupling and are topologically stable. We propose that these neutral knots constitute the dark matter sector. A survey of the knot census reveals a multi-component dark matter spectrum, including a "Warm" candidate at $\sim 15$ keV and "WIMP-like" candidates in the $1-10$ GeV range.
 
 ## 1. Introduction
 *   The nature of Dark Matter and the lack of WIMP detection.
@@ -13,21 +13,21 @@ In the KSAU **Holographic Dual Model**, fundamental particles are identified wit
 
 ### 2.1 The Determinant-Charge Relationship
 
-A detailed analysis of the fermion sector (see `det_charge_analysis.py`) reveals that the link determinant (Det) does **not** have a direct functional relationship with electric charge. Statistical regression shows $R^2 < 0.001$ for $Q \sim \ln(\text{Det})$, ruling out simple encodings.
+A detailed analysis of the fermion sector (see `det_charge_analysis.py`) reveals that the link determinant (Det) does **not** have a direct functional relationship with electric charge. Statistical regression shows $R^2 < 0.001$ for $Q \sim \ln(\t\text{Det})$, ruling out simple encodings.
 
 However, we observe that:
 
-* **All visible fermions** (quarks and leptons) have $\text{Det} \geq 3$.
+* **All visible fermions** (quarks and leptons) have $\t\text{Det} \geq 3$.
 * **Det = 1** knots have never appeared in the Standard Model assignments.
 
-This suggests an **exclusion principle**: Det=1 topologies represent a **topologically neutral sector** that does not couple to electromagnetism. While we cannot prove $\text{Det}=1 \Rightarrow Q=0$ from first principles, the empirical pattern is compelling.
+This suggests an **exclusion principle**: Det=1 topologies represent a **topologically neutral sector** that does not couple to electromagnetism. While we cannot prove $\t\text{Det}=1 \Rightarrow Q=0$ from first principles, the empirical pattern is compelling.
 
 ### 2.2 Dark Matter Selection Rules
 
 Based on this observation, we propose the following criteria for dark matter candidates:
 
 * **Determinant = 1:** Ensures electromagnetic neutrality (no photon coupling).
-* **Hyperbolic Volume:** Generates mass via the knot formula $m = \exp(\gamma_{\text{DM}} N^2 + C)$ (for knots) or link formula (for multi-component links).
+* **Hyperbolic Volume:** Generates mass via the knot formula $m = \exp(\gamma_{\t\text{DM}} N^2 + C)$ (for knots) or link formula (for multi-component links).
 * **Topological Stability:** Knots cannot untie, ensuring the particle is absolutely stable (no decay channels).
 
 ## 3. Candidate Spectrum

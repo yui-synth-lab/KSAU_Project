@@ -17,7 +17,7 @@
 
 - [x] **`data/physical_constants.json`**
   - Added `ckm.r2_achieved = 0.9980`
-  - Added `ckm.optimized_coefficients` (A, B, beta, gamma, C)
+  - Added `ckm.optimized_coefficients` (A, B,\beta,\gamma, C)
   - Added `ckm.selection_method`
   - Deprecated old geometric_coefficients
 

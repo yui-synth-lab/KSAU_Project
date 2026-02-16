@@ -23,7 +23,7 @@ I have discovered v12.0 draft materials claiming a **first-principles derivation
 
 **Claimed in v12.0 Unified Theory Draft:**
 ```
-m_e = M_Pl × exp(-82π/5)
+m_e = M_Pl ×\exp(-82π/5)
 Predicted: 0.5139 MeV
 Observed: 0.5110 MeV
 Error: +0.58%
@@ -61,7 +61,7 @@ If this is **numerology** (pattern fitting):
 **From derive_universal_intercept.py:**
 
 ```
-Observed X = ln(M_Pl/m_e) = 51.527856
+Observed X =\ln(M_Pl/m_e) = 51.527856
 
 Candidate 1: X = 16π + 4/π = 51.538722
 Error in exponent: +0.0211%
@@ -77,7 +77,7 @@ Mass Error: +0.5753%
 **Candidate 2 (82π/5) is numerically superior:**
 - Exponent error: 0.011% (factor of 2 better than Candidate 1)
 - Mass error: 0.58% (factor of 2 better than Candidate 1)
-- Simpler form: single fraction, not sum
+- Simpler form: single fraction, not\sum
 
 **However:** 0.58% mass error is **worse** than many KSAU predictions:
 - Weinberg angle: 0.94% ✓
@@ -97,7 +97,7 @@ Mass Error: +0.5753%
 **But also:**
 - 16.4 ≈ 16 + 0.4
 - 16.4 ≈ 16 + 2/5
-- 16.4 ≈ 16 + ln(3)/π (= 16.35, error 0.3%)
+- 16.4 ≈ 16 +\ln(3)/π (= 16.35, error 0.3%)
 
 **Question:** Is 82/5 uniquely motivated, or one of many ~16.4 ratios that work?
 
@@ -175,10 +175,10 @@ Mass Error: +0.5753%
 
 ### 4.3 Success Case: Weinberg Angle Prediction
 
-**Your v11.0 result:** cos²θ_W = exp(-2κ) (0.94% error)
+**Your v11.0 result:** cos²θ_W =\exp(-2κ) (0.94% error)
 
 **Why this is credible:**
-1. κ = π/24 derived independently (Dedekind eta, Chern-Simons)
+1. κ = π/24 derived independently (Dedekind\eta, Chern-Simons)
 2. Factor of 2 explained (U(1) × SU(2) → geometric mixing)
 3. No free parameters adjusted to fit
 4. Connects to established math (modular forms)
@@ -218,7 +218,7 @@ Leech lattice compactification → hierarchy exponent = 82π/5
 
 **Procedure:**
 1. Generate N=10,000 random exponents X_random ∈ [50, 53]
-2. Calculate mass m_random = M_Pl × exp(-X_random)
+2. Calculate mass m_random = M_Pl ×\exp(-X_random)
 3. Compare to m_e = 0.5110 MeV
 4. Calculate p-value: probability that random choice gives ≤0.58% error
 
@@ -232,7 +232,7 @@ Leech lattice compactification → hierarchy exponent = 82π/5
 
 **Examples:**
 - Predict muon/electron mass ratio from 82/5 + muon topology
-- Predict tau/electron mass ratio
+- Predict\tau/electron mass ratio
 - Predict proton/electron mass ratio
 
 **Success criterion:** ≥1 independent prediction with <5% error
@@ -262,7 +262,7 @@ Leech lattice compactification → hierarchy exponent = 82π/5
 **Strategy:** Treat 82π/5 as **interesting phenomenological observation**, not first-principles derivation.
 
 **Revised v12.0 claim:**
-> "We observe that the electron mass exhibits a striking numerical relationship to the Planck mass: m_e ≈ M_Pl × exp(-82π/5) with 0.58% precision. The appearance of 82 (related to Bottom quark shift n=82.5) and 5 (icosahedral symmetry) suggests geometric origin, but rigorous derivation from Leech lattice structure remains future work."
+> "We observe that the electron mass exhibits a striking numerical relationship to the Planck mass: m_e ≈ M_Pl ×\exp(-82π/5) with 0.58% precision. The appearance of 82 (related to Bottom quark shift n=82.5) and 5 (icosahedral symmetry) suggests geometric origin, but rigorous derivation from Leech lattice structure remains future work."
 
 **Benefits:**
 - Honest presentation
@@ -323,7 +323,7 @@ Leech lattice compactification → hierarchy exponent = 82π/5
 ### v12.0 Issue: "First-principles m_e derivation"
 
 **Current problem:** Claiming derivation, but evidence suggests numerological fit
-**Required response:** ???
+**Required response:**  ?
 
 **Options:**
 1. Accept critique, revise to "phenomenological observation" (Option A)
@@ -343,7 +343,7 @@ Leech lattice compactification → hierarchy exponent = 82π/5
 **Question:** Can 82π/5 predict anything new?
 
 **Try:** Use the formula to predict the **proton mass** from Planck mass:
-- If KSAU is right, proton topology should give m_p via similar formula
+- If KSAU is\right, proton topology should give m_p via similar formula
 - Calculate expected exponent for proton
 - Compare to observation
 
@@ -366,7 +366,7 @@ Leech lattice compactification → hierarchy exponent = 82π/5
 **Question:** What do professional physicists think?
 
 **Try:** Post anonymously on Physics Stack Exchange:
-> "I found m_e ≈ M_Pl exp(-82π/5) with 0.58% accuracy. Numerology or physics?"
+> "I found m_e ≈ M_Pl\exp(-82π/5) with 0.58% accuracy. Numerology or physics?"
 
 **If response is positive:** Encouragement to develop
 **If response is "seen this before, always numerology":** Warning sign

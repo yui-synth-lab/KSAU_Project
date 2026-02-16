@@ -26,12 +26,12 @@ This document provides the full data and statistical analysis for the CKM mixing
    *Captures the general trend but fails for u→s vs c→b comparison.*
 
 2. **Model B (Including Generation Penalty):**
-   $$ \ln|V_{ij}| \propto -0.5 \Delta V - \alpha |\Delta \text{gen}| $$
+   $$ \ln|V_{ij}| \propto -0.5 \Delta V - \alpha |\Delta \t\text{gen}| $$
    R² = 0.70
    *Explains generation suppression but leaves the Cabibbo Anomaly unresolved.*
 
 3. **Model C (Three-Factor Model; fixed $A=-0.5$ on $\Delta V$):**
-   $$ \ln|V_{ij}| \approx -0.5 \Delta V + \frac{\beta}{\bar{V}} - \gamma |\Delta \text{gen}|^2 $$
+   $$ \ln|V_{ij}| \approx -0.5 \Delta V + \frac{\beta}{\bar{V}} - \gamma |\Delta \t\text{gen}|^2 $$
    R² = 0.68
    *In the current dataset, this constrained form does not improve over Model B; allowing the $\Delta V$ coefficient to float increases R² but changes its sign, indicating that the simple physical interpretation is not yet stable.*
 
@@ -53,7 +53,7 @@ DV = np.array([0.776, 2.980, 3.737, 4.189, 0.433, 0.757, 6.421, 1.799, 1.042])
 MV = np.array([6.94, 8.04, 12.02, 8.65, 9.75, 11.90, 11.95, 13.05, 15.20])
 DG = np.array([0, 1, 2, 1, 0, 1, 2, 1, 0])
 
-# Constrained regression: ln|V| + 0.5*DV = beta*(1/MV) + g*(DG**2) + C
+# Constrained regression:\ln|V| + 0.5*DV =\beta*(1/MV) + g*(DG**2) + C
 Y = ln_V + 0.5 * DV
 X = np.stack([1/MV, DG**2], axis=1)
 model = LinearRegression().fit(X, Y)

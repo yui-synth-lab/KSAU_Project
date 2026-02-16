@@ -96,8 +96,7 @@ Starting from a code review that identified critical statistical concerns, we tr
 ### Validated Formulas
 
 **Quarks (Bulk):**
-```
-ln(m_q / MeV) = 10κ · V + κ · T + B_q
+```\ln(m_q / MeV) = 10κ · V + κ · T + B_q
 ```
 - κ = π/24 (universal constant)
 - V = hyperbolic volume
@@ -105,12 +104,11 @@ ln(m_q / MeV) = 10κ · V + κ · T + B_q
 - B_q = -(7 + 7κ) (theoretical intercept)
 
 **Leptons (Boundary):**
-```
-ln(m_l / MeV) = 20κ · V + ln(m_e)
+```\ln(m_l / MeV) = 20κ · V +\ln(m_e)
 ```
 - 20κ = doubled sensitivity (holographic duality)
 - V = hyperbolic volume
-- ln(m_e) = electron ground state
+-\ln(m_e) = electron ground state
 
 ### Robust Results
 
@@ -150,7 +148,7 @@ ln(m_l / MeV) = 20κ · V + ln(m_e)
 
 ### NEW Abstract (Monte Carlo-Led)
 
-> We report a statistically significant correlation (p < 0.0001, Monte Carlo validated) between Standard Model fermion masses and the hyperbolic volumes of knot/link complements in 3-manifolds. Using the universal constant κ = π/24 ≈ 0.131, we demonstrate that the fermion mass spectrum is governed by geometric scaling laws: quarks (bulk modes) follow ln(m) ∝ 10κV and leptons (boundary modes) follow ln(m) ∝ 20κV. These formulas achieve log-scale fits of R² = 0.9998 (quarks) and R² = 0.9995 (leptons), with Mean Absolute Errors of 4.59% and 5.17% respectively, across nine orders of magnitude (electron to top quark).
+> We report a statistically significant correlation (p < 0.0001, Monte Carlo validated) between Standard Model fermion masses and the hyperbolic volumes of knot/link complements in 3-manifolds. Using the universal constant κ = π/24 ≈ 0.131, we demonstrate that the fermion mass spectrum is governed by geometric scaling laws: quarks (bulk modes) follow\ln(m) ∝ 10κV and leptons (boundary modes) follow\ln(m) ∝ 20κV. These formulas achieve\log-scale fits of R² = 0.9998 (quarks) and R² = 0.9995 (leptons), with Mean Absolute Errors of 4.59% and 5.17% respectively, across nine orders of magnitude (electron to top quark).
 >
 > Crucially, we identify the origin of the lepton mass hierarchy as a Topological Phase Transition from a torus phase (Electron, V=0) to a hyperbolic phase (Muon/Tau, V>0). Monte Carlo null hypothesis testing with 10,000 random topology assignments confirms this correlation cannot arise by chance. While lacking first-principles theoretical derivation of κ, the universality of this constant and its connection to conformal field theory anomalies suggest a deep geometric origin of mass generation. These results establish 3-manifold topology as a validated phenomenological framework for understanding the Standard Model mass hierarchy.
 
@@ -184,7 +182,7 @@ ln(m_l / MeV) = 20κ · V + ln(m_e)
 **Tier 1 (Recommended):**
 1. **Physical Review D** - "Particles, Fields, Gravitation, and Cosmology"
    - Why: Phenomenological discoveries welcome
-   - Precedent: Empirical mass formulas, QCD sum rules
+   - Precedent: Empirical mass formulas, QCD\sum rules
    - Fit: Monte Carlo validation, statistical rigor
 
 2. **Physical Review Letters** - "Rapid Communication"
@@ -214,7 +212,7 @@ ln(m_l / MeV) = 20κ · V + ln(m_e)
 2. Emphasize novel discovery (first knot-mass correlation)
 3. Highlight statistical rigor (> 4σ significance)
 4. Address limitations transparently (provisional topologies)
-5. Propose experimental tests (top helicity, neutrino sum)
+5. Propose experimental tests (top helicity, neutrino\sum)
 
 ---
 
@@ -262,7 +260,7 @@ ln(m_l / MeV) = 20κ · V + ln(m_e)
 **Comparable Papers:**
 - Balmer series → Bohr model (1885 → 1913)
 - Gell-Mann's Eightfold Way → QCD (1961 → 1973)
-- KSAU κ = π/24 → ??? (2026 → 203?)
+- KSAU κ = π/24 →  ? (2026 → 203?)
 
 **Projected Citations:**
 - Year 1: 10-20 (exploratory follow-ups)
@@ -289,7 +287,7 @@ ln(m_l / MeV) = 20κ · V + ln(m_e)
 
 1. **Experimental Falsification:**
    - Top helicity disagrees → Reassign topology
-   - Neutrino sum disagrees → Revise neutrino model
+   - Neutrino\sum disagrees → Revise neutrino model
    - **Mitigation:** Framework robust even if specific predictions fail
 
 2. **Theoretical Competition:**
@@ -411,7 +409,7 @@ This is **exactly how physics progresses:**
 1. Kepler observed planetary orbits → Newton derived gravity
 2. Balmer found spectral lines → Bohr derived atomic structure
 3. Gell-Mann organized hadrons → QCD derived quark theory
-4. **KSAU observes mass-volume law → ??? derives topological QFT**
+4. **KSAU observes mass-volume law →  ? derives topological QFT**
 
 ---
 

@@ -20,7 +20,7 @@ The mass generation mechanism is governed by the **Catalan Constant ($G \approx 
 ### 2.1 The Quark Sector (Strong Geometry)
 Quark masses are determined by the hyperbolic volume ($V$) of the link complement, scaled by the **7-dimensional compactification factor**.
 
-$$ \ln(m_q) \approx \left( \frac{10}{7} G ight) V - (7 + G) $$
+$$ \ln(m_q) \approx \l\left( \frac{10}{7} G \right\ight) V - (7 + G) $$
 
 *   **Base:** Catalan Constant $G$
 *   **Effective Dimension:** $D_{eff} = 7$ (Denominator)
@@ -28,8 +28,8 @@ $$ \ln(m_q) \approx \left( \frac{10}{7} G ight) V - (7 + G) $$
 
 ### 2.2 The Lepton Sector (Weak Geometry)
 Lepton masses are determined by the squared twist number ($N^2$), scaled by the **9-dimensional projection factor**.
-
-$$ \ln(m_l) \approx \left( \frac{2}{9} G ight) N^2 + C_l $$
+\right
+$$ \ln(m_l) \approx \l\left( \frac{2}{9} G \ight) N^2 + C_l $$
 
 *   **Base:** Catalan Constant $G$
 *   **Effective Dimension:** $D_{eff} = 9$ (Denominator)

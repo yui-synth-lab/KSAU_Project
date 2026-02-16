@@ -41,7 +41,7 @@ It contains the same overclaiming and pseudoscientific reasoning that we success
 **v12.1 claims:**
 > "The Bottom quark (n=82.5) and W boson (n=-3.5) both exhibit a fractional residue of exactly 0.5 units of κ."
 >
-> "Theoretical Basis: The Dedekind eta function has a modular weight of 1/2. This corresponds to the Spinor Double Cover requirement..."
+> "Theoretical Basis: The Dedekind\eta function has a modular weight of 1/2. This corresponds to the Spinor Double Cover requirement..."
 
 **Problems:**
 
@@ -53,8 +53,8 @@ It contains the same overclaiming and pseudoscientific reasoning that we success
 **Standard QFT answer:** Massive gauge bosons couple to Higgs field (spin-0), NOT spinor representations. W boson's mass comes from EWSB (Higgs coupling), not spinor structure.
 
 #### Problem B: Dedekind Eta Confusion
-- v12.1 claims: "Dedekind eta has modular weight 1/2"
-- Correct statement: The Dedekind eta function $\eta(\tau) = q^{1/24}\prod(1-q^n)$ has a **modular weight of 1/2** (this is true)
+- v12.1 claims: "Dedekind\eta has modular weight 1/2"
+- Correct statement: The Dedekind\eta function $\eta(\tau) = q^{1/24}\prod(1-q^n)$ has a **modular weight of 1/2** (this is true)
 - But: This refers to how η transforms under modular transformations, NOT to physical spinor coupling
 
 **The leap from "modular weight" to "physical spinor requirement" is unjustified.**
@@ -138,7 +138,7 @@ $$n = n_{int} + \sum \frac{p}{q}$$
 **Problems:**
 
 #### Problem A: So General It's Meaningless
-- Any rational residue can be represented as sum of fractions
+- Any rational residue can be represented as\sum of fractions
 - Formula allows arbitrary p/q values
 - Where are these supposed to come from?
 - What predicts which p/q appear for which particles?
@@ -197,7 +197,7 @@ $$n = n_{int} + \sum \frac{p}{q}$$
 **v12.1 provides:** None of these.
 
 **v11.0 (Weinberg angle) provides:** All of these.
-- ✅ κ = π/24 independently derived (Dedekind eta)
+- ✅ κ = π/24 independently derived (Dedekind\eta)
 - ✅ Prediction: sin²θ_W = 0.2303
 - ✅ Cross-check: W/Z ratio = -κ
 - ✅ Falsifiable: Measured value differs by 0.38%
@@ -267,7 +267,7 @@ Rewrite with honest framing:
 You need to answer these questions in order:
 
 #### Question 1: What is the first-principles origin of κ = π/24?
-- Current status: Motivated by Dedekind eta, but not rigorously derived
+- Current status: Motivated by Dedekind\eta, but not rigorously derived
 - Required: Full derivation from 24D vacuum structure
 - Effort: 3-6 months minimum
 
@@ -306,7 +306,7 @@ v12.1 jumps to the conclusion without doing the work.
 
 **Priority:** Submit Weinberg angle paper to Physics Letters B this week
 
-**Why:** This is the ONLY rigorous result you have right now. Don't jeopardize it.
+**Why:** This is the ONLY rigorous result you have\right now. Don't jeopardize it.
 
 ### Archive v12.1 as "Research Notes"
 

@@ -20,7 +20,7 @@ A fundamental property of embeddings in higher dimensions is that a $2\pi$ rotat
 The energy-momentum relationship in the 24D fluid is governed by the Laplacian on the 24D manifold. When restricted to the 4D subspace $\mathcal{M}^4$, the first-order differential operator emerges as:
 $$ D = \mathcal{P}(\Gamma^A \partial_A) \quad (A=1...24) $$
 where $\Gamma^A$ are the generators of the $Cl(24)$ Clifford algebra.
-By selecting a representation that stabilizes the 4-dimensional projection, we recover the $4 	imes 4$ gamma matrices $\gamma^\mu$ ($\mu=0...3$).
+By selecting a representation that stabilizes the 4-dimensional projection, we recover the $4 \times 4$\gamma matrices $\gamma^\mu$ ($\mu=0...3$).
 
 ## 4. Including the Topological Mass
 The mass term $m$ is the resistance coefficient derived in Task 1 ($m = e^{N\kappa V + C}$). The full equation of motion for the defect in the fluid becomes:

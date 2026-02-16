@@ -27,12 +27,12 @@ We postulate that the gauge couplings represent the "leakage" of topological act
 
 ### 2.1 The Fine Structure Constant ($\alpha_{EM}$)
 The experimental value $\alpha_{EM} \approx 1/137.036$ is recovered from:
-$$ \alpha_{EM} = \frac{\kappa}{18} = \frac{\pi}{432} \approx 0.007272 \quad (\text{Error: } 0.34\%) $$
+$$ \alpha_{EM} = \frac{\kappa}{18} = \frac{\pi}{432} \approx 0.007272 \quad (\t\text{Error: } 0.34\%) $$
 The factor 18 is interpreted as the total degrees of freedom of the 9 charged fermions (2 spin states each).
 
 ### 2.2 The Weak Mixing Angle ($\sin^2 \theta_w$)
 The electroweak symmetry breaking is governed by the ratio:
-$$ \sin^2 \theta_w = \kappa \sqrt{\pi} = \frac{\pi \sqrt{\pi}}{24} \approx 0.2320 \quad (\text{Error: } 0.35\%) $$
+$$ \sin^2 \theta_w = \kappa \sqrt{\pi} = \frac{\pi \sqrt{\pi}}{24} \approx 0.2320 \quad (\t\text{Error: } 0.35\%) $$
 This relation suggests that the weak sector represents a "fractional" topological volume related to the Gaussian integral of the vacuum manifold.
 
 ### 2.3 The Strong Coupling ($\alpha_s$)
@@ -48,7 +48,7 @@ Transition amplitudes between quark states correspond to the "overlap integral" 
 
 ### 3.1 The Cabibbo Relation
 The mixing between the first and second generations is primarily geometric:
-$$ |V_{us}| \approx \exp\left(-\frac{1}{2} \Delta Vol(u, s)\right) = \exp(-1.4901) \approx 0.2253 \quad (\text{Exp: } 0.2253) $$
+$$ |V_{us}| \approx \exp\l\left(-\frac{1}{2} \Delta Vol(u, s)\r\right) = \exp(-1.4901) \approx 0.2253 \quad (\t\text{Exp: } 0.2253) $$
 This result is **exact** within the numerical precision of the v5.0 topology assignments.
 
 ### 3.2 Mass-Dependent Tunneling Effects
@@ -59,7 +59,7 @@ Higher generation mixings depend on THREE independent factors:
 3. **Mass scale** ($\bar{V}$): Quantum tunneling amplification
 
 The combined interaction yields improved predictions:
-$$ |V_{ij}| \propto \exp\left(-\frac{1}{2} \Delta Vol(i,j)\right) \cdot f(\Delta \text{gen}, \bar{V}) $$
+$$ |V_{ij}| \propto \exp\l\left(-\frac{1}{2} \Delta Vol(i,j)\r\right) \cdot f(\Delta \t\text{gen}, \bar{V}) $$
 
 **Updated CKM Model Performance (per Unified Field Report):**
 

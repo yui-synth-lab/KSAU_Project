@@ -12,7 +12,7 @@ In the Temporal Brownian Dynamics (TBD) framework, the vacuum is a fluid with vi
 
 ## 2. Invariant Speed $c$ as a Fluid Property
 As demonstrated in `v8.0/code/tbd_emergence_sim.py`, the wavefront of information in a 24D stochastic walk propagates at a constant velocity $c_{eff}$. 
-$$ c_{eff} \propto \sqrt{\frac{D}{	au_{planck}}} $$
+$$ c_{eff} \propto \sqrt{\frac{D}{\tau_{planck}}} $$
 This velocity is determined solely by the dimension $D=24$ and the Planck scale, making it a universal constant for all observers embedded in the fluid.
 
 ## 3. Derivation of the Lorentz Factor $\gamma$

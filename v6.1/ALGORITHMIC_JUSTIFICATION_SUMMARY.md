@@ -15,7 +15,7 @@
 
 KSAU framework has **two independent physical requirements:**
 
-1. **Mass Hierarchy:** ln(m) ∝ V → Volume ordering must match mass ordering
+1. **Mass Hierarchy:**\ln(m) ∝ V → Volume ordering must match mass ordering
 2. **CKM Mixing:** |V_ij| ∝ f(ΔV, ΔlnJ) → Geometric proximity determines flavor mixing
 
 **These requirements conflict** → Pure optimization of one destroys the other.
