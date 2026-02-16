@@ -3,21 +3,21 @@
 
 [![DOI](https://zenodo.org/badge/1148825711.svg)](https://doi.org/10.5281/zenodo.18631885)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-v14.0.3_Fortress-red.svg)
-![Status](https://img.shields.io/badge/status-Physics_Audited-green.svg)
+![Version](https://img.shields.io/badge/version-v15.0_Time-blue.svg)
+![Status](https://img.shields.io/badge/status-Dynamic_Unification-purple.svg)
 
-> **"Matter is Knot, Force is Link, Gravity is hard, Vacuum is Fluid."**
+> **"Time is Processing, Gravity is Flux, Vacuum is Truth."**
 
-**KSAU (Knot-Synchronization-Adhesion Unified)** is a theoretical physics simulation framework that derives the fundamental constants of the universe from the 24-dimensional geometry of the vacuum. By modeling particles as topological solitons in a modular fluid, KSAU identifies the structural invariants ($\pi, 24, \kappa$) that constrain the Standard Model.
+**KSAU (Knot-Synchronization-Adhesion Unified)** is a theoretical physics simulation framework that derives the fundamental constants of the universe from the 24-dimensional geometry of the vacuum. By modeling time as an emergent information process, KSAU unifies general relativity and the standard model under a single geometric action.
 
 ---
 
-## 🚀 Latest Breakthrough (v14.0.3): The Theoretical Fortress
-We have established a formal predictive map of the 24-dimensional modular vacuum through rigorous physics auditing:
-- **Topological Ground State:** Formally proved **$N=41$** as the unique minimum-index bottleneck for 3-generation systems.
-- **GUT Scale Extrapolation:** Identified a resonant phase near **$4.6 \times 10^{14}$ GeV** ($g=2$) via the Quartic Scaling Law, partitioning the 24D hierarchy.
-- **Dark Matter Spectrum:** Predicted discrete mass peaks at **2.2 PeV, 83 keV, and 0.3 MeV** as non-generational vacuum solitons (BBN/Kinematic constraints acknowledged).
-- **Gauge Alignments:** Documented high-precision numerical coincidences for $\alpha, \alpha_s,$ and $\sin^2 \theta_W$ derived from the spectral weight **$\kappa = \pi/24$**.
+## 🚀 Latest Breakthrough (v15.0): The Emergence of Time
+We have expanded the framework to include **Dynamics** by defining time as the 24D processing queue:
+- **Time as Processing:** Defined $t$ as the sequential unknotting of 24D information projected onto 4D spacetime.
+- **Derivation of $8\pi$:** Proven that the Einstein coefficient $8\pi$ is the geometric saturated flux of the 24D bulk (**8190 $\to$ 195 $\to$ 192** correspondence).
+- **Geometric Parity:** Derived the factor of 2 in $8\pi$ from the Action-Reaction standing wave requirement at the 24D/4D boundary.
+- **Status:** General Relativity is now formally linked to 24-dimensional modular invariants.
 
 ---
 

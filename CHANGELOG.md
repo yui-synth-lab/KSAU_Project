@@ -1,5 +1,25 @@
 # KSAU Project Changelog
 
+## [15.0.0] - 2026-02-16 (Emergence of Time & Geometric Gravity) 🚀 **DYNAMIC PARADIGM SHIFT**
+
+### ⏳ Time as a Processing Queue
+- **Conceptual Definition**: Defined Time ($t$) as the sequential information transfer process from the static 24D Leech bulk to the 4D spacetime brane.
+- **Unknotting Arrow**: Identified the "Arrows of Time" as the topological transition from $d=4$ (self-intersecting) to $d=3$ (locked knots).
+
+### ⚖️ Geometric Derivation of $8\pi$
+- **Numerical Alignment**: Discovered the integer sequence connecting the 24D potential to the Einstein coefficient: **8190 (Bulk) $\to$ 195 (Filter) $\to$ 192 ($8\pi$)**.
+- **Structural Justification**: Formally justified the factor **8** as the impedance match between the 8D $E_8$ bulk sectors and the 8 effective degrees of freedom of 4D gravity.
+- **Parity Conservation**: Derived the doubling factor ($2 \times 4\pi$) from the Action-Reaction standing wave requirement at the 24D/4D interface.
+
+### 🛡️ Scientific Integrity & Simulation Retraction
+- **Failed Simulation Record**: Acknowledged and documented the failure of 1D scalar torsion models to uniquely determine the sign of gravity (Attraction).
+- **Integrity Fix**: Deleted non-compliant simulation code to focus on the robust "Logical Bridge" derivation.
+
+### 📂 New Foundations
+- [KSAU_v15_Emergence_of_Time_and_Gravity.md](v15.0/papers/KSAU_v15_Emergence_of_Time_and_Gravity.md) - Theoretical Core.
+- [geometry_8pi_search.py](v15.0/code/geometry_8pi_search.py) - Invariant Verification.
+- [dof_8_justification.py](v15.0/code/dof_8_justification.py) - Independence Proof.
+
 ## [14.0.3] - 2026-02-16 (Theoretical Fortress & Predictive Geometry) 🚀 **HISTORIC MILESTONE**
 
 ### 🏛️ Modular Action Principle & Generation Anchor
