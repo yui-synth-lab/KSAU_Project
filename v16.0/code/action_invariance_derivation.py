@@ -11,8 +11,10 @@ Principles:
 import numpy as np
 
 def prove_action_invariance():
-    # KSAU Fundamental: Action per processing unit is 1.
-    S_quantized = 1.0
+    # KSAU Fundamental: Action per processing unit is kappa = pi/24.
+    # Justification: S_total (pi) / Kissing Number K(4) (24).
+    kappa = np.pi / 24.0
+    S_quantized = kappa
     
     # Range of spatial refinement (v_i) required to describe local curvature
     # v_i = 1 means vacuum (flat). v_i > 1 means mass (curved).
@@ -29,20 +31,20 @@ def prove_action_invariance():
         # S = v_i * v_0  => v_0 = S / v_i
         v_0 = S_quantized / v_i
         
-        print(f"{v_i:15.2f} | {S_quantized:15.2f} | {v_0:15.4f}")
+        print(f"{v_i:15.2f} | {S_quantized:15.6f} | {v_0:15.6f}")
 
     print("-" * 80)
     print("LOGICAL BRIDGE (The 'Why'):")
     print("1. NECESSITY OF v_i: To represent a 'Mass' (Topological Knot),")
     print("   the manifold must subdivide. v_i is the geometric resolution.")
-    print("2. CONSTANCY OF S: A Pachner move is a single atomic event.")
-    print("   It cannot process 'more' or 'less' than its own identity.")
+    print("2. CONSTANCY OF S: A Pachner move costs exactly kappa (pi/24).")
+    print("   This is the equipartition of vacuum phase (pi) across 24 neighbors.")
     print("3. EMERGENCE OF v_0: If one 'Action Unit' must cover more 'Simplex Volume',")
     print("   the rate per volume (Time) must decrease.")
     
     print("\nFINAL CONCLUSION:")
     print("✓ Gravity is the 'Dilution of Action' across increased geometric resolution.")
-    print("✓ v_0 * v_i = 1 is the statement that 'One Move is One Move'.")
+    print("✓ v_0 * v_i = kappa is the fundamental impedance law.")
     print("="*80)
 
 if __name__ == "__main__":

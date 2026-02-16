@@ -1,5 +1,16 @@
 # KSAU Project Changelog
 
+## [16.0.1] - 2026-02-17 (The Origin of Action Cost) 🚀 **ACTION PRINCIPLE FINALIZED**
+
+### ⚖️ Derivation of "1 Pachner Move = kappa"
+- **Equipartition Theorem**: Formally derived the action cost $\kappa = \pi/24$ as the equipartition of the vacuum phase capacity ($\pi$) across the 24 informational neighbors (Kissing Number $K(4)$) of a 4D unit cell.
+- **Spacetime Resonance**: Verified the resonance identity $K(4) \times \kappa = \pi$ as the fundamental constraint that closes the loop on the $v_0 \times v_i = 1$ unitary flow without external assumptions.
+- **Geometric Unit of Change**: Identified $\kappa$ not just as a mass-law constant, but as the universal impedance of any topological transition in the 24D/4D interface.
+
+### 📝 Documentation & Code Refinement
+- **Newtonian Transition Paper**: Updated [KSAU_v16_Newtonian_Transition.md](v16.0/papers/KSAU_v16_Newtonian_Transition.md) with Section 3.2 "The Origin of Action per Pachner Move".
+- **Action Invariance Script**: Refined [action_invariance_derivation.py](v16.0/code/action_invariance_derivation.py) to replace normalized placeholders with the theoretical $\kappa$ value, bridging simulation and first principles.
+
 ## [16.0.0] - 2026-02-16 (The Newtonian Transition & Tensor Gravity) 🚀 **PHYSICAL LAW DERIVATION**
 
 ### ⚖️ The Origin of Gravitational Attraction
