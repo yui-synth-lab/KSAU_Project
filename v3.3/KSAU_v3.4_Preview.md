@@ -13,7 +13,7 @@ Following rigorous peer review and systematic perturbation analysis of v3.3, we 
 *(Note: Error estimates are approximate pending full refit)*
 
 ## 2. Theoretical Wins
-*   **Complexity Reduction:** The Strange quark moves from an 11-crossing link to a 10-crossing link ($L10n95$). This aligns with the generation hierarchy ($d 	o s 	o b$ roughly correlating with volume/complexity, although $b$ is $L10a141$ so complexity is not monotonic, but volume is).
+*   **Complexity Reduction:** The Strange quark moves from an 11-crossing link to a 10-crossing link ($L10n95$). This aligns with the generation hierarchy ($d \to s \to b$ roughly correlating with volume/complexity, although $b$ is $L10a141$ so complexity is not monotonic, but volume is).
 *   **Statistical Significance:** The global MAE drops from 8.76% to ~8.4%.
 
 ## 3. Addressing Critique

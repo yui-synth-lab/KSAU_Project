@@ -20,7 +20,7 @@
 - **Mass Calculation:**
   - Using $\ln m = 1.3085 V - 7.916$:
   - $\ln M_P \approx 1.3085(29.45) - 7.916 \approx 30.6$.
-  - $M_P \approx e^{30.6} \approx 2 \\times 10^{13}$ MeV $\approx 2 \\times 10^{10}$ GeV.
+  - $M_P \approx e^{30.6} \approx 2 \times 10^{13}$ MeV $\approx 2 \times 10^{10}$ GeV.
   - **Result:** This is within a few orders of magnitude of the GUT scale ($10^{16}$ GeV), suggesting unification occurs at this geometric limit. The true Planck scale ($10^{19}$ GeV) might require a slightly higher volume ($V \approx 45$) or a correction to the area formula.
 
 ## 3. Gravity as Information Pressure

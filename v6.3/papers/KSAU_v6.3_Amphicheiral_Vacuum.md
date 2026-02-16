@@ -10,7 +10,7 @@ The Strong CP problem—the mysterious absence of CP violation in Quantum Chromo
 ## 1. Introduction: The Topology of $\theta$
 In QCD, the vacuum structure allows for a CP-violating term in the Lagrangian:
 $$ \mathcal{L}_{\theta} = \frac{\theta g^2}{32\pi^2} G_{\mu
-u}^a 	ilde{G}^{a\mu
+u}^a \tilde{G}^{a\mu
 u} $$
 This term is purely topological, measuring the "winding number" or Pontryagin index of the gluon field configuration. Experimentally, the neutron electric dipole moment constrains $|\bar{\theta}| < 10^{-10}$. The "unnatural" smallness of this parameter is the Strong CP problem.
 

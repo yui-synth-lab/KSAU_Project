@@ -83,7 +83,7 @@
 - **Gravity Precision**: Maintained **99.92% precision** for the derivation of $G$ from the Hexa-Borromean limit.
 
 ### 🌌 Cosmological Sync (Numerical Sync 0.00)
-- **Baryogenesis**: Achieved $\eta_B = 9.06 \\times 10^{-11}$ via the newly established **Pi-Squared Dilution Law**.
+- **Baryogenesis**: Achieved $\eta_B = 9.06 \times 10^{-11}$ via the newly established **Pi-Squared Dilution Law**.
 - **Dark Matter**: Derived the 5.31 ratio via the **Boson Barrier Exclusion Model** ($V_P - V_W$).
 - **Topological Genesis**: Confirmed Planck Volume $V_P \approx 44.9$ ($4.5\pi^2$) as the mathematically necessary seed of the universe.
 

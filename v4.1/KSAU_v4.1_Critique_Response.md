@@ -9,7 +9,7 @@
 We accept the critical review of the initial v4.1 optimization attempt (`phase3_unified_complex_correction.py` and `KSAU_v4.1_Validation_Report.md`). The following issues have been confirmed:
 
 1.  **Invalid Lepton CS Values:** The use of $CS \approx 0.06$ for the Electron ($3_1$) and non-zero values for Tau ($7_1$) is topologically unsound, as these are non-hyperbolic torus knots.
-2.  **Top Quark Regression:** The CS correction term ($\beta \cdot CS$) improved the Bottom quark but worsened the Top quark (+13.1% $	o$ +16.4%), indicating a structural trade-off rather than a true solution.
+2.  **Top Quark Regression:** The CS correction term ($\beta \cdot CS$) improved the Bottom quark but worsened the Top quark (+13.1% $\to$ +16.4%), indicating a structural trade-off rather than a true solution.
 3.  **Ineffective Muon Correction:** The global unified model failed to resolve the Muon anomaly (+14.2% residual), whereas a dedicated twist correction achieves <0.5%.
 4.  **Lack of Statistical Rigor:** The initial report lacked BIC/LOO-CV analysis for the new parameters.
 
@@ -25,8 +25,8 @@ To address these flaws, the KSAU v4.1 strategy has been pivoted away from the "G
 ### 2.2 Re-assigning Heavy Quark Links
 - **Action:** Instead of forcing the v4.0 links ($L10a141$, $L11a62$) to fit via CS parameters, we searched for better topological candidates in the SnapPy database.
 - **New Assignments:**
-    - **Bottom:** $L10a141 	o L11n422$ ($V=12.447$, Det=48). Error reduced to **+3.4%**.
-    - **Top:** $L11a62 	o L11a144$ ($V=15.271$, Det=114). Error reduced to **+0.7%**.
+    - **Bottom:** $L10a141 \to L11n422$ ($V=12.447$, Det=48). Error reduced to **+3.4%**.
+    - **Top:** $L11a62 \to L11a144$ ($V=15.271$, Det=114). Error reduced to **+0.7%**.
 - **Theoretical Gain:** Discovered a consistent **Arithmetic Progression** for Down-type determinants ($16, 32, 48$) and a $6 \times \t\text{prime}$ rule for Up-type ($18, 12, 114$).
 
 ### 2.3 Updated Validation Status

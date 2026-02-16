@@ -42,7 +42,7 @@ The ratio of the Kashaev invariant ($N=3$) to the Reidemeister torsion for the f
 - $13 = F_7$ (7th Fibonacci number)
 - $5 = F_5$ (5th Fibonacci number)
 
-This suggests that the "Mass Slope" is anchored to the Golden Ratio squared ($\phi^2 = \phi + 1$). This approximation ($5\pi/6 \approx \phi^2$) is a known mathematical relationship (precision $1.2 \\times 10^{-5}$) documented in Wolfram MathWorld; KSAU's uniqueness lies in the physical discovery that the Muon mass is precisely realized at this geometric resonance point.
+This suggests that the "Mass Slope" is anchored to the Golden Ratio squared ($\phi^2 = \phi + 1$). This approximation ($5\pi/6 \approx \phi^2$) is a known mathematical relationship (precision $1.2 \times 10^{-5}$) documented in Wolfram MathWorld; KSAU's uniqueness lies in the physical discovery that the Muon mass is precisely realized at this geometric resonance point.
 
 ## 3. Integration of Continuous and Discrete Laws
 

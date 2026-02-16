@@ -107,7 +107,7 @@ $$V_{AB} = |V_{AB}| \cdot \exp\l\left(i \oint \mathcal{A}_{topo}\r\right)$$
 
 ### 4.2 Jarlskog Invariant
 
-The Jarlskog invariant $J \approx 3 \\times 10^{-5}$ corresponds to the area of the unitary triangle. In this theory, this is interpreted as the "loop area of chiral asymmetry". The reason $J$ is small is that the $V_{ub}$ transition, which forms part of the loop, is strongly suppressed by the aforementioned "cubic generation barrier".
+The Jarlskog invariant $J \approx 3 \times 10^{-5}$ corresponds to the area of the unitary triangle. In this theory, this is interpreted as the "loop area of chiral asymmetry". The reason $J$ is small is that the $V_{ub}$ transition, which forms part of the loop, is strongly suppressed by the aforementioned "cubic generation barrier".
 
 ---
 

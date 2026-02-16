@@ -22,7 +22,7 @@ You write:
 
 > "The relative error compared to the observed $X_{obs}$ is less than **0.0001%**."
 
-This precision depends entirely on the choice of $M_{Pl}$. You use $M_{Pl} = 1.2209 \\times 10^{22}$ MeV, but the PDG reduced Planck mass is $M_{Pl} = 2.435 \\times 10^{18}$ GeV, and the non-reduced value is $M_{Pl} = 1.22089(6) \\times 10^{19}$ GeV. Depending on which value and how many significant figures you use, the error on $X$ shifts by $\sim 0.01\%$.
+This precision depends entirely on the choice of $M_{Pl}$. You use $M_{Pl} = 1.2209 \times 10^{22}$ MeV, but the PDG reduced Planck mass is $M_{Pl} = 2.435 \times 10^{18}$ GeV, and the non-reduced value is $M_{Pl} = 1.22089(6) \times 10^{19}$ GeV. Depending on which value and how many significant figures you use, the error on $X$ shifts by $\sim 0.01\%$.
 
 **Action Required:** State explicitly which $M_{Pl}$ definition is used. Report the error as a range (e.g., "0.01%-0.1%") rather than a single overly precise number. Otherwise, this falls into the same trap as the 82/5 overclaim you correctly retracted.
 

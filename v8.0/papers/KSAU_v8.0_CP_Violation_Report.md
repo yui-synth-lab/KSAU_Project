@@ -20,10 +20,10 @@ where $\kappa = \pi/24$ and $B_{total}$ is the\sum of the generational barriers.
 **Calculation:**
 - **$B_{total} = B_{12} + B_{23} + B_{13}$**
 - Using identified barriers: $12$ (We\right) + $24$ (Rank) +\times (Lepton Offset) = **$79$**
-- $J_{theo} = \exp(-79 \cdot \pi/24) \approx \mathbf{3.23\\times 10^{-5}}$
+- $J_{theo} = \exp(-79 \cdot \pi/24) \approx \mathbf{3.23\times 10^{-5}}$
 
 **Comparison:**\times
-- **Observed (PDG 2024):** $\mathbf{3.08\\times 10^{-5}}$
+- **Observed (PDG 2024):** $\mathbf{3.08\times 10^{-5}}$
 - **Agreement:** $\mathbf{95.2\%}$
 \times
 ## 3. Structural Interpretation: $B=79$ and the $4\times 20$ Rule

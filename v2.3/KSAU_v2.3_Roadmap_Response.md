@@ -320,7 +320,7 @@ by our 3-component link $L = K_R \cup K_G \cup K_B$.
 ```
 where $D_{ub} = w_c(\Delta n_c)^2 + w_g(\Delta n_g)^3 + w_l|\Delta L|$
 
-**Numerical Target:** $(3.82 \pm 0.24) \\times 10^{-3}$ (PDG 2024)
+**Numerical Target:** $(3.82 \pm 0.24) \times 10^{-3}$ (PDG 2024)
 
 **Required Precision Calculation:**
 

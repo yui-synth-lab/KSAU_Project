@@ -8,8 +8,8 @@ The "Short and Sharp" critique regarding selection bias and uniqueness was **cor
 
 *   **Strange Quark Degeneracy:** The reported assignment for the Strange quark ($L11n345$, Vol=9.49) is **not the unique global minimum**.
 *   **A Superior Candidate Exists:** The 3-component link **$L10n95$** (Vol=9.53) provides a better statistical fit.
-    *   **MAE Improvement:** 8.76% $	o$ 8.38%
-    *   **Complexity Reduction:** Crossing number 11 $	o$ 10
+    *   **MAE Improvement:** 8.76% $\to$ 8.38%
+    *   **Complexity Reduction:** Crossing number 11 $\to$ 10
 *   **Charm Quark Robustness:** The Charm assignment ($L11n64$) remains the robust #1 candidate among 2-component links.
 
 ## 2. Statistical Rigor (Bootstrap Results)

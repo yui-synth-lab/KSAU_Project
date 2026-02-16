@@ -25,7 +25,7 @@ Version 9.0 focuses on the derivation of fundamental physical laws from the topo
 
 ### 4. Rigorous Definition of the 24D -> 4D Projection
 **Goal:** Mathematically formalize the projection mechanism from the 24D Leech lattice/manifold to the observable 4D spacetime.
-- Define the projection operator $\mathcal{P}: \mathbb{R}^{24} 	o \mathbb{R}^{4}$.
+- Define the projection operator $\mathcal{P}: \mathbb{R}^{24} \to \mathbb{R}^{4}$.
 - Explain why specific dimensions are "hidden" or "compactified" and how this relates to the $N=20$ factor for electrons.
 
 ### 5. First-Principles Derivation of the Shape Factor N

@@ -18,7 +18,7 @@ This velocity is determined solely by the dimension $D=24$ and the Planck scale,
 ## 3. Derivation of the Lorentz Factor $\gamma$
 Let a defect move with velocity $v$ in the 4D subspace. The "Topological Drag" $F_{drag}$ is proportional to the relative velocity through the 24D bulk.
 
-As $v 	o c$, the density of fluid interactions per unit of 4D-time increases due to the "pile-up" of stochastic jumps (similar to a sonic boom in fluid dynamics). The effective resistance (mass) scales as:
+As $v \to c$, the density of fluid interactions per unit of 4D-time increases due to the "pile-up" of stochastic jumps (similar to a sonic boom in fluid dynamics). The effective resistance (mass) scales as:
 $$ m_{eff}(v) = \frac{m_0}{\sqrt{1 - (v/c)^2}} $$
 This is the **Relativistic Mass Increase**, derived here not from an axiom of space-time geometry, but from the **Stochastic Saturation** of the 24D vacuum fluid.
 

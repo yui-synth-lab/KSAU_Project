@@ -38,8 +38,8 @@ $$ m(\nu_N) = \mu_0 \cdot \exp\l\left(\frac{9\pi}{16} N\r\right) $$
 
 Using NuFIT 5.2 data for neutrino oscillation parameters:
 
-* $\Delta m^2_{21} = 7.42 \\times 10^{-5}$ eV² (solar splitting)
-* $\Delta m^2_{31} = 2.514 \\times 10^{-3}$ eV² (atmospheric splitting)
+* $\Delta m^2_{21} = 7.42 \times 10^{-5}$ eV² (solar splitting)
+* $\Delta m^2_{31} = 2.514 \times 10^{-3}$ eV² (atmospheric splitting)
 
 With $\lambda = \frac{9\pi}{16} \approx 1.7671$ fixed by theory, we solve for $\mu_0$ using the constraint:
 
@@ -47,7 +47,7 @@ $$ m_2^2 - m_1^2 = \mu_0^2 \l\left( e^{2\lambda \cdot 6} - e^{2\lambda \cdot 3} 
 
 This yields:
 
-* $\mu_0 \approx 2.14 \\times 10^{-7}$ eV (Base Scale)
+* $\mu_0 \approx 2.14 \times 10^{-7}$ eV (Base Scale)
 
 **Note:** The base scale $\mu_0$ is determined uniquely by the oscillation data once $\lambda$ is fixed.
 

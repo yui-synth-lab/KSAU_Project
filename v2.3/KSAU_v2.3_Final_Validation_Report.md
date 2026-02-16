@@ -46,7 +46,7 @@ $$ \ln(m) \approx 1.97 \cdot C + 0.29 \cdot \t\text{Sig} + 0.24 \cdot L - 2.70 \
 
 Based on the success of the prototype, the next version will focus on:
 1.  **Refining $C_2$ Weights:** Derive weights strictly from $SU(3)$ group invariants ($4/3$ vs $3$).
-2.  **Exact Writhe Calculation:** Replace $L_{tot}$ proxies with exact Writhe to push $R^2 	o 0.99$ for $N=9$.
+2.  **Exact Writhe Calculation:** Replace $L_{tot}$ proxies with exact Writhe to push $R^2 \to 0.99$ for $N=9$.
 3.  **Neutrino Sector:** Investigate if light neutrinos correspond to "Non-Hyperbolic Unlinked" states with near-zero energy.
 
 ---

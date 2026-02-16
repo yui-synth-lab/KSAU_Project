@@ -341,7 +341,7 @@ These documents justify the algorithm but are **not part of v6.0 official releas
 - Synchronize Baryogenesis ($\eta_B$) and Dark Matter (5:1 ratio)
 
 **Results:**
-- ✅ **Baryogenesis:** $\eta_B = 9.06 \\times 10^{-11}$ achieved via **Pi-Squared Dilution Law**.
+- ✅ **Baryogenesis:** $\eta_B = 9.06 \times 10^{-11}$ achieved via **Pi-Squared Dilution Law**.
 - ✅ **Planck Volume:** $V_P = 44.9$ derived as information saturation point.
 - ✅ **Dark Matter:** 5.31 ratio derived via **Boson Barrier Exclusion Model**.
 

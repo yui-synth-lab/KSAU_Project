@@ -36,7 +36,7 @@ $$ -\kappa = -\frac{\pi}{24} \approx -0.1309 $$
 The deviation is approximately 3.7%. While larger than the mixing angle error (0.38%), this discrepancy is consistent with the magnitude of radiative corrections to the tree-level relation $M_W = M_Z \cos \theta_W$. The relation confirms that the mass splitting is governed by a single unit of the geometric constant $\kappa$.
 
 ## 5. Discussion
-The appearance of $\pi/24$ in the electroweak sector is non-trivial. In string theory and conformal field theory, the central charge $c=24$ and the factor $\pi c/24$ play crucial roles in the Casimir energy of the vacuum. Our result implies that the breaking of electroweak symmetry ($SU(2) \times U(1) 	o U(1)_{em}$) incurs a "geometric cost" of $2\kappa$ in the probability amplitude, or $\kappa$ in the mass exponent.
+The appearance of $\pi/24$ in the electroweak sector is non-trivial. In string theory and conformal field theory, the central charge $c=24$ and the factor $\pi c/24$ play crucial roles in the Casimir energy of the vacuum. Our result implies that the breaking of electroweak symmetry ($SU(2) \times U(1) \to U(1)_{em}$) incurs a "geometric cost" of $2\kappa$ in the probability amplitude, or $\kappa$ in the mass exponent.
 
 ## 6. Conclusion
 We have identified a geometric origin for the electroweak mixing angle, predicting $\sin^2 \theta_W \approx 0.2303$ from the purely topological constant $\pi/24$. This finding provides a strong motivation to reconsider the parameters of the Standard Model not as arbitrary values, but as quantized geometric invariants of a higher-dimensional vacuum.

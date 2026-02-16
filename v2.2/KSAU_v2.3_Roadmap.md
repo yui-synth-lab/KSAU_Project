@@ -6,9 +6,9 @@
 ## 1. Addressing Systematic Mass Deviation
 **Status:** ✅ Preliminary Verification Complete
 **Finding:** Adding `Signature` (Sig) and `Total Linking Number` ($L_{tot}$) significantly improves heavy quark predictions.
-- **Top Error:** +107% (v2.2) $	o$ +54% (v2.3 Preview)
-- **Bottom Error:** -61% (v2.2) $	o$ -15% (v2.3 Preview)
-- **$R^2$:** 0.951 $	o$ 0.963
+- **Top Error:** +107% (v2.2) $\to$ +54% (v2.3 Preview)
+- **Bottom Error:** -61% (v2.2) $\to$ -15% (v2.3 Preview)
+- **$R^2$:** 0.951 $\to$ 0.963
 
 **Action Items:**
 - [ ] **Data Augmentation:** Calculate `Writhe` number for all candidates (requires knot projection software/library).
@@ -25,7 +25,7 @@
   3.  Match Color Charge symmetry ($SU(3)$ representations).
   4.  Select lowest complexity link matching mass scale.
 
-## 3. Mathematical Rigor (SU(3) $	o$ T³)
+## 3. Mathematical Rigor (SU(3) $\to$ T³)
 **Critique:** Lack of proof for Abelian Dominance.
 **Action Items:**
 - [ ] **Literature Review:** Cite "Abelian Dominance in QCD" (Ezawa, Iwazaki, etc.) and "Monopole Condensation".
@@ -35,7 +35,7 @@
 **Critique:** Predictions are too vague.
 **Action Items:**
 - [ ] **Calculate $V_{ub}$:** Refine the "Cubic Generation Barrier" model to output precise number (Target: $0.0036 \pm 0.0001$).
-- [ ] **Spin Correlation ($t 	o bW$):**
+- [ ] **Spin Correlation ($t \to bW$):**
   - SM: $C = -0.41$
   - KSAU: $C = -0.41 + \delta_{topo}$ (where $\delta_{topo} \propto \t\text{Signature}(L_{top})$).
   - Calculate magnitude of $\delta_{topo}$.

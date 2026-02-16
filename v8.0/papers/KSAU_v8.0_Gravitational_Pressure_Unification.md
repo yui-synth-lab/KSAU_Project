@@ -26,7 +26,7 @@ Where $\sigma_t$ is the temporal fluctuation width (from our simulation) and $
 ho_{vac}$ is the modular density of the Leech Lattice.
 
 ## 2. Newton's Constant $G$: The 24D Compressibility
-Current KSAU v8.0 value $G \approx 6.71 \\times 10^{-39}$ is now interpreted as the **Bulk Modulus** of the 24D vacuum.
+Current KSAU v8.0 value $G \approx 6.71 \times 10^{-39}$ is now interpreted as the **Bulk Modulus** of the 24D vacuum.
 - **Why is Gravity so weak?** Because the 24D fluid is almost perfectly incompressible. Only extremely large topological "displacements" (Planetary masses) create measurable pressure gradients.
 - **The $N=6$ Factor:** In `physical_constants.json`, we noted a `v_planck_factor: 6.0`. This corresponds to the **6-dimensional projection** required to map 24D pressure onto our 3+1D observable spacetime.
 
@@ -36,7 +36,7 @@ If Fermions are isolated knots, **Bosons (W, Z, Photon, Gluon)** are the **Vorte
 ### 3.1 Force as Fluid Connectivity
 A "Force" is a state where two knots share a common flow line. 
 - **W/Z Bosons:** Heavy, short-ranged connections. These are "thick" vortex tubes that require high energy (Volume) to maintain against the temporal wind.
-- **Photon:** A "massless" surface wave on the 24D fluid. It has $V 	o 0$ in the bulk, meaning it offers zero resistance to the flow.
+- **Photon:** A "massless" surface wave on the 24D fluid. It has $V \to 0$ in the bulk, meaning it offers zero resistance to the flow.
 
 ### 3.2 The Boson Scaling Law
 Bosons do not follow the $m = N \kappa V$ law of fermions exactly because their geometry is **Brunnian** (they vanish if one component is removed). 

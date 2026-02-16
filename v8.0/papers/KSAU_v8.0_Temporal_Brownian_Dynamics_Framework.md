@@ -46,9 +46,9 @@ This explains why heavier particles are associated with larger hyperbolic volume
 Flavor transitions (weak decay) are modeled as **Knot Reconnection** events triggered by fluid fluctuations.
 
 ### 4.1 The Integer Barrier Law
-The probability $P_{i 	o j}$ of a transition between flavor states $i$ and $j$ is governed by the activation energy required to break the topological barrier:
+The probability $P_{i \to j}$ of a transition between flavor states $i$ and $j$ is governed by the activation energy required to break the topological barrier:
 
-$$ P_{i 	o j} \sim \exp(-B_{ij} \cdot \kappa) $$
+$$ P_{i \to j} \sim \exp(-B_{ij} \cdot \kappa) $$
 
 - **CKM Matrix:** Charged currents feel the heavy modular barriers ($B \in \{12, 24, 36\}$).
 - **PMNS Matrix:** Neutrinos, being neutral, only perceive the light spacetime remnant barriers ($B \in \{2, 5, 15\}$).

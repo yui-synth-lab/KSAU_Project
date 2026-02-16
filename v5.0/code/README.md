@@ -50,7 +50,7 @@ python plot_exhaustive_search.py
 | `plot_exhaustive_search.py` | Generates distribution and complexity tradeoff plots using real data. |
 | `prove_no_overfitting.py` | Analyzes search space constraints and topological quantization noise. |
 | `catalan_pi24_verify.py` | Verifies the mathematical identity $G \approx 7\pi/24$. |
-| `permutation_test.py` | Performs 100,000 permutations to calculate the p-value ($p < 8 \\times 10^{-5}$). |
+| `permutation_test.py` | Performs 100,000 permutations to calculate the p-value ($p < 8 \times 10^{-5}$). |
 
 ## 📊 Data Sources
 

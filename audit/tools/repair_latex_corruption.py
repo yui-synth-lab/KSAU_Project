@@ -5,11 +5,14 @@ def repair(p):
         d = f.read()
     # 0x09 is Tab, 0x5C is Backslash
     t = [
-        (bytes([9]) + b"heta", b"\\\\theta"),
-        (bytes([9]) + b"an", b"\\\\tan"),
-        (bytes([9]) + b"au", b"\\\\tau"),
-        (bytes([9]) + b"imes", b"\\\\times"),
-        (bytes([9]) + b"ext", b"\\\\text")
+        (bytes([9]) + b"heta", b"\\theta"),
+        (bytes([9]) + b"an", b"\\tan"),
+        (bytes([9]) + b"au", b"\\tau"),
+        (bytes([9]) + b"imes", b"\\times"),
+        (bytes([9]) + b"ext", b"\\text"),
+        (bytes([9]) + b"o", b"\\to"),
+        (bytes([9]) + b"ilde", b"\\tilde"),
+        (bytes([9]) + b"riangle", b"\\triangle")
     ]
     n = d
     for o, k in t:

@@ -33,7 +33,7 @@ $$ X = \pi \frac{24 \cdot 60 + 3 \cdot 23}{16 + 16 + 60} = \pi \frac{1509}{92} \
 
 **Observation:**
 $$ X_{obs} = 51.5278 $$
-**Error:** $2.1 \\times 10^{-5}$ (**0.002%**)
+**Error:** $2.1 \times 10^{-5}$ (**0.002%**)
 
 ## 3. Why This Is Not Numerology
 Unlike arbitrary rational fitting, this decomposition:

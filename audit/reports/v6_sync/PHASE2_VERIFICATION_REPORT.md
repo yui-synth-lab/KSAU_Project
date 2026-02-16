@@ -12,7 +12,7 @@
 Phase 2 focuses on bridging the gap between micro-physical constants and macro-cosmological observables. By applying the refined v6.0 SSoT constants, we have successfully derived the fundamental parameters of the universe (Planck Scale, Baryogenesis, Dark Matter) as mathematical necessities rather than empirical fits.
 
 **Key Achievements:**
-- **Baryogenesis ($\eta_B$):** Achieved $9.06 \\times 10^{-11}$ (vs $1.0 \\times 10^{-10}$ obs) using the **Pi-Squared Dilution Law**.
+- **Baryogenesis ($\eta_B$):** Achieved $9.06 \times 10^{-11}$ (vs $1.0 \times 10^{-10}$ obs) using the **Pi-Squared Dilution Law**.
 - **Planck Volume ($V_P$):** Synced at $44.9$ (vs $44.9$ SSoT) using the **Holographic Gamma Model**.
 - **Dark Matter Ratio:** Achieved $5.31$ (vs $5.36$ obs) using the **Boson Barrier Exclusion Model**.
 
@@ -24,10 +24,10 @@ Phase 2 focuses on bridging the gap between micro-physical constants and macro-c
 The matter-antimatter asymmetry is derived from the initial Skein Bias ($\epsilon$) of the Master Link, diluted by the curvature of the vacuum ($\pi^2$).
 
 - **Formula:** $\eta_B = \epsilon \cdot (V_{borr} / V_P)^{\pi^2}$
-- **Initial Bias ($\epsilon$):** $5.3358 \\times 10^{-3}$ (at $C=74$)
-- **Dilution Factor:** $1.70 \\times 10^{-8}$
-- **Predicted $\eta_B$:** **$9.06 \\times 10^{-11}$**
-- **Observed $\eta_B$:** $1.00 \\times 10^{-10}$
+- **Initial Bias ($\epsilon$):** $5.3358 \times 10^{-3}$ (at $C=74$)
+- **Dilution Factor:** $1.70 \times 10^{-8}$
+- **Predicted $\eta_B$:** **$9.06 \times 10^{-11}$**
+- **Observed $\eta_B$:** $1.00 \times 10^{-10}$
 - **Sync Status:** ✅ Perfect Magnitude Match (Error < 0.05\log-units).
 
 ### 2.2 The Holographic Gamma Model (Topological Genesis)

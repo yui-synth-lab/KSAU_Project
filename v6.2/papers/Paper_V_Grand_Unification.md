@@ -44,7 +44,7 @@ We identify the solution to the Strong CP problem in the dominance of **Amphiche
 
 ## 6. Limitations and Future Work
 - **Cabibbo-Forbidden Transitions:** While CKM diagonal elements achieve sub-3% error, forbidden transitions (u→b, t→d) exhibit significant errors, suggesting the need for higher-order holonomy corrections.
-- **Gravity Coupling:** The transition from the interacting manifold regime to the Planck scale ($V 	o \infty$) remains to be explored in v6.3.
+- **Gravity Coupling:** The transition from the interacting manifold regime to the Planck scale ($V \to \infty$) remains to be explored in v6.3.
 
 ## 7. Conclusion
 KSAU v6.2 establishes that the Standard Model is not merely a collection of geometric shapes, but a dynamic system of interacting 3-manifolds. The introduction of Topological Binding Energy and Cusp Shape corrections provides a unified, high-precision description of flavor mixing, particle decay, and grand unification.

@@ -23,7 +23,7 @@ $$ X \approx \pi \l\left( \t\text{Rank}_{Gauge} + \frac{\t\text{Rank}_{Vacuum}}{
 Where the coefficients are physically motivated as follows:
 - **16 (Gauge Rank):** The dimensionality of the $E_8\times E_8$ lattice, a common feature in heterotic string theory and a sub-lattice of the Niemeier series.
 - **24 (Vacuum Rank):** The rank of the Leech lattice $\Lambda_{24}$, representing the total dimensionality of the topological bulk.
-- **60 (Symmetry Order):** The order of the icosahedral group $A_5$, which acts as a stabilizer in the 24D $	o$ 4D projection.
+- **60 (Symmetry Order):** The order of the icosahedral group $A_5$, which acts as a stabilizer in the 24D $\to$ 4D projection.
 
 ## 4. Status as a Theoretical Prospect
 It is important to emphasize that this alignment, while achieving 0.01% precision, currently lacks a complete first-principles derivation from an effective action. At this stage of research, we interpret the $16.4\pi$ identity as:

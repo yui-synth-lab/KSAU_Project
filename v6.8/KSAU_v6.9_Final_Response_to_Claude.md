@@ -64,7 +64,7 @@ Claudeが「良い予測」と評価した Axion 候補 ($6_3$ 結び目) につ
 *   **質量 (Mass):** $m_a = \mathbf{0.392 \t\text{ MeV}}$ （確定値）。
 *   **崩壊モード (Decay):** $a \to \gamma + \gamma$。
     *   $e^+ e^-$ 閾値 (1.02 MeV) 以下のため、光子への崩壊が唯一の可視チャンネルである。
-*   **予測寿命 (Estimated Lifetime):** $\tau \approx \mathbf{1.2 \\times 10^{-3} \t\text{ s}}$。
+*   **予測寿命 (Estimated Lifetime):** $\tau \approx \mathbf{1.2 \times 10^{-3} \t\text{ s}}$。
     *   結び目の複雑さ（Complexity $C=6$）およびトポロジカル抑制因子（$\mathcal{S}_T$）に起因するトンネル障壁により、標準的な中性パイ中間子よりも遥かに長寿命な「長寿命中性粒子 (LLP)」として振る舞う。
 *   **実験的アプローチ:**
     1.  **核遷移アノマリー:** 0.39 MeV の等エネルギーガンマ線ペアの放出を探索。

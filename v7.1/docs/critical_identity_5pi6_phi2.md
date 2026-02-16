@@ -24,7 +24,7 @@ $$2.617993877991494 \approx 2.618033988749895$$
 
 **Error:** $|5\pi/6 - \phi^2| = 0.000040110758401$
 
-**Relative error:** $\frac{|5\pi/6 - \phi^2|}{\phi^2} = 1.532 \\times 10^{-5} = \mathbf{0.0015\%}$
+**Relative error:** $\frac{|5\pi/6 - \phi^2|}{\phi^2} = 1.532 \times 10^{-5} = \mathbf{0.0015\%}$
 
 ---
 

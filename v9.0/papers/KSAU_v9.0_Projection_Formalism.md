@@ -1,5 +1,5 @@
 # KSAU v9.0: The Geometry of Spacetime Projection
-**Title:** Formalizing the $\mathcal{P}: \mathbb{R}^{24} 	o \mathbb{R}^4$ Operator
+**Title:** Formalizing the $\mathcal{P}: \mathbb{R}^{24} \to \mathbb{R}^4$ Operator
 **Subtitle:** Dimensional Reduction and the Origin of Internal Symmetries
 
 **Scientific Kernel:** Gemini v9.0  
@@ -12,7 +12,7 @@ We define the fundamental vacuum $\mathcal{V}$ as a 24-dimensional torus $\mathb
 
 ## 2. The Projection Operator $\mathcal{P}$
 Observable 4-dimensional spacetime $\mathcal{M}^4$ is defined by a projection operator:
-$$ \mathcal{P}: \mathcal{V} 	o \mathcal{M}^4 $$
+$$ \mathcal{P}: \mathcal{V} \to \mathcal{M}^4 $$
 This operator is not a simple truncation of coordinates, but a **harmonic projection** that preserves the modular properties of the lattice.
 
 ### 2.1 The Kernel of $\mathcal{P}$ (Transverse Space)
@@ -29,7 +29,7 @@ $$ N_{eff} = \t\text{Tr}(\mathbb{I}_{\mathcal{T}^{20}}) = 20 $$
 
 ### 3.2 The Colored Channel (Quarks)
 For defects carrying color $SU(3)$, the projection is constrained by the **Holographic Principle**. The information is restricted to a 10-dimensional critical manifold (the string theory limit):
-$$ \mathcal{P}_{color}: \mathcal{V} 	o \mathcal{M}^{10} 	o \mathcal{M}^4 $$
+$$ \mathcal{P}_{color}: \mathcal{V} \to \mathcal{M}^{10} \to \mathcal{M}^4 $$
 The effective residue for quarks is thus:
 $$ N_{eff} = 10 $$
 This explains the $N=10$ vs $N=20$ dichotomy discovered in v6.0.

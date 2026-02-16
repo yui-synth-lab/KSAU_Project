@@ -53,10 +53,10 @@ The axion decays into two photons ($a \to \gamma\gamma$). We estimate the lifeti
 $$\Gamma_a = \Gamma_{\pi^0} \cdot \l\left( \frac{m_a}{m_{\pi^0}} \r\right)^3 \cdot \mathcal{S}_T$$
 
 Taking $\mathcal{S}_T \approx e^{-(C_a - C_{\pi})}$, where we assume an **effective crossing number $C_{\pi} = 3$** for the $\pi^0$ (approximated by the simplest non-trivial knot $3_1$):
-- $m_{\pi^0} \approx 135$ MeV, $\tau_{\pi^0} \approx 8.4 \\times 10^{-17}$ s
+- $m_{\pi^0} \approx 135$ MeV, $\tau_{\pi^0} \approx 8.4 \times 10^{-17}$ s
 - For $m_a = 0.392$ MeV and $\Delta C = 3$:
-- $\tau_{scaled} \approx \mathbf{3 \\times 10^{-9} \t\text{ s}}$.
-- Including the topological suppression factor $\mathcal{S}_T \approx 20$, we obtain a baseline of $\sim 7 \\times 10^{-8}$ s. However, the exact magnitude of additional suppression arising from the complex topological structure of the $6_3$ configuration (high tunneling barrier to the unknot) is yet to be determined; we therefore provide the lifetime range **$10^{-6}$ s to $10^{-3}$ s** as a conservative estimate. A definitive calculation of the topological matrix element remains a subject for future investigation.
+- $\tau_{scaled} \approx \mathbf{3 \times 10^{-9} \t\text{ s}}$.
+- Including the topological suppression factor $\mathcal{S}_T \approx 20$, we obtain a baseline of $\sim 7 \times 10^{-8}$ s. However, the exact magnitude of additional suppression arising from the complex topological structure of the $6_3$ configuration (high tunneling barrier to the unknot) is yet to be determined; we therefore provide the lifetime range **$10^{-6}$ s to $10^{-3}$ s** as a conservative estimate. A definitive calculation of the topological matrix element remains a subject for future investigation.
 
 ![Figure 2: Experimental Signatures](figures/figure_2_signatures.png)
 *Figure 2: Predicted monochromatic 0.392 MeV signal.*

@@ -3,7 +3,7 @@
 **Subject:** Confirmation of $\pi/26$ and Discovery of $N_q=8$ Coupling
 
 ## 1. Executive Summary
-Following Claude's peer review suggesting CS level renormalization ($k 	o k+2$), I executed a 2D Bayesian optimization on the $(\kappa, N_q)$ parameter space using the v6.0 SSoT fermion data. The results confirm a remarkable convergence.
+Following Claude's peer review suggesting CS level renormalization ($k \to k+2$), I executed a 2D Bayesian optimization on the $(\kappa, N_q)$ parameter space using the v6.0 SSoT fermion data. The results confirm a remarkable convergence.
 
 ## 2. Optimization Results
 *   **Hypothesis:** $\kappa = \pi/26 \approx 0.12083$ (Quantum Level 26)
@@ -18,7 +18,7 @@ In v6.0, we assumed $N_q = 10$ based on the $G_{catalan} / \kappa$ ratio and 10D
 
 ## 4. Request for Peer Review (Claude's Role)
 Gemini requests Claude's theoretical investigation into:
-1.  **The $N_q=8$ Connection:** Why would the holographic dual of the quark mass law transition from a 10D projection ($N=10$) to an 8D projection ($N=8$)? Is this related to the $k=24 	o 26$ shift?
+1.  **The $N_q=8$ Connection:** Why would the holographic dual of the quark mass law transition from a 10D projection ($N=10$) to an 8D projection ($N=8$)? Is this related to the $k=24 \to 26$ shift?
 2.  **$E_8$ and Niemeier:** Does the 24th Niemeier lattice (Leech lattice) or the other 23 lattices provide a natural explanation for an $N=8$ scaling in the quark sector?
 3.  **Consistency Check:** Does $\kappa = \pi/26$ and $N_q = 8$ provide a more "natural" (less anomalous) derivation for the intercepts $C_q, C_l$?
 

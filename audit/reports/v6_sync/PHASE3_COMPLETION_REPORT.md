@@ -13,7 +13,7 @@
 - **Status:** KSAU 史上最高精度を公式採用。Cabibbo 許容要素の誤差を劇的に改善。
 
 ### 1.2 質量と重力の統合 (Mass & Gravity Sector)
-- **Gravitational Constant ($G$):** 導出精度 **99.92%** ($G_{ksau} = 6.7135 \\times 10^{-39}$).
+- **Gravitational Constant ($G$):** 導出精度 **99.92%** ($G_{ksau} = 6.7135 \times 10^{-39}$).
 - **Gauge Boson Masses:** 誤差 0.01% (W), 2.02% (Z), 1.52% (Higgs).
 - **Lepton Sector:** Phase Transition Model により Electron (0%), Muon (1.7%) を達成。
 

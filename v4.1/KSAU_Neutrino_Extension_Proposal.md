@@ -139,7 +139,7 @@ $$\ln\!\l\left(\frac{m_3}{m_2}\r\right) = 1.3070 \approx \frac{10}{7}G = 1.3085$
 
 The fact that **two independent KSAU relations** — $S = 2|B'|$ for the suppression and $\ln(m_3/m_2) = \Gamma_Q$ for the atmospheric ratio — are simultaneously satisfied to sub-percent precision constitutes strong evidence for internal consistency.
 
-**Robustness:** Using older $\Delta m^2$ values (Gemini's $\Delta m^2_{31} = 2.437 \\times 10^{-3}$), the $S$ match remains at 0.18% — still sub-percent. The result is insensitive to experimental input uncertainties.
+**Robustness:** Using older $\Delta m^2$ values (Gemini's $\Delta m^2_{31} = 2.437 \times 10^{-3}$), the $S$ match remains at 0.18% — still sub-percent. The result is insensitive to experimental input uncertainties.
 
 ---
 
@@ -188,7 +188,7 @@ The fact that **two independent KSAU relations** — $S = 2|B'|$ for the suppres
 | KSAU constant used | $G$ (raw Catalan) | $(10/7)G$ (established slope $\Gamma_Q$) |
 | Robustness to $\Delta m^2$ | $G/10$ breaks at 5.4% | $S$ match stable at 0.02-0.18% |
 
-Model A's claim that $\ln(m_2/m_1) = G/10$ relies on outdated $\Delta m^2_{31} = 2.437 \\times 10^{-3}$. With current NuFIT 5.3 data ($2.514 \\times 10^{-3}$), the error grows to 5.4%, rendering the claim fragile.
+Model A's claim that $\ln(m_2/m_1) = G/10$ relies on outdated $\Delta m^2_{31} = 2.437 \times 10^{-3}$. With current NuFIT 5.3 data ($2.514 \times 10^{-3}$), the error grows to 5.4%, rendering the claim fragile.
 
 Model B uses $(10/7)G$, which is already established as the quark slope $\Gamma_Q$ in v4.1, providing a structural connection rather than a numerical coincidence.
 
@@ -261,7 +261,7 @@ This "atmospheric ratio = quark slope" relation connects the neutrino and quark 
 
 1. KSAU v4.0 Full Manuscript — Topological Mass Generation Framework
 2. KSAU v4.1 Full Manuscript — Twist Correction and Top Quark Reassignment
-3. NuFIT 5.3 (2024): $\Delta m^2_{21} = 7.42 \\times 10^{-5}$ eV$^2$, $|\Delta m^2_{31}| = 2.514 \\times 10^{-3}$ eV$^2$
+3. NuFIT 5.3 (2024): $\Delta m^2_{21} = 7.42 \times 10^{-5}$ eV$^2$, $|\Delta m^2_{31}| = 2.514 \times 10^{-3}$ eV$^2$
 4. Planck 2018: $\sum m_\nu < 0.12$ eV (95% CL)
 5. DESI 2024: $\sum m_\nu < 0.072$ eV (95% CL, preliminary)
 

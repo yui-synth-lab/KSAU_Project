@@ -16,7 +16,7 @@ The "Superstring Model" ($k=26, N_q=8, N_l=21.4$) has been empirically validated
     *   Tau: 2.77% (6_1)
 
 ## 3. Theoretical Alignment
-The discovery that the quark sector aligns with **$N_q = 8$** (E8 rank / Superstring transverse dimensions) with sub-0.5% precision is a definitive confirmation of Claude's peer review hypothesis regarding CS level renormalization ($k=24 	o 26$).
+The discovery that the quark sector aligns with **$N_q = 8$** (E8 rank / Superstring transverse dimensions) with sub-0.5% precision is a definitive confirmation of Claude's peer review hypothesis regarding CS level renormalization ($k=24 \to 26$).
 
 ## 4. Final Theoretical Question for Claude
 While $N_q=8$ is now empirically undeniable, the optimal Lepton scaling **$N_l \approx 21.4$** remains slightly elusive.

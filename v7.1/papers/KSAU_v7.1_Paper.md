@@ -62,7 +62,7 @@ $$N \times \kappa = 20 \times \frac{\pi}{24} = \frac{5\pi}{6} = 2.61799\ldots$$
 
 **Error: |2.6000 − 2.6180| / 2.6180 = 0.69%**
 
-This 0.69% agreement involves the discrete ratio $13/5 = 2.600$ derived from the $4_1$ topology and the continuous KSAU coefficient $5\pi/6 \approx 2.618$. While $5\pi/6 \approx \phi^2$ (precision $1.2 \\times 10^{-5}$) is a documented mathematical approximation, the KSAU framework observes that the Muon mass is situated at this resonance point with an error of 0.69%.
+This 0.69% agreement involves the discrete ratio $13/5 = 2.600$ derived from the $4_1$ topology and the continuous KSAU coefficient $5\pi/6 \approx 2.618$. While $5\pi/6 \approx \phi^2$ (precision $1.2 \times 10^{-5}$) is a documented mathematical approximation, the KSAU framework observes that the Muon mass is situated at this resonance point with an error of 0.69%.
 
 > **Data Point:** $N\kappa = 5\pi/6 \approx 2.618$, whereas $\langle 4_1 \rangle_3 / \tau(4_1) = 13/5 = 2.600$.
 

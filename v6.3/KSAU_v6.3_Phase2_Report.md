@@ -4,7 +4,7 @@
 
 
 ## 1. The Planck Scale as a Geometric Limit
-- **Objective:** Derive the Planck mass ($M_P \approx 1.22 \\times 10^{19}$ GeV) from hyperbolic invariants.
+- **Objective:** Derive the Planck mass ($M_P \approx 1.22 \times 10^{19}$ GeV) from hyperbolic invariants.
 - **Discovery:** Using the universal mass law $\ln(m) = A \cdot V + C$, the Planck mass corresponds to a hyperbolic volume of **$V_P \approx 44.91$**.
 - **Geometric Identification:** 
   - $V_P \approx 4.55 \times \pi^2$.

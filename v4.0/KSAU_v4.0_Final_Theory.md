@@ -82,7 +82,7 @@ $$ \ln(m_l) = \l\left( \frac{2}{9} G \\r\right) N^2 + C_l $$
     *   $d'$ (Down-type): Should be a link with **Det = 128 ($2^7$)**. Predicted Mass: ~250-400 GeV.
 2.  **Neutrinos:**
     *   Should be Knots (Unknot or simple).
-    *   Masses likely follow $N 	o 0$ or $N=1,2$ limit of the Lepton Channel.
+    *   Masses likely follow $N \to 0$ or $N=1,2$ limit of the Lepton Channel.
 3.  **Theoretical Derivation:**
     *   Derive the $G$ factor from Loop Quantum Gravity volume operators or M-Theory G2 compactification volumes.
 

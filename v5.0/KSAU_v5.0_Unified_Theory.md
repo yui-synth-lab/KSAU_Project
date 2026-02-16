@@ -347,7 +347,7 @@ The bottom quark error ($-5.24\%$) represents **topological quantization noise**
 **Permutation Test** (from v4.0):
 - Randomly permute the 9 mass assignments
 - Recompute MAE for $10^5$ trials
-- Result: $p < 8 \\times 10^{-5}$ (**4.1σ significance**)
+- Result: $p < 8 \times 10^{-5}$ (**4.1σ significance**)
 
 The probability that the observed fit arises from random chance is **less than 0.008%**, exceeding the standard threshold for evidence in particle physics.
 

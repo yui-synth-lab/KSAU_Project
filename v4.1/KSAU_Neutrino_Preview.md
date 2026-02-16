@@ -31,8 +31,8 @@ Using these ratios to fit the observed $\Delta m^2_{21}$ and $\Delta m^2_{31}$:
 
 | Observable | Experimental (eV²) | Predicted (eV²) | Error |
 | :--- | :--- | :--- | :--- |
-| $\Delta m^2_{21}$ | $7.41 \\times 10^{-5}$ | $7.54 \\times 10^{-5}$ | **1.75%** |
-| $\Delta m^2_{31}$ | $2.437 \\times 10^{-3}$ | $2.437 \\times 10^{-3}$ | (Reference) |
+| $\Delta m^2_{21}$ | $7.41 \times 10^{-5}$ | $7.54 \times 10^{-5}$ | **1.75%** |
+| $\Delta m^2_{31}$ | $2.437 \times 10^{-3}$ | $2.437 \times 10^{-3}$ | (Reference) |
 
 **Resulting Absolute Masses:**
 *   $m_1 \approx 0.0194$ eV

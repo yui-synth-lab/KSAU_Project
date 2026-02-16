@@ -14,9 +14,9 @@ The universe did not begin at a singularity ($V=0$), but as a **Topological Inst
 ## 2. Baryogenesis: The Pi-Squared Dilution Law
 The imbalance between matter and antimatter is a direct consequence of the initial Skein Bias ($\epsilon$) of the Master Link, diluted by the curvature of the vacuum ($\pi^2$).
 
-- **Initial Bias ($\epsilon$):** Derived from the Jones polynomial asymmetry scaling law $\epsilon \approx C^{-1.2159}$. At $C=74$, $\epsilon \approx 5.33 \\times 10^{-3}$.
+- **Initial Bias ($\epsilon$):** Derived from the Jones polynomial asymmetry scaling law $\epsilon \approx C^{-1.2159}$. At $C=74$, $\epsilon \approx 5.33 \times 10^{-3}$.
 - **Dilution Mechanism:** As the Master Link unzips, the bias is suppressed by the geometric ratio $(V_{borr} / V_{planck})^{\pi^2}$, where $\pi^2$ represents the vacuum curvature invariant.
-- **Predicted Ratio ($\eta_B$):** **$9.06 \\times 10^{-11}$** (Observed: $1.0 \\times 10^{-10}$).
+- **Predicted Ratio ($\eta_B$):** **$9.06 \times 10^{-11}$** (Observed: $1.0 \times 10^{-10}$).
 - **Conclusion:** Matter exists because of the topological rigidity of the early universe.
 
 ## 3. Dark Matter: The Boson Barrier Model
