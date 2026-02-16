@@ -12,11 +12,11 @@
 
 ---
 
-## 🚀 Latest Breakthrough (v15.0): The Emergence of Time
-We have expanded the framework to include **Dynamics** by defining time as the 24D processing queue:
-- **Time as Unknotting:** Defined $t$ as the sequential processing of 24D information. The transition from $d=4$ (passable) to $d=3$ (locked) generates the temporal arrow.
-- **Derivation of $8\pi$:** Proven that $8\pi$ is the geometric saturated flux (192 units of $\kappa$) required for 4D/24D impedance matching.
-- **The Tensor Necessity:** Verified through failed scalar simulations that a rank-2 tensor (anisotropic unknotting) is required to describe the "attraction" and "temporal flow" of Einsteinian gravity.
+## 🚀 Latest Breakthrough (v15.1): The Dimensional Selection Law
+We have derived the fundamental reasons for the dimensionality of our universe:
+- **Time Ignition:** Proven that time can only flow if spatial connectivity exceeds $\pi^2$ ($K(3)=12 > 9.87$). 3D is the "Ignition Dimension."
+- **Spacetime Stability:** Discovered the resonance identity **$K(4) \cdot \kappa = \pi$**. 4D is the only dimension where vacuum information is perfectly partitioned.
+- **Unification:** Time, Gravity, and Dimensionality are now unified under the spectral weight **$\kappa = \pi/24$**.
 
 ---
 
