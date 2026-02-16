@@ -24,18 +24,17 @@ This leads to a "bare" geometric value for the weak mixing angle:
 $$ \sin^2 \theta_W = 1 - \exp(-\pi/12) \approx \mathbf{0.230335} $$
 
 ### 3.1 Renormalization Group Evolution
-It is essential to distinguish this geometric value from the effective parameter measured at experimental scales. The value $\sin^2 \theta_W \approx 0.2303$ is interpreted as the bare value at a high-energy unification scale $\Lambda_{geom}$. Under the Standard Model renormalization group evolution (RGE), $\sin^2 \theta_W(\mu)$ increases as the scale $\mu$ decreases from the unification scale to the electroweak scale $M_Z$. The observed proximity of our geometric result to the experimental value $(\sin^2 \theta_W)_{exp} \approx 0.2312$ suggests that the magnitude of the discrepancy is consistent with radiative corrections at scales above $, providing an intriguing phenomenological hint.
+It is essential to distinguish this geometric value from the effective parameter measured at experimental scales. The value $\sin^2 \theta_W \approx 0.2303$ is interpreted as the bare value at a high-energy unification scale $\Lambda_{geom}$. Under the Standard Model renormalization group evolution (RGE), $\sin^2 \theta_W(\mu)$ increases as the scale $\mu$ decreases from the unification scale to the electroweak scale $M_Z$. The observed proximity of our geometric result to the experimental value $(\sin^2 \theta_W)_{exp} \approx 0.2312$ suggests that the magnitude of the discrepancy is consistent with radiative corrections at scales above $M_Z$, providing an intriguing phenomenological hint.
 
 ## 4. W/Z Boson Mass Splitting
 The Standard Model mass relation $M_W = M_Z \cos \theta_W$ provides a secondary test for this hypothesis. By substituting our geometric identity, we obtain:
 $$ \ln(M_W/M_Z) = \frac{1}{2} \ln(\cos^2 \theta_W) = -\kappa = -\frac{\pi}{24} \approx -0.130899 $$
-Using the experimental masses $M_W = 80.377$ GeV and $M_Z = 91.187$ GeV, the observed ratio is $\ln(M_W/M_Z)_{exp} \approx -0.1262$. The 3.7% residual is consistent with the magnitude of radiative corrections to the tree-level relation (the $
-ho$ parameter), which are not yet incorporated into this leading-order geometric framework.
+Using the experimental masses $M_W = 80.377$ GeV and $M_Z = 91.187$ GeV, the observed ratio is $\ln(M_W/M_Z)_{exp} \approx -0.1262$. The 3.7% residual is consistent with the magnitude of radiative corrections to the tree-level relation (the $\rho$ parameter), which are not yet incorporated into this leading-order geometric framework.
 
 ## 5. Conclusion
-We have demonstrated an intriguing numerical alignment between the electroweak mixing angle and the fundamental modular constant $\pi/24$. While not a derivation from first principles, this "structure-guided reconstruction" provides a powerful evidence that the parameters of the Standard Model may be constrained by the topological properties of a 24-dimensional vacuum.
+We have demonstrated an intriguing numerical alignment between the electroweak mixing angle and the fundamental modular constant $\pi/24$. While not a derivation from first principles, this "structure-guided reconstruction" provides powerful evidence that the parameters of the Standard Model may be constrained by the topological properties of a 24-dimensional vacuum.
 
 ## References
-[1] KSAU Collaboration, *Topological Origin of Fermion Mass Hierarchy*, Zenodo (2026).
+[1] KSAU Collaboration, *Topological Origin of Fermion Mass Hierarchy*, Zenodo (2026). https://doi.org/10.5281/zenodo.18631886
 [2] R.L. Workman et al. (Particle Data Group), *Review of Particle Physics*, Prog. Theor. Exp. Phys. 2022, 083C01 (2022).
 [3] J.H. Conway, N.J.A. Sloane, *Sphere Packings, Lattices and Groups*, Springer-Verlag (1999).
