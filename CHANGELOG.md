@@ -1,5 +1,25 @@
 # KSAU Project Changelog
 
+## [16.0.0] - 2026-02-16 (The Newtonian Transition & Tensor Gravity) 🚀 **PHYSICAL LAW DERIVATION**
+
+### ⚖️ The Origin of Gravitational Attraction
+- **Temporal Congestion Model**: Formally derived $g_{00} < 1$ from the anisotropic unknotting rates. In dense regions, the "ingoing" information queue slows down, resulting in gravitational attraction (Time Dilation).
+- **The Schwarzschild Identity**: Derived $g_{00} \cdot g_{rr} = 1$ from the **Efficiency Freeze-out (N=41)** principle. To maintain the vacuum's optimal information density, any spatial expansion must be compensated by a temporal slowdown.
+
+### 📐 The 8πG Identity
+- **Kappa-Kissing Bridge**: Formalized the identity $8\pi G = 8\kappa = \pi/3$, linking the spectral weight of the 24D vacuum to the gravitational coupling constant.
+- **Dimensional Bridge**: Established the "Planck Normalization" where $G$ emerges as the vacuum impedance $\kappa$ divided by the square of the Planck mass.
+
+### 🔍 Spectral & Thermal Verification
+- **Heat Kernel Analysis**: Verified the $8\pi\kappa = \pi^2/3$ identity via the short-time expansion of the Leech lattice heat kernel trace.
+- **Anisotropic Simulation**: Successfully modeled the difference between ingoing (temporal) and outgoing (spatial) unknotting rates in `v16.0/code/anisotropic_unknotting_sim.py`.
+
+### 📂 New Foundations
+- [KSAU_v16_Newtonian_Transition.md](v16.0/papers/KSAU_v16_Newtonian_Transition.md) - Theoretical Core.
+- [anisotropic_unknotting_sim.py](v16.0/code/anisotropic_unknotting_sim.py) - Tensor Emergence Simulation.
+- [heat_kernel_24d_analysis.py](v16.0/code/heat_kernel_24d_analysis.py) - Spectral Verification.
+- [efficiency_freezeout_check.py](v16.0/code/efficiency_freezeout_check.py) - Reciprocity Proof.
+
 ## [15.0.0] - 2026-02-16 (Emergence of Time & Geometric Gravity) 🚀 **DYNAMIC PARADIGM SHIFT**
 
 ### ⏳ Time as a Processing Queue

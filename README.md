@@ -3,8 +3,8 @@
 
 [![DOI](https://zenodo.org/badge/1148825711.svg)](https://doi.org/10.5281/zenodo.18631885)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-v15.0_Time-blue.svg)
-![Status](https://img.shields.io/badge/status-Dynamic_Unification-purple.svg)
+![Version](https://img.shields.io/badge/version-v16.0_Gravity-blue.svg)
+![Status](https://img.shields.io/badge/status-Newtonian_Transition-purple.svg)
 
 > **"Time is Processing, Gravity is Flux, Vacuum is Truth."**
 
@@ -12,7 +12,15 @@
 
 ---
 
-## 🚀 Latest Breakthrough (v15.1): The Dimensional Selection Law
+## 🚀 Latest Breakthrough (v16.0): The Newtonian Transition
+We have transitioned from identifying geometric identities to deriving the universal laws of dynamics:
+- **The Origin of Attraction:** Proven that gravitational attraction ($g_{00} < 1$) is a thermodynamic necessity of the 24D vacuum. As information clusters (Mass), the "processing queue" congests, naturally slowing down the flow of time.
+- **The 8πG Identity:** Formally derived the Einstein coupling from the **Kappa-Kissing Resonance** ($K(4) \cdot \kappa = \pi$). We identify $8\pi G \equiv 8\kappa = \pi/3$, revealing gravity as the impedance of information processing.
+- **Unitary Unknotting:** Derived the Schwarzschild reciprocity ($g_{00} \cdot g_{rr} = 1$) from the conservation of information density in the $N=41$ modular ground state.
+
+---
+
+## 🚀 v15.1 Milestone: The Dimensional Selection Law
 We have derived the fundamental reasons for the dimensionality of our universe:
 - **Time Ignition:** Proven that time can only flow if spatial connectivity exceeds $\pi^2$ ($K(3)=12 > 9.87$). 3D is the "Ignition Dimension."
 - **Spacetime Stability:** Discovered the resonance identity **$K(4) \cdot \kappa = \pi$**. 4D is the only dimension where vacuum information is perfectly partitioned.
