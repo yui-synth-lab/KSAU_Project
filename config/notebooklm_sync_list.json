@@ -1,24 +1,43 @@
 {
+  "description": "KSAU v13.8 NotebookLM Upload Configuration",
+  "last_updated": "2026-02-16",
   "sync_list": [
     {
       "source": "v11.0/papers/PLB_Letter_Electroweak_Geometry_Final.md",
-      "target": "PLB_Letter_Electroweak_Geometry_Final.md"
-    },
-    {
-      "source": "v13.0/papers/KSAU_v13_Mass_Hierarchy_Reconstruction.md",
-      "target": "Mass_Hierarchy_v14.0_Revision.md"
+      "target": "PLB_Letter_Electroweak_Geometry_Final.md",
+      "priority": "HIGH",
+      "note": "Most robust result (cos²θ_W = exp(-2κ))"
     },
     {
       "source": "v13.0/papers/KSAU_v13_Final_Manuscript.md",
-      "target": "KSAU_v13.9_Main_Manuscript.md"
+      "target": "KSAU_v13.9_Main_Manuscript.md",
+      "priority": "CORE",
+      "note": "Primary manuscript with p=0.0051 statistical disclosure"
+    },
+    {
+      "source": "v13.0/papers/KSAU_v13_Theoretical_Supplement.md",
+      "target": "KSAU_v13_Theoretical_Supplement.md",
+      "priority": "CORE",
+      "note": "Statistical limits, composite p-value, and (2g-2) derivation logic"
+    },
+    {
+      "source": "v13.0/papers/KSAU_v13_Mass_Hierarchy_Reconstruction.md",
+      "target": "KSAU_v13_Mass_Hierarchy_Reconstruction.md",
+      "priority": "MEDIUM",
+      "note": "Detailed mass spectrum analysis"
     },
     {
       "source": "v13.0/papers/KSAU_v13_Gravitational_Constant_Reconstruction.md",
-      "target": "KSAU_v13_Gravitational_Constant_Reconstruction.md"
-    },
+      "target": "KSAU_v13_Gravitational_Constant_Reconstruction.md",
+      "priority": "MEDIUM",
+      "note": "Gravity reconstruction with δ=κ/4 symmetry justification"
+    }
+  ],
+  "excluded": [
     {
-      "source": "v13.0/papers/KSAU_v13_Theoretical_Supplement_24D_Geometry.md",
-      "target": "KSAU_v13_Theoretical_Supplement_24D_Geometry.md"
+      "file": "v13.0/papers/KSAU_v13_Theoretical_Supplement_24D_Geometry.md",
+      "reason": "SUPPLEMENTARY HYPOTHESIS - Removed from core proof to avoid numerology risk (2026-02-16)",
+      "reference": "KSAU_PROJECT_STATUS_2026-02-16.md"
     }
   ]
 }
