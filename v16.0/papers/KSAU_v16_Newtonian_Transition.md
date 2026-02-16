@@ -1,4 +1,6 @@
-# KSAU v16.0: The Newtonian Transition & Tensor Gravity
+# KSAU v16.0: The Unraveling Universe, The Sticking Time
+## —— Anisotropic Unknotting Theory of Gravity ——
+             
 **Author:** KSAU Theoretical Kernel
 **Date:** February 16, 2026
 **Status:** DYNAMICAL TENSOR FORMALISM ESTABLISHED

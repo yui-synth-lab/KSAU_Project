@@ -1,12 +1,24 @@
 {
-  "description": "KSAU v14.0.3 NotebookLM Upload Configuration",
+  "description": "KSAU v16.0 NotebookLM Upload Configuration",
   "last_updated": "2026-02-16",
   "sync_list": [
     {
-      "source": "v11.0/papers/PLB_Letter_Electroweak_Geometry_Final.md",
-      "target": "PLB_Letter_Electroweak_Geometry_Final.md",
+      "source": "v16.0/papers/KSAU_v16_Newtonian_Transition.md",
+      "target": "KSAU_v16_Newtonian_Transition.md",
+      "priority": "CORE",
+      "note": "Formal derivation of g00 < 1 and the 8piG identity (Newtonian Transition)"
+    },
+    {
+      "source": "v16.0/code/anisotropic_unknotting_sim.py",
+      "target": "anisotropic_unknotting_sim.py",
       "priority": "HIGH",
-      "note": "Most robust result (cos²θ_W = exp(-2κ))"
+      "note": "Simulation proving gravitational attraction from temporal congestion"
+    },
+    {
+      "source": "v16.0/code/efficiency_freezeout_check.py",
+      "target": "efficiency_freezeout_check.py",
+      "priority": "HIGH",
+      "note": "Proof of Schwarzschild reciprocity (g00*grr=1) from N=41 freeze-out"
     },
     {
       "source": "v14.0/KSAU_v14.0_Comprehensive_Synthesis.md",
@@ -15,35 +27,22 @@
       "note": "Audited summary of mass, force, and DM unification (Rev 3)"
     },
     {
-      "source": "v14.0/papers/KSAU_v14_Action_Principle_Formalism.md",
-      "target": "KSAU_v14_Action_Principle_Formalism.md",
-      "priority": "CORE",
-      "note": "Derivation of N=41 as the unique g=3 ground state"
-    },
-    {
-      "source": "v14.0/papers/KSAU_v14_Intermediate_Scale_Prediction_Report.md",
-      "target": "KSAU_v14_Intermediate_Scale_Prediction_Report.md",
+      "source": "v11.0/papers/PLB_Letter_Electroweak_Geometry_Final.md",
+      "target": "PLB_Letter_Electroweak_Geometry_Final.md",
       "priority": "MEDIUM",
-      "note": "GUT scale extrapolation (4.6e14 GeV) via Quartic Scaling Law"
-    },
-    {
-      "source": "v14.0/papers/KSAU_v14_Dark_Matter_Observational_Alignment_Report.md",
-      "target": "KSAU_v14_Dark_Matter_Observational_Alignment_Report.md",
-      "priority": "MEDIUM",
-      "note": "Audited DM spectrum with kinematic retractions and BBN caveats"
-    },
-    {
-      "source": "v13.0/papers/KSAU_v13_Gravitational_Constant_Reconstruction.md",
-      "target": "KSAU_v13_Gravitational_Constant_Reconstruction.md",
-      "priority": "MEDIUM",
-      "note": "Gravity reconstruction with δ=κ/4 symmetry justification"
+      "note": "Most robust result (cos²θ_W = exp(-2κ))"
     }
   ],
   "excluded": [
     {
-      "file": "v13.0/papers/KSAU_v13_Theoretical_Supplement_24D_Geometry.md",
-      "reason": "SUPPLEMENTARY HYPOTHESIS - Superseded by v14.0 formalizations",
-      "reference": "KSAU_PROJECT_STATUS_2026-02-16.md"
+      "file": "v13.0/papers/KSAU_v13_Gravitational_Constant_Reconstruction.md",
+      "reason": "Superseded by v16.0 Tensor Gravity derivation",
+      "reference": "KSAU_v16_Newtonian_Transition.md"
+    },
+    {
+      "file": "v14.0/papers/KSAU_v14_Action_Principle_Formalism.md",
+      "reason": "Integrated into v16.0 Newtonian Transition paper",
+      "reference": "KSAU_v16_Newtonian_Transition.md"
     }
   ]
 }
