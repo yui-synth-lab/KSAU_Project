@@ -1,12 +1,24 @@
 {
-  "description": "KSAU v16.0 NotebookLM Upload Configuration",
-  "last_updated": "2026-02-16",
+  "description": "KSAU v16.1 NotebookLM Upload Configuration",
+  "last_updated": "2026-02-17",
   "sync_list": [
+    {
+      "source": "v16.0/papers/KSAU_v16_Theoretical_Synthesis_v16.1.md",
+      "target": "KSAU_v16_Theoretical_Synthesis_v16.1.md",
+      "priority": "CORE",
+      "note": "Convergence of Constant Labor and Light Speed Invariance (Newtonian Transition)"
+    },
     {
       "source": "v16.0/papers/KSAU_v16_Newtonian_Transition.md",
       "target": "KSAU_v16_Newtonian_Transition.md",
       "priority": "CORE",
-      "note": "Formal derivation of g00 < 1 and the 8piG identity (Newtonian Transition)"
+      "note": "Hypothesis of Anisotropic Unknotting and Action Invariance"
+    },
+    {
+      "source": "v16.0/code/unitary_constraint_check.py",
+      "target": "unitary_constraint_check.py",
+      "priority": "HIGH",
+      "note": "Verification of v_0 * v_i = 1 (Light Speed Invariance)"
     },
     {
       "source": "v16.0/code/anisotropic_unknotting_sim.py",
@@ -15,10 +27,10 @@
       "note": "Simulation proving gravitational attraction from temporal congestion"
     },
     {
-      "source": "v16.0/code/efficiency_freezeout_check.py",
-      "target": "efficiency_freezeout_check.py",
-      "priority": "HIGH",
-      "note": "Proof of Schwarzschild reciprocity (g00*grr=1) from N=41 freeze-out"
+      "source": "v16.0/code/action_invariance_derivation.py",
+      "target": "action_invariance_derivation.py",
+      "priority": "MEDIUM",
+      "note": "Derivation of Action Cost S = kappa = pi/24"
     },
     {
       "source": "v14.0/KSAU_v14.0_Comprehensive_Synthesis.md",
@@ -43,6 +55,11 @@
       "file": "v14.0/papers/KSAU_v14_Action_Principle_Formalism.md",
       "reason": "Integrated into v16.0 Newtonian Transition paper",
       "reference": "KSAU_v16_Newtonian_Transition.md"
+    },
+    {
+      "file": "v16.0/code/efficiency_freezeout_check.py",
+      "reason": "Superseded by unitary_constraint_check.py (Light Speed Invariance)",
+      "reference": "unitary_constraint_check.py"
     }
   ]
 }
