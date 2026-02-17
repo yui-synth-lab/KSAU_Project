@@ -151,6 +151,47 @@ v16.1: **"重力は宇宙の存在コストの領収書"**
 
 ---
 
+## 技術実装リファレンス (Implementation Reference)
+
+### 1. プロジェクト構造 (Quick Reference)
+```text
+KSAU_Project/
+├── v6.0/data/physical_constants.json    ← SSoT (全定数)
+├── v6.0/data/topology_assignments.json  ← SSoT (粒子トポロジー)
+├── v6.0/code/ksau_config.py             ← データ読み込みユーティリティ
+├── v16.0/papers/KSAU_v16_Newtonian_Transition.md  ← 主論文
+├── audit/history/communication/         ← AI間ハンドオーバーログ
+└── KSAU_DETAILS.md                      ← 本ファイル (詳細情報集約)
+```
+
+### 2. コーディング規約 (Coding Standards)
+- **相対パスの原則**: `Path(__file__).parent.parent` 等を使用し、絶対パスを避ける。
+- **スクリプトヘッダー**:
+```python
+"""
+Script purpose: [One-line description]
+Dependencies: ksau_config (or utils_v61)
+SSoT sources: physical_constants.json, topology_assignments.json
+Author: [Agent Name]
+Date: 2026-02-17
+"""
+```
+
+### 3. 一般的なタスク (Common Tasks)
+- **CKM検証**: `python v6.0/code/ckm_final_audit.py` (Expected: R²=0.9974)
+- **統計監査**: `python v6.0/code/robustness_check.py`
+- **図の生成**: `python v16.1/generate_publication_figures.py`
+
+### 4. Git コミット形式
+```text
+[Component] Action: Brief description
+
+Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+Co-Authored-By: Gemini <noreply@google.com>
+```
+
+---
+
 ## 既知の限界 (論文に明記)
 
 | 事象 | 誤差 | 理由 |
