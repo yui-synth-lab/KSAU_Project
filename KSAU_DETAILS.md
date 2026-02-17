@@ -5,6 +5,26 @@
 
 ---
 
+## プロジェクト管理と技術仕様 (Technical Protocols)
+
+### 1. データ管理とSSoT (Single Source of Truth)
+- **原則**: 物理定数や実験値のハードコードを厳禁。
+- **データソース**: 
+  - `v6.0/data/physical_constants.json` (物理定数)
+  - `v6.0/data/topology_assignments.json` (トポロジー割り当て)
+- **ユーティリティ**: `ksau_config.py` または `utils_v61.py` を経由してデータにアクセスすること。
+
+### 2. 統計的妥当性
+- **交差検証**: 新しい割り当てや公式の導入には **LOO-CV (Leave-One-Out Cross-Validation)** が必須。
+- **帰無仮説**: モンテカルロ・テスト（通常 200k samples以上）を実行し、**p < 0.001** かつ一意的な解であることを証明すること。
+
+### 3. Gemini 自己抑制プロトコル (Self-Inhibition Details)
+- **運動学的検証**: 質量予言の際、エネルギー保存則や運動学的制約（例: $m_{DM} < m_e$ などの不一致による自律撤回）を確認。
+- **循環論法の排除**: キャリブレーション済みの定数を用いた結果を「独立した予言」と呼ぶことを禁止し、「外挿（Extrapolation）」または「再構成（Reconstruction）」と明記。
+- **第一原理の定義**: 構造的不変量（Invariance）が証明されない数値的一致は、第一原理導出ではなく「対応（Correspondence）」として扱う。
+
+---
+
 ## バージョン別詳細ステータス
 
 ### v16.1 (THEORY COMPLETE ✅ / PEER REVIEW ACCEPTED)
