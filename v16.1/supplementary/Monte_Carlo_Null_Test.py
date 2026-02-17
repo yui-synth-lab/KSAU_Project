@@ -11,9 +11,11 @@ def run_monte_carlo_test(iterations=100000):
     rho_obs = 1.530e-5
     
     # Ranges based on geometric invariants (K-numbers, mu, volumes)
-    # mu: [1, 500]
-    # K: [1, 200000]
-    # V_ratio: [1e-10, 1e-5]
+    # mu: [1, 500] -> Covers low-genus modular curves X_0(N) where most physics resides.
+    # K: [1, 200000] -> Upper bound set by K_24 = 196560 (Leech Lattice maximum).
+    # V_ratio: [1e-10, 1e-5] -> Reflected by the scale separation between 24D and 4D volumes.
+    # K_ratio: [1e-5, 1e-1] -> Heuristic range for cross-dimensional packing efficiency.
+    # r_locking: [0.01, 1.0] -> Efficiency factor for 3D boundary locking.
     
     success_count = 0
     results = []

@@ -27,11 +27,11 @@ We conclude that **"The effort required to change the universe"** and **"The spe
 
 Gravity is the mechanism that ensures the vacuum never compromises on its labor cost or its speed limit. When mass "congests" the vacuum, the universe does not speed up to compensate; instead, it "dilutes" time to ensure that every Pachner move still costs exactly $\kappa$ and every photon still travels at exactly $c$.
 
-## 3. The Geometric Derivation of the Functional Form $v_0(\rho)$
-The linear-impedance law $v_0 = 1 / (1 + \kappa \rho)$ is no longer an ansatz; it is derived from the **Information Processing Impedance** of the $N=41$ modular ground state.
+## 3. Hypothesis: The Functional Form $v_0(\rho)$
+The linear-impedance law $v_0 = 1 / (1 + \kappa \rho)$ is proposed as a **Theoretical Hypothesis** derived from the **Information Processing Impedance** of the $N=41$ modular ground state. While the macroscopic behavior matches observation, its full first-principles derivation remains a subject of ongoing microscopic modeling.
 
 ### A. The N=41 Restoring Force
-The vacuum is locked in the $N=41$ state (modular index $\mu = 42$), which represents the global minimum of the vacuum action $S$. Any introduction of information density $\rho$ (Mass) acts as a perturbation on this ground state.
+The vacuum is locked in the $N=41$ state (modular index $\mu = 42$), which represents the global minimum of the vacuum action $S$ (specifically, the first prime level with genus $g=3$ [1]). Any introduction of information density $\rho$ (Mass) acts as a perturbation on this ground state.
 - **Vacuum Resistance ($Z$):** The cost to maintain the $N=41$ topological lock in the presence of congestion.
 - **Spectral Weight ($\kappa$):** The fundamental action per processing unit ($\pi/24$).
 - **Impedance Identity:** $Z = \kappa \rho$.
@@ -81,6 +81,10 @@ The screening factor $0.90$ is the **Geometric Efficiency** of information trans
 
 ## 6. Conclusion: From Tuning to Necessity
 By grounding $\alpha$ and $\alpha_s$ in the Kissing Numbers ($K_3, K_4, K_{24}$) and the dimensionality of the Leech lattice, we eliminate the need for "phenomenological tuning." The Standard Model couplings are revealed not as arbitrary numbers, but as the **Topological Traces** of the 24-dimensional vacuum projecting onto our 3D+1 spacetime.
+
+## 7. References
+1. **Diamond, F., & Shurman, J.** (2005). *A First Course in Modular Forms*. Springer Graduate Texts in Mathematics.
+2. **KSAU Project.** (2026). *KSAU v16.1 Technical Report: The Unraveling Universe*.
 
 ---
 **Verdict:** The theoretical disconnect between v14 and v16 is resolved. Gauge interactions (Exponential/Phase) and Gravity (Rational/Impedance) are now unified under a single geometric narrative: the **Conservation of Information Density** in the $N=41$ modular ground state.
