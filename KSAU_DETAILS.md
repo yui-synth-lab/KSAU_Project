@@ -49,7 +49,7 @@
 - Fibonacci共鳴: Muon ⟨4₁⟩₃/τ(4₁) = 13/5 = F₇/F₅ ≈ φ² ≈ Nκ (0.69%精度)
 - 完全レプトンマップ: Electron (66.3% OFF) / Muon (0.69% ON) / Tau (14.9% OFF)
 
-### v6.0 (Zenodo Published — DOI: 10.5281/zenodo.18631885)
+### v6.0 (Zenodo Published — DOI: 10.5281/zenodo.18631886)
 
 - フェルミオン質量: R²=0.9998 / CKM混合: R²=0.9974 / PMNS: MSE=5.44 deg²
 

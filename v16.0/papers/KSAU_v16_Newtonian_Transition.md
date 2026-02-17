@@ -140,7 +140,7 @@ We thank the Claude (Anthropic) and Gemini (Google) AI systems for computational
 1. **Conway, J. H., & Sloane, N. J. A.** (1998). *Sphere Packings, Lattices and Groups*. Springer Science & Business Media.
 2. **Milnor, J. W.** (1956). *On manifolds homeomorphic to the 7-sphere*. Annals of Mathematics.
 3. **Adams, J. F.** (1960). *On the groups J(X)*. Topology.
-4. **KSAU Project.** (2026). *v6.0 Unified Field Report: The Modular Mass Law*. DOI: 10.5281/zenodo.18631885.
+4. **KSAU Project.** (2026). *v6.0 Unified Field Report: The Modular Mass Law*. DOI: 10.5281/zenodo.18631886.
 5. **KSAU Project.** (2026). *v14.0 Gauge Coupling Formalism: Structural Resonances*.
 6. **Thurston, W. P.** (1982). *Three-dimensional manifolds, Kleinian groups and hyperbolic geometry*. Bulletin of the American Mathematical Society.
 7. **Witten, E.** (1989). *Quantum field theory and the Jones polynomial*. Communications in Mathematical Physics.
