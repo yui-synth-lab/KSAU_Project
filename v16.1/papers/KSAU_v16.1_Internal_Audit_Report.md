@@ -20,7 +20,7 @@ The decision to retract the 511 keV dark matter candidate is verified as correct
 
 ## 2. Statistical Integrity
 
-The accuracy of the Unified Density Formula (97.35%) has been tested against a null hypothesis using Monte Carlo simulations. While the p-value indicates non-randomness within the selected geometric search space, we acknowledge that the choice of sampling ranges is a critical assumption.
+The accuracy of the Unified Density Formula (97.35%) has been tested against a null hypothesis using Monte Carlo simulations. The resulting **p-value ($\approx 0.012$)** confirms statistical significance at the $p < 0.05$ level. However, it is explicitly acknowledged that the original high-rigor target of **$p < 0.001$ was not met**. Sensitivity analysis reveals that the p-value is influenced by the selection of geometric search ranges (specifically $V_{ratio}$ boundaries). We maintain that the current ranges are physically motivated, but recognize this sensitivity as a current limitation of the statistical validation.
 
 ## 3. Limitations for External Reviewers
 

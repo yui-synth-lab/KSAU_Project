@@ -1,7 +1,7 @@
 """
 KSAU v16.1 Supplementary Material: Monte Carlo Null Hypothesis Test
-Goal: Prove that the accuracy of the Unified Density Formula 
-      is statistically significant (p < 0.001).
+Goal: Evaluate the statistical significance of the Unified Density Formula.
+      (Target: p < 0.001 for high-rigor verification)
 """
 
 import numpy as np
@@ -48,10 +48,13 @@ def run_monte_carlo_test(iterations=100000):
     print("-" * 80)
     
     if p_value < 0.001:
-        print("RESULT: STATISTICALLY SIGNIFICANT (p < 0.001)")
-        print("✓ The alignment in v16.1 is unlikely to be a numerical accident.")
+        print("RESULT: HIGHLY SIGNIFICANT (p < 0.001)")
+        print("✓ The target for high-rigor verification has been met.")
+    elif p_value < 0.05:
+        print(f"RESULT: STATISTICALLY SIGNIFICANT (p < 0.05, actual: {p_value:.3f})")
+        print("⚠️ The result is significant, but did not meet the strict p < 0.001 target.")
     else:
-        print("RESULT: WEAK ALIGNMENT")
+        print("RESULT: WEAK ALIGNMENT (Not Significant)")
     print("="*80)
 
 if __name__ == "__main__":
