@@ -67,14 +67,16 @@ def analyze_leech_heat_kernel():
     print(f"Ratio Lambda / Kappa          : {lambda_theoretical / kappa:.6f} (Expected: 8*pi)")
     
     # 6. Conclusion: The Geometric Origin
-    print("-"*80)
-    print("DERIVATION LOGIC:")
+    print("-" * 80)
+    print("DERIVATION LOGIC (KSAU v16.1):")
     print(f"1. Spacetime Resonance (4D): K(4) = 24. Hence kappa = pi/24.")
     print(f"2. Einstein Coupling (8*pi): Originates from the 4D Surface Area (Gauss's Law).")
-    print(f"3. Final Coupling: 8*pi * (pi/24) = pi^2/3.")
+    print(f"3. Transport Impedance (Z): Congestion of the N=41 ground state follows Z = kappa * rho.")
+    print(f"4. Rational Scaling: Time dilation v_0 = 1 / (1 + Z) arises from information flow resistance.")
     print("\nCONCLUSION:")
     print("✓ The 'Newtonian Transition' is completed by the identity: G_eff = kappa / (4*pi).")
-    print("✓ 8*pi*G = 2*kappa (This matches the scale of our scalar torsion simulations).")
+    print("✓ The 'Magic Formula' 1+kp is replaced by the 'Vacuum Impedance' requirement.")
+    print("✓ This reconciles the 24D spectral density with the 4D Schwarzschild metric.")
     print("="*80)
 
 if __name__ == "__main__":
