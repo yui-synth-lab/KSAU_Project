@@ -64,6 +64,29 @@ The coefficients 18 and 0.90 are revealed as geometric constraints of the 24D/3D
 ### 4.3. Renormalization Group Mapping
 The derived values $\alpha = \kappa/18$ and $\alpha_s = 0.90\kappa$ represent **topological anchors** at the vacuum's natural scale (Planck or GUT scale). Their mapping to experimental scales (e.g., $M_Z$) requires heat kernel analysis of the 24D→4D projection flow, analogous to the relationship between bare and renormalized charges in QFT. The observed residuals (+0.34% and -0.16%) suggest the emergence of these running effects from the spectral geometry.
 
+## 4.4. The Invisible Sector (Dark Matter)
+Dark matter (DM) is modeled as non-generational topological solitons ($g < 3$) within the $Det=1$ (topologically neutral) sector of the vacuum. This framework treats DM not as new fields, but as the **Excluded Volume** of the vacuum's residual complexity—regions of the 24D bulk that are topologically stable but do not couple to Standard Model gauge fields.
+
+### 4.4.1. Topological Selection Rule
+A vacuum defect qualifies as a dark matter candidate if it satisfies:
+1.  **Neutrality:** $Det(L) = 1$, ensuring zero electric and color charge coupling.
+2.  **Stability:** $g < 3$, representing non-generational solitons that are kinematically suppressed from decaying into Standard Model fermions.
+
+### 4.4.2. Predicted Mass Spectrum
+The modular soliton model predicts a discrete mass spectrum based on the modular level $N$. The following table summarizes the primary candidates and their current theoretical status:
+
+| Candidate Level ($N$) | Predicted Mass | Nature / Sector | Status | Observational Context |
+| :--- | :--- | :--- | :--- | :--- |
+| **$N=6$** | $\approx 2.2$ PeV | Hexagonal / High-Energy | **ACTIVE** | Overlaps IceCube HESE band |
+| **$N=12$** | $\approx 83$ GeV | Modular Weight / WIMP | **ACTIVE** | Target for direct detection |
+| **$N=24$** | $\approx 0.3$ MeV | Leech Rank / Low-Energy | **RETRACTED** | Kinematically forbidden ($m < m_e$) |
+| **$N=2$** | $\sim 10^{78}$ MeV | Binary / Primordial | **SPECULATIVE** | Potential PBH seeds |
+
+### 4.4.3. Scientific Integrity: 511 keV Retraction
+The previously reported alignment of the $N=24$ candidate (0.3 MeV) with the Galactic 511 keV line is formally **retracted**. Since $m_{DM} \approx 0.3$ MeV $< m_e = 0.511$ MeV, the $e^+e^-$ annihilation channel is kinematically forbidden. We propose that these $N=24$ states, if present, would remain non-thermal solitons that do not directly contribute to the observed positron annihilation signal, consistent with BBN and $N_{eff}$ constraints.
+
+The spectral hierarchy of these candidates is visualized in Fig. 5.
+
 ## 5. Limitations & Future Directions
 
 ### 5.1. Flavor Suppression Beyond Volume

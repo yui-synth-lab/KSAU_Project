@@ -22,21 +22,21 @@
 - [x] Explain why volume alone is insufficient
 - [x] Propose higher-order topological invariants as solution
 
-#### C. Dark Matter Spectrum Update — RECOMMENDED
-- [ ] Update dark matter candidate table
-- [ ] Remove 511 keV candidate (already retracted in v16.1)
-- [ ] Clarify status of remaining candidates (N=6, N=2)
-- [ ] Add observational alignment discussion
+#### C. Dark Matter Spectrum Update ✅ DONE (Gemini, 2026-02-17)
+- [x] Update dark matter candidate table (Section 4.4 in main manuscript)
+- [x] Remove 511 keV candidate (already retracted in v16.1)
+- [x] Clarify status of remaining candidates (N=6, N=12, N=2)
+- [x] Add observational alignment discussion
 
 ---
 
 ### 2. Mathematical Rigor
 
-#### D. 24D→4D Projection Formalism — RECOMMENDED
-- [ ] Add mathematical appendix defining projection operator
-- [ ] Justify why K_24 - K_4 represents "information loss"
-- [ ] Derive dilution factor from spectral geometry
-- [ ] Prove or cite N=41 as unique global minimum
+#### D. 24D→4D Projection Formalism ✅ DONE (Gemini, 2026-02-17)
+- [x] Add mathematical appendix defining projection operator
+- [x] Justify why K_24 - K_4 represents "information loss"
+- [x] Derive dilution factor from spectral geometry
+- [x] Prove or cite N=41 as unique global minimum
 
 #### E. Impedance Law Microscopic Derivation ✅ DONE (Gemini, 2026-02-17)
 - [x] Add explicit statement that v₀ = 1/(1+κρ) remains a macroscopic limit
@@ -47,12 +47,12 @@
 
 ### 3. Visualization & Presentation
 
-#### F. Figures & Diagrams ✅ PARTIAL (Gemini, 2026-02-17)
+#### F. Figures & Diagrams ✅ DONE (Gemini, 2026-02-17)
+- [x] **Figure 1:** 24D→4D projection schematic — embedded
 - [x] **Figure 2:** N=41 modular action minimization plot — embedded
 - [x] **Figure 3:** Scaling Law comparison (Exp vs Rational) — embedded
 - [x] **Figure 4:** Density components bar chart — embedded
-- [ ] **Figure 1:** 24D→4D projection schematic
-- [ ] **Figure 5:** Dark matter spectral hierarchy
+- [x] **Figure 5:** Dark matter spectral hierarchy — embedded
 
 #### G. Equation Numbering ✅ DONE (Gemini, 2026-02-17)
 - [x] Number all key equations (Eq. 1, 2, 3)
@@ -102,7 +102,7 @@
 
 ### 🟡 IMPORTANT (Strongly recommended)
 1. ✅ CKM limitations (Item B)
-2. ✅ Figures & diagrams (Item F — partial)
+2. ✅ Figures & diagrams (Item F)
 3. ✅ Microscopic derivation statement (Item E)
 4. ✅ Supplementary materials (Item J)
 5. ✅ Clarity & Accessibility (Item L)
@@ -111,7 +111,7 @@
 
 ## Completion Tracking
 
-### Overall Progress: ~25/35 items completed
+### Overall Progress: ~32/35 items completed
 
 **Last Updated:** 2026-02-17 (Final Integrity Sync)
 **Next Review Date:** [Pre-Submission Final]
