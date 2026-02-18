@@ -1,0 +1,266 @@
+{
+  "date": "2026-02-18",
+  "session": 7,
+  "kappa": 0.1308996938995747,
+  "alpha": 0.020833333333333332,
+  "beta_fixed": 2.1666666666666665,
+  "r_base_ssot": 11.459155902616466,
+  "p1a_ssot_constrained_permutation": {
+    "ssot_quintuple": [
+      7,
+      6,
+      5,
+      3,
+      1
+    ],
+    "ssot_quintuple_shells": {
+      "DES Y3": 7,
+      "CFHTLenS": 6,
+      "DLS": 5,
+      "HSC Y3": 3,
+      "KiDS-Legacy": 1
+    },
+    "physical_cv_ssot_pct": 19.48509369821143,
+    "physical_r_base_ssot": 10.489997188134577,
+    "r_base_ssot_formula": 11.459155902616466,
+    "n_beats": 3,
+    "n_permutations": 120,
+    "p_value_ssot_constrained": 0.025,
+    "rank_of_physical": 3,
+    "pass_p_lt_005": true,
+    "ssot_cv_note": "CV with SSoT quintuple {7,6,5,3,1} for physical ordering = 19.49% (vs 6.66% from best-fit quintuple). Physical ordering is rank 3/120 under SSoT-fixed quintuple.",
+    "session6_comparison": {
+      "session6_quintuple": [
+        8,
+        5,
+        4,
+        3,
+        2
+      ],
+      "session6_cv_pct": 6.658167025139443,
+      "session6_r_base": 9.895859223687111,
+      "session6_r_base_ssot": 11.459155902616466,
+      "session6_r_base_deviation_from_ssot_pct": -13.64233711640495
+    }
+  },
+  "p1b_bestfit_quintuple_disclosure": {
+    "_flaw_addressed": "Critical Flaw #2 from ng.md Session 6",
+    "bestfit_quintuple": [
+      8,
+      5,
+      4,
+      3,
+      2
+    ],
+    "bestfit_quintuple_shells": {
+      "DES Y3": 8,
+      "CFHTLenS": 5,
+      "DLS": 4,
+      "HSC Y3": 3,
+      "KiDS-Legacy": 2
+    },
+    "r_base_bestfit": 9.895859223687111,
+    "r_base_ssot": 11.459155902616466,
+    "r_base_deviation_from_ssot_pct": -13.64233711640495,
+    "bestfit_cv_pct": 6.658167025139443,
+    "per_survey_deviation_from_bestfit": [
+      {
+        "survey": "DES Y3",
+        "bestfit_shell": 8,
+        "shell_mag": 4.0,
+        "r0_bestfit_predicted": 39.583,
+        "loo_cv_r0": 39.63,
+        "deviation_from_bestfit_pct": 0.12
+      },
+      {
+        "survey": "CFHTLenS",
+        "bestfit_shell": 5,
+        "shell_mag": 3.1623,
+        "r0_bestfit_predicted": 31.293,
+        "loo_cv_r0": 29.556,
+        "deviation_from_bestfit_pct": -5.55
+      },
+      {
+        "survey": "DLS",
+        "bestfit_shell": 4,
+        "shell_mag": 2.8284,
+        "r0_bestfit_predicted": 27.99,
+        "loo_cv_r0": 26.213,
+        "deviation_from_bestfit_pct": -6.35
+      },
+      {
+        "survey": "HSC Y3",
+        "bestfit_shell": 3,
+        "shell_mag": 2.4495,
+        "r0_bestfit_predicted": 24.24,
+        "loo_cv_r0": 27.212,
+        "deviation_from_bestfit_pct": 12.26
+      },
+      {
+        "survey": "KiDS-Legacy",
+        "bestfit_shell": 2,
+        "shell_mag": 2.0,
+        "r0_bestfit_predicted": 19.792,
+        "loo_cv_r0": 19.697,
+        "deviation_from_bestfit_pct": -0.48
+      }
+    ],
+    "mean_abs_deviation_from_bestfit_pct": 4.952,
+    "session6_reported_deviation_pct": 17.1,
+    "disclosure_statement": "Session 6 reported mean |deviation| = 17.1% using SSoT quintuple {7,6,5,3,1} with R_base = 11.459 Mpc/h. The actual computation used quintuple {8,5,4,3,2} with R_base = 9.896 Mpc/h. Deviation from ACTUAL computation: 5.0% (not 17.1%). The best-fit R_base = 9.896 Mpc/h deviates from SSoT formula 3/(2κ) = 11.459 Mpc/h by 13.6%. This 13.7% deviation from the SSoT R_base is a measure of the Leech lattice hypothesis failure; it was NOT disclosed in Session 6."
+  },
+  "p2a_corrected_beta_interpretation": {
+    "_flaw_addressed": "Moderate Flaw #4 from ng.md Session 6",
+    "session6_wrong_statement": "β_KiDS-fold = 1.000 vs β_others mean = 3.121 → KiDS requires β ≈ 1.0 [INCORRECT CAUSAL INFERENCE]",
+    "corrected_statement": "β_KiDS-fold = 1.000 is the β estimated when KiDS is EXCLUDED from training (i.e., DES + CFHTLenS + DLS + HSC alone). The 4-survey dataset without KiDS prefers β ≈ 1.00. Including KiDS in training drives β upward to ~3.1. KiDS (low z_eff=0.26, high k_eff=0.70) is the primary driver pushing β from ~1.0 toward ~3.1. The correct conclusion: KiDS exerts dominant leverage on β estimation; β is non-universal (Δβ = -2.12 when KiDS is included vs excluded).",
+    "causal_direction": {
+      "without_KiDS": "β ≈ 1.00 (4 surveys: DES, CFHTLenS, DLS, HSC)",
+      "with_KiDS": "β ≈ 3.12 (all 5 surveys including KiDS)",
+      "KiDS_effect": "KiDS inclusion increases β by Δβ = +2.12"
+    },
+    "what_is_correct": "β non-universality diagnosis (Δβ = -2.12) stands. Only the causal attribution is corrected: KiDS DRIVES β high (not low)."
+  },
+  "p2b_honest_bootstrap_robustness": {
+    "_flaw_addressed": "Moderate Flaw #3 from ng.md Session 6",
+    "bootstrap_mc_p": 0.3165,
+    "bootstrap_mc_interpretation": "Bootstrap MC p = 0.3165. In 68.3% of Bootstrap trials, adding ±10% noise DEGRADES CV below the actual CV. Correct label: MODERATE ROBUSTNESS — NOT 'ROBUST'. Threshold p_mc >= 0.20 → 'ROBUST' has no statistical basis and is REMOVED.",
+    "removed_threshold": "p_mc >= 0.20 → 'ROBUST' (hardcoded, no basis)",
+    "revised_bootstrap_label": "MODERATE ROBUSTNESS (p_MC=0.316; Bootstrap MC alone insufficient)",
+    "primary_robustness_metric": {
+      "metric": "Combined Bootstrap + Permutation test",
+      "result": "76% of Bootstrap trials maintain p < 0.05",
+      "verdict": "ROBUST (B+P primary metric): Under ±10% noise, 76% of trials maintain p < 0.05. This is the principled robustness measure for R-6."
+    },
+    "correct_r6_robustness_statement": "R-6 robustness relies on the B+P combined test: 76% of Bootstrap trials maintain p < 0.05 (median per-trial p = 0.025). Bootstrap MC alone (p = 0.317) is a secondary metric indicating MODERATE robustness of the CV magnitude to noise. The permutation test significance (ordering) is the primary claim."
+  },
+  "p3_r3_keff_correction": {
+    "model": "R₀(k_eff, z) = A × k_eff^(-γ) × (1+z)^β",
+    "A_fit": 7.09059607727302,
+    "gamma_fit": 0.47753632905670723,
+    "beta_fixed": 2.1666666666666665,
+    "fit_success": true,
+    "per_survey_fit": [
+      {
+        "survey": "DES Y3",
+        "k_eff": 0.15,
+        "z_eff": 0.33,
+        "r0_loo_s5": 39.63,
+        "r0_z_corrected": 21.364,
+        "r0_z_corr_predicted": 17.544,
+        "residual_pct": 21.77
+      },
+      {
+        "survey": "CFHTLenS",
+        "k_eff": 0.2,
+        "z_eff": 0.4,
+        "r0_loo_s5": 29.556,
+        "r0_z_corrected": 14.257,
+        "r0_z_corr_predicted": 15.292,
+        "residual_pct": -6.77
+      },
+      {
+        "survey": "DLS",
+        "k_eff": 0.22,
+        "z_eff": 0.52,
+        "r0_loo_s5": 26.213,
+        "r0_z_corrected": 10.581,
+        "r0_z_corr_predicted": 14.612,
+        "residual_pct": -27.59
+      },
+      {
+        "survey": "HSC Y3",
+        "k_eff": 0.35,
+        "z_eff": 0.6,
+        "r0_loo_s5": 27.212,
+        "r0_z_corrected": 9.829,
+        "r0_z_corr_predicted": 11.706,
+        "residual_pct": -16.04
+      },
+      {
+        "survey": "KiDS-Legacy",
+        "k_eff": 0.7,
+        "z_eff": 0.26,
+        "r0_loo_s5": 19.697,
+        "r0_z_corrected": 11.938,
+        "r0_z_corr_predicted": 8.407,
+        "residual_pct": 42.0
+      }
+    ],
+    "loo_cv_r3": {
+      "DES Y3": {
+        "k_eff": 0.15,
+        "z_eff": 0.33,
+        "r0_predicted": 22.835,
+        "r0_loo_s5": 39.63,
+        "s8_pred": 0.6682,
+        "s8_obs_z": 0.6488,
+        "tension_sigma": 0.909
+      },
+      "CFHTLenS": {
+        "k_eff": 0.2,
+        "z_eff": 0.4,
+        "r0_predicted": 32.459,
+        "r0_loo_s5": 29.556,
+        "s8_pred": 0.6577,
+        "s8_obs_z": 0.6216,
+        "tension_sigma": 0.6579
+      },
+      "DLS": {
+        "k_eff": 0.22,
+        "z_eff": 0.52,
+        "r0_predicted": 39.045,
+        "r0_loo_s5": 26.213,
+        "s8_pred": 0.6278,
+        "s8_obs_z": 0.6497,
+        "tension_sigma": -0.522
+      },
+      "HSC Y3": {
+        "k_eff": 0.35,
+        "z_eff": 0.6,
+        "r0_predicted": 35.137,
+        "r0_loo_s5": 27.212,
+        "s8_pred": 0.6013,
+        "s8_obs_z": 0.5992,
+        "tension_sigma": 0.0808
+      },
+      "KiDS-Legacy": {
+        "k_eff": 0.7,
+        "z_eff": 0.26,
+        "r0_predicted": 5.714,
+        "r0_loo_s5": 19.697,
+        "s8_pred": 0.6633,
+        "s8_obs_z": 0.7177,
+        "tension_sigma": -2.945
+      }
+    },
+    "mae_sigma_r3": 1.0229,
+    "n_lt15_sigma": 4,
+    "n_lt1_sigma": 4,
+    "r3_pass": false,
+    "inv_fit_cv_pct": 24.89,
+    "interpretation": "R₀ = 7.09 × k_eff^(-0.478) × (1+z)^2.1667. k_eff-dependent fit: γ = 0.478 (power-law slope). LOO-CV MAE = 1.023σ. Surveys with |tension| < 1.5σ: 4/5. R-3 CV target check: 24.9% > 10% ✗"
+  },
+  "summary": {
+    "p1a_ssot_perm_p": 0.025,
+    "p1a_ssot_perm_pass": true,
+    "p1a_ssot_cv_pct": 19.48509369821143,
+    "p1b_bestfit_r_base": 9.895859223687111,
+    "p1b_r_base_deviation_from_ssot_pct": 13.64233711640495,
+    "p1b_mean_dev_from_bestfit_pct": 4.952,
+    "p2a_corrected_beta_causal": true,
+    "p2b_bootstrap_threshold_removed": true,
+    "p3_r3_mae_sigma": 1.0229,
+    "p3_r3_pass": false,
+    "p3_A_fit": 7.09059607727302,
+    "p3_gamma_fit": 0.47753632905670723,
+    "p3_n_lt15_sigma": 4,
+    "v24_requirements": {
+      "R-1 (≥5 WL LOO-CV)": "✓ Session 5",
+      "R-2 (CMB z-growth model)": "✗ OPEN (out of scope Session 7)",
+      "R-3 (k_eff CV < 10%)": "△ P3 ATTEMPT: inv_CV=24.9%",
+      "R-4' (Λ derivation)": "✓ Session 6 CLOSED (Path B)",
+      "R-5 (< 1σ all surveys)": "✗ OPEN (structural limitation)",
+      "R-6 (perm p < 0.05)": "⚠️ REVISED: Session 5/6 p=0.0167 was best-fit quintuple. SSoT-constrained p=0.0250 (PASS)"
+    }
+  }
+}
