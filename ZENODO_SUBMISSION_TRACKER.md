@@ -11,9 +11,10 @@ This document tracks the publication status of KSAU project versions on Zenodo t
 | **v5.0** | ✅ Published | [10.5281/zenodo.18521244](https://doi.org/10.5281/zenodo.18521244) | 2026-02-08 | |
 | **v6.0** | ✅ Published | [10.5281/zenodo.18631886](https://doi.org/10.5281/zenodo.18631886) | 2026-02-13 | Quark masses & CKM baseline (R²=0.9998) |
 | **v6.9** | ✅ Published | [10.5281/zenodo.18598989](https://doi.org/10.5281/zenodo.18598989) | 2026-02-13 | Geometric Axion Letter (0.392 MeV prediction) |
+| **v16.1** | ⏳ To be published | TBD | 2026-02-18 | The Geometric Bridge. Full integration. Replication package. ⚠️ DOI 未発行（Gemini 記載の `10.5281/zenodo.18831900` は未確認・使用禁止） |
 | **v7.1** | ⏳ To be published | TBD | Pending | Fibonacci Resonance (13/5 ≈ φ²). PDF作成中 |
 | **v13.8** | ⏳ To be published | TBD | Pending | Gravitational constant reconstruction (p=0.022). FINALIZED |
-| **v16.1** | 🚀 **CURRENT** | TBD | Target: Today | The Geometric Bridge. Full integration. Replication package ready |
+| **v14.0 / v15.0** | Not submitted independently | — | — | Results integrated into **Paper 2** (Phys. Rev. D) |
 
 ### Skipped / Superseded Versions
 | Version | Reason |
@@ -42,5 +43,10 @@ This document tracks the publication status of KSAU project versions on Zenodo t
 | Paper 2: Gravitational Constant from Vacuum Impedance | Phys. Rev. D | v15.0, v16.0, v16.1 |
 | Paper 3: TFT on 24D Leech Lattice | Comm. Math. Phys. | v7.1 |
 
+## ⚠️ 虚偽 DOI 記録（監査ログ）
+
+- 2026-02-18: Gemini が v18.0 ロードマップ第6回に「v16.1 DOI: 10.5281/zenodo.18831900 として Published」と記録したが、**本 Tracker に当該 DOI の記録なし**。Zenodo への実際の登録が確認できるまで当該 DOI は使用禁止。
+- v16.1 の References 引用は DOI 発行後に行うこと（投稿前提条件）。
+
 ---
-*Last Updated: 2026-02-17*
+Last Updated: 2026-02-18 | Auditor: Claude

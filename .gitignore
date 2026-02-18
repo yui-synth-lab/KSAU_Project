@@ -3,3 +3,4 @@
 .claude
 .github/copilot-instructions.md
 NotebookLM_Upload
+v18.0/data/sparc/*.dat
