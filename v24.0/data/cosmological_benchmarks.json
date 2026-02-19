@@ -1,0 +1,27 @@
+{
+  "benchmarks": {
+    "Planck_2018": {
+      "S8_z0": 0.811,
+      "S8_err": 0.011,
+      "z_eff": 0.0,
+      "notes": "Standard Planck 2018 baseline"
+    },
+    "ACT_DR6_Lensing": {
+      "S8_z0": 0.840,
+      "S8_err": 0.028,
+      "z_eff": 1.7,
+      "notes": "ACT-DR6 CMB Lensing (extrapolated to z=0 in paper)"
+    },
+    "Planck_PR4_Lensing": {
+      "S8_z0": 0.832,
+      "S8_err": 0.025,
+      "z_eff": 2.0,
+      "notes": "Planck PR4 CMB Lensing (extrapolated to z=0 in paper)"
+    }
+  },
+  "leech_shells": {
+    "z0": 2,
+    "z_high": 1,
+    "description": "Shell assignments for different epochs"
+  }
+}

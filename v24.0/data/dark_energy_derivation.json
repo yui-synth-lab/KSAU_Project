@@ -1,0 +1,44 @@
+{
+  "model": "Dark Energy Primordial Derivation (v24.0)",
+  "date": "2026-02-18",
+  "sot_constants": {
+    "kappa": 0.1308996938995747,
+    "log10_kappa": -0.8830613690174722
+  },
+  "lambda_observed": 1.1e-52,
+  "log10_lambda_observed": -51.95860731484178,
+  "approaches": {
+    "power_law": {
+      "hypothesis": "\u039b ~ \u03ba^n",
+      "estimated_n": 58.83918053470384,
+      "kappa": 0.1308996938995747,
+      "log10_kappa": -0.8830613690174722,
+      "lambda_obs_log10": -51.95860731484178,
+      "note": "If n \u2248 integer, suggests geometric necessity"
+    },
+    "evaporation": {
+      "interpretation": "Entropy flow from 24D evaporation",
+      "projection_ratio": 0.16666666666666666,
+      "bulk_dimension": 24,
+      "boundary_dimension": 4,
+      "dimension_gap": 20,
+      "lambda_from_evaporation": 3.6359790253315237e-19,
+      "lambda_obs": 1.1e-52,
+      "log10_predicted": -18.43937863073309,
+      "log10_observed": -51.95860731484178,
+      "error_ratio": 3.3054354775741126e+33
+    },
+    "leech_quantization": {
+      "model": "Leech shell vacuum quantization",
+      "leech_shell": 1,
+      "cardinality": 196560,
+      "magnitude": 1.4142135623730951,
+      "lambda_from_cardinality": 6.65952858666945e-07,
+      "lambda_from_magnitude": 0.09256006121163261,
+      "log10_cardinality_approach": -6.176556512489497,
+      "log10_magnitude_approach": -1.0335763668494629,
+      "lambda_obs": 1.1e-52,
+      "log10_observed": -51.95860731484178
+    }
+  }
+}

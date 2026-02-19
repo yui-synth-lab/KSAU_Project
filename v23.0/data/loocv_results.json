@@ -1,0 +1,30 @@
+{
+  "mae_sigma": 0.32643996213131365,
+  "verdict": "SUCCESS",
+  "iterations": [
+    {
+      "excluded_survey": "DES Y3",
+      "r0_opt": 18.643536568244908,
+      "s8_obs_z": 0.6488187222803312,
+      "s8_pred_z": 0.6488764889596457,
+      "sigma_diff": 0.00270306069131746,
+      "status": "PASSED"
+    },
+    {
+      "excluded_survey": "HSC Y3",
+      "r0_opt": 9.910425710431873,
+      "s8_obs_z": 0.5992330119728544,
+      "s8_pred_z": 0.5763673976668888,
+      "sigma_diff": -0.8972943315014725,
+      "status": "PASSED"
+    },
+    {
+      "excluded_survey": "KiDS-Legacy",
+      "r0_opt": 18.44418005821429,
+      "s8_obs_z": 0.7177179515342521,
+      "s8_pred_z": 0.7191848898643397,
+      "sigma_diff": 0.079322494201151,
+      "status": "PASSED"
+    }
+  ]
+}

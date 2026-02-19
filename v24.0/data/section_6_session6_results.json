@@ -1,0 +1,691 @@
+{
+  "date": "2026-02-18",
+  "session": 6,
+  "kappa": 0.1308996938995747,
+  "alpha": 0.020833333333333332,
+  "beta_fixed": 2.1666666666666665,
+  "r_base_ssot": 11.459155902616466,
+  "rs6_1_bootstrap_mc_corrected": {
+    "method": "corrected_bootstrap_mc_no_sort",
+    "n_mc": 2000,
+    "actual_cv_pct": 6.658167025139443,
+    "n_mc_beats_actual": 633,
+    "p_value_bootstrap_mc_corrected": 0.3165,
+    "mc_cv_mean_pct": 8.67462866809844,
+    "mc_cv_std_pct": 3.6847438701153465,
+    "session5_flaw_note": "Session 5 sorted noisy R₀ values before CV computation (line: r0_sorted = np.sort(r0_noisy)[::-1]). This always gives the optimal ordering of noisy values, biasing toward low CV. Correct test must preserve physical survey-to-R₀ assignment.",
+    "interpretation": "p = 0.3165. Physical assignment CV is ROBUST to ±10% measurement noise (noisy trials frequently achieve CV ≤ actual). The pre-sort flaw in Session 5 introduced spurious fragility."
+  },
+  "rs6_1_bootstrap_permutation": {
+    "n_bootstrap_trials": 500,
+    "n_permutations_per_trial": 120,
+    "per_trial_p_median": 0.025,
+    "per_trial_p_mean": 0.03278333333333334,
+    "fraction_trials_p_lt_005": 0.76,
+    "fraction_trials_p_lt_0167": 0.436,
+    "per_trial_p_percentiles": {
+      "p10": 0.008333333333333333,
+      "p25": 0.014583333333333334,
+      "p50": 0.025,
+      "p75": 0.041666666666666664,
+      "p90": 0.075
+    },
+    "verdict": "ROBUST: Physical assignment maintains statistical significance under ±10% noise in majority of Bootstrap trials (fraction with p<0.05: 76.00%)"
+  },
+  "rs6_2_ssot_comparison": {
+    "_comment": "R-S6-2: SSoT R_base = 3/(2κ) = 11.459 Mpc/h. Each survey expected R₀ = R_base × shell_mag",
+    "r_base_ssot": 11.459155902616466,
+    "r_base_formula": "3 / (2 * kappa), kappa = pi/24",
+    "per_survey": [
+      {
+        "survey": "DES Y3",
+        "ssot_shell": 7,
+        "ssot_shell_mag": 3.7417,
+        "ssot_R0_Mpc_h": 42.88,
+        "loo_cv_R0_Mpc_h": 39.6295013066328,
+        "deviation_pct": -7.58045404236755
+      },
+      {
+        "survey": "CFHTLenS",
+        "ssot_shell": 6,
+        "ssot_shell_mag": 3.4641,
+        "ssot_R0_Mpc_h": 39.68,
+        "loo_cv_R0_Mpc_h": 29.55619367711467,
+        "deviation_pct": -25.51362480565859
+      },
+      {
+        "survey": "DLS",
+        "ssot_shell": 5,
+        "ssot_shell_mag": 3.1623,
+        "ssot_R0_Mpc_h": 36.23,
+        "loo_cv_R0_Mpc_h": 26.213195818571172,
+        "deviation_pct": -27.647817227239376
+      },
+      {
+        "survey": "HSC Y3",
+        "ssot_shell": 3,
+        "ssot_shell_mag": 2.4495,
+        "ssot_R0_Mpc_h": 28.06,
+        "loo_cv_R0_Mpc_h": 27.211626329072377,
+        "deviation_pct": -3.023427195037853
+      },
+      {
+        "survey": "KiDS-Legacy",
+        "ssot_shell": 1,
+        "ssot_shell_mag": 1.4142,
+        "ssot_R0_Mpc_h": 16.2,
+        "loo_cv_R0_Mpc_h": 19.697135007551786,
+        "deviation_pct": 21.587253133035723
+      }
+    ],
+    "mean_abs_deviation_pct": 17.07051528066782,
+    "max_abs_deviation_pct": 27.647817227239376,
+    "surveys_with_gt20pct_dev": [
+      "CFHTLenS",
+      "DLS",
+      "KiDS-Legacy"
+    ],
+    "interpretation": "CFHTLenS (-25.5%) and DLS (-27.7%) deviate >20% from SSoT predictions. This indicates the Leech lattice shell assignment does NOT predict R₀ with high accuracy for all surveys. The mean absolute deviation across 5 surveys is 17.1%. If the KSAU hypothesis (R₀ = R_base × shell_mag) were exact, deviations would be within measurement error (~5%). The observed deviations (up to ~28%) imply either: (a) incorrect shell assignments, (b) R_base≠3/(2κ), or (c) the Leech lattice hypothesis is only approximate."
+  },
+  "rs6_3_joint_beta_loo_cv": {
+    "description": "Joint (R₀, β) LOO-CV — 2 free parameters per fold",
+    "mae_sigma": 1.2050447896282859,
+    "any_boundary": true,
+    "iterations": {
+      "DES Y3": {
+        "r0_opt": 56.325096512566866,
+        "beta_opt": 3.1138676741749203,
+        "beta_fixed": 2.1666666666666665,
+        "beta_delta": 0.9472010075082538,
+        "at_boundary_r0": false,
+        "at_boundary_beta": false,
+        "s8_pred_z": 0.6900420204193259,
+        "s8_obs_z": 0.6488187222803312,
+        "tension_sigma": 1.9289507045993268,
+        "tension_improved": false,
+        "k_eff": 0.15,
+        "z_eff": 0.33,
+        "tension_s5": 1.821288300880283
+      },
+      "CFHTLenS": {
+        "r0_opt": 24.104967682819286,
+        "beta_opt": 1.50067061656846,
+        "beta_fixed": 2.1666666666666665,
+        "beta_delta": -0.6659960500982065,
+        "at_boundary_r0": false,
+        "at_boundary_beta": false,
+        "s8_pred_z": 0.6549350780608012,
+        "s8_obs_z": 0.6216288732318159,
+        "tension_sigma": 0.6072277811561713,
+        "tension_improved": false,
+        "k_eff": 0.2,
+        "z_eff": 0.4,
+        "tension_s5": 0.5931634142726548
+      },
+      "DLS": {
+        "r0_opt": 41.51771284545322,
+        "beta_opt": 3.870192785278874,
+        "beta_fixed": 2.1666666666666665,
+        "beta_delta": 1.7035261186122073,
+        "at_boundary_r0": false,
+        "at_boundary_beta": false,
+        "s8_pred_z": 0.6049606527233949,
+        "s8_obs_z": 0.6497395903796044,
+        "tension_sigma": -1.0636821955253268,
+        "tension_improved": false,
+        "k_eff": 0.22,
+        "z_eff": 0.52,
+        "tension_s5": -0.8772753783468008
+      },
+      "HSC Y3": {
+        "r0_opt": 43.52939568643071,
+        "beta_opt": 4.0,
+        "beta_fixed": 2.1666666666666665,
+        "beta_delta": 1.8333333333333335,
+        "at_boundary_r0": false,
+        "at_boundary_beta": true,
+        "s8_pred_z": 0.5816245544978889,
+        "s8_obs_z": 0.5992330119728544,
+        "tension_sigma": -0.6909925474711233,
+        "tension_improved": false,
+        "k_eff": 0.35,
+        "z_eff": 0.6,
+        "tension_s5": -0.27899363157432217
+      },
+      "KiDS-Legacy": {
+        "r0_opt": 13.8748498955907,
+        "beta_opt": 1.0,
+        "beta_fixed": 2.1666666666666665,
+        "beta_delta": -1.1666666666666665,
+        "at_boundary_r0": false,
+        "at_boundary_beta": true,
+        "s8_pred_z": 0.6856436337448714,
+        "s8_obs_z": 0.7177179515342521,
+        "tension_sigma": -1.7343707193894804,
+        "tension_improved": false,
+        "k_eff": 0.7,
+        "z_eff": 0.26,
+        "tension_s5": -1.580093561949814
+      }
+    },
+    "beta_values": {
+      "DES Y3": 3.1138676741749203,
+      "CFHTLenS": 1.50067061656846,
+      "DLS": 3.870192785278874,
+      "HSC Y3": 4.0,
+      "KiDS-Legacy": 1.0
+    },
+    "note": "2 free parameters (R₀, β) optimized per LOO-CV fold. β_opt values across folds reveal survey-specific β preference. Compare β_KiDS-fold (fold excluding KiDS) with β_others to assess whether KiDS requires a different β than the rest."
+  },
+  "rs6_3_beta_dispersion": {
+    "beta_fixed": 2.1666666666666665,
+    "beta_per_fold": {
+      "DES Y3": 3.1138676741749203,
+      "CFHTLenS": 1.50067061656846,
+      "DLS": 3.870192785278874,
+      "HSC Y3": 4.0,
+      "KiDS-Legacy": 1.0
+    },
+    "kids_fold_beta": 1.0,
+    "mean_other_folds_beta": 3.1211827690055634,
+    "std_other_folds_beta": 0.9949181972377413,
+    "beta_delta_kids_vs_others": -2.1211827690055634,
+    "invariant_with_per_fold_beta": [
+      {
+        "survey": "DES Y3",
+        "k_eff": 0.15,
+        "z_eff": 0.33,
+        "R0_loo": 56.325096512566866,
+        "beta_opt": 3.1138676741749203,
+        "invariant": 3.4764467570854762
+      },
+      {
+        "survey": "CFHTLenS",
+        "k_eff": 0.2,
+        "z_eff": 0.4,
+        "R0_loo": 24.104967682819286,
+        "beta_opt": 1.50067061656846,
+        "invariant": 2.909688515043629
+      },
+      {
+        "survey": "DLS",
+        "k_eff": 0.22,
+        "z_eff": 0.52,
+        "R0_loo": 41.51771284545322,
+        "beta_opt": 3.870192785278874,
+        "invariant": 1.8067013102419434
+      },
+      {
+        "survey": "HSC Y3",
+        "k_eff": 0.35,
+        "z_eff": 0.6,
+        "R0_loo": 43.52939568643071,
+        "beta_opt": 4.0,
+        "invariant": 2.324720533790702
+      },
+      {
+        "survey": "KiDS-Legacy",
+        "k_eff": 0.7,
+        "z_eff": 0.26,
+        "R0_loo": 13.8748498955907,
+        "beta_opt": 1.0,
+        "invariant": 7.708249941994833
+      }
+    ],
+    "cv_with_per_fold_beta_pct": 57.808287926782164,
+    "interpretation": "β_KiDS-fold = 1.0000 vs mean β_others = 3.1212 (Δβ = -2.1212). KiDS fold requires SIGNIFICANTLY different β. This is diagnostic evidence that the scaling law R₀ ∝ (1+z)^β / k_eff is NOT universal — KiDS-Legacy (high k_eff, low z_eff) violates the assumed z-evolution parametrization."
+  },
+  "rs6_4_r4_final_verdict": {
+    "_path": "B",
+    "_description": "RULED OUT — dimensional coincidence",
+    "best_candidate": "κ^36 × α^12",
+    "error_in_si_units": 0.008466411157172615,
+    "error_in_planck_units": 69.57465087596569,
+    "error_in_cosmo_units": 48.98710834909276,
+    "target_log10_si": -51.95663772197887,
+    "target_log10_planck": -121.53975500910174,
+    "target_log10_cosmo": -2.9779957840432902,
+    "ruling": "RULED OUT AS DIMENSIONAL COINCIDENCE",
+    "formal_statement": "The apparent match κ^36 × α^12 ≈ 10^(-51.957) is a unit-system artefact. In SI units the error is 0.008 dex; in Planck units it is 69.6 dex; in cosmological units it is 49.0 dex. No physical principle within the KSAU framework selects SI units as the natural measurement scale for Λ. The match is therefore NOT a prediction but a coincidence of the SI unit convention. R-4' κ^n × α^m approach: FORMALLY RULED OUT.",
+    "v25_strategy": {
+      "option_1": "Geometric Λ: Λ ∝ ρ_Leech × G × ħ / c³ in Planck units",
+      "option_2": "Entropic Λ: Λ = 3H²/c² × (1 - S_bulk/S_max) via holographic bound",
+      "option_3": "Treat Λ as external input; focus v25.0 on R_cell uniqueness and σ₈",
+      "recommendation": "Option 3 for v25.0 (most achievable); Options 1/2 as long-term research direction"
+    }
+  },
+  "rs6_5_global_beta_scan": {
+    "beta_star": 1.05,
+    "beta_fixed": 2.1666666666666665,
+    "beta_star_delta": -1.1166666666666665,
+    "tension_DES": 1.7251121468676234,
+    "tension_KiDS": -1.726289103243103,
+    "all_tensions": {
+      "DES Y3": 1.7251121468676234,
+      "CFHTLenS": 0.615121631981177,
+      "DLS": -0.7564206683474717,
+      "HSC Y3": 0.04059479239741853,
+      "KiDS-Legacy": -1.726289103243103
+    },
+    "mae_at_beta_star": 0.9727076685673588,
+    "n_lt15_sigma": 3,
+    "n_lt1_sigma": 3,
+    "rs6_5_pass": false,
+    "note": "Global β* = 1.05 (SSoT β = 2.1667). β* minimizes max(|tension_DES|, |tension_KiDS|). 1 global free parameter across all LOO-CV folds.",
+    "beta_grid_results": [
+      {
+        "beta": 1.0,
+        "tension_DES": 1.7218164032559111,
+        "tension_KiDS": -1.7343709407025993,
+        "score_max_DES_KiDS": 1.7343709407025993,
+        "mae_sigma": 0.9757839540794114
+      },
+      {
+        "beta": 1.05,
+        "tension_DES": 1.7251121468676234,
+        "tension_KiDS": -1.726289103243103,
+        "score_max_DES_KiDS": 1.726289103243103,
+        "mae_sigma": 0.9727076685673588
+      },
+      {
+        "beta": 1.1,
+        "tension_DES": 1.7284798825114878,
+        "tension_KiDS": -1.7183206416341406,
+        "score_max_DES_KiDS": 1.7284798825114878,
+        "mae_sigma": 0.9696801039883413
+      },
+      {
+        "beta": 1.1500000000000001,
+        "tension_DES": 1.7319342437665992,
+        "tension_KiDS": -1.7104658502844625,
+        "score_max_DES_KiDS": 1.7319342437665992,
+        "mae_sigma": 0.9666975298208769
+      },
+      {
+        "beta": 1.2000000000000002,
+        "tension_DES": 1.7354866737127002,
+        "tension_KiDS": -1.7027263157030157,
+        "score_max_DES_KiDS": 1.7354866737127002,
+        "mae_sigma": 0.9654540028132352
+      },
+      {
+        "beta": 1.2500000000000002,
+        "tension_DES": 1.7391229810144901,
+        "tension_KiDS": -1.6951101383677463,
+        "score_max_DES_KiDS": 1.7391229810144901,
+        "mae_sigma": 0.9685178720949672
+      },
+      {
+        "beta": 1.3000000000000003,
+        "tension_DES": 1.7429006187289042,
+        "tension_KiDS": -1.6876216681388827,
+        "score_max_DES_KiDS": 1.7429006187289042,
+        "mae_sigma": 0.9716243426211673
+      },
+      {
+        "beta": 1.3500000000000003,
+        "tension_DES": 1.746741721183559,
+        "tension_KiDS": -1.6802459548894282,
+        "score_max_DES_KiDS": 1.746741721183559,
+        "mae_sigma": 0.97475719838029
+      },
+      {
+        "beta": 1.4000000000000004,
+        "tension_DES": 1.7506771690935703,
+        "tension_KiDS": -1.673010005503495,
+        "score_max_DES_KiDS": 1.7506771690935703,
+        "mae_sigma": 0.9779240549974642
+      },
+      {
+        "beta": 1.4500000000000004,
+        "tension_DES": 1.7547071112481156,
+        "tension_KiDS": -1.6659070995939922,
+        "score_max_DES_KiDS": 1.7547071112481156,
+        "mae_sigma": 0.9811296417504287
+      },
+      {
+        "beta": 1.5000000000000004,
+        "tension_DES": 1.7588272017889643,
+        "tension_KiDS": -1.6589291458144875,
+        "score_max_DES_KiDS": 1.7588272017889643,
+        "mae_sigma": 0.9843577855661738
+      },
+      {
+        "beta": 1.5500000000000005,
+        "tension_DES": 1.7630331846381526,
+        "tension_KiDS": -1.6521068501846317,
+        "score_max_DES_KiDS": 1.7630331846381526,
+        "mae_sigma": 0.9876238124703043
+      },
+      {
+        "beta": 1.6000000000000005,
+        "tension_DES": 1.7673189386099732,
+        "tension_KiDS": -1.6453795998150427,
+        "score_max_DES_KiDS": 1.7673189386099732,
+        "mae_sigma": 0.990911091839824
+      },
+      {
+        "beta": 1.6500000000000006,
+        "tension_DES": 1.7716946125408508,
+        "tension_KiDS": -1.63886055867528,
+        "score_max_DES_KiDS": 1.7716946125408508,
+        "mae_sigma": 0.994237999589583
+      },
+      {
+        "beta": 1.7000000000000006,
+        "tension_DES": 1.776136270916795,
+        "tension_KiDS": -1.6324467779999856,
+        "score_max_DES_KiDS": 1.776136270916795,
+        "mae_sigma": 0.997589678585826
+      },
+      {
+        "beta": 1.7500000000000007,
+        "tension_DES": 1.7806620869835512,
+        "tension_KiDS": -1.6261802501451934,
+        "score_max_DES_KiDS": 1.7806620869835512,
+        "mae_sigma": 1.0009691766785036
+      },
+      {
+        "beta": 1.8000000000000007,
+        "tension_DES": 1.7853053005503141,
+        "tension_KiDS": -1.6200842994490854,
+        "score_max_DES_KiDS": 1.7853053005503141,
+        "mae_sigma": 1.0043819199043682
+      },
+      {
+        "beta": 1.8500000000000008,
+        "tension_DES": 1.7899885127022723,
+        "tension_KiDS": -1.6141386347716746,
+        "score_max_DES_KiDS": 1.7899885127022723,
+        "mae_sigma": 1.0078252065234357
+      },
+      {
+        "beta": 1.9000000000000008,
+        "tension_DES": 1.7947445047703567,
+        "tension_KiDS": -1.6083381191775972,
+        "score_max_DES_KiDS": 1.7947445047703567,
+        "mae_sigma": 1.0112891272167341
+      },
+      {
+        "beta": 1.9500000000000008,
+        "tension_DES": 1.799575898894172,
+        "tension_KiDS": -1.6027006495594827,
+        "score_max_DES_KiDS": 1.799575898894172,
+        "mae_sigma": 1.0147735402035665
+      },
+      {
+        "beta": 2.000000000000001,
+        "tension_DES": 1.8044782098365217,
+        "tension_KiDS": -1.5972145583754354,
+        "score_max_DES_KiDS": 1.8044782098365217,
+        "mae_sigma": 1.0182895840212765
+      },
+      {
+        "beta": 2.0500000000000007,
+        "tension_DES": 1.8094410271279642,
+        "tension_KiDS": -1.591879756266769,
+        "score_max_DES_KiDS": 1.8094410271279642,
+        "mae_sigma": 1.0218240511564958
+      },
+      {
+        "beta": 2.100000000000001,
+        "tension_DES": 1.8144810165682668,
+        "tension_KiDS": -1.5867165103595076,
+        "score_max_DES_KiDS": 1.8144810165682668,
+        "mae_sigma": 1.0253857845814998
+      },
+      {
+        "beta": 2.1500000000000012,
+        "tension_DES": 1.8195828897453912,
+        "tension_KiDS": -1.5817232257373397,
+        "score_max_DES_KiDS": 1.8195828897453912,
+        "mae_sigma": 1.0289636443119357
+      },
+      {
+        "beta": 2.200000000000001,
+        "tension_DES": 1.8247418146052086,
+        "tension_KiDS": -1.576891018035271,
+        "score_max_DES_KiDS": 1.8247418146052086,
+        "mae_sigma": 1.0325687206380514
+      },
+      {
+        "beta": 2.250000000000001,
+        "tension_DES": 1.8299640188784292,
+        "tension_KiDS": -1.5722225856718535,
+        "score_max_DES_KiDS": 1.8299640188784292,
+        "mae_sigma": 1.0361915478025925
+      },
+      {
+        "beta": 2.300000000000001,
+        "tension_DES": 1.8352501774703034,
+        "tension_KiDS": -1.5677195359367293,
+        "score_max_DES_KiDS": 1.8352501774703034,
+        "mae_sigma": 1.0398361854623848
+      },
+      {
+        "beta": 2.3500000000000014,
+        "tension_DES": 1.8405954731925955,
+        "tension_KiDS": -1.563359964054658,
+        "score_max_DES_KiDS": 1.8405954731925955,
+        "mae_sigma": 1.0434953727197491
+      },
+      {
+        "beta": 2.4000000000000012,
+        "tension_DES": 1.8459978903819634,
+        "tension_KiDS": -1.5592052170987363,
+        "score_max_DES_KiDS": 1.8459978903819634,
+        "mae_sigma": 1.0471788758777112
+      },
+      {
+        "beta": 2.450000000000001,
+        "tension_DES": 1.8514551047228403,
+        "tension_KiDS": -1.5552187385426923,
+        "score_max_DES_KiDS": 1.8514551047228403,
+        "mae_sigma": 1.0508778555142573
+      },
+      {
+        "beta": 2.5000000000000013,
+        "tension_DES": 1.8569700538430696,
+        "tension_KiDS": -1.5514034798517191,
+        "score_max_DES_KiDS": 1.8569700538430696,
+        "mae_sigma": 1.0545990642740537
+      },
+      {
+        "beta": 2.5500000000000016,
+        "tension_DES": 1.8625354516681139,
+        "tension_KiDS": -1.547758622357206,
+        "score_max_DES_KiDS": 1.8625354516681139,
+        "mae_sigma": 1.0583308326629939
+      },
+      {
+        "beta": 2.6000000000000014,
+        "tension_DES": 1.8681620849823806,
+        "tension_KiDS": -1.5442887577579745,
+        "score_max_DES_KiDS": 1.8681620849823806,
+        "mae_sigma": 1.0620814278648012
+      },
+      {
+        "beta": 2.6500000000000012,
+        "tension_DES": 1.873839202726447,
+        "tension_KiDS": -1.5409804348717848,
+        "score_max_DES_KiDS": 1.873839202726447,
+        "mae_sigma": 1.0658426756204622
+      },
+      {
+        "beta": 2.7000000000000015,
+        "tension_DES": 1.8795625219959584,
+        "tension_KiDS": -1.5378287910267958,
+        "score_max_DES_KiDS": 1.8795625219959584,
+        "mae_sigma": 1.0696142070698205
+      },
+      {
+        "beta": 2.7500000000000018,
+        "tension_DES": 1.8853363956566165,
+        "tension_KiDS": -1.5348597386634772,
+        "score_max_DES_KiDS": 1.8853363956566165,
+        "mae_sigma": 1.0733993828894792
+      },
+      {
+        "beta": 2.8000000000000016,
+        "tension_DES": 1.8911666524352333,
+        "tension_KiDS": -1.532070724857771,
+        "score_max_DES_KiDS": 1.8911666524352333,
+        "mae_sigma": 1.077197961494431
+      },
+      {
+        "beta": 2.8500000000000014,
+        "tension_DES": 1.8970429574048402,
+        "tension_KiDS": -1.5293892686892598,
+        "score_max_DES_KiDS": 1.8970429574048402,
+        "mae_sigma": 1.0809958623921325
+      },
+      {
+        "beta": 2.9000000000000017,
+        "tension_DES": 1.9029669930287698,
+        "tension_KiDS": -1.5269557249170123,
+        "score_max_DES_KiDS": 1.9029669930287698,
+        "mae_sigma": 1.084820815903273
+      },
+      {
+        "beta": 2.950000000000002,
+        "tension_DES": 1.9090121213678846,
+        "tension_KiDS": -1.524663116871454,
+        "score_max_DES_KiDS": 1.9090121213678846,
+        "mae_sigma": 1.0886608700332863
+      },
+      {
+        "beta": 3.0000000000000018,
+        "tension_DES": 1.9150421202221592,
+        "tension_KiDS": -1.5225155267278132,
+        "score_max_DES_KiDS": 1.9150421202221592,
+        "mae_sigma": 1.0924940072781328
+      },
+      {
+        "beta": 3.0500000000000016,
+        "tension_DES": 1.9211186746945033,
+        "tension_KiDS": -1.5205477152462892,
+        "score_max_DES_KiDS": 1.9211186746945033,
+        "mae_sigma": 1.096332327531184
+      },
+      {
+        "beta": 3.100000000000002,
+        "tension_DES": 1.9272448195860774,
+        "tension_KiDS": -1.5187428219917962,
+        "score_max_DES_KiDS": 1.9272448195860774,
+        "mae_sigma": 1.1001799559674823
+      },
+      {
+        "beta": 3.150000000000002,
+        "tension_DES": 1.93341272501952,
+        "tension_KiDS": -1.5170831950111625,
+        "score_max_DES_KiDS": 1.93341272501952,
+        "mae_sigma": 1.1040306452664734
+      },
+      {
+        "beta": 3.200000000000002,
+        "tension_DES": 1.9396286110972534,
+        "tension_KiDS": -1.515605130301298,
+        "score_max_DES_KiDS": 1.9396286110972534,
+        "mae_sigma": 1.1078924512474058
+      },
+      {
+        "beta": 3.2500000000000018,
+        "tension_DES": 1.9458868371875246,
+        "tension_KiDS": -1.5142168588485585,
+        "score_max_DES_KiDS": 1.9458868371875246,
+        "mae_sigma": 1.111739016486256
+      },
+      {
+        "beta": 3.300000000000002,
+        "tension_DES": 1.9521951587533604,
+        "tension_KiDS": -1.5130636668152182,
+        "score_max_DES_KiDS": 1.9521951587533604,
+        "mae_sigma": 1.1156036320639893
+      },
+      {
+        "beta": 3.3500000000000023,
+        "tension_DES": 1.9585399472042258,
+        "tension_KiDS": -1.5120138089741946,
+        "score_max_DES_KiDS": 1.9585399472042258,
+        "mae_sigma": 1.1194602438877366
+      },
+      {
+        "beta": 3.400000000000002,
+        "tension_DES": 1.9649317295304651,
+        "tension_KiDS": -1.5111093014849164,
+        "score_max_DES_KiDS": 1.9649317295304651,
+        "mae_sigma": 1.123315524109098
+      },
+      {
+        "beta": 3.450000000000002,
+        "tension_DES": 1.9713684140343557,
+        "tension_KiDS": -1.5103086131167651,
+        "score_max_DES_KiDS": 1.9713684140343557,
+        "mae_sigma": 1.1271587408299073
+      },
+      {
+        "beta": 3.500000000000002,
+        "tension_DES": 1.9778383223394544,
+        "tension_KiDS": -1.5097342777850458,
+        "score_max_DES_KiDS": 1.9778383223394544,
+        "mae_sigma": 1.1310184959889455
+      },
+      {
+        "beta": 3.5500000000000025,
+        "tension_DES": 1.9843609610108885,
+        "tension_KiDS": -1.5091239766251574,
+        "score_max_DES_KiDS": 1.9843609610108885,
+        "mae_sigma": 1.1348380833195615
+      }
+    ]
+  },
+  "summary": {
+    "R-S6-1a": {
+      "status": "✓",
+      "p_corrected_bootstrap_mc": 0.3165,
+      "note": "Bootstrap MC pre-sort bias fixed; correct p reported"
+    },
+    "R-S6-1b": {
+      "status": "✓",
+      "fraction_trials_p_lt_005": 0.76,
+      "median_per_trial_p": 0.025
+    },
+    "R-S6-2": {
+      "status": "✓",
+      "mean_abs_deviation_pct": 17.07051528066782,
+      "surveys_gt20pct": [
+        "CFHTLenS",
+        "DLS",
+        "KiDS-Legacy"
+      ]
+    },
+    "R-S6-3": {
+      "status": "✓",
+      "beta_KiDS_fold": 1.0,
+      "beta_others_mean": 3.1211827690055634,
+      "delta_beta_kids_vs_others": -2.1211827690055634,
+      "invariant_cv_with_per_fold_beta_pct": 57.808287926782164
+    },
+    "R-S6-4": {
+      "status": "✓",
+      "ruling": "RULED OUT AS DIMENSIONAL COINCIDENCE",
+      "path": "B"
+    },
+    "R-S6-5": {
+      "status": "✗",
+      "mae_sigma": 1.2050447896282859,
+      "n_lt_15_sigma": 3,
+      "n_lt_1_sigma": 2,
+      "tensions": {
+        "DES Y3": 1.9289507045993268,
+        "CFHTLenS": 0.6072277811561713,
+        "DLS": -1.0636821955253268,
+        "HSC Y3": -0.6909925474711233,
+        "KiDS-Legacy": -1.7343707193894804
+      },
+      "source": "joint (R₀,β) per fold — FAIL",
+      "beta_star": 1.05,
+      "note_on_joint_beta": "Joint (R₀,β) per-fold failed: MAE worsened to 1.205σ, β values non-physical (1.0–4.0 range). Global β* scan: 1 global free parameter approach."
+    }
+  }
+}

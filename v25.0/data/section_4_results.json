@@ -1,0 +1,115 @@
+{
+  "date": "2026-02-18",
+  "w_new_1_fix_note": "W-NEW-1 fix (Session 7, P-S7-1): date corrected from 2026-02-19 to 2026-02-18 per SSoT unification declared in Session 4.",
+  "section": "Section 4",
+  "section_4a_bonferroni_v24": {
+    "n_tests": 2,
+    "alpha_nominal": 0.05,
+    "alpha_bonferroni": 0.025,
+    "tests": [
+      {
+        "test_id": "T1_v24",
+        "description": "Unconstrained permutation (best-fit quintuple {8,5,4,3,2})",
+        "session": "Session 5/6",
+        "p_raw": 0.0167,
+        "note": "p=2/120 (ranking of physical ordering among all 120 permutations)",
+        "p_bonferroni": 0.0334,
+        "p_bh_fdr": 0.025,
+        "significant_bonf": true,
+        "significant_bh": true,
+        "significant_raw": true
+      },
+      {
+        "test_id": "T2_v24",
+        "description": "SSoT-constrained permutation (SSoT quintuple {7,6,5,3,1})",
+        "session": "Session 7",
+        "p_raw": 0.025,
+        "note": "p=3/120 (ranking of physical ordering under SSoT-fixed shells)",
+        "p_bonferroni": 0.05,
+        "p_bh_fdr": 0.025,
+        "significant_bonf": false,
+        "significant_bh": true,
+        "significant_raw": true
+      }
+    ],
+    "summary": {
+      "T1_bonferroni_significant": true,
+      "T2_bonferroni_significant": false,
+      "T1_bh_significant": true,
+      "T2_bh_significant": true,
+      "interpretation": "After Bonferroni correction (α_adj = 0.025): T1 (p=0.0334) SIGNIFICANT. T2 (p=0.0500) NOT significant. T2=p=0.025 is exactly at the Bonferroni boundary (p ≤ α_adj = 0.025). The p=0.025 result is marginal under strict Bonferroni control. T1 (p=0.0167) is robust: 0.0167 < 0.025."
+    }
+  },
+  "section_4b_fdr_all_tests": {
+    "n_tests": 4,
+    "alpha": 0.05,
+    "tests": [
+      {
+        "test_id": "T1_v24",
+        "name": "Unconstrained permutation test",
+        "version": "v24.0",
+        "p_raw": 0.0167,
+        "type": "permutation",
+        "null": "Random k_eff ordering is as extreme as physical ordering",
+        "p_bonferroni": 0.0668,
+        "p_bh_fdr": 0.05,
+        "sig_raw": true,
+        "sig_bonf": false,
+        "sig_bh": false
+      },
+      {
+        "test_id": "T2_v24",
+        "name": "SSoT-constrained permutation test",
+        "version": "v24.0",
+        "p_raw": 0.025,
+        "type": "permutation",
+        "null": "Physical k_eff↔R₀ ordering is not special under SSoT assignment",
+        "p_bonferroni": 0.1,
+        "p_bh_fdr": 0.05,
+        "sig_raw": true,
+        "sig_bonf": false,
+        "sig_bh": false
+      },
+      {
+        "test_id": "T3_v24",
+        "name": "Bootstrap MC robustness (p≥0.2 threshold)",
+        "version": "v24.0",
+        "p_raw": 0.3165,
+        "type": "bootstrap",
+        "null": "CV is not robust to ±10% noise",
+        "note": "Not a classical hypothesis test. Included for completeness.",
+        "p_bonferroni": 1.0,
+        "p_bh_fdr": 0.422,
+        "sig_raw": false,
+        "sig_bonf": false,
+        "sig_bh": false
+      },
+      {
+        "test_id": "T4_v25",
+        "name": "Cross-term LOO-CV improvement sign test",
+        "version": "v25.0",
+        "p_raw": 0.8125,
+        "type": "sign_test",
+        "null": "Cross-term model does not improve tension for majority of surveys",
+        "n_improved": 2,
+        "mae_new": 1.6253,
+        "mae_v24": 1.03,
+        "p_bonferroni": 1.0,
+        "p_bh_fdr": 0.8125,
+        "sig_raw": false,
+        "sig_bonf": false,
+        "sig_bh": false
+      }
+    ],
+    "n_sig_raw": 2,
+    "n_sig_bonf": 0,
+    "n_sig_bh": 0
+  },
+  "section_4c_table": "Test ID   | Description                              | p_raw  | p_Bonf | p_BH   | sig_raw | sig_Bonf | sig_BH\n--------------------------------------------------------------------------------------------------------------\nT1_v24    | Unconstrained permutation test            | 0.0167 | 0.0668 | 0.0500 |    ✓    |     ✗    |    ✗   \nT2_v24    | SSoT-constrained permutation test         | 0.0250 | 0.1000 | 0.0500 |    ✓    |     ✗    |    ✗   \nT3_v24    | Bootstrap MC robustness (p≥0.2 threshold  | 0.3165 | 1.0000 | 0.4220 |    ✗    |     ✗    |    ✗   \nT4_v25    | Cross-term LOO-CV improvement sign test   | 0.8125 | 1.0000 | 0.8125 |    ✗    |     ✗    |    ✗   ",
+  "conclusions": {
+    "T1_robust": false,
+    "T2_marginal": false,
+    "T2_boundary_note": "p=0.025 = α_adj exactly (Bonferroni boundary — not conclusive)",
+    "recommendation": "The primary claim (k_eff ↔ R₀ ordering) rests on T1 (p=0.0167, Bonferroni-robust) and T2 (p=0.025, boundary). Further data (6+ surveys) needed to push T2 below the boundary. The ordering claim should be presented as 'marginal to significant' rather than 'significant' given the multiple testing landscape."
+  }
+}

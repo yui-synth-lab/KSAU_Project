@@ -38,22 +38,15 @@ from scipy.optimize import minimize, curve_fit
 
 BASE = Path("E:/Obsidian/KSAU_Project")
 sys.path.insert(0, str(BASE / "v23.0" / "code"))
+sys.path.insert(0, str(BASE / "v24.0" / "code"))
 from loo_cv_engine_v23_final_audit import LOOCVFinalAudit
+import ksau_utils_v24 as utils
 
 CONFIG_PATH = str(BASE / "v23.0" / "data" / "cosmological_constants.json")
 WL5_CONFIG  = str(BASE / "v24.0" / "data" / "wl5_survey_config.json")
 
-# SSoT: Leech shell magnitudes (r² = 2,4,...,16)
-LEECH_SHELLS = {
-    1: math.sqrt(2),    # r² = 2  → mag = √2 ≈ 1.4142
-    2: 2.0,             # r² = 4  → mag = 2.0
-    3: math.sqrt(6),    # r² = 6  → mag = √6 ≈ 2.4495
-    4: 2 * math.sqrt(2),# r² = 8  → mag = 2√2 ≈ 2.8284
-    5: math.sqrt(10),   # r² = 10 → mag = √10 ≈ 3.1623
-    6: 2 * math.sqrt(3),# r² = 12 → mag = 2√3 ≈ 3.4641
-    7: math.sqrt(14),   # r² = 14 → mag = √14 ≈ 3.7417
-    8: 4.0,             # r² = 16 → mag = 4.0
-}
+# SSoT: Leech shell magnitudes (r² = 2,4,...,16) - Loaded dynamically
+LEECH_SHELLS = utils.load_leech_shells()
 QUINTUPLES = [tuple(reversed(c)) for c in itertools.combinations(range(1, 9), 5)]
 
 # SSoT-predicted quintuple (shells for DES→CFHTLenS→DLS→HSC→KiDS, by k_eff asc)

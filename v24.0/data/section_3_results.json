@@ -1,0 +1,90 @@
+{
+  "date": "2026-02-18",
+  "kappa": 0.1308996938995747,
+  "r_base": 11.459155902616466,
+  "r_base_formula": "3/(2*kappa) = 36/pi",
+  "r_base_loo_mean": 11.262473187897287,
+  "r_base_loo_std": 0.4560585034416159,
+  "r_base_consistency_pct": 1.7163804768051936,
+  "survey_shell_assignments": {
+    "DES Y3": 6,
+    "HSC Y3": 3,
+    "KiDS-Legacy": 1
+  },
+  "test1_leech_direct": {
+    "DES Y3": {
+      "z_eff": 0.33,
+      "k_eff": 0.15,
+      "shell_k": 6,
+      "shell_mag": 3.4641016151377544,
+      "r0_leech": 39.695680470369034,
+      "s8_obs": 0.759,
+      "s8_obs_z": 0.6488187222803312,
+      "s8_pred_z": 0.6877903047361734,
+      "s8_err_z": 0.021370840654819867,
+      "tension_sigma": 1.8235867781388728,
+      "passed": false
+    },
+    "HSC Y3": {
+      "z_eff": 0.6,
+      "k_eff": 0.35,
+      "shell_k": 3,
+      "shell_mag": 2.449489742783178,
+      "r0_leech": 28.06908484441234,
+      "s8_obs": 0.776,
+      "s8_obs_z": 0.5992330119728544,
+      "s8_pred_z": 0.5931526613838569,
+      "s8_err_z": 0.025482847158639427,
+      "tension_sigma": -0.23860562170095104,
+      "passed": true
+    },
+    "KiDS-Legacy": {
+      "z_eff": 0.26,
+      "k_eff": 0.7,
+      "shell_k": 1,
+      "shell_mag": 1.4142135623730951,
+      "r0_leech": 16.205693690827914,
+      "s8_obs": 0.815,
+      "s8_obs_z": 0.7177179515342521,
+      "s8_pred_z": 0.6818598035017581,
+      "s8_err_z": 0.018493345990453124,
+      "tension_sigma": -1.9389756754134784,
+      "passed": false
+    }
+  },
+  "test1_mae_sigma": 1.3337226917511007,
+  "test1_all_pass": false,
+  "test2_loo_cv_baseline": {
+    "mae_sigma": 1.3562820722952773,
+    "iterations": {
+      "DES Y3": {
+        "r0_opt": 39.793086006878376,
+        "s8_pred_z": 0.6878623041372921,
+        "s8_obs_z": 0.6488187222803312,
+        "tension_sigma": 1.8269558267543022
+      },
+      "HSC Y3": {
+        "r0_opt": 26.02878472704513,
+        "s8_pred_z": 0.5906975070855282,
+        "s8_obs_z": 0.5992330119728544,
+        "tension_sigma": -0.3349509901381822
+      },
+      "KiDS-Legacy": {
+        "r0_opt": 16.509961745984008,
+        "s8_pred_z": 0.682452261427348,
+        "s8_obs_z": 0.7177179515342521,
+        "tension_sigma": -1.9069393999933475
+      }
+    }
+  },
+  "test3_r_base_scan": {
+    "r_base_true": 11.459155902616466,
+    "r_base_formula": "3/(2*kappa) = 36/pi",
+    "mae_at_true": 1.333719124178354,
+    "best_r_base": 13.592964824120603,
+    "best_mae": 1.222103349135408,
+    "proximity_pct": 18.620995644338212,
+    "is_near_optimum": false
+  },
+  "verdict": "PARTIAL_PASS"
+}

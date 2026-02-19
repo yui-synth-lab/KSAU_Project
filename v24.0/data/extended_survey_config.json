@@ -1,0 +1,66 @@
+{
+  "_description": "KSAU v24.0 Extended Survey Dataset — Session 4 (R-1, R-2 compliance)",
+  "_note": "Added ACT-DR6 CMB lensing and Planck PR4 CMB lensing for ≥5 survey requirement",
+  "_ssot": "All values from published measurements. No hardcoded theory values.",
+  "_ordered_by_k_eff": "Planck PR4 (0.07) < ACT-DR6 (0.09) < DES Y3 (0.15) < HSC Y3 (0.35) < KiDS-Legacy (0.70)",
+  "surveys": {
+    "Planck PR4 Lensing": {
+      "S8_obs": 0.832,
+      "S8_err": 0.025,
+      "k_eff": 0.07,
+      "z_eff": 2.0,
+      "ref": "Carron et al. (2022), JCAP 2022(09):039",
+      "type": "CMB_lensing",
+      "notes": "Planck PR4 CMB lensing reconstruction. High-z probe: k_eff ~0.07 h/Mpc, z_eff~2 (lensing kernel)."
+    },
+    "ACT-DR6": {
+      "S8_obs": 0.840,
+      "S8_err": 0.028,
+      "k_eff": 0.09,
+      "z_eff": 1.7,
+      "ref": "Qu et al. (2023), arXiv:2304.05202; Madhavacheril et al. (2024)",
+      "type": "CMB_lensing",
+      "notes": "ACT Data Release 6 CMB lensing. k_eff ~0.09 h/Mpc, z_eff~1.7."
+    },
+    "DES Y3": {
+      "S8_obs": 0.759,
+      "S8_err": 0.025,
+      "k_eff": 0.15,
+      "z_eff": 0.33,
+      "ref": "Abbott et al. (2022)",
+      "type": "weak_lensing",
+      "notes": "DES Year 3 cosmic shear. Existing survey from v23.0/v24.0 analysis."
+    },
+    "HSC Y3": {
+      "S8_obs": 0.776,
+      "S8_err": 0.033,
+      "k_eff": 0.35,
+      "z_eff": 0.60,
+      "ref": "Dalal et al. (2023)",
+      "type": "weak_lensing",
+      "notes": "Hyper Suprime-Cam Year 3 cosmic shear. Existing survey."
+    },
+    "KiDS-Legacy": {
+      "S8_obs": 0.815,
+      "S8_err": 0.021,
+      "k_eff": 0.70,
+      "z_eff": 0.26,
+      "ref": "Asgari et al. (2021)",
+      "type": "weak_lensing",
+      "notes": "KiDS-1000 Legacy cosmic shear. Existing survey."
+    }
+  },
+  "expected_leech_assignment": {
+    "_note": "IF R_base = 3/(2*kappa) = 11.459 Mpc/h (SSoT), expected R0 = R_base * shell_mag",
+    "Planck PR4 Lensing": {"expected_shell": 8, "shell_mag": 4.0,     "expected_R0_Mpc_h": 45.84},
+    "ACT-DR6":             {"expected_shell": 7, "shell_mag": 3.7417, "expected_R0_Mpc_h": 42.88},
+    "DES Y3":              {"expected_shell": 6, "shell_mag": 3.4641, "expected_R0_Mpc_h": 39.68},
+    "HSC Y3":              {"expected_shell": 3, "shell_mag": 2.4495, "expected_R0_Mpc_h": 28.06},
+    "KiDS-Legacy":         {"expected_shell": 1, "shell_mag": 1.4142, "expected_R0_Mpc_h": 16.20}
+  },
+  "k_eff_shell_ordering_principle": {
+    "statement": "k_eff ∝ 1/R0 = 1/(R_base × shell_mag) — larger k_eff survey → smaller shell index",
+    "derivation": "R0(i) = R_base × shell_mag(n_i). Survey effective scale k_eff(i) ~ 1/r_z(i) = (1+z_eff)^beta / R0(i). Therefore k_eff(i) ∝ 1/shell_mag(n_i), implying anti-correlation: larger k_eff → smaller shell magnitude → smaller shell index.",
+    "r3_status": "First-principles motivated (qualitative); quantitative derivation pending Section 2 Λ integration"
+  }
+}

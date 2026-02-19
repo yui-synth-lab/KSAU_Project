@@ -1,0 +1,603 @@
+{
+  "date": "2026-02-18",
+  "session": 5,
+  "kappa": 0.1308996938995747,
+  "alpha": 0.020833333333333332,
+  "beta": 2.1666666666666665,
+  "r_base_ssot": 11.459155902616466,
+  "r4_prime": {
+    "_unit_system_clarification": "TARGET = log10(Lambda_Planck2018_SI) = log10(1.105e-52 m^-2) = -51.957. kappa = pi/24 (dimensionless), alpha = 1/48 (dimensionless). kappa^n * alpha^m is dimensionless. Equating dimensionless product to SI value (m^-2) is UNIT-DEPENDENT. In Planck units: log10(Lambda_PL) ~ -121.5 (completely different target). The -51.957 target is the RAW SI log10 value with no physical length scale argument.",
+    "target_log10": -51.95663772197887,
+    "target_description": "Planck 2018 cosmological constant: Lambda = 1.105e-52 m^-2 (SI)",
+    "kappa": 0.1308996938995747,
+    "alpha": 0.020833333333333332,
+    "log10_kappa": -0.8830613690174722,
+    "log10_alpha": -1.6812412373755872,
+    "search_space": "n in [1,100], m in [0,20] — 2100 total candidates",
+    "total_candidates": 2100,
+    "n_within_0p01_dex": 1,
+    "n_within_0p1_dex": 5,
+    "n_within_1p0_dex": 48,
+    "statistical_note": "Search space has 2100 candidates covering a wide range. 48 candidates fall within 1 dex of target. With 2 free integer parameters, matching within 1 dex is NOT statistically significant.",
+    "session4_limitation": {
+      "m_limit": 9,
+      "best_in_m_le9": "kappa^55 * alpha^2",
+      "error_dex": 0.025779951266720502,
+      "note": "Session 4 searched m in [0,9] only. m=10..20 were excluded."
+    },
+    "true_best_candidate": {
+      "formula": "kappa^36 * alpha^12",
+      "n": 36,
+      "m": 12,
+      "log10": -51.965104133136045,
+      "error_dex": 0.008466411157172615
+    },
+    "specific_candidates": {
+      "kappa_36_alpha_12": {
+        "log10": -51.965104133136045,
+        "error_dex": 0.008466411157172615,
+        "note": "Best candidate; Session 4 missed (m=12 > 9 limit)"
+      },
+      "kappa_55_alpha_2": {
+        "log10": -51.93085777071215,
+        "error_dex": 0.025779951266720502,
+        "note": "Session 4 'best'; 6× worse than kappa^36*alpha^12"
+      },
+      "kappa_59": {
+        "log10": -52.100620772030865,
+        "error_dex": 0.1439830500519932,
+        "note": "Earlier theoretical guess; no derivation"
+      }
+    },
+    "r4_prime_conclusion": "HONEST CONCLUSION: (1) The true best candidate in n∈[1,100], m∈[0,20] is κ^36 × α^12 (error 0.0085 dex). (2) Session 4's κ^55 × α^2 was a false champion due to m≤9 truncation. (3) The T(10)=55 'theoretical motivation' was a posteriori rationalization; κ^36 × α^12 has 6× better precision but n=36 has no established physical motivation. (4) With 2 free integer parameters, this is a 2-parameter numerical fit, not a first-principles derivation. (5) Unit system: the target is the raw SI value of Λ (m^-2); equating dimensionless κ^n α^m to a SI quantity requires an unstated length scale. R-4' STATUS: PARTIALLY ADDRESSED — full search completed, honest analysis provided. First-principles derivation REMAINS OPEN (not achievable by numerical search alone).",
+    "top20_candidates": [
+      {
+        "rank": 1,
+        "n": 36,
+        "m": 12,
+        "formula": "kappa^36 * alpha^12",
+        "log10_val": -51.965104133136045,
+        "error_dex": 0.008466411157172615,
+        "session4_range": false,
+        "note": "n=36=6² (squared CY3 dimension), m=12=dim(CY3 tangent bundle? or 2×6). No established string-theory derivation. A posteriori pattern-matching."
+      },
+      {
+        "rank": 2,
+        "n": 55,
+        "m": 2,
+        "formula": "kappa^55 * alpha^2",
+        "log10_val": -51.93085777071215,
+        "error_dex": 0.025779951266720502,
+        "session4_range": true,
+        "note": "n=55=T(10) (triangular number, Session 4 claim), m=2 (dual CS channels). Invalidated: κ^36×α^12 has 6× lower error yet lacks this 'motivation'. Demonstrates a posteriori nature of Session 4 rationalization."
+      },
+      {
+        "rank": 3,
+        "n": 57,
+        "m": 1,
+        "formula": "kappa^57 * alpha^1",
+        "log10_val": -52.0157392713715,
+        "error_dex": 0.05910154939262924,
+        "session4_range": true,
+        "note": ""
+      },
+      {
+        "rank": 4,
+        "n": 34,
+        "m": 13,
+        "formula": "kappa^34 * alpha^13",
+        "log10_val": -51.88022263247669,
+        "error_dex": 0.07641508950218423,
+        "session4_range": false,
+        "note": ""
+      },
+      {
+        "rank": 5,
+        "n": 38,
+        "m": 11,
+        "formula": "kappa^38 * alpha^11",
+        "log10_val": -52.0499856337954,
+        "error_dex": 0.09334791181652946,
+        "session4_range": false,
+        "note": ""
+      },
+      {
+        "rank": 6,
+        "n": 53,
+        "m": 3,
+        "formula": "kappa^53 * alpha^3",
+        "log10_val": -51.84597627005279,
+        "error_dex": 0.11066145192608445,
+        "session4_range": true,
+        "note": ""
+      },
+      {
+        "rank": 7,
+        "n": 59,
+        "m": 0,
+        "formula": "kappa^59 * alpha^0",
+        "log10_val": -52.100620772030865,
+        "error_dex": 0.1439830500519932,
+        "session4_range": true,
+        "note": ""
+      },
+      {
+        "rank": 8,
+        "n": 32,
+        "m": 14,
+        "formula": "kappa^32 * alpha^14",
+        "log10_val": -51.79534113181733,
+        "error_dex": 0.16129659016154108,
+        "session4_range": false,
+        "note": ""
+      },
+      {
+        "rank": 9,
+        "n": 40,
+        "m": 10,
+        "formula": "kappa^40 * alpha^10",
+        "log10_val": -52.134867134454765,
+        "error_dex": 0.1782294124758934,
+        "session4_range": false,
+        "note": ""
+      },
+      {
+        "rank": 10,
+        "n": 51,
+        "m": 4,
+        "formula": "kappa^51 * alpha^4",
+        "log10_val": -51.76109476939344,
+        "error_dex": 0.1955429525854342,
+        "session4_range": true,
+        "note": ""
+      },
+      {
+        "rank": 11,
+        "n": 21,
+        "m": 20,
+        "formula": "kappa^21 * alpha^20",
+        "log10_val": -52.169113496878666,
+        "error_dex": 0.21247577489979363,
+        "session4_range": false,
+        "note": ""
+      },
+      {
+        "rank": 12,
+        "n": 30,
+        "m": 15,
+        "formula": "kappa^30 * alpha^15",
+        "log10_val": -51.710459631157974,
+        "error_dex": 0.24617809082089792,
+        "session4_range": false,
+        "note": ""
+      },
+      {
+        "rank": 13,
+        "n": 42,
+        "m": 9,
+        "formula": "kappa^42 * alpha^9",
+        "log10_val": -52.219748635114115,
+        "error_dex": 0.26311091313524315,
+        "session4_range": true,
+        "note": ""
+      },
+      {
+        "rank": 14,
+        "n": 49,
+        "m": 5,
+        "formula": "kappa^49 * alpha^5",
+        "log10_val": -51.676213268734074,
+        "error_dex": 0.28042445324479814,
+        "session4_range": true,
+        "note": ""
+      },
+      {
+        "rank": 15,
+        "n": 23,
+        "m": 19,
+        "formula": "kappa^23 * alpha^19",
+        "log10_val": -52.253994997538015,
+        "error_dex": 0.2973572755591434,
+        "session4_range": false,
+        "note": ""
+      },
+      {
+        "rank": 16,
+        "n": 28,
+        "m": 16,
+        "formula": "kappa^28 * alpha^16",
+        "log10_val": -51.62557813049862,
+        "error_dex": 0.33105959148025477,
+        "session4_range": false,
+        "note": ""
+      },
+      {
+        "rank": 17,
+        "n": 44,
+        "m": 8,
+        "formula": "kappa^44 * alpha^8",
+        "log10_val": -52.30463013577348,
+        "error_dex": 0.3479924137946071,
+        "session4_range": true,
+        "note": ""
+      },
+      {
+        "rank": 18,
+        "n": 47,
+        "m": 6,
+        "formula": "kappa^47 * alpha^6",
+        "log10_val": -51.591331768074724,
+        "error_dex": 0.3653059539041479,
+        "session4_range": true,
+        "note": ""
+      },
+      {
+        "rank": 19,
+        "n": 25,
+        "m": 18,
+        "formula": "kappa^25 * alpha^18",
+        "log10_val": -52.33887649819738,
+        "error_dex": 0.3822387762185073,
+        "session4_range": false,
+        "note": ""
+      },
+      {
+        "rank": 20,
+        "n": 26,
+        "m": 17,
+        "formula": "kappa^26 * alpha^17",
+        "log10_val": -51.54069662983926,
+        "error_dex": 0.4159410921396116,
+        "session4_range": false,
+        "note": ""
+      }
+    ]
+  },
+  "r1_loo_cv_5wl": {
+    "mae_sigma": 1.030162857404775,
+    "any_boundary": false,
+    "iterations": {
+      "DES Y3": {
+        "r0_opt": 39.6295013066328,
+        "at_boundary": false,
+        "s8_pred_z": 0.6877411843449314,
+        "s8_obs_z": 0.6488187222803312,
+        "tension_sigma": 1.821288300880283,
+        "k_eff": 0.15,
+        "z_eff": 0.33
+      },
+      "CFHTLenS": {
+        "r0_opt": 29.55619367711467,
+        "at_boundary": false,
+        "s8_pred_z": 0.6541636530721083,
+        "s8_obs_z": 0.6216288732318159,
+        "tension_sigma": 0.5931634142726548,
+        "k_eff": 0.2,
+        "z_eff": 0.4
+      },
+      "DLS": {
+        "r0_opt": 26.213195818571172,
+        "at_boundary": false,
+        "s8_pred_z": 0.6128080147270498,
+        "s8_obs_z": 0.6497395903796044,
+        "tension_sigma": -0.8772753783468008,
+        "k_eff": 0.22,
+        "z_eff": 0.52
+      },
+      "HSC Y3": {
+        "r0_opt": 27.211626329072377,
+        "at_boundary": false,
+        "s8_pred_z": 0.5921234599012122,
+        "s8_obs_z": 0.5992330119728544,
+        "tension_sigma": -0.27899363157432217,
+        "k_eff": 0.35,
+        "z_eff": 0.6
+      },
+      "KiDS-Legacy": {
+        "r0_opt": 19.697135007551786,
+        "at_boundary": false,
+        "s8_pred_z": 0.6884967345958267,
+        "s8_obs_z": 0.7177179515342521,
+        "tension_sigma": -1.580093561949814,
+        "k_eff": 0.7,
+        "z_eff": 0.26
+      }
+    }
+  },
+  "r3_invariant": {
+    "per_survey": [
+      {
+        "survey": "DES Y3",
+        "k_eff": 0.15,
+        "z_eff": 0.33,
+        "R0_loo": 39.6295013066328,
+        "invariant": 3.204532232203927
+      },
+      {
+        "survey": "CFHTLenS",
+        "k_eff": 0.2,
+        "z_eff": 0.4,
+        "R0_loo": 29.55619367711467,
+        "invariant": 2.851463097257712
+      },
+      {
+        "survey": "DLS",
+        "k_eff": 0.22,
+        "z_eff": 0.52,
+        "R0_loo": 26.213195818571172,
+        "invariant": 2.3278136583835893
+      },
+      {
+        "survey": "HSC Y3",
+        "k_eff": 0.35,
+        "z_eff": 0.6,
+        "R0_loo": 27.211626329072377,
+        "invariant": 3.4400327763449736
+      },
+      {
+        "survey": "KiDS-Legacy",
+        "k_eff": 0.7,
+        "z_eff": 0.26,
+        "R0_loo": 19.697135007551786,
+        "invariant": 8.356637957813104
+      }
+    ],
+    "invariant_mean": 4.036095944400661,
+    "invariant_std": 2.1925079771196625,
+    "invariant_cv_pct": 54.32249399723421,
+    "target_cv_pct": 10.0,
+    "r3_pass": false
+  },
+  "r6_combinatorial": {
+    "total_combinations": 56,
+    "winner_quintuple": [
+      8,
+      5,
+      4,
+      3,
+      2
+    ],
+    "winner_cv_pct": 6.658167025139443,
+    "winner_mean_rb": 9.895859223687111,
+    "winner_dev_from_ssot_pct": 13.64233711640495,
+    "r_base_ssot": 11.459155902616466,
+    "n_as_good_as_winner": 1,
+    "combinatorial_p_value_cv": 0.017857142857142856,
+    "top10_ranking": [
+      {
+        "rank": 1,
+        "quintuple": [
+          8,
+          5,
+          4,
+          3,
+          2
+        ],
+        "cv_pct": 6.658167025139443,
+        "mean_rb": 9.895859223687111,
+        "dev_ssot_pct": 13.64233711640495
+      },
+      {
+        "rank": 2,
+        "quintuple": [
+          7,
+          5,
+          4,
+          3,
+          2
+        ],
+        "cv_pct": 7.1331372392805665,
+        "mean_rb": 10.032670105471619,
+        "dev_ssot_pct": 12.448436946556756
+      },
+      {
+        "rank": 3,
+        "quintuple": [
+          8,
+          6,
+          5,
+          4,
+          2
+        ],
+        "cv_pct": 7.444332995061975,
+        "mean_rb": 9.23963682487099,
+        "dev_ssot_pct": 19.368957858743276
+      },
+      {
+        "rank": 4,
+        "quintuple": [
+          8,
+          6,
+          5,
+          4,
+          3
+        ],
+        "cv_pct": 8.394913578639272,
+        "mean_rb": 8.878187662889596,
+        "dev_ssot_pct": 22.523196836318093
+      },
+      {
+        "rank": 5,
+        "quintuple": [
+          8,
+          6,
+          4,
+          3,
+          2
+        ],
+        "cv_pct": 8.71313006466769,
+        "mean_rb": 9.732989041562409,
+        "dev_ssot_pct": 15.063647582104386
+      },
+      {
+        "rank": 6,
+        "quintuple": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "cv_pct": 8.859722956635151,
+        "mean_rb": 10.20239448307898,
+        "dev_ssot_pct": 10.967312341483463
+      },
+      {
+        "rank": 7,
+        "quintuple": [
+          7,
+          6,
+          5,
+          4,
+          2
+        ],
+        "cv_pct": 9.116476395324081,
+        "mean_rb": 9.376447706655494,
+        "dev_ssot_pct": 18.175057688895112
+      },
+      {
+        "rank": 8,
+        "quintuple": [
+          8,
+          7,
+          5,
+          4,
+          2
+        ],
+        "cv_pct": 9.287275933973499,
+        "mean_rb": 9.113054192970665,
+        "dev_ssot_pct": 20.47359970999361
+      },
+      {
+        "rank": 9,
+        "quintuple": [
+          7,
+          6,
+          4,
+          3,
+          2
+        ],
+        "cv_pct": 9.295835129319274,
+        "mean_rb": 9.869799923346912,
+        "dev_ssot_pct": 13.869747412256226
+      },
+      {
+        "rank": 10,
+        "quintuple": [
+          8,
+          7,
+          5,
+          4,
+          3
+        ],
+        "cv_pct": 9.609092254222768,
+        "mean_rb": 8.751605030989271,
+        "dev_ssot_pct": 23.62783868756843
+      }
+    ]
+  },
+  "r6_permutation": {
+    "n_permutations": 120,
+    "actual_cv_pct": 6.658167025139443,
+    "n_beats_actual": 2,
+    "p_value_permutation": 0.016666666666666666,
+    "r6_pass": true,
+    "r0_ordering_correct": false,
+    "r0_ordering_note": "R₀ ordering (desc) matches k_eff ordering (asc): NO — model fails to reproduce expected ordering for all 5 surveys",
+    "top5_by_cv": [
+      {
+        "r0_perm": [
+          39.6295013066328,
+          29.55619367711467,
+          27.211626329072377,
+          26.213195818571172,
+          19.697135007551786
+        ],
+        "best_cv_pct": 4.587770063038233,
+        "is_original": false
+      },
+      {
+        "r0_perm": [
+          39.6295013066328,
+          29.55619367711467,
+          26.213195818571172,
+          27.211626329072377,
+          19.697135007551786
+        ],
+        "best_cv_pct": 6.658167025139443,
+        "is_original": true
+      },
+      {
+        "r0_perm": [
+          39.6295013066328,
+          27.211626329072377,
+          29.55619367711467,
+          26.213195818571172,
+          19.697135007551786
+        ],
+        "best_cv_pct": 7.315764755913066,
+        "is_original": false
+      },
+      {
+        "r0_perm": [
+          39.6295013066328,
+          26.213195818571172,
+          29.55619367711467,
+          27.211626329072377,
+          19.697135007551786
+        ],
+        "best_cv_pct": 9.37799926058048,
+        "is_original": false
+      },
+      {
+        "r0_perm": [
+          39.6295013066328,
+          27.211626329072377,
+          26.213195818571172,
+          29.55619367711467,
+          19.697135007551786
+        ],
+        "best_cv_pct": 10.890137457675074,
+        "is_original": false
+      }
+    ],
+    "p_value_note": "p = 0.0167. R-6 PASS: physical assignment is statistically unique (p < 0.05)."
+  },
+  "r6_bootstrap_mc": {
+    "n_mc": 2000,
+    "actual_cv_pct": 6.658167025139443,
+    "n_mc_beats_actual": 1549,
+    "p_value_bootstrap_mc": 0.7745,
+    "mc_cv_mean_pct": 5.088199107386161,
+    "mc_cv_std_pct": 2.251803386547141
+  },
+  "summary": {
+    "R-1": {
+      "status": "✓",
+      "mae_sigma": 1.030162857404775
+    },
+    "R-2": {
+      "status": "✗",
+      "note": "CMB z>1 model not implemented"
+    },
+    "R-3": {
+      "status": "✗",
+      "cv_pct": 54.32249399723421
+    },
+    "R-4'": {
+      "status": "△",
+      "true_best": "kappa^36 * alpha^12",
+      "true_best_error_dex": 0.008466411157172615,
+      "unit_system_issue": true,
+      "first_principles": false
+    },
+    "R-5": {
+      "status": "✗",
+      "mae_sigma": 1.030162857404775
+    },
+    "R-6": {
+      "status": "✓",
+      "p_value": 0.016666666666666666
+    }
+  }
+}

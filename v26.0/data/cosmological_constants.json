@@ -1,0 +1,73 @@
+{
+  "kappa": 0.1308996938995747,
+  "alpha": 0.020833333333333332,
+  "beta_ssot": 2.1666666666666665,
+  "chi2_baseline": 8.4884,
+  "r_base_ssot": 11.459155902616465,
+  "gamma_min": -5.0,
+  "gamma_max": 5.0,
+  "beta0_min": -5.0,
+  "beta0_max": 10.0,
+  "k_pivot": 0.4,
+  "dk": 0.05,
+  "alpha_bounds": [0.1, 100.0],
+  "r_base_bounds": [1.0, 500.0],
+  "beta_bounds": [0.0, 10.0],
+  "gamma_boundary_threshold": 0.01,
+  "gamma_exact_boundary_tol": 1e-9,
+  "delta_d_bounds": [0.0, 30.0],
+  "k_c_bounds": [0.01, 5.0],
+  "delta_chi2_threshold": 1.0,
+  "initial_values": {
+    "section_1": [1.0, 0.5],
+    "section_2": [11.459, 2.16],
+    "section_3": [0.0, 2.16]
+  },
+  "scaling_laws": {
+    "growth_index": 0.55,
+    "rz_min": 2.0,
+    "rz_max": 1000.0
+  },
+  "H0_planck": 67.4,
+  "H0_local": 73.0,
+  "H0_ksau": 76.05,
+  "omega_m0": 0.315,
+  "omega_b0": 0.0486,
+  "omega_lambda0": 0.685,
+  "omega_r0": 9.2e-05,
+  "hubble_scenarios": {
+    "Scenario 1": { "omega_tens0": 0.091, "omega_m_baseline": 0.315 },
+    "Scenario 2": { "omega_tens0": 0.3333333333333333, "omega_m_baseline": 0.315 }
+  },
+  "alpha_ksau": 0.020833333333333332,
+  "Xi_gap_factor": 1048576.0,
+  "clustering_efficiency_xi": 0.5,
+  "scaling_factors": {
+    "projection_4d_3d": 1.3333333333333333,
+    "isw_geometric_factor": 3.0,
+    "growth_index_standard": 0.55,
+    "gamma_app_derived": 0.623,
+    "neutrino_suppression_slope": 0.6,
+    "neutrino_density_constant": 93.14,
+    "omega_m_ref_sigma8": 0.3
+  },
+  "filament_branching": {
+    "B_predicted": 3.9375,
+    "B_eff": 4.0,
+    "D": 1.9791666666666667
+  },
+  "gw_background": { "Omega_GW_h2": 1e-08, "r_tensor_to_scalar": 0.0036 },
+  "sigma8": 0.811,
+  "n_s": 0.9667,
+  "R_cell": 20.1,
+  "beta_ksau": 2.1666666666666665,
+  "k_nl_scale": 0.1309,
+  "baryon_feedback": { "k_baryon_factor": 16.0, "baryon_geom_ratio": 10.0 },
+  "normalization_sigma8": 0.9415,
+  "sum_mnu": 0.0591,
+  "survey_data": {
+    "DES Y3": { "S8_obs": 0.759, "S8_err": 0.025, "k_eff": 0.15, "z_eff": 0.33 },
+    "HSC Y3": { "S8_obs": 0.776, "S8_err": 0.033, "k_eff": 0.35, "z_eff": 0.6 },
+    "KiDS-Legacy": { "S8_obs": 0.815, "S8_err": 0.021, "k_eff": 0.7, "z_eff": 0.26 }
+  }
+}

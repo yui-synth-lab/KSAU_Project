@@ -1,0 +1,35 @@
+{
+  "model_name": "Leech Shell Quantization (v24.0)",
+  "date": "2026-02-18",
+  "consistency": {
+    "r0_from_des": 19.9,
+    "r0_from_kids": 11.667261889578034,
+    "r0_discrepancy": 0.5215997598537371
+  },
+  "predictions": {
+    "unified_r0": 15.237405015375908,
+    "survey_predictions": {
+      "DES": {
+        "predicted_r_cell": 30.474810030751815,
+        "observed_r_cell": 39.8,
+        "residual": -9.325189969248182,
+        "relative_error": 0.2343012555087483,
+        "shell_assignment": [
+          2,
+          3
+        ]
+      },
+      "KiDS": {
+        "predicted_r_cell": 21.54894482811643,
+        "observed_r_cell": 16.5,
+        "residual": 5.048944828116429,
+        "relative_error": 0.3059966562494806,
+        "shell_assignment": [
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "rmse_percent": 27.251700127591903
+}

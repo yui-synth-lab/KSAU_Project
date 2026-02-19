@@ -1,0 +1,34 @@
+{
+  "theoretical_resonance": {
+    "R_cell": 20.1,
+    "k_res": 0.04975124378109452,
+    "kappa": 0.1308996938995747,
+    "unit": "h/Mpc"
+  },
+  "empirical_pivot": {
+    "k_pivot": 0.04772082519790255,
+    "error_pct": 4.081141352215866
+  },
+  "barrier_model": {
+    "formula": "B(k) = kappa * ln|k/k_res|",
+    "k_points": [
+      0.01,
+      0.02,
+      0.04772082519790255,
+      0.1,
+      0.2
+    ],
+    "B_values": [
+      -0.21002206177964555,
+      -0.11928930834261658,
+      -0.005454272590311072,
+      0.09138562148488076,
+      0.18211837521496874
+    ]
+  },
+  "interpretation": {
+    "regime_large_scale": "k < k_res: Global manifold constraint (B increases with k towards k_res)",
+    "regime_small_scale": "k > k_res: Internal unknotting dominance (B decreases/unlocks at small scales)",
+    "consistency": "95.9% agreement between k_pivot and 1/R_cell strongly suggests geometric origin."
+  }
+}

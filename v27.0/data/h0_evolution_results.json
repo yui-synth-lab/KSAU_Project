@@ -1,0 +1,12 @@
+{
+  "model": "R_cell(z) = R_cell_geom * (1 + epsilon0 * (1+z)^-3)",
+  "epsilon0": 0.04513888888888888,
+  "h0_planck": 67.4,
+  "h0_ksau_z0": 76.1328903654485,
+  "h0_sh0es_equivalent": 74.35219003633313,
+  "chi2_sh0es": 1.8284178943585832,
+  "consistency": {
+    "sh0es_match": true,
+    "ksau_sso_match": true
+  }
+}

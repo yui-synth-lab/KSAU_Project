@@ -1,0 +1,25 @@
+{
+  "mae_sigma": 0.032506801570494515,
+  "verdict": "SUCCESS",
+  "beta_geo": 2.1666666666666665,
+  "iterations": [
+    {
+      "excluded": "DES Y3",
+      "r0_opt": 20.206629262756177,
+      "sigma_diff": 0.03843629321771781,
+      "status": "PASSED"
+    },
+    {
+      "excluded": "HSC Y3",
+      "r0_opt": 19.993309101944384,
+      "sigma_diff": -0.010960219138543502,
+      "status": "PASSED"
+    },
+    {
+      "excluded": "KiDS-Legacy",
+      "r0_opt": 19.962423180010347,
+      "sigma_diff": 0.04812389235522223,
+      "status": "PASSED"
+    }
+  ]
+}

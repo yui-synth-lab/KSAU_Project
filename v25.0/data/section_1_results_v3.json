@@ -1,0 +1,516 @@
+{
+  "date": "2026-02-18",
+  "session": "v25.0 Session 3",
+  "section": "Section 1 v2",
+  "ng_md_addressed": [
+    "P1 (KiDS z_eff rerun)",
+    "P2 (physical constraints)",
+    "P3 (gamma>0 baseline)",
+    "M-1 (KiDS z_eff interpretation threshold)"
+  ],
+  "ssot": {
+    "kappa": 0.1308996938995747,
+    "alpha": 0.020833333333333332,
+    "beta_ssot": 2.1666666666666665,
+    "r_base_ssot": 11.459155902616466
+  },
+  "physical_constraints_applied": {
+    "A": "(1.0, 200.0)",
+    "gamma": "(0.001, 2.0)",
+    "beta0": "(-5.0, 10.0)",
+    "dbeta": "(-10.0, 10.0)",
+    "post_opt_sanity": "r_z∈[2.0,80.0] Mpc/h AND beta_eff>0"
+  },
+  "v24_baseline": {
+    "mae_sigma": 1.03
+  },
+  "v25_v1_loo_mae": 1.6253,
+  "section_1b_loo_cv_v2": {
+    "per_fold": {
+      "DES Y3": {
+        "A_loo": 48.3176,
+        "gamma_loo": 0.001,
+        "beta0_loo": 2.2506,
+        "dbeta_loo": -0.4622,
+        "beta_eff_ho": 3.1274,
+        "rz_pred_ho": 19.842,
+        "s8_pred": 0.6855,
+        "s8_obs_z": 0.6488,
+        "s8_err_z": 0.0214,
+        "tension": 1.7155,
+        "train_chi2": 0.9757,
+        "sanity_valid": true,
+        "sanity_issues": []
+      },
+      "CFHTLenS": {
+        "A_loo": 20.2306,
+        "gamma_loo": 0.001,
+        "beta0_loo": -2.2296,
+        "dbeta_loo": -2.784,
+        "beta_eff_ho": 2.2512,
+        "rz_pred_ho": 9.501,
+        "s8_pred": 0.6396,
+        "s8_obs_z": 0.6216,
+        "s8_err_z": 0.0548,
+        "tension": 0.3284,
+        "train_chi2": 1.2572,
+        "sanity_valid": true,
+        "sanity_issues": []
+      },
+      "DLS": {
+        "A_loo": 13.1437,
+        "gamma_loo": 0.6195,
+        "beta0_loo": -5.0,
+        "dbeta_loo": -6.282,
+        "beta_eff_ho": 4.5117,
+        "rz_pred_ho": 5.078,
+        "s8_pred": 0.5952,
+        "s8_obs_z": 0.6497,
+        "s8_err_z": 0.0421,
+        "tension": -1.2948,
+        "train_chi2": 0.0226,
+        "sanity_valid": true,
+        "sanity_issues": []
+      },
+      "HSC Y3": {
+        "A_loo": 29.3649,
+        "gamma_loo": 0.001,
+        "beta0_loo": -1.6419,
+        "dbeta_loo": -3.0234,
+        "beta_eff_ho": 1.5321,
+        "rz_pred_ho": 14.307,
+        "s8_pred": 0.6059,
+        "s8_obs_z": 0.5992,
+        "s8_err_z": 0.0255,
+        "tension": 0.2627,
+        "train_chi2": 1.3924,
+        "sanity_valid": true,
+        "sanity_issues": []
+      },
+      "KiDS-Legacy": {
+        "A_loo": 1.0,
+        "gamma_loo": 0.0062,
+        "beta0_loo": -3.7219,
+        "dbeta_loo": 1.7197,
+        "beta_eff_ho": -4.3352,
+        "rz_pred_ho": 2.73,
+        "s8_pred": 0.6618,
+        "s8_obs_z": 0.7177,
+        "s8_err_z": 0.0185,
+        "tension": -3.0239,
+        "train_chi2": 0.5254,
+        "sanity_valid": false,
+        "sanity_issues": [
+          "beta_eff=-4.3352 ≤ 0 (unphysical: (1+z) growth inverted)"
+        ]
+      }
+    },
+    "mae_all_folds": 1.3251,
+    "mae_valid_folds": 0.9003,
+    "mae_excl_kids": 0.9003,
+    "n_valid_folds": 4,
+    "n_degen_folds": 1,
+    "valid_fold_names": [
+      "DES Y3",
+      "CFHTLenS",
+      "DLS",
+      "HSC Y3"
+    ],
+    "degen_fold_names": [
+      "KiDS-Legacy"
+    ],
+    "n_surveys": 5,
+    "n_params": 4,
+    "dof_ratio": 0.8,
+    "freedom_note": "4 params / 5 data points = 0.80 (over-fitting risk: HIGH per auditor directive)",
+    "constraint_note": "P2 fix: A∈(1,200), γ∈(0.001,2), β₀∈(-5,10), δβ∈(-10,10). Degenerate folds flagged by sanity check."
+  },
+  "section_1_aic_bic_v2": {
+    "n_data": 5,
+    "note": "AIC = 2k + χ²_min, BIC = k×ln(n) + χ²_min (Gaussian likelihood). P3 fix: M0 γ>0 enforced.",
+    "p3_fix_note": "P3 fix applied: baseline_cost() now includes 'if A<=0 or gamma<=0: return 1e9'. v1 had gamma_fit=-0.9301 (unphysical).",
+    "M0_baseline": {
+      "model": "R₀ = A × k^(-γ) × (1+z)^β_SSoT (2 params, β fixed, γ>0 enforced)",
+      "k": 2,
+      "chi2": 3.4224,
+      "AIC": 7.4224,
+      "BIC": 6.6413,
+      "A_fit": 28.2712,
+      "gamma_fit": 0.0,
+      "gamma_positive_enforced": true
+    },
+    "M1_cross_term": {
+      "model": "R₀ = A × k^(-γ) × (1+z)^(β₀+δβ ln k) (4 params, physical constraints)",
+      "k": 4,
+      "chi2": 1.3556,
+      "AIC": 9.3556,
+      "BIC": 7.7934
+    },
+    "M2_two_regime": {
+      "model": "Two-regime β: β_low (k≤0.35) / β_high (k>0.35) (4 params)",
+      "k": 4,
+      "chi2": 0.009,
+      "AIC": 8.009,
+      "BIC": 6.4467
+    },
+    "preferred_by_AIC": "M0_baseline",
+    "preferred_by_BIC": "M2_two_regime",
+    "v1_comparison": {
+      "v1_M0_gamma_fit": -0.9301,
+      "v1_M0_chi2": 1.2747,
+      "v1_M0_AIC": 5.2747,
+      "v2_M0_gamma_fit": 0.0,
+      "v2_M0_chi2": 3.4224,
+      "v2_M0_AIC": 7.4224,
+      "note": "v1 M0 had γ=-0.9301 (unphysical γ<0). v2 enforces γ>0."
+    }
+  },
+  "section_p1_kids_zeff_variants": {
+    "variants": {
+      "z026_published": {
+        "kids_zeff_used": 0.26,
+        "mae_all_folds": 1.3251,
+        "mae_valid_folds": 0.9003,
+        "mae_excl_kids": 0.9003,
+        "n_valid_folds": 4,
+        "n_degen_folds": 1,
+        "degen_fold_names": [
+          "KiDS-Legacy"
+        ],
+        "kids_tension": -3.0239,
+        "kids_rz": 2.73,
+        "kids_beta_eff": -4.3352,
+        "kids_sanity_valid": false,
+        "kids_sanity_issues": [
+          "beta_eff=-4.3352 ≤ 0 (unphysical: (1+z) growth inverted)"
+        ],
+        "des_tension": 1.7155,
+        "per_fold": {
+          "DES Y3": {
+            "A_loo": 48.3176,
+            "gamma_loo": 0.001,
+            "beta0_loo": 2.2506,
+            "dbeta_loo": -0.4622,
+            "beta_eff_ho": 3.1274,
+            "rz_pred_ho": 19.842,
+            "s8_pred": 0.6855,
+            "s8_obs_z": 0.6488,
+            "s8_err_z": 0.0214,
+            "tension": 1.7155,
+            "train_chi2": 0.9757,
+            "sanity_valid": true,
+            "sanity_issues": []
+          },
+          "CFHTLenS": {
+            "A_loo": 20.2306,
+            "gamma_loo": 0.001,
+            "beta0_loo": -2.2296,
+            "dbeta_loo": -2.784,
+            "beta_eff_ho": 2.2512,
+            "rz_pred_ho": 9.501,
+            "s8_pred": 0.6396,
+            "s8_obs_z": 0.6216,
+            "s8_err_z": 0.0548,
+            "tension": 0.3284,
+            "train_chi2": 1.2572,
+            "sanity_valid": true,
+            "sanity_issues": []
+          },
+          "DLS": {
+            "A_loo": 13.1437,
+            "gamma_loo": 0.6195,
+            "beta0_loo": -5.0,
+            "dbeta_loo": -6.282,
+            "beta_eff_ho": 4.5117,
+            "rz_pred_ho": 5.078,
+            "s8_pred": 0.5952,
+            "s8_obs_z": 0.6497,
+            "s8_err_z": 0.0421,
+            "tension": -1.2948,
+            "train_chi2": 0.0226,
+            "sanity_valid": true,
+            "sanity_issues": []
+          },
+          "HSC Y3": {
+            "A_loo": 29.3649,
+            "gamma_loo": 0.001,
+            "beta0_loo": -1.6419,
+            "dbeta_loo": -3.0234,
+            "beta_eff_ho": 1.5321,
+            "rz_pred_ho": 14.307,
+            "s8_pred": 0.6059,
+            "s8_obs_z": 0.5992,
+            "s8_err_z": 0.0255,
+            "tension": 0.2627,
+            "train_chi2": 1.3924,
+            "sanity_valid": true,
+            "sanity_issues": []
+          },
+          "KiDS-Legacy": {
+            "A_loo": 1.0,
+            "gamma_loo": 0.0062,
+            "beta0_loo": -3.7219,
+            "dbeta_loo": 1.7197,
+            "beta_eff_ho": -4.3352,
+            "rz_pred_ho": 2.73,
+            "s8_pred": 0.6618,
+            "s8_obs_z": 0.7177,
+            "s8_err_z": 0.0185,
+            "tension": -3.0239,
+            "train_chi2": 0.5254,
+            "sanity_valid": false,
+            "sanity_issues": [
+              "beta_eff=-4.3352 ≤ 0 (unphysical: (1+z) growth inverted)"
+            ]
+          }
+        }
+      },
+      "z526_mean_nz": {
+        "kids_zeff_used": 0.526,
+        "mae_all_folds": 1.2458,
+        "mae_valid_folds": 1.0511,
+        "mae_excl_kids": 0.8263,
+        "n_valid_folds": 2,
+        "n_degen_folds": 3,
+        "degen_fold_names": [
+          "CFHTLenS",
+          "HSC Y3",
+          "KiDS-Legacy"
+        ],
+        "kids_tension": -2.924,
+        "kids_rz": 6.262,
+        "kids_beta_eff": -4.3352,
+        "kids_sanity_valid": false,
+        "kids_sanity_issues": [
+          "beta_eff=-4.3352 ≤ 0 (unphysical: (1+z) growth inverted)"
+        ],
+        "des_tension": 0.8824,
+        "per_fold": {
+          "DES Y3": {
+            "A_loo": 24.4228,
+            "gamma_loo": 0.001,
+            "beta0_loo": -0.8878,
+            "dbeta_loo": -1.7665,
+            "beta_eff_ho": 2.4635,
+            "rz_pred_ho": 12.12,
+            "s8_pred": 0.6677,
+            "s8_obs_z": 0.6488,
+            "s8_err_z": 0.0214,
+            "tension": 0.8824,
+            "train_chi2": 1.0807,
+            "sanity_valid": true,
+            "sanity_issues": []
+          },
+          "CFHTLenS": {
+            "A_loo": 7.6396,
+            "gamma_loo": 0.001,
+            "beta0_loo": -3.6629,
+            "dbeta_loo": -1.9085,
+            "beta_eff_ho": -0.5912,
+            "rz_pred_ho": 9.336,
+            "s8_pred": 0.6391,
+            "s8_obs_z": 0.6216,
+            "s8_err_z": 0.0548,
+            "tension": 0.3184,
+            "train_chi2": 1.0969,
+            "sanity_valid": false,
+            "sanity_issues": [
+              "beta_eff=-0.5912 ≤ 0 (unphysical: (1+z) growth inverted)"
+            ]
+          },
+          "DLS": {
+            "A_loo": 6.2528,
+            "gamma_loo": 0.5189,
+            "beta0_loo": -5.0,
+            "dbeta_loo": -4.5658,
+            "beta_eff_ho": 1.9133,
+            "rz_pred_ho": 6.157,
+            "s8_pred": 0.5984,
+            "s8_obs_z": 0.6497,
+            "s8_err_z": 0.0421,
+            "tension": -1.2198,
+            "train_chi2": 0.0257,
+            "sanity_valid": true,
+            "sanity_issues": []
+          },
+          "HSC Y3": {
+            "A_loo": 4.2785,
+            "gamma_loo": 0.001,
+            "beta0_loo": -4.9891,
+            "dbeta_loo": -1.3788,
+            "beta_eff_ho": -3.5416,
+            "rz_pred_ho": 22.629,
+            "s8_pred": 0.6218,
+            "s8_obs_z": 0.5992,
+            "s8_err_z": 0.0255,
+            "tension": 0.8844,
+            "train_chi2": 0.6503,
+            "sanity_valid": false,
+            "sanity_issues": [
+              "beta_eff=-3.5416 ≤ 0 (unphysical: (1+z) growth inverted)"
+            ]
+          },
+          "KiDS-Legacy": {
+            "A_loo": 1.0,
+            "gamma_loo": 0.0062,
+            "beta0_loo": -3.7219,
+            "dbeta_loo": 1.7197,
+            "beta_eff_ho": -4.3352,
+            "rz_pred_ho": 6.262,
+            "s8_pred": 0.5973,
+            "s8_obs_z": 0.646,
+            "s8_err_z": 0.0166,
+            "tension": -2.924,
+            "train_chi2": 0.5254,
+            "sanity_valid": false,
+            "sanity_issues": [
+              "beta_eff=-4.3352 ≤ 0 (unphysical: (1+z) growth inverted)"
+            ]
+          }
+        }
+      },
+      "z482_s8weighted": {
+        "kids_zeff_used": 0.482,
+        "mae_all_folds": 1.2993,
+        "mae_valid_folds": 0.8738,
+        "mae_excl_kids": 0.8744,
+        "n_valid_folds": 3,
+        "n_degen_folds": 2,
+        "degen_fold_names": [
+          "HSC Y3",
+          "KiDS-Legacy"
+        ],
+        "kids_tension": -2.9986,
+        "kids_rz": 5.516,
+        "kids_beta_eff": -4.3352,
+        "kids_sanity_valid": false,
+        "kids_sanity_issues": [
+          "beta_eff=-4.3352 ≤ 0 (unphysical: (1+z) growth inverted)"
+        ],
+        "des_tension": 1.0657,
+        "per_fold": {
+          "DES Y3": {
+            "A_loo": 32.4785,
+            "gamma_loo": 0.001,
+            "beta0_loo": -0.1754,
+            "dbeta_loo": -1.7239,
+            "beta_eff_ho": 3.0951,
+            "rz_pred_ho": 13.462,
+            "s8_pred": 0.6716,
+            "s8_obs_z": 0.6488,
+            "s8_err_z": 0.0214,
+            "tension": 1.0657,
+            "train_chi2": 1.078,
+            "sanity_valid": true,
+            "sanity_issues": []
+          },
+          "CFHTLenS": {
+            "A_loo": 9.8688,
+            "gamma_loo": 0.001,
+            "beta0_loo": -3.3249,
+            "dbeta_loo": -2.1642,
+            "beta_eff_ho": 0.1581,
+            "rz_pred_ho": 9.372,
+            "s8_pred": 0.6392,
+            "s8_obs_z": 0.6216,
+            "s8_err_z": 0.0548,
+            "tension": 0.3206,
+            "train_chi2": 1.1367,
+            "sanity_valid": true,
+            "sanity_issues": []
+          },
+          "DLS": {
+            "A_loo": 7.1568,
+            "gamma_loo": 0.5367,
+            "beta0_loo": -5.0,
+            "dbeta_loo": -4.8769,
+            "beta_eff_ho": 2.3842,
+            "rz_pred_ho": 5.944,
+            "s8_pred": 0.5977,
+            "s8_obs_z": 0.6497,
+            "s8_err_z": 0.0421,
+            "tension": -1.2351,
+            "train_chi2": 0.0252,
+            "sanity_valid": true,
+            "sanity_issues": []
+          },
+          "HSC Y3": {
+            "A_loo": 5.5232,
+            "gamma_loo": 0.001,
+            "beta0_loo": -4.8118,
+            "dbeta_loo": -1.7419,
+            "beta_eff_ho": -2.9831,
+            "rz_pred_ho": 22.468,
+            "s8_pred": 0.6216,
+            "s8_obs_z": 0.5992,
+            "s8_err_z": 0.0255,
+            "tension": 0.8763,
+            "train_chi2": 0.7117,
+            "sanity_valid": false,
+            "sanity_issues": [
+              "beta_eff=-2.9831 ≤ 0 (unphysical: (1+z) growth inverted)"
+            ]
+          },
+          "KiDS-Legacy": {
+            "A_loo": 1.0,
+            "gamma_loo": 0.0062,
+            "beta0_loo": -3.7219,
+            "dbeta_loo": 1.7197,
+            "beta_eff_ho": -4.3352,
+            "rz_pred_ho": 5.516,
+            "s8_pred": 0.6057,
+            "s8_obs_z": 0.6564,
+            "s8_err_z": 0.0169,
+            "tension": -2.9986,
+            "train_chi2": 0.5254,
+            "sanity_valid": false,
+            "sanity_issues": [
+              "beta_eff=-4.3352 ≤ 0 (unphysical: (1+z) growth inverted)"
+            ]
+          }
+        }
+      }
+    },
+    "comparison": [
+      {
+        "variant": "z026_published",
+        "kids_zeff": 0.26,
+        "KiDS_tension_σ": -3.0239,
+        "DES_tension_σ": 1.7155,
+        "MAE_all_σ": 1.3251,
+        "MAE_valid_σ": 0.9003,
+        "n_valid_folds": 4
+      },
+      {
+        "variant": "z526_mean_nz",
+        "kids_zeff": 0.526,
+        "KiDS_tension_σ": -2.924,
+        "DES_tension_σ": 0.8824,
+        "MAE_all_σ": 1.2458,
+        "MAE_valid_σ": 1.0511,
+        "n_valid_folds": 2
+      },
+      {
+        "variant": "z482_s8weighted",
+        "kids_zeff": 0.482,
+        "KiDS_tension_σ": -2.9986,
+        "DES_tension_σ": 1.0657,
+        "MAE_all_σ": 1.2993,
+        "MAE_valid_σ": 0.8738,
+        "n_valid_folds": 3
+      }
+    ],
+    "conclusion": "KiDS tension with z_eff=0.26 (published): -3.0239σ  [n_valid=4/5] | KiDS tension with z_eff=0.526 (mean n(z)): -2.9240σ  (Δ improvement=+0.0999σ, n_valid=2/5) | KiDS tension with z_eff=0.482 (S8-weighted): -2.9986σ  (Δ improvement=+0.0253σ, n_valid=3/5) | RESULT: Updated z_eff does NOT meaningfully reduce KiDS tension. Reason(s): |Δ|=0.100σ < 0.5σ threshold (KiDS tension reduction is within measurement error); n_valid=2 < 3 (updated z_eff degrades fold validity). Published z_eff=0.26 (lensing-efficiency-weighted) remains the preferred value. KiDS is a structural outlier, not a z_eff miscalibration."
+  },
+  "m1_fix": {
+    "issue": "v2 _interpret_kids_variants() triggered 'meaningful' for Δ=0.099σ improvement (< error bar)",
+    "fix": "Applied threshold: |Δtension| > 0.5σ AND n_valid >= 3",
+    "old_conclusion": "KiDS tension with z_eff=0.26 (published): -3.0239σ | KiDS tension with z_eff=0.526 (mean n(z)): -2.9240σ (Δ=+0.0999σ vs published) | KiDS tension with z_eff=0.482 (S8-weighted): -2.9986σ (Δ=+0.0253σ vs published) | RESULT: Updated z_eff REDUCES KiDS tension. Section 3 trigger was meaningful.",
+    "new_conclusion": "KiDS tension with z_eff=0.26 (published): -3.0239σ  [n_valid=4/5] | KiDS tension with z_eff=0.526 (mean n(z)): -2.9240σ  (Δ improvement=+0.0999σ, n_valid=2/5) | KiDS tension with z_eff=0.482 (S8-weighted): -2.9986σ  (Δ improvement=+0.0253σ, n_valid=3/5) | RESULT: Updated z_eff does NOT meaningfully reduce KiDS tension. Reason(s): |Δ|=0.100σ < 0.5σ threshold (KiDS tension reduction is within measurement error); n_valid=2 < 3 (updated z_eff degrades fold validity). Published z_eff=0.26 (lensing-efficiency-weighted) remains the preferred value. KiDS is a structural outlier, not a z_eff miscalibration.",
+    "verdict": "NOT meaningful (z026_published remains preferred)",
+    "threshold_delta_sigma": 0.5,
+    "threshold_n_valid": 3,
+    "best_alt_delta": 0.0999,
+    "best_alt_nvalid": 3
+  }
+}

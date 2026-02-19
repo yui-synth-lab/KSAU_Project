@@ -1,0 +1,52 @@
+{
+  "benchmarks": {
+    "Planck_2018_Primary": {
+      "S8_z0": 0.834,
+      "S8_err": 0.016,
+      "z_eff": 1100,
+      "method": "CMB Temperature/Polarization",
+      "notes": "Planck 2018 primary CMB baseline (TT+TE+EE+lowE+lensing)"
+    },
+    "Planck_PR4_Lensing": {
+      "S8_z0": 0.832,
+      "S8_err": 0.025,
+      "z_eff": 2.0,
+      "k_eff": 0.07,
+      "method": "CMB Lensing",
+      "notes": "Planck PR4 CMB Lensing (extrapolated to z=0 in paper)"
+    },
+    "ACT_DR6_Lensing": {
+      "S8_z0": 0.840,
+      "S8_err": 0.028,
+      "z_eff": 1.7,
+      "k_eff": 0.07,
+      "method": "CMB Lensing",
+      "notes": "ACT-DR6 CMB Lensing (extrapolated to z=0 in paper)"
+    },
+    "DES_Y3": {
+      "S8_z0": 0.759,
+      "S8_err": 0.025,
+      "z_eff": 0.33,
+      "method": "Weak Lensing & Galaxy Clustering",
+      "notes": "DES Year 3 cosmic shear and clustering"
+    },
+    "HSC_Y3": {
+      "S8_z0": 0.776,
+      "S8_err": 0.033,
+      "z_eff": 0.6,
+      "method": "Weak Lensing",
+      "notes": "HSC Year 3 cosmic shear"
+    },
+    "KiDS_Legacy": {
+      "S8_z0": 0.815,
+      "S8_err": 0.021,
+      "z_eff": 0.26,
+      "method": "Weak Lensing",
+      "notes": "KiDS-Legacy (1000 deg2)"
+    }
+  },
+  "metadata": {
+    "phase": "v27.0 Cosmological Expansion",
+    "last_updated": "2026-02-19"
+  }
+}

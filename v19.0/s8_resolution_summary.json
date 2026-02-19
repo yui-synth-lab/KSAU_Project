@@ -1,0 +1,8 @@
+{
+  "Om_eff": 0.2695,
+  "S8_ksau": 0.7686694337186392,
+  "gamma_refined": 0.7270133244273334,
+  "xi": 0.5,
+  "status": "REJECTED/INCOMPLETE",
+  "verdict": "Static Model REJECTED. Estimated gamma (0.7270) > 0.70, indicating insufficient growth suppression."
+}

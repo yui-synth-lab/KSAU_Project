@@ -1,0 +1,53 @@
+{
+  "params": [
+    8.41683478497692,
+    10.0,
+    -1.1018685397707486,
+    0.04772082519790255
+  ],
+  "chi2": 1.526150568767432,
+  "per_survey": {
+    "DES Y3": {
+      "gamma": -0.989,
+      "rz": 7.959,
+      "s8_pred_eff_z0": 0.768,
+      "tension": 0.361
+    },
+    "CFHTLenS": {
+      "gamma": -1.066,
+      "rz": 8.367,
+      "s8_pred_eff_z0": 0.7668,
+      "tension": 0.285
+    },
+    "DLS": {
+      "gamma": -1.077,
+      "rz": 7.618,
+      "s8_pred_eff_z0": 0.7609,
+      "tension": -1.078
+    },
+    "HSC Y3": {
+      "gamma": -1.098,
+      "rz": 11.001,
+      "s8_pred_eff_z0": 0.7733,
+      "tension": -0.081
+    },
+    "KiDS-Legacy": {
+      "gamma": -1.102,
+      "rz": 39.463,
+      "s8_pred_eff_z0": 0.8207,
+      "tension": 0.272
+    },
+    "Planck_PR4": {
+      "gamma": 0.87,
+      "rz": 90.249,
+      "s8_pred_eff_z0": 0.8321,
+      "tension": 0.004
+    },
+    "ACT_DR6": {
+      "gamma": 0.87,
+      "rz": 113.393,
+      "s8_pred_eff_z0": 0.8325,
+      "tension": -0.27
+    }
+  }
+}

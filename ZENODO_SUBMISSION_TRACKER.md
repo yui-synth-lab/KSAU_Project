@@ -12,6 +12,7 @@ This document tracks the publication status of KSAU project versions on Zenodo t
 | **v6.0** | ✅ Published | [10.5281/zenodo.18631886](https://doi.org/10.5281/zenodo.18631886) | 2026-02-13 | Quark masses & CKM baseline (R²=0.9998) |
 | **v6.9** | ✅ Published | [10.5281/zenodo.18598989](https://doi.org/10.5281/zenodo.18598989) | 2026-02-13 | Geometric Axion Letter (0.392 MeV prediction) |
 | **v16.1** | ⏳ To be published | TBD | 2026-02-18 | The Geometric Bridge. Full integration. Replication package. ⚠️ DOI 未発行（Gemini 記載の `10.5281/zenodo.18831900` は未確認・使用禁止） |
+| **v23.0** | ⏳ To be published | TBD | 2026-02-18 | σ₈ Tension Finality. Honest 1.36σ reporting with BAO & Non-linear Entanglement. |
 | **v7.1** | ⏳ To be published | TBD | Pending | Fibonacci Resonance (13/5 ≈ φ²). PDF作成中 |
 | **v13.8** | ⏳ To be published | TBD | Pending | Gravitational constant reconstruction (p=0.022). FINALIZED |
 | **v14.0 / v15.0** | Not submitted independently | — | — | Results integrated into **Paper 2** (Phys. Rev. D) |

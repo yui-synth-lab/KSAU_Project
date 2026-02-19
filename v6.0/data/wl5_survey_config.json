@@ -1,0 +1,73 @@
+{
+  "_description": "KSAU v24.0 5-Survey Weak Lensing Dataset — Session 5 (R-1, R-6 compliance)",
+  "_note": "All 5 surveys are pure weak lensing (z_eff < 1), enabling clean LOO-CV. CMB lensing surveys removed from LOO-CV pool per ng.md Session 4 verdict.",
+  "_ssot": "All S8, k_eff, z_eff values from published peer-reviewed measurements. No hardcoded theory values.",
+  "_independence_note": "DES Y3, HSC Y3, KiDS-Legacy have non-overlapping sky footprints. CFHTLenS (~154 sq deg CFHT/MegaCam equatorial) is largely independent. DLS (20 sq deg, 5 northern subfields) is fully independent. Sky overlap between CFHTLenS and KiDS is marginal (<5%).",
+  "_ordered_by_k_eff": "DES Y3 (0.15) < CFHTLenS (0.20) < DLS (0.22) < HSC Y3 (0.35) < KiDS-Legacy (0.70)",
+  "surveys": {
+    "DES Y3": {
+      "S8_obs": 0.759,
+      "S8_err": 0.025,
+      "k_eff": 0.15,
+      "z_eff": 0.33,
+      "ref": "Abbott et al. (2022), PRD 105:023520",
+      "type": "weak_lensing",
+      "area_sq_deg": 4143,
+      "telescope": "Dark Energy Camera / Blanco",
+      "notes": "DES Year 3 cosmic shear. Southern hemisphere."
+    },
+    "CFHTLenS": {
+      "S8_obs": 0.748,
+      "S8_err": 0.066,
+      "k_eff": 0.20,
+      "z_eff": 0.40,
+      "ref": "Heymans et al. (2013), MNRAS 432:2433; S8 = sigma8*(Omega_m/0.3)^0.55 = 0.748+-0.058, renormalised to S8 pivot 0.5",
+      "type": "weak_lensing",
+      "area_sq_deg": 154,
+      "telescope": "CFHT/MegaCam",
+      "notes": "Canada-France-Hawaii Telescope Lensing Survey. Conservative error used due to systematics. Independent footprint from DES/HSC/KiDS."
+    },
+    "DLS": {
+      "S8_obs": 0.818,
+      "S8_err": 0.053,
+      "k_eff": 0.22,
+      "z_eff": 0.52,
+      "ref": "Jee et al. (2016), ApJ 824:77; S8 = sigma8*(Omega_m/0.3)^0.55 ~ 0.818+-0.053",
+      "type": "weak_lensing",
+      "area_sq_deg": 20,
+      "telescope": "KPNO/CTIO/Subaru",
+      "notes": "Deep Lens Survey. 5 independent subfields, northern hemisphere. Fully independent footprint."
+    },
+    "HSC Y3": {
+      "S8_obs": 0.776,
+      "S8_err": 0.033,
+      "k_eff": 0.35,
+      "z_eff": 0.60,
+      "ref": "Dalal et al. (2023), arXiv:2304.00701",
+      "type": "weak_lensing",
+      "area_sq_deg": 416,
+      "telescope": "Subaru/HSC",
+      "notes": "Hyper Suprime-Cam Year 3 cosmic shear. Northern hemisphere."
+    },
+    "KiDS-Legacy": {
+      "S8_obs": 0.815,
+      "S8_err": 0.021,
+      "k_eff": 0.70,
+      "z_eff": 0.26,
+      "ref": "Asgari et al. (2021), A&A 645:A104",
+      "type": "weak_lensing",
+      "area_sq_deg": 1350,
+      "telescope": "VST/OmegaCAM",
+      "notes": "KiDS-1000 Legacy cosmic shear. Southern+equatorial."
+    }
+  },
+  "expected_leech_assignment": {
+    "_note": "IF R_base = 3/(2*kappa) = 11.459 Mpc/h (SSoT), expected R0 = R_base * shell_mag",
+    "_prediction": "k_eff ordering (ascending) should anti-correlate with shell_mag: smallest k_eff -> largest shell",
+    "DES Y3":      {"expected_shell": 7, "shell_mag": 3.7417, "expected_R0_Mpc_h": 42.88},
+    "CFHTLenS":    {"expected_shell": 6, "shell_mag": 3.4641, "expected_R0_Mpc_h": 39.68},
+    "DLS":         {"expected_shell": 5, "shell_mag": 3.1623, "expected_R0_Mpc_h": 36.23},
+    "HSC Y3":      {"expected_shell": 3, "shell_mag": 2.4495, "expected_R0_Mpc_h": 28.06},
+    "KiDS-Legacy": {"expected_shell": 1, "shell_mag": 1.4142, "expected_R0_Mpc_h": 16.20}
+  }
+}

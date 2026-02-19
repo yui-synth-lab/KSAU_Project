@@ -1,0 +1,60 @@
+{
+  "model": "Entropy Outflow Dark Energy (v24.0)",
+  "date": "2026-02-18",
+  "entropy": {
+    "dim_bulk": 24,
+    "dim_boundary": 4,
+    "dim_lost": 20,
+    "entropy_per_evaporation_step": 2.0333239444985454,
+    "total_evaporation_entropy": 40.666478889970904,
+    "kappa": 0.1308996938995747,
+    "log_1_over_kappa": 2.0333239444985454
+  },
+  "vacuum_candidates": {
+    "lambda_obs": 1.096478196143183e-52,
+    "lambda_obs_log10": -51.96,
+    "kappa": 0.1308996938995747,
+    "alpha": 0.007272205216643039,
+    "approach_1_power_law": {
+      "form": "\u039b ~ \u03ba^n",
+      "required_n": 58.84075764497849,
+      "requires_fractional_power": true,
+      "note": "Not satisfactory: suggests continuous parameter, not discrete"
+    },
+    "topological_scales": {
+      "leech_cardinality_1": 196560,
+      "e8_roots": 240,
+      "e8_vs_24cell": 10.0,
+      "24_cells": 24
+    },
+    "candidates": {
+      "kappa^12 / 24": {
+        "value": 1.0545139518247037e-12,
+        "log10": -11.976947669921273,
+        "error": 39.98305233007873
+      },
+      "kappa^10 \u00d7 \u03b1^6": {
+        "value": 2.1846560162389613e-22,
+        "log10": -21.66061693489939,
+        "error": 30.29938306510061
+      },
+      "\u03ba / Leech_cardinality": {
+        "value": 6.65952858666945e-07,
+        "log10": -6.176556512489497,
+        "error": 45.7834434875105
+      },
+      "\u03ba^20": {
+        "value": 2.1815874151989144e-18,
+        "log10": -17.661227380349445,
+        "error": 34.298772619650556
+      }
+    }
+  },
+  "energy_balance": {
+    "model": "Bulk energy dissipation",
+    "assumption": "\u039b ~ \u03ba^N_steps for some N",
+    "required_steps": 58.83918053470384,
+    "physical_interpretation": "N_steps \u2248 59 evaporation/dissipation events from initial high-energy bulk state down to current vacuum. Could correspond to cooling history or quantum state transitions."
+  },
+  "conclusion": "\u039b likely depends on interplay between bulk topology (Leech/E8), evaporation rate (\u03ba^n), and cosmological evolution. Not reducible to simple \u03ba^n power law."
+}

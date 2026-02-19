@@ -1,0 +1,6 @@
+{
+  "zeta_nu": 0.020624966531674022,
+  "gamma_loo_mean": 0.7124601524633208,
+  "status": "REJECTED",
+  "verdict": "Gamma (0.7125) still exceeds the 0.70 threshold."
+}

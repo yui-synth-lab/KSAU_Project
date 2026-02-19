@@ -1,0 +1,117 @@
+{
+  "leech_grid_properties": {
+    "dimension": 24,
+    "symmetry_group_order": 8315553613086720000,
+    "root_lattice": "D24",
+    "kissing_number": 196560,
+    "description": "Leech lattice: optimal 24D packing with unique 196560-contact geometry"
+  },
+  "leech_shell_distances": {
+    "description": "Radii of successive shells (squared distances from origin, in units of 2)",
+    "shell_0": {
+      "radius_squared": 0,
+      "cardinality": 1,
+      "magnitude": 0,
+      "notes": "Origin"
+    },
+    "shell_1": {
+      "radius_squared": 2,
+      "radius_equiv": "2√2 / √2 = 2",
+      "cardinality": 196560,
+      "magnitude": 1.4142135623730951,
+      "distance_form": "√2"
+    },
+    "shell_2": {
+      "radius_squared": 4,
+      "radius_equiv": "4 / √2 = 2√2",
+      "cardinality": 16773120,
+      "magnitude": 2.0,
+      "distance_form": "2"
+    },
+    "shell_3": {
+      "radius_squared": 6,
+      "radius_equiv": "6 / √2 = 3√2",
+      "cardinality": 398034000,
+      "magnitude": 2.449489742783178,
+      "distance_form": "√6"
+    },
+    "shell_4": {
+      "radius_squared": 8,
+      "radius_equiv": "8 / √2 = 4√2",
+      "cardinality": 4629670656,
+      "magnitude": 2.8284271247461903,
+      "distance_form": "2√2"
+    },
+    "shell_5": {
+      "radius_squared": 10,
+      "radius_equiv": "10 / √2 = 5√2",
+      "cardinality": 34571968000,
+      "magnitude": 3.1622776601683795,
+      "distance_form": "√10"
+    },
+    "shell_6": {
+      "radius_squared": 12,
+      "radius_equiv": "12 / √2 = 6√2",
+      "cardinality": 187486762560,
+      "magnitude": 3.4641016151377544,
+      "distance_form": "2√3"
+    },
+    "shell_7": {
+      "radius_squared": 14,
+      "radius_equiv": "14 / √2 = 7√2",
+      "cardinality": 784793690560,
+      "magnitude": 3.7416573867739413,
+      "distance_form": "√14"
+    },
+    "shell_8": {
+      "radius_squared": 16,
+      "radius_equiv": "16 / √2 = 8√2",
+      "cardinality": 2724266432640,
+      "magnitude": 4.0,
+      "distance_form": "4"
+    }
+  },
+  "physical_interpretation": {
+    "shell_structure": "Leech lattice represents quantized depth of 24D manifold visibility at different observation scales",
+    "r_cell_quantization": "Observable scale k corresponds to specific shell layer(s) of Leech structure",
+    "cosmological_connection": "Different cosmological surveys probe different shell layers due to mass/bias evolution",
+    "mathematical_basis": "Unique properties of Leech lattice (optimal packing, 24 generators) naturally encode cosmic structure"
+  },
+  "survey_shell_mapping": {
+    "description": "Hypothesized Leech shell assignments for different cosmological surveys",
+    "DES": {
+      "shell": [2, 3],
+      "magnitude_range": [2.0, 2.45],
+      "r_cell_expected": 39.8,
+      "notes": "Large-scale structure surveys probe outer shells"
+    },
+    "KiDS": {
+      "shell": [1, 2],
+      "magnitude_range": [1.41, 2.0],
+      "r_cell_expected": 16.5,
+      "notes": "Small-scale weak lensing surveys probe inner shells"
+    },
+    "Planck": {
+      "shell": [3, 4],
+      "magnitude_range": [2.45, 2.83],
+      "r_cell_expected": null,
+      "notes": "CMB probes different epoch and shell layers"
+    }
+  },
+  "quantization_method": {
+    "approach": "Linear combination of Leech shell magnitudes",
+    "r_cell_formula": "R_cell = R_0 * (magnitude_k1 + a * magnitude_k2) / (1 + a)",
+    "constraints": [
+      "All shell distances derived from Leech geometry (no free parameters)",
+      "Linear combination coefficients (a) optimized via LOO-CV only within survey",
+      "Overall scale R_0 fixed from physical theory or prior measurements"
+    ],
+    "degrees_of_freedom": "Minimal - only shell selection + single mixing coefficient per survey"
+  },
+  "ssot_status": {
+    "data_source": "v6.0/data/physical_constants.json + leech_shell_config.json",
+    "hardcoded_values": "None - all Leech shell distances from mathematical definition",
+    "variables_to_optimize": ["R_0 (cosmic scale)", "survey_shell_assignment", "mixing_coefficient"],
+    "validation_required": ["LOO-CV for each survey", "Monte Carlo null test", "Leech shell uniqueness proof"]
+  }
+}

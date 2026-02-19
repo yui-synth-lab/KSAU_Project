@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-18",
+  "w_new_1_fix_note": "W-NEW-1 fix (Session 7, P-S7-1): date corrected from 2026-02-19 to 2026-02-18 per SSoT unification declared in Session 4.",
+  "section": "Section 3",
+  "kids_zeff": {
+    "z_eff_published": 0.26,
+    "z_eff_mean_nz": 0.5262,
+    "z_eff_median_nz": 0.5095,
+    "z_eff_s8_weighted": 0.4823,
+    "z_eff_lens_peak": 0.2331,
+    "note_on_published": "The published z_eff=0.26 from Asgari et al. (2021) is the lensing-efficiency-weighted effective source redshift, accounting for the full n(z) convolved with the geometric lensing kernel. It is NOT the mean or median galaxy redshift.",
+    "model_approximation": "n(z) model: sum of 5 Gaussians approximating KiDS-1000 tomographic bin distributions. Actual KiDS n(z) from public data release is preferred. This is a first-principles reconstruction for comparison purposes."
+  },
+  "analysis": {
+    "published_z_eff": 0.26,
+    "reestimates": {
+      "mean": 0.5262,
+      "median": 0.5095,
+      "s8_weighted": 0.4823,
+      "lens_peak": 0.2331
+    },
+    "trigger_rerun": true,
+    "interpretation": "The published z_eff=0.26 for KiDS-Legacy is LOWER than our n(z)-based estimates (mean=0.526, median=0.509). This is expected: the lensing-efficiency weight upweights low-z sources (where lensing efficiency is higher), pulling z_eff below the galaxy mean. The published z_eff=0.26 is consistent with the standard definition used in cosmic shear analyses. Mean n(z) z_eff = 0.526 >= 0.40: True.",
+    "conclusion": "Section 1 cross-term model was re-run with updated KiDS z_eff (Session 2, P1 fix) — result: NOT meaningful (max Δtension = 0.100σ < 0.5σ threshold). [Corrected from stale pre-Session-2 text per ng.md 付記, Session 7]"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "model": "Leech Shell Optimization (v24.0)",
+  "date": "2026-02-18",
+  "best_result": {
+    "shell_indices": [
+      1
+    ],
+    "r0_mpc_h": 28.14284989122459,
+    "mixing_coeff": null,
+    "rmse_percent": 99.8520484948276,
+    "uniqueness_ratio_percent": 0.0
+  },
+  "all_results": [
+    {
+      "shell_indices": [
+        1
+      ],
+      "r0": 28.14284989122459,
+      "mixing_coeff": null,
+      "rmse": 0.998520484948276
+    },
+    {
+      "shell_indices": [
+        2
+      ],
+      "r0": 19.9,
+      "mixing_coeff": null,
+      "rmse": 0.998520484948276
+    },
+    {
+      "shell_indices": [
+        3
+      ],
+      "r0": 16.24828196046175,
+      "mixing_coeff": null,
+      "rmse": 0.998520484948276
+    },
+    {
+      "shell_indices": [
+        4
+      ],
+      "r0": 14.071424945612295,
+      "mixing_coeff": null,
+      "rmse": 0.998520484948276
+    },
+    {
+      "shell_indices": [
+        5
+      ],
+      "r0": 12.585865087470149,
+      "mixing_coeff": null,
+      "rmse": 0.998520484948276
+    }
+  ]
+}
