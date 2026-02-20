@@ -2,6 +2,8 @@
   "kappa": 0.1308996938995747,
   "pi": 3.141592653589793,
   "N_leech": 196560,
+  "c_light_km_s": 299792.458,
+  "c_light_km_s_ref": "NIST/SI 2018 exact definition: c = 299792458 m/s = 299792.458 km/s",
   "G_catalan": 0.915965594177219,
   "alpha_s": 0.118,
   "alpha_em": 0.0072973525693,
@@ -123,6 +125,8 @@
     "bulk_lattice": 24,
     "bulk_holographic": 10,
     "bulk_compact": 7,
+    "bulk_compact_note": "TAUTOLOGY: Derived from M-theory (11D) minus observable spacetime (4D) = 7. G2-holonomy compactification of 7D is defined as the M-theory compactification preserving 4D N=1 SUSY. The '7' in KSAU D_bulk_compact is ADOPTED from M-theory, not independently predicted. Connection to q_mult=7 is FREE PARAMETER (v32.0 Section A final verdict: G2 pathway CLOSED).",
+    "bulk_compact_ref": "v32.0/d_bulk_compact_mtheory_analysis.md Section 4 (2026-02-20)",
     "boundary_projection": 9,
     "time": 1,
     "m_theory": 11

@@ -73,6 +73,8 @@
   "baryon_feedback": { "k_baryon_factor": 16.0, "baryon_geom_ratio": 10.0 },
   "normalization_sigma8": 0.9415,
   "sum_mnu": 0.0591,
+  "cmb_comoving_distance_mpc": 13818.0,
+  "cmb_comoving_distance_ref": "Planck 2018 arXiv:1807.06209 Table 2 TT,TE,EE+lowE+lensing: chi_* = 13818.0 Mpc",
   "survey_data": {
     "DES Y3": { "S8_obs": 0.759, "S8_err": 0.025, "k_eff": 0.15, "z_eff": 0.33 },
     "HSC Y3": { "S8_obs": 0.776, "S8_err": 0.033, "k_eff": 0.35, "z_eff": 0.6 },

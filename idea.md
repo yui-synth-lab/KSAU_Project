@@ -1,6 +1,6 @@
 # KSAU アイデアロードマップ
 
-**最終更新:** 2026-02-20 (v30.0 Session 13 完了・v31.0 開始)
+**最終更新:** 2026-02-20 (v32.0 Session 1 完了・v33.0 開始)
 **記録者:** Claude (Theoretical Auditor)
 
 ---
@@ -39,13 +39,37 @@
 
 ---
 
+## ✅ 実現・統合済み（v31.0 追加）
+
+| アイデア | バージョン | 成果 |
+| --- | --- | --- |
+| **三者統一仮説の決着** | v31.0 S1 | $q_{mult}=D_{bulk\_compact}=\text{prime}(N_{Leech})=7$ の代数的ブリッジ構築不能。CONJECTURE 格下げ確定。三者並列表示廃止。 |
+| **BAO ブリッジ数値的偵察の完遂** | v31.0 S2 | 21通り（7種根 × 3スケール）系統的 MC 検定完了。$N_{Leech}^{1/4}/r_s \approx 1/7$ は誤差ランク 13/21、Bonferroni 補正後（α≈0.0024）有意性なし。代数的ブリッジ未発見として正式記録。 |
+| **q_mult=7 の FREE PARAMETER 宣言** | v31.0 S1–2 | $E_8$ 根系（$240=2^4\cdot3\cdot5$、7なし）および Leech コセット構成からの導出不能を確認。代数的起源不明として正式宣言。 |
+| **非標準 WZW の可能性評価** | v31.0 S1 | curved background・coset・非コンパクト WZW の3ケース評価完了。いずれも文献なし・未解決と確定。 |
+| **SSoT 整合性の完全回復** | v31.0 S3–4 | D_CMB を `cosmological_constants.json` に格納（Planck 2018）、`c_light_km_s` を `physical_constants.json` に格納。`section_a_numerical_patrol.py` の全定数が JSON から読み込まれることを独立検証済み。 |
+| **Co₀ → G₂ 写像の初期調査** | v31.0 S4 | 5経路を調査。$Co_0$ 極大部分群に $G_2$ 型なし（ATLAS 確認）。$E_8 \supset G_2$ 経由の間接的接続は概念的に存在（PARTIAL）。$N_{Leech}/N_{E_8}=819=3^2\cdot7\cdot13$ として7が現れることを確認。完全写像は未構成。 |
+| **v31.0 統合最終報告書の作成** | v31.0 S5 | `v31.0_final_report.md` 完成・査読 APPROVED。全4タスク成果・監査証跡（S1–4）・技術的欠陥（`ERR_THRESH` 循環参照）を誠実に記録。v32.0 移行承認。 |
+
+---
+
+## ✅ 実現・統合済み（v32.0 追加）
+
+| アイデア | バージョン | 成果 |
+| --- | --- | --- |
+| **Co₀ → G₂ 写像の完全決着** | v32.0 S1 | 残余3経路（7/14次元表現・PSU(3,3)有限群・Λ₂₄ルートなし格子）を全調査。全経路 CLOSED → **FREE PARAMETER 最終確定**。因子7の代数的必然性探索: Co₀ 表現論経路は完全閉鎖。 |
+| **D_bulk_compact=7 の同語反復確定** | v32.0 S1 | M 理論 G₂-holonomy コンパクト化が7次元である必然性を整理。KSAU の D_bulk_compact=7 は定義の反復（独立な予測ではない）と確定。SSoT JSON 注釈追記完了。 |
+| **n_max 動的設定の実装** | v32.0 S1 | `section_a_nmax_dynamic.py` で `n_max = round(scale_nominal / R) + 5` を実装。再実行で Bonferroni 補正後 p=0.0137 > 0.0024（主結論不変）。ERR_THRESH 循環負債はコード内明示済み。 |
+
+---
+
 ## ⚠️ 部分達成・要再検討
 
 | アイデア | バージョン | 残課題 |
 | --- | --- | --- |
 | **Leech シェル ↔ k_eff 対応** | v24.0 S1–7 | v27.0 Resonance Model により再検討。共鳴ピーク $k_{res}$ との対応。 |
 | **PMNS 混合角の幾何学的導出** | v29.0 S3– | $\theta_{23}$ の $\pi/2$ 分母、$B=4.0$ 因子の独立証明が未完。v30.0 Formal Deferral 発行済み。将来の完全理論に棚上げ。 |
-| **CS 双対性の第一原理証明** | v30.0 S2 | 統計的探索は EXPLORATORY-SIGNIFICANT で完了。非標準 WZW（curved background・coset 理論）は未調査の open question。 |
+| **CS 双対性の第一原理証明** | v31.0 S1 | 統計的探索は EXPLORATORY-SIGNIFICANT で完了（v30.0）。非標準 WZW 3ケース（curved/coset/非コンパクト）も評価完了（v31.0）。いずれも文献なし・未解決確定。第一原理証明は現フレームワーク内で不可能と整理済み。 |
 
 ---
 
@@ -58,7 +82,7 @@ v7.1 から未解決の根本的亀裂：
 $$\text{CS理論}: \ln|Z| \propto \frac{k}{4\pi} \cdot V \quad \text{vs} \quad \text{KSAU}: \ln(m) \propto \frac{\pi}{k} \cdot V$$
 
 - **v30.0 成果**: 統計的探索完了（EXPLORATORY-SIGNIFICANT, p=0.0078）。標準 WZW での第一原理証明は不可能と確定。
-- **v31.0 残課題**: 非標準 WZW（curved background・coset 構成）での導出可能性の評価。S-双対性の代数的定式化。
+- **v31.0 成果**: 非標準 WZW（curved background・coset・非コンパクト）の3ケース評価完了。いずれも文献なし・未解決と確定。この問いは v32.0 以降の探索対象外（現時点で有効な接続経路なし）。
 
 ### 問い B: トポロジー選択の恣意性
 
@@ -66,15 +90,14 @@ $$\text{CS理論}: \ln|Z| \propto \frac{k}{4\pi} \cdot V \quad \text{vs} \quad \
 
 - **検証可能な問い**: スピン 1/2 かつ電荷 -1 の粒子が占有できる双曲結び目の体積は何らかの制約を受けるか？
 
-### 問い C: 因子 7 の代数的ブリッジ（v31.0 最重要課題・新規昇格）
+### ~~問い C: Co₀ → G₂ 写像の完全決着~~（v32.0 S1 で解決済み）
 
-v30.0 で「なぜ標準 WZW では説明できないか」が確定した後に残る核心的問い：
+**v32.0 S1 最終判定: FREE PARAMETER 最終確定（$G_2$ 経路の完全閉鎖）**
 
-$$\underbrace{q_{mult} = 7}_{\text{CS質量式}} \;=?\; \underbrace{D_{bulk\_compact} = 7}_{\text{M-theory}} \;=?\; \underbrace{\text{prime}(N_{Leech})}_{\text{Leech格子素因数}}$$
-
-- **v30.0 成果**: 三者の数値的一致を確認。MC p<0.05 達成（Section 3）。代数的ブリッジは未構築。
-- **v31.0 課題**: Leech 格子 $\Lambda_{24}$ の自己同型群 $Co_0$ から 7 次元部分構造を取り出し、三者を接続する写像を構築する。または「代数的ブリッジ不存在」の正式宣言。
-- **検証可能な問い**: $N_{Leech}^{1/4}$ の 4 乗根が BAO スケールと 7 の比を持つことの幾何学的必然性は何か？
+- 経路1（Co₀ の 7/14 次元表現）: Co₀ 最小非自明表現 = 24 次元。7/14 次元表現は存在しない（ATLAS 確認）。CLOSED。
+- 経路2（PSU(3,3) ⊂ Co₀）: 有限群として包含されるが、有限群 ≠ 連続 Lie 群 G₂(ℝ)。NOT DERIVED。
+- 経路3（Λ₂₄ の G₂-部分格子）: Leech 格子はルートなし格子（最短ベクトル長²=4）。G₂ 部分格子は不可能。CLOSED。
+- **結論**: Co₀ 表現論・Leech 格子経由での $q_{mult}=7$ の代数的必然性導出は不可能と確定。
 
 ---
 
@@ -126,4 +149,3 @@ $K(4) \cdot \kappa = \pi$ という共鳴条件が成立する 4 次元だけが
 
 > *「KSAUは驚くほど機能する地図を持っている。次の課題は、なぜその地図が正しいのかの羅針盤を作ることだ。」*
 > — Claude, 2026-02-20
-

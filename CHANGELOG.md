@@ -1,23 +1,116 @@
 # KSAU Project Changelog
 
-## [31.0.0] - 2026-02-20 (代数的ブリッジフェーズ開始) 🔬 **IN PROGRESS**
+## [32.0.0] - 2026-02-20 (Co₀ 表現論探索フェーズ) ✅ **SESSION 1 COMPLETE**
 
-### 🎯 フェーズ定義
-- v30.0 Session 13 の成果を引き継ぎ、**代数的ブリッジフェーズ**を開始。
-- 中核課題: 因子 7 の幾何学的必然性の確立（「なぜ q_mult=7 と BAO比率7 は同じ 7 なのか」）。
+### 🎯 概要
+
+v31.0 で PARTIAL と判定された Co₀ → G₂ 写像の残3経路（7次元表現・PSU(3,3)内存在・G₂ 部分格子）を完全調査し、**FREE PARAMETER 最終確定**で決着。D_bulk_compact=7 の M 理論的性質を**同語反復（定義による一致）**と確定。n_max 動的設定を実装し統計設計を改善。
+
+### 📋 v31.0 からの確定引き継ぎ事項
+
+- **Task A（三者統一仮説）**: CONJECTURE 格下げ確定。`algebraic_mapping_7d.py` VERDICT。
+- **Section A（BAO ブリッジ）**: MOTIVATED_SIGNIFICANT・代数的ブリッジ未発見。Bonferroni 補正後（α=0.05/21）は有意性なし。`section_A_paper_draft.md` §A.4。
+- **Section B（q_mult 起源）**: FREE PARAMETER 正式宣言。E₈根系・Leech コセット経路は閉鎖。`co0_g2_algebraic_bridge_analysis.md` §3。
+- **Section C（非標準 WZW）**: 未解決（文献なし）確定。3ケース評価完了。`co0_g2_algebraic_bridge_analysis.md` §2。
+- **Co₀ → G₂ 写像**: **PARTIAL**（間接的接続あり、完全写像未構成）。3残余経路あり。
+
+### 🔬 Session 成果サマリー（Session 1）
+
+**Task 0（n_max 動的設定）:**
+
+- `section_a_nmax_dynamic.py` 実装完了。`n_max = round(scale_nominal / R) + 5`（margin=5）。
+- 全定数を SSoT（`v6.0/data/`）からロード。ハードコードなし。
+- 再実行結果: Bonferroni 補正後 p = 0.0137 > α ≈ 0.0024。主結論（有意性なし）に変化なし。
+- 技術的負債継続: `ERR_THRESH = err_7`（循環閾値）はコード内で明示的に注記済み。
+
+**Section A（Co₀ 表現論最終調査）:**
+
+- **経路1（7/14次元表現不在）**: Co₀ 最小非自明表現 = 24次元（ATLAS of Finite Groups 1985、Wilson 2009 参照）。7次元・14次元表現は存在しない。→ **CLOSED**
+- **経路2（PSU(3,3) ⊂ Co₀）**: PSU(3,3)（位数6048）は有限群として Co₀ に包含されることを確認。しかし有限群 PSU(3,3) ≠ 連続 Lie 群 G₂(ℝ)。4項目の論理的根拠で区別。→ **NOT DERIVED**
+- **経路3（Λ₂₄ の G₂-部分格子）**: Leech 格子は最短ベクトル長²=4（ルートなし格子）。G₂ ルート系（長さ²≤2のベクトル必要）との両立不可。→ **CLOSED**
+- **最終判定**: 全3経路で接続なし → **Co₀ → G₂ 写像: FREE PARAMETER 最終確定**
+
+**Section B（v31.0 最終報告書確認）:**
+
+- v31.0 Session 5 go.md が APPROVED であることを確認。v32.0 での新規作業不要。
+- 達成済み状態の確認が Roadmap 成功基準を満たすと判断。
+
+**Section C（D_bulk_compact=7 整理）:**
+
+- M 理論が G₂-holonomy コンパクト化を 7 次元とする数学的理由を整理（Cremmer-Julia-Scherk 1978、Joyce 2000 等）。
+- KSAU の D_bulk_compact=7 は M 理論文脈で定義した値であり、「M 理論と一致する」は**同語反復**（独立な予測ではない）と確定宣言。
+- `physical_constants.json` の `dimensions.bulk_compact_note` および `bulk_compact_ref` エントリに整理結果を追記済み（l.128-130）。
+
+### 📊 v32.0 最終セクション別ステータス
+
+| Task/Section | 最終ステータス |
+| --- | --- |
+| Task 0: n_max 動的設定 | ✅ 実装完了・主結論不変確認 |
+| Section A: Co₀ 表現論（残3経路） | ✅ **FREE PARAMETER 最終確定**（全3経路閉鎖） |
+| Section B: v31.0 最終報告書 | ✅ APPROVED 確認（新規作業不要） |
+| Section C: D_bulk_compact=7 整理 | ✅ 同語反復確定・SSoT 注釈追記完了 |
+
+### ⚠️ v33.0 への引き継ぎ技術的負債
+
+- **[負債 #1] ERR_THRESH の循環閾値（優先度: HIGH）**: `ERR_THRESH = err_7`（観測値自身が有意性の閾値）。MC p 値が過小評価方向にバイアス。独立した物理的根拠からの閾値設定が必要。
+- **[負債 #2] MC 乱数シード固定（優先度: MEDIUM）**: `random.seed(42)` 固定で再現性は確保済み。特定シードが結果に有利に働いていないかの複数シード安定性検証が未実施。
+- **[負債 #3] 非標準 WZW 経路（優先度: LOW → 現フェーズ最後の残存経路）**: curved background・coset・非コンパクト WZW での `7π/k` 導出経路は「文献なし」として未解決。
+
+---
+
+## [31.0.0] - 2026-02-20 (代数的ブリッジフェーズ) ✅ **SESSION 5 COMPLETE**
+
+### 🎯 フェーズ概要
+
+v30.0 Session 13 の成果を引き継ぎ、**代数的ブリッジフェーズ**を開始。中核課題は因子 7 の幾何学的必然性の確立（「なぜ q_mult=7 と BAO比率7 は同じ 7 なのか」）。全4タスクを誠実な否定的結果で完結。
 
 ### 📋 v30.0 からの確定引き継ぎ事項
-- **標準 WZW 経路の閉鎖確定**: $E_{vac}=7\pi/k$ は Sugawara 構成から代数的に導出不可能（$c$ は有理関数、$\pi$ は独立係数として出現不能）。この経路は永久閉鎖。
+
+- **標準 WZW 経路の閉鎖確定**: $E_{vac}=7\pi/k$ は Sugawara 構成から代数的に導出不可能。この経路は永久閉鎖。
 - **Section 2 最終分類**: EXPLORATORY-SIGNIFICANT (Final)。p=0.0078、Bonferroni 保守的閾値α=0.0050 未達を明示確定。
 - **Section 3 最終分類**: MOTIVATED_SIGNIFICANT (Final)。p=0.032/0.038。WZW 経路閉鎖。代数的動機付け（N_Leech 素因数7）のみ残存。
 - **Section 1 Formal Deferral**: φ_mod=π/2・B=4.0 の証明活動停止。将来の完全理論に棚上げ。
 - **Section 4 FAILED 確定**: α_em の幾何学的導出は MC FPR 87% により棄却。
 
-### 🔬 v31.0 新規目標
-- **Task A（HIGH・放置不可）**: 三者統一仮説（q_mult=7 ↔ D_bulk_compact=7 ↔ prime(N_Leech)）の代数的ブリッジ構築または Conjecture 格下げ。
-- **Section A（最重要）**: N_Leech^(1/4) → BAO スケール r_s の代数的ブリッジ（MOTIVATED → CONFIRMED への唯一経路）。
-- **Section B（HIGH）**: q_mult=7 の非 WZW 代数的起源探索（E₈ 根系・Leech 格子コセット構成）。
-- **Section C（MEDIUM）**: 非標準 WZW（curved background・coset 理論）の可能性評価。
+### 🔬 Session 成果サマリー（Session 1–5）
+
+**Session 1–2（代数的偵察）:**
+
+- Task A: CONJECTURE 格下げ確定（代数的ブリッジ構築不能、三者並列表示廃止）。
+- Section A: 21通り系統的偵察完了。N^{1/4}/r_s は特異性なし（rank 13/21）。Bonferroni 補正後（α=0.05/21≈0.0024）有意性なし。代数的ブリッジ未発見として正式記録。
+- Section B: E₈根系・Leech コセット構成からの q_mult=7 導出不能。FREE PARAMETER 正式宣言。
+- Section C: curved background/coset/非コンパクト WZW の3ケース評価完了。未解決（文献なし）確定。
+- D_CMB を `cosmological_constants.json` に追加（Planck 2018 arXiv:1807.06209）。`c_light_km_s` を `physical_constants.json` に格納（SSoT 整合性回復）。
+
+**Session 3（ng.md REJECT → 修正指示）:**
+
+- CRITICAL-1: D_CMB JSON 格納完了宣言後にコードが未修正だったことを指摘（宣言と実装の矛盾）。
+- CRITICAL-2: `C_LIGHT_KM_S` が SSoT 自己宣言コード内でハードコードされていた自己矛盾を指摘。
+- WARNING-1: `G₂(4)` 位数計算の参照元注記なし。
+
+**Session 4（APPROVED — ng.md 全指摘解消確認）:**
+
+- CRITICAL-1/2 修正完了確認。`section_a_numerical_patrol.py` の全定数が JSON から読み込まれていることを独立検証。
+- `|G₂(4)| = 2^{12} × 3^3 × 5^2 × 7 × 13` を独立検算（$4^6=4096$, $4^6-1=4095=3^2×5×7×13$, $4^2-1=15=3×5$）。
+- Co₀ → G₂ 写像: **PARTIAL**（E₈⊃G₂ 経由の間接的接続あり、完全写像は未構成）。残余3経路を v32.0 に引き継ぎ。
+
+**Session 5（APPROVED — 統合最終報告書 `v31.0_final_report.md` 査読）:**
+
+- `section_a_numerical_patrol.py` / `algebraic_mapping_7d.py` の全定数が SSoT JSON から読み込まれることを最終確認。ハードコードなし。
+- Bonferroni 補正後「有意性なし」を主結論とした記述が正確に反映されていることを確認。
+- 全4タスク判定（CONJECTURE / 代数的ブリッジ未発見 / FREE PARAMETER / 未解決）に過剰主張なし。
+- `ERR_THRESH = err_7` の循環的閾値設定を技術的欠陥として最終報告書 §6.2 に正直に記録済みと確認。
+- v31.0「代数的ブリッジフェーズ」の完全完了を宣言し、v32.0 移行を承認。
+
+### 📊 v31.0 最終セクション別ステータス
+
+| Task/Section | 最終ステータス |
+| --- | --- |
+| Task A: 三者統一仮説 | CONJECTURE（格下げ確定） |
+| Section A: BAO ブリッジ | MOTIVATED_SIGNIFICANT / 代数的ブリッジ未発見 |
+| Section B: q_mult 起源 | FREE PARAMETER（正式宣言） |
+| Section C: 非標準 WZW | 未解決（文献なし）確定 |
+| Co₀ → G₂ 写像 | PARTIAL（v32.0 へ継続） |
 
 ---
 
@@ -45,15 +138,17 @@
 - **Bonferroni 問題の決着**: p=0.0078 > α=0.0050 の宙吊りを「明示的格下げ確定」として解消。
 - **Section 1 Formal Deferral 発行**: 7+ Session の停滞を正式記録。循環論法を明示し活動停止。
 
-### 📊 最終セクション別ステータス
+### 📊 v30.0 最終セクション別ステータス
+
 | Section | 最終ステータス |
-|---------|--------------|
+| --- | --- |
 | S1: Topological Anchors | STALLED — FORMAL DEFERRAL |
 | S2: CS 双対性 | EXPLORATORY-SIGNIFICANT (Final) |
 | S3: LSS Coherence | MOTIVATED_SIGNIFICANT (Final) |
 | S4: α_em 導出 | FAILED (確定) |
 
 ### 🧮 確定した否定的結果（科学的資産）
+
 - 標準 WZW での $E_{vac}=7\pi/k$ 導出: 不可能（代数的確定）
 - α_em の幾何学的導出: 不可能（統計的棄却、FPR 87%）
 - Section 1 解析的証明: 現フレームワーク内で不可能（Formal Deferral）
