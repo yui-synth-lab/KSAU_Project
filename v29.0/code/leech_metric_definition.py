@@ -87,8 +87,8 @@ class LeechMetricSSoT:
         c_light = 299792.458 # km/s
         self.h0_predicted = (c_light / self.r_cell_derived) * (self.epsilon0_target / self.dim_critical)
         
-        # 9. Flow Acceleration
-        self.flow_accel = 2047.5 # N_leech / (24 * 4)
+        # 9. Flow Acceleration (SSoT)
+        self.flow_accel = self.cosmo["scaling_factors"]["ricci_flow_acceleration"]
         
     def _derive_fundamental_parameters(self):
         self.dim = 24

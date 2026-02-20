@@ -145,15 +145,9 @@ class StrictAuditor:
             z = ndtri(1 - p_total/2)
             print(f"Empirical Significance: {z:.2f} sigma")
         else:
-            # Independent Sector Extrapolation (Conservative)
-            p_nu = np.sum(hit_nu) / self.n_trials
-            p_h0 = np.sum(hit_h0) / self.n_trials
-            p_m  = np.sum(hit_m) / self.n_trials
-            p_extrap = p_nu * p_h0 * p_m
-            print(f"Extrapolated p-value (13 obs): {p_extrap:.2e}")
-            if p_extrap > 0:
-                z_ext = ndtri(1 - p_extrap/2)
-                print(f"Cumulative Significance: {z_ext:.2f} sigma")
+            p_upper = 1.0 / self.n_trials
+            print(f"Empirical p-value upper bound: p <= {p_upper:.2e} (Joint Hits = 0 / {self.n_trials})")
+            print("Note: No extrapolation performed. Independent-sector product is not a valid p-value.")
 
 if __name__ == "__main__":
     auditor = StrictAuditor(n_trials=1000000)

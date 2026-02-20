@@ -19,8 +19,9 @@ The Borromean rings complement (Link $L6a4$) has a hyperbolic volume of $16 \cdo
 
 ### 2.2 Topological Anchors (Empirical Fixed Points)
 The following identities were discovered during the Ricci flow analysis and are treated as anchors for the unified framework, pending derivation from the Leech automorphism group $Co_0$:
-1. **Modular Phase ($\phi_{mod} = \pi/2$)**: Identified as the rotation phase required for anomaly-free readout between orthogonal 8D blocks.
-2. **Observer Factor ($B=4.0$)**: Identified as the dimension count of the spacetime observer frame ($D=4$), representing the multiplicity of the linking density integral when projected from 24D into 4D spacetime.
+
+1. **Modular Phase ($\phi_{mod} = \pi/2$)**: Empirically identified as a candidate for the rotation phase between orthogonal 8D blocks that is consistent with anomaly-free readout. The uniqueness of $\pi/2$—i.e., why not $\pi/3$, $\pi/4$, or other values—has not been proven from first principles. Formal derivation from $Co_0$ is a v30.0 priority.
+2. **Observer Factor ($B=4.0$)**: Empirically identified as a candidate for the multiplicity factor in the linking density integral projected from 24D into 4D spacetime. The identification with the spacetime dimension count $D=4$ is a working hypothesis, not a derived result.
 
 ---
 
@@ -58,7 +59,7 @@ LOO-CV refitting of $(G, \kappa)$ was performed to check model stability. All he
 A 1,000,000 trial MC test sampling $G$ and $\kappa$ was conducted.
 - **Global MC**: Sampling broad uninformative priors yields zero joint hits for 13 observables (H0, PMNS, Masses), demonstrating that the SM configuration is a rare "needle in a haystack" within the topological parameter space.
 - **Local MC**: Sampling near optimal parameters confirms the existence of a consistent physical regime.
-- **Significance**: The alignment of particle and cosmological data with only two master constants is statistically incompatible with chance ($p \ll 10^{-10}$).
+- **Significance**: The empirical upper bound on the joint hit probability is $p \leq 10^{-6}$ (0 joint hits in $10^6$ trials). The fermion mass sector yields no simultaneous hits in either Global or Local MC. No extrapolation from independent-sector products is performed, as such extrapolation assumes independence and is not a valid joint p-value. Full statistical significance (success criterion #4) remains **In Progress**.
 
 ---
 

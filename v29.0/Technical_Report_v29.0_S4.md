@@ -27,7 +27,9 @@ $$LCC = \frac{\kappa}{N_{states}} = \frac{\kappa}{512}$$
 The Hubble expansion $H_0$ is derived as the flux of information-theoretic volume flowing through the 10D critical manifold.
 
 ### 3.1 Scaling Basis for $R_{cell}$
-The identification of the dimensionless Leech radius $R_{lattice} = N_{leech}^{0.25} / (1+\epsilon_0) \approx 20.14$ with the Megaparsec (Mpc) scale is based on the **Large Scale Structure (LSS) Coherence Principle**. In the KSAU standard cosmology, the Mpc is defined as the scale at which the manifold's relaxation residue $\epsilon_0$ becomes observable. This establishes a mapping between information units and physical distance.
+The identification of the dimensionless Leech radius $R_{lattice} = N_{leech}^{0.25} / (1+\epsilon_0) \approx 20.14$ with the Megaparsec (Mpc) scale is based on the **Large Scale Structure (LSS) Coherence Hypothesis**. It is hypothesized—not defined—that the Mpc scale corresponds to the length at which the manifold's relaxation residue $\epsilon_0$ becomes observable in large-scale structure. The Mpc is an independently defined astronomical unit ($1\,\text{Mpc} = 3.0857 \times 10^{22}\,\text{m}$); the correspondence with $R_{lattice}$ is a prediction of the KSAU framework, not a tautology.
+
+**Verification target**: This hypothesis is testable via the Baryon Acoustic Oscillation (BAO) scale ($r_s \approx 147\,\text{Mpc}$) and the galaxy two-point correlation function coherence length. A quantitative comparison between $R_{lattice}$ and these observed scales is deferred to v30.0.
 
 ### 3.2 Hubble Identity
 The expansion rate is the product of the light-crossing frequency and the curvature density residue:
