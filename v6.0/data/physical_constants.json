@@ -1,6 +1,7 @@
 {
   "kappa": 0.1308996938995747,
   "pi": 3.141592653589793,
+  "N_leech": 196560,
   "G_catalan": 0.915965594177219,
   "alpha_s": 0.118,
   "alpha_em": 0.0072973525693,
@@ -129,6 +130,10 @@
     "quark_components": 10,  
     "lepton_components": 2,  
     "boson_components": 3,  
-    "gravity_components": 6  
+    "gravity_components": 6,
+    "mass_formula_multiplicity": {
+      "quarks": 10,
+      "leptons": 20
+    }
   }
 }
