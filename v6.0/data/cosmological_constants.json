@@ -50,7 +50,12 @@
     "gamma_app_derived": 0.623,
     "neutrino_suppression_slope": 0.6,
     "neutrino_density_constant": 93.14,
-    "omega_m_ref_sigma8": 0.3
+    "omega_m_ref_sigma8": 0.3,
+    "ricci_flow_acceleration": 2047.5,
+    "ricci_flow_origin": "Theoretical value N_leech / (24 * 4) = 2047.5. Represents the natural relaxation rate of the 24D bulk.",
+    "lepton_mass_slope_factor": 20.0,
+    "quark_mass_intercept_multiplier": 7.0,
+    "observer_dimension_factor": 4.0
   },
   "filament_branching": {
     "B_predicted": 3.9375,

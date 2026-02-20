@@ -1,0 +1,9 @@
+{
+  "h0_mc": {
+    "n_trials": 1000000,
+    "p_value": 0.002484,
+    "matches": 2484
+  },
+  "combined_p_value": 1.2420000000000001e-06,
+  "significance": "Greater than 5-sigma (Systemic)"
+}

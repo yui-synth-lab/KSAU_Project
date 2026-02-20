@@ -2,15 +2,13 @@
   "kappa": 0.1308996938995747,
   "pi": 3.141592653589793,
   "G_catalan": 0.915965594177219,
-  "v_borromean": 7.327724753,
   "alpha_s": 0.118,
   "alpha_em": 0.0072973525693,
   "couplings": {
     "alpha_em_0": 0.0072722052,
     "sin2theta_w_geometric": 0.23198,
     "sin2theta_w": 0.23122,
-    "alpha_s_mz": 0.118,
-    "catalan_G": 0.915965
+    "alpha_s_mz": 0.118
   },
   "g_minus_2": {
     "a_e_exp": 0.00115965218128,
@@ -39,13 +37,18 @@
   },
   "neutrinos": {
     "oscillation": {
-      "dm2_21_exp": 7.42e-5,
-      "dm2_31_exp": 2.514e-3
+      "dm2_21_exp": 7.41e-5,
+      "dm2_31_exp": 2.507e-3,
+      "sigma_21": 0.21e-5,
+      "sigma_31": 0.026e-3
     },
     "pmns_angles_deg": {
-      "theta12": 33.4,
-      "theta23": 49.0,
-      "theta13": 8.6
+      "theta12": 33.41,
+      "theta23": 49.1,
+      "theta13": 8.54,
+      "sigma12": 0.75,
+      "sigma23": 1.0,
+      "sigma13": 0.11
     }
   },
   "top_helicity_sm": {
@@ -116,7 +119,8 @@
     "error_percent": 0.0815
   },
   "dimensions": {
-    "bulk_total": 10,
+    "bulk_lattice": 24,
+    "bulk_holographic": 10,
     "bulk_compact": 7,
     "boundary_projection": 9,
     "time": 1

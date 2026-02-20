@@ -23,6 +23,33 @@
     "determinant": 9,
     "generation": 3
   },
+  "Nu1": {
+    "topology": "4_1",
+    "volume": 2.0298832128,
+    "crossing_number": 4,
+    "components": 1,
+    "determinant": 5,
+    "generation": 1,
+    "homological_sector": "Det=1 boundary (Ghost State)"
+  },
+  "Nu2": {
+    "topology": "7_2",
+    "volume": 3.3317442316,
+    "crossing_number": 7,
+    "components": 1,
+    "determinant": 11,
+    "generation": 2,
+    "homological_sector": "Det=1 boundary (Ghost State)"
+  },
+  "Nu3": {
+    "topology": "8_9",
+    "volume": 7.5836,
+    "crossing_number": 8,
+    "components": 1,
+    "determinant": 25,
+    "generation": 3,
+    "homological_sector": "Det=1 boundary (Ghost State)"
+  },
   "Up": {
     "topology": "L9n1{1}",
     "volume": 5.33348956689812,

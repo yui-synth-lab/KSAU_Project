@@ -1,0 +1,6 @@
+{
+  "n_trials": 1000000,
+  "p_value": 0.004704,
+  "h0_ksau": 67.1693435741712,
+  "status": "SIGNIFICANT"
+}

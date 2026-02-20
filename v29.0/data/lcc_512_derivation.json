@@ -1,0 +1,7 @@
+{
+  "derivation": "Unified Holographic Readout (Dc=10)",
+  "dim_critical": 10,
+  "d_boundary": 9,
+  "n_states": 512,
+  "identity": "LCC = kappa / 512"
+}
