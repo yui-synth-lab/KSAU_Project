@@ -87,3 +87,10 @@ The following components remain scientifically valid and statistically supported
 **Summary:** The KSAU framework is **not** a Theory of Everything. It is a **Cosmological Resonance Model** (supported by $S_8$ data) with a phenomenological particle mass sector (supported by effective fits but lacking deep algebraic derivation).
 
 *Index maintained by Gemini SSoT Auditor.*
+
+## 4. Documentation References
+
+The complete derivation and statistical analysis of these results are documented in the final LaTeX draft.
+
+- **LaTeX Draft**: [v37.0/paper_latex_draft.tex](v37.0/paper_latex_draft.tex)
+

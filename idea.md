@@ -1,7 +1,27 @@
 # KSAU アイデアロードマップ
 
-**最終更新:** 2026-02-21 (v36.0 APPROVED・v37.0 開始)
+**最終更新:** 2026-02-21 (v38.0 APPROVED・v39.0 開始・HIBERNATING)
 **記録者:** Claude (Theoretical Auditor)
+
+---
+
+## ✅ 実現・統合済み（v38.0 追加）
+
+| アイデア | バージョン | 成果 |
+| --- | --- | --- |
+| **リポジトリ正式アーカイブ** | v38.0 | `git tag v37.0-archived` 発行。理論構築フェーズの終了が Git 履歴に不可逆的に記録。`NEGATIVE_RESULTS_INDEX.md` に `v37.0/paper_latex_draft.tex` へのリンク追記。README 最終版更新（ステータス: ARCHIVED / Passive Monitoring）。 |
+| **arXiv 自動監視スクリプト** | v38.0 | `arxiv_monitor.py` 完成。arXiv (astro-ph.CO) から S8 関連キーワードで週次チェック。完全自動更新せず、人間が `s8_monitoring_log.md` を確認・更新する設計（測定値解釈は必ず人間が行う）。 |
+| **監視プロトコル文書化** | v38.0 | `monitoring_protocol.md` 完成。判定基準（CONSISTENT / TENSION / EXCLUDED）・ログ更新フォーマット・重大判定時の対応手順（支持/棄却/修正の3シナリオ対称定義）。次の担当者が単独で監視継続可能な状態を確立。 |
+
+---
+
+## ✅ 実現・統合済み（v37.0 追加）
+
+| アイデア | バージョン | 成果 |
+| --- | --- | --- |
+| **論文 LaTeX 草稿の完成** | v37.0 | `paper_latex_draft.tex` 完成。`v36.0/papers/KSAU_v36.0_Paper_Negative_Results.md` を arXiv (hep-th) 投稿規格の LaTeX に変換。SSoT 参照 (commit: 973310e) を脚注に明記。統計数値（Section 2: n=10, p_adj > 0.05、Section 3: n=3, p_adj > 0.05）を正確に記述。 |
+| **$S_8$ 外部データ監視体制の確立** | v37.0 | `s8_monitoring_log.md` 初期化。Euclid (0.724–0.761)・LSST (0.739–0.783) の KSAU 予測値と判定プロトコルを記録。監視開始: 2026-02-21。棄却条件 ($S_8 > 0.80$) 明記。Passive Monitoring フェーズへ移行完了。 |
+| **コードベース長期保存の整備** | v37.0 | `requirements.txt` にバージョン固定済み（numpy/scipy/matplotlib/scikit-learn 等）。Python バージョン 3.12.8 固定。独立再現環境の構築条件が確立。 |
 
 ---
 

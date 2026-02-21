@@ -1,83 +1,86 @@
 # KSAU: The Geometry of Everything
-### Deriving the Standard Model and Gravity from the Borromean Volume
+### Topological Resonance & The Limits of Geometric Unification
 
+[![Status](https://img.shields.io/badge/Status-ARCHIVED_(Passive_Monitoring)-red)](v38.0/KSAU_v38.0_Roadmap.md)
+[![Version](https://img.shields.io/badge/Version-v37.0--archived-lightgrey)](v37.0/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/1148825711.svg)](https://doi.org/10.5281/zenodo.18631885)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-v23.0_s8_Finality-blue.svg)
-![Status](https://img.shields.io/badge/status-Honest_Reporting-purple.svg)
 
-> **"Time is Processing, Gravity is Flux, Vacuum is Truth."**
+> **"The vacuum resonates, but the coupling is free."**
 
-**KSAU (Knot-Synchronization-Adhesion Unified)** is a theoretical physics simulation framework that derives the fundamental constants of the universe from the 24-dimensional geometry of the vacuum. By modeling time as an emergent information process, KSAU unifies general relativity and the standard model under a single geometric action.
+**KSAU (Knot-Synchronization-Adhesion Unified)** is a theoretical physics framework exploring the geometric origins of the Standard Model and Cosmology. While the project successfully derives a scale-dependent topological resonance that resolves the $S_8$ cosmological tension ($p=0.00556$), extensive investigation has confirmed that the mass hierarchy multiplier ($q_{mult}=7$) cannot be derived from first principles within this geometry. 
 
----
-
-## 🚀 Latest Breakthrough (v23.0): σ₈ Tension Finality
-We have achieved a major milestone in cosmological validation by addressing the small-scale structure formation crisis:
-- **Honest 1.36σ Reporting:** Moved beyond "numerology" to provide a rigorous, integrated LOO-CV (Leave-One-Out Cross-Validation) framework that maintains 1.36σ across DES, HSC, and KiDS surveys.
-- **Non-Linear Knot Dynamics:** Derived the non-linear "entanglement boost" ($1 + \alpha(k/\kappa)^2$) from the Chern-Simons statistical expectation, resolving the over-suppression at small scales.
-- **Baryon Feedback as Entropy:** Geometrically derived the baryon feedback scale as $1/(3\alpha) = 16.0$, interpreting galactic feedback as thermodynamic entropy leak into the E8 root lattice.
+**Current State:** The project is in **Hibernation (Passive Monitoring)**. Active development has ceased. The repository serves as a permanent archive of the methodology, negative results, and the specific $S_8$ prediction awaiting verification by Euclid/LSST data.
 
 ---
 
-## 🚀 v16.1 Milestone: The Geometric Bridge
-We have derived the fundamental reasons for the dimensionality of our universe:
-- **Time Ignition:** Proven that time can only flow if spatial connectivity exceeds $\pi^2$ ($K(3)=12 > 9.87$). 3D is the "Ignition Dimension."
-- **Spacetime Stability:** Discovered the resonance identity **$K(4) \cdot \kappa = \pi$**. 4D is the only dimension where vacuum information is perfectly partitioned.
-- **Unification:** Time, Gravity, and Dimensionality are now unified under the spectral weight **$\kappa = \pi/24$**.
+## 🔬 Project Status: ARCHIVED (Passive Monitoring)
+
+The theoretical development phase is complete. The repository is **Read-Only** for all intents and purposes, except for the periodic update of the $S_8$ monitoring log.
+
+1.  **Theory Construction:** **COMPLETE** (v1.0 - v37.0)
+2.  **Negative Results:** **PUBLISHED** (see `NEGATIVE_RESULTS_INDEX.md`)
+3.  **External Verification:** **PENDING** (Euclid DR1 / LSST Y1)
 
 ---
 
-## 🌌 Key Achievements (Update 2026-02-14)
+## 🌌 Key Findings & Documentation
 
-### 1. The Spectral Mass Law ($R^2 = 0.9998$)
-Mass is formally defined as the regularized determinant of the spacetime Laplacian.
-- **Accuracy:** $R^2 = 0.9998$ for all 9 fermions across 3 generations.
-- **Mechanism:** $\ln m \propto V$ emerges from the spectral density of the manifold.
+### 📄 Final Publications
+- **Negative Results Index:** [NEGATIVE_RESULTS_INDEX.md](NEGATIVE_RESULTS_INDEX.md) - A comprehensive list of all rejected hypotheses.
+- **LaTeX Draft:** [v37.0/paper_latex_draft.tex](v37.0/paper_latex_draft.tex) - The formal derivation and statistical analysis.
+- **Monitoring Log:** [v37.0/s8_monitoring_log.md](v37.0/s8_monitoring_log.md) - Record of external $S_8$ measurements.
 
-### 2. The Fibonacci Connection
-The universe selects the most efficient growth ratio (Golden Ratio $\phi$) to scale spacetime volume into physical mass, evidenced by the $13/5$ Fibonacci resonance in the figure-eight knot.
+### ✅ Validated: Cosmological Resonance ($S_8$ Tension)
+The KSAU framework predicts a specific suppression of the growth of structure ($S_8$) at intermediate redshifts due to the resonant scale of the Leech lattice ($R_{cell} \approx 20$ Mpc).
+- **Prediction:** $S_8(z \approx 1.0) \in [0.72, 0.76]$ (Euclid forecast).
+- **Status:** Statistically significant on current data; awaiting Euclid/LSST confirmation.
 
-
-### 3. Grand Unified Results
-- **Gravity ($G$):** Derived with **99.92% precision**.
-- **Gauge Bosons:** $W$ (0.01% error), $Z$ (2.02%), $Higgs$ (1.52%) integrated via Brunnian-Borromean hierarchy.
-- **SSoT:** 100% synchronization between v6.0 (Micro) and v6.4 (Macro).
+### ❌ Negative Result: Algebraic Mass Origin
+Despite high-precision fits ($R^2 > 0.99$), the multiplicative factor $q_{mult}=7$ scaling the fermion mass spectrum has been proven to be algebraically independent of the base geometry.
+- **Conclusion:** The mass hierarchy is an effective parameterization, not a first-principles derivation.
 
 ---
 
-## 🛠️ Installation & Usage
+## 🛠️ Usage & Reproduction
 
-### Prerequisites
-- Python 3.8+
-- NumPy, Pandas, Matplotlib
+This repository is archived, but the code remains executable for verification purposes.
 
-### Run the Grand Unified Validation
-Verify all 12 Standard Model particles and the gravitational constant:
-
+### 1. Environment Setup
+Dependencies are pinned in `v37.0/requirements.txt`.
 ```bash
-python v6.7/code/verify_grand_unification.py
+pip install -r v37.0/requirements.txt
+```
+
+### 2. SSoT Audit (Data Integrity)
+To verify the internal consistency of the physical constants and topology assignments against the Single Source of Truth:
+```bash
+python v6.0/code/ckm_final_audit.py
+```
+
+### 3. Cosmological Predictions ($S_8$)
+To generate the $S_8$ tension resolution plots and statistics:
+```bash
+python v28.0/code/ksau_standard_cosmology.py
 ```
 
 ---
 
-## 📂 Repository Structure
-* `v6.0/`: Master SSoT and High-Precision Topology Assignments ($R^2=0.9988$).
-* `v6.4/`: Cosmological Synthesis (Big Bang, Baryogenesis, Dark Matter).
-* `v6.7/`: Grand Unified Validation and Gravity derivation.
-* `v6.9/`: Definitive 0.392 MeV Axion Prediction.
-* `audit/`: Historical AI-to-AI communication and planning logs.
+## 📬 Contact & Maintenance
+
+This repository is maintained in a **Passive Monitoring** state.
+- **Bug Reports:** Please open an issue on GitHub.
+- **Future Research:** Researchers interested in the $S_8$ tension predictions should refer to the monitoring protocol in `v38.0/monitoring_protocol.md`.
 
 ---
 
 ## 📜 Citation
-If you use KSAU in your research, please cite:
 
-**Definitive Version (v6.9):**
-> **Yui, Gemini, & Claude.** (2026). *The Geometry of Everything: Grand Unification of Standard Model via Hyperbolic Manifold Topology (v6.9).* Zenodo.
+If you use KSAU in your research, please cite our definitive negative results paper:
+
+> **KSAU Collaboration.** (2026). *Negative Results on the Algebraic Origin of Mass Multipliers in Leech Lattice Geometry.* arXiv:2602.XXXX [hep-th].
 
 ---
 
 ## 📄 License
 This project is open-source under the **MIT License**.
-*The laws of physics belong to everyone.*
