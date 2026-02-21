@@ -1,6 +1,6 @@
 # KSAU アイデアロードマップ
 
-**最終更新:** 2026-02-20 (v32.0 Session 1 完了・v33.0 開始)
+**最終更新:** 2026-02-21 (v36.0 APPROVED・v37.0 開始)
 **記録者:** Claude (Theoretical Auditor)
 
 ---
@@ -53,6 +53,49 @@
 
 ---
 
+## ✅ 実現・統合済み（v36.0 追加）
+
+| アイデア | バージョン | 成果 |
+| --- | --- | --- |
+| **$S_8$ 反証可能予測の策定** | v36.0 | `task_a_s8_verification_design.md` 完成。Euclid: $S_8 \approx 0.729-0.761$（$z=1.0-1.2$）、LSST: $S_8 \approx 0.739-0.783$（$z=0.7$）を具体的数値で予測。検証条件（$S_8 \in [0.72,0.78]$）・棄偽条件（$S_8 > 0.80$）を事前登録。反証可能性が担保された外部検証設計。 |
+| **論文草稿 v2 完成（投稿準備完了）** | v36.0 | `KSAU_v36.0_Paper_Negative_Results.md` 完成。arXiv (hep-th) / Journal of Negative Results in Physics 投稿準備完了水準。参考文献整備（Wilson 2009・Witten 1984・Planck 2018・KiDS-1000 等）。§3.3 で Section 2/3 の Bonferroni 補正後非有意を正確に記述。 |
+| **プロジェクト最終アーカイブ確立** | v36.0 | `NEGATIVE_RESULTS_INDEX.md` をプロジェクトルートに作成。将来の研究者が閉鎖済み経路（WZW・Co₀表現論等）を再訪しないための否定的結果索引。理論構築フェーズの完了を宣言。 |
+
+---
+
+## ✅ 実現・統合済み（v35.0 追加）
+
+| アイデア | バージョン | 成果 |
+| --- | --- | --- |
+| **Section 3 Bonferroni n 正式確認・格下げ** | v35.0 | `v30.0/code/lss_coherence_check.py` を直接参照し、7/e²/22/3 の3候補を比較検討していた事実を確認。Bonferroni n=3、α=0.0167、p=0.032 > 0.0167 → **MOTIVATED_SIGNIFICANT → EXPLORATORY-SIGNIFICANT 格下げ確定**。全 Section の Bonferroni 補正評価が完結。 |
+| **否定的結果論文草稿の完成** | v35.0 | `paper_draft_negative_results.md` 完成。"Reduction of Search Space for Topological Mass Factor 7" として外部発信可能な形式。WZW 全経路閉鎖・代数的起源全閉鎖・Section 2/3 非有意・$q_{mult}=7$ FREE PARAMETER を一論文に統合。Claude 独立監査の REJECT（§4 事実誤認・Section 3 欠落）を経て修正・再承認。 |
+| **KSAU 現状マップ最終版** | v35.0 | `section_b_ksau_status_report.md` 最終版完成。v23.0〜v35.0 の全成果を「証明済み/統計的支持/否定的確定/未解決/Formal Deferral/FREE PARAMETER」の6区分で記録。外部研究者向けサマリー（§8）付き。 |
+
+---
+
+## ✅ 実現・統合済み（v34.0 追加）
+
+| アイデア | バージョン | 成果 |
+| --- | --- | --- |
+| **Section 2 Bonferroni n 正式確認** | v34.0 | `v30.0/code/cs_sensitivity_analysis.py` Lines 118–120 を直接参照し n=10 を確認。Bonferroni 補正後 α=0.0050、p=0.0078 > 0.0050 → EXPLORATORY-SIGNIFICANT の正式根拠確立。n=1（単一窓）vs n=10（窓内グリッド点数）の二重解釈を明示し、保守的解釈を採用する理由を記録。 |
+| **LOO-CV による Section 2 ロバスト性検証** | v34.0 | `section_a_loo_cv.py` 実施。正確なロバスト性: **NOT ROBUST (2/8)**。クォーク除外6ケース全て k_obs 窓外（vacuously significant の統計的誤謬を認識・修正）。レプトン除外2ケースのみ窓内（配列退化付き）。Section 2 の結果は 6 クォーク全員の存在に依存。 |
+| **n_max バイアス修正 v2** | v34.0 | `mc_sensitivity_analysis_v2.py` 実装。wide 範囲の n_max 固定問題を解消。p 値変化: 最大 5.4 倍増加（0.00613→0.03302）。旧スクリプトの p 値過小評価を定量的記録。全3範囲で Bonferroni 非有意維持。 |
+| **H₀,KSAU の Hubble Tension 文脈評価確定** | v34.0 | Planck 2018 との乖離 17.3σ（Hubble Tension を悪化させる方向）、SH0ES 2022 との乖離 3.0σ。`section_b_ksau_status_report.md §1.3` に定量的記録。 |
+
+---
+
+## ✅ 実現・統合済み（v33.0 追加）
+
+| アイデア | バージョン | 成果 |
+| --- | --- | --- |
+| **ERR_THRESH 循環閾値の解消** | v33.0 S1 | `task_a_err_thresh_resolution.py` 実装。`r_s` の Planck 2018 公式不確かさ（σ=0.26 Mpc）から独立閾値を設定（0.1768%）。SSoT 格納済み。旧 err_7（0.2044%）との比較でバイアス方向・規模を定量化。再実行でも主結論（非有意）不変。 |
+| **MC シード安定性検証** | v33.0 S1 | `task_b_seed_stability.py` 実装。シード 0/1/7/42/100/314 の6種で再実行。全シードで Bonferroni 補正後非有意。std/mean < 5%。シード依存性なし確認。 |
+| **非標準 WZW 全3経路の閉鎖** | v33.0 S1–3 | Curved background（Witten 1984 再精査）・Coset WZW（GKO 構成精査）・非コンパクト WZW（SL(2,ℝ)）の全3経路で `b_q(k) = -7(1+π/k)` 導出不可能と確定。符号の根本的不整合（h ≥ 0 vs b_q < 0）により代数的確定。**WZW 全経路（標準＋非標準）閉鎖**。 |
+| **KSAU フレームワーク現状評価レポート** | v33.0 S1 | `section_b_ksau_status_report.md` 完成（v23.0〜v33.0 横断整理）。「証明済み/統計的支持/否定的確定/未解決/Formal Deferral/FREE PARAMETER」の6区分で現状マップ完成。 |
+| **MC 感度分析の定量的実施** | v33.0 S3 | `mc_sensitivity_analysis.py` 実装。サンプリング範囲 standard/wide/narrow の3種で全 Bonferroni 補正後非有意（p=0.01176/0.00613/0.02453）。Session 2 ng.md CRITICAL 指摘を解消。 |
+
+---
+
 ## ✅ 実現・統合済み（v32.0 追加）
 
 | アイデア | バージョン | 成果 |
@@ -75,14 +118,15 @@
 
 ## 🔬 未解決の理論的問い（優先度順）
 
-### 問い A: CS 理論との k 依存性逆転問題（v31.0 継続・非標準 WZW のみ残存）
+### ~~問い A: CS 理論との k 依存性逆転問題~~（v33.0 で解決済み・v35.0 論文草稿に記録）
 
 v7.1 から未解決の根本的亀裂：
 
 $$\text{CS理論}: \ln|Z| \propto \frac{k}{4\pi} \cdot V \quad \text{vs} \quad \text{KSAU}: \ln(m) \propto \frac{\pi}{k} \cdot V$$
 
 - **v30.0 成果**: 統計的探索完了（EXPLORATORY-SIGNIFICANT, p=0.0078）。標準 WZW での第一原理証明は不可能と確定。
-- **v31.0 成果**: 非標準 WZW（curved background・coset・非コンパクト）の3ケース評価完了。いずれも文献なし・未解決と確定。この問いは v32.0 以降の探索対象外（現時点で有効な接続経路なし）。
+- **v31.0 成果**: 非標準 WZW（curved background・coset・非コンパクト）の3ケース評価完了。いずれも文献なし・未解決と確定。
+- **v33.0 成果**: 非標準 WZW 全3経路を定量的・代数的に再調査。符号の根本的不整合（$h \geq 0$ vs $b_q < 0$）により全経路不可能と数学的確定。**WZW 全経路（標準＋非標準）完全閉鎖**。この問いは解決済み（否定的結果として確定）。
 
 ### 問い B: トポロジー選択の恣意性
 

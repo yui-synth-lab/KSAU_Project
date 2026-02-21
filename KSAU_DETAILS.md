@@ -1,7 +1,7 @@
 # KSAU_DETAILS.md — 詳細参照ファイル
 
 > このファイルはCLAUDE.mdから切り出した詳細情報です。
-> 日常的な参照には不要ですが、深掘りが必要な際に参照してください。
+> **否定的結果の完全な索引は [NEGATIVE_RESULTS_INDEX.md](NEGATIVE_RESULTS_INDEX.md) を参照。**
 
 ---
 
@@ -12,214 +12,84 @@
 - **データソース**: 
   - `v6.0/data/physical_constants.json` (物理定数)
   - `v6.0/data/topology_assignments.json` (トポロジー割り当て)
-- **ユーティリティ**: `ksau_config.py` または `utils_v61.py` を経由してデータにアクセスすること。
+  - `v6.0/data/cosmological_constants.json` (宇宙論定数)
+- **ユーティリティ**: `v28.0/code/ksau_standard_cosmology.py` 等を経由してデータにアクセスすること。
 
 ### 2. 統計的妥当性
-- **交差検証**: 新しい割り当てや公式の導入には **LOO-CV (Leave-One-Out Cross-Validation)** が必須。
-- **帰無仮説**: モンテカルロ・テスト（通常 200k samples以上）を実行し、**p < 0.001** かつ一意的な解であることを証明すること。
+- **Bonferroni 補正**: 多重検定の際は必ず独立試行数 $n$ で補正した有意水準 $\alpha/n$ を使用すること。
+- **p値基準**: 
+  - $S_8$ (Cosmology): **SIGNIFICANT (p=0.00556)**
+  - Mass Spectrum (Section 2): **NOT SIGNIFICANT (p>0.0050)**
 
 ### 3. Gemini 自己抑制プロトコル (Self-Inhibition Details)
-- **運動学的検証**: 質量予言の際、エネルギー保存則や運動学的制約（例: $m_{DM} < m_e$ などの不一致による自律撤回）を確認。
-- **循環論法の排除**: キャリブレーション済みの定数を用いた結果を「独立した予言」と呼ぶことを禁止し、「外挿（Extrapolation）」または「再構成（Reconstruction）」と明記。
-- **第一原理の定義**: 構造的不変量（Invariance）が証明されない数値的一致は、第一原理導出ではなく「対応（Correspondence）」として扱う。
+- **再探索禁止**: 既に数学的に閉鎖された経路（WZW、代数的写像、幾何学的 $\alpha_{em}$）の再探索を禁止。
+- **用語の厳格化**: 「予言 (Prediction)」は統計的に有意なもの（$S_8$）に限定し、他は「対応 (Correspondence)」または「適合 (Fit)」と呼ぶこと。
 
 ---
 
 ## バージョン別詳細ステータス
 
+### v36.0 (FINAL ARCHIVE ✅)
+**最終ステータス:** ARCHIVED
+**成果:**
+- $S_8$ 検証設計 (Euclid/LSST) 完成。
+- 否定的結果論文 (Negative Results Paper) 作成。
+- プロジェクト全アーカイブ完了。
+
+### v30.0 - v35.0 (NEGATIVE RESULTS & CLOSURE)
+**成果:**
+- WZW 全経路閉鎖 (数学的証明)。
+- $q_{mult}=7$ の Free Parameter 確定。
+- Section 2/3 の統計的有意性否定 (Bonferroni 補正)。
+
+### v28.0 (STATISTICAL VICTORY)
+**成果:**
+- 7サーベイ順列検定で $p=0.00556$ を達成。
+- $S_8$ テンションの位相的共鳴モデルによる解決。
+
 ### v23.0 (σ₈ TENSION FINALITY ✅)
-
-**最終監査判定 (2026-02-18):** COMPLETE — Honest Reporting (1.36σ)
-**結論:** 「数遊び」を排し、物理的必然性のみで宇宙網の成長抑制を説明。
-
-主な達成：
-1. **LOO-CV 厳密化** — 真の1点除外交差検証を BAO 統合・数値積分エンジンで実施。
-2. **非線形結び目ダイナミクス** — 絡み合い密度ブースト $1 + \alpha(k/\kappa)^2$ の導入により小スケール乖離を緩和。
-3. **$\beta$ の幾何学的導出** — $\beta = 2 + 8\alpha = 13/6$。多様体直径の赤方偏移進化を特定。
-4. **バリオン補正のSSoT化** — 特徴的スケール $1/(3\alpha)=16.0$。E8ルート格子へのエントロピー流出として定式化。
-
-### v16.1 (THEORY COMPLETE ✅ / PEER REVIEW ACCEPTED)
-
-**査読判定 (2026-02-17):** ACCEPT — Featured Article推奨
-**Quote:** *"The Universe implies a cost for its existence, and Gravity is the receipt."*
-
-主な達成：
-1. **相反律の二重導出** g₀₀·g_rr=1 — Bottom-up (労働不変性) + Top-down (光速不変性)
-2. **ドメイン分離** — Gauge (指数/位相) vs Gravity (有理/インピーダンス)
-3. **ゲージ係数のトポロジー導出** — α=κ/18, α_s=0.90κ (もはや"魔法の数字"でない)
-4. **511keV暗黒物質候補の撤回** — m_DM < m_e 運動学的違反
-
-### v16.0 (NEWTONIAN TRANSITION ✅)
-
-1. 重力引力の起源 — 時間的混雑（情報キュー）から導出
-2. 8πG恒等式 — 8πG = 8κ = π/3 from K(4)·κ=π
-3. Schwarzschild相反律 — N=41効率凍結から
-4. テンソル重力シミュレーション — スカラーモデルが失敗した記録も含む
-
-### v15.0 (TIME EMERGENCE ✅)
-
-1. 時間 = 24D→4D情報転送の逐次処理速度
-2. 次元選択法則 — K(3)=12>π² (3D点火), K(4)·κ=π (4D安定)
-3. 8π幾何学的導出 — 8190→195→192 (整数列)
-
-### v14.0 (ACTION PRINCIPLE & GAUGE UNIFICATION ✅)
-
-1. N=41 (μ=42) — g=3世代の唯一の大域最小
-2. GUT予測 — 4.64×10¹⁴ GeV
-3. ゲージ結合統一 — α=κ/18, sin²θ_W=1-exp(-2κ), α_s≈κ
-4. 暗黒物質スペクトル地図 — PeVスケール(N=6)IceCube整合
-
-### v10.0 (BOSON UNIFICATION ✅)
-
-- N_boson = 6 (NOT 3) — 統計的検証: 2.1%誤差 vs 51% (N=3)
-- 三セクター統一: N_lepton=20, N_quark=10, N_boson=6
-- Higgs質量: 0.14%誤差
-
-### v7.1 (PUBLICATION READY)
-
-- Fibonacci共鳴: Muon ⟨4₁⟩₃/τ(4₁) = 13/5 = F₇/F₅ ≈ φ² ≈ Nκ (0.69%精度)
-- 完全レプトンマップ: Electron (66.3% OFF) / Muon (0.69% ON) / Tau (14.9% OFF)
-
-### v6.0 (Zenodo Published — DOI: 10.5281/zenodo.18631886)
-
-- フェルミオン質量: R²=0.9998 / CKM混合: R²=0.9974 / PMNS: MSE=5.44 deg²
-
-### アーカイブ版 (v8.0, v9.0 — Superseded)
-
-- v8.0: TBD仮説 → v15で発展
-- v9.0: シフト理論 (Gemini主導) → v14で吸収
+**成果:**
+- LOO-CV 厳密化と非線形結び目ダイナミクスの導入。
 
 ---
 
 ## 主要公式一覧 (Complete Framework)
 
 ```
-κ = π/24 ≈ 0.1309  (真空のスペクトル重み)
+# 宇宙論セクター (Statistically Significant)
+S_8(z, k) = S_8(z_CMB) · (1+z)^-γ(k)
+γ(k) = Gaussian Resonance based on R_cell ≈ 20 Mpc
+p-value = 0.00556 (7 surveys)
 
-# 宇宙論セクター (v23.0 — UPDATED)
-R_cell(z) = R_0 · (1+z)^-β         (β = 13/6, 24次元多様体直径の進化)
-boost_nl(k) = 1 + α(k/κ)²          (非線形結び目エンタングルメント項)
-A_baryon(k) = 1 - 0.1(k²/(k²+16²)) (E8/24-cell エントロピー流出)
+# 質量セクター (Phenomenological Fit)
+ln(m) = κ·V + c   (R²=0.9998 using q_mult=7)
+q_mult = 7 (Free Parameter, Algebraic Origin Unknown)
 
-# 質量-体積相関 (v6.0)
-ln(m) = κ·V + c   (R²=0.9998, 9フェルミオン)
-
-# ゲージ結合 (v14.0 — DERIVED)
-α_EM = κ/18               (0.34%誤差, 18=24-K₃/2)
-α_s  = 0.90κ              (0.90=12/(12+4/3))
-sin²θ_W = 1 - exp(-2κ)   (0.38%誤差)
-
-# 重力セクター (v16.0-v16.1 — DERIVED)
-8πG = 8κ = π/3            (K(4)·κ=π から)
-g₀₀ · g_rr = 1            (N=41効率凍結)
-v₀(ρ) = 1/(1 + κρ)        (真空インピーダンス法則)
-
-# 時間・次元 (v15.0)
-K(3) = 12 > π²  (3D点火)
-K(4)·κ = π      (4D安定)
-
-# CKM混合 (v6.0)
-logit(V_ij) = C + A·ΔV + B·Δln|J| + β/V_avg + γ·(ΔV·Δln|J|)
-A=-6.3436, B=12.3988, β=-105.0351, γ=1.1253, C=23.2475
-
-# モジュラー作用原理 (v14.0)
-S[M] = κ(μ - χ)  →  N=41 (μ=42) 唯一の大域最小
+# CKM混合 (Phenomenological Fit)
+logit(V_ij) = C + A·ΔV + B·Δln|J| + ... (R²=0.998 using 5 params)
 ```
 
 ---
 
-## 物理定数 (Reference — 実際は v6.0/data/physical_constants.json から読む)
-
-```json
-{
-  "kappa": 0.1308996938995747,
-  "alpha_em": 0.0072973525693,
-  "sin2theta_w": 0.23122,
-  "gravity": { "G_newton_exp": 6.708e-39, "G_ksau": 6.7135e-39 },
-  "ckm": { "r2_achieved": 0.9974,
-    "optimized_coefficients": {"A":-6.3436,"B":12.3988,"beta":-105.0351,"gamma":1.1253,"C":23.2475}
-  }
-}
-```
-
----
-
-## 出版準備状況
-
-**投稿準備完了 ✅ (2026-02-17宣言)**
+## 出版準備状況 (v36.0 Final Status)
 
 | 論文 | ターゲット | 状態 |
 |------|-----------|------|
-| Paper 1: Geometric Origin of SM Parameters | JHEP | 準備完了 |
-| Paper 2: Gravitational Constant from Vacuum Impedance | Phys. Rev. D | 準備完了 |
-| Paper 3: TFT on 24D Leech Lattice | Comm. Math. Phys. | 準備完了 |
-
-詳細: `v16.1/PUBLICATION_CHECKLIST.md`
+| **Paper 1: Negative Results on Algebraic Mass Origin** | arXiv (hep-th) | **Draft v2 Ready** |
+| **Paper 2: S8 Resonance Model & Euclid Verification** | ApJ / MNRAS | **Design Complete** |
+| Paper 3: Geometric Origin of SM Parameters | (Withdrawn) | **Merged into Paper 1** |
 
 ---
 
-## パラダイム進化
+## 既知の限界 (Scientific Integrity)
 
-v6.0-v7.1: "粒子は結び目である" →
-v10.0-v14.0: "力は幾何学である" →
-v15.0-v17.0: "時間は処理、重力は流束" →
-v18.0-v22.0: **"重力はインピーダンス、宇宙網は位相的張力"** →
-v23.0: **"抑制の限界と結び目の絡まり合い（誠実な1.36σ）"**
-
-詳細は `v23.0/KSAU_v23.0_Theoretical_Lineage.md` を参照。
-
----
-
-## 技術実装リファレンス (Implementation Reference)
-
-### 1. プロジェクト構造 (Quick Reference)
-```text
-KSAU_Project/
-├── v6.0/data/physical_constants.json    ← SSoT (全定数)
-├── v6.0/data/topology_assignments.json  ← SSoT (粒子トポロジー)
-├── v6.0/code/ksau_config.py             ← データ読み込みユーティリティ
-├── v16.0/papers/KSAU_v16_Newtonian_Transition.md  ← 主論文
-├── audit/history/communication/         ← AI間ハンドオーバーログ
-└── KSAU_DETAILS.md                      ← 本ファイル (詳細情報集約)
-```
-
-### 2. コーディング規約 (Coding Standards)
-- **相対パスの原則**: `Path(__file__).parent.parent` 等を使用し、絶対パスを避ける。
-- **スクリプトヘッダー**:
-```python
-"""
-Script purpose: [One-line description]
-Dependencies: ksau_config (or utils_v61)
-SSoT sources: physical_constants.json, topology_assignments.json
-Author: [Agent Name]
-Date: 2026-02-17
-"""
-```
-
-### 3. 一般的なタスク (Common Tasks)
-- **CKM検証**: `python v6.0/code/ckm_final_audit.py` (Expected: R²=0.9974)
-- **統計監査**: `python v6.0/code/robustness_check.py`
-- **図の生成**: `python v16.1/generate_publication_figures.py`
-
-### 4. Git コミット形式
-```text
-[Component] Action: Brief description
-
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
-Co-Authored-By: Gemini <noreply@google.com>
-```
+| 事象 | ステータス | 理由 |
+|------|------------|------|
+| **$q_{mult}=7$ の起源** | **不明 (Free Param)** | WZW/代数/幾何からの導出は全否定された |
+| **Section 2 質量公式** | **統計的有意性なし** | Bonferroni 補正後 $p > 0.05$ |
+| **$H_0$ Tension** | **悪化 (17σ)** | KSAU $H_0=76.05$ は Planck $67.4$ と不整合 |
+| **$\alpha_{em}$ 幾何学的導出** | **棄却** | 偶然の一致率 87% |
 
 ---
 
-## 既知の限界 (論文に明記)
-
-| 事象 | 誤差 | 理由 |
-|------|------|------|
-| CKM Cabibbo-forbidden (V_ub等) | 63-100% | 幾何学的抑制が不十分 |
-| PMNS質量階層比 | 36% | ニュートリノセクターの異なるスケーリング |
-| v₀線形インピーダンスの微視的導出 | 未完 | ニュートン→アインシュタイン相当の精緻化が必要 |
-| 511keV暗黒物質候補 | **撤回** | m_DM < m_e 運動学的違反 |
-
----
-
-*KSAU_DETAILS.md — Last Updated: 2026-02-17*
+*KSAU_DETAILS.md — Last Updated: 2026-02-21 (v36.0 Final)*
