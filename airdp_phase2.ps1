@@ -33,7 +33,7 @@ $SeedPath_resolved = if ($SeedPath -ne "" -and (Test-Path $SeedPath)) {
 }
 if (-not (Test-Path $SeedPath_resolved)) { throw "seed.md not found: $SeedPath_resolved" }
 
-$OrchestratorSessionFile = Join-Path $p.SessionDir "orchestrator_session_id.txt"
+$OrchestratorSessionFile = Join-Path $p.SessionDir "orchestrator_phase2_session_id.txt"
 $session   = Get-OrCreateSessionId -AIName $Orchestrator -SessionFile $OrchestratorSessionFile
 $sessionId = $session.Id
 $isFirst   = $session.IsFirst
@@ -87,7 +87,7 @@ while (-not $approved) {
                 Invoke-AI -AIName $Orchestrator -Prompt $editPrompt `
                     -SessionIdRef ([ref]$sessionId) -SessionFile $OrchestratorSessionFile -IsFirst $false
             }
-            "stop" { Write-Host "中断しました。" -ForegroundColor Red; exit 0 }
+            "stop" { Write-Host "中断しました。" -ForegroundColor Red; exit 1 }
             default { Write-Host "go / edit / stop を入力してください。" -ForegroundColor Yellow }
         }
     }

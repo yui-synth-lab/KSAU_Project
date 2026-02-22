@@ -32,8 +32,9 @@ function Resolve-AirdpPaths {
         VerdictPath      = Join-Path $CycleDir "verdict.md"
         CycleReportPath  = Join-Path $CycleDir "cycle_report.md"
         LogPath          = Join-Path $CycleDir "output_log.md"
-        GoPath           = Join-Path $CycleDir "go.md"
-        NgPath           = Join-Path $CycleDir "ng.md"
+        GoPath              = Join-Path $CycleDir "go.md"
+        NgPath              = Join-Path $CycleDir "ng.md"
+        CycleCompletePath   = Join-Path $CycleDir "cycle_complete.md"
         ConstantsPath    = Join-Path $SsotDir  "constants.json"
         SsotChangelog    = Join-Path $SsotDir  "changelog.json"
         NegResultsPath   = Join-Path $ProjectDir "NEGATIVE_RESULTS_INDEX.md"
@@ -58,23 +59,28 @@ function Save-SessionId([string]$Path, [string]$Id) {
 
 # セッションIDを取得し、IsFirst フラグも返す
 # 戻り値: @{ Id = <string or null>; IsFirst = <bool> }
+# 同一サイクル内ではセッションを引き継ぐ（全AI共通）
+# サイクルをまたぐ場合は自動リセット（SessionFile が新サイクルディレクトリに作られるため）
 function Get-OrCreateSessionId {
     param(
         [string]$AIName,
         [string]$SessionFile
     )
     $existing = Read-SessionId $SessionFile
-    # Gemini/Codex は毎回新規セッション（セッション管理が異なるため）
-    if ($AIName -in @("gemini", "codex")) {
-        return @{ Id = $existing; IsFirst = $true }
-    }
-    # Claude/Copilot: ファイルがあれば resume、なければ新規UUID を生成して保存
     if ($null -ne $existing) {
+        # 既存セッションを引き継ぐ
         return @{ Id = $existing; IsFirst = $false }
-    } else {
-        $newId = [System.Guid]::NewGuid().ToString()
-        Save-SessionId $SessionFile $newId
-        return @{ Id = $newId; IsFirst = $true }
+    }
+    # 新規セッション
+    switch ($AIName) {
+        "gemini"  { return @{ Id = $null; IsFirst = $true } }  # Gemini: 実行後に取得
+        "codex"   { return @{ Id = $null; IsFirst = $true } }  # Codex:  実行後に取得
+        default   {
+            # Claude/Copilot: 起動時にUUIDを生成して保存
+            $newId = [System.Guid]::NewGuid().ToString()
+            Save-SessionId $SessionFile $newId
+            return @{ Id = $newId; IsFirst = $true }
+        }
     }
 }
 
@@ -93,12 +99,13 @@ function Expand-PromptTemplate([string]$TemplatePath, [hashtable]$Vars) {
 # ──────────────────────────────────────────
 # AI 呼び出し: Gemini
 # ──────────────────────────────────────────
-function Get-LatestGeminiSessionId {
+function Get-GeminiSessionIds {
+    $ids = @()
     $sessions = gemini --list-sessions 2>$null
     foreach ($line in $sessions) {
-        if ($line -match "\[([a-f0-9\-]{36})\]") { return $matches[1] }
+        if ($line -match "\[([a-f0-9\-]{36})\]") { $ids += $matches[1] }
     }
-    return $null
+    return $ids
 }
 
 function Invoke-Gemini([string]$Prompt, [ref]$SessionIdRef, [string]$SessionFile, [string]$GeminiMdSrc = "") {
@@ -106,14 +113,23 @@ function Invoke-Gemini([string]$Prompt, [ref]$SessionIdRef, [string]$SessionFile
         Copy-Item $GeminiMdSrc "GEMINI.md" -Force
     }
     if ($null -eq $SessionIdRef.Value) {
+        # 新規セッション: 実行前後の差分で新規IDを特定
+        # --list-sessions は末尾が最新なので、差分のうち末尾（最新）を使う
+        $before = Get-GeminiSessionIds
+        Write-Host "  Gemini: 新規セッションで実行中..." -ForegroundColor DarkGray
         gemini -p $Prompt -y
-        $newId = Get-LatestGeminiSessionId
+        $after  = Get-GeminiSessionIds
+        $newIds = @($after | Where-Object { $_ -notin $before })
+        $newId  = if ($newIds.Count -gt 0) { $newIds[-1] } else { $null }
         if ($newId) {
             $SessionIdRef.Value = $newId
             Save-SessionId $SessionFile $newId
-            Write-Host "  Gemini session (new): $newId" -ForegroundColor DarkGray
+            Write-Host "  Gemini session (saved): $newId" -ForegroundColor DarkGray
+        } else {
+            Write-Host "  [WARNING] 新規 Gemini セッション ID を取得できませんでした。" -ForegroundColor DarkYellow
         }
     } else {
+        # 同一サイクル内の継続: resume
         Write-Host "  Gemini session (resume): $($SessionIdRef.Value)" -ForegroundColor DarkGray
         gemini -r $SessionIdRef.Value -p $Prompt -y
     }

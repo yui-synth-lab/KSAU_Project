@@ -58,22 +58,35 @@ Write-Host "  Researcher  : $Researcher"  -ForegroundColor Green
 Write-Host "  Reviewer    : $Reviewer"    -ForegroundColor Magenta
 Write-Host "  Judge       : $Judge"       -ForegroundColor Blue
 
-$commonArgs = @("-ProjectDir", $ProjectDir, "-CycleId", $CycleId)
-if ($PromptsDir -ne "") { $commonArgs += @("-PromptsDir", $PromptsDir) }
-
 # ── Phase 2 ─────────────────────────────────
-$phase2Args = $commonArgs + @("-Orchestrator", $Orchestrator)
-if ($SeedPath -ne "") { $phase2Args += @("-SeedPath", $SeedPath) }
-if ($SkipApproval)    { $phase2Args += "-SkipApproval" }
+$phase2Args = @{
+    ProjectDir   = $ProjectDir
+    CycleId      = $CycleId
+    Orchestrator = $Orchestrator
+}
+if ($SeedPath   -ne "")  { $phase2Args["SeedPath"]   = $SeedPath }
+if ($PromptsDir -ne "")  { $phase2Args["PromptsDir"] = $PromptsDir }
+if ($SkipApproval)       { $phase2Args["SkipApproval"] = $true }
 & (Join-Path $ScriptDir "airdp_phase2.ps1") @phase2Args
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "[Orchestrator] Phase 2 が中断されました。パイプラインを停止します。" -ForegroundColor Red
+    exit $LASTEXITCODE
+}
 
 # ── Phase 3 ─────────────────────────────────
 $EmergencyStopPath = Join-Path $ProjectDir "audit" "emergency_stops" "emergency_stop_cycle${CycleId}.md"
 $null = New-Item -ItemType Directory -Force -Path (Split-Path $EmergencyStopPath)
-$phase3Aborted = $false
+
+$phase3Args = @{
+    ProjectDir     = $ProjectDir
+    CycleId        = $CycleId
+    Researcher     = $Researcher
+    Reviewer       = $Reviewer
+    MaxIterations  = $MaxIterations
+}
+if ($PromptsDir -ne "") { $phase3Args["PromptsDir"] = $PromptsDir }
 
 try {
-    $phase3Args = $commonArgs + @("-Researcher", $Researcher, "-Reviewer", $Reviewer, "-MaxIterations", $MaxIterations)
     & (Join-Path $ScriptDir "airdp_phase3.ps1") @phase3Args
 } catch {
     if ($_.Exception -is [System.Management.Automation.PipelineStoppedException]) {
@@ -89,9 +102,11 @@ Phase 4 (Judge) に直接移行します。
 }
 
 # ── Phase 4 ─────────────────────────────────
-$phase4Args = $commonArgs + @("-Judge", $Judge)
+$phase4Args = @{ ProjectDir = $ProjectDir; CycleId = $CycleId; Judge = $Judge }
+if ($PromptsDir -ne "") { $phase4Args["PromptsDir"] = $PromptsDir }
 & (Join-Path $ScriptDir "airdp_phase4.ps1") @phase4Args
 
 # ── Phase 5 ─────────────────────────────────
-$phase5Args = $commonArgs + @("-Orchestrator", $Orchestrator)
+$phase5Args = @{ ProjectDir = $ProjectDir; CycleId = $CycleId; Orchestrator = $Orchestrator }
+if ($PromptsDir -ne "") { $phase5Args["PromptsDir"] = $PromptsDir }
 & (Join-Path $ScriptDir "airdp_phase5.ps1") @phase5Args

@@ -91,12 +91,13 @@ while (-not $finished) {
     Write-Host "`n[Reviewer: $Reviewer] 査読中..." -ForegroundColor Magenta
 
     $reviewerVars = @{
-        LOG_PATH     = $p.LogPath
-        NG_PATH      = $p.NgPath
-        GO_PATH      = $p.GoPath
-        ROADMAP_PATH = $p.RoadmapPath
-        ITER_DIR     = $iterDir
-        SSOT_DIR     = $p.SsotDir
+        LOG_PATH              = $p.LogPath
+        NG_PATH               = $p.NgPath
+        GO_PATH               = $p.GoPath
+        ROADMAP_PATH          = $p.RoadmapPath
+        ITER_DIR              = $iterDir
+        SSOT_DIR              = $p.SsotDir
+        CYCLE_COMPLETE_PATH   = $p.CycleCompletePath
     }
     $promptReviewer = Expand-PromptTemplate (Join-Path $PromptsDir "reviewer.md") $reviewerVars
 
@@ -108,8 +109,16 @@ while (-not $finished) {
     # ── 3. 判定 ──────────────────────────────
     if (Test-Path $p.GoPath) {
         Write-Host "`n[APPROVED] $($p.GoPath)" -ForegroundColor Green
-        $finished = $true
         if (Test-Path $p.LogPath) { Remove-Item $p.LogPath }
+
+        # cycle_complete.md が存在すれば全イテレーション完了
+        if (Test-Path $p.CycleCompletePath) {
+            Write-Host "[Phase 3] 全イテレーション完了（cycle_complete.md 検出）" -ForegroundColor Cyan
+            $finished = $true
+        } else {
+            Write-Host "[Phase 3] イテレーション承認。次のイテレーションへ継続。" -ForegroundColor Green
+            $iteration++
+        }
     } elseif (Test-Path $p.NgPath) {
         Write-Host "`n[REJECTED] 次イテレーションで対応します。" -ForegroundColor Red
         $iteration++

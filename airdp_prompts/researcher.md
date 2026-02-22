@@ -7,13 +7,20 @@
 **出力ログ（必須）:** {LOG_PATH}
 **前回の却下ファイル:** {NG_PATH}
 **前回の承認ファイル:** {GO_PATH}
-**SSoT ディレクトリ（絶対パス）:** {SSOT_DIR}
+**SSoT ローダー（必ずこれを使うこと）:** {SSOT_DIR}/ksau_ssot.py
 
-> **【必須】コードの冒頭に以下を必ず記述すること（パスを推測・変更してはならない）:**
+> **【必須】コードの冒頭に以下を記述すること。パスは一切書かなくてよい。**
 >
 > ```python
-> SSOT_DIR = Path(r"{SSOT_DIR}")
+> import sys
+> sys.path.insert(0, r"{SSOT_DIR}")
+> from ksau_ssot import SSOT
+> ssot = SSOT()
+> consts = ssot.constants()          # constants.json
+> knots_df, links_df = ssot.knot_data()  # KnotInfo/LinkInfo CSV
 > ```
+>
+> `SSOT()` クラスがすべてのパスを自動解決する。`Path("...")` を自分で書いてはならない。
 
 ---
 
@@ -25,7 +32,9 @@
 
 1. **{NG_PATH} が存在する場合** → そこに記載された指摘内容を最優先で対応する（Step 2 へ）
 2. **{GO_PATH} が存在する場合** → 承認されたタスクの次のステップを選択する（Step 3 へ）
-3. **どちらも存在しない場合** → {ROADMAP_PATH} を読み込み、未完了タスク（`[ ]`）から次を選ぶ（Step 3 へ）
+3. **どちらも存在しない場合** → {ROADMAP_PATH} を読み込み、`## イテレーション割り当て表` の `[ ]` のうち最も若い番号の行を選ぶ（Step 3 へ）
+
+> **【重要】仮説の選択ルール**: 必ず「イテレーション割り当て表」に従うこと。`[ ]` の最若番行の仮説IDとタスクを実行する。自分で仮説を選んではならない。表に `[ ]` がなければ Orchestrator に通知して終了する。
 
 ### Step 2: 却下指摘への対応（{NG_PATH} が存在する場合）
 
@@ -139,8 +148,8 @@
 ## 禁止事項（厳守）
 
 - 定数のハードコード（例: `3.14159`, `2.16`, `0.9743` など）
-- **コード内の絶対パスのハードコード（最重要）**: `Path("E:/...")` や `Path("C:/...")` のような絶対パスをコードに書いてはならない。SSoT パスは必ず `{SSOT_DIR}` を使用し、コード内では `Path("{SSOT_DIR}/constants.json")` のように展開された値を使うこと。
-- **サイクルディレクトリ内への ssot/ 作成禁止**: SSoT は `{SSOT_DIR}` に一元管理されている。`{WORK_DIR}/ssot/` のような新しい SSoT ディレクトリを作成してはならない。
+- **`Path(...)` による SSoT パスのハードコード（最重要）**: データ読み込みには必ず `ksau_ssot.py` の `SSOT` クラスを使うこと。`Path("E:/...")` や `Path("./ssot")` などを自分で書いてはならない。
+- **サイクルディレクトリ内への ssot/ 作成禁止**: SSoT は一元管理されている。新しい SSoT ディレクトリを自分で作成してはならない。
 - 自身の結果に対する統計的判定（「有意である」「成功」などの評価）← Reviewer の役割
 - ロードマップに記載されていない新しい仮説の提案 ← Orchestrator の役割
 - 撤退基準の変更・緩和
@@ -148,23 +157,34 @@
 
 ## SSoT アクセス方法（必須）
 
-コードで SSoT 定数を読み込む場合は、以下のパターンを使うこと。
+**必ず `ksau_ssot.py` の `SSOT` クラスを使うこと。直接 `Path` や `open` でファイルを開いてはならない。**
 
 ```python
-import json
-from pathlib import Path
+import sys
+sys.path.insert(0, r"{SSOT_DIR}")
+from ksau_ssot import SSOT
 
-SSOT_DIR = Path("{SSOT_DIR}")
-with open(SSOT_DIR / "constants.json", encoding="utf-8") as f:
-    consts = json.load(f)
-with open(SSOT_DIR / "data" / "raw" / "topology_assignments.json", encoding="utf-8") as f:
-    topology = json.load(f)
+ssot = SSOT()
+
+# constants.json 全体
+consts = ssot.constants()
+
+# よく使うセクションの直接取得
+params   = ssot.analysis_params()        # analysis_parameters
+thresh   = ssot.statistical_thresholds() # statistical_thresholds
+
+# KnotInfo / LinkInfo CSV（DataFrame）
+knots_df, links_df = ssot.knot_data()
+
+# 仮説定義
+h3 = ssot.hypothesis("H3")
 ```
 
-**NG パターン（絶対パス）:**
+**NG パターン（パスを自分で書く）:**
 
 ```python
-# 絶対パスを書いてはならない
-ssot_path = Path("E:/Obsidian/KSAU_Project/ssot/constants.json")  # ← 禁止
-ssot_path = Path("E:/Obsidian/KSAU_Project/cycles/cycle_02/ssot/constants.json")  # ← 禁止
+# ← すべて禁止。ksau_ssot.SSOT() を使え。
+Path("E:/Obsidian/KSAU_Project/ssot/constants.json")
+Path("./ssot/constants.json")
+open("constants.json")
 ```

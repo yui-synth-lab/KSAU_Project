@@ -6,6 +6,30 @@
   "entries": [
     {
       "date": "2026-02-22",
+      "cycle": "cycle_02",
+      "iteration": "iter_02",
+      "judge_verdict": "H2 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "add",
+      "key": "model_validation",
+      "old_value": null,
+      "new_value": "h2_model_b_r2=0.7674, h2_model_b_fpr=0.0, h2_jones_polynomial_significant=false, h2_det_exponent_status=non_essential",
+      "reason": "cycle_01/02 の H2 ACCEPT（R²=0.7674, FPR=0.0, Bonferroni補正後 p≪0.025）を SSoT に記録。留保：ln_ST は合成データのため実観測値での再検証が必要。"
+    },
+    {
+      "date": "2026-02-22",
+      "cycle": "cycle_02",
+      "iteration": "iter_02",
+      "judge_verdict": "H2 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "add",
+      "key": "analysis_parameters",
+      "old_value": null,
+      "new_value": "random_seed=42, min_crossing_number=3, max_crossing_number=12",
+      "reason": "cycle_02 iter_02 で Reviewer 指摘（問題3）を受け、分析パラメータを SSoT に移行。"
+    },
+    {
+      "date": "2026-02-22",
       "cycle": "init",
       "iteration": null,
       "judge_verdict": "N/A (初期化)",

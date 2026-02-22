@@ -79,6 +79,32 @@
     "det_exponent": 2.0
   },
 
+  "model_validation": {
+    "_warning": "R²=0.7674 は双曲体積 V と結び目行列式 Det の相関（r=0.841）に起因する部分的な代理変数効果を含む可能性がある。ln_ST は合成データ（-κV - det_exponent*ln_det + noise）であり、実観測値に対する検証結果は別途記録すること。",
+    "h2_model_b_r2": 0.7674073819,
+    "h2_model_b_adj_r2": 0.7672505955,
+    "h2_model_b_fpr": 0.0,
+    "h2_bonferroni_threshold": 0.025,
+    "h2_det_exponent_status": "non_essential",
+    "h2_det_exponent_note": "感度分析により det_exponent=0.5〜3.0 の全範囲で R²≥0.5 を達成。理論的唯一性は KSAU TQFT アクション定義レベルの未解決課題（NEG記録なし・ACCEPT留保事項）。",
+    "h2_jones_polynomial_significant": false,
+    "h2_jones_polynomial_note": "ln_jones_p1 の p 値=0.8604 により独立説明変数として無効。詳細は NEG-20260222-01 参照。",
+    "h2_validated_by_cycles": ["cycle_01", "cycle_02"],
+    "h2_last_updated": "2026-02-22"
+  },
+
+  "analysis_parameters": {
+    "random_seed": 42,
+    "min_crossing_number": 3,
+    "max_crossing_number": 12
+  },
+
+  "k_mapping_coefficients": {
+    "k1": { "det_coeff": 0.1, "sig_coeff": 1.0, "const": 0.0 },
+    "k2": { "log_det_coeff": 2.0, "vol_coeff": 0.5, "const": 1.0 },
+    "k3": { "cross_coeff": 2.0, "const": 0.0 }
+  },
+
   "pipeline_limits": {
     "max_hypotheses_per_seed":       3,
     "max_iterations_per_hypothesis": 5,
