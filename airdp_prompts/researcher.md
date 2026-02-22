@@ -7,6 +7,13 @@
 **出力ログ（必須）:** {LOG_PATH}
 **前回の却下ファイル:** {NG_PATH}
 **前回の承認ファイル:** {GO_PATH}
+**SSoT ディレクトリ（絶対パス）:** {SSOT_DIR}
+
+> **【必須】コードの冒頭に以下を必ず記述すること（パスを推測・変更してはならない）:**
+>
+> ```python
+> SSOT_DIR = Path(r"{SSOT_DIR}")
+> ```
 
 ---
 
@@ -25,7 +32,7 @@
 {NG_PATH} を読み込み、指摘された全項目に対して以下を実行してください。
 
 - 数学的・物理的根拠の不足 → SSoT から正しい定数を読み込み、計算を修正
-- ハードコードの混在 → {WORK_DIR}/ssot/constants.json からの読み込みに置換
+- ハードコードの混在 → {SSOT_DIR}/constants.json からの読み込みに置換
 - 論理の不備 → 計算フローを見直し、根拠を明文化
 - 統計的検証の甘さ → p 値計算・多重比較補正を追加
 
@@ -37,7 +44,7 @@
 
 1. **タスクの実装**
    - コードを {ITER_DIR}/code/ に配置
-   - 全定数は SSoT ({WORK_DIR}/ssot/constants.json) から読み込む（ハードコード禁止）
+   - 全定数は SSoT ({SSOT_DIR}/constants.json) から読み込む（ハードコード禁止）
    - random seed を使用する場合は値を記録（再現性の確保）
 
 2. **計算の実行**
@@ -132,7 +139,32 @@
 ## 禁止事項（厳守）
 
 - 定数のハードコード（例: `3.14159`, `2.16`, `0.9743` など）
+- **コード内の絶対パスのハードコード（最重要）**: `Path("E:/...")` や `Path("C:/...")` のような絶対パスをコードに書いてはならない。SSoT パスは必ず `{SSOT_DIR}` を使用し、コード内では `Path("{SSOT_DIR}/constants.json")` のように展開された値を使うこと。
+- **サイクルディレクトリ内への ssot/ 作成禁止**: SSoT は `{SSOT_DIR}` に一元管理されている。`{WORK_DIR}/ssot/` のような新しい SSoT ディレクトリを作成してはならない。
 - 自身の結果に対する統計的判定（「有意である」「成功」などの評価）← Reviewer の役割
 - ロードマップに記載されていない新しい仮説の提案 ← Orchestrator の役割
 - 撤退基準の変更・緩和
 - {ROADMAP_PATH} の直接編集
+
+## SSoT アクセス方法（必須）
+
+コードで SSoT 定数を読み込む場合は、以下のパターンを使うこと。
+
+```python
+import json
+from pathlib import Path
+
+SSOT_DIR = Path("{SSOT_DIR}")
+with open(SSOT_DIR / "constants.json", encoding="utf-8") as f:
+    consts = json.load(f)
+with open(SSOT_DIR / "data" / "raw" / "topology_assignments.json", encoding="utf-8") as f:
+    topology = json.load(f)
+```
+
+**NG パターン（絶対パス）:**
+
+```python
+# 絶対パスを書いてはならない
+ssot_path = Path("E:/Obsidian/KSAU_Project/ssot/constants.json")  # ← 禁止
+ssot_path = Path("E:/Obsidian/KSAU_Project/cycles/cycle_02/ssot/constants.json")  # ← 禁止
+```

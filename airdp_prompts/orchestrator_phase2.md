@@ -140,3 +140,9 @@ seed.md を読み込み、以下の3要素を確認してください。
 - SSoT ({CONSTANTS_PATH}) から統計閾値を読み込むこと。ハードコード禁止。
 - 検証不可能な仮説（定性的すぎる、測定手段がない等）は事前スクリーニングで除外。
 - Boundary が seed.md にない場合は Orchestrator が補完し、roadmap.md に「[Orchestrator補完]」と明記。
+
+## SSoT パスに関する厳守事項
+
+- SSoT ディレクトリは **{SSOT_DIR}** である。サイクルディレクトリ内（cycles/cycle_NN/ssot/）に **新たな ssot/ を作成してはならない**。
+- H*.json の出力先は **{SSOT_DIR}/hypotheses/H[N].json** のみ。他の場所への出力は禁止。
+- roadmap.md の `## SSoT参照` セクションには必ず **{SSOT_DIR}** の絶対パスを記載し、Researcher がパスを迷わないようにすること。
