@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "description": "SSoT への全変更履歴 — AIRDP サイクル管理",
+    "format": "変更は Judge の ACCEPT 判定後にのみ Orchestrator が追記する"
+  },
+  "entries": [
+    {
+      "date": "2026-02-22",
+      "cycle": "init",
+      "iteration": null,
+      "judge_verdict": "N/A (初期化)",
+      "changed_file": "ssot/constants.json",
+      "change_type": "create",
+      "key": "_all",
+      "old_value": null,
+      "new_value": "v6.0/data/physical_constants.json から移植",
+      "reason": "AIRDP cycle_01 開始にあたり SSoT を初期化"
+    },
+    {
+      "date": "2026-02-22",
+      "cycle": "init",
+      "iteration": null,
+      "judge_verdict": "N/A (初期化)",
+      "changed_file": "ssot/parameters.json",
+      "change_type": "create",
+      "key": "_all",
+      "old_value": null,
+      "new_value": "v6.0/data/physical_constants.json (quarks/leptons/bosons/neutrinos) から移植",
+      "reason": "AIRDP cycle_01 開始にあたり SSoT を初期化"
+    },
+    {
+      "date": "2026-02-22",
+      "cycle": "init",
+      "iteration": null,
+      "judge_verdict": "N/A (初期化)",
+      "changed_file": "ssot/data/raw/topology_assignments.json",
+      "change_type": "create",
+      "key": "_all",
+      "old_value": null,
+      "new_value": "v6.0/data/topology_assignments.json から移植（変更なし）",
+      "reason": "AIRDP cycle_01 開始にあたり SSoT を初期化"
+    }
+  ]
+}

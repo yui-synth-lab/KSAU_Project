@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "created": "2026-02-22",
+    "description": "KSAU v7.0 プロジェクト固有パラメータ — cycle_01",
+    "source": "v6.0/data/physical_constants.json (quarks, leptons, bosons, neutrinos sections)",
+    "version": 1
+  },
+
+  "quarks": {
+    "Up":      { "observed_mass_mev": 2.16,      "generation": 1, "charge_type": "up-type" },
+    "Down":    { "observed_mass_mev": 4.67,      "generation": 1, "charge_type": "down-type" },
+    "Strange": { "observed_mass_mev": 93.4,      "generation": 2, "charge_type": "down-type" },
+    "Charm":   { "observed_mass_mev": 1270.0,    "generation": 2, "charge_type": "up-type" },
+    "Bottom":  { "observed_mass_mev": 4180.0,    "generation": 3, "charge_type": "down-type" },
+    "Top":     { "observed_mass_mev": 172760.0,  "generation": 3, "charge_type": "up-type" }
+  },
+
+  "leptons": {
+    "Electron": { "observed_mass_mev": 0.511,    "generation": 1 },
+    "Muon":     { "observed_mass_mev": 105.66,   "generation": 2 },
+    "Tau":      { "observed_mass_mev": 1776.86,  "generation": 3 }
+  },
+
+  "bosons": {
+    "W":     { "observed_mass_mev": 80377.0,  "is_brunnian": true, "target_crossing": 11 },
+    "Z":     { "observed_mass_mev": 91187.0,  "is_brunnian": true, "target_crossing": 11 },
+    "Higgs": { "observed_mass_mev": 125100.0, "is_brunnian": true, "target_crossing": 11,
+               "mass_gev_obs": 125.25 }
+  },
+
+  "neutrinos": {
+    "oscillation": {
+      "dm2_21_exp": 7.42e-5,
+      "dm2_31_exp": 2.514e-3
+    },
+    "pmns_angles_deg": {
+      "theta12": 33.4,
+      "theta23": 49.0,
+      "theta13": 8.6
+    }
+  },
+
+  "ckm_matrix_observed": [
+    [0.9743, 0.2253, 0.0036],
+    [0.2252, 0.9734, 0.0410],
+    [0.0086, 0.0405, 0.9991]
+  ],
+
+  "boundary_ansatz": {
+    "cl_intercept":      -2.38,
+    "scan_range":        [3, 12],
+    "selection_principle": "minimal_determinant"
+  },
+
+  "bosons_scaling": {
+    "A": 0.39256,
+    "C": 5.5414
+  },
+
+  "axion_candidate": {
+    "topology":          "6_3",
+    "volume":            5.6930,
+    "predicted_mass_mev": 0.392,
+    "predicted_mass_uncertainty_mev": 0.001,
+    "decay_mode":        "two_photon",
+    "lifetime_range_s":  [1e-6, 1e-3],
+    "selection_principle": "simplest_amphicheiral_excluding_4_1_muon"
+  }
+}

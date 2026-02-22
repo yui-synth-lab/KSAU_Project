@@ -1,0 +1,101 @@
+{
+  "Electron": {
+    "topology": "3_1",
+    "volume": 0.0,
+    "crossing_number": 3,
+    "components": 1,
+    "determinant": 3,
+    "generation": 1
+  },
+  "Muon": {
+    "topology": "4_1",
+    "volume": 2.0298832128,
+    "crossing_number": 4,
+    "components": 1,
+    "determinant": 5,
+    "generation": 2
+  },
+  "Tau": {
+    "topology": "6_1",
+    "volume": 3.1639632288,
+    "crossing_number": 6,
+    "components": 1,
+    "determinant": 9,
+    "generation": 3
+  },
+  "Up": {
+    "topology": "L9n1{1}",
+    "volume": 5.33348956689812,
+    "crossing_number": 9,
+    "components": 2,
+    "determinant": 12,
+    "generation": 1
+  },
+  "Down": {
+    "topology": "L8a18{0,1}",
+    "volume": 6.551743287887868,
+    "crossing_number": 8,
+    "components": 3,
+    "determinant": 20,
+    "generation": 1
+  },
+  "Strange": {
+    "topology": "L11n330{0,1}",
+    "volume": 9.312341316558376,
+    "crossing_number": 11,
+    "components": 3,
+    "determinant": 36,
+    "generation": 2
+  },
+  "Charm": {
+    "topology": "L11a362{0}",
+    "volume": 11.215504015501589,
+    "crossing_number": 11,
+    "components": 2,
+    "determinant": 70,
+    "generation": 2
+  },
+  "Bottom": {
+    "topology": "L11a528{0,1}",
+    "volume": 15.156670150795042,
+    "crossing_number": 11,
+    "components": 3,
+    "determinant": 96,
+    "generation": 3
+  },
+  "Top": {
+    "topology": "L11a225{1}",
+    "volume": 15.62112812032806,
+    "crossing_number": 11,
+    "components": 2,
+    "determinant": 110,
+    "generation": 3
+  },
+  "W": {
+    "topology": "L11n387{0,0}",
+    "volume": 14.655449506835504,
+    "crossing_number": 11,
+    "components": 3,
+    "determinant": 64,
+    "is_brunnian": true,
+    "physical_meaning": "Double Borromean"
+  },
+  "Z": {
+    "topology": "L11a431{0,0}",
+    "volume": 15.027615015039348,
+    "crossing_number": 11,
+    "components": 3,
+    "determinant": 112,
+    "is_brunnian": true,
+    "physical_meaning": "Double Borromean"
+  },
+  "Higgs": {
+    "topology": "L11a55{0}",
+    "volume": 15.820714702540293,
+    "crossing_number": 11,
+    "components": 2,
+    "determinant": 136,
+    "is_brunnian": true,
+    "physical_meaning": "Scalar Clasp (2-component saturation)"
+  }
+}

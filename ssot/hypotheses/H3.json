@@ -1,0 +1,28 @@
+{
+  "id": "H3",
+  "name": "TQFT Chern-Simons レベルへの代数的写像",
+  "description": "KSAU 粒子トポロジーから TQFT の CS レベル k への非自明な代数的写像を構築する。",
+  "status": "active",
+  "created_date": "2026-02-22",
+  "hypothesis": {
+    "H0": "一貫した写像を定義できない、あるいは写像がトートロジーであるか既存不変量と矛盾する。",
+    "H1": "非トートロジー的で、かつ既存の CS 不変量と整合する代数的写像を定義可能である。"
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.025,
+    "consistency_with_witten_invariants": true,
+    "non_tautological": true
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "tautology_detected": true,
+    "contradiction_with_invariants": true
+  },
+  "test_method": "代数的位相幾何学的手法による構築と不変量データベースを用いた整合性検証。",
+  "priority": "medium",
+  "max_iterations": 5
+}

@@ -1,0 +1,62 @@
+{
+  "iteration": 3,
+  "hypothesis_id": "H2",
+  "task_name": "アクシオン抑制因子 ST の不確定性縮小 - 最善モデル確定と感度分析",
+  "computed_values": {
+    "final_model_b": {
+      "r2": 0.7674073819017849,
+      "adj_r2": 0.7672505955060328,
+      "model_f_stat": 4894.604396131669,
+      "model_f_pvalue": 0.0,
+      "uncertainty_log10": 0.9396490146548213,
+      "pred_ln_ST_6_3": -6.5978689199526555,
+      "pred_ST_6_3": 0.0013632701819824653,
+      "p_values": {
+        "const": 3.3528720325296566e-48,
+        "volume": 0.0,
+        "crossing_number": 2.5029972743099337e-10
+      }
+    },
+    "sensitivity_analysis": {
+      "0.5": {
+        "r2": 0.6943595051320159,
+        "uncertainty_log10": 0.47555223857346973
+      },
+      "1.0": {
+        "r2": 0.7542006056788323,
+        "uncertainty_log10": 0.5975513328624833
+      },
+      "1.5": {
+        "r2": 0.7669345145395126,
+        "uncertainty_log10": 0.7589451287470721
+      },
+      "2.0": {
+        "r2": 0.7674073819017849,
+        "uncertainty_log10": 0.9396490146548213
+      },
+      "3.0": {
+        "r2": 0.7608605527040595,
+        "uncertainty_log10": 1.326975034835461
+      }
+    }
+  },
+  "statistical_metrics": {
+    "fpr": 0.0,
+    "bonferroni_threshold": 0.025
+  },
+  "ssot_compliance": {
+    "all_constants_from_json": true,
+    "hardcoded_values_found": false,
+    "constants_used": [
+      "kappa",
+      "monte_carlo_n_trials",
+      "noise_sigma",
+      "det_exponent"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "sample_size": 2970,
+    "computation_time_sec": 26.65193748474121
+  }
+}

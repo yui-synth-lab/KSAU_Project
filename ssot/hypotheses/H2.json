@@ -1,0 +1,26 @@
+{
+  "id": "H2",
+  "name": "アクシオン抑制因子 ST の不確定性縮小",
+  "description": "幾何学的不変量を用いてアクシオン抑制因子 ST の対数不確定性を Δlog₁₀(ST) ≤ 2 まで縮小する。",
+  "status": "active",
+  "created_date": "2026-02-22",
+  "hypothesis": {
+    "H0": "幾何学的不変量と ST の間に有意な相関がない、または不確定性を 2 桁以内に縮小不可。",
+    "H1": "幾何学的不変量により ST の不確定性を Δlog₁₀(ST) ≤ 2 まで縮小可能であり、R² ≥ 0.5 を達成する。"
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.025,
+    "r_squared_minimum": 0.5,
+    "allowed_error_log10_st": 2.0
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2
+  },
+  "test_method": "重回帰分析またはガウス過程回帰による不確定性定量化。",
+  "priority": "high",
+  "max_iterations": 5
+}

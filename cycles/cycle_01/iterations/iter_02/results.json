@@ -1,0 +1,104 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H2",
+  "timestamp": "2026-02-22T11:14:01.242747",
+  "task_name": "アクシオン抑制因子 ST の不確定性縮小 - FPRテストとSSoT同期検証",
+  "computed_values": {
+    "final_model_b": {
+      "r2": 0.769385758305158,
+      "adj_r2": 0.7692303054964658,
+      "model_f_stat": 4949.320406482208,
+      "model_f_pvalue": 0.0,
+      "uncertainty_log10": 0.945281783830026,
+      "p_values": {
+        "const": 7.260125693920642e-43,
+        "volume": 0.0,
+        "crossing_number": 1.1397769688004665e-08
+      }
+    },
+    "sensitivity_analysis": {
+      "0.5": {
+        "r2": 0.6943595051320159,
+        "adj_r2": 0.6941534785092536,
+        "model_f_stat": 3370.2416504340217,
+        "model_f_pvalue": 0.0,
+        "uncertainty_log10": 0.47555223857346973,
+        "p_values": {
+          "const": 5.383518121623664e-15,
+          "volume": 0.0,
+          "crossing_number": 0.0007237419799362012
+        }
+      },
+      "1.0": {
+        "r2": 0.7509799741307592,
+        "adj_r2": 0.7508121143222866,
+        "model_f_stat": 4473.852204191717,
+        "model_f_pvalue": 0.0,
+        "uncertainty_log10": 0.6061610970835535,
+        "p_values": {
+          "const": 7.906688513456946e-27,
+          "volume": 0.0,
+          "crossing_number": 5.842512455474006e-05
+        }
+      },
+      "1.5": {
+        "r2": 0.7688506394133232,
+        "adj_r2": 0.7686948258908516,
+        "model_f_stat": 4934.4282012061385,
+        "model_f_pvalue": 0.0,
+        "uncertainty_log10": 0.7621322730648619,
+        "p_values": {
+          "const": 1.1296170659431907e-38,
+          "volume": 0.0,
+          "crossing_number": 4.825263023828404e-08
+        }
+      },
+      "2.0": {
+        "r2": 0.769385758305158,
+        "adj_r2": 0.7692303054964658,
+        "model_f_stat": 4949.320406482208,
+        "model_f_pvalue": 0.0,
+        "uncertainty_log10": 0.945281783830026,
+        "p_values": {
+          "const": 7.260125693920642e-43,
+          "volume": 0.0,
+          "crossing_number": 1.1397769688004665e-08
+        }
+      },
+      "3.0": {
+        "r2": 0.7612886513733313,
+        "adj_r2": 0.7611277404541357,
+        "model_f_stat": 4731.118653594522,
+        "model_f_pvalue": 0.0,
+        "uncertainty_log10": 1.3300856518549888,
+        "p_values": {
+          "const": 1.5877810902734742e-52,
+          "volume": 0.0,
+          "crossing_number": 2.4844795875274593e-11
+        }
+      }
+    }
+  },
+  "statistical_metrics": {
+    "fpr": 0.0,
+    "hits": 0,
+    "n_trials": 10000,
+    "observed_r2": 0.767731672326898
+  },
+  "ssot_compliance": {
+    "all_constants_from_json": true,
+    "hardcoded_values_found": false,
+    "constants_used": [
+      "kappa",
+      "noise_sigma",
+      "det_exponent",
+      "monte_carlo_n_trials"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "sample_size": 2970,
+    "computation_time_sec": 28.50398325920105
+  },
+  "notes": "Implemented permutation test (n=10000) for FPR. Synchronized det_exponent with SSoT (2.0)."
+}
