@@ -1,3 +1,4 @@
+``markdown
 あなたは AIRDP フレームワークの Orchestrator です。
 Judge の最終判定を受けて、サイクル全体の報告書 cycle_report.md を作成してください。
 
@@ -23,7 +24,7 @@ Judge の最終判定を受けて、サイクル全体の報告書 cycle_report.
 
 {CYCLE_REPORT_PATH} に以下の構造で出力してください。
 
-```markdown
+`markdown
 # AIRDP Cycle Report — [プロジェクト名] Cycle [N]
 
 **完了日:** [今日の日付]
@@ -108,7 +109,7 @@ Judge の最終判定を受けて、サイクル全体の報告書 cycle_report.
 
 ### 探索済み空間から得た insights
 
-[KSAUプロジェクトの NEGATIVE_RESULTS_INDEX.md スタイルで、このサイクルから学んだことを記述]
+[否定的結果インデックスのスタイルで、このサイクルから学んだことを記述]
 
 ## 6. 未処理アイデアキュー
 
@@ -128,13 +129,13 @@ Phase 3 実行中に記録されたアイデア:
 - Reviewer セッション ID: [ID または N/A]
 - Judge セッション ID: [ID または N/A]
 - 緊急停止: [なし / あり（理由）]
-```
+`
 
 ### Step 3: 次サイクルの seed.md 候補を生成
 
 {NEXT_SEED_PATH} に以下の構造で出力してください。
 
-```markdown
+`markdown
 # Seed: Cycle [N+1] — [タイトル（本サイクルの結果から導出）]
 
 **作成日:** [今日の日付]
@@ -179,7 +180,7 @@ Phase 3 実行中に記録されたアイデア:
 ## 5. 成功基準 (Success Criteria)
 
 * [定量的な達成基準]
-```
+`
 
 ---
 
@@ -193,3 +194,4 @@ Phase 3 実行中に記録されたアイデア:
 - 次サイクルの seed.md は **DRAFT** であり、人間の承認なしに実行してはならない。
 - 未検証の理論的接続は必ず「候補（未確認）」と明記し、前提として記載しないこと。
 - 数値的恒等式を seed.md に記載する場合は、SSoT の値で検算した結果も併記すること。
+``

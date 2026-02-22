@@ -21,6 +21,16 @@ function Resolve-AirdpPaths {
     $CycleDir    = Join-Path $CyclesDir  "cycle_$CycleId"
     $SsotDir     = Join-Path $ProjectDir "ssot"
 
+    # SSoT ローダーの自動検出: ssot/ 内の *_ssot.py を探す（project_ssot_template.py は除外）
+    $ssotLoaderFile = "project_ssot.py"
+    $ssotLoaderModule = "project_ssot"
+    $candidates = Get-ChildItem $SsotDir -Filter "*_ssot.py" -ErrorAction SilentlyContinue |
+        Where-Object { $_.Name -ne "project_ssot_template.py" -and $_.Name -ne "__pycache__" }
+    if ($candidates.Count -gt 0) {
+        $ssotLoaderFile   = $candidates[0].Name
+        $ssotLoaderModule = $candidates[0].BaseName
+    }
+
     return @{
         ProjectDir       = $ProjectDir
         CyclesDir        = $CyclesDir
@@ -39,6 +49,9 @@ function Resolve-AirdpPaths {
         SsotChangelog    = Join-Path $SsotDir  "changelog.json"
         NegResultsPath   = Join-Path $ProjectDir "NEGATIVE_RESULTS_INDEX.md"
         IdeaQueuePath    = Join-Path $ProjectDir "idea_queue.md"
+        # プロジェクト固有 SSoT ローダーの情報
+        ProjectSsotLoader  = $ssotLoaderFile
+        ProjectSsotModule  = $ssotLoaderModule
     }
 }
 

@@ -68,6 +68,8 @@ while (-not $finished) {
         LOG_PATH     = $p.LogPath
         ITER_DIR     = $iterDir
         SSOT_DIR     = $p.SsotDir
+        PROJECT_SSOT_LOADER = $p.ProjectSsotLoader
+        PROJECT_SSOT_MODULE = $p.ProjectSsotModule
     }
     $promptResearcher = Expand-PromptTemplate (Join-Path $PromptsDir "researcher.md") $researcherVars
 
