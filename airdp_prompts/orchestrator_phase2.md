@@ -27,6 +27,7 @@ seed.md を読み込み、以下の3要素を確認してください。
 - [ ] 現在の探索スコープ内か？（スコープ外なら idea_queue.md 候補として記録）
 - [ ] 仮説数は最大3つ以内か？（超過分は次サイクルのキューとして提案）
 - [ ] **実データで検証可能か？**（合成データや Ground Truth 生成に依存する仮説は除外）
+- [ ] **仮説の核（H1）は第一原理から導出された式か？**（「残差を埋める補正項の導入」は仮説ではなくカーブフィッティングであり、採用不可）
 
 ### Step 3: roadmap.md の生成
 
@@ -72,19 +73,28 @@ seed.md を読み込み、以下の3要素を確認してください。
 
 ### 対立仮説 (H1)
 [対立仮説を数式または明確な文章で記述]
+> **注意:** H1 は必ず「どの第一原理・幾何学的制約からその予測が導出されるか」を明示すること。
+> 「補正項を導入すれば誤差が改善するはずだ」という形式の仮説は採用禁止。
 
 ### データ要件
 [この仮説の検証に必要な実データを明記。SSoT 経由で取得できるデータのみを前提とすること]
 
-### 成功基準
-- p値閾値: [値]（Bonferroni補正前）
+### 物理的制約（PHYSICAL CONSTRAINTS）
+> **⚠️ 重要:** 以下の制約は成功の「目標値」ではなく、モデルが満たすべき「物理的条件」である。
+> これらを満たさないモデルは、誤差がいかに小さくても科学的に無効とみなす。
+
+- **適用範囲:** [例: 全12粒子（フェルミオン9 + ボソン3）に普遍的に適用すること。特定粒子のみへの適用はチェリーピッキングとして REJECT]
+- **最大自由パラメータ数:** [例: 新たに導入できる自由パラメータは最大1つ。データ点数 N に対してパラメータ数 k が k < N/3 を満たすこと]
+- **導出要件:** [例: 式の係数は第一原理（幾何学的不変量・トポロジー定数）から理論的に導出されること。任意の多項式フィッティングは禁止]
+
+### 統計的有意性基準
 - Bonferroni補正後閾値: [値]（= 0.05 / 仮説数）
-- 許容誤差: [%]以内
-- 最小 R²: [値]（該当する場合）
+- FPR（モンテカルロ置換検定）: < 50%
 
 ### 撤退基準（削除不可）
 - Bonferroni補正後 p > [値] → 即座に REJECT
 - FPR > 50% → 即座に REJECT
+- 物理的制約（上記）を満たさないモデルを提出した場合 → 即座に MODIFY
 - [N] イテレーション到達で進展なし → REJECT
 - Reviewer の連続 STOP 判定 2回 → 強制終了
 
@@ -136,29 +146,38 @@ seed.md を読み込み、以下の3要素を確認してください。
   "created_date": "[今日の日付]",
   "hypothesis": {
     "H0": "帰無仮説の記述",
-    "H1": "対立仮説の記述"
+    "H1": "対立仮説の記述（必ず導出元の第一原理を明記すること）"
   },
   "data_requirements": {
     "description": "必要な実データの概要",
     "ssot_methods": ["使用する SSOT メソッド名"]
   },
-  "success_criteria": {
-    "p_value_threshold": 0.05,
-    "bonferroni_corrected_threshold": 0.016666,
-    "r_squared_minimum": 0.99,
-    "allowed_error_percent": 5.0
+  "physical_constraints": {
+    "particle_scope": "ALL_12_PARTICLES（またはフェルミオン9、ボソン3など、適用範囲を明記）",
+    "max_free_parameters": 1,
+    "derivation_requirement": "FIRST_PRINCIPLES（任意の多項式フィッティング禁止）",
+    "notes": "[その他の物理的制約があれば記述]"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
     "fpr_max": 0.50,
     "max_iterations": 5,
-    "consecutive_stop_limit": 2
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY（物理的制約を満たさないモデルは誤差の大小によらず無効）"
   },
   "test_method": "テスト手法の記述",
   "priority": "high/medium/low",
   "max_iterations": 5
 }
 `
+
+> **⚠️ 禁止事項:** `success_criteria` に `r_squared_minimum` や `allowed_error_percent` といった
+> 適合度・誤差の目標値を設定してはならない。これらはカーブフィッティングを誘発する。
+> 統計的有意性は `statistical_thresholds` の p 値と FPR のみで判断する。
 
 ---
 
@@ -169,6 +188,7 @@ seed.md を読み込み、以下の3要素を確認してください。
 - SSoT ({CONSTANTS_PATH}) から統計閾値を読み込むこと。ハードコード禁止。
 - 検証不可能な仮説（定性的すぎる、測定手段がない等）は事前スクリーニングで除外。
 - **合成データに依存する仮説は採用不可。** 全ての仮説は実データで検証可能でなければならない。
+- **「残差を補正項で埋める」類の仮説は採用不可。** 仮説の核（H1）は常に第一原理からの導出であること。
 - Boundary が seed.md にない場合は Orchestrator が補完し、roadmap.md に「[Orchestrator補完]」と明記。
 
 ## SSoT パスに関する厳守事項
