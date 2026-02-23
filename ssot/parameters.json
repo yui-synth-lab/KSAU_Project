@@ -65,5 +65,25 @@
     "decay_mode":        "two_photon",
     "lifetime_range_s":  [1e-6, 1e-3],
     "selection_principle": "simplest_amphicheiral_excluding_4_1_muon"
+  },
+
+  "physics_models": {
+    "lifetime_correlation_h17": {
+      "formula": "ln(Tau) = const + cK*Crossing + cD*Determinant + cV*Volume",
+      "coefficients": {
+        "const": 19.705186,
+        "cK":   -8.766814,
+        "cD":    0.052139,
+        "cV":    1.075745
+      },
+      "std_errors": {
+        "const": 11.04,
+        "cK":    1.10,
+        "cD":    0.06,
+        "cV":    1.51
+      },
+      "r2": 0.9915,
+      "last_updated": "2026-02-23"
+    }
   }
 }

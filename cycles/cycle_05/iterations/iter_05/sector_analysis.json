@@ -1,0 +1,47 @@
+[
+  {
+    "crossing_number": 4,
+    "best_rate": 1.0,
+    "sample_size": 1
+  },
+  {
+    "crossing_number": 5,
+    "best_rate": 1.0,
+    "sample_size": 1
+  },
+  {
+    "crossing_number": 6,
+    "best_rate": 1.0,
+    "sample_size": 3
+  },
+  {
+    "crossing_number": 7,
+    "best_rate": 0.6666666666666666,
+    "sample_size": 6
+  },
+  {
+    "crossing_number": 8,
+    "best_rate": 0.4,
+    "sample_size": 20
+  },
+  {
+    "crossing_number": 9,
+    "best_rate": 0.375,
+    "sample_size": 48
+  },
+  {
+    "crossing_number": 10,
+    "best_rate": 0.35365853658536583,
+    "sample_size": 164
+  },
+  {
+    "crossing_number": 11,
+    "best_rate": 0.3339382940108893,
+    "sample_size": 551
+  },
+  {
+    "crossing_number": 12,
+    "best_rate": 0.3134191176470588,
+    "sample_size": 2176
+  }
+]

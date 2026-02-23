@@ -1,0 +1,62 @@
+{
+  "condition_benchmark": {
+    "Det mod (k+1) == 0": 0.27703589347742186,
+    "Det mod (k+2) == 0": 0.062138170590505595,
+    "(Det-1) mod (k+1) == 0": 0.3755306831339251,
+    "(Det+1) mod (k+1) == 0": 0.374372829023543
+  },
+  "best_condition": "(Det-1) mod (k+1) == 0",
+  "crossing_analysis": [
+    {
+      "c": 4,
+      "rate": 1.0,
+      "n": 1
+    },
+    {
+      "c": 5,
+      "rate": 1.0,
+      "n": 1
+    },
+    {
+      "c": 6,
+      "rate": 1.0,
+      "n": 3
+    },
+    {
+      "c": 7,
+      "rate": 1.0,
+      "n": 6
+    },
+    {
+      "c": 8,
+      "rate": 0.9,
+      "n": 20
+    },
+    {
+      "c": 9,
+      "rate": 0.6875,
+      "n": 48
+    },
+    {
+      "c": 10,
+      "rate": 0.5060975609756098,
+      "n": 164
+    },
+    {
+      "c": 11,
+      "rate": 0.3938294010889292,
+      "n": 551
+    },
+    {
+      "c": 12,
+      "rate": 0.3759191176470588,
+      "n": 2176
+    },
+    {
+      "c": 13,
+      "rate": 0.36905358037055586,
+      "n": 9985
+    }
+  ],
+  "interpretation": "The 'mismatch' is inherent to the choice of modular proxy. 'Det mod (k+1)' is slightly better than others but still limited. Low crossing numbers show much higher rates, suggesting the mapping is more 'exact' in the quantum boundary regime."
+}

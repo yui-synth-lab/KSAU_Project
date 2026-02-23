@@ -1,0 +1,30 @@
+{
+  "id": "H22",
+  "name": "Resonance Identity Validation (kappa = pi/24)",
+  "description": "Validation of the theoretical derivation of kappa from the 4D resonance condition K(4) * kappa = pi.",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "The mass hierarchy slope kappa is not equal to pi/24 within 0.1% relative error.",
+    "H1": "The mass hierarchy slope kappa matches pi/24 with < 0.1% error, satisfying the gravitational resonance identity."
+  },
+  "data_requirements": {
+    "description": "Fermion mass data and SSoT kappa theoretical value.",
+    "ssot_methods": ["get_physical_constants", "get_mathematical_constants"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.016666,
+    "r_squared_minimum": 0.9998,
+    "allowed_error_percent": 0.1
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2
+  },
+  "test_method": "Comparison of theoretical kappa (pi/24) against regression estimates from the latest fermion mass hierarchy data.",
+  "priority": "high",
+  "max_iterations": 5
+}

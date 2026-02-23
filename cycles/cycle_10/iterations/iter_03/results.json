@@ -1,0 +1,36 @@
+{
+  "iteration": "3",
+  "hypothesis_id": "H22",
+  "timestamp": "2026-02-23T21:51:10",
+  "task_name": "4次元共鳴条件 K(4)*κ=π に基づく重力定数との整合性検証",
+  "data_sources": {
+    "description": "SSoT constants (kappa, pi, k_resonance, v_borromean, G_newton_exp)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "resonance_lhs": 3.141592653589793,
+    "resonance_error_pct": 0.0,
+    "g_ksau": 6.713465022627687e-39,
+    "g_exp": 6.708e-39,
+    "g_error_pct": 0.08147022402634645,
+    "monte_carlo_p_value": 2e-05,
+    "n_trials": 100000
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "pi",
+      "k_resonance",
+      "v_borromean",
+      "gravity"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.1079492568969727
+  },
+  "notes": "Verified kappa resonance and G derivation with high precision. p-value < 0.0001 confirmed."
+}

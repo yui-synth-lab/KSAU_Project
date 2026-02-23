@@ -1,0 +1,38 @@
+{
+  "iteration": "3",
+  "hypothesis_id": "H20",
+  "timestamp": "2026-02-23T20:50:00Z",
+  "task_name": "G derivation from 10D Bulk and Kappa",
+  "data_sources": {
+    "description": "SSoT v7.0 gravitational and mathematical constants",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "d_bulk": 10,
+    "d_compact": 7,
+    "v_p_factor": 6.0,
+    "ln_mp_mev": 50.85610698542578,
+    "mp_gev": 1.220468668587711e+19,
+    "g_derived": 6.713465018391461e-39,
+    "g_exp": 6.708e-39,
+    "error_percent": 0.08147016087449262
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "pi",
+      "bulk_total",
+      "bulk_compact",
+      "v_borromean",
+      "G_newton_exp"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.01
+  },
+  "notes": "Formula: ln(M_P [MeV]) = D_bulk*kappa*V_P - D_compact*(1+kappa) + sqrt(pi/2) - kappa/4. Error < 0.2%."
+}

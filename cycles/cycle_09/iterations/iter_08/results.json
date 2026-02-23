@@ -1,0 +1,45 @@
+{
+  "iteration": "8",
+  "hypothesis_id": "H21",
+  "timestamp": "2026-02-23T21:03:45",
+  "task_name": "[FIXED] Dark Matter Candidate Extraction and Lifetime Calculation",
+  "computed_values": {
+    "total_knots_scanned": 12161,
+    "stable_baseline": 0,
+    "stable_max_uncertainty": 8836,
+    "fpr_max": 0.7265849847874353,
+    "age_of_universe_ln_s": 40.615259434532526,
+    "top_candidates_max": [
+      {
+        "name": "13a_3478",
+        "ln_Tau_max": 180.1337443346187
+      },
+      {
+        "name": "13a_3477",
+        "ln_Tau_max": 173.2885681993759
+      },
+      {
+        "name": "13a_4284",
+        "ln_Tau_max": 168.88234872497583
+      },
+      {
+        "name": "13a_3428",
+        "ln_Tau_max": 165.57022481840684
+      },
+      {
+        "name": "13a_4620",
+        "ln_Tau_max": 164.15984484782865
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "relative_paths_used": true
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.570784091949463
+  },
+  "notes": "H17 model coefficients loaded via SSOT. Uncertainty band (+2 Sigma) included. FPR < 0.01 success condition check."
+}

@@ -1,0 +1,136 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H13",
+  "timestamp": "2026-02-23T17:34:44.073318",
+  "task_name": "[H13-I2] WRT不変量の近似導入による写像の非トートロジー性検証",
+  "data_sources": {
+    "description": "topology_assignments.json + KnotInfo/LinkInfo (Signatures & Jones Vectors)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "consistency_rate_obs": 0.75,
+    "v_k_correlation_obs": 0.899251853391536,
+    "vjr_mean": 10.405049061211457,
+    "fpr": 0.0,
+    "p_value_proxy": 0.0,
+    "optimal_coefficients": {
+      "a_ln_det": 0.23162679555291849,
+      "b_sig": -0.6205263010159445,
+      "c_vol": 0.7503727923044818,
+      "d_const": -0.17197716670202584,
+      "parity_shift": -7
+    }
+  },
+  "detailed_results": [
+    {
+      "name": "Electron",
+      "determinant": 3,
+      "signature": -2.0,
+      "volume": 0.0,
+      "k_eff": 1.0,
+      "vjr": 1.000000082240371e-09
+    },
+    {
+      "name": "Muon",
+      "determinant": 5,
+      "signature": 0.0,
+      "volume": 2.0298832128,
+      "k_eff": 1.0,
+      "vjr": 0.9691978406491332
+    },
+    {
+      "name": "Tau",
+      "determinant": 9,
+      "signature": 0.0,
+      "volume": 3.1639632288,
+      "k_eff": 1.0,
+      "vjr": 1.5106811618735403
+    },
+    {
+      "name": "Up",
+      "determinant": 12,
+      "signature": 1.0,
+      "volume": 5.33348956689812,
+      "k_eff": 1.0,
+      "vjr": 2.5465536845026633
+    },
+    {
+      "name": "Down",
+      "determinant": 20,
+      "signature": 2.0,
+      "volume": 6.551743287887868,
+      "k_eff": 1.0,
+      "vjr": 3.128226989409503
+    },
+    {
+      "name": "Strange",
+      "determinant": 36,
+      "signature": 4.0,
+      "volume": 9.312341316558376,
+      "k_eff": 1.0,
+      "vjr": 4.446315455867462
+    },
+    {
+      "name": "Charm",
+      "determinant": 70,
+      "signature": -5.0,
+      "volume": 11.215504015501589,
+      "k_eff": 5.0,
+      "vjr": 12.495020322338553
+    },
+    {
+      "name": "Bottom",
+      "determinant": 96,
+      "signature": -2.0,
+      "volume": 15.156670150795042,
+      "k_eff": 6.0,
+      "vjr": 19.29807180149931
+    },
+    {
+      "name": "Top",
+      "determinant": 110,
+      "signature": -3.0,
+      "volume": 15.62112812032806,
+      "k_eff": 8.0,
+      "vjr": 24.86179756922018
+    },
+    {
+      "name": "W",
+      "determinant": 64,
+      "signature": 0.0,
+      "volume": 14.655449506835504,
+      "k_eff": 5.0,
+      "vjr": 16.32741062472585
+    },
+    {
+      "name": "Z",
+      "determinant": 112,
+      "signature": -2.0,
+      "volume": 15.027615015039348,
+      "k_eff": 6.0,
+      "vjr": 19.133753699203996
+    },
+    {
+      "name": "Higgs",
+      "determinant": 136,
+      "signature": -1.0,
+      "volume": 15.820714702540293,
+      "k_eff": 6.0,
+      "vjr": 20.1435595842473
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "statistical_thresholds"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "fpr_trials": 50,
+    "computation_time_sec": 53.58080005645752
+  },
+  "notes": "Redid optimization for FPR to confirm that 80%+ consistency is not easily reached by chance."
+}

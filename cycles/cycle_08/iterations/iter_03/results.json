@@ -1,0 +1,68 @@
+{
+  "iteration": "3",
+  "hypothesis_id": "H17",
+  "timestamp": "2026-02-23T19:39:57.524453",
+  "task_name": "全粒子の寿命データ収集と、結び目指標（Crossing, Det, Sig）との初期相関分析",
+  "computed_values": {
+    "analysis_samples": 7,
+    "correlations_with_electron": {
+      "Crossing": {
+        "R": -0.8431091766479386,
+        "R2": 0.7108330837479649,
+        "p_value": 0.017176481211164468
+      },
+      "Determinant": {
+        "R": -0.6810717154755337,
+        "R2": 0.4638586816207863,
+        "p_value": 0.09207599957223349
+      },
+      "Signature": {
+        "R": -0.0992795916621276,
+        "R2": 0.009856437320598797,
+        "p_value": 0.8322871142267638
+      },
+      "Volume": {
+        "R": -0.8026542753085817,
+        "R2": 0.6442538856711445,
+        "p_value": 0.02978474065472595
+      }
+    },
+    "correlations_without_electron": {
+      "Crossing": {
+        "R": -0.9884380263577908,
+        "R2": 0.9770097319500847,
+        "p_value": 0.0001997460538617936
+      },
+      "Determinant": {
+        "R": -0.8352375809705347,
+        "R2": 0.6976218166655105,
+        "p_value": 0.03848360783618343
+      },
+      "Signature": {
+        "R": 0.6062569556710651,
+        "R2": 0.36754749629954775,
+        "p_value": 0.20202867957894532
+      },
+      "Volume": {
+        "R": -0.958771193716799,
+        "R2": 0.9192422019011357,
+        "p_value": 0.0025146810406068134
+      }
+    },
+    "primary_r2": 0.7108330837479649,
+    "primary_p": 0.017176481211164468
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.0
+  },
+  "notes": "Primary R2 (Crossing) = 0.7108. p-value 1.7176e-02. Stability (Electron) included as 1e35s."
+}

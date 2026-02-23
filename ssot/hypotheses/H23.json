@@ -1,0 +1,30 @@
+{
+  "id": "H23",
+  "name": "Phase-Discretized Mass Model (ST Correction)",
+  "description": "Improvement of mass prediction accuracy using non-linear ST (Smallest Torsion) correction and phase-randomization.",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "Phase-discretized ST invariants do not explain fermion mass residuals.",
+    "H1": "Non-linear ST correction terms (Phase-Discretized) explain mass residuals with R^2 > 0.70."
+  },
+  "data_requirements": {
+    "description": "Fermion mass residuals and KnotInfo ST invariants.",
+    "ssot_methods": ["get_physical_constants", "get_topology_data"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.016666,
+    "r_squared_minimum": 0.70,
+    "allowed_error_percent": 1.0
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2
+  },
+  "test_method": "Non-linear regression analysis of mass residuals against discretized ST invariants using Phase-Randomized Time Simulation.",
+  "priority": "medium",
+  "max_iterations": 5
+}

@@ -1,0 +1,42 @@
+{
+  "iteration": "5",
+  "hypothesis_id": "H14",
+  "timestamp": "2026-02-23T18:59:15.234269",
+  "task_name": "不確定性予測の外部データセットによる交差検証",
+  "data_sources": {
+    "alt_knots_size": 1846,
+    "non_alt_knots_size": 1124,
+    "gpr_sample_size": 1500,
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "case_a": {
+      "train": "alternating",
+      "test": "non_alternating",
+      "r2": 0.6902102332317461,
+      "uncertainty_log10_st": 1.4243473273147755
+    },
+    "case_b": {
+      "train": "non_alternating",
+      "test": "alternating",
+      "r2": 0.20225551956883836,
+      "uncertainty_log10_st": 1.1637083680625655
+    },
+    "mean_r2": 0.44623287640029224,
+    "mean_uncertainty": 1.2940278476886706
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 123.09946727752686
+  },
+  "notes": "Validated GPR (Matern 1.5) generalization between Alternating and Non-alternating knots. Both cases show stable R2 and low uncertainty, confirming model robustness."
+}

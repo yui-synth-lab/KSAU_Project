@@ -1,0 +1,30 @@
+{
+  "id": "H24",
+  "name": "Knot Topology vs Particle Lifetime (Gamma)",
+  "description": "Correlation test between topological invariants (Crossing/Unknotting number/Signature) and decay width Gamma.",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "There is no significant correlation between knot invariants and particle decay widths.",
+    "H1": "Particle decay widths (Gamma) are significantly correlated with topological invariants (p < 0.05)."
+  },
+  "data_requirements": {
+    "description": "PDG decay width data and KnotInfo invariants.",
+    "ssot_methods": ["get_physical_constants", "get_topology_data"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.016666,
+    "r_squared_minimum": 0.50,
+    "allowed_error_percent": 10.0
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2
+  },
+  "test_method": "Spearman rank correlation and log-linear regression analysis between topological invariants and decay widths.",
+  "priority": "low",
+  "max_iterations": 5
+}

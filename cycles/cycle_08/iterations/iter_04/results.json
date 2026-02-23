@@ -1,0 +1,44 @@
+{
+  "iteration": "4",
+  "hypothesis_id": "H18",
+  "timestamp": "2026-02-23T10:46:44Z",
+  "task_name": "Phase Viscosity Mass Model Reconstruction",
+  "computed_values": {
+    "r2_total_log": 0.996751215068216,
+    "mae_pct_total": 13.849033293763119,
+    "sector_metrics": {
+      "C1": {
+        "r2": 0.9998094781308872,
+        "mae_pct": 4.311704825577626
+      },
+      "C2": {
+        "r2": 0.9999368182901096,
+        "mae_pct": 3.474685879956795
+      },
+      "C3": {
+        "r2": 0.9816943334225777,
+        "mae_pct": 33.76070917575493
+      }
+    },
+    "viscosity_factors": {
+      "1": 19.7325,
+      "2": 8.3779,
+      "3": 5.8685
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "topology_assignments",
+      "parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.0026743412017822266
+  },
+  "notes": "The Phase Viscosity model provides a physical basis for mass as resistance to topological change. By allowing Viscosity (eta) to vary by component number C, we achieve R2 > 0.999 for Leptons (C=1) and Up-type Quarks (C=2). Down-type Quarks (C=3) show R2=0.98, suggesting additional corrections or volume defect effects."
+}

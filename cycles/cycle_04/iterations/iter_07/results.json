@@ -1,0 +1,43 @@
+{
+  "iteration": 7,
+  "hypothesis_id": "H8",
+  "timestamp": "2026-02-23T13:50:35.750704",
+  "task_name": "改善されたプロキシに基づく k(T) 写像の構築と統計的有意性検定",
+  "data_sources": {
+    "description": "KnotInfo Hyperbolic Knots (C3-C8). Using KWCI minimization.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "optimized_coefficients": {
+      "vol_coeff": -1.016303259134293,
+      "log_det_coeff": 2.6157090395688796,
+      "sig_coeff": 0.007711344890296459,
+      "const": 1.383966509997838
+    },
+    "performance": {
+      "mean_kwci": 17.152402168388296,
+      "witten_consistency_rate": 0.3602693602693603,
+      "correlation_k_v": -0.7848360799159061,
+      "is_tautology": false
+    },
+    "statistical_metrics": {
+      "fpr": 0.0,
+      "n_trials": 50,
+      "p_value": 0.0
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "k_mapping_coefficients",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "sample_size": 2970,
+    "computation_time_sec": 13.384438514709473
+  }
+}

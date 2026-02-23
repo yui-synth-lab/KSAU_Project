@@ -1,0 +1,29 @@
+{
+  "iteration": "1",
+  "hypothesis_id": "H22",
+  "timestamp": "2026-02-23T21:41:40.785032",
+  "task_name": "理論値 κ = π/24 と質量階層からの推定値の誤差評価",
+  "computed_values": {
+    "kappa_theory": 0.1308996938995747,
+    "kappa_estimated": 0.13089969165956564,
+    "relative_error_pct": -1.711240874895511e-06,
+    "bootstrap_95_ci": [
+      0.13078130674406707,
+      0.13100705638220536
+    ],
+    "sample_size": 12
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "phase_viscosity_model"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.0
+  }
+}

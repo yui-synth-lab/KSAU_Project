@@ -1,0 +1,30 @@
+{
+  "id": "H15",
+  "name": "Algebraic Mapping to TQFT CS Level (Discrete)",
+  "description": "Construction of discrete non-linear mapping to CS level k satisfying Witten conditions.",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "No discrete mapping k(T) achieves > 80% Witten consistency or mapping remains tautological (r >= 0.95 with V).",
+    "H1": "Discrete quantization algorithm based on Jones roots achieves > 80% Witten consistency and r < 0.95."
+  },
+  "data_requirements": {
+    "description": "Topology constants and Jones polynomial roots from SSOT/external database.",
+    "ssot_methods": ["get_topology_constants", "get_k_mapping_coefficients"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.025,
+    "witten_consistency_rate_minimum": 0.8,
+    "non_tautological_r_max": 0.95
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2
+  },
+  "test_method": "Discrete functional mapping evaluation with permutation significance testing.",
+  "priority": "medium",
+  "max_iterations": 5
+}

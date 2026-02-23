@@ -1,0 +1,58 @@
+{
+  "iteration": "5",
+  "hypothesis_id": "H23",
+  "timestamp": "2026-02-23T22:02:28",
+  "task_name": "Phase-Randomized Time Simulation による質量残差の解析 (Integrity Fix)",
+  "data_sources": {
+    "description": "20M Sample MC derivation of kappa; SSoT Lepton masses; KnotInfo ST invariants.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "kappa_derived": 0.13089179580659155,
+    "kappa_target": 0.1308996938995747,
+    "derivation_error_pct": 0.0060336985884890575,
+    "p_value_derivation_vs_target": 0.9602266531619452,
+    "lepton_results": [
+      {
+        "name": "Electron",
+        "vol": 0.0,
+        "ln_m_obs": -0.6713856887784326,
+        "ln_m_pred": -0.6713856887784326,
+        "residual": 0.0,
+        "ln_st": 1.0986122886681098
+      },
+      {
+        "name": "Muon",
+        "vol": 2.0298832128,
+        "ln_m_obs": 4.6602263917361695,
+        "ln_m_pred": 4.642836135369673,
+        "residual": 0.017390256366496715,
+        "ln_st": 1.6094379124341003
+      },
+      {
+        "name": "Tau",
+        "vol": 3.1639632288,
+        "ln_m_obs": 7.482603040582787,
+        "ln_m_pred": 7.611850674410169,
+        "residual": -0.12924763382738202,
+        "ln_st": 2.1972245773362196
+      }
+    ],
+    "residual_st_correlation": -1.0,
+    "p_value_st_correlation": 1.0
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.2909057140350342
+  },
+  "notes": "Kappa derived from 24-sector area with 20M samples. Lepton residuals (0.017, -0.129) confirmed using SSoT constants."
+}

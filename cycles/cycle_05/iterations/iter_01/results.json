@@ -1,0 +1,34 @@
+{
+  "iteration": "1",
+  "hypothesis_id": "H9",
+  "timestamp": "2026-02-23T15:18:07.542979",
+  "task_name": "Smallest Torsion (ST) と Volume V の相関データの抽出と初期回帰分析",
+  "data_sources": {
+    "description": "KnotInfo data (3-12 crossings), filtered for hyperbolic knots (V>0).",
+    "loaded_via_ssot": true,
+    "sample_size": 12911
+  },
+  "computed_values": {
+    "slope": 0.21286745145482464,
+    "intercept": 0.9709228269881947,
+    "r_squared": 0.3560778953449728,
+    "p_value": 0.0,
+    "std_err": 0.0025194579828559075,
+    "mean_volume": 17.479632934071553,
+    "mean_ln_st": 4.691767742029825
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "axion_suppression_model",
+      "mathematical_constants"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 4.008489608764648
+  },
+  "notes": "Analyzed 12911 hyperbolic knots. Linear regression of ln(ST) on Volume V."
+}

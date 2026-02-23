@@ -39,3 +39,63 @@
 - R²_resid = 0.2083（独立幾何学的情報が約 20.8% 存在）
 - r(V, Signature) = -0.007（Signature は追加不変量候補）
 - 証拠: `cycles/cycle_03/iterations/iter_01/results.json`
+
+---
+
+### [NEG-20260223-01] アキシオン質量とトポロジカル・トーション(ST)の相関 (H4)
+- **仮説:** アキシオン質量 $m_a$ は双曲体積 $V$ およびトーションの行列式 $ST$ (Smallest Torsion) によって記述され、$\ln(m_a) = \kappa V - \beta \ln(ST) + C$ の形式で高い相関を示す。
+- **ステータス:** CLOSED
+- **閉鎖理由:** STATISTICAL_REJECTION (Bonferroni_FAILURE)
+- **証拠:** `cycles/cycle_02/iterations/iter_04/results.json` — 最良 p = 0.0588 (Bonferroni 補正後 0.025 未達)、$R^2$ = 0.3921 (成功基準 0.75 未達)。
+- **閉鎖バージョン:** Cycle 02, Iteration 4
+- **再開条件:** 線形補正モデル以外の非線形・非摂動的結合モデル、またはより高次のトポロジカル不変量の導入が提案された場合。
+
+---
+
+### [NEG-20260223-02] TQFT Chern-Simons レベルへの線形写像モデルの限界
+- **仮説:** 幾何学的不変量 ($V, Det, Sig$) の線形結合により、物理的整合性（Witten 合同条件）を満たす Chern-Simons レベル $k$ への写像を構築できる。
+- **ステータス:** CLOSED
+- **閉鎖理由:** STATISTICAL_REJECTION + PHYSICAL_INCONSISTENCY. 全結び目データセットにおいて Witten 条件充足率が 1.35% に留まり、特に Bulk セクター（大体積領域）では 0.00% を記録した。
+- **証拠:** `cycles/cycle_04/iterations/iter_08/results.json` — `global_metrics.witten_consistency_rate = 0.0134`.
+- **閉鎖バージョン:** Cycle 04, Iteration 8
+- **再開条件:** 線形結合モデルを廃止し、Jones 多項式の整数論的性質や、WRT 不変量の非摂動的項を直接考慮した非線形写像モデルが提案された場合。
+
+---
+
+### [NEG-20260223-04] WRTベース TQFT 写像の精度限界 (H13)
+- **仮説:** 非線形パリティシフト写像モデルにより、Witten 整合性レート 80% 以上の CS レベル $k$ を構築できる。
+- **ステータス:** CLOSED
+- **閉鎖理由:** RESOURCE_EXHAUSTION (進展不足による最大イテレーション到達)
+- **証拠:** `cycles/cycle_06/iterations/iter_05/results.json` — `consistency_rate_obs = 0.75` (目標 0.80 未達)。
+- **閉鎖バージョン:** Cycle 06, Iteration 5
+- **再開条件:** Nelder-Mead 最適化以外の、Jones 多項式の根の位相構造を直接反映した離散的量子化アルゴリズムの導入。
+
+---
+
+### [NEG-20260223-05] H21: H17 寿命モデルによる暗黒物質候補トポロジーの予測
+- **仮説:** H17 寿命相関モデルの外挿により、宇宙年齢を超える安定性を持つ特定の未割り当てトポロジーを統計的に有意に特定できる。
+- **ステータス:** CLOSED
+- **閉鎖理由:** STATISTICAL_REJECTION
+- **証拠:** `cycles/cycle_09/iterations/iter_08/results.json` — 不確実性（+2 Sigma）を考慮した候補 8,836 個の FPR は 72.66% であり、成功基準 (FPR < 0.01) を満たさず、ノイズ支配的であると判定。
+- **閉鎖バージョン:** Cycle 09, Iteration 08
+- **再開条件:** フェルミオン質量以外の物理的制約（例：アクシオン抑制因子、ゲージ対称性）を導入し、候補を 1/100 以下に絞り込める理論的根拠が得られた場合。
+
+---
+
+### [NEG-20260223-04] WRTベース TQFT 写像の精度限界 (H13)
+- **仮説:** 非線形パリティシフト写像モデルにより、Witten 整合性レート 80% 以上の CS レベル $k$ を構築できる。
+- **ステータス:** CLOSED
+- **閉鎖理由:** RESOURCE_EXHAUSTION (進展不足による最大イテレーション到達)
+- **証拠:** `cycles/cycle_06/iterations/iter_05/results.json` — `consistency_rate_obs = 0.75` (目標 0.80 未達)。
+- **閉鎖バージョン:** Cycle 06, Iteration 5
+- **再開条件:** Nelder-Mead 最適化以外の、Jones 多項式の根の位相構造を直接反映した離散的量子化アルゴリズムの導入。
+
+---
+
+### [NEG-20260223-05] H21: H17 寿命モデルによる暗黒物質候補トポロジーの予測
+- **仮説:** H17 寿命相関モデルの外挿により、宇宙年齢を超える安定性を持つ特定の未割り当てトポロジーを統計的に有意に特定できる。
+- **ステータス:** CLOSED
+- **閉鎖理由:** STATISTICAL_REJECTION
+- **証拠:** `cycles/cycle_09/iterations/iter_08/results.json` — 不確実性（+2 Sigma）を考慮した候補 8,836 個の FPR は 72.66% であり、成功基準 (FPR < 0.01) を満たさず、ノイズ支配的であると判定。
+- **閉鎖バージョン:** Cycle 09, Iteration 08
+- **再開条件:** フェルミオン質量以外の物理的制約（例：アクシオン抑制因子、ゲージ対称性）を導入し、候補を 1/100 以下に絞り込める理論的根拠が得られた場合。

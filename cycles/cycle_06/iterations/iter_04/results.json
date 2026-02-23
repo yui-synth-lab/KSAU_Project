@@ -1,0 +1,134 @@
+{
+  "iteration": 4,
+  "hypothesis_id": "H13",
+  "timestamp": "2026-02-23T17:20:42.847760",
+  "task_name": "[H13-I1] 非線形パリティシフト写像モデルの構築と Witten 整合性評価",
+  "data_sources": {
+    "description": "topology_assignments.json + KnotInfo/LinkInfo for signatures",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "consistency_rate": 0.8333333333333334,
+    "v_k_correlation": 0.9170611567644917,
+    "p_value": 0.0013,
+    "sample_size": 12,
+    "optimal_coefficients": {
+      "a_ln_det": 3.7100116372681917,
+      "b_sig": 0.03951666750168001,
+      "c_vol": -0.4149099822147858,
+      "d_const": -0.08914423128282506,
+      "parity_shift": -4
+    }
+  },
+  "detailed_results": [
+    {
+      "name": "Electron",
+      "determinant": 3,
+      "signature": -2.0,
+      "volume": 0.0,
+      "k_eff": 1,
+      "is_consistent": true
+    },
+    {
+      "name": "Muon",
+      "determinant": 5,
+      "signature": 0.0,
+      "volume": 2.0298832128,
+      "k_eff": 1,
+      "is_consistent": true
+    },
+    {
+      "name": "Tau",
+      "determinant": 9,
+      "signature": 0.0,
+      "volume": 3.1639632288,
+      "k_eff": 3,
+      "is_consistent": true
+    },
+    {
+      "name": "Up",
+      "determinant": 12,
+      "signature": 1.0,
+      "volume": 5.33348956689812,
+      "k_eff": 3,
+      "is_consistent": true
+    },
+    {
+      "name": "Down",
+      "determinant": 20,
+      "signature": 2.0,
+      "volume": 6.551743287887868,
+      "k_eff": 4,
+      "is_consistent": true
+    },
+    {
+      "name": "Strange",
+      "determinant": 36,
+      "signature": 4.0,
+      "volume": 9.312341316558376,
+      "k_eff": 6,
+      "is_consistent": true
+    },
+    {
+      "name": "Charm",
+      "determinant": 70,
+      "signature": -5.0,
+      "volume": 11.215504015501589,
+      "k_eff": 7,
+      "is_consistent": true
+    },
+    {
+      "name": "Bottom",
+      "determinant": 96,
+      "signature": -2.0,
+      "volume": 15.156670150795042,
+      "k_eff": 6,
+      "is_consistent": true
+    },
+    {
+      "name": "Top",
+      "determinant": 110,
+      "signature": -3.0,
+      "volume": 15.62112812032806,
+      "k_eff": 7,
+      "is_consistent": false
+    },
+    {
+      "name": "W",
+      "determinant": 64,
+      "signature": 0.0,
+      "volume": 14.655449506835504,
+      "k_eff": 5,
+      "is_consistent": false
+    },
+    {
+      "name": "Z",
+      "determinant": 112,
+      "signature": -2.0,
+      "volume": 15.027615015039348,
+      "k_eff": 7,
+      "is_consistent": true
+    },
+    {
+      "name": "Higgs",
+      "determinant": 136,
+      "signature": -1.0,
+      "volume": 15.820714702540293,
+      "k_eff": 8,
+      "is_consistent": true
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "statistical_thresholds"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 19.389203548431396
+  },
+  "notes": "Used Nelder-Mead optimization to find non-linear parity shift mapping k(Det, Sig, Vol)."
+}

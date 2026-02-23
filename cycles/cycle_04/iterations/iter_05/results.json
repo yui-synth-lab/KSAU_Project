@@ -1,0 +1,44 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H8",
+  "timestamp": "2026-02-23T13:39:15.016765",
+  "task_name": "Witten 合同条件に代わる整合性指標（WRT 不変量近似等）の定義",
+  "data_sources": {
+    "description": "KnotInfo Hyperbolic Knots (C3-C12). Using k2 mapping from SSoT.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "congruence_metrics": {
+      "fulfillment_k_plus_1": 0.03535353535353535,
+      "fulfillment_k_plus_2": 0.028282828282828285
+    },
+    "resonance_metrics": {
+      "vjr_mean": 48.44361435316671,
+      "vjr_std": 18.16941606780151,
+      "vjr_min": 2.5531336539771345
+    },
+    "phase_metrics": {
+      "spi_mean": 0.4818012108188552,
+      "spi_std": 0.29231998855609875
+    },
+    "proposed_index_definition": {
+      "name": "KSAU-Witten Consistency Index (KWCI)",
+      "formula": "KWCI = | ln|J(q)| - (k+2)V/2pi | + alpha * (Det mod (k+1))",
+      "rationale": "Combines large-k asymptotic resonance (Volume Conjecture) with integer-level topological constraints."
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "k_mapping_coefficients",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "sample_size": 2970,
+    "computation_time_sec": 1.5268089771270752
+  }
+}

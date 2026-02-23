@@ -1,0 +1,43 @@
+{
+  "iteration": 3,
+  "hypothesis_id": "H7",
+  "timestamp": "2026-02-23T13:20:02.487780",
+  "task_name": "ガウス過程回帰（GPR）による非線形不確定性縮小の検証",
+  "data_sources": {
+    "description": "KnotInfo Hyperbolic Knots (C3-C12). Target S_T baseline derived from SSoT parameters.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "ols_baseline": {
+      "r2": 0.25033190087846413,
+      "aic": 6210.32347120569
+    },
+    "gpr_refined": {
+      "r2": 0.4512198694511619,
+      "uncertainty_log10": 0.5131885733910678,
+      "kernel": "31.6**2 * RBF(length_scale=4.53) + WhiteKernel(noise_level=0.338)",
+      "axion_6_3_pred_ln_ST": -6.298842685349331
+    },
+    "statistical_metrics": {
+      "fpr": 0.0,
+      "n_trials": 500,
+      "bonferroni_threshold": 0.025
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "min_crossing_number",
+      "random_seed",
+      "monte_carlo_n_trials"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "sample_size": 2970,
+    "computation_time_sec": 203.3697052001953
+  }
+}

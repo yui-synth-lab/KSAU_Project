@@ -1,0 +1,30 @@
+{
+  "id": "H12",
+  "name": "Axion ST Real-Data Validation",
+  "description": "Validation of axion suppression factor (ST) uncertainty reduction on real topological data.",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "Geometric invariants on real data do not reduce ST uncertainty to Delta log10(ST) <= 2 or R2 < 0.5.",
+    "H1": "Non-linear geometric models on real data achieve Delta log10(ST) <= 2 and R2 >= 0.5."
+  },
+  "data_requirements": {
+    "description": "Real topological invariants (Volume, Determinant) from topology_assignments.json.",
+    "ssot_methods": ["get_physical_constants", "get_topology_constants"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.025,
+    "r_squared_minimum": 0.5,
+    "allowed_error_log10_st": 2.0
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50,
+    "max_iterations": 3,
+    "consecutive_stop_limit": 2
+  },
+  "test_method": "Gaussian Process Regression (GPR) and Leave-One-Out Cross-Validation (LOO-CV).",
+  "priority": "high",
+  "max_iterations": 3
+}

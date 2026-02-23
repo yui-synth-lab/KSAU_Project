@@ -1,0 +1,30 @@
+{
+  "id": "H7",
+  "name": "アクシオン抑制因子 ST の高精度化",
+  "description": "幾何学的不変量を用いてアクシオン抑制因子 ST の対数不確定性を Δlog₁₀(ST) ≤ 2 まで縮小する。",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "幾何学的不変量と ST の間に有意な相関がない、または不確定性を 2 桁以内に縮小不可。",
+    "H1": "幾何学的不変量（V, Det, Sig）により ST の不確定性を Δlog₁₀(ST) ≤ 2 まで縮小可能であり、R² ≥ 0.5 を達成する。"
+  },
+  "data_requirements": {
+    "description": "KnotInfo/LinkInfo の双曲体積 V、行列式 Det、Signature 等の実データ。ssot/constants.json の axion_suppression_model。",
+    "ssot_methods": ["get_topology_constants", "get_axion_suppression_model"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.025,
+    "r_squared_minimum": 0.5,
+    "allowed_error_log10_st": 2.0
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2
+  },
+  "test_method": "重回帰分析およびガウス過程回帰（GPR）による予測区間の定量評価。",
+  "priority": "high",
+  "max_iterations": 5
+}

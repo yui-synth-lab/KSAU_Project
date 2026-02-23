@@ -9,12 +9,15 @@
   "mathematical_constants": {
     "pi":        3.141592653589793,
     "kappa":     0.1308996938995747,
+    "kappa_formula": "pi / 24",
+    "k_resonance": 24,
     "G_catalan": 0.915965594177219
   },
 
   "physical_constants": {
     "alpha_em":              0.0072973525693,
     "alpha_em_0":            0.0072722052,
+    "alpha_em_0_inv_theory": 137.5098708314,
     "alpha_s_mz":            0.118,
     "sin2theta_w":           0.23122,
     "sin2theta_w_geometric": 0.23198,
@@ -76,7 +79,20 @@
 
   "axion_suppression_model": {
     "noise_sigma": 0.5,
-    "det_exponent": 2.0
+    "det_exponent": 2.0,
+    "ln_st_target_scaling": "-(crossing_number - min_crossing_number)"
+  },
+
+  "axion_suppression_model_gpr": {
+    "kernel": "C(1.0) * Matern(nu=2.5) + WhiteKernel(noise=0.1)",
+    "r2_final": 0.519,
+    "uncertainty_log10_st": 0.379,
+    "fpr": 0.0,
+    "n_trials": 10000,
+    "features": ["v_ln_det", "vol_sq"],
+    "validated_by": "cycle_06_h12",
+    "last_updated": "2026-02-23",
+    "data_source": "KnotInfo (Real Data)"
   },
 
   "model_validation": {
@@ -93,6 +109,17 @@
     "h2_last_updated": "2026-02-22"
   },
 
+  "phase_viscosity_model": {
+    "alpha_twist": 0.1,
+    "beta_sig":    0.1,
+    "sectors": {
+      "leptons":   { "eta": 17.4787, "intercept":  0.0152 },
+      "quarks_c2": { "eta":  8.9150, "intercept": -5.5828 },
+      "quarks_c3": { "eta":  6.0942, "intercept": -3.5497 },
+      "bosons":    { "eta":  3.0190, "intercept":  5.5293 }
+    }
+  },
+
   "analysis_parameters": {
     "random_seed": 42,
     "min_crossing_number": 3,
@@ -101,7 +128,7 @@
 
   "k_mapping_coefficients": {
     "k1": { "det_coeff": 0.1, "sig_coeff": 1.0, "const": 0.0 },
-    "k2": { "log_det_coeff": 2.0, "vol_coeff": 0.5, "const": 1.0 },
+    "k2": { "log_det_coeff": 2.0, "vol_coeff": 0.5, "const": 1.0, "slope": 1.234, "status": "validated", "fpr": 0.0166, "saturation_level": 18 },
     "k3": { "cross_coeff": 2.0, "const": 0.0 }
   },
 
@@ -110,5 +137,18 @@
     "max_iterations_per_hypothesis": 5,
     "max_modify_count":              2,
     "consecutive_stop_limit":        2
+  },
+
+  "theoretical_mass_laws": {
+    "lepton_jump": "20 * kappa * V",
+    "lepton_jump_note": "電子・ミューオン質量ギャップを 1.72% 精度で説明。Cycle 05 H11 で検証済み。",
+    "kappa": 0.1308996938995747
+  },
+
+  "validation_metrics": {
+    "H11_R2": 0.9995,
+    "H11_MAE_PCT": 5.17,
+    "H11_electron_muon_error_pct": 1.72,
+    "last_updated": "2026-02-23"
   }
 }

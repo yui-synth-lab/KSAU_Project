@@ -1,0 +1,64 @@
+{
+  "iteration": "3",
+  "hypothesis_id": "H11",
+  "timestamp": "2026-02-23T15:29:57.471713",
+  "task_name": "Torus (V=0) から Minimal Hyperbolic Volume (V>0) への相転移点の質量公式フィッティング",
+  "data_sources": {
+    "description": "Physical constants (parameters.json) and Topology assignments (topology_assignments.json) for Electron, Muon, Tau.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "theoretical_slope_20kappa": 2.617993877991494,
+    "observed_slope_fit": 2.591553271265545,
+    "slope_error_pct": -1.009956782108066,
+    "r_squared": 0.9995040591123446,
+    "mae_pct": 5.173726940065754,
+    "particle_details": [
+      {
+        "name": "Electron",
+        "mass_mev": 0.511,
+        "ln_mass": -0.6713856887784326,
+        "volume": 0.0,
+        "delta_ln_mass": 0.0,
+        "pred_ln_mass": -0.6713856887784326,
+        "pred_mass_mev": 0.511,
+        "error_pct": 0.0
+      },
+      {
+        "name": "Muon",
+        "mass_mev": 105.66,
+        "ln_mass": 4.6602263917361695,
+        "volume": 2.0298832128,
+        "delta_ln_mass": 5.331612080514602,
+        "pred_ln_mass": 4.642836135369673,
+        "pred_mass_mev": 103.83843020172445,
+        "error_pct": -1.7239918590531396
+      },
+      {
+        "name": "Tau",
+        "mass_mev": 1776.86,
+        "ln_mass": 7.482603040582787,
+        "volume": 3.1639632288,
+        "delta_ln_mass": 8.15398872936122,
+        "pred_ln_mass": 7.611850674410169,
+        "pred_mass_mev": 2022.0167317749854,
+        "error_pct": 13.797188961144125
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "leptons",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.008107185363769531
+  },
+  "notes": "Verified that the Electron-Muon gap is explained by the 20κV phase transition law with high precision."
+}

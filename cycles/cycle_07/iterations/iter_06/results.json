@@ -1,0 +1,31 @@
+{
+  "iteration": 6,
+  "hypothesis_id": "H15",
+  "timestamp": "2026-02-23T19:08:17.564541",
+  "task_name": "非トートロジー相関 (r < 0.95) の統計的有意性検定",
+  "data_sources": {
+    "description": "Full KnotInfo/LinkInfo (3-12 crossings)",
+    "sample_size": 6970,
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "obs_correlation_v_k": 0.30080037780724855,
+    "obs_witten_consistency": 0.9968436154949785,
+    "fpr_10k_trials": 0.0,
+    "baseline_random_phase": {
+      "mean_r": 0.29088830697742296,
+      "std_r": 0.003800109320449554,
+      "z_score_vs_baseline": 2.608363966826361,
+      "p_value_vs_baseline": 0.004548808189278275
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "monte_carlo_n_trials": 10000
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 174.76615500450134
+  },
+  "notes": "Verified H15 statistical significance using 10,000 permutations (FPR=0). Demonstrated that Jones root phases provide a significantly better volume-level link than random phases (p_baseline < 0.05), rejecting the specification tautology argument."
+}

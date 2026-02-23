@@ -1,0 +1,105 @@
+{
+  "iteration": 3,
+  "hypothesis_id": "H15",
+  "timestamp": "2026-02-23T18:40:50.672066",
+  "task_name": "離散的量子化アルゴリズムによる CS 写像の初期設計",
+  "computed_values": {
+    "particle_mappings": [
+      {
+        "particle": "Electron",
+        "det": 3,
+        "vol": 0.0,
+        "best_k": 1,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Muon",
+        "det": 5,
+        "vol": 2.0298832128,
+        "best_k": 3,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Tau",
+        "det": 9,
+        "vol": 3.1639632288,
+        "best_k": 1,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Up",
+        "det": 12,
+        "vol": 5.33348956689812,
+        "best_k": 1,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Down",
+        "det": 20,
+        "vol": 6.551743287887868,
+        "best_k": 2,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Strange",
+        "det": 36,
+        "vol": 9.312341316558376,
+        "best_k": 1,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Charm",
+        "det": 70,
+        "vol": 11.215504015501589,
+        "best_k": 8,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Bottom",
+        "det": 96,
+        "vol": 15.156670150795042,
+        "best_k": 2,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Top",
+        "det": 110,
+        "vol": 15.62112812032806,
+        "best_k": 3,
+        "witten_consistent": true
+      },
+      {
+        "particle": "W",
+        "det": 64,
+        "vol": 14.655449506835504,
+        "best_k": 2,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Z",
+        "det": 112,
+        "vol": 15.027615015039348,
+        "best_k": 5,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Higgs",
+        "det": 136,
+        "vol": 15.820714702540293,
+        "best_k": 6,
+        "witten_consistent": true
+      }
+    ],
+    "witten_consistency_rate": 1.0,
+    "volume_k_correlation": 0.48234481289850983
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.4808900356292725
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "iteration": "7",
+  "hypothesis_id": "H21",
+  "timestamp": "2026-02-23T20:59:35",
+  "task_name": "Dark Matter Candidate Extraction and Lifetime Calculation",
+  "data_sources": {
+    "description": "KnotInfo census data and H17 regression coefficients",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "total_knots_scanned": 12161,
+    "stable_candidates_count": 0,
+    "top_candidates": [],
+    "most_stable_unassigned": [
+      {
+        "name": "13a_3478",
+        "ln_Tau_pred": -30.911757392307283
+      },
+      {
+        "name": "13a_3477",
+        "ln_Tau_pred": -32.917442658750076
+      },
+      {
+        "name": "13a_4284",
+        "ln_Tau_pred": -34.19941587937014
+      },
+      {
+        "name": "13a_3428",
+        "ln_Tau_pred": -35.20787913376515
+      },
+      {
+        "name": "13a_4620",
+        "ln_Tau_pred": -35.59216818531734
+      }
+    ],
+    "age_of_universe_ln_s": 40.615259434532526,
+    "fpr": 0.0
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.6308822631835938
+  },
+  "notes": "H17 model used for extrapolation. FPR calculated based on KnotInfo census prevalence."
+}

@@ -1,0 +1,30 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H6",
+  "timestamp": "2026-02-23T10:30:00Z",
+  "task_name": "導出モデルと SSoT k_mapping_coefficients との整合性検証",
+  "data_sources": {
+    "description": "SSoT constants and topology assignments for 12 particles (SM + Bosons)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "vol_coeff": 0.5,
+    "log_det_coeff": 2.0,
+    "intercept": 1.0,
+    "m_obs": 0.2116,
+    "p_value_fixed_kappa": 0.139,
+    "local_optimality_prob": 0.796,
+    "expected_m_random": 0.2503
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": ["k_mapping_coefficients", "topology_assignments", "statistical_thresholds"]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.1
+  },
+  "notes": "Observed parameters (0.5, 2.0, 1.0) show a mean residual 15% better than random chance. Local sensitivity analysis confirms that these coefficients reside near an 'integer-likeness' valley."
+}

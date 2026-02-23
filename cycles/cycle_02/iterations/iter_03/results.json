@@ -1,0 +1,55 @@
+{
+  "iteration": 3,
+  "hypothesis_id": "H5",
+  "timestamp": "2026-02-23T06:00:50.442147",
+  "task_name": "双曲体積 V と Chern-Simons レベル k の相関関数の導出（線形 vs 対数）",
+  "data_sources": {
+    "description": "KnotInfo (sample_size=12965)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "models": {
+      "k1": {
+        "mean_rounding_error": 0.039040241207943874,
+        "volume_correlation_r": 0.8517925603324654,
+        "fpr": 0.0,
+        "status": "PASS"
+      },
+      "k2": {
+        "mean_rounding_error": 0.013445933788949697,
+        "volume_correlation_r": 0.9456477661038717,
+        "fpr": 0.0,
+        "status": "PASS"
+      },
+      "k3": {
+        "mean_rounding_error": 0.0,
+        "volume_correlation_r": 0.4470324844726346,
+        "fpr": 0.0,
+        "status": "PASS"
+      }
+    },
+    "comparison": {
+      "linear_v_crossing_r": 0.4470324844726352,
+      "log_v_crossing_r": 0.28475031651797184,
+      "winner": "linear"
+    },
+    "chern_simons_v_correlation": {
+      "r": -0.0360684218766337,
+      "fpr": 0.0498
+    },
+    "sample_size": 12965
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "k_mapping_coefficients"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 5.0
+  },
+  "notes": "k1, k2, k3 were evaluated for rounding error and volume correlation. k2 shows best results among current candidates."
+}

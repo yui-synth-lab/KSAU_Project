@@ -1,0 +1,31 @@
+{
+  "id": "H10",
+  "name": "Hyperbolic Chern-Simons k-Function",
+  "description": "Refining the mapping from Chern-Simons level k to Hyperbolic Volume V to satisfy Witten consistency.",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "Chern-Simons level k is independent of Hyperbolic Volume V, or no integer-valued k(V) achieves > 95% consistency rate.",
+    "H1": "k(V) is a predictable integer function of V (e.g., k = floor(alpha * V + beta)) that achieves > 95% consistency with Witten invariants."
+  },
+  "data_requirements": {
+    "description": "Chern-Simons level k and Volume V across KnotInfo/LinkInfo dataset.",
+    "ssot_methods": ["get_topology_constants", "get_k_mapping_coefficients"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.016666,
+    "witten_consistency_rate_minimum": 0.95,
+    "non_tautological": true
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "consistency_rate_below": 0.8
+  },
+  "test_method": "Exhaustive search and optimization of integer-valued function k(V) across different crossing number slices (3-12).",
+  "priority": "medium",
+  "max_iterations": 5
+}

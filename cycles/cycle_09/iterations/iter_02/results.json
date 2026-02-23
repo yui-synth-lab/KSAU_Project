@@ -1,0 +1,107 @@
+{
+  "iteration": "2",
+  "hypothesis_id": "H19",
+  "timestamp": "2026-02-23T20:33:36.902014",
+  "task_name": "MAE Validation and Fine-Tuning (Reduced Model)",
+  "computed_values": {
+    "total_mae_pct": 1.1214466303224804,
+    "total_r2_log": 0.9999881846809568,
+    "p_value": 0.0008,
+    "fpr": 0.0008,
+    "dof": 3,
+    "best_params": [
+      8.277587606416407,
+      5.465014910374283,
+      17.47872026941263,
+      3.019015549621594,
+      -8.789180529447705,
+      -5.29499683878758,
+      0.015241936657917066,
+      3.944605325403372,
+      0.3645522840699069
+    ],
+    "particle_details": [
+      {
+        "particle": "Up",
+        "obs": 2.16,
+        "pred": 2.1416657623147173,
+        "error_pct": 0.8488073002445768
+      },
+      {
+        "particle": "Down",
+        "obs": 4.67,
+        "pred": 4.710373542466226,
+        "error_pct": 0.8645298172639482
+      },
+      {
+        "particle": "Strange",
+        "obs": 93.4,
+        "pred": 91.98186653485419,
+        "error_pct": 1.5183441810983023
+      },
+      {
+        "particle": "Charm",
+        "obs": 1270.0,
+        "pred": 1295.2778201655383,
+        "error_pct": 1.9903795405935658
+      },
+      {
+        "particle": "Bottom",
+        "obs": 4180.0,
+        "pred": 4208.0618270900195,
+        "error_pct": 0.6713355763162561
+      },
+      {
+        "particle": "Top",
+        "obs": 172760.0,
+        "pred": 170838.84576062977,
+        "error_pct": 1.1120364895636872
+      },
+      {
+        "particle": "Electron",
+        "obs": 0.511,
+        "pred": 0.5111225962095803,
+        "error_pct": 0.023991430446248123
+      },
+      {
+        "particle": "Muon",
+        "obs": 105.66,
+        "pred": 105.58663200029308,
+        "error_pct": 0.06943781914340094
+      },
+      {
+        "particle": "Tau",
+        "obs": 1776.86,
+        "pred": 1777.6657670034547,
+        "error_pct": 0.045347804748532554
+      },
+      {
+        "particle": "W",
+        "obs": 80377.0,
+        "pred": 82536.88951194534,
+        "error_pct": 2.687198467155203
+      },
+      {
+        "particle": "Z",
+        "obs": 91187.0,
+        "pred": 88347.96085898472,
+        "error_pct": 3.1134253139321184
+      },
+      {
+        "particle": "Higgs",
+        "obs": 125100.0,
+        "pred": 125741.16980502827,
+        "error_pct": 0.5125258233639266
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "relative_paths_used": true
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 15.302062273025513
+  }
+}

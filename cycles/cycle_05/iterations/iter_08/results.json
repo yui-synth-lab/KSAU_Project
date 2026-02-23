@@ -1,0 +1,44 @@
+{
+  "iteration": "8",
+  "hypothesis_id": "H10",
+  "timestamp": "2026-02-23T15:49:47.991020",
+  "task_name": "k(V) マッピングの物理的解釈と不変量不整合の再評価",
+  "data_sources": {
+    "description": "KnotInfo hyperbolic knots (V>0, Det>0).",
+    "loaded_via_ssot": true,
+    "sample_size": 12955
+  },
+  "computed_values": {
+    "iter5": {
+      "rate": 0.27703589347742186,
+      "mean_k": 2.220764183712852
+    },
+    "k2": {
+      "rate": 0.029486684677730607,
+      "mean_k": 19.504284060208413
+    },
+    "k1": {
+      "rate": 0.06846777306059436,
+      "mean_k": 17.555229641065225
+    },
+    "k2_analysis": {
+      "ok_volume_mean": 16.9342974351822,
+      "nok_volume_mean": 17.483993107520092,
+      "volume_corr_with_success": -0.026528951309485002
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "k_mapping_coefficients",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.7220966815948486
+  },
+  "notes": "Re-evaluated k mappings. k2 model (V and ln_det) shows better rate than V-only models but still low. Residuals show no strong volume bias."
+}

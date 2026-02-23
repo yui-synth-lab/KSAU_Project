@@ -1,0 +1,31 @@
+{
+  "id": "H19",
+  "name": "Phase Viscosity Refinement",
+  "description": "Improve Down/Strange quark mass prediction accuracy using topological interaction energy.",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "Topological interaction terms (functions of crossing numbers) do not significantly reduce MAE for Down/Strange quarks.",
+    "H1": "Interaction energy or non-linear volume deficits can reduce fermion mass MAE below 5.17%."
+  },
+  "data_requirements": {
+    "description": "KnotInfo data and SSoT fermion masses.",
+    "ssot_methods": ["get_physical_constants", "get_phase_viscosity_model"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.016666,
+    "r_squared_minimum": 0.99,
+    "allowed_error_percent": 5.17
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 4,
+    "consecutive_stop_limit": 2,
+    "custom_boundary": "MAE > 8.0% after Iter 2"
+  },
+  "test_method": "Parameter estimation via least squares/Bayesian optimization and LOO-CV validation.",
+  "priority": "high",
+  "max_iterations": 4
+}

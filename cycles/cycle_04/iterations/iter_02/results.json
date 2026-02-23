@@ -1,0 +1,51 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H7",
+  "timestamp": "2026-02-23T13:03:53.211311",
+  "task_name": "追加不変量（Signature 等）の導入と不確定性 Δlog₁₀(ST) の定量評価",
+  "data_sources": {
+    "description": "KnotInfo Hyperbolic Knots (C3-C12). Target S_T baseline = - (Crossing - 3).",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "Baseline (V, Det)": {
+      "r2": 0.23429422301120295,
+      "adj_r2": 0.2337780748635866,
+      "uncertainty_log10": 0.6034585714219204,
+      "p_values": {
+        "const": 0.0,
+        "volume": 7.448716056325214e-97,
+        "ln_det": 5.42880079668216e-12
+      },
+      "aic": 6271.1907048274115,
+      "axion_6_3_pred_ln_ST": -7.6056711383106075
+    },
+    "Refined (V, Det, Sig)": {
+      "r2": 0.25033190087846413,
+      "adj_r2": 0.24957363914637898,
+      "uncertainty_log10": 0.5971054205438945,
+      "p_values": {
+        "const": 0.0,
+        "volume": 2.618269503897734e-106,
+        "ln_det": 2.0992038326338343e-13,
+        "abs_sig": 2.3207478687273264e-15
+      },
+      "aic": 6210.32347120569,
+      "axion_6_3_pred_ln_ST": -7.433793530368953
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "sample_size": 2970,
+    "computation_time_sec": 1.5513172149658203
+  }
+}

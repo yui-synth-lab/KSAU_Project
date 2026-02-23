@@ -1,0 +1,31 @@
+{
+  "id": "H9",
+  "name": "Geometric Scaling of Smallest Torsion (ST)",
+  "description": "Investigating if the Smallest Torsion (ST) of hyperbolic manifolds follows a predictable scaling law related to volume V, supporting the Axion Suppression Model.",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "Smallest Torsion ln(ST) is stochastically distributed and independent of Hyperbolic Volume V (R² < 0.5).",
+    "H1": "Smallest Torsion ln(ST) follows a scaling law ln(ST) = alpha * V + beta (or GPR equivalent) with R² >= 0.75."
+  },
+  "data_requirements": {
+    "description": "Hyperbolic volume and torsion data from KnotInfo/LinkInfo and SSOT constants.",
+    "ssot_methods": ["get_topology_constants", "get_axion_suppression_model"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.016666,
+    "r_squared_minimum": 0.75,
+    "allowed_error_percent": 5.0
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "r_squared_below": 0.5
+  },
+  "test_method": "Gaussian Process Regression (GPR) and Linear Regression analysis comparing ln(ST) vs Volume V across 3-12 crossing knots.",
+  "priority": "high",
+  "max_iterations": 5
+}

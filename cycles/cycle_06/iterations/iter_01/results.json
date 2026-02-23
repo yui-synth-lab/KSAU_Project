@@ -1,0 +1,35 @@
+{
+  "iteration": "1",
+  "hypothesis_id": "H12",
+  "timestamp": "2026-02-23T16:47:33.137240",
+  "task_name": "[H12-I1] SSoT 実データに基づくベースライン GPR モデルの構築と R² 評価",
+  "data_sources": {
+    "description": "KnotInfo data (3-12 crossings), filtered for hyperbolic knots (V>0, Det>0). Target is ST (n=2).",
+    "loaded_via_ssot": true,
+    "sample_size": 12911
+  },
+  "computed_values": {
+    "mean_r_squared": 0.5215177906803442,
+    "std_r_squared": 0.060131204668477115,
+    "mean_mse": 0.7574479306281827,
+    "rmse_ln_st": 0.8703148456898703,
+    "uncertainty_log10_st": 0.37797293500159074,
+    "kernel_trained": "31.6**2 * Matern(length_scale=416, nu=2.5) + WhiteKernel(noise_level=0.754)",
+    "axion_6_3_pred_ln_st": 2.5352007806541224
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "analysis_parameters",
+      "axion_suppression_model_gpr"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 281.70303678512573
+  },
+  "notes": "Baseline GPR model on real KnotInfo invariants."
+}

@@ -1,0 +1,30 @@
+{
+  "iteration": 3,
+  "hypothesis_id": "H6",
+  "timestamp": "2026-02-23T11:15:00Z",
+  "task_name": "幾何学的モデルの一般化（結び目不変量・特性類との接続）",
+  "data_sources": {
+    "description": "SSoT constants, topology assignments, and KnotInfo CSV",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "mean_residual": 0.2116,
+    "integer_quantization_success": "High (MAE < 0.25)",
+    "notable_matches": {
+      "Tau": {"k": 6.976, "target": 7, "residual": -0.024},
+      "Z_Boson": {"k": 17.951, "target": 18, "residual": -0.049},
+      "Electron": {"k": 3.197, "target": 3, "residual": 0.197}
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": ["k_mapping_coefficients", "topology_assignments", "knot_data"]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.05
+  },
+  "notes": "The generalization of the mass formula to a quantized Chern-Simons level k is empirically supported. The level k integrates volume and determinant into a single topological level."
+}

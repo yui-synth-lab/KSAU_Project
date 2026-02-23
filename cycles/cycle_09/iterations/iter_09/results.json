@@ -1,0 +1,125 @@
+{
+  "iteration": "9",
+  "hypothesis_id": "H19",
+  "timestamp": "2026-02-23T21:08:49",
+  "task_name": "Integrated Model Final Accuracy Evaluation (All Fermions + Bosons)",
+  "computed_values": {
+    "all_particles_mae_pct": 1.1214508045215512,
+    "fermion_only_mae_pct": 0.7938171784500048,
+    "total_r2_log": 0.9999881846809453,
+    "mae_95_ci": [
+      0.598386778558378,
+      1.6956838808558032
+    ],
+    "p_value_fpr": 0.0007,
+    "n_trials": 100000,
+    "best_params": [
+      8.277587943209994,
+      5.465014798400942,
+      17.478723306454636,
+      3.019002243345721,
+      -8.789186323782788,
+      -5.294999332111083,
+      0.015242207051113787,
+      3.944636605819263,
+      0.3645527033170928
+    ],
+    "particle_details": [
+      {
+        "particle": "Up",
+        "obs": 2.16,
+        "pred": 2.1416629410509342,
+        "error_pct": 0.8489379143086064,
+        "is_fermion": true
+      },
+      {
+        "particle": "Down",
+        "obs": 4.67,
+        "pred": 4.710372439127493,
+        "error_pct": 0.864506191166876,
+        "is_fermion": true
+      },
+      {
+        "particle": "Strange",
+        "obs": 93.4,
+        "pred": 91.98192214922346,
+        "error_pct": 1.5182846368057183,
+        "is_fermion": true
+      },
+      {
+        "particle": "Charm",
+        "obs": 1270.0,
+        "pred": 1295.2776282216216,
+        "error_pct": 1.9903644268993406,
+        "is_fermion": true
+      },
+      {
+        "particle": "Bottom",
+        "obs": 4180.0,
+        "pred": 4208.064041750213,
+        "error_pct": 0.6713885586175289,
+        "is_fermion": true
+      },
+      {
+        "particle": "Top",
+        "obs": 172760.0,
+        "pred": 170838.85437915596,
+        "error_pct": 1.1120315008358623,
+        "is_fermion": true
+      },
+      {
+        "particle": "Electron",
+        "obs": 0.511,
+        "pred": 0.5111226734549492,
+        "error_pct": 0.02400654695679198,
+        "is_fermion": true
+      },
+      {
+        "particle": "Muon",
+        "obs": 105.66,
+        "pred": 105.58674575611232,
+        "error_pct": 0.06933015700139587,
+        "is_fermion": true
+      },
+      {
+        "particle": "Tau",
+        "obs": 1776.86,
+        "pred": 1777.6685543408043,
+        "error_pct": 0.04550467345792289,
+        "is_fermion": true
+      },
+      {
+        "particle": "W",
+        "obs": 80377.0,
+        "pred": 82536.93833488361,
+        "error_pct": 2.687259209579373,
+        "is_fermion": false
+      },
+      {
+        "particle": "Z",
+        "obs": 91187.0,
+        "pred": 88347.9866259186,
+        "error_pct": 3.1133970566872526,
+        "is_fermion": false
+      },
+      {
+        "particle": "Higgs",
+        "obs": 125100.0,
+        "pred": 125741.01087620937,
+        "error_pct": 0.5123987819419451,
+        "is_fermion": false
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "relative_paths_used": true
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 47.63320064544678
+  },
+  "notes": "Fermion MAE 0.7938% is well within the success criteria (< 5.17%). FPR of 0.00070000 (N=100,000) strongly rejects the null hypothesis (p < 0.016666)."
+}

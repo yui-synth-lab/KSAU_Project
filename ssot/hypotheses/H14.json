@@ -1,0 +1,30 @@
+{
+  "id": "H14",
+  "name": "Axion ST Uncertainty Reduction (GPR-Refined)",
+  "description": "Reduction of log10(ST) uncertainty to <= 2 using GPR and geometric invariants.",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "Geometric invariants cannot reduce log10(ST) uncertainty below 2 orders of magnitude or correlation is non-significant.",
+    "H1": "GPR-based non-linear modeling reduces log10(ST) uncertainty to <= 2 with R2 >= 0.5."
+  },
+  "data_requirements": {
+    "description": "KnotInfo real data (V, Det, Sig, Jones)",
+    "ssot_methods": ["get_axion_suppression_model", "get_statistical_thresholds"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.025,
+    "r_squared_minimum": 0.5,
+    "allowed_error_log10_st": 2.0
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2
+  },
+  "test_method": "Gaussian Process Regression (GPR) with Matern kernel; uncertainty interval width assessment.",
+  "priority": "high",
+  "max_iterations": 5
+}

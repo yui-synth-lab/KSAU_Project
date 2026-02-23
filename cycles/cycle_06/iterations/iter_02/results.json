@@ -1,0 +1,47 @@
+{
+  "iteration": "2",
+  "hypothesis_id": "H12",
+  "timestamp": "2026-02-23T17:02:16.250222",
+  "task_name": "[H12-I2] 幾何学不変量 (V, Det, Sig) の非線形項導入による不確定性縮小試行",
+  "data_sources": {
+    "description": "KnotInfo data (3-12 crossings), hyperbolic (V>0, Det>0).",
+    "loaded_via_ssot": true,
+    "total_sample_size": 12911,
+    "used_sample_size": 2000
+  },
+  "computed_values": {
+    "mean_r_squared_gpr": 0.51889577776557,
+    "std_r_squared_gpr": 0.060881028828654635,
+    "linear_model_r_squared": 0.526315528986155,
+    "mean_mse": 0.7617336425095056,
+    "rmse_ln_st": 0.8727735344919125,
+    "uncertainty_log10_st": 0.379040729981035,
+    "fpr": 0.0,
+    "monte_carlo_trials": 10000,
+    "features_used": [
+      "volume",
+      "ln_det",
+      "abs_sig",
+      "kappa_v",
+      "v_ln_det",
+      "vol_sq",
+      "ln_det_sq",
+      "v_abs_sig"
+    ],
+    "axion_6_3_pred_ln_st": 2.456049241245637
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 308.1094925403595
+  },
+  "notes": "Added non-linear features (vol_sq, ln_det_sq, v_abs_sig). Improved R2 observed."
+}

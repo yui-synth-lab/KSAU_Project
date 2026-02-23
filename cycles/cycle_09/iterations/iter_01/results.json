@@ -1,0 +1,121 @@
+{
+  "iteration": "1",
+  "hypothesis_id": "H19",
+  "timestamp": "2026-02-23T20:27:47.817541",
+  "task_name": "Interaction Energy Term Initial Fitting (Global Opt)",
+  "computed_values": {
+    "total_mae_pct": 0.20631550206972993,
+    "total_r2_log": 0.9999992314932575,
+    "alpha_twist": 0.2097525955307106,
+    "beta_sig": 0.04777364834287805,
+    "sectors": {
+      "bosons": {
+        "eta": 2.991163085082201,
+        "intercept": 7.716105287902537,
+        "gamma": -0.49971821406315114
+      },
+      "leptons": {
+        "eta": 18.001762829201137,
+        "intercept": 0.5639208454053168,
+        "gamma": -0.07292707682331863
+      },
+      "quarks_c2": {
+        "eta": 8.74271621016901,
+        "intercept": -6.5959304902566895,
+        "gamma": 0.09389150512761314
+      },
+      "quarks_c3": {
+        "eta": 5.0349314566682075,
+        "intercept": -5.304687072387596,
+        "gamma": 0.49358137354655973
+      }
+    },
+    "particle_details": [
+      {
+        "particle": "Up",
+        "obs": 2.16,
+        "pred": 2.1588905056741328,
+        "error_pct": 0.05136547804941561
+      },
+      {
+        "particle": "Down",
+        "obs": 4.67,
+        "pred": 4.667150633547071,
+        "error_pct": 0.061014270940658887
+      },
+      {
+        "particle": "Strange",
+        "obs": 93.4,
+        "pred": 93.42029363630222,
+        "error_pct": 0.021727661993804343
+      },
+      {
+        "particle": "Charm",
+        "obs": 1270.0,
+        "pred": 1271.435682705817,
+        "error_pct": 0.11304588234779872
+      },
+      {
+        "particle": "Bottom",
+        "obs": 4180.0,
+        "pred": 4180.811582530457,
+        "error_pct": 0.019415850010925592
+      },
+      {
+        "particle": "Top",
+        "obs": 172760.0,
+        "pred": 172660.52892129435,
+        "error_pct": 0.05757760980878315
+      },
+      {
+        "particle": "Electron",
+        "obs": 0.511,
+        "pred": 0.5111781384496803,
+        "error_pct": 0.034860753362091455
+      },
+      {
+        "particle": "Muon",
+        "obs": 105.66,
+        "pred": 105.61496457473672,
+        "error_pct": 0.042622965420480025
+      },
+      {
+        "particle": "Tau",
+        "obs": 1776.86,
+        "pred": 1777.1153718913504,
+        "error_pct": 0.01437208847914175
+      },
+      {
+        "particle": "W",
+        "obs": 80377.0,
+        "pred": 80988.70527442603,
+        "error_pct": 0.7610451676798451
+      },
+      {
+        "particle": "Z",
+        "obs": 91187.0,
+        "pred": 90253.05468553033,
+        "error_pct": 1.0242088394943079
+      },
+      {
+        "particle": "Higgs",
+        "obs": 125100.0,
+        "pred": 125443.43635101913,
+        "error_pct": 0.27452945724950634
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "phase_viscosity_model"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 18.645206212997437
+  }
+}

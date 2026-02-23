@@ -1,0 +1,30 @@
+{
+  "id": "H4",
+  "name": "アキシオン質量とトポロジカル・トーション(ST)の相関",
+  "description": "アキシオン質量 m_a が双曲体積 V とトーション行列式 ST (Smallest Torsion) の対数結合によって記述されることを検証する。",
+  "status": "active",
+  "created_date": "2026-02-23",
+  "hypothesis": {
+    "H0": "アキシオン質量 m_a とトポロジカル・トーション ST の間には統計的に有意な相関が存在しない。",
+    "H1": "アキシオン質量 m_a は双曲体積 V およびトーションの行列式 ST によって記述され、ln(m_a) = kappa * V - beta * ln(ST) + C の形式で高い相関を示す。"
+  },
+  "data_requirements": {
+    "description": "KnotInfo/LinkInfo の双曲体積 V およびトーション不変量 ST。ssot/constants.json のアキシオン抑制モデル定数。",
+    "ssot_methods": ["get_topology_constants", "get_axion_suppression_model"]
+  },
+  "success_criteria": {
+    "p_value_threshold": 0.05,
+    "bonferroni_corrected_threshold": 0.025,
+    "r_squared_minimum": 0.75,
+    "allowed_error_percent": 5.0
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2
+  },
+  "test_method": "重回帰分析（OLS/WLS）による赤池情報量規準 (AICc) および LOO-CV MAE の評価。",
+  "priority": "high",
+  "max_iterations": 5
+}

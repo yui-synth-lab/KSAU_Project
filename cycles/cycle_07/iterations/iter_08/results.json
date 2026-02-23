@@ -1,0 +1,151 @@
+{
+  "iteration": "8",
+  "hypothesis_id": "H15",
+  "timestamp": "2026-02-23T19:17:38.399894",
+  "task_name": "TQFT 不変量との物理的整合性最終チェック",
+  "data_sources": {
+    "description": "Particle topologies from assignments.json + KnotInfo/LinkInfo TQFT metrics.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "particle_tqft_mappings": [
+      {
+        "particle": "Electron",
+        "topology": "3_1",
+        "det": 3,
+        "vol": 0.0,
+        "cs_invariant": null,
+        "k": 1,
+        "m": 3,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Muon",
+        "topology": "4_1",
+        "det": 5,
+        "vol": 2.0298832128,
+        "cs_invariant": 0.0,
+        "k": 3,
+        "m": 5,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Tau",
+        "topology": "6_1",
+        "det": 9,
+        "vol": 3.1639632288,
+        "cs_invariant": 0.155977017,
+        "k": 1,
+        "m": 3,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Up",
+        "topology": "L9n1{1}",
+        "det": 12,
+        "vol": 5.33348956689812,
+        "cs_invariant": null,
+        "k": 4,
+        "m": 6,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Down",
+        "topology": "L8a18{0,1}",
+        "det": 20,
+        "vol": 6.551743287887868,
+        "cs_invariant": null,
+        "k": 8,
+        "m": 10,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Strange",
+        "topology": "L11n330{0,1}",
+        "det": 36,
+        "vol": 9.312341316558376,
+        "cs_invariant": null,
+        "k": 16,
+        "m": 18,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Charm",
+        "topology": "L11a362{0}",
+        "det": 70,
+        "vol": 11.215504015501589,
+        "cs_invariant": null,
+        "k": 8,
+        "m": 10,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Bottom",
+        "topology": "L11a528{0,1}",
+        "det": 96,
+        "vol": 15.156670150795042,
+        "cs_invariant": null,
+        "k": 14,
+        "m": 16,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Top",
+        "topology": "L11a225{1}",
+        "det": 110,
+        "vol": 15.62112812032806,
+        "cs_invariant": null,
+        "k": 9,
+        "m": 11,
+        "witten_consistent": true
+      },
+      {
+        "particle": "W",
+        "topology": "L11n387{0,0}",
+        "det": 64,
+        "vol": 14.655449506835504,
+        "cs_invariant": null,
+        "k": 6,
+        "m": 8,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Z",
+        "topology": "L11a431{0,0}",
+        "det": 112,
+        "vol": 15.027615015039348,
+        "cs_invariant": null,
+        "k": 12,
+        "m": 14,
+        "witten_consistent": true
+      },
+      {
+        "particle": "Higgs",
+        "topology": "L11a55{0}",
+        "det": 136,
+        "vol": 15.820714702540293,
+        "cs_invariant": null,
+        "k": 6,
+        "m": 8,
+        "witten_consistent": true
+      }
+    ],
+    "total_witten_consistency_rate": 1.0,
+    "k_cs_correlation": -1.0,
+    "k_cs_p_value": 1.0
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "k_mapping_coefficients.k2",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.5884780883789062
+  },
+  "notes": "Final physical consistency check for H15. Verified Witten consistency for all 12 particles and explored k-CS invariant correlation."
+}

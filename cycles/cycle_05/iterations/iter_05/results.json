@@ -1,0 +1,32 @@
+{
+  "iteration": "5",
+  "hypothesis_id": "H10",
+  "timestamp": "2026-02-23T15:37:49.316396",
+  "task_name": "Chern-Simons レベル k(V) の整数関数としての最適化（Witten 不変量基準）",
+  "data_sources": {
+    "description": "KnotInfo hyperbolic knots (V>0, C3-C12).",
+    "loaded_via_ssot": true,
+    "sample_size": 2970
+  },
+  "computed_values": {
+    "best_alpha": 0.1,
+    "best_beta": 1.0,
+    "witten_consistency_rate": 0.31043771043771046,
+    "fpr": 0.335,
+    "n_trials_mc": 1000,
+    "formula": "k(V) = floor(0.1000 * V + 1.0000)"
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.8547229766845703
+  },
+  "notes": "Search yielded best rate of 0.3104. FPR calculation based on fixed optimal parameters."
+}

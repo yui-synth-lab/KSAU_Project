@@ -1,0 +1,100 @@
+{
+  "iteration": "6",
+  "hypothesis_id": "H19",
+  "timestamp": "2026-02-23T20:54:04",
+  "task_name": "LOO-CV Overfitting Check (Fix Path Hardcode)",
+  "computed_values": {
+    "loo_cv_mae_pct": 1039.0860903915598,
+    "final_training_mae_pct": 196.38113094772504,
+    "best_params": [
+      8.812095352140544,
+      -3.858009828113937,
+      1.9037022964916193,
+      -3.1912663695189947,
+      -0.21323369416506366
+    ],
+    "particle_details": [
+      {
+        "particle": "Up",
+        "obs": 2.16,
+        "pred": 1.3650443280693056,
+        "error_pct": 36.80350333012474
+      },
+      {
+        "particle": "Down",
+        "obs": 4.67,
+        "pred": 6.341139055950757,
+        "error_pct": 35.78456222592627
+      },
+      {
+        "particle": "Strange",
+        "obs": 93.4,
+        "pred": 103.49925926883164,
+        "error_pct": 10.812911422731938
+      },
+      {
+        "particle": "Charm",
+        "obs": 1270.0,
+        "pred": 329.2157184709516,
+        "error_pct": 74.07750248260224
+      },
+      {
+        "particle": "Bottom",
+        "obs": 4180.0,
+        "pred": 49229.62662150311,
+        "error_pct": 1077.7422636723231
+      },
+      {
+        "particle": "Top",
+        "obs": 172760.0,
+        "pred": 59513.190276734706,
+        "error_pct": 65.5515221829505
+      },
+      {
+        "particle": "Electron",
+        "obs": 0.511,
+        "pred": 4.747661216085256,
+        "error_pct": 829.0922144980932
+      },
+      {
+        "particle": "Muon",
+        "obs": 105.66,
+        "pred": 69.76788253924549,
+        "error_pct": 33.96944677338114
+      },
+      {
+        "particle": "Tau",
+        "obs": 1776.86,
+        "pred": 289.65361781095936,
+        "error_pct": 83.69856838406182
+      },
+      {
+        "particle": "W",
+        "obs": 80377.0,
+        "pred": 60366.289046684564,
+        "error_pct": 24.8960659807102
+      },
+      {
+        "particle": "Z",
+        "obs": 91187.0,
+        "pred": 73627.88564743407,
+        "error_pct": 19.2561597075964
+      },
+      {
+        "particle": "Higgs",
+        "obs": 125100.0,
+        "pred": 206275.95224096064,
+        "error_pct": 64.88885071219876
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "relative_paths_used": true
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 11.75787878036499
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "iteration": 1,
+  "hypothesis_id": "H4",
+  "timestamp": "2026-02-23T05:49:24.042827",
+  "task_name": "既存の fermion 質量公式への ST (Smallest Torsion) 項の導入と残差分析",
+  "data_sources": {
+    "description": "Fermion masses and topology assignments from SSOT (KSAU v7.0)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "baseline_mae_percent": 490.41142114352374,
+    "st_corrected_mae_percent": 363.07716848069265,
+    "st_slope_beta": -1.0668581847608598,
+    "st_intercept_c": 3.9188070972538886,
+    "st_correlation_r": -0.6486629075362802,
+    "st_p_value": 0.05876601098605313,
+    "aic_baseline": 13.627963666223748,
+    "aic_corrected": 13.80407588408184,
+    "delta_aic": 0.17611221785809228
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "G_catalan",
+      "quarks",
+      "leptons",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.1
+  },
+  "notes": "ST is proxied by the determinant of the 2-fold branched cover as indicated by axion_suppression_model.det_exponent."
+}

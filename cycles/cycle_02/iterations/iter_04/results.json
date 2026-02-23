@@ -1,0 +1,40 @@
+{
+  "iteration": 4,
+  "hypothesis_id": "H4",
+  "timestamp": "2026-02-23T06:07:20.501829",
+  "task_name": "Jones 多項式以外の不変量による ST 補完の検証",
+  "computed_values": {
+    "evaluations": {
+      "determinant": {
+        "r_squared": 0.3921235290552704,
+        "p_value": 0.07119706191753206,
+        "fpr": 0.075,
+        "n_samples": 9
+      },
+      "braid_index": {
+        "r_squared": 0.2985986834866437,
+        "p_value": 0.1279426656023182,
+        "fpr": 0.1248,
+        "n_samples": 9
+      },
+      "crossing_number": {
+        "r_squared": 0.1837980081307558,
+        "p_value": 0.24957851469584247,
+        "fpr": 0.2495,
+        "n_samples": 9
+      }
+    },
+    "best_r2": 0.3921235290552704,
+    "best_p": 0.07119706191753206,
+    "best_invariant": "determinant"
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.0
+  }
+}

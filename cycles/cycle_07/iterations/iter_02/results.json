@@ -1,0 +1,33 @@
+{
+  "iteration": "2",
+  "hypothesis_id": "H14",
+  "timestamp": "2026-02-23T18:35:31.308751",
+  "task_name": "非線形カーネルを用いた不確定性 Δlog₁₀(ST) の最小化",
+  "data_sources": {
+    "description": "KnotInfo real data (3-12 crossings). Features: V, ln(Det), |Sig|, J(e^2pi*i/5).",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "best_kernel": "Matern_1.5",
+    "gpr_r_squared": 0.7444040250827011,
+    "min_uncertainty_log10_st": 1.1234355574734776,
+    "fpr": 0.0,
+    "n_trials_mc": 10000,
+    "kernel_optimization": "1.6**2 * Matern(length_scale=6.14, nu=1.5) + WhiteKernel(noise_level=0.0598)"
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "analysis_parameters",
+      "statistical_thresholds"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 272.3772625923157
+  },
+  "notes": "Minimized uncertainty using kernel comparison. SSoT compliance verified: paths resolved via parents, n_trials from SSoT."
+}

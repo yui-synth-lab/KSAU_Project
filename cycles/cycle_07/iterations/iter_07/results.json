@@ -1,0 +1,46 @@
+{
+  "iteration": "7",
+  "hypothesis_id": "H14",
+  "timestamp": "2026-02-23T19:14:19.090251",
+  "task_name": "最終的な Δlog₁₀(ST) 縮小効果の定量評価と報告",
+  "computed_values": {
+    "baselines": {
+      "linear_v_only": {
+        "r2": 0.34260493310882134,
+        "uncertainty": 1.6610790600522005
+      },
+      "linear_multi": {
+        "r2": 0.5081256983031637,
+        "uncertainty": 1.437310256196361
+      }
+    },
+    "final_model": {
+      "r2": 0.7444040250827011,
+      "uncertainty": 1.1234355574734776,
+      "kernel": "Matern 1.5 + WhiteKernel"
+    },
+    "reduction_effect": {
+      "absolute_reduction_orders": 0.537643502578723,
+      "percentage_reduction": 32.36712300508003
+    },
+    "statistical_significance": {
+      "fpr": 0.0,
+      "n_trials": 10000
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "analysis_parameters",
+      "statistical_thresholds"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 97.47311973571777
+  },
+  "notes": "Quantified final uncertainty reduction from V-only baseline to multi-feature GPR. Significant reduction achieved while maintaining FPR=0."
+}

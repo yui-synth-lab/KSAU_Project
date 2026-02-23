@@ -1,0 +1,38 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H4",
+  "timestamp": "2026-02-23T05:55:40.486523",
+  "task_name": "log(ST) > 2 の部分群におけるアキシオン質量 m_a の回帰分析",
+  "data_sources": {
+    "description": "Fermion mass residuals vs ln(Determinant) from SSOT (KSAU v7.0)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "global_stats": {
+      "beta": -1.7165880573209191,
+      "C": -1.1404456741274487,
+      "r_squared": 0.3921235290552704,
+      "p_value": 0.07119706191753206,
+      "fpr": 0.0799
+    },
+    "subgroup_stats_log10ST_gt_1_8": {
+      "n_samples": 3,
+      "r_squared": 0.677439994996656,
+      "p_value": 0.38452172541209845
+    },
+    "aic_analysis": {
+      "aic_null": 21.914094641497854,
+      "aic_model": 20.005470898906747,
+      "delta_aic": -1.9086237425911072
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.4
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "iteration": "2",
+  "hypothesis_id": "H9",
+  "timestamp": "2026-02-23T15:25:28.693086",
+  "task_name": "GPR モデルによる非線形スケーリングの検証と残差分析",
+  "data_sources": {
+    "description": "KnotInfo hyperbolic knots (V>0), ST (n=2).",
+    "loaded_via_ssot": true,
+    "total_sample_size": 12911,
+    "gpr_sample_size": 2000
+  },
+  "computed_values": {
+    "linear_r_squared": 0.3560778953449728,
+    "gpr_r_squared": 0.37926391711613405,
+    "fpr": 0.0,
+    "n_trials_mc": 10000,
+    "kernel_params": "4.64**2 * Matern(length_scale=36.3, nu=2.5) + WhiteKernel(noise_level=0.997)"
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "axion_suppression_model",
+      "axion_suppression_model_gpr",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 110.8035831451416
+  },
+  "notes": "Addressed Path hardcoding and FPR test requirements. GPR shows non-linear scaling potential."
+}

@@ -1,0 +1,45 @@
+{
+  "iteration": "2",
+  "hypothesis_id": "H22",
+  "timestamp": "2026-02-23T21:46:38.613094",
+  "task_name": "理論値 κ = π/24 と質量階層からの推定値の誤差評価 (Revision)",
+  "data_sources": {
+    "description": "Masses from parameters.json, Topologies from topology_assignments.json, Signatures from KnotInfo CSV.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "kappa_theory": 0.1308996938995747,
+    "kappa_estimated": 0.13089969165956564,
+    "relative_error_pct": -1.711240874895511e-06,
+    "r2_score": 0.9999920715132204,
+    "bootstrap_95_ci": [
+      0.13078344879573378,
+      0.1310089374028135
+    ],
+    "statistical_metrics": {
+      "p_value": 0.9999684299635426,
+      "bonferroni_threshold": 0.016666666666666666,
+      "t_statistic": -4.0475468772617906e-05,
+      "is_significant": false,
+      "fpr_monte_carlo": 0.0008,
+      "n_trials": 10000
+    },
+    "sample_size": 12
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "phase_viscosity_model",
+      "statistical_thresholds",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 14.037052154541016
+  },
+  "notes": "Corrected absolute paths and magic numbers. Added p-value and FPR calculation."
+}

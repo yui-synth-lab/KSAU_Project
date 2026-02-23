@@ -1,0 +1,32 @@
+{
+  "iteration": "4",
+  "hypothesis_id": "H20",
+  "timestamp": "2026-02-23T20:41:52",
+  "task_name": "Statistical Validation of G Derivation",
+  "computed_values": {
+    "g_derived": 6.713465018391461e-39,
+    "error_percent": 0.08147016087449262,
+    "p_value": 0.0,
+    "fpr": 0.0,
+    "monte_carlo_trials": 100000,
+    "sensitivity": {
+      "d_bulk": 99.99899661758337,
+      "d_compact": 860.8169803117487,
+      "v_p_factor": 68.3433498029244
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "relative_paths_used": true
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.013035774230957
+  },
+  "theoretical_grounds": {
+    "k_c": "sqrt(pi/2) - Network jitter / update variance established in v6.7",
+    "delta": "kappa/4 - Dimensional dissipation established in v6.7",
+    "dimensions": "D_bulk=10 and D_compact=7 are standard string theory/bulk dimensions mapped to mass law."
+  }
+}

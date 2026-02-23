@@ -1,0 +1,88 @@
+{
+  "iteration": 6,
+  "hypothesis_id": "H9",
+  "timestamp": "2026-02-23T15:42:01.691251",
+  "task_name": "Crossing number 別の Torsion scaling 安定性チェック",
+  "data_sources": {
+    "description": "KnotInfo hyperbolic knots (V>0), ST (n=2).",
+    "loaded_via_ssot": true,
+    "total_sample_size": 12911
+  },
+  "computed_values": {
+    "overall_r_squared": 0.3560778953449728,
+    "overall_slope": 0.21286745145482464,
+    "overall_p_value": 0.0,
+    "fpr": 0.0,
+    "stability_by_crossing": [
+      {
+        "crossing_number": 7,
+        "sample_size": 6,
+        "slope": 0.1467259438638998,
+        "intercept": 1.9116841729022203,
+        "r_squared": 0.9897735620126272,
+        "p_value": 3.9351972158885846e-05
+      },
+      {
+        "crossing_number": 8,
+        "sample_size": 20,
+        "slope": 0.034706388624814365,
+        "intercept": 2.7499300443284396,
+        "r_squared": 0.019729058872325653,
+        "p_value": 0.5547543998744305
+      },
+      {
+        "crossing_number": 9,
+        "sample_size": 48,
+        "slope": 0.1260593961599981,
+        "intercept": 1.9834615933283797,
+        "r_squared": 0.12003136263999269,
+        "p_value": 0.015853305845708064
+      },
+      {
+        "crossing_number": 10,
+        "sample_size": 164,
+        "slope": 0.18055256381925142,
+        "intercept": 1.6723775484912644,
+        "r_squared": 0.3708662962276078,
+        "p_value": 5.078081371343213e-18
+      },
+      {
+        "crossing_number": 11,
+        "sample_size": 551,
+        "slope": 0.1835980507137327,
+        "intercept": 1.5333161842756167,
+        "r_squared": 0.25433343447622053,
+        "p_value": 6.926046700392753e-37
+      },
+      {
+        "crossing_number": 12,
+        "sample_size": 2176,
+        "slope": 0.2171248999036858,
+        "intercept": 0.9630804049014676,
+        "r_squared": 0.32174910688118463,
+        "p_value": 1.5864224220965347e-185
+      },
+      {
+        "crossing_number": 13,
+        "sample_size": 9941,
+        "slope": 0.22752755944491174,
+        "intercept": 0.6743570494941409,
+        "r_squared": 0.33544327471421337,
+        "p_value": 0.0
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 12.770954608917236
+  },
+  "notes": "Stability check confirms if the V-ST scaling holds across crossing numbers. FPR verifies significance."
+}

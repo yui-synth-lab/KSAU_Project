@@ -1,0 +1,44 @@
+{
+  "iteration": "3",
+  "hypothesis_id": "H12",
+  "timestamp": "2026-02-23T17:14:56.227323",
+  "task_name": "[H12-I3] 最終モデルの Δlog10(ST) 定量化と感度分析",
+  "data_sources": {
+    "description": "KnotInfo hyperbolic knots (V>0, Det>0). Sampled for GPR.",
+    "loaded_via_ssot": true,
+    "total_sample_size": 12911,
+    "used_sample_size": 2000
+  },
+  "computed_values": {
+    "mean_r_squared_gpr": 0.51889577776557,
+    "mean_mse": 0.7617336425095056,
+    "delta_log10_st": 0.379040729981035,
+    "fpr": 0.0,
+    "sensitivity_analysis": {
+      "volume": 6.143693880811263e-06,
+      "ln_det": 0.0009446201406859145,
+      "abs_sig": 0.00011424967573520073,
+      "kappa_v": 1.052079120378302e-07,
+      "v_ln_det": 2.1355559632229353,
+      "vol_sq": 0.6804582597116162,
+      "ln_det_sq": 0.0799894919659084,
+      "v_abs_sig": 0.0004866516489007378
+    },
+    "axion_6_3_pred_ln_st": 2.456049241245637,
+    "axion_6_3_std_ln_st": 0.8870454958781246
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 287.927170753479
+  },
+  "notes": "Final model achieved delta log10(ST) = 0.3790, well below the 2.0 limit."
+}
