@@ -4,8 +4,11 @@ ksau_ssot.py — KSAU Project Single Source of Truth ローダー
 使い方（Researcher のコード冒頭に必ずこれだけ書く）:
 
     import sys
-    sys.path.insert(0, str(__file__).split('code')[0] + 'code')  # 不要
-    # ↓ これだけでOK
+
+    current_file = Path(__file__).resolve()
+    project_root = current_file.parents[5]
+    ssot_path = project_root / "ssot"
+    sys.path.insert(0, str(ssot_path))    
     from ksau_ssot import SSOT
 
     ssot = SSOT()

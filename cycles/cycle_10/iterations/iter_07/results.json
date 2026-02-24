@@ -1,0 +1,184 @@
+{
+  "iteration": 7,
+  "hypothesis_id": "H22",
+  "timestamp": "2026-02-24T22:08:00.057168",
+  "task_name": "導出された理論的 kappa を用いた既存質量モデルの再計算と精度検証",
+  "model": {
+    "formula": "ln(m) = kappa_theoretical * V + C_sector",
+    "kappa_theoretical": 0.1308996938995747,
+    "resonance_identity": "kappa = pi / 24"
+  },
+  "computed_values": {
+    "observed_r2": 0.5501747609840558,
+    "observed_mae_ln": 2.2371800742288777,
+    "p_value": 0.0354,
+    "fpr": 0.0354,
+    "bonferroni_threshold": 0.016666666666666666,
+    "sector_intercepts": {
+      "bosons": {
+        "mean": 9.49852963044575,
+        "std": 0.15006829162358107,
+        "count": 3
+      },
+      "leptons": {
+        "mean": 3.597190278057896,
+        "std": 3.931033648728345,
+        "count": 3
+      },
+      "quarks": {
+        "mean": 4.353498264177294,
+        "std": 3.7598398608716352,
+        "count": 6
+      }
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "pi",
+      "kappa",
+      "k_resonance",
+      "random_seed"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "n_trials": 10000
+  },
+  "particle_details": [
+    {
+      "name": "Electron",
+      "sector": "leptons",
+      "mass_mev": 0.511,
+      "volume": 0.0,
+      "ln_m": -0.6713856887784326,
+      "kappa_v": 0.0,
+      "intercept_calc": -0.6713856887784326,
+      "intercept_sector": 3.597190278057896,
+      "ln_m_pred": 3.597190278057896
+    },
+    {
+      "name": "Muon",
+      "sector": "leptons",
+      "mass_mev": 105.66,
+      "volume": 2.0298832128,
+      "ln_m": 4.6602263917361695,
+      "kappa_v": 0.26571109120740527,
+      "intercept_calc": 4.394515300528764,
+      "intercept_sector": 3.597190278057896,
+      "ln_m_pred": 3.8629013692653014
+    },
+    {
+      "name": "Tau",
+      "sector": "leptons",
+      "mass_mev": 1776.86,
+      "volume": 3.1639632288,
+      "ln_m": 7.482603040582787,
+      "kappa_v": 0.41416181815943004,
+      "intercept_calc": 7.068441222423357,
+      "intercept_sector": 3.597190278057896,
+      "ln_m_pred": 4.011352096217326
+    },
+    {
+      "name": "Up",
+      "sector": "quarks",
+      "mass_mev": 2.16,
+      "volume": 5.33348956689812,
+      "ln_m": 0.7701082216960737,
+      "kappa_v": 0.6981521517235392,
+      "intercept_calc": 0.07195606997253456,
+      "intercept_sector": 4.353498264177294,
+      "ln_m_pred": 5.051650415900833
+    },
+    {
+      "name": "Down",
+      "sector": "quarks",
+      "mass_mev": 4.67,
+      "volume": 6.551743287887868,
+      "ln_m": 1.541159071680806,
+      "kappa_v": 0.8576211908931151,
+      "intercept_calc": 0.6835378807876908,
+      "intercept_sector": 4.353498264177294,
+      "ln_m_pred": 5.21111945507041
+    },
+    {
+      "name": "Strange",
+      "sector": "quarks",
+      "mass_mev": 93.4,
+      "volume": 9.312341316558376,
+      "ln_m": 4.536891345234797,
+      "kappa_v": 1.218982627825854,
+      "intercept_calc": 3.317908717408943,
+      "intercept_sector": 4.353498264177294,
+      "ln_m_pred": 5.572480892003148
+    },
+    {
+      "name": "Charm",
+      "sector": "quarks",
+      "mass_mev": 1270.0,
+      "volume": 11.215504015501589,
+      "ln_m": 7.146772179452637,
+      "kappa_v": 1.468106042558609,
+      "intercept_calc": 5.678666136894028,
+      "intercept_sector": 4.353498264177294,
+      "ln_m_pred": 5.821604306735903
+    },
+    {
+      "name": "Bottom",
+      "sector": "quarks",
+      "mass_mev": 4180.0,
+      "volume": 15.156670150795042,
+      "ln_m": 8.338066525518801,
+      "kappa_v": 1.9840034832758917,
+      "intercept_calc": 6.35406304224291,
+      "intercept_sector": 4.353498264177294,
+      "ln_m_pred": 6.337501747453186
+    },
+    {
+      "name": "Top",
+      "sector": "quarks",
+      "mass_mev": 172760.0,
+      "volume": 15.62112812032806,
+      "ln_m": 12.059658627074638,
+      "kappa_v": 2.044800889316982,
+      "intercept_calc": 10.014857737757657,
+      "intercept_sector": 4.353498264177294,
+      "ln_m_pred": 6.398299153494277
+    },
+    {
+      "name": "W",
+      "sector": "bosons",
+      "mass_mev": 80377.0,
+      "volume": 14.655449506835504,
+      "ln_m": 11.294483344589588,
+      "kappa_v": 1.9183938544054406,
+      "intercept_calc": 9.376089490184148,
+      "intercept_sector": 9.49852963044575,
+      "ln_m_pred": 11.416923484851191
+    },
+    {
+      "name": "Z",
+      "sector": "bosons",
+      "mass_mev": 91187.0,
+      "volume": 15.027615015039348,
+      "ln_m": 11.420667622042432,
+      "kappa_v": 1.9671102055093035,
+      "intercept_calc": 9.453557416533128,
+      "intercept_sector": 9.49852963044575,
+      "ln_m_pred": 11.465639835955054
+    },
+    {
+      "name": "Higgs",
+      "sector": "bosons",
+      "mass_mev": 125100.0,
+      "volume": 15.820714702540293,
+      "ln_m": 11.736868696455003,
+      "kappa_v": 2.0709267118350256,
+      "intercept_calc": 9.665941984619977,
+      "intercept_sector": 9.49852963044575,
+      "ln_m_pred": 11.569456342280777
+    }
+  ]
+}

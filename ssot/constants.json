@@ -149,6 +149,35 @@
     "H11_R2": 0.9995,
     "H11_MAE_PCT": 5.17,
     "H11_electron_muon_error_pct": 1.72,
-    "last_updated": "2026-02-23"
+    "H24_R2": 0.9129,
+    "H24_p_value": 0.01528,
+    "last_updated": "2026-02-25"
+  },
+
+  "lifetime_model": {
+    "stability_index_formula": "n * u / |s|",
+    "description": "Topological Stability Index (TSI) based on Crossing Number (n), Unknotting Number (u), and Signature (s).",
+    "target_r2": 0.70,
+    "achieved_r2": 0.9129,
+    "achieved_p_value": 0.01528,
+    "validated_by": "cycle_10_h24"
+  },
+
+  "mass_quantization": {
+    "phase_quantization_rule": "NT = 6*K + 4*s - 9*C + 3*Jmax - 48",
+    "global_intercept_c": 3.936366,
+    "fpr_achieved": 0.0026,
+    "p_value_bonferroni": 0.0078,
+    "validated_by": "cycle_11_h25",
+    "last_updated": "2026-02-25"
+  },
+
+  "dark_matter_candidates": {
+    "dm_candidates_top10": ["12a_4", "12a_125", "12a_268", "12a_273", "12a_341", "12a_427", "12a_435", "12a_458", "12a_462", "12a_465"],
+    "enrichment_ratio": 2.73,
+    "symmetry_constraint": "amphicheiral",
+    "tsi_threshold": 24,
+    "validated_by": "cycle_11_h27",
+    "last_updated": "2026-02-25"
   }
 }

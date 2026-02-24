@@ -5,6 +5,42 @@
   },
   "entries": [
     {
+      "date": "2026-02-25",
+      "cycle": "cycle_11",
+      "iteration": "iter_08",
+      "judge_verdict": "H25 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "add",
+      "key": "mass_quantization",
+      "old_value": null,
+      "new_value": "{\"phase_quantization_rule\": \"NT = 6*K + 4*s - 9*C + 3*Jmax - 48\", \"global_intercept_c\": 3.936366}",
+      "reason": "H25 ACCEPT に基づき、不変量による決定論的質量量子化規則を SSoT に固定。"
+    },
+    {
+      "date": "2026-02-25",
+      "cycle": "cycle_11",
+      "iteration": "iter_06",
+      "judge_verdict": "H27 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "add",
+      "key": "dark_matter_candidates",
+      "old_value": null,
+      "new_value": "{\"dm_candidates_top10\": [\"12a_4\", ...], \"enrichment_ratio\": 2.73}",
+      "reason": "H27 ACCEPT に基づき、幾何学的対称性と安定性から絞り込まれた暗黒物質候補 Top 10 を SSoT に記録。"
+    },
+    {
+      "date": "2026-02-25",
+      "cycle": "cycle_10",
+      "iteration": "iter_09",
+      "judge_verdict": "H24 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "add",
+      "key": "lifetime_model",
+      "old_value": null,
+      "new_value": "{\"stability_index_formula\": \"n * u / |s|\", \"achieved_r2\": 0.9129, \"achieved_p_value\": 0.01528}",
+      "reason": "H24 ACCEPT に基づき、結び目不変量による粒子寿命の幾何学的相関モデル (TSI) を SSoT に固定。"
+    },
+    {
       "date": "2026-02-23",
       "cycle": "cycle_09",
       "iteration": "iter_10",

@@ -1,0 +1,35 @@
+{
+  "id": "H25",
+  "name": "Deterministic Phase-Quantized Mass Model",
+  "description": "Determines the discretization integer n in the mass formula from topological invariants to eliminate over-fitting.",
+  "status": "active",
+  "created_date": "2026-02-25",
+  "hypothesis": {
+    "H0": "The integer n in the mass deviation term n*(2pi/24) is uncorrelated with topological invariants, and any selection of n leads to overfitting (FPR > 5%).",
+    "H1": "The integer n is uniquely determined by a deterministic rule n = f(Invariants) derived from first principles (e.g., polynomial degrees), improving mass prediction without increasing free parameters."
+  },
+  "data_requirements": {
+    "description": "Masses of all 12 particles and topological invariants (Alexander/Jones polynomials, Volume V) for the assigned knots.",
+    "ssot_methods": ["get_particle_data", "get_topology_invariants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_12_PARTICLES",
+    "max_free_parameters": 1,
+    "derivation_requirement": "FIRST_PRINCIPLES (Deterministic rule for n, no manual selection)",
+    "notes": "Step size 2pi/24 is fixed as a resonance constant from SSoT."
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.05
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.05,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "Immediate MODIFY"
+  },
+  "test_method": "Multiple regression and Monte Carlo permutation test (N=10,000) for FPR evaluation.",
+  "priority": "high",
+  "max_iterations": 5
+}

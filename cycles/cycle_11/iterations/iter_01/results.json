@@ -1,0 +1,222 @@
+{
+  "iteration": "1",
+  "hypothesis_id": "H25",
+  "timestamp": "2026-02-25T01:30:00Z",
+  "task_name": "\u30c8\u30dd\u30ed\u30b8\u30fc\u4e0d\u5909\u91cf\u304b\u3089\u91cf\u5b50\u5316\u6574\u6570 n \u3092\u6c7a\u5b9a\u3059\u308b\u898f\u5247\u306e\u5c0e\u51fa\u3068\u5b9f\u88c5",
+  "data_sources": {
+    "description": "Observed masses and KnotInfo invariants for 12 particles",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "baseline_c": 4.394515300528764,
+    "particle_analysis": [
+      {
+        "Particle": "Up",
+        "Topology": "L9n1{1}",
+        "Volume": 5.33348956689812,
+        "ln_m": 0.7701082216960737,
+        "n_calc": -16.510960040412566,
+        "n_int": -17,
+        "Residual": 0.4890399595874335,
+        "Invariants": {
+          "crossing_number": 9,
+          "components": 2,
+          "signature": 1,
+          "determinant": 12,
+          "unknotting_number": null
+        }
+      },
+      {
+        "Particle": "Down",
+        "Topology": "L8a18{0,1}",
+        "Volume": 6.551743287887868,
+        "ln_m": 1.541159071680806,
+        "n_calc": -14.174889601300778,
+        "n_int": -14,
+        "Residual": -0.17488960130077835,
+        "Invariants": {
+          "crossing_number": 8,
+          "components": 3,
+          "signature": 2,
+          "determinant": 20,
+          "unknotting_number": null
+        }
+      },
+      {
+        "Particle": "Strange",
+        "Topology": "L11n330{0,1}",
+        "Volume": 9.312341316558376,
+        "ln_m": 4.536891345234797,
+        "n_calc": -4.11233422725108,
+        "n_int": -4,
+        "Residual": -0.11233422725107989,
+        "Invariants": {
+          "crossing_number": 11,
+          "components": 3,
+          "signature": 4,
+          "determinant": 36,
+          "unknotting_number": null
+        }
+      },
+      {
+        "Particle": "Charm",
+        "Topology": "L11a362{0}",
+        "Volume": 11.215504015501589,
+        "ln_m": 7.146772179452637,
+        "n_calc": 4.905094878794964,
+        "n_int": 5,
+        "Residual": -0.09490512120503602,
+        "Invariants": {
+          "crossing_number": 11,
+          "components": 2,
+          "signature": -5,
+          "determinant": 70,
+          "unknotting_number": null
+        }
+      },
+      {
+        "Particle": "Bottom",
+        "Topology": "L11a528{0,1}",
+        "Volume": 15.156670150795042,
+        "ln_m": 8.338066525518801,
+        "n_calc": 7.484921023640807,
+        "n_int": 7,
+        "Residual": 0.4849210236408066,
+        "Invariants": {
+          "crossing_number": 11,
+          "components": 3,
+          "signature": -2,
+          "determinant": 96,
+          "unknotting_number": null
+        }
+      },
+      {
+        "Particle": "Top",
+        "Topology": "L11a225{1}",
+        "Volume": 15.62112812032806,
+        "ln_m": 12.059658627074638,
+        "n_calc": 21.468126738099095,
+        "n_int": 21,
+        "Residual": 0.46812673809909455,
+        "Invariants": {
+          "crossing_number": 11,
+          "components": 2,
+          "signature": -3,
+          "determinant": 110,
+          "unknotting_number": null
+        }
+      },
+      {
+        "Particle": "Electron",
+        "Topology": "3_1",
+        "Volume": 0.0,
+        "ln_m": -0.6713856887784326,
+        "n_calc": -19.350316407896717,
+        "n_int": -19,
+        "Residual": -0.3503164078967167,
+        "Invariants": {
+          "crossing_number": 3,
+          "components": null,
+          "signature": -2,
+          "determinant": 3,
+          "unknotting_number": "1"
+        }
+      },
+      {
+        "Particle": "Muon",
+        "Topology": "4_1",
+        "Volume": 2.0298832128,
+        "ln_m": 4.6602263917361695,
+        "n_calc": 0.0,
+        "n_int": 0,
+        "Residual": 0.0,
+        "Invariants": {
+          "crossing_number": 4,
+          "components": null,
+          "signature": 0,
+          "determinant": 5,
+          "unknotting_number": "1"
+        }
+      },
+      {
+        "Particle": "Tau",
+        "Topology": "6_1",
+        "Volume": 3.1639632288,
+        "ln_m": 7.482603040582787,
+        "n_calc": 10.213644670345868,
+        "n_int": 10,
+        "Residual": 0.2136446703458681,
+        "Invariants": {
+          "crossing_number": 6,
+          "components": null,
+          "signature": 0,
+          "determinant": 9,
+          "unknotting_number": "1"
+        }
+      },
+      {
+        "Particle": "W",
+        "Topology": "L11n387{0,0}",
+        "Volume": 14.655449506835504,
+        "ln_m": 11.294483344589588,
+        "n_calc": 19.028211759903776,
+        "n_int": 19,
+        "Residual": 0.028211759903776112,
+        "Invariants": {
+          "crossing_number": 11,
+          "components": 3,
+          "signature": 0,
+          "determinant": 64,
+          "unknotting_number": null
+        }
+      },
+      {
+        "Particle": "Z",
+        "Topology": "L11a431{0,0}",
+        "Volume": 15.027615015039348,
+        "ln_m": 11.420667622042432,
+        "n_calc": 19.324117441732234,
+        "n_int": 19,
+        "Residual": 0.3241174417322341,
+        "Invariants": {
+          "crossing_number": 11,
+          "components": 3,
+          "signature": -2,
+          "determinant": 112,
+          "unknotting_number": null
+        }
+      },
+      {
+        "Particle": "Higgs",
+        "Topology": "L11a55{0}",
+        "Volume": 15.820714702540293,
+        "ln_m": 11.736868696455003,
+        "n_calc": 20.135366734071255,
+        "n_int": 20,
+        "Residual": 0.13536673407125477,
+        "Invariants": {
+          "crossing_number": 11,
+          "components": 2,
+          "signature": -1,
+          "determinant": 136,
+          "unknotting_number": null
+        }
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "observed_mass_mev",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.5
+  },
+  "notes": "Calculated n values based on baseline c from Muon (n=0)."
+}

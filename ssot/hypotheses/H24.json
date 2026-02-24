@@ -1,30 +1,35 @@
 {
   "id": "H24",
-  "name": "Knot Topology vs Particle Lifetime (Gamma)",
-  "description": "Correlation test between topological invariants (Crossing/Unknotting number/Signature) and decay width Gamma.",
+  "name": "Topological Stability Index for Lifetimes",
+  "description": "Crossing Number, Unknotting Number, Signature から TSI を構築し、崩壊率 ln(Gamma) との相関を検証する。",
   "status": "active",
-  "created_date": "2026-02-23",
+  "created_date": "2026-02-24",
   "hypothesis": {
-    "H0": "There is no significant correlation between knot invariants and particle decay widths.",
-    "H1": "Particle decay widths (Gamma) are significantly correlated with topological invariants (p < 0.05)."
+    "H0": "粒子の寿命は位相幾何学的構造とは無関係である。",
+    "H1": "Topological Stability Index (TSI) は「結び目の解けにくさ」を表現し、崩壊率 ln(Gamma) と強い正の相関 (R^2 > 0.70) を持つ。"
   },
   "data_requirements": {
-    "description": "PDG decay width data and KnotInfo invariants.",
-    "ssot_methods": ["get_physical_constants", "get_topology_data"]
+    "description": "KnotInfo (Crossing, Unknotting, Signature) および粒子寿命データ",
+    "ssot_methods": ["get_knotinfo_data", "get_particle_lifetimes"]
   },
-  "success_criteria": {
-    "p_value_threshold": 0.05,
-    "bonferroni_corrected_threshold": 0.016666,
-    "r_squared_minimum": 0.50,
-    "allowed_error_percent": 10.0
+  "physical_constraints": {
+    "particle_scope": "MAIN_PARTICLES",
+    "max_free_parameters": 1,
+    "derivation_requirement": "FIRST_PRINCIPLES",
+    "notes": "指数は各トポロジー不変量の整数値の組み合わせからなり、連続的な自由パラメータによる調整は禁止。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
     "fpr_max": 0.50,
     "max_iterations": 5,
-    "consecutive_stop_limit": 2
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
   },
-  "test_method": "Spearman rank correlation and log-linear regression analysis between topological invariants and decay widths.",
-  "priority": "low",
+  "test_method": "TSI と ln(Gamma) の線形回帰分析、およびトポロジー割り当てをシャッフルしたモンテカルロ置換検定。",
+  "priority": "medium",
   "max_iterations": 5
 }

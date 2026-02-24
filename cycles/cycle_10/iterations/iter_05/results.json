@@ -1,0 +1,95 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H24",
+  "timestamp": "2026-02-24T22:00:29.463246",
+  "task_name": "Topological Stability Index (TSI) Construction and Correlation Analysis",
+  "data_sources": {
+    "description": "PDG 2024 Lifetimes and KnotInfo Invariants",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "tsi_formula": "TSI = Crossing + Unknotting + |Signature|",
+    "r2_observed": 0.9128510242351773,
+    "particle_count": 6
+  },
+  "particle_details": [
+    {
+      "name": "Muon",
+      "topology": "4_1",
+      "lifetime_s": 2.1969811e-06,
+      "ln_gamma": 13.028426367238767,
+      "crossing_number": 4.0,
+      "unknotting_number": 1.0,
+      "signature": 0.0,
+      "abs_signature": 0.0,
+      "tsi": 5.0
+    },
+    {
+      "name": "Tau",
+      "topology": "6_1",
+      "lifetime_s": 2.903e-13,
+      "ln_gamma": 28.8678615238801,
+      "crossing_number": 6.0,
+      "unknotting_number": 1.0,
+      "signature": 0.0,
+      "abs_signature": 0.0,
+      "tsi": 7.0
+    },
+    {
+      "name": "Top",
+      "topology": "L11a225{1}",
+      "lifetime_s": 4.67e-25,
+      "ln_gamma": 56.023468253170336,
+      "crossing_number": 11.0,
+      "unknotting_number": 0.0,
+      "signature": -3.0,
+      "abs_signature": 3.0,
+      "tsi": 14.0
+    },
+    {
+      "name": "W",
+      "topology": "L11n387{0,0}",
+      "lifetime_s": 3.16e-25,
+      "ln_gamma": 56.41405529725232,
+      "crossing_number": 11.0,
+      "unknotting_number": 0.0,
+      "signature": 0.0,
+      "abs_signature": 0.0,
+      "tsi": 11.0
+    },
+    {
+      "name": "Z",
+      "topology": "L11a431{0,0}",
+      "lifetime_s": 2.64e-25,
+      "ln_gamma": 56.59384840769292,
+      "crossing_number": 11.0,
+      "unknotting_number": 0.0,
+      "signature": -2.0,
+      "abs_signature": 2.0,
+      "tsi": 13.0
+    },
+    {
+      "name": "Higgs",
+      "topology": "L11a55{0}",
+      "lifetime_s": 1.62e-22,
+      "ln_gamma": 50.17444589662471,
+      "crossing_number": 11.0,
+      "unknotting_number": 0.0,
+      "signature": -1.0,
+      "abs_signature": 1.0,
+      "tsi": 12.0
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42
+  },
+  "notes": "TSI construction completed. Observed R^2 = 0.9129 with ln(Gamma)."
+}

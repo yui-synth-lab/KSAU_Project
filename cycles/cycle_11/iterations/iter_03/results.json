@@ -1,0 +1,109 @@
+{
+  "iteration": "3",
+  "hypothesis_id": "H26",
+  "timestamp": "2026-02-25T02:50:00Z",
+  "task_name": "\u5168\u5d29\u58ca\u7c92\u5b50\u306b\u5bfe\u3059\u308b TSI \u76f8\u95a2\u306e\u62e1\u5f35\u691c\u8a3c (Final Iteration 3)",
+  "computed_values": {
+    "r2": 0.7098162165670857,
+    "fpr": 0.0578,
+    "slope_A": 3.033575503295774,
+    "intercept_B": 19.245722935229175,
+    "particles": [
+      {
+        "name": "Muon",
+        "n": 4.0,
+        "u": 1.0,
+        "s": 0.0,
+        "tsi": 4.0,
+        "val_y": -0.9522528079697405,
+        "tau": 2.1969811e-06,
+        "mass": 105.66
+      },
+      {
+        "name": "Tau",
+        "n": 6.0,
+        "u": 1.0,
+        "s": 0.0,
+        "tsi": 6.0,
+        "val_y": 6.420052402131741,
+        "tau": 2.903e-13,
+        "mass": 1776.86
+      },
+      {
+        "name": "Top",
+        "n": 11.0,
+        "u": 0.0,
+        "s": -3.0,
+        "tsi": 0.0,
+        "val_y": 19.844492371946423,
+        "tau": 4.67e-25,
+        "mass": 172760.0
+      },
+      {
+        "name": "W",
+        "n": 11.0,
+        "u": 0.0,
+        "s": 0.0,
+        "tsi": 0.0,
+        "val_y": 22.53060526348355,
+        "tau": 3.16e-25,
+        "mass": 80377.0
+      },
+      {
+        "name": "Z",
+        "n": 11.0,
+        "u": 0.0,
+        "s": -2.0,
+        "tsi": 0.0,
+        "val_y": 22.33184554156562,
+        "tau": 2.64e-25,
+        "mass": 91187.0
+      },
+      {
+        "name": "Higgs",
+        "n": 11.0,
+        "u": 0.0,
+        "s": -1.0,
+        "tsi": 0.0,
+        "val_y": 14.963839807259703,
+        "tau": 1.62e-22,
+        "mass": 125100.0
+      }
+    ],
+    "loo_analysis": [
+      {
+        "dropped": "Muon",
+        "r2": 0.7966583864172155
+      },
+      {
+        "dropped": "Tau",
+        "r2": 0.9035345013564
+      },
+      {
+        "dropped": "Top",
+        "r2": 0.6844189630548232
+      },
+      {
+        "dropped": "W",
+        "r2": 0.6833129407926946
+      },
+      {
+        "dropped": "Z",
+        "r2": 0.6821694999937151
+      },
+      {
+        "dropped": "Higgs",
+        "r2": 0.7624752880317559
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "n_trials": 10000
+  }
+}

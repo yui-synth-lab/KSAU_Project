@@ -1,0 +1,199 @@
+{
+  "iteration": "5",
+  "hypothesis_id": "H27",
+  "timestamp": "2026-02-25T03:30:00Z",
+  "task_name": "\u6975\u9577\u5bff\u547d\uff08\u03c4 > 10^10 y\uff09\u3092\u6301\u3064\u9ad8 TSI \u672a\u5272\u308a\u5f53\u3066\u30c8\u30dd\u30ed\u30b8\u30fc\u306e\u62bd\u51fa",
+  "computed_values": {
+    "candidate_count": 1517,
+    "top_candidates": [
+      {
+        "name": "L10a118{1}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 0.0
+      },
+      {
+        "name": "L10a166{1,0,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": 1.0,
+        "volume": 13.0
+      },
+      {
+        "name": "L10a166{0,1,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 13.0
+      },
+      {
+        "name": "L10a166{0,0,1}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 13.0
+      },
+      {
+        "name": "L10a166{1,0,1}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 13.0
+      },
+      {
+        "name": "L10a166{0,1,1}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": 1.0,
+        "volume": 13.0
+      },
+      {
+        "name": "L10a166{1,1,1}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": 1.0,
+        "volume": 13.0
+      },
+      {
+        "name": "L10a167{0,1,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 11.0
+      },
+      {
+        "name": "L10a167{1,1,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 11.0
+      },
+      {
+        "name": "L10a167{1,0,1}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 11.0
+      },
+      {
+        "name": "L10a168{0,0,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": 1.0,
+        "volume": 14.0
+      },
+      {
+        "name": "L10a168{0,1,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": 1.0,
+        "volume": 14.0
+      },
+      {
+        "name": "L10a168{1,1,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": 1.0,
+        "volume": 14.0
+      },
+      {
+        "name": "L10a168{1,0,1}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": 1.0,
+        "volume": 14.0
+      },
+      {
+        "name": "L10a171{0,1,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": 1.0,
+        "volume": 13.0
+      },
+      {
+        "name": "L10a171{1,1,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 13.0
+      },
+      {
+        "name": "L10a171{1,0,1}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": 1.0,
+        "volume": 13.0
+      },
+      {
+        "name": "L10a171{1,1,1}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 13.0
+      },
+      {
+        "name": "L10a172{1,0,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 12.0
+      },
+      {
+        "name": "L10a172{0,1,0}",
+        "sector": "link",
+        "tsi": 50.0,
+        "n": 10.0,
+        "u": 5.0,
+        "s": -1.0,
+        "volume": 12.0
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false
+  },
+  "reproducibility": {
+    "random_seed": null
+  }
+}

@@ -1,30 +1,36 @@
 {
   "id": "H22",
-  "name": "Resonance Identity Validation (kappa = pi/24)",
-  "description": "Validation of the theoretical derivation of kappa from the 4D resonance condition K(4) * kappa = pi.",
+  "name": "Derivation of kappa = pi/24",
+  "description": "位相幾何学的レゾナンス条件 K(4)*kappa = pi (K(4)=24) から kappa = pi/24 を理論的に導出する。",
   "status": "active",
-  "created_date": "2026-02-23",
+  "created_date": "2026-02-24",
   "hypothesis": {
-    "H0": "The mass hierarchy slope kappa is not equal to pi/24 within 0.1% relative error.",
-    "H1": "The mass hierarchy slope kappa matches pi/24 with < 0.1% error, satisfying the gravitational resonance identity."
+    "H0": "kappa は経験的なフィッティングパラメータであり、pi とは無関係である。",
+    "H1": "kappa は 4次元 Pachner move における Action per Move であり、幾何学的不変量 pi/24 から一意に導出される。"
   },
   "data_requirements": {
-    "description": "Fermion mass data and SSoT kappa theoretical value.",
-    "ssot_methods": ["get_physical_constants", "get_mathematical_constants"]
+    "description": "数学的定数および質量フィッティング残差データ",
+    "ssot_methods": ["get_mathematical_constants", "get_mass_data"]
   },
-  "success_criteria": {
-    "p_value_threshold": 0.05,
-    "bonferroni_corrected_threshold": 0.016666,
-    "r_squared_minimum": 0.9998,
-    "allowed_error_percent": 0.1
+  "physical_constraints": {
+    "particle_scope": "ALL_12_PARTICLES",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES",
+    "notes": "理論導出値 pi/24 を固定値として使用し、多項式フィッティングを禁止する。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
   },
   "rejection_criteria": {
+    "derivation_error_max": 0.01,
     "bonferroni_corrected_p_max": 0.016666,
     "fpr_max": 0.50,
     "max_iterations": 5,
-    "consecutive_stop_limit": 2
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
   },
-  "test_method": "Comparison of theoretical kappa (pi/24) against regression estimates from the latest fermion mass hierarchy data.",
+  "test_method": "幾何学的レゾナンスの数理的証明および理論値 kappa による質量予測残差の評価。",
   "priority": "high",
   "max_iterations": 5
 }

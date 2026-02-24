@@ -1,0 +1,35 @@
+{
+  "id": "H26",
+  "name": "TSI Universality",
+  "description": "Validates the correlation between Topological Stability Index (TSI) and particle lifetime across all known decaying particles.",
+  "status": "active",
+  "created_date": "2026-02-25",
+  "hypothesis": {
+    "H0": "There is no significant correlation (p > 0.016666) between TSI (n*u/|s|) and particle decay rates across different particle species.",
+    "H1": "The decay rate Gamma = 1/tau follows an exponential suppression law ln(Gamma) = -A * TSI + B, where TSI represents the geometric barrier to decay."
+  },
+  "data_requirements": {
+    "description": "Measured lifetimes of known particles and topological invariants (n, u, s) of their assigned knots.",
+    "ssot_methods": ["get_lifetime_data", "get_topology_invariants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_DECAYING_PARTICLES",
+    "max_free_parameters": 2,
+    "derivation_requirement": "CONSISTENT_WITH_TSI_DEFINITION",
+    "notes": "The definition of TSI (n*u/|s|) must remain fixed."
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 3,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "Immediate MODIFY"
+  },
+  "test_method": "Correlation analysis (R2, p-value) and permutation test.",
+  "priority": "medium",
+  "max_iterations": 3
+}

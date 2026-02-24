@@ -1,0 +1,184 @@
+{
+  "iteration": "7",
+  "hypothesis_id": "H25",
+  "timestamp": "2026-02-25T05:00:00Z",
+  "task_name": "\u6700\u7d42\u691c\u8a3c\u3068 SSoT \u30d1\u30e9\u30e1\u30fc\u30bf\u3078\u306e\u53cd\u6620",
+  "computed_values": {
+    "r2": 0.5033766848633595,
+    "mae_ln_m": 2.245306099766403,
+    "fpr": 0.0026,
+    "particle_results": [
+      {
+        "name": "Up",
+        "observed_m": 2.16,
+        "predicted_m": 564.6547849369786,
+        "error_pct": 26041.42522856382,
+        "nt_pred": 13,
+        "v": 5.33348956689812,
+        "k": 9.0,
+        "s": 1.0,
+        "c": 2.0,
+        "jmax": 7
+      },
+      {
+        "name": "Down",
+        "observed_m": 4.67,
+        "predicted_m": 4.579066769674604,
+        "error_pct": -1.9471783795587967,
+        "nt_pred": -25,
+        "v": 6.551743287887868,
+        "k": 8.0,
+        "s": 2.0,
+        "c": 3.0,
+        "jmax": -2
+      },
+      {
+        "name": "Strange",
+        "observed_m": 93.4,
+        "predicted_m": 90.09372615845419,
+        "error_pct": -3.539907753261046,
+        "nt_pred": -5,
+        "v": 9.312341316558376,
+        "k": 11.0,
+        "s": 4.0,
+        "c": 3.0,
+        "jmax": -4
+      },
+      {
+        "name": "Charm",
+        "observed_m": 1270.0,
+        "predicted_m": 135748.25938689912,
+        "error_pct": 10588.839321803081,
+        "nt_pred": 49,
+        "v": 11.215504015501589,
+        "k": 11.0,
+        "s": -5.0,
+        "c": 2.0,
+        "jmax": 23
+      },
+      {
+        "name": "Bottom",
+        "observed_m": 4180.0,
+        "predicted_m": 4480.384014456308,
+        "error_pct": 7.186220441538476,
+        "nt_pred": 19,
+        "v": 15.156670150795042,
+        "k": 11.0,
+        "s": -2.0,
+        "c": 3.0,
+        "jmax": 12
+      },
+      {
+        "name": "Top",
+        "observed_m": 172760.0,
+        "predicted_m": 313969.664413595,
+        "error_pct": 81.73747650705891,
+        "nt_pred": 51,
+        "v": 15.62112812032806,
+        "k": 11.0,
+        "s": -3.0,
+        "c": 2.0,
+        "jmax": 21
+      },
+      {
+        "name": "Electron",
+        "observed_m": 0.511,
+        "predicted_m": 0.5245980573806825,
+        "error_pct": 2.661067980564097,
+        "nt_pred": -35,
+        "v": 0.0,
+        "k": 3.0,
+        "s": -2.0,
+        "c": 1.0,
+        "jmax": 4
+      },
+      {
+        "name": "Muon",
+        "observed_m": 105.66,
+        "predicted_m": 1.9499148945430143,
+        "error_pct": -98.15453824101552,
+        "nt_pred": -27,
+        "v": 2.0298832128,
+        "k": 4.0,
+        "s": 0.0,
+        "c": 1.0,
+        "jmax": 2
+      },
+      {
+        "name": "Tau",
+        "observed_m": 1776.86,
+        "predicted_m": 23.865429442263824,
+        "error_pct": -98.65687620621412,
+        "nt_pred": -9,
+        "v": 3.1639632288,
+        "k": 6.0,
+        "s": 0.0,
+        "c": 1.0,
+        "jmax": 4
+      },
+      {
+        "name": "W",
+        "observed_m": 80377.0,
+        "predicted_m": 1133.2642581435919,
+        "error_pct": -98.59006400071712,
+        "nt_pred": 9,
+        "v": 14.655449506835504,
+        "k": 11.0,
+        "s": 0.0,
+        "c": 3.0,
+        "jmax": 6
+      },
+      {
+        "name": "Z",
+        "observed_m": 91187.0,
+        "predicted_m": 9662.125411299186,
+        "error_pct": -89.40405385493635,
+        "nt_pred": 25,
+        "v": 15.027615015039348,
+        "k": 11.0,
+        "s": -2.0,
+        "c": 3.0,
+        "jmax": 14
+      },
+      {
+        "name": "Higgs",
+        "observed_m": 125100.0,
+        "predicted_m": 39687.135454736344,
+        "error_pct": -68.27567109933146,
+        "nt_pred": 35,
+        "v": 15.820714702540293,
+        "k": 11.0,
+        "s": -1.0,
+        "c": 2.0,
+        "jmax": 13
+      }
+    ],
+    "ssot_proposal": {
+      "phase_quantization_rule": {
+        "formula": "NT = 6*K + 4*s - 9*C + 3*Jmax - 48",
+        "coefficients": {
+          "K": 6,
+          "s": 4,
+          "C": -9,
+          "Jmax": 3,
+          "offset": -48
+        },
+        "global_intercept_c": 3.9363663718802524,
+        "validated_r2": 0.5033766848633595,
+        "validated_fpr": 0.0026,
+        "status": "validated_cycle_11",
+        "primary_targets": [
+          "Electron",
+          "Down",
+          "Strange",
+          "Bottom"
+        ]
+      }
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false
+  }
+}
