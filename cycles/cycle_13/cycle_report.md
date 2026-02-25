@@ -29,7 +29,7 @@ Bonferroni 補正後 p = 0.00611 (< 0.016666), FPR = 0.00611, R² = 0.8015 で�
 - Bonferroni 補正後 p 値: 0.00611
 - FPR: 0.00611
 
-**科学적 整合性:**
+**科学的整合性:**
 - 過学習チェック: OK
 - 適用範囲チェック: OK
 - 導出根拠チェック: OK
@@ -47,14 +47,14 @@ Bonferroni 補正後 p = 0.00611 (< 0.016666), FPR = 0.00611, R² = 0.8015 で�
 ### H32: 質量作用におけるトポロジカル・トーション補正の検証 → **REJECT**
 
 **Judge の根拠（要約）:**
-Bonferroni 補正後 p = 0.0712 (> 0.016666) であり、撤退基準に該当。残差分散の削減 (39%) は見られたが、統計的有意水準に達する見込みが薄い。
+Bonferroni 補正後 p = 0.0712 (> 0.016666) であり、撤退基準（BONFERRONI_FAILURE）に該当。残差分散の削減 (39%) は見られたものの、統計的有意水準に達する見込みが薄いと判断。
 
 **統計指標:**
 - 最良イテレーションの p 値: 0.0712
 - Bonferroni 補正後 p 値: 0.0712
 - FPR: 0.075
 
-**科学的整合性:**
+**科学적 整合性:**
 - 過学習チェック: OK
 - 適用範囲チェック: OK
 - 導出根拠チェック: OK
@@ -70,7 +70,7 @@ Bonferroni 補正後 p = 0.0712 (> 0.016666) であり、撤退基準に該当�
 ### H33: 質量勾配定数 κ の第一原理からの独立回帰検証 → **REJECT**
 
 **Judge の根拠（要約）:**
-理論値 π/24 ≈ 0.1309 が Bootstrap 95% 信頼区間 [0.0323, 0.1050] を含まず（CI_MISMATCH）。単純な V 対 ln(m) の回帰では限界があり、第2次幾何補正（n, ln_det）の導入が必要。
+95% CI [0.0323, 0.1050] が理論値 0.1309 を含まず（CI_MISMATCH）。単純な V 対 ln(m) の回帰では限界があり、第2次幾何補正（n, ln_det）の導入（Iter 10）が必要であることが示唆された。
 
 **統計指標:**
 - 最良イテレーションの p 値: 0.0046 (Iter 2)
@@ -98,10 +98,10 @@ Bonferroni 補正後 p = 0.0712 (> 0.016666) であり、撤退基準に該当�
 
 | ID | 仮説名 | 閉鎖理由の分類 | 要約 |
 |----|--------|--------------|------|
-| [NEG-20260225-04] | H32: Validation of topological torsion correction in mass action | STATISTICAL_REJECTION (BONFERRONI_FAILURE) | 線形補正モデルにおけるトーション項 A ln(ST) は統計的に有意ではなかった。 |
-| [NEG-20260225-05] | H33: Independent regression validation of mass gradient constant κ | STATISTICAL_REJECTION (CI_MISMATCH) | 生データのみの回帰推定 κ は理論値 π/24 を再現できず。 |
+| [NEG-20260225-04] | H32: Validation of topological torsion correction in mass action | STATISTICAL_REJECTION (BONFERRONI_FAILURE) | 線形補正モデルにおけるトーション項 ln(ST) は有意な改善をもたらさなかった。 |
+| [NEG-20260225-05] | H33: Independent regression validation of mass gradient constant κ | STATISTICAL_REJECTION (CI_MISMATCH) | 生データのみの回帰推定値 κ は理論値 π/24 と不一致。 |
 
-詳細は E:\Obsidian\KSAU_Project\NEGATIVE_RESULTS_INDEX.md を参照。
+詳細は E:\Obsidian\KSAU_Project\NEGATIVE_RESULTS_INDEX.md の 各項目 を参照。
 
 ## 4. SSoT 変更サマリー
 
@@ -109,7 +109,7 @@ Bonferroni 補正後 p = 0.0712 (> 0.016666) であり、撤退基準に該当�
 
 | 変更種別 | キー | 旧値 | 新値 | 根拠 |
 |---------|------|------|------|------|
-| 追加 | theoretical_models.decay_width | null | {"coefficients": {"n": 1.169, ...}, "intercept": -18.743, ...} | H31 ACCEPT に基づく崩壊幅回帰モデルの統合 |
+| 追加 | theoretical_models.decay_width | null | {"coefficients": {"n": 1.169, "abs_s": -6.795, "ln_det": 11.634, "u": -7.240}, "intercept": -18.743, "p_value": 0.00611, "r2": 0.8015} | H31 ACCEPT に基づく崩壊幅回帰モデルの統合 |
 
 詳細は E:\Obsidian\KSAU_Project\ssot\changelog.json を参照。
 
@@ -123,7 +123,7 @@ Bonferroni 補正後 p = 0.0712 (> 0.016666) であり、撤退基準に該当�
 
 ### 探索推奨の新経路
 
-- **H23 再設計 (ST 不変量による質量残差補正):** H32 の結果（線形補正の不十分さ）を踏まえ、全フェルミオンに対する線形 ST 補正に限定したモデルでの再検証。
+- **H23 再設計 (ST 不変量による質量残差補正):** H32 の結果（線形補正の限界）を踏まえ、全フェルミオンに対する線形 ST 補正に限定したモデルでの再検証。
 - **H33-v2 (有効体積 V_eff を用いた κ の再検証):** H33 の失敗理由（2次幾何補正の欠如）に基づき、n, ln_det 等の補正項を導入した状態での κ 推定。
 - **π/24 の「24」の理論的導出:** 数値的な検証だけでなく、幾何学的位相離散化（24-cell 等）からの理論的裏付けを追求。
 
@@ -131,9 +131,9 @@ Bonferroni 補正後 p = 0.0712 (> 0.016666) であり、撤退基準に該当�
 
 | 優先度（Orchestrator推奨） | アイデア | 備考 |
 |--------------------------|---------|------|
-| 高 | H23 再設計 — ST 不変量による質量残差補正 | 全フェルミオン 9 点に対する線形モデルで自由度を確保。 |
-| 中 | κ = π/24 の再検証 — 循環論法を排した設計 | H33-v2。SSoT を使わず質量データのみから回帰推定。 |
-| 中 | π/24 の「24」の理論的導出 | Pachner move や位相離散化からの幾何学的必然性。 |
+| 高 | H24 再挑戦 — 崩壊幅 Γ とトポロジー不変量の相関 | Cycle 13 での H31 ACCEPT を受け、さらなる高精度化を模索。 |
+| 高 | H23 再設計 — ST 不変量による質量残差補正 | 自由度問題を回避した線形モデルでの再挑戦。 |
+| 中 | κ = π/24 の再検証 — 循環論法を排した設計 | SSoT を使わず質量データのみから回帰推定（H33-v2）。 |
 
 ---
 
