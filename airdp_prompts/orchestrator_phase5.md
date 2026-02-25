@@ -17,10 +17,18 @@ Judge の最終判定を受けて、サイクル全体の報告書 cycle_report.
 以下を順番に読み込んでください。
 1. {VERDICT_PATH} — Judge の最終判定（ACCEPT/REJECT/MODIFY と根拠、MODIFY 修正指示）
 2. {NEG_RESULTS_PATH} — 本サイクルで新規追加された否定的結果（あれば）
-3. {SSOT_CHANGELOG} — SSoT への変更履歴（あれば）
-4. {IDEA_QUEUE_PATH} — Phase 3 実行中に人間が記録したアイデア（あれば）
+3. {SSOT_CHANGELOG} — 既存の SSoT 変更履歴
+4. {CONSTANTS_PATH} — 現在の物理定数・理論値 (SSoT 本体)
+5. {IDEA_QUEUE_PATH} — Phase 3 実行中に人間が記録したアイデア（あれば）
 
-### Step 2: cycle_report.md の生成
+### Step 2: SSoT の更新（ACCEPT 判定時のみ）
+
+{VERDICT_PATH} の「SSoT 統合推奨」セクションを確認し、ACCEPT 判定を受けた仮説がある場合は以下の処理を実行してください。
+
+1. **本体の更新**: {CONSTANTS_PATH} (`constants.json`) の該当するキーの値を、Judge が推奨する値に更新または新規追加してください。
+2. **履歴の記録**: {SSOT_CHANGELOG} (`changelog.json`) に、今回の変更（日付、仮説ID、変更内容、根拠）を追記してください。
+
+### Step 3: cycle_report.md の生成
 
 {CYCLE_REPORT_PATH} に以下の構造で出力してください。
 
@@ -116,7 +124,7 @@ Judge の最終判定を受けて、サイクル全体の報告書 cycle_report.
 - 緊急停止: [なし / あり（理由）]
 ```
 
-### Step 3: 次サイクルの seed.md を生成
+### Step 4: 次サイクルの seed.md を生成
 
 {NEXT_SEED_PATH} に出力してください。
 

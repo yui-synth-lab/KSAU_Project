@@ -38,6 +38,7 @@ $nextSeedPath  = Join-Path $nextCycleDir "seed.md"
 $vars = @{
     VERDICT_PATH      = $p.VerdictPath
     NEG_RESULTS_PATH  = $p.NegResultsPath
+    CONSTANTS_PATH    = $p.ConstantsPath
     SSOT_CHANGELOG    = $p.SsotChangelog
     IDEA_QUEUE_PATH   = $p.IdeaQueuePath
     CYCLE_REPORT_PATH = $p.CycleReportPath
