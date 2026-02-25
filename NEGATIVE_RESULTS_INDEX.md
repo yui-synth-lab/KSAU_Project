@@ -117,3 +117,21 @@
 - **証拠:** `cycles/cycle_11/iterations/iter_03/results.json` — Bonferroni 補正後 p = 0.1734 (> 0.016666)。また、寿命データのハードコードおよび TSI 定義の恣意的変更（n*u / (|s|+1)）が認められた。
 - **閉鎖バージョン:** Cycle 11, Iteration 3
 - **再開条件:** SSoT への信頼できる寿命データの登録、および TSI 定義を変更しない状態での有意性確認。
+
+---
+
+### [NEG-20260225-04] H32: Validation of topological torsion correction in mass action
+- **仮説:** フェルミオン質量の有効作用は双曲体積 $V$ に加えて、トーション項 $A \ln(ST)$ を含み、$\ln(m) = \kappa V + A \ln(ST) + B$ と記述される。
+- **ステータス:** CLOSED
+- **閉鎖理由:** STATISTICAL_REJECTION (BONFERRONI_FAILURE)
+- **証拠:** Cycle 13, Iter 08 (p=0.0712 > 0.0167). 残差分散の削減率は 39.2% に達したが、統計的有意義性が認められなかった。
+- **閉鎖バージョン:** Cycle 13, Iteration 08
+- **再開条件:** 線形結合以外の相互作用項、またはより高次の不変量を用いた非線形モデルの提案。
+
+### [NEG-20260225-05] H33: Independent regression validation of mass gradient constant κ
+- **仮説:** フェルミオン質量の対数と双曲体積の間の回帰係数 $\kappa_{fit}$ は、生データからの純粋な統計的推定によって理論値 $\pi/24 \approx 0.1309$ を再現する。
+- **ステータス:** CLOSED
+- **閉鎖理由:** STATISTICAL_REJECTION (CI_MISMATCH)
+- **証拠:** Cycle 13, Iter 05. 統一モデルにおける Bootstrap 95% 信頼区間は [0.0323, 0.1050] であり、理論値 0.1309 を含まなかった。
+- **閉鎖バージョン:** Cycle 13, Iteration 05
+- **再開条件:** 第2次幾何補正項（n, ln_det 等）を導入し、有効体積 $V_{eff}$ を定義した上での再回帰。

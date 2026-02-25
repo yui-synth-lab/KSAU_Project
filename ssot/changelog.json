@@ -6,6 +6,18 @@
   "entries": [
     {
       "date": "2026-02-25",
+      "cycle": "cycle_13",
+      "iteration": "iter_09",
+      "judge_verdict": "H31 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "add",
+      "key": "theoretical_models.decay_width",
+      "old_value": null,
+      "new_value": "{\"coefficients\": {\"n\": 1.169, \"abs_s\": -6.795, \"ln_det\": 11.634, \"u\": -7.240}, \"intercept\": -18.743, \"p_value\": 0.00611, \"r2\": 0.8015}",
+      "reason": "H31 ACCEPT に基づき、結び目不変量による崩壊幅の回帰モデルを SSoT に統合。"
+    },
+    {
+      "date": "2026-02-25",
       "cycle": "cycle_12",
       "iteration": "iter_08",
       "judge_verdict": "H30 ACCEPT",

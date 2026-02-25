@@ -1,0 +1,35 @@
+{
+  "id": "H31",
+  "name": "崩壊幅の基本的結び目不変量回帰",
+  "description": "粒子の崩壊幅 Γ が Crossing Number (n), Unknotting Number (u), Signature (|s|) の線形結合によって統計的に説明可能か検証する。",
+  "status": "active",
+  "created_date": "2026-02-25",
+  "hypothesis": {
+    "H0": "崩壊幅 Γ は n, u, |s| と統計的に有意な相関を持たない。",
+    "H1": "ln(Γ) = A*n + B*u + C*|s| + D の重回帰モデルにより、R² > 0.7 かつ p < 0.016666 を達成する。"
+  },
+  "data_requirements": {
+    "description": "PDG 崩壊幅データおよび KnotInfo の基本不変量 (n, u, s)。",
+    "ssot_methods": ["get_decay_widths", "get_knot_invariants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_MEASURED_PARTICLES",
+    "max_free_parameters": 4,
+    "derivation_requirement": "FIRST_PRINCIPLES (作用項の線形近似としての基本不変量の使用。恣意的な TSI 定義変更は禁止)",
+    "notes": "安定粒子の扱いは正則化または境界条件として明記すること。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY（合成指数の恣意的変更は禁止）"
+  },
+  "test_method": "最小二乗法による重回帰分析およびモンテカルロ置換検定。",
+  "priority": "high",
+  "max_iterations": 5
+}

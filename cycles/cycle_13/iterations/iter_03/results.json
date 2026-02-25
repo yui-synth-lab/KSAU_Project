@@ -1,0 +1,96 @@
+{
+  "iteration": 3,
+  "hypothesis_id": "H31",
+  "timestamp": "2026-02-25T15:15:00Z",
+  "task_name": "PDG \u5d29\u58ca\u5e45\u30c7\u30fc\u30bf\u306e SSoT \u7d71\u5408\u3068\u8aac\u660e\u5909\u6570 (n, u, |s|) \u306e\u6e96\u5099",
+  "data_sources": {
+    "description": "Integrated PDG 2024 lifetimes with KnotInfo/LinkInfo invariants.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "data_count": 12,
+    "stable_count": 3,
+    "unstable_count": 9,
+    "columns": [
+      "particle",
+      "sector",
+      "topology",
+      "crossing_number",
+      "unknotting_number",
+      "abs_signature",
+      "lifetime_s",
+      "ln_gamma_mev",
+      "is_stable"
+    ],
+    "preview_head": [
+      {
+        "particle": "Up",
+        "sector": "quarks",
+        "topology": "L9n1{1}",
+        "crossing_number": 9.0,
+        "unknotting_number": 3.0,
+        "abs_signature": 1.0,
+        "lifetime_s": NaN,
+        "ln_gamma_mev": -100.0,
+        "is_stable": true
+      },
+      {
+        "particle": "Down",
+        "sector": "quarks",
+        "topology": "L8a18{0,1}",
+        "crossing_number": 8.0,
+        "unknotting_number": 4.0,
+        "abs_signature": 2.0,
+        "lifetime_s": NaN,
+        "ln_gamma_mev": -100.0,
+        "is_stable": true
+      },
+      {
+        "particle": "Strange",
+        "sector": "quarks",
+        "topology": "L11n330{0,1}",
+        "crossing_number": 11.0,
+        "unknotting_number": 0.0,
+        "abs_signature": 4.0,
+        "lifetime_s": 1.238e-08,
+        "ln_gamma_mev": -30.56533165976395,
+        "is_stable": false
+      },
+      {
+        "particle": "Charm",
+        "sector": "quarks",
+        "topology": "L11a362{0}",
+        "crossing_number": 11.0,
+        "unknotting_number": 0.0,
+        "abs_signature": 5.0,
+        "lifetime_s": 1.04e-12,
+        "ln_gamma_mev": -21.180714826678642,
+        "is_stable": false
+      },
+      {
+        "particle": "Bottom",
+        "sector": "quarks",
+        "topology": "L11a528{0,1}",
+        "crossing_number": 11.0,
+        "unknotting_number": 0.0,
+        "abs_signature": 2.0,
+        "lifetime_s": 1.638e-12,
+        "ln_gamma_mev": -21.634970098956238,
+        "is_stable": false
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "parameters",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.5
+  }
+}

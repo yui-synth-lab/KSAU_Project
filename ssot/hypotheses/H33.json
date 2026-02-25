@@ -1,0 +1,35 @@
+{
+  "id": "H33",
+  "name": "κ の独立回帰検証",
+  "description": "フェルミオン質量の生データと双曲体積 V から κ を独立に推定し、理論値 π/24 との統計的な一致を再検証する。",
+  "status": "active",
+  "created_date": "2026-02-25",
+  "hypothesis": {
+    "H0": "推定された κ_fit は理論値 π/24 と統計的に一致しない。",
+    "H1": "ln(m) = κ_fit * V + B の回帰により、κ_fit が π/24 (≈ 0.1309) の 95% 信頼区間内に入り、かつ p < 0.016666 を達成する。"
+  },
+  "data_requirements": {
+    "description": "フェルミオン 9 粒子の質量 (SSoT) および各トポロジーの双曲体積 V (SSoT)。",
+    "ssot_methods": ["get_fermion_masses", "get_volumes"]
+  },
+  "physical_constraints": {
+    "particle_scope": "FERMIONS_9",
+    "max_free_parameters": 2,
+    "derivation_requirement": "FIRST_PRINCIPLES (循環論法を排した理論定数の経験的再現)",
+    "notes": "SSoT の定数としての κ をモデル内で事前に参照してはならない。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 3,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY（理論値の暗黙的使用など）"
+  },
+  "test_method": "単回帰分析および Bootstrap 法 (N=10,000) による信頼区間推定。",
+  "priority": "high",
+  "max_iterations": 3
+}

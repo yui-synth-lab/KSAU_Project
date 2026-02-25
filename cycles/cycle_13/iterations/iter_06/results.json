@@ -1,0 +1,113 @@
+{
+  "iteration": 6,
+  "hypothesis_id": "H32",
+  "timestamp": "2026-02-25T22:00:00Z",
+  "task_name": "\u8cea\u91cf\u4f5c\u7528 S = \u03baV + A ln(ST) + B \u306e\u5b9a\u5f0f\u5316\u3068\u30c7\u30fc\u30bf\u6e96\u5099",
+  "data_sources": {
+    "description": "Fermion masses (PDG 2024), Volumes and Determinants (SSoT)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "particle_count": 9,
+    "kappa_theory": 0.1308996938995747,
+    "data_preview": [
+      {
+        "particle": "Electron",
+        "mass_mev": 0.511,
+        "ln_m": -0.6713856887784326,
+        "volume": 0.0,
+        "st": 3.0,
+        "ln_st": 1.0986122886681098,
+        "residual_kappa_v": -0.6713856887784326
+      },
+      {
+        "particle": "Muon",
+        "mass_mev": 105.66,
+        "ln_m": 4.6602263917361695,
+        "volume": 2.0298832128,
+        "st": 5.0,
+        "ln_st": 1.6094379124341003,
+        "residual_kappa_v": 4.394515300528764
+      },
+      {
+        "particle": "Tau",
+        "mass_mev": 1776.86,
+        "ln_m": 7.482603040582787,
+        "volume": 3.1639632288,
+        "st": 9.0,
+        "ln_st": 2.1972245773362196,
+        "residual_kappa_v": 7.068441222423357
+      },
+      {
+        "particle": "Up",
+        "mass_mev": 2.16,
+        "ln_m": 0.7701082216960737,
+        "volume": 5.33348956689812,
+        "st": 12.0,
+        "ln_st": 2.4849066497880004,
+        "residual_kappa_v": 0.07195606997253456
+      },
+      {
+        "particle": "Down",
+        "mass_mev": 4.67,
+        "ln_m": 1.541159071680806,
+        "volume": 6.551743287887868,
+        "st": 20.0,
+        "ln_st": 2.995732273553991,
+        "residual_kappa_v": 0.6835378807876908
+      },
+      {
+        "particle": "Strange",
+        "mass_mev": 93.4,
+        "ln_m": 4.536891345234797,
+        "volume": 9.312341316558376,
+        "st": 36.0,
+        "ln_st": 3.58351893845611,
+        "residual_kappa_v": 3.317908717408943
+      },
+      {
+        "particle": "Charm",
+        "mass_mev": 1270.0,
+        "ln_m": 7.146772179452637,
+        "volume": 11.215504015501589,
+        "st": 70.0,
+        "ln_st": 4.248495242049359,
+        "residual_kappa_v": 5.678666136894028
+      },
+      {
+        "particle": "Bottom",
+        "mass_mev": 4180.0,
+        "ln_m": 8.338066525518801,
+        "volume": 15.156670150795042,
+        "st": 96.0,
+        "ln_st": 4.564348191467836,
+        "residual_kappa_v": 6.35406304224291
+      },
+      {
+        "particle": "Top",
+        "mass_mev": 172760.0,
+        "ln_m": 12.059658627074638,
+        "volume": 15.62112812032806,
+        "st": 110.0,
+        "ln_st": 4.700480365792417,
+        "residual_kappa_v": 10.014857737757657
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "parameters.quarks",
+      "parameters.leptons",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.5
+  },
+  "notes": "Smallest Torsion (ST) is represented by the topological determinant as per previous cycle findings."
+}

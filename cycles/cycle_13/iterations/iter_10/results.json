@@ -1,0 +1,81 @@
+{
+  "iteration": 10,
+  "hypothesis_id": "H33",
+  "timestamp": "2026-02-25T18:10:00Z",
+  "task_name": "[\u4e88\u5099] \u7406\u8ad6\u5024\u3068\u306e\u504f\u5dee\u304c\u6709\u610f\u306a\u5834\u5408\u306e\u3001\u7b2c2\u6b21\u5e7e\u4f55\u88dc\u6b63\u9805\u306e\u63a2\u7d22",
+  "computed_values": {
+    "kappa_theory": 0.1308996938995747,
+    "single_variable_exploration": [
+      {
+        "candidate": "n",
+        "n_samples": 9,
+        "r2": 0.843638234321911,
+        "slope": -1.1361426579703415,
+        "intercept": 3.736059373414105
+      },
+      {
+        "candidate": "ln_det",
+        "n_samples": 9,
+        "r2": 0.8184153858531138,
+        "slope": -2.733191743846774,
+        "intercept": 2.7406245188489953
+      },
+      {
+        "candidate": "s",
+        "n_samples": 9,
+        "r2": 0.34896749465127597,
+        "slope": -1.3793092439593955,
+        "intercept": -2.6936829659833124
+      },
+      {
+        "candidate": "u",
+        "n_samples": 5,
+        "r2": 0.9733600634810101,
+        "slope": -2.269438065780478,
+        "intercept": 1.4643800162437866
+      },
+      {
+        "candidate": "gen",
+        "n_samples": 9,
+        "r2": 0.06127180939944632,
+        "slope": -1.1288500123955028,
+        "intercept": -3.347858011773253
+      },
+      {
+        "candidate": "comp",
+        "n_samples": 9,
+        "r2": 0.7734268622630757,
+        "slope": -4.010656938953003,
+        "intercept": 2.415755841341748
+      }
+    ],
+    "best_single_candidate": {
+      "candidate": "u",
+      "n_samples": 5,
+      "r2": 0.9733600634810101,
+      "slope": -2.269438065780478,
+      "intercept": 1.4643800162437866
+    },
+    "multi_variable_correction": {
+      "features": [
+        "n",
+        "ln_det"
+      ],
+      "r2": 0.8588264926225024,
+      "coefficients": {
+        "n": -0.7211482939764869,
+        "ln_det": -1.079833168844353
+      },
+      "intercept": 3.6213048222082618
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "topology_constants.quark_components"
+    ]
+  }
+}

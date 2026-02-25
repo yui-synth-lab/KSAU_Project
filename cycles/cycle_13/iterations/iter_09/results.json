@@ -1,0 +1,34 @@
+{
+  "iteration": 9,
+  "hypothesis_id": "H31",
+  "timestamp": "2026-02-25T17:30:00Z",
+  "task_name": "\u30e2\u30f3\u30c6\u30ab\u30eb\u30ed\u7f6e\u63db\u691c\u5b9a\u306b\u3088\u308b FPR \u306e\u7b97\u51fa\u3068\u6700\u7d42\u5224\u5b9a",
+  "data_sources": {
+    "description": "N=12 particles with boundary conditions (Floor=-40).",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "n_samples": 12,
+    "r2": 0.8015073284343793,
+    "p_value_perm": 0.00611,
+    "fpr": 0.00611,
+    "n_trials": 100000,
+    "is_significant": true,
+    "is_robust": true,
+    "bonferroni_threshold": 0.016666
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "parameters",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 233.23935914039612
+  },
+  "notes": "H31 finalized with 100,000 permutations. H32 was rejected in the previous iteration."
+}

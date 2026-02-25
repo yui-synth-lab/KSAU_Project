@@ -1,0 +1,58 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H33",
+  "timestamp": "2026-02-25T21:20:00Z",
+  "task_name": "Bootstrap \u6cd5\u306b\u3088\u308b \u03ba \u306e\u4e0d\u78ba\u5b9f\u6027\u8a55\u4fa1\u3068\u7406\u8ad6\u5024 \u03c0/24 \u3068\u306e\u6bd4\u8f03",
+  "data_sources": {
+    "description": "Fermion masses (PDG 2024) and hyperbolic volumes (SSoT)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "theory_kappa": 0.1308996938995747,
+    "bootstrap_unified": {
+      "mean": 0.06466318459118704,
+      "median": 0.0642893437175385,
+      "std": 0.018935562915818414,
+      "ci_95": [
+        0.032297826547457026,
+        0.10499377692063427
+      ],
+      "theory_match_95": false
+    },
+    "bootstrap_quark": {
+      "mean": 0.09785301703686797,
+      "median": 0.09680151001565679,
+      "std": 0.03232186638359267,
+      "ci_95": [
+        0.07312616865594675,
+        0.11762164573073491
+      ],
+      "theory_match_95": false
+    },
+    "bootstrap_lepton": {
+      "mean": 0.12443463463898198,
+      "median": 0.124434634638982,
+      "std": 2.1916623127164528e-17,
+      "ci_95": [
+        0.124434634638982,
+        0.12443463463898201
+      ],
+      "theory_match_95": false
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "topology_constants.quark_components",
+      "theoretical_mass_laws.lepton_jump"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "n_trials": 10000,
+    "computation_time_sec": 11.980639934539795
+  }
+}

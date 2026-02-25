@@ -1,0 +1,38 @@
+{
+  "iteration": 8,
+  "hypothesis_id": "H32",
+  "timestamp": "2026-02-25T17:00:00Z",
+  "task_name": "\u30d5\u30a7\u30eb\u30df\u30aa\u30f3 9 \u7c92\u5b50\u306b\u5bfe\u3059\u308b\u7dda\u5f62\u56de\u5e30\u3068\u81ea\u7531\u5ea6\u89e3\u6790 (df >= 7)",
+  "data_sources": {
+    "description": "Mass residuals from kappa*V vs ln(ST) using data from iter_06.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "regression": {
+      "slope_A": 1.716588057320919,
+      "intercept_B": -1.1404456741274487,
+      "r2": 0.3921235290552704,
+      "p_value": 0.07119706191753206,
+      "std_err": 0.8078175464588773
+    },
+    "statistics": {
+      "n_samples": 9,
+      "df": 7,
+      "fpr": 0.075,
+      "residual_variance_reduction_pct": 39.21235290552704
+    },
+    "bonferroni_threshold": 0.016666
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "n_trials": 10000
+  }
+}
