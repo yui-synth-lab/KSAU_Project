@@ -1,0 +1,110 @@
+{
+  "iteration": 4,
+  "hypothesis_id": "H38",
+  "timestamp": "2026-02-26T07:18:33.938548",
+  "task_name": "κ=π/24 に固定した質量残差の抽出と ln(ST) との相関分析",
+  "data_sources": {
+    "description": "Fermion masses (parameters.json) and topologies (topology_assignments.json)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "fixed_kappa": 0.1308996938995747,
+    "alpha_slope": 1.9896410464551777,
+    "beta_intercept": -1.412498345601873,
+    "r_squared": 0.4723489382613366,
+    "adj_r_squared": 0.3969702151558133,
+    "p_value_alpha": 0.040796776008483124,
+    "fpr": 0.0445,
+    "n_samples": 9
+  },
+  "fermion_details": [
+    {
+      "name": "Electron",
+      "m_obs": 0.511,
+      "ln_m_obs": -0.6713856887784326,
+      "v_eff": 0.19364486184880914,
+      "ln_st": 1.0986122886681098,
+      "residual": -0.6967337419196672
+    },
+    {
+      "name": "Muon",
+      "m_obs": 105.66,
+      "ln_m_obs": 4.6602263917361695,
+      "v_eff": 1.2520969350418674,
+      "ln_st": 1.6094379124341003,
+      "residual": 4.4963272862065935
+    },
+    {
+      "name": "Tau",
+      "m_obs": 1776.86,
+      "ln_m_obs": 7.482603040582787,
+      "v_eff": 0.8012529524976189,
+      "ln_st": 2.1972245773362196,
+      "residual": 7.377719274364718
+    },
+    {
+      "name": "Up",
+      "m_obs": 2.16,
+      "ln_m_obs": 0.7701082216960737,
+      "v_eff": 1.0834415808230196,
+      "ln_st": 2.4849066497880004,
+      "residual": 0.6282860504082691
+    },
+    {
+      "name": "Down",
+      "m_obs": 4.67,
+      "ln_m_obs": 1.541159071680806,
+      "v_eff": 2.4302641622058254,
+      "ln_st": 2.995732273553991,
+      "residual": 1.223038236752957
+    },
+    {
+      "name": "Strange",
+      "m_obs": 93.4,
+      "ln_m_obs": 4.536891345234797,
+      "v_eff": 3.0559381923320847,
+      "ln_st": 3.58351893845611,
+      "residual": 4.136869971282508
+    },
+    {
+      "name": "Charm",
+      "m_obs": 1270.0,
+      "ln_m_obs": 7.146772179452637,
+      "v_eff": 4.410495440810866,
+      "ln_st": 4.248495242049359,
+      "residual": 6.569439676305025
+    },
+    {
+      "name": "Bottom",
+      "m_obs": 4180.0,
+      "ln_m_obs": 8.338066525518801,
+      "v_eff": 8.091082892834077,
+      "ln_st": 4.564348191467836,
+      "residual": 7.278946251530735
+    },
+    {
+      "name": "Top",
+      "m_obs": 172760.0,
+      "ln_m_obs": 12.059658627074638,
+      "v_eff": 8.443231818549314,
+      "ln_st": 4.700480365792417,
+      "residual": 10.954442166503384
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa (derived pi/24)",
+      "V_eff formula (Cycle 14 H35)",
+      "observed_mass_mev",
+      "topology invariants"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 2.940314769744873
+  },
+  "notes": "Model: ln(m_obs) - (pi/24)*V_eff = alpha*ln(ST) + beta. Residuals are computed using the validated Effective Volume model (H35). Smallest Torsion (ST) is represented by the topological determinant."
+}

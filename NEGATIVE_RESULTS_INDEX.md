@@ -143,3 +143,21 @@
 - **証拠:** Cycle 14 Iteration 1 において、全フェルミオン 9 点に対する線形回帰の p 値は 0.0712 であり、多重比較補正後の閾値 0.0167 を達成できなかった。
 - **閉鎖バージョン:** Cycle 14, Iteration 1
 - **再開条件:** Torsion 寄与 α の幾何学的導出により、自由パラメータを排除した厳密モデルが提示された場合。
+
+---
+
+### [NEG-20260226-01] H37: Topological Correlates of Decay Width
+- **仮説:** 粒子の崩壊幅 $\Gamma$ はトポロジカル不変量（交差数 $n$、非結び目化数 $u$、署名 $s$）の線形結合で記述される。
+- **ステータス:** CLOSED
+- **閉鎖理由:** STATISTICAL_REJECTION
+- **証拠:** Cycle 15, Iter 03 (p=0.1610, FPR=0.1012, R²=0.6132). 
+- **閉鎖バージョン:** Cycle 15, Iteration 03
+- **再開条件:** 線形結合モデル以外の非摂動的な位相幾何学的障壁モデル、またはエントロピー的不変量の導入。
+
+### [NEG-20260226-02] H38: Linear Topological Torsion Correction for Mass Residuals
+- **仮説:** フェルミオン質量公式 $\ln(m) = \kappa V_{eff} + C$ ($\kappa = \pi/24$) の残差は、トポロジカル・トーション $\ln(ST)$ の線形項で補正される。
+- **ステータス:** CLOSED
+- **閉鎖理由:** STATISTICAL_REJECTION (BONFERRONI_FAILURE)
+- **証拠:** Cycle 15, Iter 05 (p=0.0408, FPR=0.0445, LOO-MAE=2.8669). 
+- **閉鎖バージョン:** Cycle 15, Iteration 05
+- **再開条件:** $\kappa$ を含む全パラメータの第一原理的導出、またはフェルミオン以外のセクター（ボソン等）を含めた広域検証。

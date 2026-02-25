@@ -1,0 +1,35 @@
+{
+  "iteration": 3,
+  "hypothesis_id": "H37",
+  "timestamp": "2026-02-26T07:12:20.351713",
+  "task_name": "モンテカルロ置換検定による有意性検証",
+  "data_sources": {
+    "description": "Integrated PDG decay widths and knot invariants from Iteration 01",
+    "loaded_via_ssot": true,
+    "previous_iteration_dependency": "iter_01"
+  },
+  "computed_values": {
+    "sample_size": 9,
+    "observed_r2": 0.6132390673063401,
+    "monte_carlo_permutation": {
+      "n_trials": 10000,
+      "fpr": 0.1012,
+      "better_fit_count": 1012,
+      "r2_shuffled_mean": 0.37449139299543194,
+      "r2_shuffled_std": 0.1674116138101177
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "constants.json (via iter_01 data)"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 3.070481538772583
+  },
+  "notes": "Calculated FPR via 10,000 permutations of ln_gamma."
+}

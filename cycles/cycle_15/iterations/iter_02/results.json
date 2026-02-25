@@ -1,0 +1,45 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H37",
+  "timestamp": "2026-02-26T07:09:25.372120",
+  "task_name": "交差数・非結び目化数・署名を用いた重回帰分析",
+  "data_sources": {
+    "description": "Integrated PDG decay widths and knot invariants from Iteration 01",
+    "loaded_via_ssot": true,
+    "previous_iteration_dependency": "iter_01"
+  },
+  "computed_values": {
+    "sample_size": 9,
+    "regression_results": {
+      "r2": 0.6132390673063401,
+      "adj_r2": 0.38118250769014417,
+      "coefficients": {
+        "const": -78.66378396561413,
+        "crossing_number": 7.919717327977089,
+        "unknotting_number": 11.240826292177752,
+        "abs_signature": -6.37864742020066
+      },
+      "p_values": {
+        "const": 0.4992972137902457,
+        "crossing_number": 0.45510059123401375,
+        "unknotting_number": 0.8594097463939299,
+        "abs_signature": 0.11007883938742843
+      },
+      "f_pvalue": 0.16097084579369114
+    },
+    "model_summary_text": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:               ln_gamma   R-squared:                       0.613\nModel:                            OLS   Adj. R-squared:                  0.381\nMethod:                 Least Squares   F-statistic:                     2.643\nDate:                Thu, 26 Feb 2026   Prob (F-statistic):              0.161\nTime:                        07:09:25   Log-Likelihood:                -33.773\nNo. Observations:                   9   AIC:                             75.55\nDf Residuals:                       5   BIC:                             76.33\nDf Model:                           3                                         \nCovariance Type:            nonrobust                                         \n=====================================================================================\n                        coef    std err          t      P>|t|      [0.025      0.975]\n-------------------------------------------------------------------------------------\nconst               -78.6638    108.064     -0.728      0.499    -356.451     199.123\ncrossing_number       7.9197      9.786      0.809      0.455     -17.235      33.074\nunknotting_number    11.2408     60.284      0.186      0.859    -143.724     166.206\nabs_signature        -6.3786      3.288     -1.940      0.110     -14.831       2.074\n==============================================================================\nOmnibus:                        0.060   Durbin-Watson:                   2.641\nProb(Omnibus):                  0.970   Jarque-Bera (JB):                0.118\nSkew:                          -0.011   Prob(JB):                        0.943\nKurtosis:                       2.440   Cond. No.                         275.\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified."
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "constants.json (via iter_01 data)"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.010299444198608398
+  },
+  "notes": "Multivariate regression of ln(Gamma) on n, u, |s|. Intercept included."
+}

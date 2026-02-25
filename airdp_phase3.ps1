@@ -158,8 +158,13 @@ while (-not $finished) {
             $iteration++
         }
     } elseif (Test-Path $p.NgPath) {
-        Write-Host "[REJECTED] Addressing issues in next iteration." -ForegroundColor Red
-        $iteration++
+        if (Test-Path p.CycleCompletePath) {
+            Write-Host "[Phase 3] All iterations complete (cycle_complete.md found)." -ForegroundColor Cyan
+            $finished = $true
+        } else {
+            Write-Host "[REJECTED] Addressing issues in next iteration." -ForegroundColor Red
+            $iteration++
+        }
     } else {
         Write-Host "[ERROR] No go.md or ng.md generated." -ForegroundColor DarkYellow
         $finished = $true

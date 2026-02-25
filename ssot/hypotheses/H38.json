@@ -1,0 +1,35 @@
+{
+  "id": "H38",
+  "name": "Linear Topological Torsion Correction",
+  "description": "質量残差に対し、自由度を制限したトーション項 ln(ST) による線形補正の有意性を検証する",
+  "status": "active",
+  "created_date": "2026-02-26",
+  "hypothesis": {
+    "H0": "フェルミオン質量の予測残差 Δln(m) は、トポロジカル・トーション ln(ST) によって説明されない。",
+    "H1": "質量公式 ln(m) = κV_eff + C の残差は、トーション寄与 αln(ST) + β によって補正される。これは KSAU 作用 S = ∫(R + αln(ST)) に基づく第一原理的要請である。"
+  },
+  "data_requirements": {
+    "description": "フェルミオン質量、有効体積、および Smallest Torsion (ST) データ",
+    "ssot_methods": ["get_fermion_masses", "get_effective_volume", "get_torsion_data"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_9_FERMIONS",
+    "max_free_parameters": 2,
+    "derivation_requirement": "FIRST_PRINCIPLES",
+    "notes": "κ を π/24 に固定すること。α, β の 2 パラメータのみを自由変数とする。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY（特に κ の固定違反）"
+  },
+  "test_method": "固定勾配下での線形回帰分析およびモンテカルロ置換検定",
+  "priority": "medium",
+  "max_iterations": 5
+}

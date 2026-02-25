@@ -1,0 +1,149 @@
+{
+  "iteration": 1,
+  "hypothesis_id": "H37",
+  "timestamp": "2026-02-26T07:07:28.844839",
+  "task_name": "PDG崩壊幅データの統合とSSoT拡張",
+  "data_sources": {
+    "description": "Integrated PDG 2024 Lifetimes (parameters.json) and Knot/Link invariants",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "unstable_particles_count": 9,
+    "integrated_data": [
+      {
+        "particle": "Strange",
+        "sector": "quarks",
+        "observed_lifetime_s": 1.238e-08,
+        "observed_decay_width_mev": 5.3167363239095306e-14,
+        "ln_gamma": -30.56533165976395,
+        "topology": "L11n330{0,1}",
+        "crossing_number": 11.0,
+        "unknotting_number": 0.0,
+        "signature": 4.0,
+        "abs_signature": 4.0,
+        "ln_det": 3.58351893845611
+      },
+      {
+        "particle": "Charm",
+        "sector": "quarks",
+        "observed_lifetime_s": 1.04e-12,
+        "observed_decay_width_mev": 6.328961124038461e-10,
+        "ln_gamma": -21.180714826678642,
+        "topology": "L11a362{0}",
+        "crossing_number": 11.0,
+        "unknotting_number": 0.0,
+        "signature": -5.0,
+        "abs_signature": 5.0,
+        "ln_det": 4.248495242049359
+      },
+      {
+        "particle": "Bottom",
+        "sector": "quarks",
+        "observed_lifetime_s": 1.638e-12,
+        "observed_decay_width_mev": 4.018388015262515e-10,
+        "ln_gamma": -21.634970098956238,
+        "topology": "L11a528{0,1}",
+        "crossing_number": 11.0,
+        "unknotting_number": 0.0,
+        "signature": -2.0,
+        "abs_signature": 2.0,
+        "ln_det": 4.564348191467836
+      },
+      {
+        "particle": "Top",
+        "sector": "quarks",
+        "observed_lifetime_s": 4.67e-25,
+        "observed_decay_width_mev": 1409.4474451820129,
+        "ln_gamma": 7.250953023716427,
+        "topology": "L11a225{1}",
+        "crossing_number": 11.0,
+        "unknotting_number": 0.0,
+        "signature": -3.0,
+        "abs_signature": 3.0,
+        "ln_det": 4.700480365792417
+      },
+      {
+        "particle": "Muon",
+        "sector": "leptons",
+        "observed_lifetime_s": 2.19698e-06,
+        "observed_decay_width_mev": 2.995985201959052e-16,
+        "ln_gamma": -35.74408836152796,
+        "topology": "4_1",
+        "crossing_number": 4.0,
+        "unknotting_number": 1.0,
+        "signature": 0.0,
+        "abs_signature": 0.0,
+        "ln_det": 1.6094379124341003
+      },
+      {
+        "particle": "Tau",
+        "sector": "leptons",
+        "observed_lifetime_s": 2.903e-13,
+        "observed_decay_width_mev": 2.267350867723045e-09,
+        "ln_gamma": -19.904653705573807,
+        "topology": "6_1",
+        "crossing_number": 6.0,
+        "unknotting_number": 1.0,
+        "signature": 0.0,
+        "abs_signature": 0.0,
+        "ln_det": 2.1972245773362196
+      },
+      {
+        "particle": "W",
+        "sector": "bosons",
+        "observed_lifetime_s": 3.16e-25,
+        "observed_decay_width_mev": 2082.9492306962024,
+        "ln_gamma": 7.641540067798412,
+        "topology": "L11n387{0,0}",
+        "crossing_number": 11.0,
+        "unknotting_number": 0.0,
+        "signature": 0.0,
+        "abs_signature": 0.0,
+        "ln_det": 4.1588830833596715
+      },
+      {
+        "particle": "Z",
+        "sector": "bosons",
+        "observed_lifetime_s": 2.64e-25,
+        "observed_decay_width_mev": 2493.227109469697,
+        "ln_gamma": 7.8213331782390085,
+        "topology": "L11a431{0,0}",
+        "crossing_number": 11.0,
+        "unknotting_number": 0.0,
+        "signature": -2.0,
+        "abs_signature": 2.0,
+        "ln_det": 4.718498871295094
+      },
+      {
+        "particle": "Higgs",
+        "sector": "bosons",
+        "observed_lifetime_s": 1.62e-22,
+        "observed_decay_width_mev": 4.063036770987654,
+        "ln_gamma": 1.4019306671708032,
+        "topology": "L11a55{0}",
+        "crossing_number": 11.0,
+        "unknotting_number": 0.0,
+        "signature": -1.0,
+        "abs_signature": 1.0,
+        "ln_det": 4.912654885736052
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "physical_constants.h_bar_mev_s",
+      "parameters",
+      "topology_assignments",
+      "knotinfo_data_complete",
+      "linkinfo_data_complete"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.332390308380127
+  },
+  "notes": "Calculated decay width Gamma (MeV) = hbar / tau for all 9 unstable particles. All constants from SSoT."
+}

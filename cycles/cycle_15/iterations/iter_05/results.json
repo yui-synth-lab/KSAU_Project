@@ -1,0 +1,47 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H38",
+  "timestamp": "2026-02-26T07:21:30.080906",
+  "task_name": "自由度 2 (α, β) の線形補正モデルの検証",
+  "data_sources": {
+    "description": "Fermion masses and topologies via SSoT",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "fixed_kappa": 0.1308996938995747,
+    "v_eff_coefficients": {
+      "a": -0.55,
+      "b": -0.825,
+      "c": 2.75
+    },
+    "regression": {
+      "alpha_slope": 1.9896410464551777,
+      "beta_intercept": -1.412498345601873,
+      "r_squared": 0.4723489382613366,
+      "p_value_alpha": 0.040796776008483124,
+      "fpr": 0.0445
+    },
+    "cross_validation": {
+      "training_mae": 2.253294033421061,
+      "loo_mae": 2.866940941752701,
+      "mae_ratio": 1.2723332593216747
+    },
+    "n_samples": 9
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.kappa",
+      "effective_volume_model",
+      "particle_data",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 2.8658010959625244
+  },
+  "notes": "Validation includes LOO-CV to assess predictive stability. SSoT coefficients used."
+}
