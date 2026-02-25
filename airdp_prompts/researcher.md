@@ -14,13 +14,17 @@
 >
 > `python
 > import sys
-> sys.path.insert(0, r"{SSOT_DIR}")
+> from pathlib import Path
+> current_file = Path(__file__).resolve()
+> project_root = current_file.parents[5]
+> ssot_path = project_root / "ssot"
+> sys.path.insert(0, str(ssot_path))    
 > from {PROJECT_SSOT_MODULE} import SSOT
 > ssot = SSOT()
 > consts = ssot.constants()          # プロジェクト定数
 > `
 >
-> `SSOT()` クラスがすべてのパスを自動解決する。`Path("...")` を自分で書いてはならない。
+> `SSOT()` クラスがすべてのパスを自動解決する。`Path("...")` を自分で書いてはならない。 `
 > プロジェクト固有のデータアクセスメソッドは `{PROJECT_SSOT_LOADER}` の docstring を参照すること。
 
 ---
