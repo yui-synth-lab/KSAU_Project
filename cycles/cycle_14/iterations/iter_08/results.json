@@ -1,0 +1,113 @@
+{
+  "iteration": 8,
+  "hypothesis_id": "H36",
+  "timestamp": "2026-02-25T13:54:57Z",
+  "task_name": "24-cell 多胞体対称性と空間充填条件の幾何学的検討",
+  "analysis": {
+    "candidate_polytopes": {
+      "5-cell": {
+        "properties": {
+          "cells": 5,
+          "v": 5,
+          "f": 10,
+          "e": 10,
+          "sym": 120,
+          "self_dual": true,
+          "tiles": false
+        },
+        "suitability_score": 1
+      },
+      "8-cell": {
+        "properties": {
+          "cells": 8,
+          "v": 16,
+          "f": 24,
+          "e": 32,
+          "sym": 384,
+          "self_dual": false,
+          "tiles": true
+        },
+        "suitability_score": 2
+      },
+      "16-cell": {
+        "properties": {
+          "cells": 16,
+          "v": 8,
+          "f": 32,
+          "e": 24,
+          "sym": 384,
+          "self_dual": false,
+          "tiles": false
+        },
+        "suitability_score": 1
+      },
+      "24-cell": {
+        "properties": {
+          "cells": 24,
+          "v": 24,
+          "f": 96,
+          "e": 96,
+          "sym": 1152,
+          "self_dual": true,
+          "tiles": true
+        },
+        "suitability_score": 3
+      },
+      "120-cell": {
+        "properties": {
+          "cells": 120,
+          "v": 600,
+          "f": 720,
+          "e": 1200,
+          "sym": 14400,
+          "self_dual": false,
+          "tiles": false
+        },
+        "suitability_score": 1
+      },
+      "600-cell": {
+        "properties": {
+          "cells": 600,
+          "v": 120,
+          "f": 1200,
+          "e": 720,
+          "sym": 14400,
+          "self_dual": false,
+          "tiles": false
+        },
+        "suitability_score": 1
+      }
+    },
+    "best_fit_polychoron": "24-cell",
+    "packing_density_comparison": {
+      "D4_lattice_24cell": {
+        "density": 0.6168502750680849,
+        "ratio_to_kappa": 4.71238898038469
+      },
+      "A4_lattice_5cell": {
+        "density": 0.44138212703733803,
+        "ratio_to_kappa": 3.3719110708995483
+      },
+      "Z4_lattice_8cell": {
+        "density": 0.30842513753404244,
+        "ratio_to_kappa": 2.356194490192345
+      }
+    }
+  },
+  "computed_values": {
+    "pi_sq_over_16": 0.6168502750680849,
+    "hits_of_24_in_properties": 4,
+    "prob_24_among_regular_polychora": 0.16666666666666666
+  },
+  "ssot_compliance": {
+    "ssot_dir_absolute": "E:\\Obsidian\\KSAU_Project\\ssot",
+    "constants_used": [
+      "kappa",
+      "pi"
+    ]
+  },
+  "reproducibility": {
+    "computation_time_sec": 0.0006780624389648438
+  },
+  "notes": "The 24-cell is identified as the unique 'Self-Dual Tiling' polychoron. The number 24 appears as both its cell count and vertex count, providing a dual-redundant basis for the resonance factor K(4)."
+}

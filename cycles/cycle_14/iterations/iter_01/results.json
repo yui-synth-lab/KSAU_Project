@@ -1,0 +1,121 @@
+{
+  "iteration": 1,
+  "hypothesis_id": "H34",
+  "timestamp": "2026-02-25T22:19:21.283807",
+  "task_name": "ST 不変量と質量残差の線形相関の予備調査",
+  "data_sources": {
+    "description": "Fermion masses from parameters.json and topological invariants from topology_assignments.json",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "alpha_slope": 1.7165880573209185,
+    "beta_intercept": -1.1404456741274478,
+    "r_squared": 0.39212352905527015,
+    "p_value": 0.07119706191753226,
+    "std_err": 0.8078175464588775,
+    "slope_ci_95": [
+      -0.004857570849035186,
+      3.278728941412621
+    ],
+    "n_samples": 9
+  },
+  "fermion_details": [
+    {
+      "name": "Electron",
+      "mass_mev": 0.511,
+      "volume": 0.0,
+      "st": 3,
+      "ln_m": -0.6713856887784326,
+      "residual": -0.6713856887784326,
+      "ln_st": 1.0986122886681098
+    },
+    {
+      "name": "Muon",
+      "mass_mev": 105.66,
+      "volume": 2.0298832128,
+      "st": 5,
+      "ln_m": 4.6602263917361695,
+      "residual": 4.394515300528764,
+      "ln_st": 1.6094379124341003
+    },
+    {
+      "name": "Tau",
+      "mass_mev": 1776.86,
+      "volume": 3.1639632288,
+      "st": 9,
+      "ln_m": 7.482603040582787,
+      "residual": 7.068441222423357,
+      "ln_st": 2.1972245773362196
+    },
+    {
+      "name": "Up",
+      "mass_mev": 2.16,
+      "volume": 5.33348956689812,
+      "st": 12,
+      "ln_m": 0.7701082216960737,
+      "residual": 0.07195606997253456,
+      "ln_st": 2.4849066497880004
+    },
+    {
+      "name": "Down",
+      "mass_mev": 4.67,
+      "volume": 6.551743287887868,
+      "st": 20,
+      "ln_m": 1.541159071680806,
+      "residual": 0.6835378807876908,
+      "ln_st": 2.995732273553991
+    },
+    {
+      "name": "Strange",
+      "mass_mev": 93.4,
+      "volume": 9.312341316558376,
+      "st": 36,
+      "ln_m": 4.536891345234797,
+      "residual": 3.317908717408943,
+      "ln_st": 3.58351893845611
+    },
+    {
+      "name": "Charm",
+      "mass_mev": 1270.0,
+      "volume": 11.215504015501589,
+      "st": 70,
+      "ln_m": 7.146772179452637,
+      "residual": 5.678666136894028,
+      "ln_st": 4.248495242049359
+    },
+    {
+      "name": "Bottom",
+      "mass_mev": 4180.0,
+      "volume": 15.156670150795042,
+      "st": 96,
+      "ln_m": 8.338066525518801,
+      "residual": 6.35406304224291,
+      "ln_st": 4.564348191467836
+    },
+    {
+      "name": "Top",
+      "mass_mev": 172760.0,
+      "volume": 15.62112812032806,
+      "st": 110,
+      "ln_m": 12.059658627074638,
+      "residual": 10.014857737757657,
+      "ln_st": 4.700480365792417
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "observed_mass_mev",
+      "volume",
+      "determinant"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": null
+  },
+  "notes": "Smallest Torsion (ST) is represented by the topological determinant as per previous cycle findings (Cycle 12/13)."
+}

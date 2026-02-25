@@ -1,0 +1,118 @@
+{
+  "iteration": 4,
+  "hypothesis_id": "H35",
+  "timestamp": "2026-02-25T22:35:16.110030",
+  "task_name": "様々な不変量組み合わせ（n, ln_det）による V_eff の安定性評価",
+  "data_sources": {
+    "description": "Fermion 9-point real data (mass, volume, crossing, determinant)",
+    "loaded_via_ssot": true
+  },
+  "model_comparison": {
+    "m0_v_only": {
+      "kappa_fit": 0.06465724315732761,
+      "intercept": -0.04541443028012271,
+      "r_squared": 0.8095764737821435,
+      "p_value": 0.0009506269663377037,
+      "kappa_error_pct": 50.60550469512008
+    },
+    "m1_v_plus_n": {
+      "kappa_fit": 0.09154282160605043,
+      "intercept": 0.16427779273717918,
+      "r_squared": 0.8640388739063477,
+      "p_value": 0.0002852788375957776,
+      "kappa_error_pct": 30.066435696724074
+    },
+    "m2_v_plus_det": {
+      "kappa_fit": 0.07988647187745644,
+      "intercept": 0.040123490250280724,
+      "r_squared": 0.8131817392198784,
+      "p_value": 0.0008876286655553622,
+      "kappa_error_pct": 38.97123094974938
+    },
+    "m3_full_v_eff": {
+      "kappa_fit": 0.12085876951489952,
+      "intercept": 0.04621174431435282,
+      "r_squared": 0.8577104192060415,
+      "p_value": 0.0003354552681688549,
+      "kappa_error_pct": 7.670701195358418
+    }
+  },
+  "sensitivity_analysis": [
+    {
+      "perturbation_a": -0.1,
+      "perturbation_b": -0.1,
+      "r_squared": 0.8594842260780492,
+      "kappa_fit": 0.11250936112817708
+    },
+    {
+      "perturbation_a": -0.1,
+      "perturbation_b": 0.0,
+      "r_squared": 0.8583384165687975,
+      "kappa_fit": 0.11591271642955571
+    },
+    {
+      "perturbation_a": -0.1,
+      "perturbation_b": 0.1,
+      "r_squared": 0.8568255500574955,
+      "kappa_fit": 0.11948717536425825
+    },
+    {
+      "perturbation_a": 0.0,
+      "perturbation_b": -0.1,
+      "r_squared": 0.8596830315434066,
+      "kappa_fit": 0.1172670989709392
+    },
+    {
+      "perturbation_a": 0.0,
+      "perturbation_b": 0.0,
+      "r_squared": 0.8577104192060415,
+      "kappa_fit": 0.12085876951489952
+    },
+    {
+      "perturbation_a": 0.0,
+      "perturbation_b": 0.1,
+      "r_squared": 0.8552366717356837,
+      "kappa_fit": 0.124622543845332
+    },
+    {
+      "perturbation_a": 0.1,
+      "perturbation_b": -0.1,
+      "r_squared": 0.8575573334597604,
+      "kappa_fit": 0.12211149296809547
+    },
+    {
+      "perturbation_a": 0.1,
+      "perturbation_b": 0.0,
+      "r_squared": 0.8544634560488327,
+      "kappa_fit": 0.1258681931621853
+    },
+    {
+      "perturbation_a": 0.1,
+      "perturbation_b": 0.1,
+      "r_squared": 0.8506937031859532,
+      "kappa_fit": 0.12979022358722617
+    }
+  ],
+  "free_parameter_fit": {
+    "kappa_free": 0.045405712190929585,
+    "a_free": -2.3473582148161127,
+    "b_free": 7.1003460285400655,
+    "r_squared_free": 0.8863398420319849
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "observed_mass_mev",
+      "volume",
+      "crossing_number",
+      "determinant"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42
+  },
+  "notes": "V_eff stability evaluation shows inclusion of both n and ln_det is essential for kappa recovery."
+}

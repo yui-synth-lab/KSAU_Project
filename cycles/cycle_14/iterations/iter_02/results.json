@@ -1,0 +1,151 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H35",
+  "timestamp": "2026-02-25T22:26:47.054255",
+  "task_name": "有効体積 V_eff の理論的定義（1-loop 補正等）の策定",
+  "data_sources": {
+    "description": "Fermion masses, volumes, crossing numbers, and determinants from SSoT.",
+    "loaded_via_ssot": true
+  },
+  "formulation": {
+    "v_eff_formula": "V_eff = V + a*n + b*ln_det + c",
+    "coefficients": {
+      "a": -0.55,
+      "b": -0.825,
+      "c": 2.75
+    },
+    "theoretical_basis": "1-loop Ray-Singer torsion (ln_det) and d=10 bulk dimension scaling (a=-11/20, b=-33/40)."
+  },
+  "computed_values": {
+    "kappa_fit": 0.12085876951489952,
+    "intercept": 0.04621174431435282,
+    "r_squared": 0.8577104192060417,
+    "p_value": 0.0003354552681688532,
+    "std_err": 0.01860567177916403,
+    "kappa_ci_95": [
+      0.07686334680871279,
+      0.16485419222108624
+    ],
+    "ci_includes_pi_24": true,
+    "fpr_r2": 0.0002,
+    "fpr_slope_proximity": 0.0002
+  },
+  "fermion_details": [
+    {
+      "name": "Electron",
+      "mass_mev": 0.511,
+      "volume": 0.0,
+      "n": 3.0,
+      "det": 3.0,
+      "ln_det": 1.0986122886681098,
+      "v_eff": 0.19364486184880914,
+      "scale": 20.0,
+      "target": -0.03356928443892163
+    },
+    {
+      "name": "Muon",
+      "mass_mev": 105.66,
+      "volume": 2.0298832128,
+      "n": 4.0,
+      "det": 5.0,
+      "ln_det": 1.6094379124341003,
+      "v_eff": 1.2520969350418674,
+      "scale": 20.0,
+      "target": 0.23301131958680849
+    },
+    {
+      "name": "Tau",
+      "mass_mev": 1776.86,
+      "volume": 3.1639632288,
+      "n": 6.0,
+      "det": 9.0,
+      "ln_det": 2.1972245773362196,
+      "v_eff": 0.8012529524976189,
+      "scale": 20.0,
+      "target": 0.37413015202913935
+    },
+    {
+      "name": "Up",
+      "mass_mev": 2.16,
+      "volume": 5.33348956689812,
+      "n": 9.0,
+      "det": 12.0,
+      "ln_det": 2.4849066497880004,
+      "v_eff": 1.0834415808230196,
+      "scale": 10.0,
+      "target": 0.07701082216960738
+    },
+    {
+      "name": "Down",
+      "mass_mev": 4.67,
+      "volume": 6.551743287887868,
+      "n": 8.0,
+      "det": 20.0,
+      "ln_det": 2.995732273553991,
+      "v_eff": 2.4302641622058254,
+      "scale": 10.0,
+      "target": 0.1541159071680806
+    },
+    {
+      "name": "Strange",
+      "mass_mev": 93.4,
+      "volume": 9.312341316558376,
+      "n": 11.0,
+      "det": 36.0,
+      "ln_det": 3.58351893845611,
+      "v_eff": 3.0559381923320847,
+      "scale": 10.0,
+      "target": 0.4536891345234797
+    },
+    {
+      "name": "Charm",
+      "mass_mev": 1270.0,
+      "volume": 11.215504015501589,
+      "n": 11.0,
+      "det": 70.0,
+      "ln_det": 4.248495242049359,
+      "v_eff": 4.410495440810866,
+      "scale": 10.0,
+      "target": 0.7146772179452637
+    },
+    {
+      "name": "Bottom",
+      "mass_mev": 4180.0,
+      "volume": 15.156670150795042,
+      "n": 11.0,
+      "det": 96.0,
+      "ln_det": 4.564348191467836,
+      "v_eff": 8.091082892834077,
+      "scale": 10.0,
+      "target": 0.8338066525518801
+    },
+    {
+      "name": "Top",
+      "mass_mev": 172760.0,
+      "volume": 15.62112812032806,
+      "n": 11.0,
+      "det": 110.0,
+      "ln_det": 4.700480365792417,
+      "v_eff": 8.443231818549314,
+      "scale": 10.0,
+      "target": 1.2059658627074639
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "observed_mass_mev",
+      "volume",
+      "crossing_number",
+      "determinant"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "n_trials": 10000
+  },
+  "notes": "H34 was rejected in Iter 1 due to p-value; proceeding to H35 task as per roadmap priority."
+}

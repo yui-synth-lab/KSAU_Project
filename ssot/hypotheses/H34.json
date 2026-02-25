@@ -1,0 +1,35 @@
+{
+  "id": "H34",
+  "name": "Linear ST Fermion Mass Correction",
+  "description": "Smallest Torsion (ST) の対数線形項を導入し、フェルミオン質量の幾何学的残差を有意に説明する。",
+  "status": "active",
+  "created_date": "2026-02-25",
+  "hypothesis": {
+    "H0": "Smallest Torsion (ST) の対数線形項は、フェルミオン質量の残差（ln(m) - κV）を有意に説明しない。",
+    "H1": "質量アクション密度への torsion 寄与に基づき、ln(m) = κV + α ln(ST) + β（α は第一原理から導出される定数）が残差を有意に低減する。"
+  },
+  "data_requirements": {
+    "description": "全フェルミオン 9 点の質量、体積 V、および Smallest Torsion (ST)。",
+    "ssot_methods": ["get_fermion_masses", "get_topological_volumes", "get_topological_invariants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "FERMIONS_9",
+    "max_free_parameters": 1,
+    "derivation_requirement": "FIRST_PRINCIPLES (係数 α は幾何学的不変量から理論的に導出されること)",
+    "notes": "任意の多項式フィッティングは禁止。 torsion 寄与の幾何学的根拠を Researcher が示すこと。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "質量残差に対する ln(ST) の線形回帰分析、およびブートストラップ法による係数の安定性検証。",
+  "priority": "high",
+  "max_iterations": 5
+}

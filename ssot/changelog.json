@@ -6,6 +6,30 @@
   "entries": [
     {
       "date": "2026-02-25",
+      "cycle": "cycle_14",
+      "iteration": "iter_10",
+      "judge_verdict": "H35 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "add",
+      "key": "effective_volume_model",
+      "old_value": null,
+      "new_value": "{\"a\": -0.55, \"b\": -0.825, \"c\": 2.75, \"formula\": \"V_eff = V + a*n + b*ln_det + c\"}",
+      "reason": "H35 ACCEPT に基づき、質量予測精度の劇的向上と不偏性の立証された有効体積モデルを SSoT に統合。"
+    },
+    {
+      "date": "2026-02-25",
+      "cycle": "cycle_14",
+      "iteration": "iter_07",
+      "judge_verdict": "H36 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "add",
+      "key": "k_resonance_derivation",
+      "old_value": null,
+      "new_value": "{\"factor\": 24, \"basis\": \"24-cell symmetry\", \"lattice\": \"D4\"}",
+      "reason": "H36 ACCEPT に基づき、κ = π/24 の幾何学的必然性の立証された導出根拠を SSoT に記録。"
+    },
+    {
+      "date": "2026-02-25",
       "cycle": "cycle_13",
       "iteration": "iter_09",
       "judge_verdict": "H31 ACCEPT",

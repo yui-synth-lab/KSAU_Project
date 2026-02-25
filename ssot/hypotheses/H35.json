@@ -1,0 +1,36 @@
+{
+  "id": "H35",
+  "name": "κ Recovery via Effective Volume V_eff",
+  "description": "幾何学的補正を含む有効体積 V_eff を用いて、回帰係数 κ が理論値 π/24 (≈ 0.1309) を含むか検証する。",
+  "status": "active",
+  "created_date": "2026-02-25",
+  "hypothesis": {
+    "H0": "有効体積 V_eff（幾何補正を含む）を用いた回帰係数 κ_fit は、理論値 π/24 (≈ 0.1309) と一致しない。",
+    "H1": "V_eff = V + a*n + b*ln_det（a, b は理論的に固定された係数）を用いることで、ln(m) ~ V_eff の回帰から得られる κ_fit の 95% 信頼区間が π/24 を含む。"
+  },
+  "data_requirements": {
+    "description": "フェルミオン 9 点の質量、体積 V、Crossing (n)、Log Determinant (ln_det)。",
+    "ssot_methods": ["get_fermion_masses", "get_topological_volumes", "get_topological_invariants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "FERMIONS_9",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES (V_eff の定義は 1-loop 補正から導出されること)",
+    "notes": "a, b は理論的に固定され、回帰中の自由パラメータとしては扱われない。 回帰 CI が π/24 を外れた場合は即座に REJECT。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "ci_mismatch": "95% CI が π/24 を含まない場合 → 即座に REJECT",
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "V_eff に対する ln(m) の独立回帰。Bootstrap 法による κ_fit の信頼区間推定。",
+  "priority": "high",
+  "max_iterations": 5
+}

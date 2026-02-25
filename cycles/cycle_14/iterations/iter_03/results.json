@@ -1,0 +1,46 @@
+{
+  "iteration": 3,
+  "hypothesis_id": "H35",
+  "timestamp": "2026-02-25T22:31:00.893772",
+  "task_name": "V_eff を用いた κ = π/24 の独立回帰と信頼区間検証",
+  "data_sources": {
+    "description": "Fermion masses and topological invariants from SSOT (N=9)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "kappa_fit": 0.12085876951489952,
+    "kappa_theory_target": 0.1308996938995747,
+    "intercept": 0.04621174431435282,
+    "r_squared": 0.8577104192060417,
+    "p_value_standard": 0.0003354552681688532,
+    "kappa_ci_95_bootstrap": [
+      0.08138577000876374,
+      0.16222362797711287
+    ],
+    "intercept_ci_95_bootstrap": [
+      -0.09610152060965012,
+      0.20879306077650375
+    ],
+    "ci_includes_pi_24": true,
+    "fpr_r2_100k": 0.00034,
+    "fpr_slope_proximity_100k": 0.00034
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "observed_mass_mev",
+      "volume",
+      "crossing_number",
+      "determinant"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "n_bootstrap": 10000,
+    "n_permutation": 100000
+  },
+  "notes": "H34 rejected in Iter 1. Proceeding with H35 validation (formerly roadmap Iter 5)."
+}
