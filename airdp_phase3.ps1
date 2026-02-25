@@ -1,8 +1,7 @@
-# airdp_phase3.ps1 — Phase 3: Execute（Researcher ↔ Reviewer 自動イテレーション）
+# airdp_phase3.ps1 - Phase 3: Execute (Researcher <-> Reviewer Auto Iteration)
 #
 # Usage:
 #   .\airdp_phase3.ps1 -ProjectDir . -CycleId 01
-#   .\airdp_phase3.ps1 -ProjectDir . -CycleId 01 -Researcher gemini -Reviewer claude -MaxIterations 5
 
 param (
     [Parameter(Mandatory=$false)] [string]$ProjectDir    = ".",
@@ -32,7 +31,33 @@ if (-not (Test-Path $p.SsotDir))    { throw "SSoT directory not found: $($p.Ssot
 $null = New-Item -ItemType Directory -Force -Path $p.IterationsDir
 $null = New-Item -ItemType Directory -Force -Path $p.SessionDir
 
-# ── セッション ID の取得・初期化 ──────────────
+# --- Auto Resume Logic ---
+$iteration = 1
+if (Test-Path $p.CycleCompletePath) {
+    Write-Host "[SKIP] Cycle $CycleId is already complete (cycle_complete.md found)." -ForegroundColor Cyan
+    exit 0
+}
+
+if (Test-Path $p.IterationsDir) {
+    $existingIters = Get-ChildItem (Join-Path $p.IterationsDir "iter_*") | Where-Object { $_.Attributes -match "Directory" } | Sort-Object Name
+    if ($existingIters.Count -gt 0) {
+        $lastIterFolder = $existingIters[-1]
+        if ($lastIterFolder.Name -match "iter_(\d+)") {
+            $lastIterNum = [int]$matches[1]
+            $reviewPath = Join-Path $lastIterFolder.FullName "review.md"
+
+            if (Test-Path $reviewPath) {
+                $iteration = $lastIterNum + 1
+                Write-Host "[RESUME] Iteration $lastIterNum is complete. Starting from Iteration $iteration." -ForegroundColor Cyan
+            } else {
+                $iteration = $lastIterNum
+                Write-Host "[RESUME] Iteration $iteration is incomplete. Resuming from here." -ForegroundColor Cyan
+            }
+        }
+    }
+}
+
+# --- Session ID Initialization ---
 $ResearcherSessionFile = Join-Path $p.SessionDir "researcher_session_id.txt"
 $ReviewerSessionFile   = Join-Path $p.SessionDir "reviewer_session_id.txt"
 
@@ -43,54 +68,66 @@ $ReviewerSessionId   = $reviewerSession.Id
 $isFirstResearcher   = $researcherSession.IsFirst
 $isFirstReviewer     = $reviewerSession.IsFirst
 
-Write-Host "`n━━━ Phase 3: Execute（Researcher: $Researcher / Reviewer: $Reviewer）━━━" -ForegroundColor Yellow
+Write-Host "`n=== Phase 3: Execute (Researcher: $Researcher / Reviewer: $Reviewer) ===" -ForegroundColor Yellow
 Write-Host "  RoadmapPath : $($p.RoadmapPath)" -ForegroundColor Gray
 Write-Host "  WorkDir     : $($p.CycleDir)"    -ForegroundColor Gray
 Write-Host "  SsotDir     : $($p.SsotDir)"     -ForegroundColor Gray
 
 $finished  = $false
-$iteration = 1
 
 while (-not $finished) {
-    Write-Host "`n━━━ Iteration $iteration ━━━" -ForegroundColor Yellow
+    Write-Host "`n--- Iteration $iteration ---" -ForegroundColor Yellow
 
     $iterDir = Join-Path $p.IterationsDir ("iter_{0:D2}" -f $iteration)
     $null = New-Item -ItemType Directory -Force -Path (Join-Path $iterDir "code")
 
-    # ── 1. Researcher ────────────────────────
-    Write-Host "[Researcher: $Researcher] 作業中..." -ForegroundColor Green
-
-    $researcherVars = @{
-        ROADMAP_PATH = $p.RoadmapPath
-        NG_PATH      = $p.NgPath
-        GO_PATH      = $p.GoPath
-        WORK_DIR     = $p.CycleDir
-        LOG_PATH     = $p.LogPath
-        ITER_DIR     = $iterDir
-        SSOT_DIR     = $p.SsotDir
-        PROJECT_SSOT_LOADER = $p.ProjectSsotLoader
-        PROJECT_SSOT_MODULE = $p.ProjectSsotModule
+    # --- 1. Researcher ---
+    $skipResearcher = $false
+    if (Test-Path $p.LogPath) {
+        $logContent = Get-Content $p.LogPath -Raw
+        if ($logContent -match "Output Log - Iteration $iteration") {
+            if (Test-Path (Join-Path $iterDir "researcher_report.md")) {
+                $skipResearcher = $true
+            }
+        }
     }
-    $promptResearcher = Expand-PromptTemplate (Join-Path $PromptsDir "researcher.md") $researcherVars
 
-    Invoke-AI -AIName $Researcher -Prompt $promptResearcher `
-        -SessionIdRef ([ref]$ResearcherSessionId) -SessionFile $ResearcherSessionFile `
-        -IsFirst $isFirstResearcher
-    $isFirstResearcher = $false
+    if ($skipResearcher) {
+        Write-Host "[RESUME] Researcher outputs found. Skipping to Reviewer." -ForegroundColor Gray
+    } else {
+        Write-Host "Researcher ($Researcher) working..." -ForegroundColor Green
 
-    # go.md / ng.md をクリア（Reviewer 実行前に）
-    if (Test-Path $p.GoPath) { Remove-Item $p.GoPath }
-    if (Test-Path $p.NgPath) { Remove-Item $p.NgPath }
+        $researcherVars = @{
+            ROADMAP_PATH = $p.RoadmapPath
+            NG_PATH      = $p.NgPath
+            GO_PATH      = $p.GoPath
+            WORK_DIR     = $p.CycleDir
+            LOG_PATH     = $p.LogPath
+            ITER_DIR     = $iterDir
+            SSOT_DIR     = $p.SsotDir
+            PROJECT_SSOT_LOADER = $p.ProjectSsotLoader
+            PROJECT_SSOT_MODULE = $p.ProjectSsotModule
+        }
+        $promptResearcher = Expand-PromptTemplate (Join-Path $PromptsDir "researcher.md") $researcherVars
+
+        Invoke-AI -AIName $Researcher -Prompt $promptResearcher `
+            -SessionIdRef ([ref]$ResearcherSessionId) -SessionFile $ResearcherSessionFile `
+            -IsFirst $isFirstResearcher
+        $isFirstResearcher = $false
+
+        if (Test-Path $p.GoPath) { Remove-Item $p.GoPath }
+        if (Test-Path $p.NgPath) { Remove-Item $p.NgPath }
+    }
 
     if (-not (Test-Path $p.LogPath)) {
-        Write-Host "[ERROR] Researcher が output_log.md を生成しませんでした。スキップ。" -ForegroundColor Red
+        Write-Host "[ERROR] Researcher did not generate output_log.md. Skipping." -ForegroundColor Red
         $iteration++
         if ($iteration -gt $MaxIterations) { $finished = $true }
         continue
     }
 
-    # ── 2. Reviewer ──────────────────────────
-    Write-Host "`n[Reviewer: $Reviewer] 査読中..." -ForegroundColor Magenta
+    # --- 2. Reviewer ---
+    Write-Host "Reviewer ($Reviewer) reviewing..." -ForegroundColor Magenta
 
     $reviewerVars = @{
         LOG_PATH              = $p.LogPath
@@ -108,32 +145,31 @@ while (-not $finished) {
         -IsFirst $isFirstReviewer
     $isFirstReviewer = $false
 
-    # ── 3. 判定 ──────────────────────────────
+    # --- 3. Decision ---
     if (Test-Path $p.GoPath) {
-        Write-Host "`n[APPROVED] $($p.GoPath)" -ForegroundColor Green
+        Write-Host "[APPROVED] $($p.GoPath)" -ForegroundColor Green
         if (Test-Path $p.LogPath) { Remove-Item $p.LogPath }
 
-        # cycle_complete.md が存在すれば全イテレーション完了
         if (Test-Path $p.CycleCompletePath) {
-            Write-Host "[Phase 3] 全イテレーション完了（cycle_complete.md 検出）" -ForegroundColor Cyan
+            Write-Host "[Phase 3] All iterations complete (cycle_complete.md found)." -ForegroundColor Cyan
             $finished = $true
         } else {
-            Write-Host "[Phase 3] イテレーション承認。次のイテレーションへ継続。" -ForegroundColor Green
+            Write-Host "[Phase 3] Iteration approved. Continuing to next." -ForegroundColor Green
             $iteration++
         }
     } elseif (Test-Path $p.NgPath) {
-        Write-Host "`n[REJECTED] 次イテレーションで対応します。" -ForegroundColor Red
+        Write-Host "[REJECTED] Addressing issues in next iteration." -ForegroundColor Red
         $iteration++
     } else {
-        Write-Host "`n[ERROR] go.md も ng.md も生成されませんでした。" -ForegroundColor DarkYellow
+        Write-Host "[ERROR] No go.md or ng.md generated." -ForegroundColor DarkYellow
         $finished = $true
     }
 
     if ($iteration -gt $MaxIterations) {
-        Write-Host "`n[LIMIT] 最大イテレーション数 ($MaxIterations) に到達。" -ForegroundColor DarkYellow
+        Write-Host "[LIMIT] Max iterations reached ($MaxIterations)." -ForegroundColor DarkYellow
         $finished = $true
     }
 }
 
-Write-Host "`n[Phase 3] 完了。次のステップ:" -ForegroundColor Cyan
-Write-Host "  .\airdp_phase4.ps1 -ProjectDir `"$ProjectDir`" -CycleId $CycleId" -ForegroundColor DarkGray
+Write-Host "`n[Phase 3] Done. Next step:" -ForegroundColor Cyan
+Write-Host "  .\airdp_phase4.ps1 -ProjectDir $ProjectDir -CycleId $CycleId" -ForegroundColor DarkGray

@@ -1,0 +1,167 @@
+{
+  "iteration": 1,
+  "hypothesis_id": "H28",
+  "timestamp": "2026-02-25T08:09:52.857104",
+  "task_name": "SSoT への PDG 崩壊幅データの統合と TSI 指数との対数線形相関の初期検証",
+  "data_sources": {
+    "description": "PDG 2024 Lifetimes (Integrated) and KnotInfo Invariants",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "tsi_formula": "n + u + |s|",
+    "original_6_r2": 0.9128510251696091,
+    "all_12_r2": 0.02466024726228644,
+    "all_12_fpr": 0.6228,
+    "model_A": -2.4362991854639784,
+    "model_B": -21.10717845611173,
+    "particle_details": [
+      {
+        "name": "Up",
+        "sector": "quarks",
+        "topology": "L9n1{1}",
+        "lifetime_s": 1e+36,
+        "ln_gamma": -82.89306334778564,
+        "n": 9.0,
+        "u": 3.0,
+        "s": 1.0,
+        "tsi": 13.0
+      },
+      {
+        "name": "Down",
+        "sector": "quarks",
+        "topology": "L8a18{0,1}",
+        "lifetime_s": 1e+36,
+        "ln_gamma": -82.89306334778564,
+        "n": 8.0,
+        "u": 4.0,
+        "s": 2.0,
+        "tsi": 14.0
+      },
+      {
+        "name": "Strange",
+        "sector": "quarks",
+        "topology": "L11n330{0,1}",
+        "lifetime_s": 1.238e-08,
+        "ln_gamma": 18.20718356968996,
+        "n": 11.0,
+        "u": 0.0,
+        "s": 4.0,
+        "tsi": 15.0
+      },
+      {
+        "name": "Charm",
+        "sector": "quarks",
+        "topology": "L11a362{0}",
+        "lifetime_s": 1.04e-12,
+        "ln_gamma": 27.591800402775267,
+        "n": 11.0,
+        "u": 0.0,
+        "s": -5.0,
+        "tsi": 16.0
+      },
+      {
+        "name": "Bottom",
+        "sector": "quarks",
+        "topology": "L11a528{0,1}",
+        "lifetime_s": 1.638e-12,
+        "ln_gamma": 27.13754513049767,
+        "n": 11.0,
+        "u": 0.0,
+        "s": -2.0,
+        "tsi": 13.0
+      },
+      {
+        "name": "Top",
+        "sector": "quarks",
+        "topology": "L11a225{1}",
+        "lifetime_s": 4.67e-25,
+        "ln_gamma": 56.023468253170336,
+        "n": 11.0,
+        "u": 0.0,
+        "s": -3.0,
+        "tsi": 14.0
+      },
+      {
+        "name": "Electron",
+        "sector": "leptons",
+        "topology": "3_1",
+        "lifetime_s": 1e+36,
+        "ln_gamma": -82.89306334778564,
+        "n": 3.0,
+        "u": 1.0,
+        "s": -2.0,
+        "tsi": 6.0
+      },
+      {
+        "name": "Muon",
+        "sector": "leptons",
+        "topology": "4_1",
+        "lifetime_s": 2.19698e-06,
+        "ln_gamma": 13.02842686792595,
+        "n": 4.0,
+        "u": 1.0,
+        "s": 0.0,
+        "tsi": 5.0
+      },
+      {
+        "name": "Tau",
+        "sector": "leptons",
+        "topology": "6_1",
+        "lifetime_s": 2.903e-13,
+        "ln_gamma": 28.8678615238801,
+        "n": 6.0,
+        "u": 1.0,
+        "s": 0.0,
+        "tsi": 7.0
+      },
+      {
+        "name": "W",
+        "sector": "bosons",
+        "topology": "L11n387{0,0}",
+        "lifetime_s": 3.16e-25,
+        "ln_gamma": 56.41405529725232,
+        "n": 11.0,
+        "u": 0.0,
+        "s": 0.0,
+        "tsi": 11.0
+      },
+      {
+        "name": "Z",
+        "sector": "bosons",
+        "topology": "L11a431{0,0}",
+        "lifetime_s": 2.64e-25,
+        "ln_gamma": 56.59384840769292,
+        "n": 11.0,
+        "u": 0.0,
+        "s": -2.0,
+        "tsi": 13.0
+      },
+      {
+        "name": "Higgs",
+        "sector": "bosons",
+        "topology": "L11a55{0}",
+        "lifetime_s": 1.62e-22,
+        "ln_gamma": 50.17444589662471,
+        "n": 11.0,
+        "u": 0.0,
+        "s": -1.0,
+        "tsi": 12.0
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "topology_assignments",
+      "parameters",
+      "constants"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 12.929871082305908
+  },
+  "notes": "Original 6 particles R2 = 0.9129 (Matches Cycle 10). Expanded 12 particles R2 = 0.0247. SSoT metadata typo for TSI formula was corrected to 'n + u + |s|' to maintain historical consistency."
+}

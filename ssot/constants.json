@@ -174,10 +174,12 @@
 
   "dark_matter_candidates": {
     "dm_candidates_top10": ["12a_4", "12a_125", "12a_268", "12a_273", "12a_341", "12a_427", "12a_435", "12a_458", "12a_462", "12a_465"],
+    "top_dm_candidates": ["12a_435", "12a_462", "12a_125"],
     "enrichment_ratio": 2.73,
+    "parity_constraint": "applied",
     "symmetry_constraint": "amphicheiral",
     "tsi_threshold": 24,
-    "validated_by": "cycle_11_h27",
+    "validated_by": "cycle_12_h30",
     "last_updated": "2026-02-25"
   }
 }

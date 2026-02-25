@@ -1,0 +1,151 @@
+{
+  "iteration": 9,
+  "hypothesis_id": "H28",
+  "timestamp": "2026-02-25T10:11:58.565581",
+  "task_name": "全 12 粒子へのモデル拡張と Bonferroni 補正下での有意性評価",
+  "data_sources": {
+    "description": "PDG Lifetimes and KnotInfo Invariants via SSoT",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "tsi_formula": "n * u / |s|",
+    "r2_observed": 0.0640819439872472,
+    "fpr": 0.431,
+    "bonferroni_threshold": 0.016666666666666666,
+    "is_significant": false,
+    "model_slope_A": -0.02829823448763917,
+    "model_intercept_B": 3.3876668402023054,
+    "particle_results": [
+      {
+        "name": "Up",
+        "tau": 1e+30,
+        "is_stable": true,
+        "ln_gamma": -69.07755278982137,
+        "n": 9.0,
+        "u": 3.0,
+        "s": 1.0,
+        "tsi": 27.0
+      },
+      {
+        "name": "Down",
+        "tau": 1e+30,
+        "is_stable": true,
+        "ln_gamma": -69.07755278982137,
+        "n": 8.0,
+        "u": 4.0,
+        "s": 2.0,
+        "tsi": 16.0
+      },
+      {
+        "name": "Strange",
+        "tau": 1.238e-08,
+        "is_stable": false,
+        "ln_gamma": 18.20718356968996,
+        "n": 11.0,
+        "u": 0.0,
+        "s": 4.0,
+        "tsi": 0.0
+      },
+      {
+        "name": "Charm",
+        "tau": 1.04e-12,
+        "is_stable": false,
+        "ln_gamma": 27.591800402775267,
+        "n": 11.0,
+        "u": 0.0,
+        "s": -5.0,
+        "tsi": 0.0
+      },
+      {
+        "name": "Bottom",
+        "tau": 1.638e-12,
+        "is_stable": false,
+        "ln_gamma": 27.13754513049767,
+        "n": 11.0,
+        "u": 0.0,
+        "s": -2.0,
+        "tsi": 0.0
+      },
+      {
+        "name": "Top",
+        "tau": 4.67e-25,
+        "is_stable": false,
+        "ln_gamma": 56.023468253170336,
+        "n": 11.0,
+        "u": 0.0,
+        "s": -3.0,
+        "tsi": 0.0
+      },
+      {
+        "name": "Electron",
+        "tau": 1e+30,
+        "is_stable": true,
+        "ln_gamma": -69.07755278982137,
+        "n": 3.0,
+        "u": 1.0,
+        "s": -2.0,
+        "tsi": 1.5
+      },
+      {
+        "name": "Muon",
+        "tau": 2.19698e-06,
+        "is_stable": false,
+        "ln_gamma": 13.02842686792595,
+        "n": 4.0,
+        "u": 1.0,
+        "s": 0.0,
+        "tsi": 1000.0
+      },
+      {
+        "name": "Tau",
+        "tau": 2.903e-13,
+        "is_stable": false,
+        "ln_gamma": 28.8678615238801,
+        "n": 6.0,
+        "u": 1.0,
+        "s": 0.0,
+        "tsi": 1000.0
+      },
+      {
+        "name": "W",
+        "tau": 3.16e-25,
+        "is_stable": false,
+        "ln_gamma": 56.41405529725232,
+        "n": 11.0,
+        "u": 0.0,
+        "s": 0.0,
+        "tsi": 1000.0
+      },
+      {
+        "name": "Z",
+        "tau": 2.64e-25,
+        "is_stable": false,
+        "ln_gamma": 56.59384840769292,
+        "n": 11.0,
+        "u": 0.0,
+        "s": -2.0,
+        "tsi": 0.0
+      },
+      {
+        "name": "Higgs",
+        "tau": 1.62e-22,
+        "is_stable": false,
+        "ln_gamma": 50.17444589662471,
+        "n": 11.0,
+        "u": 0.0,
+        "s": -1.0,
+        "tsi": 0.0
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "notes": "Stable lifetimes proxied by 1e30 s per universal model requirement."
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 10.883039951324463
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "H29",
+  "name": "Geometric Mass Torsion Correction",
+  "description": "Derives mass residuals from the Smallest Torsion (ST) of the knot manifold to refine the fermion mass formula.",
+  "status": "active",
+  "created_date": "2026-02-25",
+  "hypothesis": {
+    "H0": "Fermion mass residuals are uncorrelated with the Smallest Torsion (ST) of the knot manifold.",
+    "H1": "The fine structure of fermion masses is determined by the torsion energy of the manifold, following Delta ln m = alpha * ln ST + beta, reflecting non-trivial gauge holonomies."
+  },
+  "data_requirements": {
+    "description": "Fermion mass residuals and Smallest Torsion (ST) values from knot databases.",
+    "ssot_methods": ["get_mass_residuals", "get_topology_invariants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "9_FERMIONS",
+    "max_free_parameters": 2,
+    "derivation_requirement": "FIRST_PRINCIPLES (Torsion energy contribution)",
+    "notes": "ST must follow standard mathematical definitions without arbitrary tuning."
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 4,
+    "residual_reduction_min": 0.1,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "Immediate MODIFY"
+  },
+  "test_method": "Linear regression on residuals and significance testing.",
+  "priority": "medium",
+  "max_iterations": 4
+}

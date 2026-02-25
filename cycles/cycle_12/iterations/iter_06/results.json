@@ -1,0 +1,98 @@
+{
+  "iteration": 6,
+  "hypothesis_id": "H30",
+  "timestamp": "2026-02-25T09:28:31.302287",
+  "task_name": "Top 10 暗黒物質候補の Jones/Homfly 多項式パリティ特性の分析",
+  "data_sources": {
+    "description": "KnotInfo Jones and HOMFLY vectors for Top 10 DM candidates.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "candidates_found": 10,
+    "symmetry_analysis": [
+      {
+        "name": "12a_4",
+        "symmetry_type": "negative amphicheiral",
+        "jones_symmetry": "Fully Symmetric",
+        "homfly_symmetry": "All a-sub-vectors fully symmetric",
+        "is_fully_dual": true
+      },
+      {
+        "name": "12a_125",
+        "symmetry_type": "negative amphicheiral",
+        "jones_symmetry": "Fully Symmetric",
+        "homfly_symmetry": "All a-sub-vectors fully symmetric",
+        "is_fully_dual": true
+      },
+      {
+        "name": "12a_268",
+        "symmetry_type": "negative amphicheiral",
+        "jones_symmetry": "Fully Symmetric",
+        "homfly_symmetry": "All a-sub-vectors fully symmetric",
+        "is_fully_dual": true
+      },
+      {
+        "name": "12a_273",
+        "symmetry_type": "negative amphicheiral",
+        "jones_symmetry": "Fully Symmetric",
+        "homfly_symmetry": "All a-sub-vectors fully symmetric",
+        "is_fully_dual": true
+      },
+      {
+        "name": "12a_341",
+        "symmetry_type": "negative amphicheiral",
+        "jones_symmetry": "Fully Symmetric",
+        "homfly_symmetry": "All a-sub-vectors fully symmetric",
+        "is_fully_dual": true
+      },
+      {
+        "name": "12a_427",
+        "symmetry_type": "positive amphicheiral",
+        "jones_symmetry": "Fully Symmetric",
+        "homfly_symmetry": "All a-sub-vectors fully symmetric",
+        "is_fully_dual": true
+      },
+      {
+        "name": "12a_435",
+        "symmetry_type": "fully amphicheiral",
+        "jones_symmetry": "Fully Symmetric",
+        "homfly_symmetry": "All a-sub-vectors fully symmetric",
+        "is_fully_dual": true
+      },
+      {
+        "name": "12a_458",
+        "symmetry_type": "negative amphicheiral",
+        "jones_symmetry": "Fully Symmetric",
+        "homfly_symmetry": "All a-sub-vectors fully symmetric",
+        "is_fully_dual": true
+      },
+      {
+        "name": "12a_462",
+        "symmetry_type": "negative amphicheiral",
+        "jones_symmetry": "Fully Symmetric",
+        "homfly_symmetry": "All a-sub-vectors fully symmetric",
+        "is_fully_dual": true
+      },
+      {
+        "name": "12a_465",
+        "symmetry_type": "negative amphicheiral",
+        "jones_symmetry": "Fully Symmetric",
+        "homfly_symmetry": "All a-sub-vectors fully symmetric",
+        "is_fully_dual": true
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "dark_matter_candidates"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.433436393737793
+  },
+  "notes": "Refined HOMFLY analysis based on internal sub-vector structure. All candidates confirmed fully symmetric."
+}

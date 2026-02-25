@@ -5,6 +5,24 @@
 
 ---
 
+### [NEG-20260225-01] H28: Decay Width Prediction via TSI
+- **仮説:** 粒子の崩壊幅 $\Gamma$ は TSI 指数 ($n \cdot u / |s|$) と対数線形相関 ($\ln(\Gamma) = -A \cdot TSI + B$) を持つ。
+- **ステータス:** CLOSED
+- **閉鎖理由:** STATISTICAL_REJECTION
+- **証拠:** Cycle 12, Iter 09 (p=0.4310, FPR=0.4310). 公式定義の遵守下では安定粒子と不安定粒子の階層を正しく記述できないことが判明。
+- **閉鎖バージョン:** Cycle 12, Iteration 09
+- **再開条件:** TSI 指数の幾何学的定義の根本 radical な再定義、または $s=0$ 粒子を自然に扱う正則化手法の確立。
+
+### [NEG-20260225-02] H29: Fermion Mass Correction via Smallest Torsion
+- **仮説:** フェルミオン質量の予測残差 $\Delta \ln m$ は結び目多様体の Smallest Torsion (ST) と相関する。
+- **ステータス:** CLOSED
+- **閉鎖理由:** BONFERRONI_FAILURE
+- **証拠:** Cycle 12, Iter 10 (p=0.0588 > 0.0167). 削減率 25% を達成したが、統計的に有意な予測モデルとは認められない。
+- **閉鎖バージョン:** Cycle 12, Iteration 10
+- **再開条件:** なし（現在のフェルミオン数では統計的限界）。
+
+---
+
 ### [NEG-20260222-01] Jones 多項式評価値によるアクシオン抑制因子 ST の説明
 - **仮説:** Jones 多項式の複素評価値 $|J(e^{2\pi i/5})|$ は、双曲体積や交差数とは独立にアクシオン抑制因子 $ST$ を説明する有意な説明変数である。
 - **ステータス:** CLOSED（STATISTICAL_REJECTION）

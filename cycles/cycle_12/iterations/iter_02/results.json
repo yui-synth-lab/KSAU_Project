@@ -1,0 +1,50 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H28",
+  "timestamp": "2026-02-25T08:14:51.242422",
+  "task_name": "全 12 粒子（ボソン含む）へのモデル拡張と Bonferroni 補正下での有意性評価",
+  "data_sources": {
+    "description": "PDG 2024 Lifetimes (Integrated) and KnotInfo Invariants via SSoT",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "tsi_formula": "n * u / |s|",
+    "r2_observed": 0.5474078129396909,
+    "fpr": 0.0124,
+    "bonferroni_threshold": 0.016666666666666666,
+    "is_significant": true,
+    "model_slope_A": 4.724454292939728,
+    "model_intercept_B": 21.920813072545762,
+    "particles_analyzed": [
+      "Up",
+      "Down",
+      "Strange",
+      "Charm",
+      "Bottom",
+      "Top",
+      "Electron",
+      "Z",
+      "Higgs"
+    ],
+    "skipped_particles": [
+      "Muon",
+      "Tau",
+      "W"
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "topology_assignments",
+      "parameters",
+      "constants"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 12.6760995388031
+  },
+  "notes": "Using the mandated formula n * u / |s|. FPR = 0.0124, R2 = 0.5474. Results indicate if the universal prediction hypothesis survives under strict constraints."
+}

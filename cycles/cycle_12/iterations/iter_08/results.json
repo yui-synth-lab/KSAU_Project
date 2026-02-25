@@ -1,0 +1,83 @@
+{
+  "iteration": 8,
+  "hypothesis_id": "H30",
+  "timestamp": "2026-02-25T09:57:44.358999",
+  "task_name": "暗黒物質候補の最終選定・FPR検証・物理特性評価",
+  "data_sources": {
+    "description": "KnotInfo invariants and SSoT mass laws.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "fpr_test": {
+      "pool_size": 60,
+      "target_successes": 1,
+      "fpr": 0.0,
+      "is_significant": true
+    },
+    "top_3_candidates": [
+      "12a_435",
+      "12a_462",
+      "12a_125"
+    ],
+    "final_summary": [
+      {
+        "name": "12a_435",
+        "symmetry": "fully amphicheiral",
+        "predicted_mass_gev": 17094.110118214285,
+        "determinant": 225,
+        "tsi_stability": null,
+        "invariants": {
+          "n": 12,
+          "u": 2,
+          "s": 0
+        }
+      },
+      {
+        "name": "12a_462",
+        "symmetry": "negative amphicheiral",
+        "predicted_mass_gev": 689.1307122367779,
+        "determinant": 157,
+        "tsi_stability": null,
+        "invariants": {
+          "n": 12,
+          "u": 2,
+          "s": 0
+        }
+      },
+      {
+        "name": "12a_125",
+        "symmetry": "negative amphicheiral",
+        "predicted_mass_gev": 4947.914690870455,
+        "determinant": 181,
+        "tsi_stability": null,
+        "invariants": {
+          "n": 12,
+          "u": 2,
+          "s": 0
+        }
+      }
+    ],
+    "mass_formula": {
+      "slope": 1.3085222773960272,
+      "intercept": -7.915965594177219,
+      "formula": "ln(m) = (10/7 * G) * V - (7 + G)"
+    },
+    "tsi_formula_used": "n * u / |s|"
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "dimensions",
+      "mathematical_constants",
+      "dark_matter_candidates",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.4292449951171875
+  },
+  "notes": "Addressed MODIFY issues: absolute paths removed, TSI formula corrected, magic numbers replaced by SSOT constants."
+}

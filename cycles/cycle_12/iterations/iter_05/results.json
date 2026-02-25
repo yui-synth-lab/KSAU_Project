@@ -1,0 +1,99 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H30",
+  "timestamp": "2026-02-25T08:31:24.142682",
+  "task_name": "Top 10 暗黒物質候補の Jones/Homfly 多項式パリティ特性の分析",
+  "data_sources": {
+    "description": "KnotInfo data for Top 10 DM candidates (Cycle 11 H27 results).",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "candidates_found": 10,
+    "analysis": [
+      {
+        "name": "12a_4",
+        "symmetry": "negative amphicheiral",
+        "is_amphicheiral": false,
+        "jones_vector": "[-6, 6, 1, -4, 10, -18, 27, -33, 35, -33, 27, -18, 10, -4, 1]",
+        "homfly_vector": "[0, 4, [-2, 2, 2, -5, 7, -5, 2], [-2, 2, 2, -11, 15, -11, 2], [-2, 2, 1, -7, 13, -7, 1], [-1, 1, -2, 5, -2], [0, 0, 1]]"
+      },
+      {
+        "name": "12a_125",
+        "symmetry": "negative amphicheiral",
+        "is_amphicheiral": false,
+        "jones_vector": "[-6, 6, 1, -3, 8, -15, 22, -27, 29, -27, 22, -15, 8, -3, 1]",
+        "homfly_vector": "[0, 3, [-3, 3, 1, -1, 0, 1, 0, -1, 1], [-2, 2, -3, 1, -1, 1, -3], [-1, 1, 3, 0, 3], [0, 0, -1]]"
+      },
+      {
+        "name": "12a_268",
+        "symmetry": "negative amphicheiral",
+        "is_amphicheiral": false,
+        "jones_vector": "[-6, 6, 1, -5, 12, -23, 34, -41, 45, -41, 34, -23, 12, -5, 1]",
+        "homfly_vector": "[0, 4, [-1, 1, -3, 7, -3], [-2, 2, 1, -6, 13, -6, 1], [-2, 2, 1, -5, 10, -5, 1], [-1, 1, -2, 4, -2], [0, 0, 1]]"
+      },
+      {
+        "name": "12a_273",
+        "symmetry": "negative amphicheiral",
+        "is_amphicheiral": false,
+        "jones_vector": "[-6, 6, 1, -4, 9, -17, 25, -30, 33, -30, 25, -17, 9, -4, 1]",
+        "homfly_vector": "[0, 3, [-1, 1, -1, 3, -1], [-2, 2, 1, -1, 1, -1, 1], [-2, 2, 1, -1, -3, -1, 1], [-1, 1, -1, -2, -1]]"
+      },
+      {
+        "name": "12a_341",
+        "symmetry": "negative amphicheiral",
+        "is_amphicheiral": false,
+        "jones_vector": "[-6, 6, 1, -4, 10, -19, 28, -34, 37, -34, 28, -19, 10, -4, 1]",
+        "homfly_vector": "[0, 4, [-2, 2, 1, -3, 5, -3, 1], [-2, 2, 2, -7, 9, -7, 2], [-2, 2, 1, -6, 8, -6, 1], [-1, 1, -2, 4, -2], [0, 0, 1]]"
+      },
+      {
+        "name": "12a_427",
+        "symmetry": "positive amphicheiral",
+        "is_amphicheiral": false,
+        "jones_vector": "[-6, 6, 1, -4, 10, -19, 27, -33, 37, -33, 27, -19, 10, -4, 1]",
+        "homfly_vector": "[0, 4, [-2, 2, 1, -4, 7, -4, 1], [-2, 2, 2, -7, 10, -7, 2], [-2, 2, 1, -6, 8, -6, 1], [-1, 1, -2, 4, -2], [0, 0, 1]]"
+      },
+      {
+        "name": "12a_435",
+        "symmetry": "fully amphicheiral",
+        "is_amphicheiral": false,
+        "jones_vector": "[-6, 6, 1, -4, 10, -19, 27, -33, 37, -33, 27, -19, 10, -4, 1]",
+        "homfly_vector": "[0, 4, [-2, 2, 1, -4, 7, -4, 1], [-2, 2, 2, -7, 10, -7, 2], [-2, 2, 1, -6, 8, -6, 1], [-1, 1, -2, 4, -2], [0, 0, 1]]"
+      },
+      {
+        "name": "12a_458",
+        "symmetry": "negative amphicheiral",
+        "is_amphicheiral": false,
+        "jones_vector": "[-6, 6, 1, -5, 13, -24, 35, -43, 47, -43, 35, -24, 13, -5, 1]",
+        "homfly_vector": "[0, 4, [0, 0, 1], [-2, 2, 1, -2, 2, -2, 1], [-2, 2, 1, -4, 4, -4, 1], [-1, 1, -2, 3, -2], [0, 0, 1]]"
+      },
+      {
+        "name": "12a_462",
+        "symmetry": "negative amphicheiral",
+        "is_amphicheiral": false,
+        "jones_vector": "[-6, 6, 1, -3, 7, -13, 19, -23, 25, -23, 19, -13, 7, -3, 1]",
+        "homfly_vector": "[0, 4, [-2, 2, 2, -5, 7, -5, 2], [-2, 2, 3, -11, 13, -11, 3], [-2, 2, 1, -8, 11, -8, 1], [-1, 1, -2, 5, -2], [0, 0, 1]]"
+      },
+      {
+        "name": "12a_465",
+        "symmetry": "negative amphicheiral",
+        "is_amphicheiral": false,
+        "jones_vector": "[-6, 6, 1, -4, 11, -20, 29, -36, 39, -36, 29, -20, 11, -4, 1]",
+        "homfly_vector": "[0, 4, [-2, 2, 2, -4, 5, -4, 2], [-2, 2, 2, -8, 8, -8, 2], [-2, 2, 1, -6, 8, -6, 1], [-1, 1, -2, 4, -2], [0, 0, 1]]"
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "dark_matter_candidates",
+      "analysis_parameters"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.3410396575927734
+  },
+  "notes": "H28/H29 having been rejected, research shifted to H30. Absolute paths removed."
+}

@@ -6,6 +6,18 @@
   "entries": [
     {
       "date": "2026-02-25",
+      "cycle": "cycle_12",
+      "iteration": "iter_08",
+      "judge_verdict": "H30 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "update",
+      "key": "dark_matter_candidates",
+      "old_value": "{\"dm_candidates_top10\": [...]}",
+      "new_value": "{\"dm_candidates_top10\": [...], \"top_dm_candidates\": [\"12a_435\", \"12a_462\", \"12a_125\"], \"parity_constraint\": \"applied\"}",
+      "reason": "H30 ACCEPT に基づき、パリティ制約による絞り込みで Top 3 候補を特定し SSoT を更新。"
+    },
+    {
+      "date": "2026-02-25",
       "cycle": "cycle_11",
       "iteration": "iter_08",
       "judge_verdict": "H25 ACCEPT",
