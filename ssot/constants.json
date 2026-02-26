@@ -176,7 +176,7 @@
   },
 
   "scaling_laws": {
-    "boson_scaling": { "A": 0.39256, "C": 5.5414 },
+    "boson_scaling": { "A": 0.39256, "C": 5.5414, "C_theoretical": 5.5413980927 },
     "boundary_ansatz": { "cl_intercept": -2.38, "selection_principle": "minimal_determinant" }
   },
 
@@ -184,7 +184,8 @@
     "a": -0.55,
     "b": -0.825,
     "c": 2.75,
-    "formula": "V_eff = V + a*n + b*ln_det + c"
+    "formula": "V_eff = V + a*n + b*ln_det + c",
+    "lepton_correction": {"alpha": 2.5, "term": "alpha * ln(det)"}
   },
 
   "v16_derivation": {
@@ -262,7 +263,13 @@
       },
       "intercept": -18.743,
       "p_value": 0.00611,
-      "r2": 0.8015
+      "r2": 0.8015,
+      "refined_tsi": {
+        "w_s": 1.5,
+        "w_n": 1.0,
+        "w_det": 5.5414,
+        "w_u": 9.0
+      }
     }
   },
 

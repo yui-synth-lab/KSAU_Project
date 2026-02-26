@@ -6,6 +6,18 @@
   "entries": [
     {
       "date": "2026-02-26",
+      "cycle": "cycle_17",
+      "iteration": "iter_02/04/06",
+      "judge_verdict": "H41, H42, H43 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "update/add",
+      "key": "effective_volume_model.lepton_correction, scaling_laws.boson_scaling.C_theoretical, theoretical_models.refined_tsi",
+      "old_value": "null or old values",
+      "new_value": "alpha=2.5, C=5.541398, w_s=1.5 etc.",
+      "reason": "Cycle 17 の全仮説（H41, H42, H43）の ACCEPT 判定に基づき、レプトン質量逆転解消、ボソン切片の幾何学的導出、崩壊幅指標の正則化を統合。"
+    },
+    {
+      "date": "2026-02-26",
       "cycle": "cycle_16",
       "iteration": "iter_02",
       "judge_verdict": "H39 ACCEPT",
