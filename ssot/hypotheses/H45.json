@@ -1,0 +1,36 @@
+{
+  "id": "H45",
+  "name": "Linear ST Correction Refinement",
+  "description": "Cycle 17の改良されたV_effをベースに、ST（Smallest Torsion）による質量残差補正を再検証する。",
+  "status": "active",
+  "created_date": "2026-02-26",
+  "hypothesis": {
+    "H0": "ST項は質量残差を有意に説明せず、過学習をもたらす。",
+    "H1": "ln(m) = kappa*V_eff + A*ln(ST) + B が、Cycle 17の基底モデルを有意に改善する。"
+  },
+  "data_requirements": {
+    "description": "フェルミオン9粒子の質量、V_eff、およびSTデータ",
+    "ssot_methods": ["get_particle_data", "get_topology_data"]
+  },
+  "physical_constraints": {
+    "particle_scope": "FERMIONS_9",
+    "max_free_parameters": 1,
+    "derivation_requirement": "GEOMETRIC_JUSTIFICATION",
+    "notes": "ST項の係数Aが、先行研究（アキシオン等）の次元解析と整合することを推奨。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY",
+    "overfitting_criteria": "LOO-MAE > Training MAE * 1.5"
+  },
+  "test_method": "重回帰分析およびLOO-CVによる統計的評価",
+  "priority": "medium",
+  "max_iterations": 5
+}

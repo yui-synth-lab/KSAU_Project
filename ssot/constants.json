@@ -9,6 +9,7 @@
   "mathematical_constants": {
     "pi":        3.141592653589793,
     "kappa":     0.1308996938995747,
+    "kappa_theory": 0.1308996938995747,
     "kappa_formula": "pi / 24",
     "k_resonance": 24,
     "G_catalan": 0.915965594177219

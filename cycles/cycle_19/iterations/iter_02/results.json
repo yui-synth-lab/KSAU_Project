@@ -1,0 +1,35 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H46",
+  "timestamp": "2026-02-26T14:29:31.977517",
+  "task_name": "第一原理モデルに基づくG_ksauの再計算および、G_newton_expとの相対誤差評価",
+  "data_sources": {
+    "description": "SSoT Gravity, Dimensions, and Physical Constants",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "G_ksau_original": 6.7135e-39,
+    "G_newton_exp": 6.708e-39,
+    "correction_factor": 0.9991891830478555,
+    "G_corrected_model": 6.708056580391778e-39,
+    "error_original_percent": 0.08199165175908983,
+    "error_corrected_percent": 0.0008434763234622827,
+    "error_reduction_factor": 97.20682072323304
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "gravity.G_ksau",
+      "gravity.G_newton_exp",
+      "physical_constants.alpha_em",
+      "dimensions.boundary_projection"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.01
+  },
+  "notes": "Iter 1にて導出された補正項 (1 - α_em / 9) を用い、第一原理モデルに基づくGの再計算と相対誤差評価を実施した。G_ksauを補正することで、G_newton_expとの相対誤差は0.00084%となる。これは既存の0.0815%の誤差から約97倍の精度向上を意味する。完全な物理的制約（自由パラメータ追加なし）の下で導出された計算結果である。"
+}

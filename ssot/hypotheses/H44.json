@@ -1,0 +1,35 @@
+{
+  "id": "H44",
+  "name": "Theoretical Derivation of kappa",
+  "description": "24-cell幾何学的対称性から質量勾配係数 kappa = pi/24 を理論的に導出する。",
+  "status": "active",
+  "created_date": "2026-02-26",
+  "hypothesis": {
+    "H0": "kappa は自由フィッティングパラメータである。",
+    "H1": "Pachner moveの共鳴条件 K(4)*kappa = pi において K(4)=24 が幾何学的に要請される。"
+  },
+  "data_requirements": {
+    "description": "SSoTの数学定数および24-cellの幾何学的指標",
+    "ssot_methods": ["get_mathematical_constants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_12_PARTICLES",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES",
+    "notes": "24-cell（D4格子）の対称性とバルク次元（10D）の整合性を必須条件とする。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.025,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "理論値固定下での質量予測精度（R2, MAE）の検証",
+  "priority": "high",
+  "max_iterations": 5
+}

@@ -59,3 +59,53 @@ Phase 3 実行中に思いついたアイデアをここに追記してくださ
 ### PMNS ニュートリノ混合の幾何学的導出
 - **状態:** v7.0 スコープ外として保留
 - **再開条件:** 混合角の導出精度向上のための理論的枠組みが整ってから
+
+
+## Priority: Critical (Major Revision対応必須)
+### H44: Novel Quantitative Predictions from KSAU
+**Description:**  
+現在は既知データへの後ろ向きフィットのみ。  
+κ = π/24 + V_effモデルから、**実験未確認の新規予測**を最低2個導出する。  
+候補:
+- アクシオン質量精密予測 (m_a = 12.4 ± 0.3 μeV など、実験検出可能レンジ)
+- Newton定数Gの理論偏差予測 (ΔG/G ≈ 10^{-5} レベル、MICROSCOPEやSTEP実験で検証可能)
+- トップクォーク崩壊幅の微小異常予測 (Γ_t の 0.1% レベル修正)
+**Success Criteria:** R² > 0.99 + FPR < 0.01 + 実験提案付き  
+**Test Method:** Monte Carlo + 既存実験誤差との比較  
+**Priority:** Critical / Suggested Cycle: 18 (Seed直後)
+
+### H45: First-Principles Topology Assignment Rule
+**Description:**  
+現行の粒子↔結び目割り当てがpost-hocに見える問題を解消。  
+24-cell対称性・Pachner Move安定性・署名/行列式の表現論から**事前ルール**を定義し、  
+全12粒子のトポロジーを**予測として固定**する。  
+例: 「安定粒子はDet ≡ 0 mod 24」「レプトンは3成分リンク必須」など。  
+**Success Criteria:** 割り当て成功率100% + 恣意性ゼロ証明  
+**Priority:** Critical / Suggested Cycle: 18
+
+### H46: TQFT Embedding into SM Gauge Group
+**Description:**  
+KSAU TQFT (24-cell + Pachner) が **SU(3)×SU(2)×U(1)** を自然に導出する埋め込みスキームを構築。  
+候補: 24-cellの対称群 → SU(2)_L × U(1)_Y の表現分解、またはBorromean ringsをカラー荷電として扱う。  
+**Success Criteria:** ゲージ群の次元・破れパターンがSMと一致 + Witten条件拡張  
+**Priority:** High / Suggested Cycle: 18-19
+
+### H47: Compactification Scheme via 24-cell
+**Description:**  
+24-cellを**コンパクト化多様体**として扱い、  
+余剰次元を7次元コンパクト (D_compact=7) と整合させる弦/M理論的埋め込み。  
+V_effモデルと弦理論の体積モジュライを接続。  
+**Success Criteria:** Gの導出と矛盾なし + Planckスケール再現  
+**Priority:** High / Suggested Cycle: 19
+
+## Priority: Medium (将来拡張)
+（必要に応じて後で追加）
+
+**Next Action Recommendation:**  
+Cycle 18 Seedでは **H44 + H45** を最優先で回す。  
+これで「Major Revision → Minor Revision → Accept」への道が開ける。
+
+---
+**Note for Orchestrator:**  
+このidea_queueは査読者レビュー（2026-02-26）の**直接対応版**です。  
+全仮説はSSoT/constants.json の新セクション "prediction_targets" と "assignment_rules" を参照必須。

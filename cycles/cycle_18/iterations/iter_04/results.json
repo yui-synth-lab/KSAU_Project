@@ -1,0 +1,162 @@
+{
+  "iteration": 4,
+  "hypothesis_id": "H45",
+  "timestamp": "2026-02-26T12:00:00Z",
+  "task_name": "ln(ST) linear correlation preliminary analysis for fermion 9 pts",
+  "data_sources": {
+    "description": "Fermion 9 masses, volumes, and determinants (as ST proxy) from SSOT.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "baseline_cycle17": {
+      "r2": 0.9158347409313244
+    },
+    "universal_h45": {
+      "slope_A": -0.8457149958579658,
+      "intercept_B": -0.863204281839471,
+      "r2": 0.8118182972253407,
+      "p_value_A": 0.14346968969509652
+    },
+    "sector_h45": {
+      "slope_A": -0.01591318879898362,
+      "r2": 0.8449261342317143,
+      "p_value_A": 0.9737134144592161
+    },
+    "improvement_over_baseline": -0.07090860669961019
+  },
+  "fermion_data": [
+    {
+      "name": "Up",
+      "y": 0.7701082216960737,
+      "x_no_det": 4.101728251444747,
+      "ln_st": 2.4849066497880004,
+      "residual_no_det": -3.3316200297486738,
+      "x_baseline": 1.4182217128780454,
+      "y_base": 1.1476083448628775,
+      "y_h45": 1.137001152572386,
+      "sector_bin": 1,
+      "resid_centered": 1.0026483161521034,
+      "y_h45_sec": -0.22348973957318047
+    },
+    {
+      "name": "Down",
+      "y": 1.541159071680806,
+      "x_no_det": 6.416366959588168,
+      "ln_st": 2.995732273553991,
+      "residual_no_det": -4.875207887907362,
+      "x_baseline": 3.1812083492784895,
+      "y_base": 2.910594981263322,
+      "y_h45": 3.0196269704284093,
+      "sector_bin": 1,
+      "resid_centered": -0.5409395420065852,
+      "y_h45_sec": 2.0830201039758935
+    },
+    {
+      "name": "Strange",
+      "y": 4.536891345234797,
+      "x_no_det": 7.870136379572573,
+      "ln_st": 3.58351893845611,
+      "residual_no_det": -3.333245034337776,
+      "x_baseline": 4.000213739522895,
+      "y_base": 3.7296003715077273,
+      "y_h45": 3.976296393539751,
+      "sector_bin": 1,
+      "resid_centered": 1.0010233115630012,
+      "y_h45_sec": 3.5274359637881862
+    },
+    {
+      "name": "Charm",
+      "y": 7.146772179452637,
+      "x_no_det": 10.361370526900123,
+      "ln_st": 4.248495242049359,
+      "residual_no_det": -3.2145983474474855,
+      "x_baseline": 5.773325031476122,
+      "y_base": 5.502711663460954,
+      "y_h45": 5.90515010902829,
+      "sector_bin": 1,
+      "resid_centered": 1.1196699984532916,
+      "y_h45_sec": 6.0080882176498065
+    },
+    {
+      "name": "Bottom",
+      "y": 8.338066525518801,
+      "x_no_det": 15.520344934072952,
+      "ln_st": 4.564348191467836,
+      "residual_no_det": -7.182278408554151,
+      "x_baseline": 10.59120273988066,
+      "y_base": 10.320589371865493,
+      "y_h45": 10.797002940391947,
+      "sector_bin": 1,
+      "resid_centered": -2.8480100626533735,
+      "y_h45_sec": 11.162036397205823
+    },
+    {
+      "name": "Top",
+      "y": 12.059658627074638,
+      "x_no_det": 16.128318994483852,
+      "ln_st": 4.700480365792417,
+      "residual_no_det": -4.068660367409214,
+      "x_baseline": 11.052164605712548,
+      "y_base": 10.78155123769738,
+      "y_h45": 11.289847979557798,
+      "sector_bin": 1,
+      "resid_centered": 0.2656079784915635,
+      "y_h45_sec": 11.76784416062508
+    },
+    {
+      "name": "Electron",
+      "y": -0.6713856887784326,
+      "x_no_det": 2.879793265790643,
+      "ln_st": 1.0986122886681098,
+      "residual_no_det": -3.5511789545690755,
+      "x_baseline": 7.6973616778730305,
+      "y_base": -1.141346023387567,
+      "y_h45": 1.0874760967907113,
+      "sector_bin": 0,
+      "resid_centered": -1.8825763847068009,
+      "y_h45_sec": 1.242301414710685
+    },
+    {
+      "name": "Muon",
+      "y": 4.6602263917361695,
+      "x_no_det": 6.754118457043426,
+      "ln_st": 1.6094379124341003,
+      "residual_no_det": -2.093892065307257,
+      "x_baseline": 13.811728614991233,
+      "y_base": 4.973020913730636,
+      "y_h45": 4.529788397756097,
+      "sector_bin": 0,
+      "resid_centered": -0.4252894954449822,
+      "y_h45_sec": 5.1084977413691215
+    },
+    {
+      "name": "Tau",
+      "y": 7.482603040582787,
+      "x_no_det": 6.843339730293279,
+      "ln_st": 2.1972245773362196,
+      "residual_no_det": 0.6392633102895084,
+      "x_baseline": 16.478476554458055,
+      "y_base": 7.639768853197458,
+      "y_h45": 4.121909674132886,
+      "sector_bin": 0,
+      "resid_centered": 2.307865880151783,
+      "y_h45_sec": 5.188365454446862
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "effective_volume_model",
+      "particle_data",
+      "topology_constants"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.05
+  },
+  "notes": "H45 tested as both universal and sector-specific model. Residuals computed by removing det from V_eff."
+}

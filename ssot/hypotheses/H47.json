@@ -1,0 +1,35 @@
+{
+  "id": "H47",
+  "name": "Independent Regression Validation of κ via V_eff",
+  "description": "有効体積 V_eff とフェルミオン質量の純粋な回帰分析により、理論定数 κ = π/24 を再検証する。",
+  "status": "active",
+  "created_date": "2026-02-26",
+  "hypothesis": {
+    "H0": "全フェルミオン質量（9点）と有効体積 V_eff に対する単回帰分析（ln m_obs = κ_fit * V_eff + C）において得られる推定量 κ_fit の95%信頼区間は、理論値 π/24 を含まない。",
+    "H1": "V_eff を独立変数とする回帰推定量 κ_fit の95%ブートストラップ信頼区間は理論値 π/24 (約 0.1309) を厳密に含み、第一原理からの導出を統計的に支持する。"
+  },
+  "data_requirements": {
+    "description": "フェルミオン9個の観測質量 (m_obs) および effective_volume_model から算出される V_eff",
+    "ssot_methods": ["particle_data", "effective_volume_model"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_9_FERMIONS",
+    "max_free_parameters": 0,
+    "derivation_requirement": "STATISTICAL_VALIDATION (この仮説は回帰係数の検定であり、新たな補正項の導入を目的としない。κの固定値入力は厳禁。)",
+    "notes": "NEG-20260225-05 (H33) の教訓を踏まえ、単純体積 V ではなく有効体積 V_eff を使用して完全独立な回帰を行うこと。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 3,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY（物理的制約を満たさないモデルは誤差の大小によらず無効）"
+  },
+  "test_method": "ブートストラップ法（N=10000）によるκ推定量（κ_fit）の95%信頼区間の構築および、κ=π/24との等価性検定（One-Sample T-test または同等手法）",
+  "priority": "medium",
+  "max_iterations": 3
+}

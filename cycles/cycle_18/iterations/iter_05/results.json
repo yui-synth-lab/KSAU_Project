@@ -1,0 +1,71 @@
+{
+  "iteration": 6,
+  "hypothesis_id": "H45",
+  "timestamp": "2026-02-26T13:36:12.266534",
+  "task_name": "ST\u88dc\u6b63\u9805\u306e\u5e7e\u4f55\u5b66\u7684\u6b63\u5f53\u6027\uff08\u30c8\u30fc\u30b7\u30e7\u30f3\u306b\u3088\u308b\u4f53\u7a4d\u30b7\u30d5\u30c8\uff09\u306e\u5b9a\u5f0f\u5316\u3068\u7d71\u8a08\u30c6\u30b9\u30c8",
+  "data_sources": {
+    "description": "SSoT data for fermions",
+    "loaded_via_ssot": true
+  },
+  "baseline": {
+    "r2": 0.9158347409313244,
+    "mae": 140.52648599671573
+  },
+  "computed_values": {
+    "h45_candidates": [
+      {
+        "label": "Optimized_Universal",
+        "A": 2.8000000000000007,
+        "B": -11.67683570473356,
+        "R2": 0.605308876181825,
+        "MAE": 769.963075416127,
+        "LOO_MAE": 2059.3531306388513,
+        "FPR": 0.0001
+      },
+      {
+        "label": "TQFT_Pre-factor",
+        "A": -0.5,
+        "B": -1.5998250102333036,
+        "R2": -0.48819261137408176,
+        "MAE": 21106.43938040316,
+        "LOO_MAE": 47426.57922938102,
+        "FPR": 0.1166
+      },
+      {
+        "label": "Axion_Det_Exp",
+        "A": 2.0,
+        "B": -9.233924021218343,
+        "R2": 0.5442293718448161,
+        "MAE": 1104.0442441665234,
+        "LOO_MAE": 1748.568387095012,
+        "FPR": 0.0013
+      },
+      {
+        "label": "Lepton_alpha",
+        "A": 2.5,
+        "B": -10.76074382341535,
+        "R2": 0.5977049444584603,
+        "MAE": 799.2183848707552,
+        "LOO_MAE": 1207.968670441188,
+        "FPR": 0.0002
+      }
+    ],
+    "best_r2_found": 0.605308876181825
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "effective_volume_model",
+      "particle_data",
+      "topology_constants"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 29.489826202392578
+  },
+  "notes": "Tested various theoretically justified A values for the ST correction model."
+}

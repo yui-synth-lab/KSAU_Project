@@ -1,0 +1,35 @@
+{
+  "id": "H46",
+  "name": "10D Compactification Gravity Precision",
+  "description": "10次元バルクのコンパクト化幾何学を利用し、重力補正項と重力定数の予測精度を第一原理から向上させる。",
+  "status": "active",
+  "created_date": "2026-02-26",
+  "hypothesis": {
+    "H0": "10Dコンパクト化パラメータ（オイラー標数等）に基づく補正モデルは、現在のKSAU重力定数予測誤差（0.0815%）を有意に改善しない。",
+    "H1": "10次元バルクの幾何学的・位相的特徴（カラビ＝ヤウ多様体やD4格子から第一原理で導出される不変量）を組み込んだ非摂動モデルは、重力定数Gの実験値に対する相対誤差を恣意的なパラメータ追加なしに削減する。"
+  },
+  "data_requirements": {
+    "description": "G_newton_exp (6.708e-39), G_ksau, k_c, delta 等の現在の重力パラメータ、および次元設定 (bulk_total=10, bulk_compact=7)",
+    "ssot_methods": ["gravity", "dimensions"]
+  },
+  "physical_constraints": {
+    "particle_scope": "GRAVITY_SECTOR",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES (任意の多項式フィッティング禁止。補正項はコンパクト化空間の位相幾何学的性質から厳密に導出されること。)",
+    "notes": "既存の重力予測精度（誤差 0.0815%）をベースラインとし、それを悪化させないこと。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY（物理的制約を満たさないモデルは誤差の大小によらず無効）"
+  },
+  "test_method": "導出されたG理論値とG_newton_expの相対誤差評価、およびモンテカルロ法による代替コンパクト化パラメータ群との比較検定",
+  "priority": "high",
+  "max_iterations": 5
+}

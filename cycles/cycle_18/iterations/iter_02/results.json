@@ -1,0 +1,95 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H44",
+  "timestamp": "2026-02-26T10:17:56.700892",
+  "task_name": "Unified Mass Validation and Resonance Derivation (kappa = pi/24)",
+  "data_sources": {
+    "description": "SSOT Unified Data (Cycle 17 Final)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "kappa_theory": 0.1308996938995747,
+    "kappa_ssot": 0.1308996938995747,
+    "diff_kappa": 0.0,
+    "mae_pct": 111.445848524334,
+    "r2_unified": 0.9428472004482488,
+    "p_value_mc": 0.0001,
+    "fpr": 0.0001,
+    "bonferroni_threshold": 0.025,
+    "k_resonance_unique": false,
+    "better_k_found": [
+      23
+    ],
+    "intercepts": {
+      "quark": -0.27061336801516833,
+      "lepton": -8.838707701260597
+    }
+  },
+  "particle_results": {
+    "Electron": {
+      "pred": 0.31938882752389086,
+      "error_pct": 37.49729402663584
+    },
+    "Muon": {
+      "pred": 144.4626380237394,
+      "error_pct": 36.72405642981208
+    },
+    "Tau": {
+      "pred": 2079.263145992928,
+      "error_pct": 17.018963001751878
+    },
+    "Up": {
+      "pred": 3.150648626651044,
+      "error_pct": 45.863362344955725
+    },
+    "Down": {
+      "pred": 18.367723768042513,
+      "error_pct": 293.3131427846363
+    },
+    "Strange": {
+      "pred": 41.66245533256902,
+      "error_pct": 55.39351677455138
+    },
+    "Charm": {
+      "pred": 245.35635487425702,
+      "error_pct": 80.68060197840497
+    },
+    "Bottom": {
+      "pred": 30351.140434143752,
+      "error_pct": 626.1038381374109
+    },
+    "Top": {
+      "pred": 48124.71924473252,
+      "error_pct": 72.14359849228266
+    },
+    "W": {
+      "pred": 80377.00000000001,
+      "error_pct": 0.0
+    },
+    "Z": {
+      "pred": 91618.00005328562,
+      "error_pct": 0.4726551518151326
+    },
+    "Higgs": {
+      "pred": 34853.91938464043,
+      "error_pct": 72.13915316975188
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "k_resonance",
+      "effective_volume_model",
+      "particle_data",
+      "topology_assignments"
+    ],
+    "absolute_path_used": "E:\\Obsidian\\KSAU_Project\\ssot"
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.2094898223876953
+  }
+}

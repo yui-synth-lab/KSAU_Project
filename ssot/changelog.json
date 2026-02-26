@@ -6,6 +6,18 @@
   "entries": [
     {
       "date": "2026-02-26",
+      "cycle": "cycle_18",
+      "iteration": "iter_03/07",
+      "judge_verdict": "H44 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "update",
+      "key": "mathematical_constants.kappa_theory, mathematical_constants.k_resonance",
+      "old_value": "null",
+      "new_value": "0.1308996938995747, 24",
+      "reason": "H44 ACCEPT に基づき、理論定数 kappa=π/24 の統計的および幾何学的裏付け、ならびに24-cell由来の共鳴係数 k_resonance を統合。"
+    },
+    {
+      "date": "2026-02-26",
       "cycle": "cycle_17",
       "iteration": "iter_02/04/06",
       "judge_verdict": "H41, H42, H43 ACCEPT",
