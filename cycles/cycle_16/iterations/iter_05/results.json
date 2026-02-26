@@ -1,0 +1,134 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H40",
+  "timestamp": "2026-02-25T23:14:11Z",
+  "task_name": "理論予測値と実験値の偏差分析および物理的整合性の最終確認",
+  "model_parameters": {
+    "fixed_a": -0.55,
+    "fixed_b": -0.825,
+    "fixed_c": 2.75,
+    "fixed_kappa": 0.1308996938995747,
+    "fixed_multipliers": {
+      "quarks": 10,
+      "leptons": 20,
+      "bosons": 3
+    }
+  },
+  "computed_values": {
+    "global_r_squared": 0.2511323582946561,
+    "p_value_observed": 0.09697654727073075,
+    "fpr_mc": 0.095,
+    "slope_fit": 0.6863146784767931,
+    "intercept_fit": 3.7525590576201937
+  },
+  "deviation_analysis": [
+    {
+      "name": "Electron",
+      "sector": "leptons",
+      "obs_ln_m_corr": -0.6713856887784326,
+      "pred_ln_m_corr": 4.100493876452974,
+      "residual": -4.771879565231407,
+      "v_eff": 0.19364486184880914
+    },
+    {
+      "name": "Muon",
+      "sector": "leptons",
+      "obs_ln_m_corr": 4.6602263917361695,
+      "pred_ln_m_corr": 6.0022862959034935,
+      "residual": -1.342059904167324,
+      "v_eff": 1.2520969350418674
+    },
+    {
+      "name": "Tau",
+      "sector": "leptons",
+      "obs_ln_m_corr": 7.482603040582787,
+      "pred_ln_m_corr": 5.192224423407973,
+      "residual": 2.290378617174814,
+      "v_eff": 0.8012529524976189
+    },
+    {
+      "name": "Up",
+      "sector": "quarks",
+      "obs_ln_m_corr": 0.6392085277964991,
+      "pred_ln_m_corr": 4.725905436502897,
+      "residual": -4.086696908706398,
+      "v_eff": 1.0834415808230196
+    },
+    {
+      "name": "Down",
+      "sector": "quarks",
+      "obs_ln_m_corr": 1.6720587655803807,
+      "pred_ln_m_corr": 5.935869043022949,
+      "residual": -4.263810277442568,
+      "v_eff": 2.4302641622058254
+    },
+    {
+      "name": "Strange",
+      "sector": "quarks",
+      "obs_ln_m_corr": 4.536891345234797,
+      "pred_ln_m_corr": 6.497964464099299,
+      "residual": -1.961073118864502,
+      "v_eff": 3.0559381923320847
+    },
+    {
+      "name": "Charm",
+      "sector": "quarks",
+      "obs_ln_m_corr": 7.146772179452637,
+      "pred_ln_m_corr": 7.714876770339749,
+      "residual": -0.5681045908871116,
+      "v_eff": 4.410495440810866
+    },
+    {
+      "name": "Bottom",
+      "sector": "quarks",
+      "obs_ln_m_corr": 8.207166831619226,
+      "pred_ln_m_corr": 11.021456960723919,
+      "residual": -2.814290129104693,
+      "v_eff": 8.091082892834077
+    },
+    {
+      "name": "Top",
+      "sector": "quarks",
+      "obs_ln_m_corr": 12.190558320974214,
+      "pred_ln_m_corr": 11.337821855462392,
+      "residual": 0.8527364655118213,
+      "v_eff": 8.443231818549314
+    },
+    {
+      "name": "W",
+      "sector": "bosons",
+      "obs_ln_m_corr": 11.294483344589588,
+      "pred_ln_m_corr": 5.888297038793719,
+      "residual": 5.4061863057958695,
+      "v_eff": 7.924370963063774
+    },
+    {
+      "name": "Z",
+      "sector": "bosons",
+      "obs_ln_m_corr": 11.420667622042432,
+      "pred_ln_m_corr": 5.864170712351807,
+      "residual": 5.556496909690624,
+      "v_eff": 7.834853446220896
+    },
+    {
+      "name": "Higgs",
+      "sector": "bosons",
+      "obs_ln_m_corr": 11.736868696455003,
+      "pred_ln_m_corr": 6.034752500224124,
+      "residual": 5.70211619623088,
+      "v_eff": 8.467774421808048
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "no_fitting_of_abc": true,
+    "no_unauthorized_twists": true
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "n_trials": 10000,
+    "computation_time_sec": 3.4686996936798096
+  },
+  "notes": "Unified validation of H40 using strictly fixed SSoT parameters. Electron/Muon/Tau sector reversal observed as a significant structural deviation."
+}

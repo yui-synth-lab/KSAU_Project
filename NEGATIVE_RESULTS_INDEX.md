@@ -154,10 +154,10 @@
 - **閉鎖バージョン:** Cycle 15, Iteration 03
 - **再開条件:** 線形結合モデル以外の非摂動的な位相幾何学的障壁モデル、またはエントロピー的不変量の導入。
 
-### [NEG-20260226-02] H38: Linear Topological Torsion Correction for Mass Residuals
-- **仮説:** フェルミオン質量公式 $\ln(m) = \kappa V_{eff} + C$ ($\kappa = \pi/24$) の残差は、トポロジカル・トーション $\ln(ST)$ の線形項で補正される。
+### [NEG-20260226-03] H40: Holistic Mass Law Validation via V_eff (Fixed κ = π/24)
+- **仮説:** κ = π/24 固定モデルにより、全 12 粒子の質量を R² > 0.999 で統一的に説明できる。
 - **ステータス:** CLOSED
-- **閉鎖理由:** STATISTICAL_REJECTION (BONFERRONI_FAILURE)
-- **証拠:** Cycle 15, Iter 05 (p=0.0408, FPR=0.0445, LOO-MAE=2.8669). 
-- **閉鎖バージョン:** Cycle 15, Iteration 05
-- **再開条件:** $\kappa$ を含む全パラメータの第一原理的導出、またはフェルミオン以外のセクター（ボソン等）を含めた広域検証。
+- **閉鎖理由:** STATISTICAL_REJECTION (REJECT)
+- **証拠:** Cycle 16, Iter 05/06. 統計的有意性は p=0.0970 であり、目標値 0.01 に達せず棄却。FPR=0.0950, R²=0.2511, LOO-MAE=3.9255。
+- **閉鎖バージョン:** Cycle 16, Iteration 06
+- **再開条件:** レプトンセクターにおける $V_{eff}$ の逆転現象（Muon-Tau）を解消する幾何学的補正項の導入、またはボソンセクターの系統的シフト（約 +5.5 ln）を説明する物理モデルの提示。

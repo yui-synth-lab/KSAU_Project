@@ -1,0 +1,35 @@
+{
+  "id": "H42",
+  "name": "Boson Systematic Shift (Brunnian Scaling)",
+  "description": "ボソンセクター (C=3) の +5.5 ln シフトを、SSoT 定数 C_boson (5.5414) と Brunnian link の連結構造から説明する。",
+  "status": "active",
+  "created_date": "2026-02-26",
+  "hypothesis": {
+    "H0": "ボソン質量の +5.5 ln シフトは統計的逸脱であり、物理的根拠を持たない。",
+    "H1": "ボソン質量のスケーリングは Brunnian link (C=3) に特有のエネルギーオフセット C_boson ≈ 5.54 に支配される（導出元：Brunnian link の位相的凝縮）。"
+  },
+  "data_requirements": {
+    "description": "ボソンおよびフェルミオンの質量データ、SSoT のスケーリング定数。",
+    "ssot_methods": ["get_particle_data", "get_scaling_laws"]
+  },
+  "physical_constraints": {
+    "particle_scope": "BOSONS_AND_FERMIONS",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES (SSoT predefined constant C_boson)",
+    "notes": "自由パラメータの追加は禁止。定数 5.5414 の物理的解釈に集中すること。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "12 粒子統一モデルにおける R² 改善度の評価（ボソンシフト適用時）。",
+  "priority": "high",
+  "max_iterations": 5
+}

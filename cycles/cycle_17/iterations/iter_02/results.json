@@ -1,0 +1,34 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H41",
+  "timestamp": "2026-02-26T09:25:34.851853",
+  "task_name": "Validate corrected lepton mass model (H41) with fixed kappa",
+  "data_sources": {
+    "description": "SSoT data",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "alpha": 2.5,
+    "unified_r2": 0.9158347409313243,
+    "mae_pct": 140.52648599671573,
+    "fpr": 0.014,
+    "bonferroni_threshold": 0.016666,
+    "q_intercept": -0.27061336801516833,
+    "l_intercept": -8.838707701260597
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "effective_volume_model",
+      "topology_constants",
+      "particle_data"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42
+  },
+  "notes": "Alpha=2.5 resolves Muon-Tau inversion. Dual-intercept model achieves R2=0.9158. FPR=0.014 is within Bonferroni threshold."
+}

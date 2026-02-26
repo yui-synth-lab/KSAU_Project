@@ -1,0 +1,20 @@
+{
+  "iteration": 6,
+  "hypothesis_id": "H40",
+  "timestamp": "2026-02-25T23:18:05Z",
+  "task_name": "Negative Result Finalization and LOO-CV Audit",
+  "computed_values": {
+    "global_r_squared": 0.2511323582946561,
+    "loo_mae": 3.925533048237208,
+    "loo_rmse": 4.407254956948935,
+    "n_samples": 12
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.005604982376098633
+  },
+  "notes": "LOO-CV confirms the lack of predictive power for the fixed H40 model (LOO-MAE is high relative to the ln mass range)."
+}

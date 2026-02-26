@@ -1,0 +1,36 @@
+{
+  "id": "H43",
+  "name": "Refined TSI for Decay Widths",
+  "description": "TSI 定義にエントロピー項 (ln Det) または正則化を導入し、全粒子の崩壊幅を R² > 0.8 で説明する。",
+  "status": "active",
+  "created_date": "2026-02-26",
+  "hypothesis": {
+    "H0": "崩壊幅 Γ は静的トポロジカル不変量とは無相関である。",
+    "H1": "Refined TSI (n*u/|s| + エントロピー補正) は崩壊幅と高い指数相関を持つ（導出元：幾何学的安定性と位相的複雑性の競合）。"
+  },
+  "data_requirements": {
+    "description": "全粒子の崩壊幅データおよび結び目不変量データ。",
+    "ssot_methods": ["get_particle_data", "get_knotinfo_data"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_STABLE_AND_UNSTABLE_PARTICLES",
+    "max_free_parameters": 1,
+    "derivation_requirement": "FIRST_PRINCIPLES (Entropy-based extension of TSI)",
+    "notes": "カーブフィッティング用の多項式は禁止。エントロピー項 ln Det の導入を推奨。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "r_squared_minimum": 0.70,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "Refined TSI と ln(Γ) の対数線形回帰および Bonferroni 検定。",
+  "priority": "medium",
+  "max_iterations": 5
+}

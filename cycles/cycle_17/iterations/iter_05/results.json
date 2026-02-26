@@ -1,0 +1,21 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H43",
+  "timestamp": "2026-02-26T20:00:00Z",
+  "task_name": "TSI Refinement for Decay Widths",
+  "computed_values": {
+    "r2": 0.6398999766555085,
+    "p_value": 0.009637831574316628,
+    "slope": -17.538238309652915,
+    "intercept": -55.541007268961195
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false
+  },
+  "reproducibility": {
+    "random_seed": 42
+  },
+  "notes": "Refined TSI formula (|s|+1)*(u+1)/(n*ln(Det)) handles s=0 and boson sector, showing statistically significant correlation (p < 0.0166)."
+}

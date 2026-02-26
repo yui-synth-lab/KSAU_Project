@@ -1,0 +1,21 @@
+{
+  "iteration": 4,
+  "hypothesis_id": "H40",
+  "task_name": "Brute-Force Unified Mass Law Validation",
+  "best_r2": 0.9559818994471971,
+  "best_p": 4.143610128420035e-08,
+  "fpr": 0.0,
+  "best_params": {
+    "a": 0.0,
+    "b": 0.825,
+    "c": 5.0,
+    "nl": 20,
+    "nb": 10
+  },
+  "fitted_slope": 0.6973019358826639,
+  "fitted_intercept": -10.967436113491694,
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 4.093521595001221
+  }
+}

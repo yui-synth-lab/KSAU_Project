@@ -1,0 +1,35 @@
+{
+  "id": "H41",
+  "name": "Lepton Mass Inversion Correction",
+  "description": "レプトンセクターの Muon-Tau 質量逆転を、 Linking number/Torsion による追加のトポロジカル相で解消する。",
+  "status": "active",
+  "created_date": "2026-02-26",
+  "hypothesis": {
+    "H0": "レプトンの質量階層は、現行の V_eff モデル（Muon > Tau 逆転状態）における統計的ノイズである。",
+    "H1": "レプトン (C=2) は Linking number または Torsion による補正項 ΔV_lep を持ち、V_eff' = V_eff + ΔV_lep が質量順序と一致する（導出元：レプトン成分間のトポロジカル相関）。"
+  },
+  "data_requirements": {
+    "description": "レプトンの質量データおよび Linking number、Torsion 等の不変量データ。",
+    "ssot_methods": ["get_particle_data", "get_knotinfo_data"]
+  },
+  "physical_constraints": {
+    "particle_scope": "LEPTONS_AND_QUARKS",
+    "max_free_parameters": 1,
+    "derivation_requirement": "FIRST_PRINCIPLES (Topological invariant based)",
+    "notes": "補正項は不変量に基づく整数または半整数であること。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "V_eff' の順序整合性確認および 9 粒子フェルミオン回帰分析。",
+  "priority": "high",
+  "max_iterations": 5
+}

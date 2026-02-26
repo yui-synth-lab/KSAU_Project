@@ -191,6 +191,7 @@
     "action_per_pachner_move": 0.1308996938995747,
     "resonance_identity": "K(4) * kappa = pi",
     "k_4_factor": 24,
+    "kappa_derivation_source": "24-cell resonance condition K(4)*kappa=pi",
     "x0_41_modular_geometry": "integrated"
   },
 

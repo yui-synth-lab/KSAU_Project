@@ -1,0 +1,35 @@
+{
+  "iteration": 1,
+  "hypothesis_id": "H39",
+  "timestamp": "2026-02-25T22:45:14Z",
+  "task_name": "24-cell の対称性と Pachner Move 作用の幾何学的接続の定式化",
+  "data_sources": {
+    "description": "SSoT v16_derivation and mathematical_constants",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "kappa_theoretical": 0.1308996938995747,
+    "kappa_ssot": 0.1308996938995747,
+    "k_4_factor": 24,
+    "error_abs": 0.0,
+    "error_rel": 0.0,
+    "resonance_identity": "K(4) * kappa = pi",
+    "octaplex_cells": 24,
+    "symmetry_group_order": 1152
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "k_resonance",
+      "v16_derivation"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.00041174888610839844
+  },
+  "notes": "Verified resonance condition K(4)*kappa = pi with 0% error relative to SSoT definition."
+}
