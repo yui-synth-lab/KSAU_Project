@@ -49,6 +49,9 @@ function Resolve-AirdpPaths {
         SsotChangelog    = Join-Path $SsotDir  "changelog.json"
         NegResultsPath   = Join-Path $ProjectDir "NEGATIVE_RESULTS_INDEX.md"
         IdeaQueuePath    = Join-Path $ProjectDir "idea_queue.md"
+        # 仮説 JSON ディレクトリ
+        HypothesesDir      = Join-Path $SsotDir "hypotheses"
+        ProjectStatusPath  = Join-Path $SsotDir "project_status.json"
         # プロジェクト固有 SSoT ローダーの情報
         ProjectSsotLoader  = $ssotLoaderFile
         ProjectSsotModule  = $ssotLoaderModule

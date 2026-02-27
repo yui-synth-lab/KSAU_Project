@@ -21,12 +21,22 @@ Judge の最終判定を受けて、サイクル全体の報告書 cycle_report.
 4. {CONSTANTS_PATH} — 現在の物理定数・理論値 (SSoT 本体)
 5. {IDEA_QUEUE_PATH} — Phase 3 実行中に人間が記録したアイデア（あれば）
 
-### Step 2: SSoT の更新（ACCEPT 判定時のみ）
+### Step 2: SSoT の更新（**全判定完了後に必ず実行**）
 
-{VERDICT_PATH} の「SSoT 統合推奨」セクションを確認し、ACCEPT 判定を受けた仮説がある場合は以下の処理を実行してください。
+**⚠️ REJECT のみのサイクルでもステップ 3〜5 は必ず実行すること。**
 
-1. **本体の更新**: {CONSTANTS_PATH} (`constants.json`) の該当するキーの値を、Judge が推奨する値に更新または新規追加してください。
-2. **履歴の記録**: {SSOT_CHANGELOG} (`changelog.json`) に、今回の変更（日付、仮説ID、変更内容、根拠）を追記してください。
+{VERDICT_PATH} の判定を確認し、以下をすべて実行してください。
+
+1. **本体の更新（ACCEPT 判定がある場合のみ）**: {CONSTANTS_PATH} (`constants.json`) の該当するキーの値を、Judge が推奨する値に更新または新規追加してください。
+2. **変更履歴の記録（ACCEPT 判定がある場合のみ）**: {SSOT_CHANGELOG} (`changelog.json`) に、今回の変更（日付、仮説ID、変更内容、根拠）を追記してください。
+3. **仮説JSONの更新（ACCEPT・REJECT・MODIFY すべて対象）**: {HYPOTHESES_DIR} の該当する `H*.json` について、Judge の verdict に基づき以下のフィールドを更新してください。
+   - `"status"`: `"accepted"` / `"rejected"` / `"modified"`（verdict に対応する値）
+   - `"cycle"`: 本サイクルの番号（整数）
+   - `"verdict_date"`: 判定日（YYYY-MM-DD）
+   - `"verdict_summary"`: 主要メトリクスの1行要約（例: `"R²=0.95, p=0.001, FPR=0.01"`）
+   - `"key_metrics"`: 主要な統計指標のオブジェクト（例: `{"r2": 0.95, "p_value": 0.001, "fpr": 0.01}`）
+4. **プロジェクト状態の更新（常に実行）**: {PROJECT_STATUS} (`project_status.json`) の `summary` セクションの集計値（accepted/rejected/modified 件数、current_cycle）を最新の状態に更新してください。
+5. **否定的結果の記録（REJECT 判定がある場合のみ）**: {NEG_RESULTS_PATH} (`NEGATIVE_RESULTS_INDEX.md`) に、Judge が verdict.md の「NEGATIVE_RESULTS_INDEX への記載案」に示したエントリを追記してください。Judge の原文をそのまま転記し、Orchestrator が独自に改変・省略してはなりません。
 
 ### Step 3: cycle_report.md の生成
 

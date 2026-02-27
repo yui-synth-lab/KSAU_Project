@@ -43,6 +43,8 @@ $vars = @{
     IDEA_QUEUE_PATH   = $p.IdeaQueuePath
     CYCLE_REPORT_PATH = $p.CycleReportPath
     NEXT_SEED_PATH    = $nextSeedPath
+    HYPOTHESES_DIR    = $p.HypothesesDir
+    PROJECT_STATUS    = $p.ProjectStatusPath
 }
 $prompt = Expand-PromptTemplate (Join-Path $PromptsDir "orchestrator_phase5.md") $vars
 
