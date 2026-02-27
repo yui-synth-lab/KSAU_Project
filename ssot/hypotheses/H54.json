@@ -1,0 +1,34 @@
+{
+  "id": "H54",
+  "name": "理論的厳密化と次元解析",
+  "description": "トポロジー補正項を作用 S の形式で再定義し、ローレンツ不変性および等価原理との整合性を数学的に証明する。",
+  "status": "active",
+  "created_date": "2026-02-27",
+  "hypothesis": {
+    "H0": "現行の定性的記述は次元解析的に再定義できず、不変性も満たさない。",
+    "H1": "幾何学的不変量はプランク単位系において適切にスケールされ、ローレンツ不変かつ等価原理と整合する形式で記述可能である。"
+  },
+  "data_requirements": {
+    "description": "標準模型ラグランジアン、一般相対性理論の作用、KSAU 現行モデルの変数定義。",
+    "ssot_methods": ["get_constants", "get_theoretical_models"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_SECTORS",
+    "max_free_parameters": 0,
+    "derivation_requirement": "DIMENSIONAL_CONSISTENCY",
+    "notes": "比喩的な用語（貼り付き度など）を基本物理量 (h, c, G) に置き換えること。"
+  },
+  "statistical_thresholds": {
+    "logical_consistency": 1.0,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "logical_consistency_failure": "即座に REJECT",
+    "max_iterations": 4,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "次元解析（Dimensional Analysis）、およびテンソル形式を用いた座標変換不変性の数学的検証。",
+  "priority": "medium",
+  "max_iterations": 4
+}

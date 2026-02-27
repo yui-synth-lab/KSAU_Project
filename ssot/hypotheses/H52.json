@@ -1,0 +1,35 @@
+{
+  "id": "H52",
+  "name": "寿命-双曲体積相関仮説",
+  "description": "粒子の寿命 ln(τ) が双曲体積 V と指数関数的な抑制相関 ln(τ) = -αV + β を持つことを検証する。",
+  "status": "active",
+  "created_date": "2026-02-27",
+  "hypothesis": {
+    "H0": "ln(τ) と V は統計的に無相関である（α = 0）。",
+    "H1": "崩壊確率は幾何学的「貼り付き」の解消に伴う位相的解読コストに指数関数的に比例する（α > 0）。"
+  },
+  "data_requirements": {
+    "description": "レプトン（e, μ, τ）の寿命データと対応する双曲体積 V。",
+    "ssot_methods": ["get_particle_data", "get_topology_invariants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "LEPTONS_FIRST_THEN_ALL_12",
+    "max_free_parameters": 2,
+    "derivation_requirement": "TOPOLOGICAL_DECODING_COST",
+    "notes": "安定粒子は V -> ∞ または特殊な禁制状態として扱う。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.01
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.01,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "ln(τ) vs V の線形回帰、Bootstrap CI (N=10,000)、Monte Carlo 置換検定による FPR 算出。",
+  "priority": "high",
+  "max_iterations": 5
+}

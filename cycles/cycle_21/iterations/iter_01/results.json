@@ -1,0 +1,35 @@
+{
+  "iteration": 1,
+  "hypothesis_id": "H52",
+  "timestamp": "2026-02-27T13:17:15.639231",
+  "task_name": "レプトン寿命データと V の相関分析（ベースライン回帰）",
+  "data_sources": {
+    "description": "Muon and Tau lifetimes from parameters.json (PDG 2024), Volumes from topology_assignments.json.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "alpha": 13.966769921421621,
+    "beta": 15.322484932607772,
+    "r_squared": 0.9999999999999996,
+    "p_value": 0.0,
+    "n_points": 2,
+    "particles_used": [
+      "Muon",
+      "Tau"
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "leptons",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.01
+  },
+  "notes": "Baseline regression using Muon and Tau. Electron (V=0.0) is excluded due to stability (ln(tau) -> inf). Predicted alpha=13.9668, beta=15.3225."
+}

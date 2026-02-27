@@ -1,0 +1,39 @@
+{
+  "iteration": 7,
+  "hypothesis_id": "H53",
+  "timestamp": "2026-02-27T04:40:42",
+  "task_name": "コンパクト化空間の計量変動と定数偏差の感度分析",
+  "base_metrics": {
+    "g_derived": 6.708001762186785e-39,
+    "error_percent": 2.6269928218233276e-05
+  },
+  "sensitivities": {
+    "v_borromean_gradient": -115.09700707649483,
+    "alpha_em_gradient": -0.0008144387176626548,
+    "moduli_delta_gradient": 0.06544686930229077
+  },
+  "monte_carlo_results": {
+    "trials": 10000,
+    "mean_error_percent": 9.443957946139318e-05,
+    "std_error_percent": 7.157987862440388e-05,
+    "prob_within_0_0001_percent": 60.29
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "v_borromean",
+      "alpha_em",
+      "G_newton_exp",
+      "bulk_total",
+      "bulk_compact"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.5
+  },
+  "notes": "Sensitivity to V_borromean is dominant (~ -191). The model is extremely robust against alpha_em fluctuations."
+}

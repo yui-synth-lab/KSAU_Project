@@ -58,6 +58,7 @@
     "G_newton_exp":    6.708e-39,
     "G_ksau":          6.7135e-39,
     "G_corrected":     6.708056580391778e-39,
+    "G_derived_refined": 6.708001762186785e-39,
     "correction_formula": "G_ksau * (1 - alpha_em / boundary_projection)",
     "gravity_deviation": "Delta G / G = 8.43e-6",
     "v_planck_factor": 6.0,
@@ -294,6 +295,8 @@
   },
 
   "theoretical_models": {
+    "sticky_degree_definition": "m / M_P",
+    "topological_action_symbol": "hbar * (m / M_P)",
     "decay_width": {
       "coefficients": {
         "n": 1.169,

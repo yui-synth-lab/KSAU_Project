@@ -6,6 +6,18 @@
   "entries": [
     {
       "date": "2026-02-27",
+      "cycle": "cycle_21",
+      "iteration": "iter_08/06",
+      "judge_verdict": "H53, H54 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "update/add",
+      "key": "gravity.G_derived_refined, theoretical_models.sticky_degree_definition, theoretical_models.topological_action_symbol",
+      "old_value": "null or existing",
+      "new_value": "multiple (G_ref=6.708e-39, sigma=m/Mp, S=hbar*sigma)",
+      "reason": "Cycle 21 の ACCEPT 判定（H53, H54）に基づき、24-cell コンパクト化による重力定数の精密化（誤差0.000026%）、および次元解析に基づいた理論定式化の厳密定義（無次元結合 Sigma）を統合。"
+    },
+    {
+      "date": "2026-02-27",
       "cycle": "cycle_20",
       "iteration": "iter_10/12/11",
       "judge_verdict": "H49, H50, H51 ACCEPT",

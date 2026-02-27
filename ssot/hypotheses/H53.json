@@ -1,0 +1,34 @@
+{
+  "id": "H53",
+  "name": "24-cell コンパクト化スキーム",
+  "description": "24-cell を余剰次元の基本格子と定義し、κ = π/24 を幾何学的共鳴条件として再導出することで G の計算精度を向上させる。",
+  "status": "active",
+  "created_date": "2026-02-27",
+  "hypothesis": {
+    "H0": "24-cell によるコンパクト化は G の導出精度において既存モデルを超える改善をもたらさない。",
+    "H1": "24-cell の幾何学から κ = π/24 が必然的に導出され、時空の体積モジュライと V_eff が接続されて G の精度が 0.0001% 未満に改善する。"
+  },
+  "data_requirements": {
+    "description": "Newton定数 G の実験値、および 24-cell の幾何学的不変量。",
+    "ssot_methods": ["get_gravity_constants", "get_mathematical_constants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "GRAVITY_SECTOR",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES_24_CELL_GEOMETRY",
+    "notes": "係数は 24-cell の幾何学的性質から固定される必要がある。"
+  },
+  "statistical_thresholds": {
+    "error_max": 0.000001,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "error_max": 0.000001,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "精密数値計算による G の再現、および幾何学的導出プロセスの論理検証。",
+  "priority": "high",
+  "max_iterations": 5
+}

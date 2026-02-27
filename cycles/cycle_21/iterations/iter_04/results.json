@@ -1,0 +1,41 @@
+{
+  "iteration": 4,
+  "hypothesis_id": "H53",
+  "timestamp": "2026-02-27T04:28:42",
+  "task_name": "G 導出精度の検証と不変量依存性の特定",
+  "data_sources": {
+    "description": "Sensitivity analysis of G derivation model against geometric invariants.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "base_error_percent": 2.6269928218233276e-05,
+    "sensitivities": {
+      "dG_dKappa": 5.813659797636549e-36,
+      "dG_dVborr": 1.0560186916841592e-37,
+      "dG_dNeff": 6.092443491316708e-43
+    },
+    "k_resonance_stability": {
+      "K=23": 99.2715320634964,
+      "K=24": 2.6269928218233276e-05,
+      "K=25": 9159.395043276472
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "v_borromean",
+      "bulk_total",
+      "bulk_compact",
+      "G_newton_exp",
+      "alpha_em"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.05
+  },
+  "notes": "Sensitivity to V_borromean is dominant (exponential dependence). K=24 is the unique resonance point providing < 0.0001% error."
+}
