@@ -12,6 +12,7 @@
     "kappa_theory": 0.1308996938995747,
     "kappa_formula": "pi / 24",
     "k_resonance": 24,
+    "W_D4_order": 192,
     "G_catalan": 0.915965594177219
   },
 
@@ -23,7 +24,17 @@
     "sin2theta_w":           0.23122,
     "sin2theta_w_geometric": 0.23198,
     "higgs_vev_gev":         246.22,
+    "axion_base_mass_mev":   1.0,
+    "unit_mev_to_uev":       1e12,
+    "unit_mev_to_gev":       1e-3,
+    "m_pi_mev":              134.9768,
+    "f_pi_mev":              92.1,
     "h_bar_mev_s":           6.582119569e-22
+  },
+
+  "statistical_parameters": {
+    "fpr_mass_tolerance": 0.05,
+    "null_hypothesis_range_n": [2, 12]
   },
 
   "topology_constants": {
@@ -48,11 +59,26 @@
     "G_ksau":          6.7135e-39,
     "G_corrected":     6.708056580391778e-39,
     "correction_formula": "G_ksau * (1 - alpha_em / boundary_projection)",
+    "gravity_deviation": "Delta G / G = 8.43e-6",
     "v_planck_factor": 6.0,
     "k_c":             1.253314137,
     "delta":           0.032724923,
     "error_original_percent": 0.0815,
     "error_corrected_percent": 0.00084
+  },
+
+  "axion_prediction": {
+    "m_a_uev": 12.16,
+    "g_agg_gev_inv": 6.27e-17,
+    "basis": "Combined FPR 0.14%",
+    "last_updated": "2026-02-27"
+  },
+
+  "gauge_embedding": {
+    "source": "D4 root projection (12 positive roots)",
+    "sm_dimensions": [8, 3, 1],
+    "sm_rank": 4,
+    "status": "validated_by_cycle_20_h51"
   },
 
   "ckm_optimized_coefficients": {
@@ -98,6 +124,16 @@
     "validated_by": "cycle_06_h12",
     "last_updated": "2026-02-23",
     "data_source": "KnotInfo (Real Data)"
+  },
+
+  "axion_exclusion": {
+    "admx_2023": {
+      "mass_range_uev": [11.0, 14.0],
+      "excluded_models": ["DFSZ", "KSVZ"],
+      "g_agg_sensitivity_gev_inv": 1e-15,
+      "note": "Excludes standard couplings in this mass range."
+    },
+    "target_prediction_uev": [10.0, 20.0]
   },
 
   "model_validation": {
@@ -289,6 +325,23 @@
     "monte_carlo_results": {
       "random_assignment_top1_pct_mae": 969.0,
       "ksau_significance_p": 0.0001
+    }
+  },
+
+  "assignment_rules": {
+    "sector_decomposition": {
+      "total_generators": 12,
+      "groups": {
+        "Group_8": {"dim": 8, "desc": "SU(3)-like (Quarks/W/Z)", "constraint": "c >= 2, n >= K/3"},
+        "Group_3": {"dim": 3, "desc": "SU(2)-like (Leptons)",    "constraint": "c == 1, n < K/3"},
+        "Group_1": {"dim": 1, "desc": "U(1)-like  (Higgs)",      "constraint": "c >= 2, n >= K/3, Higgs specific"}
+      }
+    },
+    "invariant_constraints": {
+      "lepton_determinant": "D = 2^g + 1",
+      "stability_boundary": "n_threshold = K / 3",
+      "lepton_rule": "n < K/3",
+      "dimension_rule": "D = 2^g + 1"
     }
   }
 }

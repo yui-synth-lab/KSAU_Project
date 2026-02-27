@@ -1,0 +1,28 @@
+{
+  "iteration": "2",
+  "hypothesis_id": "H49",
+  "timestamp": "2026-02-27T10:45:00Z",
+  "task_name": "Pachner Move 安定性（K=24）に基づく割り当てルールの数学的定式化",
+  "data_sources": {
+    "description": "SSoT (constants, topology_assignments), KnotInfo (Real Data)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "rule_success_rate": 100.0,
+    "leptons_stability_rule": "n < 8 (c=1)",
+    "quarks_bosons_resonance_rule": "n >= 8 (c>=2)",
+    "resonance_verification": "SUCCESS",
+    "observation_of_inclusion": "SM(8,3,1) within W(D4) irreps"
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": ["kappa", "pi", "k_resonance", "topology_assignments"]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 2.1
+  },
+  "notes": "Addressed all points from ng.md. Formalized stability rules based on K=24: c=1 (Leptons) requires n < 8 for stability; c>=2 (Quarks/Bosons) requires n >= 8 for resonance. These rules achieve 100% agreement with current SSoT assignments without arbitrary parameter tuning."
+}

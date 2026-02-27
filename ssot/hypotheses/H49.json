@@ -1,0 +1,35 @@
+{
+  "id": "H49",
+  "name": "First-Principles Topology Assignment Rule",
+  "description": "24-cell 対称性と Pachner Move 安定性から全12粒子のトポロジー割り当てを事前ルールとして導出する。",
+  "status": "active",
+  "created_date": "2026-02-27",
+  "hypothesis": {
+    "H0": "現在の12粒子のトポロジー割り当ては、24-cell 対称性や D4 Lattice の表現論から事前ルールとして一意に導出できない。",
+    "H1": "24-cell 対称群の表現分解、および Pachner Move 安定性条件（共鳴条件 K=24）から導かれる幾何学的制約により、全12粒子のトポロジーは一意に特定される。"
+  },
+  "data_requirements": {
+    "description": "SSoT現行割り当て、KnotInfo/LinkInfo の幾何学的不変量",
+    "ssot_methods": ["particle_data", "mathematical_constants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_12_PARTICLES",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES（任意の多項式フィッティング禁止）",
+    "notes": "割り当てルールは K(4)*kappa = pi と整合し、12粒子すべてを漏れなく説明すること。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY（物理的制約を満たさないモデルは誤差の大小によらず無効）"
+  },
+  "test_method": "導出ルールによるブラインド予測一致率、およびモンテカルロ置換検定による有意性評価",
+  "priority": "high",
+  "max_iterations": 5
+}

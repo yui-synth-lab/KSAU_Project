@@ -1,0 +1,28 @@
+{
+  "iteration": "4",
+  "hypothesis_id": "H50",
+  "timestamp": "2026-02-27T10:50:00Z",
+  "task_name": "Axion prediction and Gravity model verification (v2 fixes)",
+  "computed_values": {
+    "m_axion_uev": 12.16155670940932,
+    "fpr": 0.0009,
+    "delta_g_g": 8.434763234622827e-06,
+    "admx_collision": true
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "constants_used": [
+      "k_resonance",
+      "W_D4_order",
+      "axion_base_mass_mev",
+      "boundary_projection",
+      "G_ksau"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.3
+  },
+  "notes": "Verified ADMX 2023 exclusion range: 11-14 ueV. Predicted 12.16 ueV overlaps."
+}

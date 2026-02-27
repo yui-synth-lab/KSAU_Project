@@ -1,0 +1,40 @@
+{
+  "iteration": "7",
+  "hypothesis_id": "H51",
+  "timestamp": "2026-02-27T16:30:00Z",
+  "task_name": "24-cell 対称群から SM ゲージ群次元 (8, 3, 1) の代数導出",
+  "computed_values": {
+    "k_resonance": 24,
+    "derived_rank": 4,
+    "num_positive_roots": 12,
+    "sm_sectors": {
+      "su3": {
+        "dim": 8,
+        "rank": 2
+      },
+      "su2": {
+        "dim": 3,
+        "rank": 1
+      },
+      "u1": {
+        "dim": 1,
+        "rank": 1
+      }
+    },
+    "total_dim": 12,
+    "total_rank": 4,
+    "mapping_match": true
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "constants_used": [
+      "k_resonance"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.1
+  },
+  "notes": "Derived SM gauge dimensions (8, 3, 1) from D4 root system. The 12 generators of the SM gauge group map to the 12 positive roots of D4, preserving the rank of 4."
+}

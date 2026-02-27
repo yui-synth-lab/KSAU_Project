@@ -1,0 +1,39 @@
+{
+  "iteration": "10",
+  "hypothesis_id": "H49",
+  "timestamp": "2026-02-27T12:00:00Z",
+  "task_name": "モンテカルロ置換検定による割り当ての必然性検証",
+  "computed_values": {
+    "n_threshold": 8.0,
+    "mean_permutation_success": 7.0262,
+    "permutation_p_value": 0.0009,
+    "expected_random_success": 2.1744199603590997,
+    "joint_fpr": 1.1102552804860856e-18,
+    "candidate_counts": {
+      "Electron": 1,
+      "Muon": 2,
+      "Tau": 1,
+      "Up": 4144,
+      "Down": 4144,
+      "Strange": 4144,
+      "Charm": 4144,
+      "Bottom": 4144,
+      "Top": 4144,
+      "W": 4144,
+      "Z": 4144,
+      "Higgs": 4144
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "constants_used": [
+      "k_resonance",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 2.5
+  }
+}

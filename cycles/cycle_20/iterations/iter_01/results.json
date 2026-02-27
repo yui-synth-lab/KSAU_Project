@@ -1,0 +1,30 @@
+{
+  "iteration": "1",
+  "hypothesis_id": "H49",
+  "timestamp": "2026-02-27T10:25:00Z",
+  "task_name": "24-cell 対称群の表現分解と現行トポロジー割り当ての整合性確認",
+  "data_sources": {
+    "description": "SSoT (constants, topology_assignments), KnotInfo (Real Data)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "num_particles": 12,
+    "group_8_mean_n": 10.375,
+    "group_3_mean_n": 4.333,
+    "group_1_mean_n": 11.0,
+    "lepton_determinant_rule_verified": true,
+    "lepton_knot_type_verified": true,
+    "gauge_group_dimension_consistency": "Matched (8, 3, 1)"
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": ["kappa", "pi", "k_resonance", "topology_assignments"]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.2
+  },
+  "notes": "Verified that the 12 particles map perfectly to the dimensions (8, 3, 1) of the Standard Model gauge group. Group 3 (Leptons) follows a strict mathematical rule for Determinant: D = 2^g + 1 (where g is generation). Quarks and Bosons are links (c >= 2) with high crossing numbers (n >= 8), saturating at n=11."
+}

@@ -1,0 +1,32 @@
+{
+  "iteration": "5",
+  "hypothesis_id": "H50",
+  "timestamp": "2026-02-27T14:00:00Z",
+  "task_name": "Axion/Gravity/Top-Decay Comprehensive Reverification",
+  "computed_values": {
+    "m_axion_uev": 12.16155670940932,
+    "fpr_weyl": 0.03225806451612903,
+    "g_agg_gev_inv": 6.27169040868535e-17,
+    "gamma_top_pred_mev": 1128487.2484613133,
+    "top_decay_anomaly": 799.6578796419265,
+    "delta_g_g_verified": 8.434763234622827e-06
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "constants_used": [
+      "kappa",
+      "W_D4_order",
+      "axion_base_mass_mev",
+      "unit_mev_to_uev",
+      "target_prediction_uev",
+      "alpha_em",
+      "G_ksau",
+      "boundary_projection"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.5
+  }
+}

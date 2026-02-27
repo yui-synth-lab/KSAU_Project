@@ -1,0 +1,36 @@
+{
+  "id": "H50",
+  "name": "Novel Quantitative Predictions from KSAU",
+  "description": "理論定数 κ および V_eff モデルから、アクシオン質量や重力偏差等の未知の物理量を精密予測する。",
+  "status": "active",
+  "created_date": "2026-02-27",
+  "hypothesis": {
+    "H0": "KSAUから導出される予測値は、既存の実験排除領域やランダムノイズと統計的に区別できない。",
+    "H1": "κ = π/24 および幾何学的 V_eff モデルから、アクシオン質量、重力定数偏差、またはトップクォーク崩壊幅異常のうち少なくとも2つについて精密予測値を導出する。"
+  },
+  "data_requirements": {
+    "description": "SSoT物理定数、最新の実験制約データ",
+    "ssot_methods": ["physical_constants", "gravity", "axion_suppression_model"]
+  },
+  "physical_constraints": {
+    "particle_scope": "PHENOMENA_SPECIFIC",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES（既存の KSAU 定数のみを使用）",
+    "notes": "予測値が既存の実験排除領域に含まれる場合は即座に棄却される。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.01
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.01,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "experimental_exclusion_collision": "即座に REJECT（新規予測が既存実験の排除領域に既に入っている場合）",
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "理論的予測値と実験排除プロットの照合、および将来の実験感度曲線上の評価",
+  "priority": "high",
+  "max_iterations": 5
+}

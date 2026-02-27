@@ -5,7 +5,9 @@
     "crossing_number": 3,
     "components": 1,
     "determinant": 3,
-    "generation": 1
+    "generation": 1,
+    "signature": -2,
+    "u_index": 1
   },
   "Muon": {
     "topology": "4_1",
@@ -13,7 +15,9 @@
     "crossing_number": 4,
     "components": 1,
     "determinant": 5,
-    "generation": 2
+    "generation": 2,
+    "signature": 0,
+    "u_index": 1
   },
   "Tau": {
     "topology": "6_1",
@@ -21,7 +25,9 @@
     "crossing_number": 6,
     "components": 1,
     "determinant": 9,
-    "generation": 3
+    "generation": 3,
+    "signature": 0,
+    "u_index": 1
   },
   "Up": {
     "topology": "L9n1{1}",
@@ -29,7 +35,9 @@
     "crossing_number": 9,
     "components": 2,
     "determinant": 12,
-    "generation": 1
+    "generation": 1,
+    "signature": 1,
+    "u_index": 3
   },
   "Down": {
     "topology": "L8a18{0,1}",
@@ -37,7 +45,9 @@
     "crossing_number": 8,
     "components": 3,
     "determinant": 20,
-    "generation": 1
+    "generation": 1,
+    "signature": 2,
+    "u_index": 4
   },
   "Strange": {
     "topology": "L11n330{0,1}",
@@ -45,7 +55,9 @@
     "crossing_number": 11,
     "components": 3,
     "determinant": 36,
-    "generation": 2
+    "generation": 2,
+    "signature": 4,
+    "u_index": null
   },
   "Charm": {
     "topology": "L11a362{0}",
@@ -53,7 +65,9 @@
     "crossing_number": 11,
     "components": 2,
     "determinant": 70,
-    "generation": 2
+    "generation": 2,
+    "signature": -5,
+    "u_index": null
   },
   "Bottom": {
     "topology": "L11a528{0,1}",
@@ -61,7 +75,9 @@
     "crossing_number": 11,
     "components": 3,
     "determinant": 96,
-    "generation": 3
+    "generation": 3,
+    "signature": -2,
+    "u_index": null
   },
   "Top": {
     "topology": "L11a225{1}",
@@ -69,7 +85,9 @@
     "crossing_number": 11,
     "components": 2,
     "determinant": 110,
-    "generation": 3
+    "generation": 3,
+    "signature": -3,
+    "u_index": null
   },
   "W": {
     "topology": "L11n387{0,0}",
@@ -78,7 +96,9 @@
     "components": 3,
     "determinant": 64,
     "is_brunnian": true,
-    "physical_meaning": "Double Borromean"
+    "physical_meaning": "Double Borromean",
+    "signature": 0,
+    "u_index": null
   },
   "Z": {
     "topology": "L11a431{0,0}",
@@ -87,7 +107,9 @@
     "components": 3,
     "determinant": 112,
     "is_brunnian": true,
-    "physical_meaning": "Double Borromean"
+    "physical_meaning": "Double Borromean",
+    "signature": -2,
+    "u_index": null
   },
   "Higgs": {
     "topology": "L11a55{0}",
@@ -96,6 +118,8 @@
     "components": 2,
     "determinant": 136,
     "is_brunnian": true,
-    "physical_meaning": "Scalar Clasp (2-component saturation)"
+    "physical_meaning": "Scalar Clasp (2-component saturation)",
+    "signature": -1,
+    "u_index": null
   }
 }

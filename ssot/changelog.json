@@ -6,6 +6,18 @@
   "entries": [
     {
       "date": "2026-02-27",
+      "cycle": "cycle_20",
+      "iteration": "iter_10/12/11",
+      "judge_verdict": "H49, H50, H51 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "update/add",
+      "key": "assignment_rules, axion_prediction, gravity.gravity_deviation, gauge_embedding",
+      "old_value": "existing or null",
+      "new_value": "multiple (see reason)",
+      "reason": "Cycle 20 の全仮説（H49, H50, H51）の ACCEPT 判定に基づき、第一原理トポロジー割り当て規則、アクシオン・重力偏差予測、SMゲージ群のD4埋め込みスキームを統合。"
+    },
+    {
+      "date": "2026-02-27",
       "cycle": "cycle_19",
       "iteration": "iter_03/10",
       "judge_verdict": "H46 ACCEPT",
