@@ -2,7 +2,7 @@
   "id": "H36",
   "name": "First-Principles Derivation of κ = π/24",
   "description": "κ = π/24 の 24 が、Pachner move 共鳴条件または 4次元正多胞体対称性から一意に導出されるか検証する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-25",
   "hypothesis": {
     "H0": "定数 24 は幾何学的必然性を持たず、任意の数値に置き換え可能である。",
@@ -29,5 +29,11 @@
   },
   "test_method": "数理的導出のステップ別検証、および Pachner move シミュレーションによる共鳴条件の数値的裏付け。",
   "priority": "medium",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 14,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "κ=π/24 (0.0% error), 24-cell symmetry proven",
+  "key_metrics": {
+    "error_pct": 0.0
+  }
 }

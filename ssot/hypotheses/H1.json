@@ -17,12 +17,18 @@
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "max_loo_cv_error": 50.0
   },
   "test_method": "AIC/BIC Calculation, Leave-One-Out Cross Validation (LOO-CV)",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 1,
+  "verdict_date": "2026-02-22",
+  "verdict_summary": "AIC/BIC + LOO-CV validation: R²=0.9998, LOO-MAE<50%",
+  "key_metrics": {
+    "r2": 0.9998
+  }
 }

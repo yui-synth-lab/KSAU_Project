@@ -2,7 +2,7 @@
   "id": "H28",
   "name": "Geometric Decay Width Model",
   "description": "Validates the log-linear correlation between particle decay width Gamma and the Topological Stability Index (TSI).",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-25",
   "hypothesis": {
     "H0": "Particle decay width is uncorrelated with the Topological Stability Index (TSI) beyond random chance (p > 0.016666).",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "Experimental decay widths (PDG) and topological invariants (n, u, s) for all 12 SM particles.",
-    "ssot_methods": ["get_particle_decay_widths", "get_topology_invariants"]
+    "ssot_methods": [
+      "get_particle_decay_widths",
+      "get_topology_invariants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_12_PARTICLES",
@@ -20,16 +23,23 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "Immediate MODIFY"
   },
   "test_method": "Log-linear regression and Monte Carlo permutation test (N=10,000).",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 12,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "p=0.4310 > 0.0167, decay width prediction failed",
+  "key_metrics": {
+    "p_value": 0.431,
+    "fpr": 0.431
+  }
 }

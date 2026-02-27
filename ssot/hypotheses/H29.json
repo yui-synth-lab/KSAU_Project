@@ -2,7 +2,7 @@
   "id": "H29",
   "name": "Geometric Mass Torsion Correction",
   "description": "Derives mass residuals from the Smallest Torsion (ST) of the knot manifold to refine the fermion mass formula.",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-25",
   "hypothesis": {
     "H0": "Fermion mass residuals are uncorrelated with the Smallest Torsion (ST) of the knot manifold.",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "Fermion mass residuals and Smallest Torsion (ST) values from knot databases.",
-    "ssot_methods": ["get_mass_residuals", "get_topology_invariants"]
+    "ssot_methods": [
+      "get_mass_residuals",
+      "get_topology_invariants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "9_FERMIONS",
@@ -20,11 +23,11 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 4,
     "residual_reduction_min": 0.1,
     "consecutive_stop_limit": 2,
@@ -32,5 +35,11 @@
   },
   "test_method": "Linear regression on residuals and significance testing.",
   "priority": "medium",
-  "max_iterations": 4
+  "max_iterations": 4,
+  "cycle": 12,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "p=0.0588 > 0.0167, minimal torsion model invalid",
+  "key_metrics": {
+    "p_value": 0.0588
+  }
 }

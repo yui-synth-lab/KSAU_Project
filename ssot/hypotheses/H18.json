@@ -2,7 +2,7 @@
   "id": "H18",
   "name": "Phase Viscosity Mass Model",
   "description": "Integrate the Phase Viscosity concept into the mass formula and re-validate accuracy.",
-  "status": "active",
+  "status": "modified",
   "created_date": "2026-02-23",
   "hypothesis": {
     "H0": "A model based on phase resistance does not explain the origin of mass or maintain mass prediction accuracy.",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "Fermion mass data and hyperbolic volumes V.",
-    "ssot_methods": ["parameters", "topology_assignments"]
+    "ssot_methods": [
+      "parameters",
+      "topology_assignments"
+    ]
   },
   "success_criteria": {
     "p_value_threshold": 0.05,
@@ -20,11 +23,17 @@
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 1,
     "consecutive_stop_limit": 2
   },
   "test_method": "LOO-CV cross-validation and accuracy benchmarking against H11 results.",
   "priority": "high",
-  "max_iterations": 1
+  "max_iterations": 1,
+  "cycle": 8,
+  "verdict_date": "2026-02-24",
+  "verdict_summary": "Phase viscosity MAE=9.69% (target <5.17%)",
+  "key_metrics": {
+    "mae_pct": 9.69
+  }
 }

@@ -2,7 +2,7 @@
   "id": "H40",
   "name": "Holistic Mass Law Validation",
   "description": "κ = π/24 に固定した Veff モデルにより、全 12 粒子の質量を統一的に検証する。",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "κ 固定モデルでは、全セクターの質量を統計的に有意に説明できない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "全 12 粒子の実験質量およびトポロジー不変量 (V, n, det)。",
-    "ssot_methods": ["constants.particle_data", "data.get_topology_invariants"]
+    "ssot_methods": [
+      "constants.particle_data",
+      "data.get_topology_invariants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_12_PARTICLES",
@@ -20,15 +23,21 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.01,
-    "fpr_max": 0.10
+    "fpr_max": 0.1
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.01,
-    "fpr_max": 0.10,
+    "fpr_max": 0.1,
     "max_iterations": 3,
     "consecutive_stop_limit": 2
   },
   "test_method": "Unified Regression Analysis with MC Permutation Test",
   "priority": "high",
-  "max_iterations": 3
+  "max_iterations": 3,
+  "cycle": 16,
+  "verdict_date": "2026-02-26",
+  "verdict_summary": "p=0.0970 > 0.01, unified 12-particle regression failed",
+  "key_metrics": {
+    "p_value": 0.097
+  }
 }

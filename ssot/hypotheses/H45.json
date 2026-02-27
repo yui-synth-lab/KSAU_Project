@@ -2,7 +2,7 @@
   "id": "H45",
   "name": "Linear ST Correction Refinement",
   "description": "Cycle 17の改良されたV_effをベースに、ST（Smallest Torsion）による質量残差補正を再検証する。",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "ST項は質量残差を有意に説明せず、過学習をもたらす。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "フェルミオン9粒子の質量、V_eff、およびSTデータ",
-    "ssot_methods": ["get_particle_data", "get_topology_data"]
+    "ssot_methods": [
+      "get_particle_data",
+      "get_topology_data"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "FERMIONS_9",
@@ -20,11 +23,11 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.025,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.025,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY",
@@ -32,5 +35,9 @@
   },
   "test_method": "重回帰分析およびLOO-CVによる統計的評価",
   "priority": "medium",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 18,
+  "verdict_date": "2026-02-26",
+  "verdict_summary": "LOO-CV overfitting detected, baseline not exceeded",
+  "key_metrics": {}
 }

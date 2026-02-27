@@ -2,7 +2,7 @@
   "id": "H39",
   "name": "First-Principles Derivation of 24-cell Resonance",
   "description": "κ = π/24 が 24-cell の対称性と Pachner Move から数学的に導出されることを証明する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "勾配定数 κ は幾何学的対称性とは無関係な統計的推定値である。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "24-cell の頂点配置、対称群、および 3D Pachner Move の体積作用素データ。",
-    "ssot_methods": ["constants.mathematical_constants", "constants.v16_derivation"]
+    "ssot_methods": [
+      "constants.mathematical_constants",
+      "constants.v16_derivation"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "UNIVERSAL",
@@ -20,7 +23,7 @@
   },
   "statistical_thresholds": {
     "theoretical_error_max": 0.001,
-    "fpr_max": 0.10
+    "fpr_max": 0.1
   },
   "rejection_criteria": {
     "theoretical_error_max": 0.001,
@@ -29,5 +32,11 @@
   },
   "test_method": "Geometric Resonance Analysis (Algebraic Topology)",
   "priority": "high",
-  "max_iterations": 2
+  "max_iterations": 2,
+  "cycle": 16,
+  "verdict_date": "2026-02-26",
+  "verdict_summary": "κ=π/24 (0.0% error), 24-cell resonance first-principles",
+  "key_metrics": {
+    "error_pct": 0.0
+  }
 }

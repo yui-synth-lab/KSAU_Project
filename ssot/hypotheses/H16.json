@@ -2,7 +2,7 @@
   "id": "H16",
   "name": "Geometric Kappa Derivation",
   "description": "Derive the mass formula coefficient kappa = pi/24 from Planck-scale phase discretization.",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-23",
   "hypothesis": {
     "H0": "kappa is an empirical constant and cannot be derived from 3D geometric constraints at the Planck scale.",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "Mathematical constants and Planck scale parameters.",
-    "ssot_methods": ["constants", "parameters"]
+    "ssot_methods": [
+      "constants",
+      "parameters"
+    ]
   },
   "success_criteria": {
     "p_value_threshold": 0.05,
@@ -20,11 +23,18 @@
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 2,
     "consecutive_stop_limit": 2
   },
   "test_method": "Geometric proof and first-principles calculation of Action per Pachner move.",
   "priority": "high",
-  "max_iterations": 2
+  "max_iterations": 2,
+  "cycle": 8,
+  "verdict_date": "2026-02-24",
+  "verdict_summary": "κ derivation: 0.0% theoretical error, FPR=0.00078",
+  "key_metrics": {
+    "error_pct": 0.0,
+    "fpr": 0.00078
+  }
 }

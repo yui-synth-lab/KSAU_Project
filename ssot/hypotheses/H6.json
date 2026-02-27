@@ -2,7 +2,7 @@
   "id": "H6",
   "name": "理論定数 κ の幾何学的導出",
   "description": "κ = π/24 をプランクスケールの位相離散化や 24 重対称性から幾何学的に導出する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-23",
   "hypothesis": {
     "H0": "κ は現象論的なパラメータであり、幾何学的第一原理から π/24 として導出することは不可能である。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "SSoT 定数、k_mapping_coefficients、および位相幾何学的指標データ。",
-    "ssot_methods": ["get_mathematical_constants", "get_k_mapping_coefficients"]
+    "ssot_methods": [
+      "get_mathematical_constants",
+      "get_k_mapping_coefficients"
+    ]
   },
   "success_criteria": {
     "p_value_threshold": 0.05,
@@ -20,11 +23,18 @@
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.05,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2
   },
   "test_method": "幾何学的モデルから計算された κ 値と π/24 の一致度検証、および SSoT パラメータとの整合性評価。",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 3,
+  "verdict_date": "2026-02-23",
+  "verdict_summary": "κ=π/24 (0.0% error), 1/α=432/π, MAE=0.211",
+  "key_metrics": {
+    "error_pct": 0.0,
+    "p_value": 0.0
+  }
 }

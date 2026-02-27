@@ -2,7 +2,7 @@
   "id": "H26",
   "name": "TSI Universality",
   "description": "Validates the correlation between Topological Stability Index (TSI) and particle lifetime across all known decaying particles.",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-25",
   "hypothesis": {
     "H0": "There is no significant correlation (p > 0.016666) between TSI (n*u/|s|) and particle decay rates across different particle species.",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "Measured lifetimes of known particles and topological invariants (n, u, s) of their assigned knots.",
-    "ssot_methods": ["get_lifetime_data", "get_topology_invariants"]
+    "ssot_methods": [
+      "get_lifetime_data",
+      "get_topology_invariants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_DECAYING_PARTICLES",
@@ -20,16 +23,22 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 3,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "Immediate MODIFY"
   },
   "test_method": "Correlation analysis (R2, p-value) and permutation test.",
   "priority": "medium",
-  "max_iterations": 3
+  "max_iterations": 3,
+  "cycle": 11,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "p=0.0578 > Bonferroni 0.01667, SSoT violation",
+  "key_metrics": {
+    "p_value": 0.0578
+  }
 }

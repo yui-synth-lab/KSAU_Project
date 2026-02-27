@@ -1,0 +1,199 @@
+{
+  "_meta": {
+    "description": "KSAU プロジェクト状態ダッシュボード — ssot/hypotheses/*.json から集約",
+    "last_updated": "2026-02-28",
+    "generated_by": "Claude (manual migration from cycles/ verdicts)"
+  },
+  "summary": {
+    "total_hypotheses_tested": 60,
+    "accepted": 32,
+    "rejected": 24,
+    "modified": 4,
+    "pending_cycle_24": 3,
+    "cycles_completed": 23,
+    "current_cycle": 24
+  },
+  "established_pillars": [
+    {
+      "name": "κ = π/24 (24-cell resonance)",
+      "evidence": ["H6", "H16", "H36", "H39", "H44"],
+      "precision": "0.0% error",
+      "status": "robust"
+    },
+    {
+      "name": "Fermion mass hierarchy (ln(m) = κV + corrections)",
+      "evidence": ["H1", "H11", "H35", "H41"],
+      "precision": "R²=0.9998",
+      "status": "robust"
+    },
+    {
+      "name": "Gravitational constant G derivation",
+      "evidence": ["H20", "H46", "H53"],
+      "precision": "error=0.000026%",
+      "status": "robust"
+    },
+    {
+      "name": "12-particle topological assignment rule",
+      "evidence": ["H49", "H55"],
+      "precision": "p=0.0, 12/12 match",
+      "status": "robust"
+    },
+    {
+      "name": "SM gauge group D4 embedding",
+      "evidence": ["H51"],
+      "precision": "rank(4), dim(12) from first principles",
+      "status": "robust"
+    },
+    {
+      "name": "Boson offset C = π√3",
+      "evidence": ["H42"],
+      "precision": "R²=0.95",
+      "status": "robust"
+    },
+    {
+      "name": "CKM mixing matrix",
+      "evidence": ["v6.0 final"],
+      "precision": "R²=0.9974",
+      "status": "robust"
+    },
+    {
+      "name": "Decay width multi-regression",
+      "evidence": ["H31", "H43"],
+      "precision": "R²=0.8015, p=0.00611",
+      "status": "moderate"
+    },
+    {
+      "name": "DM candidates (Top 3 via parity)",
+      "evidence": ["H27", "H30"],
+      "precision": "FPR=0.0%",
+      "status": "moderate"
+    }
+  ],
+  "current_crisis": [
+    {
+      "issue": "Novel predictions statistically indistinguishable from random",
+      "evidence": "H58 REJECT: joint MC p=0.067 >> 0.016667",
+      "severity": "critical",
+      "implication": "KSAU predictions not uniquely falsifiable"
+    },
+    {
+      "issue": "Torsion correction LOO unstable",
+      "evidence": "H59 REJECT: LOO-R²=0.1075 << train R²=0.2801 (63% overfitting)",
+      "severity": "high",
+      "implication": "α=√2κ mathematically elegant but not generalizable"
+    },
+    {
+      "issue": "Det ≡ 0 (mod 24) negatively correlated with TSI",
+      "evidence": "H60 REJECT: OR=0.7452 < 1, FPR=99.85%",
+      "severity": "critical",
+      "implication": "Core geometric stability criterion falsified on full KnotInfo data"
+    }
+  ],
+  "cycle_24_status": {
+    "status": "pending",
+    "seed_created": true,
+    "hypotheses": [
+      {
+        "id": "H61",
+        "name": "真の位相安定性指数の導出 (TSI見直し)",
+        "goal": "H60の矛盾を解消し、24-cell対称性から直接TSIを導出"
+      },
+      {
+        "id": "H62",
+        "name": "トーション補正モデルのLOO安定性検証",
+        "goal": "α=√2κを活用しつつ自由パラメータ増加なしでLOO-R² ≥ 0.95×R²_train"
+      },
+      {
+        "id": "H63",
+        "name": "数理的厳密化・次元解析の統合",
+        "goal": "[ℏ, c, G] のみで再定式化、Lorentz不変性の証明"
+      }
+    ]
+  },
+  "publication_readiness": {
+    "safe_claims": [
+      "Fermion masses: R²=0.9998",
+      "CKM diagonal: <3% error",
+      "CKM Cabibbo-allowed: <15% error",
+      "PMNS angles: MSE=5.44 deg²",
+      "DM candidates: 60+ Det=1 knots",
+      "κ=π/24 from 24-cell resonance",
+      "G derivation: 0.000026% precision"
+    ],
+    "requires_caveat": [
+      "CKM Cabibbo-forbidden: qualitative hierarchy only (63-100% error)",
+      "PMNS mass ratio: order-of-magnitude agreement (36% deviation)",
+      "Novel predictions (axion, G, Top): not statistically unique (H58 p=0.067)"
+    ]
+  },
+  "key_negative_results": [
+    {"id": "H33", "finding": "κ cannot be independently recovered from mass regression (CI excludes π/24)"},
+    {"id": "H47", "finding": "V_eff parameterization inflates κ estimate 11× (proxy, not independent variable)"},
+    {"id": "H23", "finding": "Phase discretization K=24 tautological (FPR=93.82%)"},
+    {"id": "H60", "finding": "Det ≡ 0 (mod 24) anti-correlates with TSI (OR=0.745)"},
+    {"id": "H58", "finding": "Joint predictions indistinguishable from random knot sampling (p=0.067)"},
+    {"id": "H59", "finding": "Linear torsion correction overfits (LOO-R²=0.1075 vs train R²=0.2801)"}
+  ],
+  "hypotheses_index": [
+    {"id": "H1",  "name": "統計持論の潔白証明", "status": "accepted", "cycle": 1},
+    {"id": "H2",  "name": "Axion ST Uncertainty", "status": "accepted", "cycle": 1},
+    {"id": "H3",  "name": "CS Mapping", "status": "rejected", "cycle": 1},
+    {"id": "H4",  "name": "Axion-ST Correlation", "status": "rejected", "cycle": 2},
+    {"id": "H5",  "name": "CS-V Mapping k2", "status": "accepted", "cycle": 2},
+    {"id": "H6",  "name": "κ Geometric Derivation", "status": "accepted", "cycle": 3},
+    {"id": "H7",  "name": "ST Refinement GPR", "status": "accepted", "cycle": 4},
+    {"id": "H8",  "name": "CS Mapping Redesign", "status": "rejected", "cycle": 4},
+    {"id": "H9",  "name": "ST Scaling", "status": "modified", "cycle": 5},
+    {"id": "H10", "name": "k-Function Integrity", "status": "rejected", "cycle": 5},
+    {"id": "H11", "name": "V=0→V Phase Transition", "status": "accepted", "cycle": 5},
+    {"id": "H12", "name": "Axion ST Real Data", "status": "accepted", "cycle": 6},
+    {"id": "H13", "name": "WRT TQFT Mapping", "status": "rejected", "cycle": 6},
+    {"id": "H14", "name": "Axion Uncertainty GPR", "status": "accepted", "cycle": 7},
+    {"id": "H15", "name": "Algebraic CS Mapping", "status": "accepted", "cycle": 7},
+    {"id": "H16", "name": "κ Geometric Derivation v2", "status": "accepted", "cycle": 8},
+    {"id": "H17", "name": "Lifetime Correlation", "status": "accepted", "cycle": 8},
+    {"id": "H18", "name": "Phase Viscosity", "status": "modified", "cycle": 8},
+    {"id": "H19", "name": "Phase Viscosity Correction", "status": "accepted", "cycle": 9},
+    {"id": "H20", "name": "G Derivation", "status": "accepted", "cycle": 9},
+    {"id": "H21", "name": "DM Prediction", "status": "rejected", "cycle": 9},
+    {"id": "H22", "name": "κ from Resonance", "status": "rejected", "cycle": 10},
+    {"id": "H23", "name": "Phase Discretization", "status": "rejected", "cycle": 10},
+    {"id": "H24", "name": "TSI Lifetime", "status": "accepted", "cycle": 10},
+    {"id": "H25", "name": "Deterministic Quantization", "status": "accepted", "cycle": 11},
+    {"id": "H26", "name": "TSI Universal", "status": "rejected", "cycle": 11},
+    {"id": "H27", "name": "DM Candidates Top 10", "status": "accepted", "cycle": 11},
+    {"id": "H28", "name": "Decay Width TSI", "status": "rejected", "cycle": 12},
+    {"id": "H29", "name": "ST Mass Correction", "status": "rejected", "cycle": 12},
+    {"id": "H30", "name": "DM Parity Constraint", "status": "accepted", "cycle": 12},
+    {"id": "H31", "name": "Decay Width Multi-regression", "status": "accepted", "cycle": 13},
+    {"id": "H32", "name": "ST Torsion", "status": "rejected", "cycle": 13},
+    {"id": "H33", "name": "κ Independent Recovery", "status": "rejected", "cycle": 13},
+    {"id": "H34", "name": "Linear ST Correction", "status": "rejected", "cycle": 14},
+    {"id": "H35", "name": "V_eff Recovery", "status": "accepted", "cycle": 14},
+    {"id": "H36", "name": "κ First-Principles", "status": "accepted", "cycle": 14},
+    {"id": "H37", "name": "Decay Width Topological", "status": "rejected", "cycle": 15},
+    {"id": "H38", "name": "ST Lepton Correction", "status": "rejected", "cycle": 15},
+    {"id": "H39", "name": "24-cell Resonance Derivation", "status": "accepted", "cycle": 16},
+    {"id": "H40", "name": "Holistic V_eff Validation", "status": "rejected", "cycle": 16},
+    {"id": "H41", "name": "Lepton Mass Inversion", "status": "accepted", "cycle": 17},
+    {"id": "H42", "name": "Boson Shift Derivation", "status": "accepted", "cycle": 17},
+    {"id": "H43", "name": "Refined TSI", "status": "accepted", "cycle": 17},
+    {"id": "H44", "name": "κ '24' Derivation", "status": "accepted", "cycle": 18},
+    {"id": "H45", "name": "Linear ST All Fermions", "status": "rejected", "cycle": 18},
+    {"id": "H46", "name": "10D Gravity Precision", "status": "accepted", "cycle": 19},
+    {"id": "H47", "name": "κ Regression via V_eff", "status": "rejected", "cycle": 19},
+    {"id": "H48", "name": "Non-linear ET Correction", "status": "rejected", "cycle": 19},
+    {"id": "H49", "name": "First-Principles Assignment", "status": "accepted", "cycle": 20},
+    {"id": "H50", "name": "Novel Predictions", "status": "accepted", "cycle": 20},
+    {"id": "H51", "name": "SM Gauge D4 Embedding", "status": "accepted", "cycle": 20},
+    {"id": "H52", "name": "τ-V Correlation", "status": "rejected", "cycle": 21},
+    {"id": "H53", "name": "24-cell Compactification G", "status": "accepted", "cycle": 21},
+    {"id": "H54", "name": "Mathematical Rigor (Σ=m/M_P)", "status": "accepted", "cycle": 21},
+    {"id": "H55", "name": "24-cell Assignment Rule", "status": "accepted", "cycle": 22},
+    {"id": "H56", "name": "Novel Predictions MC", "status": "modified", "cycle": 22},
+    {"id": "H57", "name": "ST+LOO Stability", "status": "modified", "cycle": 22},
+    {"id": "H58", "name": "Joint MC Predictions", "status": "rejected", "cycle": 23},
+    {"id": "H59", "name": "ST LOO Stability", "status": "rejected", "cycle": 23},
+    {"id": "H60", "name": "Det ≡ 0 (mod 24) Stability", "status": "rejected", "cycle": 23}
+  ]
+}

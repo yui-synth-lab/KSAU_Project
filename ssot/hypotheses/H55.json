@@ -2,7 +2,7 @@
   "id": "H55",
   "name": "24-cell Symmetry Rules",
   "description": "24-cell コンパクト化に基づく一意なトポロジー割り当てルールの確立",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-27",
   "hypothesis": {
     "H0": "全 12 粒子のトポロジーを、24-cell 対称性に基づく幾何学的不変量のみを用いて一意に決定する普遍的な規則は存在しない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "KnotInfo/LinkInfo の不変量 (n, c, Det) および SSoT 粒子データ",
-    "ssot_methods": ["get_topology_data", "get_particle_data"]
+    "ssot_methods": [
+      "get_topology_data",
+      "get_particle_data"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_12_PARTICLES",
@@ -31,5 +34,13 @@
   },
   "test_method": "ランダム割り当て試行に対する提唱ルールの優位性のモンテカルロ置換検定",
   "priority": "critical",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 22,
+  "verdict_date": "2026-02-27",
+  "verdict_summary": "12/12 match (N=7163, p=0.0, FPR=0.0), DM candidates=67",
+  "key_metrics": {
+    "p_value": 0.0,
+    "fpr": 0.0,
+    "match_count": 12
+  }
 }

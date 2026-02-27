@@ -2,7 +2,7 @@
   "id": "H49",
   "name": "First-Principles Topology Assignment Rule",
   "description": "24-cell 対称性と Pachner Move 安定性から全12粒子のトポロジー割り当てを事前ルールとして導出する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-27",
   "hypothesis": {
     "H0": "現在の12粒子のトポロジー割り当ては、24-cell 対称性や D4 Lattice の表現論から事前ルールとして一意に導出できない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "SSoT現行割り当て、KnotInfo/LinkInfo の幾何学的不変量",
-    "ssot_methods": ["particle_data", "mathematical_constants"]
+    "ssot_methods": [
+      "particle_data",
+      "mathematical_constants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_12_PARTICLES",
@@ -20,16 +23,23 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY（物理的制約を満たさないモデルは誤差の大小によらず無効）"
   },
   "test_method": "導出ルールによるブラインド予測一致率、およびモンテカルロ置換検定による有意性評価",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 20,
+  "verdict_date": "2026-02-27",
+  "verdict_summary": "12/12 match algebraic rule, p=0.0009",
+  "key_metrics": {
+    "p_value": 0.0009,
+    "match_count": 12
+  }
 }

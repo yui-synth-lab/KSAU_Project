@@ -2,7 +2,7 @@
   "id": "H41",
   "name": "Lepton Mass Inversion Correction",
   "description": "レプトンセクターの Muon-Tau 質量逆転を、 Linking number/Torsion による追加のトポロジカル相で解消する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "レプトンの質量階層は、現行の V_eff モデル（Muon > Tau 逆転状態）における統計的ノイズである。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "レプトンの質量データおよび Linking number、Torsion 等の不変量データ。",
-    "ssot_methods": ["get_particle_data", "get_knotinfo_data"]
+    "ssot_methods": [
+      "get_particle_data",
+      "get_knotinfo_data"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "LEPTONS_AND_QUARKS",
@@ -20,16 +23,23 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "V_eff' の順序整合性確認および 9 粒子フェルミオン回帰分析。",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 17,
+  "verdict_date": "2026-02-26",
+  "verdict_summary": "Lepton inversion: α=2.5, FPR=0.014, R²=0.95",
+  "key_metrics": {
+    "r2": 0.95,
+    "fpr": 0.014
+  }
 }

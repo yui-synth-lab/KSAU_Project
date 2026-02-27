@@ -2,7 +2,7 @@
   "id": "H17",
   "name": "Topological Lifetime Correlation",
   "description": "Analyze the correlation between knot topological indices and particle lifetime (stability).",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-23",
   "hypothesis": {
     "H0": "Topological indices (Crossing, Det, Sig) have no statistically significant correlation with particle lifetime.",
@@ -10,21 +10,32 @@
   },
   "data_requirements": {
     "description": "Particle lifetime data and KnotInfo topological indices.",
-    "ssot_methods": ["topology_assignments", "knot_data", "parameters"]
+    "ssot_methods": [
+      "topology_assignments",
+      "knot_data",
+      "parameters"
+    ]
   },
   "success_criteria": {
     "p_value_threshold": 0.01,
     "bonferroni_corrected_threshold": 0.016666,
-    "r_squared_minimum": 0.60,
+    "r_squared_minimum": 0.6,
     "allowed_error_percent": 5.0
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 2,
     "consecutive_stop_limit": 2
   },
   "test_method": "Multivariate regression analysis and Monte Carlo permutation test for FPR evaluation.",
   "priority": "medium",
-  "max_iterations": 2
+  "max_iterations": 2,
+  "cycle": 8,
+  "verdict_date": "2026-02-24",
+  "verdict_summary": "Lifetime-topology: R²=0.991, p=0.0128",
+  "key_metrics": {
+    "r2": 0.991,
+    "p_value": 0.0128
+  }
 }

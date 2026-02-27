@@ -2,7 +2,7 @@
   "id": "H53",
   "name": "24-cell コンパクト化スキーム",
   "description": "24-cell を余剰次元の基本格子と定義し、κ = π/24 を幾何学的共鳴条件として再導出することで G の計算精度を向上させる。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-27",
   "hypothesis": {
     "H0": "24-cell によるコンパクト化は G の導出精度において既存モデルを超える改善をもたらさない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "Newton定数 G の実験値、および 24-cell の幾何学的不変量。",
-    "ssot_methods": ["get_gravity_constants", "get_mathematical_constants"]
+    "ssot_methods": [
+      "get_gravity_constants",
+      "get_mathematical_constants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "GRAVITY_SECTOR",
@@ -19,16 +22,22 @@
     "notes": "係数は 24-cell の幾何学的性質から固定される必要がある。"
   },
   "statistical_thresholds": {
-    "error_max": 0.000001,
-    "fpr_max": 0.50
+    "error_max": 1e-06,
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
-    "error_max": 0.000001,
+    "error_max": 1e-06,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "精密数値計算による G の再現、および幾何学的導出プロセスの論理検証。",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 21,
+  "verdict_date": "2026-02-27",
+  "verdict_summary": "G error=0.000026%, 24-cell compactification",
+  "key_metrics": {
+    "error_pct": 2.6e-05
+  }
 }

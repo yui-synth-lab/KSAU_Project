@@ -2,7 +2,7 @@
   "id": "H42",
   "name": "Boson Systematic Shift (Brunnian Scaling)",
   "description": "ボソンセクター (C=3) の +5.5 ln シフトを、SSoT 定数 C_boson (5.5414) と Brunnian link の連結構造から説明する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "ボソン質量の +5.5 ln シフトは統計的逸脱であり、物理的根拠を持たない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "ボソンおよびフェルミオンの質量データ、SSoT のスケーリング定数。",
-    "ssot_methods": ["get_particle_data", "get_scaling_laws"]
+    "ssot_methods": [
+      "get_particle_data",
+      "get_scaling_laws"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "BOSONS_AND_FERMIONS",
@@ -20,16 +23,23 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "12 粒子統一モデルにおける R² 改善度の評価（ボソンシフト適用時）。",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 17,
+  "verdict_date": "2026-02-26",
+  "verdict_summary": "Boson offset C geometric derivation, 12-particle R²=0.95",
+  "key_metrics": {
+    "r2": 0.95,
+    "fpr": 0.0
+  }
 }

@@ -2,7 +2,7 @@
   "id": "H24",
   "name": "Topological Stability Index for Lifetimes",
   "description": "Crossing Number, Unknotting Number, Signature から TSI を構築し、崩壊率 ln(Gamma) との相関を検証する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-24",
   "hypothesis": {
     "H0": "粒子の寿命は位相幾何学的構造とは無関係である。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "KnotInfo (Crossing, Unknotting, Signature) および粒子寿命データ",
-    "ssot_methods": ["get_knotinfo_data", "get_particle_lifetimes"]
+    "ssot_methods": [
+      "get_knotinfo_data",
+      "get_particle_lifetimes"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "MAIN_PARTICLES",
@@ -20,16 +23,24 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "TSI と ln(Gamma) の線形回帰分析、およびトポロジー割り当てをシャッフルしたモンテカルロ置換検定。",
   "priority": "medium",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 10,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "TSI formula: R²=0.9129, p=0.0153, FPR=1.53%",
+  "key_metrics": {
+    "r2": 0.9129,
+    "p_value": 0.0153,
+    "fpr": 0.0153
+  }
 }

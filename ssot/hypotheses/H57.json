@@ -2,7 +2,7 @@
   "id": "H57",
   "name": "ST Linear Correction Redesign",
   "description": "幾何学的に導出されたトーション補正による質量残差の解消",
-  "status": "active",
+  "status": "modified",
   "created_date": "2026-02-27",
   "hypothesis": {
     "H0": "トーション項による線形補正を適用しても、R² > 0.999 は達成されない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "フェルミオン質量の対数残差および結び目トーション ST データ",
-    "ssot_methods": ["get_particle_data", "get_topology_data"]
+    "ssot_methods": [
+      "get_particle_data",
+      "get_topology_data"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "FERMIONS_9",
@@ -20,16 +23,22 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 4,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "係数固定線形回帰および LOO-CV 分析",
   "priority": "high",
-  "max_iterations": 4
+  "max_iterations": 4,
+  "cycle": 22,
+  "verdict_date": "2026-02-27",
+  "verdict_summary": "R²=0.9997 BUT LOO-CV unreported, α derivation missing",
+  "key_metrics": {
+    "r2": 0.9997
+  }
 }

@@ -2,7 +2,7 @@
   "id": "H23",
   "name": "Phase-Discretized Mass Model (K=24)",
   "description": "位相レゾナンス K=24 に基づく離散化（Phase-Discretization）を導入し、質量予測精度を MAE 0.1% 以下に向上させる。",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-24",
   "hypothesis": {
     "H0": "粒子の質量分布は体積 V に対して連続的であり、離散的な位相レゾナンス構造は存在しない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "実験的な全12粒子の質量および位相幾何学的体積 V",
-    "ssot_methods": ["get_particle_masses", "get_topological_volumes"]
+    "ssot_methods": [
+      "get_particle_masses",
+      "get_topological_volumes"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_12_PARTICLES",
@@ -20,16 +23,22 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "Phase-Discretized モデルの R^2 評価、および連続モデルとの尤度比検定。",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 10,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "FPR=93.82%, tautological discretization",
+  "key_metrics": {
+    "fpr": 0.9382
+  }
 }

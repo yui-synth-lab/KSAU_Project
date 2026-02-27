@@ -2,7 +2,7 @@
   "id": "H51",
   "name": "TQFT Embedding into SM Gauge Group",
   "description": "24-cell 対称群の表現分解から SM ゲージ群 SU(3)×SU(2)×U(1) を代数的に導出する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-27",
   "hypothesis": {
     "H0": "24-cell 対称群の構造と、標準模型のゲージ群の間には数学的な対応関係が存在しない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "24-cell 幾何学構造、リー代数の表現論データ",
-    "ssot_methods": ["mathematical_constants", "dimensions"]
+    "ssot_methods": [
+      "mathematical_constants",
+      "dimensions"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "SM_GAUGE_BOSONS",
@@ -20,11 +23,11 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "mathematical_inconsistency": "即座に REJECT",
@@ -32,5 +35,9 @@
   },
   "test_method": "リー代数の次元分解および構造定数の数学的照合",
   "priority": "medium",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 20,
+  "verdict_date": "2026-02-27",
+  "verdict_summary": "D4 root system: SM gauge rank(4) and dim(12) from first principles",
+  "key_metrics": {}
 }

@@ -2,7 +2,7 @@
   "id": "H43",
   "name": "Refined TSI for Decay Widths",
   "description": "TSI 定義にエントロピー項 (ln Det) または正則化を導入し、全粒子の崩壊幅を R² > 0.8 で説明する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "崩壊幅 Γ は静的トポロジカル不変量とは無相関である。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "全粒子の崩壊幅データおよび結び目不変量データ。",
-    "ssot_methods": ["get_particle_data", "get_knotinfo_data"]
+    "ssot_methods": [
+      "get_particle_data",
+      "get_knotinfo_data"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_STABLE_AND_UNSTABLE_PARTICLES",
@@ -20,17 +23,24 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
-    "r_squared_minimum": 0.70,
+    "r_squared_minimum": 0.7,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "Refined TSI と ln(Γ) の対数線形回帰および Bonferroni 検定。",
   "priority": "medium",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 17,
+  "verdict_date": "2026-02-26",
+  "verdict_summary": "TSI regularization: R²=0.7246, FPR=0.0067",
+  "key_metrics": {
+    "r2": 0.7246,
+    "fpr": 0.0067
+  }
 }

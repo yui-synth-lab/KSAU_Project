@@ -2,7 +2,7 @@
   "id": "H56",
   "name": "Quantitative Predictions",
   "description": "アクシオン質量、重力偏差、トップ崩壊幅の定量的予測と実験照合",
-  "status": "active",
+  "status": "modified",
   "created_date": "2026-02-27",
   "hypothesis": {
     "H0": "理論導出された新規予測値は、既存の実験誤差範囲内で統計的に有意な一致を示さない。",
@@ -10,7 +10,11 @@
   },
   "data_requirements": {
     "description": "SSoT 定数および ADMX, MICROSCOPE, LHC の最新実験データ",
-    "ssot_methods": ["get_physical_constants", "get_axion_prediction", "get_gravity_constants"]
+    "ssot_methods": [
+      "get_physical_constants",
+      "get_axion_prediction",
+      "get_gravity_constants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "AXION_GRAVITY_TOP",
@@ -20,16 +24,22 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "実験値の 2-sigma 範囲への包含確率および z-score 分析",
   "priority": "critical",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 22,
+  "verdict_date": "2026-02-27",
+  "verdict_summary": "Predictions within 2σ, FPR<50%, BUT joint MC p=0.2409 > 0.016666",
+  "key_metrics": {
+    "p_value": 0.2409
+  }
 }

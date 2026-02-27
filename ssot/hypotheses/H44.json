@@ -2,7 +2,7 @@
   "id": "H44",
   "name": "Theoretical Derivation of kappa",
   "description": "24-cell幾何学的対称性から質量勾配係数 kappa = pi/24 を理論的に導出する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "kappa は自由フィッティングパラメータである。",
@@ -10,7 +10,9 @@
   },
   "data_requirements": {
     "description": "SSoTの数学定数および24-cellの幾何学的指標",
-    "ssot_methods": ["get_mathematical_constants"]
+    "ssot_methods": [
+      "get_mathematical_constants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_12_PARTICLES",
@@ -20,16 +22,23 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.025,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.025,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "理論値固定下での質量予測精度（R2, MAE）の検証",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 18,
+  "verdict_date": "2026-02-26",
+  "verdict_summary": "κ=π/24, K=24 (SO(8) roots), p=0.0001",
+  "key_metrics": {
+    "p_value": 0.0001,
+    "fpr": 0.0001
+  }
 }

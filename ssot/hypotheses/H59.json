@@ -2,7 +2,7 @@
   "id": "H59",
   "name": "LOO-CV検証とα理論導出によるST補正質量モデルの確立",
   "description": "線形ST補正モデル ln(m)=κV+α·ln(ST)+γ+β において、α をKSAU幾何学的定数から第一原理的に導出し、LOO-CV（Leave-One-Out交差検証）によって過学習を排除した上でモデルの統計的有効性を確立する。",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-27",
   "cycle": 23,
   "based_on": "H57 (MODIFY — Cycle 22 verdict)",
@@ -65,7 +65,7 @@
     "bonferroni_base_alpha": "SSoT statistical_thresholds.bonferroni_base_alpha (=0.05)",
     "bonferroni_n_hypotheses_cycle": 3,
     "bonferroni_corrected_p_max": 0.016667,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "monte_carlo_n_trials": "SSoT statistical_thresholds.monte_carlo_n_trials (=10000)",
     "random_seed": 42,
     "loo_quality_threshold": {
@@ -76,7 +76,7 @@
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016667,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 4,
     "consecutive_stop_limit": 2,
     "alpha_not_derived": "αの幾何学的導出式が提示されない → 即座にMODIFY（LOO-CV実施前にブロック）",
@@ -88,5 +88,11 @@
   "test_method": "1)[Iter5] α導出: SSoT定数の組み合わせを系統的に探索し、derivation_formulaを確定。2)[Iter6] α固定・γ固定（=-v_borromean or 理論値）でβをOLS推定。p値（β≠0のt検定）を報告。9点全LOO-CVを実施しLOO-MAE・LOO-R²・各残差をresults.jsonに記録。3)[Iter7] γの整合性検証: γ=-7.219 vs γ=-v_borromean=-7.327724753の比較分析。採用値と幾何学的根拠を明記。4) モンテカルロ置換検定（n=10000, seed=42）でFPRを推定。",
   "priority": "high",
   "max_iterations": 4,
-  "ssot_path": "E:\\Obsidian\\KSAU_Project\\ssot\\constants.json"
+  "ssot_path": "E:\\Obsidian\\KSAU_Project\\ssot\\constants.json",
+  "verdict_date": "2026-02-27",
+  "verdict_summary": "LOO-R²=0.1075 << 0.2801, α=√2κ LOO unstable",
+  "key_metrics": {
+    "r2_loo": 0.1075,
+    "r2_train": 0.2801
+  }
 }

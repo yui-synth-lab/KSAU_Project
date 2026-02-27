@@ -2,7 +2,7 @@
   "id": "H48",
   "name": "Non-linear Topological Mass Correction",
   "description": "線形補正の限界を超え、第一原理に基づく非線形トポロジカル補正項によるフェルミオン質量残差の削減を目指す。",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "非線形トポロジカル補正項（例：指数関数的トーション結合など）は、ベースライン（κ=π/24, V_eff）の予測精度を有意に（Bonferroni補正後閾値未満で）向上させない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "全フェルミオンの観測質量および、結び目不変量 (V, ST, Det, n など)",
-    "ssot_methods": ["particle_data", "effective_volume_model"]
+    "ssot_methods": [
+      "particle_data",
+      "effective_volume_model"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_9_FERMIONS",
@@ -20,16 +23,22 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY（物理的制約を満たさないモデルは誤差の大小によらず無効）"
   },
   "test_method": "非線形回帰による残差削減率の評価、およびモンテカルロ置換検定によるFPRの算出。LOO-CVによる過学習チェック（Training MAEとLOO-MAEの乖離）",
   "priority": "medium",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 19,
+  "verdict_date": "2026-02-26",
+  "verdict_summary": "p=0.0435 > 0.016666, non-linear correction failed, STOP×2",
+  "key_metrics": {
+    "p_value": 0.0435
+  }
 }

@@ -2,7 +2,7 @@
   "id": "H38",
   "name": "Linear Topological Torsion Correction",
   "description": "質量残差に対し、自由度を制限したトーション項 ln(ST) による線形補正の有意性を検証する",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "フェルミオン質量の予測残差 Δln(m) は、トポロジカル・トーション ln(ST) によって説明されない。",
@@ -10,7 +10,11 @@
   },
   "data_requirements": {
     "description": "フェルミオン質量、有効体積、および Smallest Torsion (ST) データ",
-    "ssot_methods": ["get_fermion_masses", "get_effective_volume", "get_torsion_data"]
+    "ssot_methods": [
+      "get_fermion_masses",
+      "get_effective_volume",
+      "get_torsion_data"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_9_FERMIONS",
@@ -20,16 +24,22 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.025,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.025,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY（特に κ の固定違反）"
   },
   "test_method": "固定勾配下での線形回帰分析およびモンテカルロ置換検定",
   "priority": "medium",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 15,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "p=0.0408 > 0.025, torsion mass residual correction failed",
+  "key_metrics": {
+    "p_value": 0.0408
+  }
 }

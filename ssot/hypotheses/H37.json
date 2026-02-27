@@ -2,7 +2,7 @@
   "id": "H37",
   "name": "Topological Correlates of Decay Width",
   "description": "粒子の崩壊幅がトポロジカル不変量（n, u, s）の線形結合で記述可能か検証する",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "粒子の崩壊幅 Γ は、トポロジカル不変量（交差数 n、非結び目化数 u、署名 s）と統計的に有意な相関を持たない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "PDG崩壊幅データと結び目不変量データ",
-    "ssot_methods": ["get_particle_data", "get_topology_data"]
+    "ssot_methods": [
+      "get_particle_data",
+      "get_topology_data"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_INSTABLE_PARTICLES",
@@ -20,16 +23,23 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.025,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.025,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "最小二乗法による重回帰分析およびモンテカルロ置換検定",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 15,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "p=0.1610, decay width topology correlation failed",
+  "key_metrics": {
+    "p_value": 0.161,
+    "fpr": 0.1012
+  }
 }

@@ -2,7 +2,7 @@
   "id": "H30",
   "name": "DM Parity and Gauge Refinement",
   "description": "Refines Dark Matter candidates by applying topological parity and gauge group consistency constraints.",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-25",
   "hypothesis": {
     "H0": "Top 10 DM candidates identified in Cycle 11 lack unique topological parity characteristics that forbid SM gauge interactions.",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "Topological invariants and parity properties of the Top 10 DM knots.",
-    "ssot_methods": ["get_dm_candidates", "get_topology_invariants"]
+    "ssot_methods": [
+      "get_dm_candidates",
+      "get_topology_invariants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "DM_TOP_10_CANDIDATES",
@@ -30,5 +33,11 @@
   },
   "test_method": "Topological symmetry analysis and gauge invariance mapping.",
   "priority": "medium",
-  "max_iterations": 4
+  "max_iterations": 4,
+  "cycle": 12,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "Parity constraint: FPR=0.00%, Top 3 DM candidates",
+  "key_metrics": {
+    "fpr": 0.0
+  }
 }

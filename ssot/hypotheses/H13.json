@@ -2,7 +2,7 @@
   "id": "H13",
   "name": "Non-linear TQFT CS Mapping",
   "description": "Construction of non-linear algebraic mapping to TQFT CS level k with high Witten consistency.",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-23",
   "hypothesis": {
     "H0": "No mapping k(T) achieves Witten consistency rate > 80% or mapping remains tautological (r >= 0.95 with V).",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "Determinant and Volume data from topology_assignments.json.",
-    "ssot_methods": ["get_topology_constants", "get_statistical_thresholds"]
+    "ssot_methods": [
+      "get_topology_constants",
+      "get_statistical_thresholds"
+    ]
   },
   "success_criteria": {
     "p_value_threshold": 0.05,
@@ -20,11 +23,17 @@
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.025,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 2,
     "consecutive_stop_limit": 2
   },
   "test_method": "Discrete functional mapping evaluation and permutation testing for significance.",
   "priority": "high",
-  "max_iterations": 2
+  "max_iterations": 2,
+  "cycle": 6,
+  "verdict_date": "2026-02-23",
+  "verdict_summary": "Witten integrity=75% << 80%, max iteration reached",
+  "key_metrics": {
+    "integrity_rate": 0.75
+  }
 }

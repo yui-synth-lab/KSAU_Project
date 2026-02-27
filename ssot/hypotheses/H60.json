@@ -2,7 +2,7 @@
   "id": "H60",
   "name": "Det ≡ 0 (mod 24) 条件と位相安定性の相関検証",
   "description": "24-cell対称性から導出されるDet ≡ 0 (mod 24)条件が、KnotInfo全データベースにわたってTSI（位相安定性指数）≥ 24と統計的に有意な正相関を持つかを検証し、24-cell対称性の普遍的な選択原理としての妥当性を示す。",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-27",
   "cycle": 23,
   "based_on": "新規 — seed Section 4 (H55 ACCEPT成果の一般化)",
@@ -44,14 +44,14 @@
     "bonferroni_base_alpha": "SSoT statistical_thresholds.bonferroni_base_alpha (=0.05)",
     "bonferroni_n_hypotheses_cycle": 3,
     "bonferroni_corrected_p_max": 0.016667,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "monte_carlo_n_trials": "SSoT statistical_thresholds.monte_carlo_n_trials (=10000)",
     "random_seed": "SSoT analysis_parameters.random_seed (=42)",
     "odds_ratio_requirement": "オッズ比 > 1 (det≡0 mod 24 が TSI≥24 に対して正の寄与を持つこと)"
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016667,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 3,
     "consecutive_stop_limit": 2,
     "dm_only_subset": "DM候補60個のみを対象とした検定を実施した場合 → 即座にMODIFY（循環論法）",
@@ -65,5 +65,11 @@
   },
   "priority": "medium",
   "max_iterations": 3,
-  "ssot_path": "E:\\Obsidian\\KSAU_Project\\ssot\\constants.json"
+  "ssot_path": "E:\\Obsidian\\KSAU_Project\\ssot\\constants.json",
+  "verdict_date": "2026-02-27",
+  "verdict_summary": "FPR=99.85%, OR=0.7452<1 (negative correlation)",
+  "key_metrics": {
+    "fpr": 0.9985,
+    "odds_ratio": 0.7452
+  }
 }

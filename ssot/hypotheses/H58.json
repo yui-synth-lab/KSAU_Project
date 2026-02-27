@@ -2,7 +2,7 @@
   "id": "H58",
   "name": "ジョイントMC検定による定量的予測の統計的確立",
   "description": "アクシオン質量・重力偏差・Top崩壊幅の3予測をジョイントMC置換検定で同時評価し、Bonferroni補正後p < 0.016667を達成することで、KSAUの定量的予測能力を統計的に確立する。",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-27",
   "cycle": 23,
   "based_on": "H56 (MODIFY — Cycle 22 verdict)",
@@ -44,7 +44,7 @@
     "bonferroni_base_alpha": "SSoT statistical_thresholds.bonferroni_base_alpha (=0.05)",
     "bonferroni_n_hypotheses_cycle": 3,
     "bonferroni_corrected_p_max": 0.016667,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "monte_carlo_n_trials": "SSoT statistical_thresholds.monte_carlo_n_trials (=10000)",
     "random_seed": 42,
     "internal_bonferroni_n": 3,
@@ -52,7 +52,7 @@
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016667,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 4,
     "consecutive_stop_limit": 2,
     "free_parameter_violation": "自由パラメータが導入された場合（予測値の後付け調整）→ 即座にMODIFY",
@@ -62,5 +62,10 @@
   "test_method": "1) 各予測の z-score 計算: z_i=(predicted_i - observed_i)/σ_i。2) ジョイント検定統計量: χ²=Σz_i²（χ²(3)分布）またはFisherの結合p値法（-2Σln(p_i)）。3) MC置換検定: 3予測に対し同一のランダムインデックスを適用したjoint permutation test（n=10000, seed=42）でFPRを推定。4) 個別BonferroniNによる各z_iの評価。5) results.jsonに個別z-score・個別p値・joint p値・FPRを記録。",
   "priority": "high",
   "max_iterations": 4,
-  "ssot_path": "E:\\Obsidian\\KSAU_Project\\ssot\\constants.json"
+  "ssot_path": "E:\\Obsidian\\KSAU_Project\\ssot\\constants.json",
+  "verdict_date": "2026-02-27",
+  "verdict_summary": "Joint MC p=0.067 > Bonferroni 0.016667",
+  "key_metrics": {
+    "p_value": 0.067
+  }
 }

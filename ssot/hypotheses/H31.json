@@ -2,7 +2,7 @@
   "id": "H31",
   "name": "崩壊幅の基本的結び目不変量回帰",
   "description": "粒子の崩壊幅 Γ が Crossing Number (n), Unknotting Number (u), Signature (|s|) の線形結合によって統計的に説明可能か検証する。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-25",
   "hypothesis": {
     "H0": "崩壊幅 Γ は n, u, |s| と統計的に有意な相関を持たない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "PDG 崩壊幅データおよび KnotInfo の基本不変量 (n, u, s)。",
-    "ssot_methods": ["get_decay_widths", "get_knot_invariants"]
+    "ssot_methods": [
+      "get_decay_widths",
+      "get_knot_invariants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_MEASURED_PARTICLES",
@@ -20,16 +23,23 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY（合成指数の恣意的変更は禁止）"
   },
   "test_method": "最小二乗法による重回帰分析およびモンテカルロ置換検定。",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 13,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "Decay width regression: p=0.00611, R²=0.8015",
+  "key_metrics": {
+    "p_value": 0.00611,
+    "r2": 0.8015
+  }
 }

@@ -2,7 +2,7 @@
   "id": "H46",
   "name": "10D Compactification Gravity Precision",
   "description": "10次元バルクのコンパクト化幾何学を利用し、重力補正項と重力定数の予測精度を第一原理から向上させる。",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-26",
   "hypothesis": {
     "H0": "10Dコンパクト化パラメータ（オイラー標数等）に基づく補正モデルは、現在のKSAU重力定数予測誤差（0.0815%）を有意に改善しない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "G_newton_exp (6.708e-39), G_ksau, k_c, delta 等の現在の重力パラメータ、および次元設定 (bulk_total=10, bulk_compact=7)",
-    "ssot_methods": ["gravity", "dimensions"]
+    "ssot_methods": [
+      "gravity",
+      "dimensions"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "GRAVITY_SECTOR",
@@ -20,16 +23,23 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY（物理的制約を満たさないモデルは誤差の大小によらず無効）"
   },
   "test_method": "導出されたG理論値とG_newton_expの相対誤差評価、およびモンテカルロ法による代替コンパクト化パラメータ群との比較検定",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 19,
+  "verdict_date": "2026-02-26",
+  "verdict_summary": "G precision: FPR=0.0053, error=0.00084%, free params=0",
+  "key_metrics": {
+    "fpr": 0.0053,
+    "error_pct": 0.00084
+  }
 }

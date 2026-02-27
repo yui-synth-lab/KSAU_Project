@@ -2,7 +2,7 @@
   "id": "H20",
   "name": "Geometric G Derivation",
   "description": "Derive Newton's constant G from phase constant kappa and 10D bulk volume.",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-23",
   "hypothesis": {
     "H0": "Newton's G is an independent free parameter unrelated to kappa and bulk volume.",
@@ -10,7 +10,11 @@
   },
   "data_requirements": {
     "description": "SSoT mathematical and gravity constants, bulk dimensions.",
-    "ssot_methods": ["get_mathematical_constants", "get_gravity_constants", "get_dimensions"]
+    "ssot_methods": [
+      "get_mathematical_constants",
+      "get_gravity_constants",
+      "get_dimensions"
+    ]
   },
   "success_criteria": {
     "p_value_threshold": 0.05,
@@ -19,12 +23,19 @@
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 3,
     "consecutive_stop_limit": 2,
     "custom_boundary": "Relative error > 10%"
   },
   "test_method": "Relative error comparison between theoretical G_ksau and SSoT G_exp.",
   "priority": "high",
-  "max_iterations": 3
+  "max_iterations": 3,
+  "cycle": 9,
+  "verdict_date": "2026-02-23",
+  "verdict_summary": "G derivation: error=0.08%, p=0.0",
+  "key_metrics": {
+    "error_pct": 0.08,
+    "p_value": 0.0
+  }
 }

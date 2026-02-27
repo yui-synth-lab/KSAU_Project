@@ -2,7 +2,7 @@
   "id": "H32",
   "name": "質量作用の ST 補正検証",
   "description": "フェルミオン質量の対数 ln(m) が双曲体積 V と Smallest Torsion (ST) の線形結合によって統計的に有意に説明可能か検証する。",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-25",
   "hypothesis": {
     "H0": "Smallest Torsion (ST) はフェルミオン質量の決定において独立した寄与を持たない。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "フェルミオン 9 粒子の質量 (SSoT) および各トポロジーの ST (KnotInfo)。",
-    "ssot_methods": ["get_fermion_masses", "get_st_invariants"]
+    "ssot_methods": [
+      "get_fermion_masses",
+      "get_st_invariants"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "FERMIONS_9",
@@ -20,16 +23,22 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY（自由度不足、マジックナンバーの導入禁止）"
   },
   "test_method": "線形回帰および残差削減率 (Residual Variance Reduction) の評価。",
   "priority": "medium",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 13,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "p=0.0712 > Bonferroni 0.0167, torsion correction failed",
+  "key_metrics": {
+    "p_value": 0.0712
+  }
 }

@@ -2,7 +2,7 @@
   "id": "H22",
   "name": "Derivation of kappa = pi/24",
   "description": "位相幾何学的レゾナンス条件 K(4)*kappa = pi (K(4)=24) から kappa = pi/24 を理論的に導出する。",
-  "status": "active",
+  "status": "rejected",
   "created_date": "2026-02-24",
   "hypothesis": {
     "H0": "kappa は経験的なフィッティングパラメータであり、pi とは無関係である。",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "数学的定数および質量フィッティング残差データ",
-    "ssot_methods": ["get_mathematical_constants", "get_mass_data"]
+    "ssot_methods": [
+      "get_mathematical_constants",
+      "get_mass_data"
+    ]
   },
   "physical_constraints": {
     "particle_scope": "ALL_12_PARTICLES",
@@ -20,17 +23,24 @@
   },
   "statistical_thresholds": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50
+    "fpr_max": 0.5
   },
   "rejection_criteria": {
     "derivation_error_max": 0.01,
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 5,
     "consecutive_stop_limit": 2,
     "physical_constraint_violation": "即座に MODIFY"
   },
   "test_method": "幾何学的レゾナンスの数理的証明および理論値 kappa による質量予測残差の評価。",
   "priority": "high",
-  "max_iterations": 5
+  "max_iterations": 5,
+  "cycle": 10,
+  "verdict_date": "2026-02-25",
+  "verdict_summary": "p=0.0354 > Bonferroni 0.01667, R²=0.5502",
+  "key_metrics": {
+    "p_value": 0.0354,
+    "r2": 0.5502
+  }
 }

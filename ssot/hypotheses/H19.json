@@ -2,7 +2,7 @@
   "id": "H19",
   "name": "Phase Viscosity Refinement",
   "description": "Improve Down/Strange quark mass prediction accuracy using topological interaction energy.",
-  "status": "active",
+  "status": "accepted",
   "created_date": "2026-02-23",
   "hypothesis": {
     "H0": "Topological interaction terms (functions of crossing numbers) do not significantly reduce MAE for Down/Strange quarks.",
@@ -10,7 +10,10 @@
   },
   "data_requirements": {
     "description": "KnotInfo data and SSoT fermion masses.",
-    "ssot_methods": ["get_physical_constants", "get_phase_viscosity_model"]
+    "ssot_methods": [
+      "get_physical_constants",
+      "get_phase_viscosity_model"
+    ]
   },
   "success_criteria": {
     "p_value_threshold": 0.05,
@@ -20,12 +23,19 @@
   },
   "rejection_criteria": {
     "bonferroni_corrected_p_max": 0.016666,
-    "fpr_max": 0.50,
+    "fpr_max": 0.5,
     "max_iterations": 4,
     "consecutive_stop_limit": 2,
     "custom_boundary": "MAE > 8.0% after Iter 2"
   },
   "test_method": "Parameter estimation via least squares/Bayesian optimization and LOO-CV validation.",
   "priority": "high",
-  "max_iterations": 4
+  "max_iterations": 4,
+  "cycle": 9,
+  "verdict_date": "2026-02-23",
+  "verdict_summary": "Phase viscosity: MAE=0.79%, p=0.0007",
+  "key_metrics": {
+    "mae_pct": 0.79,
+    "p_value": 0.0007
+  }
 }
