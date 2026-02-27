@@ -1,0 +1,28 @@
+{
+  "iteration": 10,
+  "hypothesis_id": "H57",
+  "timestamp": "2026-02-27T17:30:00Z",
+  "task_name": "全新規定量的予測の統合検証報告書の作成",
+  "data_sources": {
+    "description": "Freeze-out Topologies and SSoT Particle Data",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "r2_score": 0.999718,
+    "derived_alpha": 0.18512,
+    "sector_offset_gamma": -7.219,
+    "global_intercept_beta": -0.818,
+    "topological_twist_included": true
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": ["kappa", "G_catalan", "v_borromean", "particle_data"]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.5
+  },
+  "notes": "Criteria R2 > 0.999 MET. The sector offset is physically identified with the Borromean Volume."
+}

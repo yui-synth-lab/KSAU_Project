@@ -6,6 +6,18 @@
   "entries": [
     {
       "date": "2026-02-27",
+      "cycle": "cycle_22",
+      "iteration": "iter_02/05",
+      "judge_verdict": "H55 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "update/add",
+      "key": "assignment_rules.validated_by, assignment_rules.statistical_validation, dark_matter_candidates.stable_link_candidates_count, dark_matter_candidates.rule_basis",
+      "old_value": "null or existing",
+      "new_value": "multiple (statistical_validation, stable_links=67, rule=det mod 24)",
+      "reason": "Cycle 22 の ACCEPT 判定（H55）に基づき、24-cell 対称性に基づくトポロジー割り当てルール（12/12一致, p=0.0）および安定暗黒物質候補の抽出条件を統合。"
+    },
+    {
+      "date": "2026-02-27",
       "cycle": "cycle_21",
       "iteration": "iter_08/06",
       "judge_verdict": "H53, H54 ACCEPT",

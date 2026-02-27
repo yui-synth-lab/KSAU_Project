@@ -1,0 +1,153 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H55",
+  "timestamp": "2026-02-27T05:57:13Z",
+  "task_name": "ルールに基づいた新規暗黒物質候補の抽出と安定性評価",
+  "data_sources": {
+    "description": "KnotInfo/LinkInfo (n <= 12)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "total_candidates_found": 581,
+    "stable_candidates_count": 67,
+    "top_stable_candidates": [
+      {
+        "name": "L10a152{1,0}",
+        "category": "Link",
+        "crossing_number": 10,
+        "components": 3,
+        "determinant": 72,
+        "volume": 13.271869741619367,
+        "signature": 0.0,
+        "unlinking_number": 5.0,
+        "tsi": 100.0,
+        "is_stable": true
+      },
+      {
+        "name": "L10a138{1,0}",
+        "category": "Link",
+        "crossing_number": 10,
+        "components": 3,
+        "determinant": 48,
+        "volume": 10.448618163634748,
+        "signature": 0.0,
+        "unlinking_number": 4.0,
+        "tsi": 80.0,
+        "is_stable": true
+      },
+      {
+        "name": "L10a138{0,1}",
+        "category": "Link",
+        "crossing_number": 10,
+        "components": 3,
+        "determinant": 48,
+        "volume": 10.448618163634748,
+        "signature": 0.0,
+        "unlinking_number": 4.0,
+        "tsi": 80.0,
+        "is_stable": true
+      },
+      {
+        "name": "L10a155{0,0}",
+        "category": "Link",
+        "crossing_number": 10,
+        "components": 3,
+        "determinant": 96,
+        "volume": 15.482905630994656,
+        "signature": 0.0,
+        "unlinking_number": 4.0,
+        "tsi": 80.0,
+        "is_stable": true
+      },
+      {
+        "name": "L10a155{1,0}",
+        "category": "Link",
+        "crossing_number": 10,
+        "components": 3,
+        "determinant": 96,
+        "volume": 15.482905630994656,
+        "signature": 0.0,
+        "unlinking_number": 4.0,
+        "tsi": 80.0,
+        "is_stable": true
+      },
+      {
+        "name": "L10n89{0,1}",
+        "category": "Link",
+        "crossing_number": 10,
+        "components": 3,
+        "determinant": 48,
+        "volume": 12.844853004683545,
+        "signature": 0.0,
+        "unlinking_number": 4.0,
+        "tsi": 80.0,
+        "is_stable": true
+      },
+      {
+        "name": "L10n89{1,1}",
+        "category": "Link",
+        "crossing_number": 10,
+        "components": 3,
+        "determinant": 48,
+        "volume": 12.844853004683545,
+        "signature": 0.0,
+        "unlinking_number": 4.0,
+        "tsi": 80.0,
+        "is_stable": true
+      },
+      {
+        "name": "L10a127{1,0}",
+        "category": "Link",
+        "crossing_number": 10,
+        "components": 3,
+        "determinant": 96,
+        "volume": 15.045648467262875,
+        "signature": 0.0,
+        "unlinking_number": 3.0,
+        "tsi": 60.0,
+        "is_stable": true
+      },
+      {
+        "name": "L10a127{0,1}",
+        "category": "Link",
+        "crossing_number": 10,
+        "components": 3,
+        "determinant": 96,
+        "volume": 15.045648467262875,
+        "signature": 0.0,
+        "unlinking_number": 3.0,
+        "tsi": 60.0,
+        "is_stable": true
+      },
+      {
+        "name": "L10a162{1,0}",
+        "category": "Link",
+        "crossing_number": 10,
+        "components": 3,
+        "determinant": 72,
+        "volume": 13.463954669188087,
+        "signature": 0.0,
+        "unlinking_number": 3.0,
+        "tsi": 60.0,
+        "is_stable": true
+      }
+    ],
+    "tsi_threshold_used": 24,
+    "resonance_constant_k": 24
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "k_resonance",
+      "topology_assignments",
+      "dark_matter_candidates.tsi_threshold"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.5298688411712646
+  },
+  "notes": "Stable criteria: Det % 24 == 0 AND TSI >= 24. Note: Knots are excluded because their determinants are always odd."
+}

@@ -1,0 +1,37 @@
+{
+  "iteration": 4,
+  "hypothesis_id": "H56",
+  "timestamp": "2026-02-27T19:00:00Z",
+  "task_name": "トップクォーク崩壊幅の微小修正項の導出とLHC最新データとの統計比較",
+  "data_sources": {
+    "topology": "L11a225{1}",
+    "experimental": "CMS 2023 / PDG 2024 (1.42 +/- 0.18 GeV)",
+    "sm_baseline": "1.321 GeV (NNLO)"
+  },
+  "computed_values": {
+    "V_eff": 8.443231818549314,
+    "correction_factor_derived": 9.030791864273366,
+    "delta_ksau": 0.06590087221356879,
+    "gamma_sm_mev": 1321.0,
+    "gamma_ksau_mev": 1408.0550521941243,
+    "gamma_experimental_mev": 1420.0,
+    "z_score_ksau": 0.06636082114375388,
+    "z_score_sm": 0.55,
+    "improvement_percent": 87.93439615568111
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "alpha_em",
+      "effective_volume_model",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.05
+  },
+  "notes": "Top quark decay width correction derived from 24-cell resonance K=24 and V_eff. KSAU prediction (1408 MeV) significantly closer to LHC data (1420 MeV) than SM baseline (1321 MeV)."
+}

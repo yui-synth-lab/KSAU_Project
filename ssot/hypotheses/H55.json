@@ -1,0 +1,35 @@
+{
+  "id": "H55",
+  "name": "24-cell Symmetry Rules",
+  "description": "24-cell コンパクト化に基づく一意なトポロジー割り当てルールの確立",
+  "status": "active",
+  "created_date": "2026-02-27",
+  "hypothesis": {
+    "H0": "全 12 粒子のトポロジーを、24-cell 対称性に基づく幾何学的不変量のみを用いて一意に決定する普遍的な規則は存在しない。",
+    "H1": "安定粒子(Det mod 24 = 0)、レプトン(c=1, n < 8)、ボソン(c>=2, n >= 8) 等、幾何学的制約のみからトポロジーが恣意性なく決定される。"
+  },
+  "data_requirements": {
+    "description": "KnotInfo/LinkInfo の不変量 (n, c, Det) および SSoT 粒子データ",
+    "ssot_methods": ["get_topology_data", "get_particle_data"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_12_PARTICLES",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES",
+    "notes": "ルールは幾何学的対称性から演繹される必要があり、データへの適合のための恣意的な閾値変更は禁止。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.01
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.01,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "ランダム割り当て試行に対する提唱ルールの優位性のモンテカルロ置換検定",
+  "priority": "critical",
+  "max_iterations": 5
+}

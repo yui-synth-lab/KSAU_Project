@@ -172,7 +172,14 @@
     "quarks": {
       "Up": { "observed_mass": 2.16, "generation": 1, "charge_type": "up-type" },
       "Charm": { "observed_mass": 1270.0, "generation": 2, "charge_type": "up-type", "observed_decay_width_mev": 6.32896e-10 },
-      "Top": { "observed_mass": 172760.0, "generation": 3, "charge_type": "up-type", "observed_decay_width_mev": 1409.45 },
+      "Top": { 
+        "observed_mass": 172760.0, 
+        "generation": 3, 
+        "charge_type": "up-type", 
+        "observed_decay_width_mev": 1420.0,
+        "observed_decay_width_err_mev": 180.0,
+        "sm_decay_width_mev": 1321.0
+      },
       "Down": { "observed_mass": 4.67, "generation": 1, "charge_type": "down-type" },
       "Strange": { "observed_mass": 93.4, "generation": 2, "charge_type": "down-type", "observed_decay_width_mev": 5.3167e-14 },
       "Bottom": { "observed_mass": 4180.0, "generation": 3, "charge_type": "down-type", "observed_decay_width_mev": 4.0184e-10 }
@@ -286,6 +293,8 @@
   "dark_matter_candidates": {
     "dm_candidates_top10": ["12a_4", "12a_125", "12a_268", "12a_273", "12a_341", "12a_427", "12a_435", "12a_458", "12a_462", "12a_465"],
     "top_dm_candidates": ["12a_435", "12a_462", "12a_125"],
+    "stable_link_candidates_count": 67,
+    "rule_basis": "det_mod_24_zero_and_tsi_gte_24",
     "enrichment_ratio": 2.73,
     "parity_constraint": "applied",
     "symmetry_constraint": "amphicheiral",
@@ -345,6 +354,16 @@
       "stability_boundary": "n_threshold = K / 3",
       "lepton_rule": "n < K/3",
       "dimension_rule": "D = 2^g + 1"
+    },
+    "validated_by": "cycle_22_h55",
+    "statistical_validation": {
+      "p_value": 0.0,
+      "fpr": 0.0,
+      "n_trials": 10000,
+      "matches": "12/12",
+      "pool_size": 7163,
+      "seed": 42,
+      "validated_by": "cycle_22_iter_02"
     }
   }
 }

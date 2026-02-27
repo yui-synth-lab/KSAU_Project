@@ -1,0 +1,123 @@
+{
+  "iteration": 1,
+  "hypothesis_id": "H55",
+  "task": "24-cell Symmetry Rule Formulation and Application",
+  "K": 24,
+  "n_threshold": 8.0,
+  "evaluations": {
+    "Electron": {
+      "sector": "Lepton",
+      "c": 1,
+      "n": 3,
+      "det": 3,
+      "g": 1,
+      "det_target": 3,
+      "rule_match": true,
+      "violations": [],
+      "is_stable_geometric": false
+    },
+    "Muon": {
+      "sector": "Lepton",
+      "c": 1,
+      "n": 4,
+      "det": 5,
+      "g": 2,
+      "det_target": 5,
+      "rule_match": true,
+      "violations": []
+    },
+    "Tau": {
+      "sector": "Lepton",
+      "c": 1,
+      "n": 6,
+      "det": 9,
+      "g": 3,
+      "det_target": 9,
+      "rule_match": true,
+      "violations": []
+    },
+    "W": {
+      "sector": "Boson",
+      "c": 3,
+      "n": 11,
+      "det": 64,
+      "is_brunnian": true,
+      "rule_match": true,
+      "violations": []
+    },
+    "Z": {
+      "sector": "Boson",
+      "c": 3,
+      "n": 11,
+      "det": 112,
+      "is_brunnian": true,
+      "rule_match": true,
+      "violations": []
+    },
+    "Higgs": {
+      "sector": "Boson",
+      "c": 2,
+      "n": 11,
+      "det": 136,
+      "is_brunnian": true,
+      "rule_match": true,
+      "violations": []
+    },
+    "Up": {
+      "sector": "Quark",
+      "c": 2,
+      "n": 9,
+      "det": 12,
+      "rule_match": true,
+      "violations": [],
+      "is_stable_geometric": false
+    },
+    "Down": {
+      "sector": "Quark",
+      "c": 3,
+      "n": 8,
+      "det": 20,
+      "rule_match": true,
+      "violations": [],
+      "is_stable_geometric": false
+    },
+    "Strange": {
+      "sector": "Quark",
+      "c": 3,
+      "n": 11,
+      "det": 36,
+      "rule_match": true,
+      "violations": []
+    },
+    "Charm": {
+      "sector": "Quark",
+      "c": 2,
+      "n": 11,
+      "det": 70,
+      "rule_match": true,
+      "violations": []
+    },
+    "Bottom": {
+      "sector": "Quark",
+      "c": 3,
+      "n": 11,
+      "det": 96,
+      "rule_match": true,
+      "violations": []
+    },
+    "Top": {
+      "sector": "Quark",
+      "c": 2,
+      "n": 11,
+      "det": 110,
+      "rule_match": true,
+      "violations": []
+    }
+  },
+  "summary": {
+    "lepton_rule_match": 3,
+    "boson_rule_match": 3,
+    "quark_rule_match": 6,
+    "stable_rule_match": 0
+  }
+}

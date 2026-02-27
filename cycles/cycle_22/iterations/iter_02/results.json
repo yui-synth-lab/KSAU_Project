@@ -1,0 +1,33 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H55",
+  "timestamp": "2026-02-27T05:30:42Z",
+  "task_name": "Verification of Rule Uniqueness and SSoT Consistency",
+  "data_sources": {
+    "description": "KnotInfo/LinkInfo (3<=n<=12) and SSoT topology_assignments",
+    "loaded_via_ssot": true,
+    "pool_size": 7163
+  },
+  "computed_values": {
+    "observed_matches": 12,
+    "p_value": 0.0,
+    "fpr": 0.0,
+    "mean_random_matches": 5.2034,
+    "max_random_matches": 9
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "k_resonance",
+      "topology_assignments",
+      "assignment_rules"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 9.542966842651367
+  },
+  "notes": "Det = 2^g + 1 rule is from SSoT assignment_rules. Stable rule (Det mod 24 = 0) is partially matched by Bottom quark but not yet verified for standard stables."
+}

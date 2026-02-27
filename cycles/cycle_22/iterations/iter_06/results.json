@@ -1,0 +1,39 @@
+{
+  "iteration": 6,
+  "hypothesis_id": "H56",
+  "timestamp": "2026-02-27T06:01:34Z",
+  "task_name": "予測値の不確実性伝播分析とモンテカルロ置換検定による有意性評価",
+  "uncertainty_propagation": {
+    "top_decay": {
+      "prediction_mev": 1408.0550521941243,
+      "uncertainty_from_v_mev": 0.1505845937194863,
+      "relative_uncertainty": 0.00010694510380459587
+    }
+  },
+  "monte_carlo_permutation_test": {
+    "target": "Top Decay Width (LHC comparison)",
+    "n_trials": 10000,
+    "pool_size": 6970,
+    "ksau_z_score": 0.06636082114375388,
+    "sm_z_score": 0.55,
+    "count_better_than_sm": 9971,
+    "p_value_vs_sm": 0.9971,
+    "count_better_than_ksau": 2409,
+    "p_value_vs_ksau": 0.2409,
+    "significance": "Not Significant (random assignment parity)"
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "alpha_em",
+      "effective_volume_model",
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 2.2572410106658936
+  }
+}

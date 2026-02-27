@@ -1,0 +1,43 @@
+{
+  "iteration": "06_Final",
+  "hypothesis_id": "H56",
+  "timestamp": "2026-02-27T06:16:01Z",
+  "task_name": "予測値の不確実性伝播分析とモンテカルロ置換検定による有意性評価 (H56 最終検証)",
+  "uncertainty_propagation": {
+    "top_decay": {
+      "prediction_mev": 1408.0550521941243,
+      "uncertainty_from_v_mev": 0.1505845937194863,
+      "relative_uncertainty": 0.00010694510380459587
+    }
+  },
+  "monte_carlo_permutation_test": {
+    "target": "Top Decay Width (LHC comparison)",
+    "n_trials": 10000,
+    "pool_size": 6970,
+    "ksau_z_score": 0.06636082114375388,
+    "sm_z_score": 0.55,
+    "count_better_than_sm": 9971,
+    "p_value_vs_sm": 0.9971,
+    "count_better_than_ksau": 2409,
+    "p_value_vs_ksau": 0.2409,
+    "significance": "Not Significant"
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "alpha_em",
+      "effective_volume_model",
+      "topology_assignments",
+      "particle_data.quarks.Top.observed_decay_width_mev",
+      "particle_data.quarks.Top.observed_decay_width_err_mev",
+      "particle_data.quarks.Top.sm_decay_width_mev"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 2.2953407764434814
+  },
+  "notes": "H56 の SSoT 違反を解消した最終検証版。全定数を SSoT から取得。"
+}

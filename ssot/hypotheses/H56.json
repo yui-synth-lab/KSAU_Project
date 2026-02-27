@@ -1,0 +1,35 @@
+{
+  "id": "H56",
+  "name": "Quantitative Predictions",
+  "description": "アクシオン質量、重力偏差、トップ崩壊幅の定量的予測と実験照合",
+  "status": "active",
+  "created_date": "2026-02-27",
+  "hypothesis": {
+    "H0": "理論導出された新規予測値は、既存の実験誤差範囲内で統計的に有意な一致を示さない。",
+    "H1": "24-cell 共鳴理論（K=24）から導出された予測値は、ADMX, MICROSCOPE, LHC の実験結果と 95% 信頼区間内で一致する。"
+  },
+  "data_requirements": {
+    "description": "SSoT 定数および ADMX, MICROSCOPE, LHC の最新実験データ",
+    "ssot_methods": ["get_physical_constants", "get_axion_prediction", "get_gravity_constants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "AXION_GRAVITY_TOP",
+    "max_free_parameters": 1,
+    "derivation_requirement": "FIRST_PRINCIPLES",
+    "notes": "単一の理論的整合性（K=24）に基づき、全予測を統一的に導出すること。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "実験値の 2-sigma 範囲への包含確率および z-score 分析",
+  "priority": "critical",
+  "max_iterations": 5
+}

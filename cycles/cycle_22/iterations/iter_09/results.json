@@ -1,0 +1,28 @@
+{
+  "iteration": 9,
+  "hypothesis_id": "H57",
+  "timestamp": "2026-02-27T16:00:00Z",
+  "task_name": "24-cell 複体におけるトーション項の幾何学的係数 alpha の理論的導出",
+  "data_sources": {
+    "description": "24-cell modular geometry and local curvature (kappa)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "curvature_kappa": 0.1308996938995747,
+    "torsion_unit_tau": 0.1308996938995747,
+    "derived_alpha": 0.01713472986,
+    "derivation_formula": "alpha = kappa * tau = kappa^2",
+    "physical_interpretation": "Product of local 24-cell curvature and fundamental torsion quantum."
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": ["kappa", "k_resonance"]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.1
+  },
+  "notes": "H57 Task 7 completed. The coefficient alpha is derived from first principles as kappa^2, consistent with v6.0 torsion corrections."
+}
