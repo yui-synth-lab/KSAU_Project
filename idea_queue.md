@@ -61,7 +61,23 @@ Phase 3 実行中に思いついたアイデアをここに追記してくださ
 - **再開条件:** 混合角の導出精度向上のための理論的枠組みが整ってから
 
 
-## Priority: Critical (Major Revision対応必須)
+## Priority: Critical (Theory Consolidation)
+
+### H48: 数理的厳密化と次元解析
+- **アイデア:** 比喩的な「貼り付き度」を、プランク定数 $h$、光速 $c$、重力定数 $G$ を用いた厳密な物理量として再定義する。
+- **検証項目:** $E=mc^2$ との整合性、加速系におけるトポロジー変形エネルギーの導出、ローレンツ不変性の確認。
+- **引き継ぎ元:** deep-research-report.md「数式と論理構造の整合性」
+
+### H49: 既存実験データとの定量的比較 (Axion & G)
+- **アイデア:** KSAUが予測するアクシオン質量 $m_a$ と抑制因子 $ST$ を、CAST/ADMX 実験の制限値と比較する。また、Newton定数 $G$ の微小偏差予測を MICROSCOPE 実験結果と照合する。
+- **目標:** 既存の実験誤差範囲内に予測が収まっているか、あるいは次世代実験での検証可能性を提示。
+- **引き継ぎ元:** deep-research-report.md「実験検証可能性」
+
+### H50: 寿命 ($\tau$) と双曲体積 ($V$) の相関検証
+- **アイデア:** レプトン（$e, \mu, \tau$）の寿命データを用い、$ln(\tau) = -\alpha V + \beta$ の関係が成立するかを検証する。
+- **データ:** $e$ (安定, $V=0$), $\mu$ ($2.197 \mu s, V=2.03$), $\tau$ ($290 fs, V=3.16$)。
+- **引き継ぎ元:** KSAU_theory_notes.md「寿命の幾何学的解釈」
+
 ### H44: Novel Quantitative Predictions from KSAU
 **Description:**  
 現在は既知データへの後ろ向きフィットのみ。  
@@ -109,3 +125,195 @@ Cycle 18 Seedでは **H44 + H45** を最優先で回す。
 **Note for Orchestrator:**  
 このidea_queueは査読者レビュー（2026-02-26）の**直接対応版**です。  
 全仮説はSSoT/constants.json の新セクション "prediction_targets" と "assignment_rules" を参照必須。
+
+
+## Catalan's Constant G and π/24: A Geometric Convergence
+
+### Numerical Proximity
+- G = 0.915965594...
+- 7π/24 = 0.916297857...
+- Relative difference: ~0.03% (1/3000)
+
+### Potential Geometric Connection
+The near-equality suggests a deep relation between:
+- **Phase discretization** (π/24 from 24-cell symmetry)
+- **Hyperbolic geometry** (G from Borromean rings volume: 8G)
+
+### Key Identity
+8G/π = 7/3 ≈ 2.333...
+
+This fraction 7/3 appears in boson coupling models, suggesting:
+N_boson = 42 = 6 × 7
+    
+where 7 emerges from G/(π/24) ≈ 7.
+
+### Implications for Sector Scaling
+| Sector | N | Candidate Origin |
+|--------|---|----------------|
+| Quark | 10 | D_bulk = 10 (string theory) |
+| Lepton | 5 | ? (requires re-examination) |
+| Boson | 42 | 6×7 = (compactification factor)×(G/(π/24)) |
+
+### Open Questions
+- [ ] Does 6 correspond to Calabi-Yau dimensions or quark flavors?
+- [ ] Can lepton N=5 be derived from 7 − 2 (boundary/bulk split)?
+- [ ] Is the 0.03% deviation physically significant (threshold effect)?
+
+
+・E = mc² は出る？
+・慣性質量＝重力質量になる？
+・ローレンツ不変性は守られる？
+
+---
+
+###  ここからは完全に仮設
+
+時間基盤モデル（作業仮説）
+基本視点
+
+宇宙の根底は「時間の流れ」。
+空間は独立した舞台ではなく、
+
+時間軸方向への進行運動の幾何学的断面
+
+として現れる。
+
+光速と存在の運動
+
+すべての存在は本質的に：
+
+時空内を常に光速 
+𝑐
+c で運動している
+
+静止状態：
+空間方向 ≈ 0
+時間方向 ≈ 最大
+
+運動状態：
+空間成分 ↑
+時間成分 ↓（時間遅延）
+
+質量の再解釈
+
+質量とは：
+
+時間方向の流れへの抵抗
+または
+時間への貼り付き強度
+
+空間的表現：
+
+時空のねじれ／絡まり／トポロジカル構造
+
+粒子 ＝ 時空の安定構造
+
+慣性の起源
+
+加速抵抗の理由：
+
+時間流への抵抗
+
+時空構造の再編成コスト
+
+トポロジー変形エネルギー
+
+→ 慣性質量
+
+重力の本質
+
+重力は力ではなく：
+
+時間の進み方の勾配
+
+質量・エネルギー存在下で：
+
+時間遅延発生
+
+空間幾何歪曲
+
+密度変調
+
+結果：
+
+物体は時間が遅い方向へ自然に移動
+
+→ 自由落下
+
+光の振る舞い
+
+光：
+
+時間構造への極限的従属性
+
+常に局所的に 
+𝑐
+c
+
+光の曲がり：
+
+時空幾何による屈折／測地線効果
+
+等価性の位置づけ
+
+加速系：
+
+有効的な時間勾配発生
+
+重力場：
+
+同型の勾配構造
+
+ゆえに：
+
+加速と重力は局所的に区別不能
+
+等価原理 ＝ 公理というより現象的帰結
+
+ブラックホール極限
+
+時間勾配／時空歪曲の極端化：
+
+光脱出不能
+
+極端時間遅延
+
+因果構造変形
+
+ミクロ構造仮説
+
+プランクスケール：
+
+時間の離散性可能性
+
+時間ブラウン運動
+
+時空泡構造
+
+量子現象：
+
+時間・時空揺らぎの統計的表現
+
+統一的イメージ
+
+時間 ＝ 基盤ダイナミクス
+
+空間 ＝ 時間流の幾何断面
+
+質量 ＝ 時間抵抗／貼り付き
+
+粒子 ＝ 時空トポロジー
+
+重力 ＝ 時間勾配
+
+光 ＝ 時間的極限モード
+
+現在の段階
+
+本モデルは：
+
+概念統合フェーズ（定式化前の作業仮説）
+
+次段階：
+
+概念 → 半定量 → 数式化 → 既存理論との極限一致検証

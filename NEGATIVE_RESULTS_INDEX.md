@@ -5,6 +5,22 @@
 
 ---
 
+### [NEG-20260227-01] H47: Independent Regression Validation of κ via V_eff
+- **仮説:** V_eff を独立変数とする単回帰推定量 κ_fit の 95% Bootstrap 信頼区間が理論値 π/24 (≈ 0.1309) を含む。
+- **ステータス:** CLOSED
+- **閉鎖理由:** STATISTICAL_REJECTION (CI_MISMATCH)
+- **証拠:** Cycle 19, Iter 6. Bootstrap 95% CI = [0.9954, 1.9411] (N=10,000, seed=42). π/24 = 0.1309 は CI 下限の 1/7.6 以下。Iter 4 での単回帰: κ_fit=1.4251, R²=0.7954, p=0.00123。2 イテレーション通じて κ_fit は変化なし（1.4251→1.4263）。
+- **閉鎖バージョン:** Cycle 19, Iteration 6
+- **再開条件:** 現行の V_eff = V + lepton_correction 定義では κ スケールが約 11 倍過大評価される。V_eff の根本日再定義（κ = π/24 を回復するような幾何学的補正の導出）、またはκ理論値そのものの幾何学的再導出が必要。
+
+### [NEG-20260227-02] H48: Non-linear Topological Mass Correction via Exponential Torsion Damping
+- **仮説:** 指数関数的トーション減衰項 exp(-Det/n) を含む非線形モデル（ln(m) = κ V_eff + β exp(-Det/n) + C）がフェルミオン 9 点の質量残差を Bonferroni 補正後閾値未満の有意数準で削減する。
+- **ステータス:** CLOSED
+- **閉鎖理由:** BONFERRONI_FAILURE
+- **証拠:** Cycle 19, Iter 7 (p=0.0435 > 0.016666, FPR=0.0495, R²=0.5385, β=-17.86) および Iter 9 (p=0.0435 継続, LOO-CV MAE 比=1.264). Reviewer 連続 STOP 判定 2 回（Iter 7, Iter 9）。
+- **閉鎖バージョン:** Cycle 19, Iteration 9
+- **再開条件:** exp(-Det/n) 以外の非線形不変量の第一原理的導出（幾何学的正当化が必要）、またはフェルミオンサンプルサイズの増加（現行 9 点では統計検出力が不足）。線形 ST 補正（NEG-20260226-04）との重複は許容されないため、数学的に独立した補正項の提案が必須。
+
 ### [NEG-20260225-01] H28: Decay Width Prediction via TSI
 - **仮説:** 粒子の崩壊幅 $\Gamma$ は TSI 指数 ($n \cdot u / |s|$) と対数線形相関 ($\ln(\Gamma) = -A \cdot TSI + B$) を持つ。
 - **ステータス:** CLOSED

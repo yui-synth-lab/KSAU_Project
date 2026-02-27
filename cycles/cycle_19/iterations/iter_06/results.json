@@ -1,0 +1,36 @@
+{
+  "iteration": 6,
+  "hypothesis_id": "H47",
+  "timestamp": "2026-02-27T09:33:22.107185",
+  "task_name": "ブートストラップ法（N=10000）によるκ_fitの95%信頼区間構築およびπ/24包含判定",
+  "data_sources": {
+    "description": "SSoT particle_data, topology_assignments, effective_volume_model",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "n_bootstrap": 10000,
+    "kappa_fit_mean": 1.426286438502897,
+    "kappa_ci_95": [
+      0.9953970008083871,
+      1.9410556778537142
+    ],
+    "kappa_theory": 0.1308996938995747,
+    "includes_theoretical_kappa": false
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "particle_data",
+      "topology_assignments",
+      "effective_volume_model",
+      "mathematical_constants.kappa_theory"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.5
+  },
+  "notes": "Bootstrap resampling (N=10000) confirmed that the empirical slope kappa_fit mean is 1.4263. Theoretical value pi/24 (0.1309) is outside the 95% CI [0.9954, 1.9411]."
+}

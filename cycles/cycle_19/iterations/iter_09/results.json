@@ -1,0 +1,36 @@
+{
+  "iteration": 9,
+  "hypothesis_id": "H48",
+  "timestamp": "2026-02-27T09:49:18.060187",
+  "task_name": "LOO-CVによる過学習の厳格なチェック、およびボンフェローニ補正閾値との比較",
+  "data_sources": {
+    "description": "SSoT particle_data, topology_assignments, effective_volume_model",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "p_value_observed": 0.04345132856621574,
+    "bonferroni_threshold": 0.016666666666666666,
+    "is_statistically_significant": false,
+    "training_mae": 2.2227901261733978,
+    "loo_mae": 2.809613095457859,
+    "loo_std": 1.6375702474851683,
+    "mae_ratio_loo_train": 1.2640028684555547,
+    "is_overfitting": false
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa_theory",
+      "effective_volume_model",
+      "particle_data",
+      "bonferroni_base_alpha"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.1
+  },
+  "notes": "Strict audit of H48. Observed p=0.0435 vs threshold 0.0167. LOO-CV MAE (2.8096) is 1.26x higher than Training MAE (2.2228). The hypothesis failed both significance and generalization tests."
+}

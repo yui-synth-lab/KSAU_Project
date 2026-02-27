@@ -5,6 +5,18 @@
   },
   "entries": [
     {
+      "date": "2026-02-27",
+      "cycle": "cycle_19",
+      "iteration": "iter_03/10",
+      "judge_verdict": "H46 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "update/add",
+      "key": "gravity.G_corrected, gravity.correction_formula",
+      "old_value": "null",
+      "new_value": "6.70805658e-39, G_ksau * (1 - alpha_em / boundary_projection)",
+      "reason": "H46 ACCEPT に基づき、10次元バルクの境界射影における α_em の 1 ループ補正を考慮した重力定数精密化モデルを統合。"
+    },
+    {
       "date": "2026-02-26",
       "cycle": "cycle_18",
       "iteration": "iter_03/07",

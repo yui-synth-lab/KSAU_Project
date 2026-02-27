@@ -1,0 +1,86 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H48",
+  "timestamp": "2026-02-27T09:29:29.114371",
+  "task_name": "非線形・非摂動的トポロジカル補正項の第一原理からの理論的定式化",
+  "data_sources": {
+    "description": "Topological invariants (n, det) from SSoT topology_assignments.",
+    "loaded_via_ssot": true
+  },
+  "formulation": {
+    "model_name": "Exponential Torsion Damping (ETD)",
+    "formula": "ln(m) = kappa * V_eff + beta * exp(-Det / n) + C",
+    "physical_meaning": "Torsion effects on mass scale are non-linearly suppressed by the ratio of complexity (n) to stability (Det).",
+    "free_parameters": 1,
+    "parameter_name": "beta",
+    "results_per_particle": [
+      {
+        "particle": "Electron",
+        "crossing_number": 3,
+        "determinant": 3,
+        "torsion_damping_factor": 0.36787944117144233
+      },
+      {
+        "particle": "Muon",
+        "crossing_number": 4,
+        "determinant": 5,
+        "torsion_damping_factor": 0.2865047968601901
+      },
+      {
+        "particle": "Tau",
+        "crossing_number": 6,
+        "determinant": 9,
+        "torsion_damping_factor": 0.22313016014842982
+      },
+      {
+        "particle": "Up",
+        "crossing_number": 9,
+        "determinant": 12,
+        "torsion_damping_factor": 0.26359713811572677
+      },
+      {
+        "particle": "Charm",
+        "crossing_number": 11,
+        "determinant": 70,
+        "torsion_damping_factor": 0.0017230895256151245
+      },
+      {
+        "particle": "Top",
+        "crossing_number": 11,
+        "determinant": 110,
+        "torsion_damping_factor": 4.5399929762484854e-05
+      },
+      {
+        "particle": "Down",
+        "crossing_number": 8,
+        "determinant": 20,
+        "torsion_damping_factor": 0.0820849986238988
+      },
+      {
+        "particle": "Strange",
+        "crossing_number": 11,
+        "determinant": 36,
+        "torsion_damping_factor": 0.037902914400958505
+      },
+      {
+        "particle": "Bottom",
+        "crossing_number": 11,
+        "determinant": 96,
+        "torsion_damping_factor": 0.0001621039556043436
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "topology_assignments"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.01
+  },
+  "notes": "Linear ST correction (A*ln(ST)) was rejected in H45. This H48 model proposes an exponential damping term exp(-Det/n) which is large for light fermions and negligible for heavy ones, potentially resolving the kappa discrepancy found in H47."
+}

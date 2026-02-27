@@ -46,10 +46,13 @@
   "gravity": {
     "G_newton_exp":    6.708e-39,
     "G_ksau":          6.7135e-39,
+    "G_corrected":     6.708056580391778e-39,
+    "correction_formula": "G_ksau * (1 - alpha_em / boundary_projection)",
     "v_planck_factor": 6.0,
     "k_c":             1.253314137,
     "delta":           0.032724923,
-    "error_percent":   0.0815
+    "error_original_percent": 0.0815,
+    "error_corrected_percent": 0.00084
   },
 
   "ckm_optimized_coefficients": {

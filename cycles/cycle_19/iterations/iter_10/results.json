@@ -1,0 +1,48 @@
+{
+  "iteration": 10,
+  "hypothesis_id": "H46",
+  "timestamp": "2026-02-27T09:53:02.716024",
+  "task_name": "追加の代替コンパクト化モデルとのFPR比較・最終検定",
+  "data_sources": {
+    "description": "SSoT Gravity, Dimensions, and Physical Constants",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "models": {
+      "boundary_projection_alpha": {
+        "error_percent": 0.0008434763234622827,
+        "G": 6.708056580391778e-39
+      },
+      "kappa_squared_refinement": {
+        "error_percent": 0.0011231204499834837,
+        "G": 6.708075338919785e-39
+      },
+      "bulk_total_alpha": {
+        "error_percent": 0.008958293867023093,
+        "G": 6.7086009223526e-39
+      }
+    },
+    "best_model": "boundary_projection_alpha",
+    "final_fpr": 0.0057,
+    "success_count": 57,
+    "n_trials": 10000
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "G_ksau",
+      "G_newton_exp",
+      "alpha_em",
+      "boundary_projection",
+      "kappa",
+      "bulk_total"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.1
+  },
+  "notes": "H46 final validation. Model A (1 - alpha/9) remains the most accurate and statistically significant (FPR < 0.01). The Kappa-based model B is also very close, supporting the internal consistency of SSoT constants. H48 was rejected in the previous iteration due to poor statistical performance."
+}

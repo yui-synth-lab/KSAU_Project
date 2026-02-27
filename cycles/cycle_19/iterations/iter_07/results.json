@@ -1,0 +1,110 @@
+{
+  "iteration": 7,
+  "hypothesis_id": "H48",
+  "timestamp": "2026-02-27T09:40:04.581415",
+  "task_name": "構築された非線形結合モデルに基づく回帰分析、および残差削減率・FPRの算出",
+  "data_sources": {
+    "description": "SSoT particle_data, topology_assignments, effective_volume_model",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "baseline": {
+      "intercept_C": 4.484787528217476,
+      "r_squared": 0.13941176767085572,
+      "mae": 3.0049682654064718
+    },
+    "h48_model": {
+      "beta": -17.862649431902078,
+      "intercept_C": 6.991572292136961,
+      "r_squared": 0.5384765990605548,
+      "mae": 2.2227901261733978,
+      "p_value_beta": 0.04345132856621574,
+      "std_err_beta": 7.2605912843163924
+    },
+    "improvement": {
+      "r2_gain": 0.39906483138969906,
+      "mae_reduction_pct": 26.029497490459242
+    },
+    "FPR": 0.0495
+  },
+  "fermion_details": [
+    {
+      "name": "Electron",
+      "y": -0.6713856887784326,
+      "y_res": -1.0562537726720842,
+      "etd": 0.36787944117144233,
+      "y_pred_h48": 0.8051388851810941
+    },
+    {
+      "name": "Muon",
+      "y": 4.6602263917361695,
+      "y_res": 3.9696399609866075,
+      "etd": 0.2865047968601901,
+      "y_pred_h48": 2.564423976014629
+    },
+    {
+      "name": "Tau",
+      "y": 7.482603040582787,
+      "y_res": 6.658679212859885,
+      "etd": 0.22313016014842982,
+      "y_pred_h48": 3.829800291444294
+    },
+    {
+      "name": "Up",
+      "y": 0.7701082216960737,
+      "y_res": 0.6282860504082691,
+      "etd": 0.26359713811572677,
+      "y_pred_h48": 2.4248511940108655
+    },
+    {
+      "name": "Charm",
+      "y": 7.146772179452637,
+      "y_res": 6.569439676305025,
+      "etd": 0.0017230895256151245,
+      "y_pred_h48": 7.538125851148728
+    },
+    {
+      "name": "Top",
+      "y": 12.059658627074638,
+      "y_res": 10.954442166503384,
+      "etd": 4.5399929762484854e-05,
+      "y_pred_h48": 8.095977789678635
+    },
+    {
+      "name": "Down",
+      "y": 1.541159071680806,
+      "y_res": 1.223038236752957,
+      "etd": 0.0820849986238988,
+      "y_pred_h48": 5.843437573027941
+    },
+    {
+      "name": "Strange",
+      "y": 4.536891345234797,
+      "y_res": 4.136869971282508,
+      "etd": 0.037902914400958505,
+      "y_pred_h48": 6.714547193697537
+    },
+    {
+      "name": "Bottom",
+      "y": 8.338066525518801,
+      "y_res": 7.278946251530735,
+      "etd": 0.0001621039556043436,
+      "y_pred_h48": 8.047796959994542
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa_theory",
+      "effective_volume_model",
+      "particle_data"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.1
+  },
+  "notes": "H48 regression uses theoretical kappa (0.1309) and fits a non-linear term exp(-Det/n). The results show if adding this term can reconcile the 11x slope discrepancy observed in H47."
+}
