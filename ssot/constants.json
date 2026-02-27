@@ -82,6 +82,13 @@
     "status": "validated_by_cycle_20_h51"
   },
 
+  "h58_parameters": {
+    "top_correction_numerator": 3.0,
+    "gravity_sigma_proxy":      2.2e-5,
+    "axion_sigma_factor":       4.0,
+    "gravity_random_proxy":     5.0
+  },
+
   "ckm_optimized_coefficients": {
     "A":       -6.3436,
     "B":       12.3988,

@@ -1,0 +1,43 @@
+{
+  "iteration": 9,
+  "hypothesis_id": "H60",
+  "timestamp": "2026-02-27T09:36:27.900153+00:00",
+  "task_name": "KnotInfo 全データ（交差数 3–12）における det(K) mod 24 と TSI(K) の計算・分布確認",
+  "data_sources": {
+    "description": "KnotInfo and LinkInfo CSVs via SSoT",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "total_knots_links_processed": 6502,
+    "k_resonance": 24,
+    "tsi_threshold": 24,
+    "contingency_table": {
+      "det_0_AND_tsi_stable": 115,
+      "det_0_AND_tsi_unstable": 625,
+      "det_Not0_AND_tsi_stable": 1141,
+      "det_Not0_AND_tsi_unstable": 4621
+    },
+    "marginal_totals": {
+      "det_0": 740,
+      "det_Not0": 5762,
+      "tsi_stable": 1256,
+      "tsi_unstable": 5246
+    },
+    "tsi_regularization_for_s_zero": "TSI = infinity (> 24)"
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "mathematical_constants.k_resonance",
+      "dark_matter_candidates.tsi_threshold",
+      "lifetime_model.stability_index_formula"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 2.3027255535125732
+  },
+  "notes": "全結び目・絡み目に対して、指定の不変量から2x2の分割表を作成した。Iter 10でのFisher検定の準備。"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "H59",
+  "name": "LOO-CV検証とα理論導出によるST補正質量モデルの確立",
+  "description": "線形ST補正モデル ln(m)=κV+α·ln(ST)+γ+β において、α をKSAU幾何学的定数から第一原理的に導出し、LOO-CV（Leave-One-Out交差検証）によって過学習を排除した上でモデルの統計的有効性を確立する。",
+  "status": "active",
+  "created_date": "2026-02-27",
+  "cycle": 23,
+  "based_on": "H57 (MODIFY — Cycle 22 verdict)",
+  "modify_reason": "H57のIter10において3つの必須修正項目が未解決: [問題A] LOO-CV未報告（results.jsonにLOO-MAE, LOO-R²等の記載なし）。[問題B] α=0.18512の導出式がresults.jsonに未記載（幾何学的'Action per Torsion unit'としての理論導出が要求されていた）。[問題C] γ（sector_offset）=-7.219とSSoT v_borromean=7.327724753の1.5%乖離が未説明。",
+  "hypothesis": {
+    "H0": "線形ST補正モデル ln(m)=κV+α·ln(ST)+γ+β において、係数αをKSAU幾何学的定数（G_catalan, κ, π等）から理論的に導出することができない。または、理論導出されたαで固定した場合、LOO-CVによる汎化性能が著しく劣化する（LOO-R² < training R² × 0.95、またはLOO-MAE > 2 × training MAE）。",
+    "H1": "αはKSAUフレームワークにおける幾何学的'Action per Torsion unit'として、SSoT定数（G_catalan=0.915966, κ=0.130900, π=3.141593, k_resonance=24等）の閉じた式で一意に導出され（derivation_formulaとして明記）、α固定・γ固定（=-v_borromean or 理論値）・β単回帰（自由パラメータ=1, N=9）が以下を同時達成する: LOO-R² ≥ training R² × 0.95、LOO-MAE ≤ 2 × training MAE、Bonferroni補正後 p（β≠0）< 0.016667。導出根拠: H34の再開条件『Torsion寄与αの幾何学的導出により自由パラメータを排除した厳密モデルが提示された場合』を満たす。"
+  },
+  "data_requirements": {
+    "description": "SSoT constants.json の particle_data から全9フェルミオンの observed_mass を取得。ST（Smallest Torsion）値はtopology_assignments.json または SSoT 経由で取得。κはSSoTから読み込み（ハードコード禁止）。",
+    "ssot_methods": [
+      "particle_data.quarks.Up.observed_mass",
+      "particle_data.quarks.Down.observed_mass",
+      "particle_data.quarks.Strange.observed_mass",
+      "particle_data.quarks.Charm.observed_mass",
+      "particle_data.quarks.Bottom.observed_mass",
+      "particle_data.quarks.Top.observed_mass",
+      "particle_data.leptons.Electron.observed_mass",
+      "particle_data.leptons.Muon.observed_mass",
+      "particle_data.leptons.Tau.observed_mass",
+      "mathematical_constants.kappa",
+      "mathematical_constants.G_catalan",
+      "mathematical_constants.pi",
+      "mathematical_constants.k_resonance",
+      "topology_constants.v_borromean",
+      "statistical_thresholds.monte_carlo_n_trials",
+      "statistical_thresholds.bonferroni_base_alpha"
+    ],
+    "target_particles": "全フェルミオン9点: Up, Down, Strange, Charm, Bottom, Top, Electron, Muon, Tau",
+    "st_data_source": "topology_assignments.json（または v6.0/data/topology_assignments.json）のSmallest Torsion値"
+  },
+  "physical_constraints": {
+    "particle_scope": "全フェルミオン9点に普遍的に適用。一部のみへの適用はチェリーピッキングとしてMODIFY。",
+    "max_free_parameters": 1,
+    "free_parameter": "β のみ（切片・スケール補正）。α と γ は定数として固定。k/N = 1/9 ≈ 0.11 < 1/3 を満たすこと。",
+    "derivation_requirement": "FIRST_PRINCIPLES — αは SSoT constants.json 内の定数（G_catalan, kappa, pi, k_resonance等）の四則演算・累乗・対数の組み合わせで閉じた式として導出されること。任意フィッティングによるα=0.18512の直接使用は禁止。derivation_formulaフィールドに導出式を明記すること。",
+    "gamma_constraint": "γ = -SSoT topology_constants.v_borromean（= -7.327724753）に固定するか、別の理論値から導出。独立パラメータとして扱うことは禁止（自由パラメータ数がβ+γ=2となり制約違反→即座にMODIFY）。γの扱いをresults.jsonに明示すること。",
+    "loo_cv_requirement": "LOO-CV結果（LOO-MAE, LOO-R², 各9点のLeave-Out残差）をresults.jsonに必ず記載。未記載は即座にMODIFY。",
+    "notes": "α導出式が見つからない場合は『α導出不可能』としてREJECT。推測値や近似値の使用は禁止。"
+  },
+  "alpha_derivation_hints": {
+    "target_value": 0.18512,
+    "ssot_constants_available": {
+      "G_catalan": 0.915965594177219,
+      "kappa": 0.1308996938995747,
+      "pi": 3.141592653589793,
+      "k_resonance": 24
+    },
+    "example_format_only": "alpha = G_catalan * kappa^2 (これは形式例であり、この値=0.01569は正解ではない)",
+    "note": "Researcherはこれらの定数の組み合わせから0.18512に対応する閉じた式を独自に探索すること。SSoT以外の定数の使用は別途理論的正当化が必要。"
+  },
+  "gamma_analysis": {
+    "fitted_value_iter10": -7.219,
+    "ssot_v_borromean": 7.327724753,
+    "discrepancy_abs": 0.109,
+    "discrepancy_pct": 1.49,
+    "required_action": "γ = -v_borromean に固定した場合の結果と、fitted γ = -7.219 の場合の結果を比較し、乖離の幾何学的説明を提供すること。どちらの値を採用するかをresults.jsonに明記。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_base_alpha": "SSoT statistical_thresholds.bonferroni_base_alpha (=0.05)",
+    "bonferroni_n_hypotheses_cycle": 3,
+    "bonferroni_corrected_p_max": 0.016667,
+    "fpr_max": 0.50,
+    "monte_carlo_n_trials": "SSoT statistical_thresholds.monte_carlo_n_trials (=10000)",
+    "random_seed": 42,
+    "loo_quality_threshold": {
+      "loo_r2_min_ratio": 0.95,
+      "loo_mae_max_ratio": 2.0,
+      "description": "LOO-R² ≥ training_R² × 0.95 かつ LOO-MAE ≤ 2 × training_MAE を同時に満たすこと"
+    }
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016667,
+    "fpr_max": 0.50,
+    "max_iterations": 4,
+    "consecutive_stop_limit": 2,
+    "alpha_not_derived": "αの幾何学的導出式が提示されない → 即座にMODIFY（LOO-CV実施前にブロック）",
+    "loo_cv_not_reported": "LOO-CV結果がresults.jsonに未記載 → 即座にMODIFY",
+    "gamma_as_free_param": "γを独立パラメータとして扱い、自由パラメータ数が2以上になった場合 → 即座にMODIFY",
+    "physical_constraint_violation": "物理的制約を満たさないモデルは誤差の大小によらず即座にMODIFY",
+    "neg_index_reference": "NEG-20260225-04 [H32], NEG-20260225-06 [H34] — H34の再開条件を満たす形での再挑戦であることを確認すること"
+  },
+  "test_method": "1)[Iter5] α導出: SSoT定数の組み合わせを系統的に探索し、derivation_formulaを確定。2)[Iter6] α固定・γ固定（=-v_borromean or 理論値）でβをOLS推定。p値（β≠0のt検定）を報告。9点全LOO-CVを実施しLOO-MAE・LOO-R²・各残差をresults.jsonに記録。3)[Iter7] γの整合性検証: γ=-7.219 vs γ=-v_borromean=-7.327724753の比較分析。採用値と幾何学的根拠を明記。4) モンテカルロ置換検定（n=10000, seed=42）でFPRを推定。",
+  "priority": "high",
+  "max_iterations": 4,
+  "ssot_path": "E:\\Obsidian\\KSAU_Project\\ssot\\constants.json"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "H60",
+  "name": "Det ≡ 0 (mod 24) 条件と位相安定性の相関検証",
+  "description": "24-cell対称性から導出されるDet ≡ 0 (mod 24)条件が、KnotInfo全データベースにわたってTSI（位相安定性指数）≥ 24と統計的に有意な正相関を持つかを検証し、24-cell対称性の普遍的な選択原理としての妥当性を示す。",
+  "status": "active",
+  "created_date": "2026-02-27",
+  "cycle": 23,
+  "based_on": "新規 — seed Section 4 (H55 ACCEPT成果の一般化)",
+  "hypothesis": {
+    "H0": "KnotInfoデータベース（交差数3–12の全結び目、N≈7163）において、det(K) ≡ 0 (mod 24) を満たす結び目の集合と、TSI(K) ≥ 24 を満たす結び目の集合の間に統計的に有意な正相関は存在しない（Fisher正確確率検定 Bonferroni補正後 p ≥ 0.016667）。",
+    "H1": "24-cell対称性の幾何学的制約（k_resonance=24, K(4)×κ=π, SSoT v16_derivation.resonance_identity）から、安定性を担うトポロジー構造は行列式が24の倍数である必要があり、KnotInfo全データにわたって {det(K) ≡ 0 mod 24} と {TSI(K) ≥ 24} の間に有意な正の相関が観測される（Fisher正確確率検定 Bonferroni補正後 p < 0.016667, オッズ比 > 1）。この相関はH55のSM12粒子への適用を超えた一般的な幾何学的普遍性を示す独立した検証となる。導出元: SSoT mathematical_constants.k_resonance=24, SSoT dark_matter_candidates.tsi_threshold=24。"
+  },
+  "data_requirements": {
+    "description": "KnotInfoデータベース（交差数3–12の全結び目）から det(K), n(交差数), u(非結び目化数), s(署名) を取得。TSI = n*u/|s|を計算。k_resonance=24とtsi_threshold=24はSSoTから読み込み（ハードコード禁止）。",
+    "ssot_methods": [
+      "mathematical_constants.k_resonance",
+      "dark_matter_candidates.tsi_threshold",
+      "lifetime_model.stability_index_formula",
+      "statistical_thresholds.monte_carlo_n_trials",
+      "statistical_thresholds.bonferroni_base_alpha",
+      "analysis_parameters.random_seed",
+      "analysis_parameters.min_crossing_number",
+      "analysis_parameters.max_crossing_number"
+    ],
+    "knot_database_path": "E:\\Obsidian\\KSAU_Project\\data\\ 以下の交差数3–12のKnotInfoデータ",
+    "tsi_formula": "SSoT lifetime_model.stability_index_formula = 'n * u / |s|'",
+    "tsi_regularization": "|s|=0の場合の正則化方針（|s|=1として扱うか、TSI=∞≥24として扱うか）をresults.jsonに明記すること[Orchestrator補完]",
+    "pool_size_reference": "H55バリデーションでの pool_size=7163（SSoT assignment_rules.statistical_validation）を参照"
+  },
+  "physical_constraints": {
+    "particle_scope": "KnotInfo全データ（交差数3–12の全結び目）。DM候補60個のみへの限定は循環論法（DM選定基準にdet_mod_24_zeroを使用済み）として即座にMODIFY。",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES — k_resonance=24（24-cell対称性定数）とtsi_threshold=24はSSoTから読み込み。任意の閾値設定禁止。",
+    "circularity_prevention": "DM候補60個（SSoT dark_matter_candidates）はdet_mod_24_zero AND tsi_gte_24で選定済みのため、これらのみを対象とした検定は即座にMODIFY。全7163結び目を対象とすること。",
+    "scope_clarification": "seed記載の『陽子・光子・ニュートリノ等の安定粒子』については、陽子は複合粒子（トポロジー未割り当て）であることから、本仮説では全KnotInfoデータ上での一般的な相関検証として設計（Orchestrator設計変更 — 人間への確認事項に記載）。",
+    "notes": "χ²独立性検定またはFisher正確確率検定のいずれかを使用すること。両者の結果を記録することを推奨。"
+  },
+  "contingency_table_design": {
+    "rows": "TSI ≥ 24 (stable) vs TSI < 24 (unstable)",
+    "columns": "det ≡ 0 mod 24 (yes) vs det ≢ 0 mod 24 (no)",
+    "expected_structure": "H1が正しければ、(TSI≥24, det≡0 mod 24) セルが期待値より有意に多い（オッズ比 > 1）"
+  },
+  "statistical_thresholds": {
+    "bonferroni_base_alpha": "SSoT statistical_thresholds.bonferroni_base_alpha (=0.05)",
+    "bonferroni_n_hypotheses_cycle": 3,
+    "bonferroni_corrected_p_max": 0.016667,
+    "fpr_max": 0.50,
+    "monte_carlo_n_trials": "SSoT statistical_thresholds.monte_carlo_n_trials (=10000)",
+    "random_seed": "SSoT analysis_parameters.random_seed (=42)",
+    "odds_ratio_requirement": "オッズ比 > 1 (det≡0 mod 24 が TSI≥24 に対して正の寄与を持つこと)"
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016667,
+    "fpr_max": 0.50,
+    "max_iterations": 3,
+    "consecutive_stop_limit": 2,
+    "dm_only_subset": "DM候補60個のみを対象とした検定を実施した場合 → 即座にMODIFY（循環論法）",
+    "odds_ratio_negative": "オッズ比 ≤ 1 かつ p > 0.016667 → REJECT（24-cell条件が安定性と逆相関または無関係）",
+    "physical_constraint_violation": "物理的制約（全データ使用、閾値SSoT固定）を満たさないモデルは即座にMODIFY"
+  },
+  "test_method": "1)[Iter9] KnotInfo全データ（交差数3–12）からdet(K), n, u, sを取得しTSI=n*u/|s|を計算。|s|=0の正則化方針を決定・記録。2×2分割表を構築: rows={TSI≥24, TSI<24}, cols={det≡0 mod24, det≢0 mod24}。2)[Iter10] Fisher正確確率検定（またはχ²独立性検定）を実施。p値、オッズ比、95%CIを報告。モンテカルロ置換検定（n=10000, seed=42）でFPRを推定。Bonferroni補正後p値（=raw p × 3）を計算。3)[Iter11] 結果統合レポート: 全数値（p値, オッズ比, 95%CI, FPR, 分割表の具体的数値）をresults.jsonに記録。",
+  "related_hypotheses": {
+    "H55": "ACCEPT (Cycle 22) — 24-cell割り当てルールをSM12粒子で検証。H60はこの結果の一般化。",
+    "H30": "ACCEPT (Cycle 12) — DM候補選定にdet_mod_24_zeroを使用。H60はDM候補に限定しない一般検証。"
+  },
+  "priority": "medium",
+  "max_iterations": 3,
+  "ssot_path": "E:\\Obsidian\\KSAU_Project\\ssot\\constants.json"
+}

@@ -1,0 +1,43 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H58",
+  "timestamp": "2026-02-27T09:16:39.741410+00:00",
+  "task_name": "ジョイント MC 置換検定の実施（n=10000, seed=42、3変数の同時ランダム置換）",
+  "data_sources": {
+    "description": "KnotInfo Pool for Top, Uniform[10,20] for Axion, Uniform[-5,5] for Gravity",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "ksau_z_scores": {
+      "axion": -0.45333333333333314,
+      "gravity": 0.38318181818181823,
+      "top": -0.55
+    },
+    "ksau_joint_chi2": 0.654839416896235,
+    "mc_n_trials": 10000,
+    "mc_better_count": 0,
+    "mc_joint_p_value": 0.0,
+    "bonferroni_threshold": 0.016666666666666666,
+    "is_significant": true
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "axion_prediction",
+      "axion_exclusion",
+      "gravity",
+      "h58_parameters",
+      "particle_data.quarks.Top",
+      "statistical_thresholds",
+      "effective_volume_model",
+      "physical_constants.alpha_em"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 2.2505452632904053
+  },
+  "notes": "3変数（Topはランダムトポロジー、AxionとGravityは定義されたランダムプロキシ範囲）の同時置換（MC）によるジョイントChi-Squareの分布を用いて、KSAUの同時達成のFPR（p_mc）を計算。"
+}
