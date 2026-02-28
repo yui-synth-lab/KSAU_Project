@@ -1,0 +1,35 @@
+{
+  "id": "H68",
+  "name": "ボソン質量切片 C = π√3 の幾何学的導出",
+  "description": "ボソン質量公式の経験的切片 $C \approx 5.5414$ が 10D/9D 体積比または resonance $\pi\sqrt{3}$ から導出されることを検証する。",
+  "status": "active",
+  "created_date": "2026-02-28",
+  "hypothesis": {
+    "H0": "ボソン切片 C は経験的なシフトであり、幾何学的な導出は存在しない。",
+    "H1": "ボソン切片 C は 10次元バルクと9次元境界の比率、あるいは 24-cell 共鳴 $\pi\sqrt{3}$ によって第一原理から固定される。"
+  },
+  "data_requirements": {
+    "description": "W, Z, Higgs の実験質量、および SSoT 定数。",
+    "ssot_methods": ["SSOT.get_boson_data", "SSOT.get_mathematical_constants"]
+  },
+  "physical_constraints": {
+    "particle_scope": "BOSONS_W_Z_H",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES (Geometric volume ratios / Resonance)",
+    "notes": "既存の $R^2$ モデルとの整合性を保ちつつ、切片を理論定数に置き換えること。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "理論導出値と経験的フィット値の相対誤差評価、およびボソン質量予測の $p$ 値検定。",
+  "priority": "high",
+  "max_iterations": 5
+}

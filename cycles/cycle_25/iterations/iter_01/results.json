@@ -1,0 +1,35 @@
+{
+  "iteration": "1",
+  "hypothesis_id": "H64",
+  "timestamp": "2026-02-28T02:31:35Z",
+  "task_name": "既存の 12 粒子割当に対する FPR 計算（KnotInfo/LinkInfo 10万回試行）",
+  "data_sources": {
+    "description": "KnotInfo/LinkInfo Real Data (filtered crossing number 3-12)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "n_trials": 100000,
+    "success_count": 0,
+    "fpr": 0.0,
+    "analytical_fpr": 9.498003115574817e-08,
+    "lepton_rule_prob": 1.0400341579085561e-07,
+    "other_rule_prob": 0.9132395357739701,
+    "electron_candidates_count": 1,
+    "muon_candidates_count": 2,
+    "tau_candidates_count": 1
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "k_resonance",
+      "random_seed"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 237.74
+  },
+  "notes": "FPR evaluation for stability rule n_threshold=8.0."
+}

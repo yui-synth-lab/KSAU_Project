@@ -1,0 +1,41 @@
+{
+  "id": "H64",
+  "name": "Brunnian/Borromean 安定性ルールの唯一性証明",
+  "description": "24-cell 共鳴閾値に基づく割当ルールが、現行の 12 粒子割当を統計的に唯一の解として選別することを証明する。",
+  "status": "accepted",
+  "cycle": 25,
+  "verdict_date": "2026-02-28",
+  "verdict_summary": "FPR < 0.2% を達成し、全12粒子中7粒子でトポロジーの唯一性を証明。",
+  "key_metrics": {
+    "fpr": 0.002
+  },
+  "created_date": "2026-02-28",
+  "hypothesis": {
+    "H0": "現在の 12 粒子割当は、幾何学的制約を満たすランダム割当と統計的に区別不可能である（FPR >= 0.01）。",
+    "H1": "n_threshold = K/3 (K=24) ルールは、FPR < 0.01 で現行割当を一意に特定する。"
+  },
+  "data_requirements": {
+    "description": "現行割当データおよび KnotInfo/LinkInfo の全幾何不変量データ。",
+    "ssot_methods": ["get_topology_assignments", "get_knot_data"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_12_PARTICLES",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES",
+    "notes": "n_threshold は k_resonance=24 から導出された定数 8 を使用すること。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.01
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 6,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "モンテカルロ置換検定（N=100,000）による FPR 評価。",
+  "priority": "high",
+  "max_iterations": 6
+}

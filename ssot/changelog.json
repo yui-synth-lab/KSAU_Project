@@ -6,6 +6,18 @@
   "entries": [
     {
       "date": "2026-02-28",
+      "cycle": "cycle_25",
+      "iteration": "iter_05/06/10",
+      "judge_verdict": "H64, H65, H66 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "update/add",
+      "key": "theoretical_mass_laws.lepton_slope, theoretical_mass_laws.quark_slope, quantum_number_rules",
+      "old_value": "null",
+      "new_value": "multiple",
+      "reason": "Cycle 25 の全仮説 ACCEPT に基づき、幾何学的次元からの係数導出、および量子数のトポロジカル起源規則を統合。"
+    },
+    {
+      "date": "2026-02-28",
       "cycle": "cycle_24",
       "iteration": "iter_07/04/10",
       "judge_verdict": "H61, H62, H63 ACCEPT",

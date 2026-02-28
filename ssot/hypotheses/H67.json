@@ -1,0 +1,35 @@
+{
+  "id": "H67",
+  "name": "CKM 行列の幾何学的符号・位相の起源",
+  "description": "Jones 多項式の複素評価点 $q = e^{2\pi i/24}$ における位相情報が CKM 行列の符号と CP 位相を記述することを検証する。",
+  "status": "active",
+  "created_date": "2026-02-28",
+  "hypothesis": {
+    "H0": "CKM 行列の符号と位相は幾何学的不変量と相関を持たない。",
+    "H1": "CKM 行列の符号と Jarlskog $J$ は、24-cell 対称性に対応する Jones 多項式の位相情報から第一原理的に導出される。"
+  },
+  "data_requirements": {
+    "description": "CKM 行列実験値、および KnotInfo Jones 多項式係数データ。",
+    "ssot_methods": ["SSOT.get_ckm_matrix", "SSOT.get_topology_assignments"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_9_QUARK_TRANSITIONS",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES (Jones polynomial complex evaluation)",
+    "notes": "位相情報からの符号変換規則に自由パラメータを含めてはならない。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "CKM 符号一致率のモンテカルロ置換検定（n=10000）",
+  "priority": "high",
+  "max_iterations": 5
+}

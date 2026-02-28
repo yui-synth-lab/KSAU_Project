@@ -1,0 +1,42 @@
+{
+  "id": "H66",
+  "name": "writhe / signature による量子数の幾何学的起源",
+  "description": "結び目不変量と粒子の量子数（電荷、スピン、世代）の間の統計的相関を解明し、幾何学的解釈を確立する。",
+  "status": "accepted",
+  "cycle": 25,
+  "verdict_date": "2026-02-28",
+  "verdict_summary": "100%再現、FPR=0.0 を達成。",
+  "key_metrics": {
+    "p_value": 1e-05,
+    "fpr": 0.0
+  },
+  "created_date": "2026-02-28",
+  "hypothesis": {
+    "H0": "writhe / signature と量子数の間に統計的に有意な相関は存在しない（p > 0.016667）。",
+    "H1": "writhe および signature は、電荷、スピン、世代を記述する幾何学的決定因子である（p < 0.016667）。"
+  },
+  "data_requirements": {
+    "description": "トポロジー割当データ、KnotInfo 不変量データ、および粒子量子数リスト。",
+    "ssot_methods": ["get_topology_assignments", "get_knot_data", "get_parameters"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_12_PARTICLES",
+    "max_free_parameters": 1,
+    "derivation_requirement": "GEOMETRIC_CONSISTENCY",
+    "notes": "量子数決定規則は全世代・全電荷タイプに普遍的に適用可能であること。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 4,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "不変量と量子数ラベル間の相関分析（カイ二乗検定等）および予測モデルの検証。",
+  "priority": "medium",
+  "max_iterations": 4
+}

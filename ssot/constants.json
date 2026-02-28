@@ -268,7 +268,16 @@
     "lepton_jump": "20 * kappa * V",
     "lepton_jump_note": "電子・ミューオン質量ギャップを 1.72% 精度で説明。Cycle 05 H11 で検証済み。",
     "kappa": 0.1308996938995747,
+    "lepton_slope": 20.0,
+    "quark_slope": 10.0,
     "zero_parameter_formula": "ln(m) = eta*kappa*V + sqrt(2)*kappa*(ln(det)+s-n-(pi/alpha)*ln(c)) + gamma + beta"
+  },
+
+  "quantum_number_rules": {
+    "charge_rule_numerator": 4.0,
+    "charge_rule_denominator": 3.0,
+    "basis": "Geometric origin via writhe/signature (H66)",
+    "last_updated": "2026-02-28"
   },
 
   "validation_metrics": {

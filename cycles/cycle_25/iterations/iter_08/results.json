@@ -1,0 +1,340 @@
+{
+  "iteration": 8,
+  "hypothesis_id": "H66",
+  "timestamp": "2026-02-28T12:31:04.735304",
+  "task_name": "writhe / signature と電荷・世代の相関行列の算出 (Optimized MC)",
+  "data": [
+    {
+      "Particle": "Up",
+      "Q": 0.6666666666666666,
+      "G": 1.0,
+      "S": 0.5,
+      "Signature": 1.0,
+      "Crossing": 9.0,
+      "Determinant": 12.0,
+      "Components": 2.0,
+      "Volume": 5.33348956689812,
+      "LinkingSum": 2.0,
+      "WritheProxy": 1.5,
+      "Unknotting": 0.0,
+      "Genus": 0.0
+    },
+    {
+      "Particle": "Charm",
+      "Q": 0.6666666666666666,
+      "G": 2.0,
+      "S": 0.5,
+      "Signature": -5.0,
+      "Crossing": 11.0,
+      "Determinant": 70.0,
+      "Components": 2.0,
+      "Volume": 11.215504015501589,
+      "LinkingSum": 3.0,
+      "WritheProxy": -1.0,
+      "Unknotting": 0.0,
+      "Genus": 0.0
+    },
+    {
+      "Particle": "Top",
+      "Q": 0.6666666666666666,
+      "G": 3.0,
+      "S": 0.5,
+      "Signature": -3.0,
+      "Crossing": 11.0,
+      "Determinant": 110.0,
+      "Components": 2.0,
+      "Volume": 15.62112812032806,
+      "LinkingSum": 1.0,
+      "WritheProxy": -1.0,
+      "Unknotting": 0.0,
+      "Genus": 0.0
+    },
+    {
+      "Particle": "Down",
+      "Q": -0.3333333333333333,
+      "G": 1.0,
+      "S": 0.5,
+      "Signature": 2.0,
+      "Crossing": 8.0,
+      "Determinant": 20.0,
+      "Components": 3.0,
+      "Volume": 6.551743287887868,
+      "LinkingSum": -4.0,
+      "WritheProxy": -1.0,
+      "Unknotting": 0.0,
+      "Genus": 0.0
+    },
+    {
+      "Particle": "Strange",
+      "Q": -0.3333333333333333,
+      "G": 2.0,
+      "S": 0.5,
+      "Signature": 4.0,
+      "Crossing": 11.0,
+      "Determinant": 36.0,
+      "Components": 3.0,
+      "Volume": 9.312341316558376,
+      "LinkingSum": -3.0,
+      "WritheProxy": 0.5,
+      "Unknotting": 0.0,
+      "Genus": 0.0
+    },
+    {
+      "Particle": "Bottom",
+      "Q": -0.3333333333333333,
+      "G": 3.0,
+      "S": 0.5,
+      "Signature": -2.0,
+      "Crossing": 11.0,
+      "Determinant": 96.0,
+      "Components": 3.0,
+      "Volume": 15.156670150795042,
+      "LinkingSum": -1.0,
+      "WritheProxy": -1.5,
+      "Unknotting": 0.0,
+      "Genus": 0.0
+    },
+    {
+      "Particle": "Electron",
+      "Q": -1.0,
+      "G": 1.0,
+      "S": 0.5,
+      "Signature": -2.0,
+      "Crossing": 3.0,
+      "Determinant": 3.0,
+      "Components": 1.0,
+      "Volume": 0.0,
+      "LinkingSum": 0.0,
+      "WritheProxy": -1.0,
+      "Unknotting": 1.0,
+      "Genus": 1.0
+    },
+    {
+      "Particle": "Muon",
+      "Q": -1.0,
+      "G": 2.0,
+      "S": 0.5,
+      "Signature": 0.0,
+      "Crossing": 4.0,
+      "Determinant": 5.0,
+      "Components": 1.0,
+      "Volume": 2.0298832128,
+      "LinkingSum": 0.0,
+      "WritheProxy": 0.0,
+      "Unknotting": 1.0,
+      "Genus": 1.0
+    },
+    {
+      "Particle": "Tau",
+      "Q": -1.0,
+      "G": 3.0,
+      "S": 0.5,
+      "Signature": 0.0,
+      "Crossing": 6.0,
+      "Determinant": 9.0,
+      "Components": 1.0,
+      "Volume": 3.1639632288,
+      "LinkingSum": 0.0,
+      "WritheProxy": 0.0,
+      "Unknotting": 1.0,
+      "Genus": 1.0
+    },
+    {
+      "Particle": "W",
+      "Q": 1.0,
+      "G": 0.0,
+      "S": 1.0,
+      "Signature": 0.0,
+      "Crossing": 11.0,
+      "Determinant": 64.0,
+      "Components": 3.0,
+      "Volume": 14.655449506835504,
+      "LinkingSum": 0.0,
+      "WritheProxy": 0.0,
+      "Unknotting": 0.0,
+      "Genus": 0.0
+    },
+    {
+      "Particle": "Z",
+      "Q": 0.0,
+      "G": 0.0,
+      "S": 1.0,
+      "Signature": -2.0,
+      "Crossing": 11.0,
+      "Determinant": 112.0,
+      "Components": 3.0,
+      "Volume": 15.027615015039348,
+      "LinkingSum": 0.0,
+      "WritheProxy": -1.0,
+      "Unknotting": 0.0,
+      "Genus": 0.0
+    },
+    {
+      "Particle": "Higgs",
+      "Q": 0.0,
+      "G": 0.0,
+      "S": 0.0,
+      "Signature": -1.0,
+      "Crossing": 11.0,
+      "Determinant": 136.0,
+      "Components": 2.0,
+      "Volume": 15.820714702540293,
+      "LinkingSum": 0.0,
+      "WritheProxy": -0.5,
+      "Unknotting": 0.0,
+      "Genus": 0.0
+    }
+  ],
+  "metrics": {
+    "Q": {
+      "Signature": {
+        "rho": -0.22505463829464956,
+        "p_value": 0.4818930524474406,
+        "fpr": 0.466
+      },
+      "Crossing": {
+        "rho": 0.7023723819258416,
+        "p_value": 0.010867471363436245,
+        "fpr": 0.007
+      },
+      "Determinant": {
+        "rho": 0.5833420242113491,
+        "p_value": 0.04647957235809607,
+        "fpr": 0.047
+      },
+      "Components": {
+        "rho": 0.4289146976921977,
+        "p_value": 0.16413245892320508,
+        "fpr": 0.1615
+      },
+      "Volume": {
+        "rho": 0.597657165909787,
+        "p_value": 0.04013870643897845,
+        "fpr": 0.0435
+      },
+      "LinkingSum": {
+        "rho": 0.5157219121486752,
+        "p_value": 0.08612038017230343,
+        "fpr": 0.091
+      },
+      "WritheProxy": {
+        "rho": 0.05608662275961606,
+        "p_value": 0.8625516084417245,
+        "fpr": 0.875
+      },
+      "Unknotting": {
+        "rho": -0.7703288865196433,
+        "p_value": 0.003371976535702024,
+        "fpr": 0.005
+      },
+      "Genus": {
+        "rho": -0.7703288865196433,
+        "p_value": 0.003371976535702024,
+        "fpr": 0.005
+      }
+    },
+    "G": {
+      "Signature": {
+        "rho": -0.1752011519513611,
+        "p_value": 0.5860066663597263,
+        "fpr": 0.606
+      },
+      "Crossing": {
+        "rho": -0.09630868246861535,
+        "p_value": 0.7658971248352704,
+        "fpr": 0.7945
+      },
+      "Determinant": {
+        "rho": -0.19432508268938872,
+        "p_value": 0.5450527029269673,
+        "fpr": 0.5675
+      },
+      "Components": {
+        "rho": -0.2760262237369417,
+        "p_value": 0.38516052757365443,
+        "fpr": 0.419
+      },
+      "Volume": {
+        "rho": -0.10795837927188262,
+        "p_value": 0.7384067613269684,
+        "fpr": 0.759
+      },
+      "LinkingSum": {
+        "rho": 0.023047960849845027,
+        "p_value": 0.9433205628831463,
+        "fpr": 0.955
+      },
+      "WritheProxy": {
+        "rho": -0.15791259217822953,
+        "p_value": 0.6240212345212054,
+        "fpr": 0.6485
+      },
+      "Unknotting": {
+        "rho": 0.2581988897471611,
+        "p_value": 0.41778700474506514,
+        "fpr": 0.5935
+      },
+      "Genus": {
+        "rho": 0.2581988897471611,
+        "p_value": 0.41778700474506514,
+        "fpr": 0.5935
+      }
+    },
+    "S": {
+      "Signature": {
+        "rho": -0.02801475832676876,
+        "p_value": 0.9311295236982374,
+        "fpr": 0.933
+      },
+      "Crossing": {
+        "rho": 0.15399810070180361,
+        "p_value": 0.6327509467454667,
+        "fpr": 0.756
+      },
+      "Determinant": {
+        "rho": 0.0,
+        "p_value": 1.0,
+        "fpr": 1.0
+      },
+      "Components": {
+        "rho": 0.4266551675939622,
+        "p_value": 0.16660992297451618,
+        "fpr": 0.2445
+      },
+      "Volume": {
+        "rho": -0.05063696835418333,
+        "p_value": 0.8758106359251818,
+        "fpr": 0.894
+      },
+      "LinkingSum": {
+        "rho": 0.0,
+        "p_value": 1.0,
+        "fpr": 1.0
+      },
+      "WritheProxy": {
+        "rho": -0.02404791269569279,
+        "p_value": 0.9408651983143889,
+        "fpr": 0.9345
+      },
+      "Unknotting": {
+        "rho": -0.11009637651263607,
+        "p_value": 0.7333910375673086,
+        "fpr": 0.9265
+      },
+      "Genus": {
+        "rho": -0.11009637651263607,
+        "p_value": 0.7333910375673086,
+        "fpr": 0.9265
+      }
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "n_trials": 2000,
+    "computation_time_sec": 22.543066024780273
+  }
+}

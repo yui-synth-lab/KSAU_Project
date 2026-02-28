@@ -1,0 +1,38 @@
+{
+  "iteration": 3,
+  "hypothesis_id": "H65",
+  "timestamp": "2026-02-28T17:00:00Z",
+  "task_name": "バルク(10D)・境界(9D)投影幾何に基づく係数導出式の定式化",
+  "data_sources": {
+    "description": "ssot/constants.json (Dimensions and Geometric Constants)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "g_kappa_ratio": 6.997461696739651,
+    "g_vs_7kappa_error_pct": 0.036274628863369546,
+    "quark_slope_10_7_g": 1.3085222773960272,
+    "quark_slope_10_kappa": 1.308996938995747,
+    "lepton_slope_20_7_g": 2.6170445547920544,
+    "lepton_slope_20_kappa": 2.617993877991494,
+    "deviation_q_pct": 0.036274628863357423,
+    "deviation_l_pct": 0.036274628863357423
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "G_catalan",
+      "bulk_total",
+      "bulk_compact",
+      "boundary_projection",
+      "time"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.01
+  },
+  "notes": "Derivation logic: G = 7*kappa. Quark = (10/7)G = 10*kappa. Lepton = (20/7)G = 20*kappa."
+}

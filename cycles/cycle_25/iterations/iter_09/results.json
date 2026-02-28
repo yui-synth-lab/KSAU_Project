@@ -1,0 +1,130 @@
+{
+  "iteration": 9,
+  "hypothesis_id": "H66",
+  "timestamp": "2026-02-28T12:39:10.091086",
+  "task_name": "量子数決定規則の幾何学的定式化",
+  "geometric_rules": {
+    "Spin": "S = 1 if (Brunnian & C=3), 0 if (Brunnian & C=2), 1/2 if Non-Brunnian",
+    "Charge": "Q = [(-1)^C * (4-C)/3] if Non-Brunnian, [1 - alternating] if Brunnian",
+    "Generation": "G = rank(Volume) within topological sector (C, Brunnian)"
+  },
+  "metrics": {
+    "spin_accuracy": 1.0,
+    "charge_accuracy": 1.0,
+    "generation_accuracy": 1.0
+  },
+  "verification_table": [
+    {
+      "name": "Up",
+      "Q_obs": 0.6666666666666666,
+      "Q_pred": 0.6666666666666666,
+      "S_obs": 0.5,
+      "S_pred": 0.5,
+      "G_obs": 1.0,
+      "G_pred": 1.0
+    },
+    {
+      "name": "Charm",
+      "Q_obs": 0.6666666666666666,
+      "Q_pred": 0.6666666666666666,
+      "S_obs": 0.5,
+      "S_pred": 0.5,
+      "G_obs": 2.0,
+      "G_pred": 2.0
+    },
+    {
+      "name": "Top",
+      "Q_obs": 0.6666666666666666,
+      "Q_pred": 0.6666666666666666,
+      "S_obs": 0.5,
+      "S_pred": 0.5,
+      "G_obs": 3.0,
+      "G_pred": 3.0
+    },
+    {
+      "name": "Down",
+      "Q_obs": -0.3333333333333333,
+      "Q_pred": -0.3333333333333333,
+      "S_obs": 0.5,
+      "S_pred": 0.5,
+      "G_obs": 1.0,
+      "G_pred": 1.0
+    },
+    {
+      "name": "Strange",
+      "Q_obs": -0.3333333333333333,
+      "Q_pred": -0.3333333333333333,
+      "S_obs": 0.5,
+      "S_pred": 0.5,
+      "G_obs": 2.0,
+      "G_pred": 2.0
+    },
+    {
+      "name": "Bottom",
+      "Q_obs": -0.3333333333333333,
+      "Q_pred": -0.3333333333333333,
+      "S_obs": 0.5,
+      "S_pred": 0.5,
+      "G_obs": 3.0,
+      "G_pred": 3.0
+    },
+    {
+      "name": "Electron",
+      "Q_obs": -1.0,
+      "Q_pred": -1.0,
+      "S_obs": 0.5,
+      "S_pred": 0.5,
+      "G_obs": 1.0,
+      "G_pred": 1.0
+    },
+    {
+      "name": "Muon",
+      "Q_obs": -1.0,
+      "Q_pred": -1.0,
+      "S_obs": 0.5,
+      "S_pred": 0.5,
+      "G_obs": 2.0,
+      "G_pred": 2.0
+    },
+    {
+      "name": "Tau",
+      "Q_obs": -1.0,
+      "Q_pred": -1.0,
+      "S_obs": 0.5,
+      "S_pred": 0.5,
+      "G_obs": 3.0,
+      "G_pred": 3.0
+    },
+    {
+      "name": "W",
+      "Q_obs": 1.0,
+      "Q_pred": 1.0,
+      "S_obs": 1.0,
+      "S_pred": 1.0,
+      "G_obs": 0.0,
+      "G_pred": 0.0
+    },
+    {
+      "name": "Z",
+      "Q_obs": 0.0,
+      "Q_pred": 0.0,
+      "S_obs": 1.0,
+      "S_pred": 1.0,
+      "G_obs": 0.0,
+      "G_pred": 0.0
+    },
+    {
+      "name": "Higgs",
+      "Q_obs": 0.0,
+      "Q_pred": 0.0,
+      "S_obs": 0.0,
+      "S_pred": 0.0,
+      "G_obs": 0.0,
+      "G_pred": 0.0
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false
+  }
+}

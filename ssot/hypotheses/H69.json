@@ -1,0 +1,35 @@
+{
+  "id": "H69",
+  "name": "宇宙初期トポロジー選択機構",
+  "description": "SM 粒子トポロジーが「最小体積・最大安定（TSI）」の物理的フィルタリングによって選択されたことを実証する。",
+  "status": "active",
+  "created_date": "2026-02-28",
+  "hypothesis": {
+    "H0": "SM 粒子のトポロジー分布はランダムであり、体積や TSI による有意な選択バイアスは存在しない。",
+    "H1": "SM 粒子は $V$ と TSI の多変量空間において極めて安定な領域に位置し、高体積トポロジーの崩壊による宇宙論的選択の結果である。"
+  },
+  "data_requirements": {
+    "description": "KnotInfo 全データ (Crossing 3-12) と SM 割り当てトポロジー。",
+    "ssot_methods": ["SSOT.get_topology_assignments", "SSOT.get_knotinfo_data"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_12_PARTICLES",
+    "max_free_parameters": 1,
+    "derivation_requirement": "MULTIVARIATE_STABILITY_ANALYSIS (Must include TSI)",
+    "notes": "単一変数 $V$ のみによる解析は NEG-20260227-01 に基づき禁止。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY"
+  },
+  "test_method": "全結び目空間における SM トポロジー集合の特異性検定（カーネル密度推定またはマハラノビス距離置換検定）。",
+  "priority": "medium",
+  "max_iterations": 5
+}

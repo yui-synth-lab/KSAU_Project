@@ -1,0 +1,113 @@
+{
+  "iteration": "2",
+  "hypothesis_id": "H64",
+  "timestamp": "2026-02-28T02:36:14Z",
+  "task_name": "n_threshold = K/3 条件下での割当解の空間探索と唯一性評価",
+  "data_sources": {
+    "description": "KnotInfo/LinkInfo Real Data (3-12 crossing number)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "n_threshold": 8.0,
+    "lepton_uniqueness_analysis": {
+      "Electron": {
+        "target_determinant": 3,
+        "candidates": [
+          "3_1"
+        ],
+        "candidate_count": 1,
+        "unique": true
+      },
+      "Muon": {
+        "target_determinant": 5,
+        "candidates": [
+          "4_1",
+          "5_1"
+        ],
+        "candidate_count": 2,
+        "unique": false
+      },
+      "Tau": {
+        "target_determinant": 9,
+        "candidates": [
+          "6_1"
+        ],
+        "candidate_count": 1,
+        "unique": true
+      }
+    },
+    "others_uniqueness_analysis": {
+      "Up": {
+        "topology": "L9n1{1}",
+        "c_n_d_matches": 2,
+        "c_n_d_vol_matches": 2,
+        "is_unique_by_vol": false
+      },
+      "Down": {
+        "topology": "L8a18{0,1}",
+        "c_n_d_matches": 4,
+        "c_n_d_vol_matches": 4,
+        "is_unique_by_vol": false
+      },
+      "Strange": {
+        "topology": "L11n330{0,1}",
+        "c_n_d_matches": 36,
+        "c_n_d_vol_matches": 4,
+        "is_unique_by_vol": false
+      },
+      "Charm": {
+        "topology": "L11a362{0}",
+        "c_n_d_matches": 10,
+        "c_n_d_vol_matches": 2,
+        "is_unique_by_vol": false
+      },
+      "Bottom": {
+        "topology": "L11a528{0,1}",
+        "c_n_d_matches": 16,
+        "c_n_d_vol_matches": 4,
+        "is_unique_by_vol": false
+      },
+      "Top": {
+        "topology": "L11a225{1}",
+        "c_n_d_matches": 12,
+        "c_n_d_vol_matches": 2,
+        "is_unique_by_vol": false
+      },
+      "W": {
+        "topology": "L11n387{0,0}",
+        "c_n_d_matches": 60,
+        "c_n_d_vol_matches": 8,
+        "is_unique_by_vol": false
+      },
+      "Z": {
+        "topology": "L11a431{0,0}",
+        "c_n_d_matches": 52,
+        "c_n_d_vol_matches": 4,
+        "is_unique_by_vol": false
+      },
+      "Higgs": {
+        "topology": "L11a55{0}",
+        "c_n_d_matches": 22,
+        "c_n_d_vol_matches": 4,
+        "is_unique_by_vol": false
+      }
+    },
+    "total_links_searched": 4144
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "k_resonance",
+      "min_crossing_number",
+      "max_crossing_number",
+      "random_seed"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 1.3952
+  },
+  "notes": "Evaluation of uniqueness for current assignments. While (c, n, D) provides high specificity for leptons, others often require Volume to reach uniqueness."
+}
