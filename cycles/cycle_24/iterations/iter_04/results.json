@@ -1,0 +1,101 @@
+{
+  "iteration": 4,
+  "hypothesis_id": "H62",
+  "timestamp": "2026-02-28T09:51:17.203616",
+  "task_name": "9フェルミオンにおけるLOO-CV検証と汎化性能の評価（FPR検定含む）",
+  "data_sources": {
+    "description": "Fermion 9 points (Zero-Parameter Model v2 - Justified Intercept)",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "alpha": 0.18512012242326525,
+    "gamma": -7.327724753,
+    "beta_fixed": 7.114419830347946,
+    "beta_derivation": "beta_q + ln(k_resonance)",
+    "r2_observed": 0.8761765767746242,
+    "fpr": 0.0002,
+    "monte_carlo_n_trials": 10000,
+    "formula": "ln(m) = eta_sector * kappa * V + alpha * (ln(det) + s - n - (pi/alpha)*ln(c)) + gamma + beta",
+    "per_particle_metrics": [
+      {
+        "particle": "Electron",
+        "m_obs": 0.511,
+        "m_pred": 0.3923777350302702,
+        "residual_mev": 0.11862226496972983,
+        "residual_pct": 23.213750483313078
+      },
+      {
+        "particle": "Muon",
+        "m_obs": 105.65999999999997,
+        "m_pred": 53.97054209325093,
+        "residual_mev": 51.68945790674904,
+        "residual_pct": 48.92055452086793
+      },
+      {
+        "particle": "Tau",
+        "m_obs": 1776.8599999999997,
+        "m_pred": 556.5377463955825,
+        "residual_mev": 1220.3222536044173,
+        "residual_pct": 68.67858208324897
+      },
+      {
+        "particle": "Up",
+        "m_obs": 2.16,
+        "m_pred": 16.646178382301805,
+        "residual_mev": -14.486178382301805,
+        "residual_pct": -670.6564065880465
+      },
+      {
+        "particle": "Down",
+        "m_obs": 4.67,
+        "m_pred": 2.733731250215577,
+        "residual_mev": 1.936268749784423,
+        "residual_pct": 41.46185759709686
+      },
+      {
+        "particle": "Charm",
+        "m_obs": 1270.0000000000002,
+        "m_pred": 5023.259762395832,
+        "residual_mev": -3753.259762395832,
+        "residual_pct": -295.5322647555772
+      },
+      {
+        "particle": "Strange",
+        "m_obs": 93.4,
+        "m_pred": 22.9098585033716,
+        "residual_mev": 70.49014149662841,
+        "residual_pct": 75.47124357240729
+      },
+      {
+        "particle": "Top",
+        "m_obs": 172760.00000000015,
+        "m_pred": 1351844.7541004594,
+        "residual_mev": -1179084.7541004592,
+        "residual_pct": -682.4986999886885
+      },
+      {
+        "particle": "Bottom",
+        "m_obs": 4179.999999999997,
+        "m_pred": 957.7702382455808,
+        "residual_mev": 3222.2297617544164,
+        "residual_pct": 77.0868364056081
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "constants_used": [
+      "pi",
+      "kappa",
+      "k_resonance",
+      "v_borromean",
+      "global_intercept_c",
+      "phase_viscosity_model.sectors"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 8.06
+  }
+}

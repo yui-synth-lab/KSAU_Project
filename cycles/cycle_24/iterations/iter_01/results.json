@@ -1,0 +1,57 @@
+{
+  "iteration": 1,
+  "hypothesis_id": "H61",
+  "timestamp": "2026-02-28T09:26:11.872331",
+  "task_name": "24-cell対称性に基づく新安定性指数の定式化と全結び目への適用",
+  "data_sources": {
+    "description": "KnotInfo + LinkInfo (3-12 crossings), N=7163"
+  },
+  "computed_values": {
+    "F1 (c*|s|/n)": {
+      "odds_ratio": 2.224860485082636,
+      "p_value": 1.782125621625255e-23,
+      "a": 500,
+      "b": 3106,
+      "c": 240,
+      "d": 3317
+    },
+    "F2 (c*|s|/(n+u))": {
+      "odds_ratio": 2.1243070600643192,
+      "p_value": 4.0422668189548435e-21,
+      "a": 491,
+      "b": 3092,
+      "c": 249,
+      "d": 3331
+    },
+    "F3 (24*c/n)": {
+      "odds_ratio": Infinity,
+      "p_value": 9.053248768109339e-186,
+      "a": 740,
+      "b": 3450,
+      "c": 0,
+      "d": 2973
+    },
+    "F4 (24*|s|/(n*c))": {
+      "odds_ratio": 0.36834417470416986,
+      "p_value": 1.1252826907423029e-34,
+      "a": 214,
+      "b": 3371,
+      "c": 526,
+      "d": 3052
+    },
+    "F5 (Old TSI Inverse)": {
+      "odds_ratio": 1.1356014359253948,
+      "p_value": 0.11099010243754259,
+      "a": 409,
+      "b": 3347,
+      "c": 331,
+      "d": 3076
+    }
+  },
+  "best_candidate": "F3 (24*c/n)",
+  "best_or": Infinity,
+  "fpr": 0.0,
+  "ssot_compliance": {
+    "all_constants_from_ssot": true
+  }
+}

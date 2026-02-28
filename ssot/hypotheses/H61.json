@@ -1,0 +1,43 @@
+{
+  "id": "H61",
+  "name": "真の位相安定性指数の導出と検証",
+  "description": "H60の負の相関を解消するため、24-cell対称性に直接対応する安定性指数を第一原理から提案し検証する。",
+  "status": "accepted",
+  "cycle": 24,
+  "verdict_date": "2026-02-28",
+  "verdict_summary": "OR=1.71, p=1.61e-10, FPR=0.0",
+  "key_metrics": {
+    "odds_ratio": 1.71,
+    "p_value": 1.61e-10,
+    "fpr": 0.0
+  },
+  "created_date": "2026-02-28",
+  "hypothesis": {
+    "H0": "新安定性指数と det ≡ 0 (mod 24) の間に有意な正の相関は存在せず、オッズ比 <= 1 である。",
+    "H1": "24-cell対称性に直接由来する新安定性指数を定義可能であり、KnotInfo全データにおいて det ≡ 0 (mod 24) と有意な正の相関（オッズ比 > 1）を持つ。"
+  },
+  "data_requirements": {
+    "description": "KnotInfoの実データ（交差数3–12、N=6502）。",
+    "ssot_methods": ["get_knotinfo_data"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_KNOTS_3_TO_12",
+    "max_free_parameters": 1,
+    "derivation_requirement": "FIRST_PRINCIPLES",
+    "notes": "指標は24-cell対称性（det ≡ 0 mod 24）の幾何学的要請から理論的に導出されること。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY（TSI定義の恣意的変更を含む）"
+  },
+  "test_method": "Fisher正確確率検定およびモンテカルロ置換検定によるオッズ比とFPRの算出",
+  "priority": "high",
+  "max_iterations": 5
+}

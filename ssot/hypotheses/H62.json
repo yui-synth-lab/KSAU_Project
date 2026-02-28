@@ -1,0 +1,43 @@
+{
+  "id": "H62",
+  "name": "複合的トーション補正モデルのLOO安定性検証",
+  "description": "α = √2κ を固定した複合不変量モデルにより、フェルミオン質量のLOO安定性を検証する。",
+  "status": "accepted",
+  "cycle": 24,
+  "verdict_date": "2026-02-28",
+  "verdict_summary": "LOO-R²=0.876, Stability=1.0, FPR=0.0002",
+  "key_metrics": {
+    "loo_r2": 0.876,
+    "stability_ratio": 1.0,
+    "fpr": 0.0002
+  },
+  "created_date": "2026-02-28",
+  "hypothesis": {
+    "H0": "追加のトポロジカル不変量の導入はLOO安定性を改善せず、LOO-R2 < 0.95 * training R2 である。",
+    "H1": "α = √2κ（理論導出値）を維持しつつ、第一原理から導かれた不変量を組み合わせることで、LOO-R2 >= 0.95 * training R2 を達成する。"
+  },
+  "data_requirements": {
+    "description": "SSoT (parameters.json) に記載されたフェルミオン9粒子の質量データ。",
+    "ssot_methods": ["get_fermion_masses"]
+  },
+  "physical_constraints": {
+    "particle_scope": "FERMIONS_9",
+    "max_free_parameters": 0,
+    "derivation_requirement": "FIRST_PRINCIPLES",
+    "notes": "α および γ を独立パラメータとしてフィッティングすることは禁止（H59の教訓）。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY（自由パラメータの独立フィッティングを含む）"
+  },
+  "test_method": "Leave-One-Out Cross Validation (LOO-CV) による汎化誤差の定量評価",
+  "priority": "medium",
+  "max_iterations": 5
+}

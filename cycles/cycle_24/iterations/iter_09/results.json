@@ -1,0 +1,104 @@
+{
+  "iteration": 9,
+  "hypothesis_id": "H63",
+  "timestamp": "2026-02-28T10:31:41.380748",
+  "task_name": "数理的厳密化と次元解析の統合 (最終成果)",
+  "computed_values": {
+    "r2_fermions": 0.7339091982780134,
+    "fpr": 0.0,
+    "planck_mapping_deviation_pct": 0.07718571183889306,
+    "beta_fixed": 7.11627046689868,
+    "particles": [
+      {
+        "name": "Electron",
+        "m_obs": 0.511,
+        "m_pred": 0.39310455594164556,
+        "err_pct": -23.07151547130224
+      },
+      {
+        "name": "Muon",
+        "m_obs": 105.66,
+        "m_pred": 105.65999999999997,
+        "err_pct": -2.6899213922396374e-14
+      },
+      {
+        "name": "Tau",
+        "m_obs": 1776.86,
+        "m_pred": 1584.1635610711257,
+        "err_pct": -10.844773303967346
+      },
+      {
+        "name": "Up",
+        "m_obs": 2.16,
+        "m_pred": 35.570846529943246,
+        "err_pct": 1546.7984504603353
+      },
+      {
+        "name": "Down",
+        "m_obs": 4.67,
+        "m_pred": 4.474871406416541,
+        "err_pct": -4.17834247502054
+      },
+      {
+        "name": "Strange",
+        "m_obs": 93.4,
+        "m_pred": 46.11991620359687,
+        "err_pct": -50.62107472848301
+      },
+      {
+        "name": "Charm",
+        "m_obs": 1270.0,
+        "m_pred": 24749.98222294572,
+        "err_pct": 1848.8174978697418
+      },
+      {
+        "name": "Bottom",
+        "m_obs": 4180.0,
+        "m_pred": 2987.626121247722,
+        "err_pct": -28.5256908792411
+      },
+      {
+        "name": "Top",
+        "m_obs": 172760.0,
+        "m_pred": 12452603.850214183,
+        "err_pct": 7108.036495840578
+      },
+      {
+        "name": "W",
+        "m_obs": 80377.0,
+        "m_pred": 660939.3635828311,
+        "err_pct": 722.2991198761226
+      },
+      {
+        "name": "Z",
+        "m_obs": 91187.0,
+        "m_pred": 700499.515149589,
+        "err_pct": 668.2010759752915
+      },
+      {
+        "name": "Higgs",
+        "m_obs": 125100.0,
+        "m_pred": 6211178855.855877,
+        "err_pct": 4964871.107798463
+      }
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "free_parameters": 1,
+    "constants_used": [
+      "kappa",
+      "pi",
+      "G_ksau",
+      "v_borromean",
+      "sm_rank",
+      "k_resonance",
+      "bulk_total"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 35.56
+  }
+}

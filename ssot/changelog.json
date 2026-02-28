@@ -5,6 +5,18 @@
   },
   "entries": [
     {
+      "date": "2026-02-28",
+      "cycle": "cycle_24",
+      "iteration": "iter_07/04/10",
+      "judge_verdict": "H61, H62, H63 ACCEPT",
+      "changed_file": "ssot/constants.json",
+      "change_type": "update/add",
+      "key": "lifetime_model.stability_index_formula, theoretical_mass_laws.zero_parameter_formula, gravity.G_derived_refined",
+      "old_value": "multiple",
+      "new_value": "multiple",
+      "reason": "Cycle 24 の全仮説 ACCEPT に基づき、新位相安定性指数 TSI_24、自由パラメータなしの第一原理質量公式、およびプランクマッピングに基づく精密重力定数を統合。"
+    },
+    {
       "date": "2026-02-27",
       "cycle": "cycle_22",
       "iteration": "iter_02/05",

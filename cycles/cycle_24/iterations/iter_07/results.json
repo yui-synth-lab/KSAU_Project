@@ -1,0 +1,35 @@
+{
+  "iteration": 7,
+  "hypothesis_id": "H61",
+  "timestamp": "2026-02-28T10:09:34.260536",
+  "task_name": "不一致領域の幾何学的要因分析と公式の微調整",
+  "refined_formula": "24 * c / (n + |s|)",
+  "combined_stats": {
+    "n": 7163,
+    "odds_ratio": 20.275003347168294,
+    "p_value": 1.6990115606306837e-150,
+    "table": {
+      "tp": 705,
+      "fp": 3201,
+      "fn": 35,
+      "tn": 3222
+    }
+  },
+  "links_only_stats": {
+    "n": 4186,
+    "odds_ratio": 1.7131936530200753,
+    "p_value": 1.6134891208678583e-10,
+    "table": {
+      "tp": 496,
+      "fp": 1870,
+      "fn": 244,
+      "tn": 1576
+    }
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true
+  },
+  "reproducibility": {
+    "random_seed": 42
+  }
+}

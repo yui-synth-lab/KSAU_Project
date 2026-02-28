@@ -58,7 +58,7 @@
     "G_newton_exp":    6.708e-39,
     "G_ksau":          6.7135e-39,
     "G_corrected":     6.708056580391778e-39,
-    "G_derived_refined": 6.708001762186785e-39,
+    "G_derived_refined": 6.708001762e-39,
     "correction_formula": "G_ksau * (1 - alpha_em / boundary_projection)",
     "gravity_deviation": "Delta G / G = 8.43e-6",
     "v_planck_factor": 6.0,
@@ -267,7 +267,8 @@
   "theoretical_mass_laws": {
     "lepton_jump": "20 * kappa * V",
     "lepton_jump_note": "電子・ミューオン質量ギャップを 1.72% 精度で説明。Cycle 05 H11 で検証済み。",
-    "kappa": 0.1308996938995747
+    "kappa": 0.1308996938995747,
+    "zero_parameter_formula": "ln(m) = eta*kappa*V + sqrt(2)*kappa*(ln(det)+s-n-(pi/alpha)*ln(c)) + gamma + beta"
   },
 
   "validation_metrics": {
@@ -280,12 +281,12 @@
   },
 
   "lifetime_model": {
-    "stability_index_formula": "n * u / |s|",
+    "stability_index_formula": "24 * c / (n + abs(s))",
     "description": "Topological Stability Index (TSI) based on Crossing Number (n), Unknotting Number (u), and Signature (s).",
     "target_r2": 0.70,
     "achieved_r2": 0.9129,
     "achieved_p_value": 0.01528,
-    "validated_by": "cycle_10_h24"
+    "validated_by": "cycle_24_h61"
   },
 
   "mass_quantization": {

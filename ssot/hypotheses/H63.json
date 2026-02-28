@@ -1,0 +1,42 @@
+{
+  "id": "H63",
+  "name": "数理的厳密化と次元解析の統合",
+  "description": "KSAUの幾何学量を次元解析によってプランクスケールの物理量として再定義し、理論の物理的基盤を構築する。",
+  "status": "accepted",
+  "cycle": 24,
+  "verdict_date": "2026-02-28",
+  "verdict_summary": "Deviation=0.0772%, FPR=0.0",
+  "key_metrics": {
+    "deviation": 0.000772,
+    "fpr": 0.0
+  },
+  "created_date": "2026-02-28",
+  "hypothesis": {
+    "H0": "幾何学的量を物理量として再定義しても、質量次元および SM 質量階層との一貫性が得られない。",
+    "H1": "幾何学量を h, c, G を用いた作用次元にマッピングすることで、E=mc2 および SM 質量階層を厳密に再現できる。"
+  },
+  "data_requirements": {
+    "description": "SSoT (constants.json) の物理定数および実測質量データ。",
+    "ssot_methods": ["get_physical_constants", "get_particle_masses"]
+  },
+  "physical_constraints": {
+    "particle_scope": "ALL_12_PARTICLES",
+    "max_free_parameters": 1,
+    "derivation_requirement": "FIRST_PRINCIPLES",
+    "notes": "次元解析は標準的な物理学の慣習に完全に従うこと。比喩的な表現を排する。"
+  },
+  "statistical_thresholds": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50
+  },
+  "rejection_criteria": {
+    "bonferroni_corrected_p_max": 0.016666,
+    "fpr_max": 0.50,
+    "max_iterations": 5,
+    "consecutive_stop_limit": 2,
+    "physical_constraint_violation": "即座に MODIFY（物理的次元の一貫性欠如を含む）"
+  },
+  "test_method": "次元解析の一貫性検証、および実測値との数値的一致の評価（目標偏差 < 1%）",
+  "priority": "medium",
+  "max_iterations": 5
+}

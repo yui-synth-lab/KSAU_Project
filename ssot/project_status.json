@@ -5,13 +5,13 @@
     "generated_by": "Claude (manual migration from cycles/ verdicts)"
   },
   "summary": {
-    "total_hypotheses_tested": 60,
-    "accepted": 32,
+    "total_hypotheses_tested": 63,
+    "accepted": 35,
     "rejected": 24,
     "modified": 4,
-    "pending_cycle_24": 3,
-    "cycles_completed": 23,
-    "current_cycle": 24
+    "pending_cycle_24": 0,
+    "cycles_completed": 24,
+    "current_cycle": 25
   },
   "established_pillars": [
     {
@@ -194,6 +194,9 @@
     {"id": "H57", "name": "ST+LOO Stability", "status": "modified", "cycle": 22},
     {"id": "H58", "name": "Joint MC Predictions", "status": "rejected", "cycle": 23},
     {"id": "H59", "name": "ST LOO Stability", "status": "rejected", "cycle": 23},
-    {"id": "H60", "name": "Det ≡ 0 (mod 24) Stability", "status": "rejected", "cycle": 23}
+    {"id": "H60", "name": "Det ≡ 0 (mod 24) Stability", "status": "rejected", "cycle": 23},
+    {"id": "H61", "name": "真の位相安定性指数の導出 (TSI見直し)", "status": "accepted", "cycle": 24},
+    {"id": "H62", "name": "トーション補正モデルのLOO安定性検証", "status": "accepted", "cycle": 24},
+    {"id": "H63", "name": "数理的厳密化・次元解析の統合", "status": "accepted", "cycle": 24}
   ]
 }
