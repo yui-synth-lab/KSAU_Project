@@ -1,6 +1,6 @@
 # Topological Mass Formula from Hyperbolic 3-Manifold Invariants: A Data-Driven Framework with 69 Hypothesis Tests
 
-**Authors:** Yuya Yamamoto
+**Authors:** Yui / KSAU Collaboration
 **Date:** 2026-03-01
 **Version:** draft_v4
 **Status:** UNDER REVIEW
@@ -137,9 +137,12 @@ The KSAU framework establishes a statistically significant connection between 3-
 
 1. Witten, E. (1989). "Quantum Field Theory and the Jones Polynomial." *Comm. Math. Phys.* 121:351-399.
 2. Atiyah, M. (1990). "The Geometry and Physics of Knots." *Lezioni Lincee*, Cambridge University Press.
-3. KnotInfo Database (2026). "Table of Knot Invariants." [https://knotinfo.math.indiana.edu/](https://knotinfo.math.indiana.edu/)
-4. Eto, M., Hamada, Y. & Nitta, M. (2025). "Tying Knots in Particle Physics." *Phys. Rev. Lett.* 135, 091603.
-5. KSAU Project Team. (2026). "AIRDP Project Status Report: Cycle 01-26." (Zenodo Archive, pending DOI).
+3. Alexander, J. W. (1928). "Topological invariants of knots and links." *Trans. Amer. Math. Soc.*, 30(2), 275-306.
+4. Jones, V. F. R. (1985). "A polynomial invariant for knots via von Neumann algebras." *Bull. Amer. Math. Soc.*, 12(1), 103-111.
+5. KnotInfo Database (2026). "Table of Knot Invariants." [https://knotinfo.math.indiana.edu/](https://knotinfo.math.indiana.edu/)
+6. Particle Data Group (2024). Review of Particle Physics. *PTEP*, 2024, 083C01.
+7. Eto, M., Hamada, Y. & Nitta, M. (2025). "Tying Knots in Particle Physics." *Phys. Rev. Lett.* 135, 091603. [arXiv:2407.11731]
+8. KSAU Project Team. (2026). "AIRDP Project Status Report: Cycle 01-26." (Zenodo Archive, pending DOI).
 
 ---
 
