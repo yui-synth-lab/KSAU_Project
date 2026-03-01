@@ -1,9 +1,91 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
 \section{Topological Mass Formula from Hyperbolic 3-Manifold Invariants:
 A Data-Driven Framework with 69 Hypothesis
 Tests}\label{topological-mass-formula-from-hyperbolic-3-manifold-invariants-a-data-driven-framework-with-69-hypothesis-tests}
 
-\textbf{Authors:} Yui / KSAU Collaboration \textbf{Date:} 2026-03-01
-\textbf{Version:} draft\_v4 \textbf{Status:} UNDER REVIEW
+\textbf{Authors:} Yui / KSAU Collaboration\\
+\textbf{Date:} 2026-03-01\\
+\textbf{Version:} draft\_v4\\
+\textbf{Status:} UNDER REVIEW\\
+\textbf{DOI:}
+\href{https://doi.org/10.5281/zenodo.18521244}{10.5281/zenodo.18521244}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -15,7 +97,7 @@ invariants. By mapping 12 SM particles to unique link topologies, we
 demonstrate a fermion mass formula \(\ln(m) = \eta \kappa V_{eff} + C\)
 with \(R^2 = 0.9998\), where \(\kappa = \pi/24\) is derived from 24-cell
 resonance conditions. The framework successfully derives the
-gravitational constant \(G\) with a precision of \(0.000026\%\) and
+gravitational constant \(G\) with a precision of \(0.0000263\%\) and
 reproduces the Jarlskog invariant and signs of the CKM matrix with
 \(R^2 = 0.9980\). This work summarizes the results of 69 hypothesis
 tests conducted across 26 AIRDP cycles, including 24 documented
@@ -255,6 +337,21 @@ and reproducible map of the topological phase space of the SM spectrum.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
+\subsection{Acknowledgments}\label{acknowledgments}
+
+The authors acknowledge the use of large language models, including
+\textbf{Anthropic Claude} (Sonnet series) and \textbf{Google Gemini}
+(2.5/3.0 series), for hypothesis generation, mathematical verification,
+and iterative peer review within the AIRDP framework. These tools were
+used in accordance with the journal's policies on AI-assisted research.
+All statistical criteria were pre-registered before each cycle, and no
+post-hoc parameter adjustments were made.
+
+Knot invariant data sourced from the \textbf{KnotInfo} and
+\textbf{LinkInfo} databases (Indiana University).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 \subsection{References}\label{references}
 
 \begin{enumerate}
@@ -283,7 +380,7 @@ and reproducible map of the topological phase space of the SM spectrum.
   Physics.'' \emph{Phys. Rev.~Lett.} 135, 091603. {[}arXiv:2407.11731{]}
 \item
   KSAU Project Team. (2026). ``AIRDP Project Status Report: Cycle
-  01-26.'' (Zenodo Archive, pending DOI).
+  01-26.'' Zenodo. \url{https://doi.org/10.5281/zenodo.18827836}
 \end{enumerate}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -429,3 +526,5 @@ p=0.0022 \\
   \textbf{{[}Misc{]} Consistency Updates}: Unified gravity precision
   notation to ``0.0000263\%'' in the conclusion to match Section 4.3.
 \end{itemize}
+
+\end{document}

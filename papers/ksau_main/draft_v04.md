@@ -1,10 +1,10 @@
 # Topological Mass Formula from Hyperbolic 3-Manifold Invariants: A Data-Driven Framework with 69 Hypothesis Tests
 
-**Authors:** Yui / KSAU Collaboration
-**Date:** 2026-03-01
-**Version:** draft_v4
-**Status:** UNDER REVIEW
-**DOI:** 10.5281/zenodo.18827836
+**Authors:** Yui / KSAU Collaboration  
+**Date:** 2026-03-01  
+**Version:** draft_v4  
+**Status:** UNDER REVIEW  
+**DOI:** [10.5281/zenodo.18521244](https://doi.org/10.5281/zenodo.18521244)
 
 ---
 
