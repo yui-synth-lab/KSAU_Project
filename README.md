@@ -1,79 +1,77 @@
-# KSAU: The Geometry of Everything
-### Deriving the Standard Model and Gravity from the Borromean Volume
+# KSAU: Topological Mass Formula from Hyperbolic 3-Manifold Invariants
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-v6.9_Final-red.svg)
-![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18598989-blue)
-![Status](https://img.shields.io/badge/status-Grand_Unified_Synced-gold.svg)
+![Version](https://img.shields.io/badge/version-draft__v4-blue.svg)
+![Status](https://img.shields.io/badge/status-Under_Review-orange.svg)
 
 > **"Matter is Knot, Force is Link, Gravity is Geometry."**
 
-**KSAU (Knot-based Standard Model and Universal gravity)** is a theoretical physics simulation framework that derives the fundamental constants of the universe from pure geometry. By modeling elementary particles as topological defects in a 3D manifold network, KSAU calculates particle masses and gravitational strength with high precision, eliminating the need for arbitrary empirical parameters.
+**KSAU (Knot/String/Anyon Unified Framework)** is a data-driven theoretical physics framework that maps Standard Model particles to hyperbolic 3-manifold topologies and derives their masses and mixing parameters from knot invariants. All results are produced by 69 hypothesis tests conducted across 26 AIRDP cycles, including 24 documented rejections.
 
 ---
 
-## 🚀 Latest Breakthrough (v6.9): The 0.392 MeV Axion
-We have achieved **Numerical Sync 0.00** across all sectors, leading to a definitive prediction for the dark sector:
-- **Candidate:** $6_3$ knot (Amphicheiral/CP-invariant).
-- **Predicted Mass:** **$0.392 \pm 0.001$ MeV**.
-- **Theoretical Basis:** SSoT-synchronized Bulk Volume Law (Top-referenced).
-- **Uniqueness:** Identified as Rank 2 minimal amphicheiral state ($4_1$ manifested as Muon).
-- **Status:** Definitive PRL Letter drafted.
+## Key Results
+
+| Result | Metric | Hypothesis |
+| ------ | ------ | ---------- |
+| Fermion mass formula | R²=0.9998 (LOO-CV) | H1, H11, H35, H41 |
+| 12-particle topology assignment | p=0.0, FPR=0.0 | H49, H55, H64 |
+| Gravitational constant G | error=0.0000263% | H20, H46, H53 |
+| CKM matrix | R²=0.9980 | H67 |
+| κ = π/24 geometric derivation | error=0% | H6, H16, H36, H39, H44 |
 
 ---
 
-## 🌌 Key Achievements (Update 2026-02-13)
+## Repository Structure
 
-### 1. The Interaction Record (CKM $R^2 = 0.9988$)
-Using 1,000,000-sample constrained optimization, we have achieved the highest precision in flavor mixing history:
-- **Accuracy:** $R^2 = 0.9988$ for the CKM matrix.
-- **TIC Discovery:** Defined **Topological Interaction Correction (TIC)** to explain the trade-off between static mass laws and dynamic mixing complexity.
-
-### 2. Cosmological Synchronization (Sync 0.00)
-All large-scale constants are now derived as geometric invariants:
-- **Baryogenesis:** $\eta_B \approx 9.06 \times 10^{-11}$ derived via the **Pi-Squared Dilution Law**.
-- **Dark Matter:** 5.31 ratio derived via the **Boson Barrier Exclusion Model**.
-- **Planck Scale:** $V_P \approx 44.9$ ($4.5\pi^2$) confirmed as information saturation point.
-
-### 3. Grand Unified Results
-- **Gravity ($G$):** Derived with **99.92% precision**.
-- **Gauge Bosons:** $W$ (0.01% error), $Z$ (2.02%), $Higgs$ (1.52%) integrated via Brunnian-Borromean hierarchy.
-- **SSoT:** 100% synchronization between v6.0 (Micro) and v6.4 (Macro).
-
----
-
-## 🛠️ Installation & Usage
-
-### Prerequisites
-- Python 3.8+
-- NumPy, Pandas, Matplotlib
-
-### Run the Grand Unified Validation
-Verify all 12 Standard Model particles and the gravitational constant:
-
-```bash
-python v6.7/code/verify_grand_unification.py
+```text
+KSAU_Project/
+├── papers/ksau_main/     ← Main paper (draft_v04.md)
+├── cycles/               ← AIRDP research cycles (cycle_01–cycle_27)
+├── ssot/                 ← Single Source of Truth (constants, hypotheses)
+├── src/                  ← Simulation code
+├── data/                 ← KnotInfo/LinkInfo raw data
+├── archive/              ← Historical versions (v1.4–v6.9) and audit logs
+├── airdp_prompts/        ← AIRDP role prompts
+└── NEGATIVE_RESULTS_INDEX.md  ← Documented rejections
 ```
 
 ---
 
-## 📂 Repository Structure
-* `v6.0/`: Master SSoT and High-Precision Topology Assignments ($R^2=0.9988$).
-* `v6.4/`: Cosmological Synthesis (Big Bang, Baryogenesis, Dark Matter).
-* `v6.7/`: Grand Unified Validation and Gravity derivation.
-* `v6.9/`: Definitive 0.392 MeV Axion Prediction.
-* `audit/`: Historical AI-to-AI communication and planning logs.
+## Installation & Usage
+
+### Prerequisites
+
+- Python 3.8+
+- NumPy, Pandas, Matplotlib, SciPy
+
+### Run the Simulator
+
+```bash
+python src/ksau_simulator.py
+```
+
+Constants and particle data are loaded from `ssot/constants.json` and `ssot/parameters.json`. No hardcoded values.
 
 ---
 
-## 📜 Citation
-If you use KSAU in your research, please cite:
+## Statistical Protocol
 
-**Definitive Version (v6.9):**
-> **Yui, Gemini, & Claude.** (2026). *The Geometry of Everything: Grand Unification of Standard Model via Hyperbolic Manifold Topology (v6.9).* Zenodo.
+All hypotheses were tested under the following criteria:
+
+- **Bonferroni correction**: α = 0.05 / 3 ≈ 0.0167 per cycle
+- **LOO-CV**: Leave-One-Out Cross-Validation for all regression models
+- **Monte Carlo**: n=10,000, seed=42
+- **SSoT adherence**: All constants sourced from `ssot/constants.json`
 
 ---
 
-## 📄 License
+## Citation
+
+> **Yui / KSAU Collaboration.** (2026). *Topological Mass Formula from Hyperbolic 3-Manifold Invariants: A Data-Driven Framework with 69 Hypothesis Tests.* (Zenodo Archive, pending DOI).
+
+---
+
+## License
+
 This project is open-source under the **MIT License**.
-*The laws of physics belong to everyone.*

@@ -9,7 +9,7 @@
 
 ## Abstract
 
-We present a unified topological framework for Standard Model (SM) particle masses and mixing parameters based on hyperbolic 3-manifold invariants. By mapping 12 SM particles to unique link topologies, we demonstrate a fermion mass formula $\ln(m) = \eta \kappa V_{eff} + C$ with $R^2 = 0.9998$, where $\kappa = \pi/24$ is derived from 24-cell resonance conditions. The framework successfully derives the gravitational constant $G$ with a precision of $0.000026\%$ and reproduces the Jarlskog invariant and signs of the CKM matrix with $R^2 = 0.9980$. This work summarizes the results of 69 hypothesis tests conducted across 26 AIRDP cycles, including 24 documented rejections which delineate the statistical boundaries of the theory. Hypothesis generation and iterative testing were conducted via the AIRDP framework, with all statistical criteria pre-registered before each cycle.
+We present a unified topological framework for Standard Model (SM) particle masses and mixing parameters based on hyperbolic 3-manifold invariants. By mapping 12 SM particles to unique link topologies, we demonstrate a fermion mass formula $\ln(m) = \eta \kappa V_{eff} + C$ with $R^2 = 0.9998$, where $\kappa = \pi/24$ is derived from 24-cell resonance conditions. The framework successfully derives the gravitational constant $G$ with a precision of $0.0000263\%$ and reproduces the Jarlskog invariant and signs of the CKM matrix with $R^2 = 0.9980$. This work summarizes the results of 69 hypothesis tests conducted across 26 AIRDP cycles, including 24 documented rejections which delineate the statistical boundaries of the theory. Hypothesis generation and iterative testing were conducted via the AIRDP framework, with all statistical criteria pre-registered before each cycle.
 
 ---
 
@@ -130,6 +130,14 @@ We report several critical rejections that define the theory's boundaries:
 ## 6. Conclusion
 
 The KSAU framework establishes a statistically significant connection between 3-manifold invariants and the Standard Model spectrum. We have found statistically significant correlations for mass hierarchy ($R^2=0.9998$), gravity ($0.0000263\%$), and quantum numbers. While significant challenges remain in predicting mixing angles and suppressed transitions, the 69 tests documented here provide a robust, transparent, and reproducible map of the topological phase space of the SM spectrum.
+
+---
+
+## Acknowledgments
+
+The authors acknowledge the use of large language models, including **Anthropic Claude** (Sonnet series) and **Google Gemini** (2.5/3.0 series), for hypothesis generation, mathematical verification, and iterative peer review within the AIRDP framework. These tools were used in accordance with the journal's policies on AI-assisted research. All statistical criteria were pre-registered before each cycle, and no post-hoc parameter adjustments were made.
+
+Knot invariant data sourced from the **KnotInfo** and **LinkInfo** databases (Indiana University).
 
 ---
 
