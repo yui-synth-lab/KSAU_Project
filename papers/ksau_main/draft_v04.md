@@ -4,6 +4,7 @@
 **Date:** 2026-03-01
 **Version:** draft_v4
 **Status:** UNDER REVIEW
+**DOI:** 10.5281/zenodo.18827836
 
 ---
 
@@ -150,7 +151,7 @@ Knot invariant data sourced from the **KnotInfo** and **LinkInfo** databases (In
 5. KnotInfo Database (2026). "Table of Knot Invariants." [https://knotinfo.math.indiana.edu/](https://knotinfo.math.indiana.edu/)
 6. Particle Data Group (2024). Review of Particle Physics. *PTEP*, 2024, 083C01.
 7. Eto, M., Hamada, Y. & Nitta, M. (2025). "Tying Knots in Particle Physics." *Phys. Rev. Lett.* 135, 091603. [arXiv:2407.11731]
-8. KSAU Project Team. (2026). "AIRDP Project Status Report: Cycle 01-26." (Zenodo Archive, pending DOI).
+8. KSAU Project Team. (2026). "AIRDP Project Status Report: Cycle 01-26." Zenodo. [https://doi.org/10.5281/zenodo.18827836](https://doi.org/10.5281/zenodo.18827836)
 
 ---
 

@@ -1,7 +1,8 @@
 # KSAU: Topological Mass Formula from Hyperbolic 3-Manifold Invariants
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-draft__v4-blue.svg)
+![Version](https://img.shields.io/badge/version-v7.0-blue.svg)
+![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18827836-blue)
 ![Status](https://img.shields.io/badge/status-Under_Review-orange.svg)
 
 > **"Matter is Knot, Force is Link, Gravity is Geometry."**
@@ -68,7 +69,7 @@ All hypotheses were tested under the following criteria:
 
 ## Citation
 
-> **Yui / KSAU Collaboration.** (2026). *Topological Mass Formula from Hyperbolic 3-Manifold Invariants: A Data-Driven Framework with 69 Hypothesis Tests.* (Zenodo Archive, pending DOI).
+> **Yui / KSAU Collaboration.** (2026). *Topological Mass Formula from Hyperbolic 3-Manifold Invariants: A Data-Driven Framework with 69 Hypothesis Tests.* Zenodo. [https://doi.org/10.5281/zenodo.18827836](https://doi.org/10.5281/zenodo.18827836)
 
 ---
 
