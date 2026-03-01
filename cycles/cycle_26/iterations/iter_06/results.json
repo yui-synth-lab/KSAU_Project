@@ -1,0 +1,32 @@
+{
+  "iteration": 6,
+  "hypothesis_id": "H67",
+  "task": "Jarlskog \u4e0d\u5909\u91cf J \u306e\u5e7e\u4f55\u5b66\u7684\u4f4d\u76f8\u304b\u3089\u306e\u5c0e\u51fa",
+  "formula": "J = (4/3) * kappa^5 * BlochWigner(CrossRatio(Up, Charm, Down, Strange))",
+  "constants": {
+    "kappa": 0.1308996938995747,
+    "q": "exp(2pi i / 24)"
+  },
+  "computed": {
+    "cross_ratio_z": {
+      "real": 0.9147711792983859,
+      "imag": 0.23604023294043067
+    },
+    "bloch_wigner_d_z": 0.5940744866376151,
+    "j_derived": 3.0441972753340398e-05
+  },
+  "comparison": {
+    "target_j": 3.08e-05,
+    "error_pct": 1.1624261255181993
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "kappa",
+      "ckm_matrix",
+      "topology_assignments"
+    ]
+  }
+}

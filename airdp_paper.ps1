@@ -80,6 +80,8 @@ while (-not $finished) {
     # ── 1. Writer ─────────────────────────────────────
     Write-Host "[Writer: $Writer] 執筆中..." -ForegroundColor Green
 
+    $figuresDir = Join-Path $PaperDir "figures"
+    $null = New-Item -ItemType Directory -Force -Path $figuresDir
     $writerVars = @{
         BRIEF_PATH    = $BriefPath
         DRAFT_PATH    = $draftPath
@@ -88,6 +90,8 @@ while (-not $finished) {
         SSOT_DIR      = $SsotDir
         NEG_PATH      = $NegPath
         REVISION      = "$revision"
+        PAPER_DIR     = $PaperDir
+        FIGURES_DIR   = $figuresDir
     }
     $promptWriter = Expand-PromptTemplate (Join-Path $PromptsDir "paper_writer.md") $writerVars
 

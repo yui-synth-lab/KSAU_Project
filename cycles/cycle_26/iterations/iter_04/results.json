@@ -1,0 +1,58 @@
+{
+  "iteration": 4,
+  "hypothesis_id": "H68",
+  "timestamp": "2026-02-28T17:30:00Z",
+  "task_name": "ボソン 3 種（W, Z, H）の質量公式への適用と誤差評価",
+  "theoretical_c": {
+    "formula": "pi * sqrt(3) + 1 / d_bulk",
+    "value": 5.541398092702653,
+    "target": 5.5413980927,
+    "error_abs": 2.652988939644274e-12
+  },
+  "statistical_validation": {
+    "p_value": 0.0004,
+    "fpr": 0.0004,
+    "n_trials": 10000,
+    "tolerance": 0.001
+  },
+  "boson_mass_predictions": {
+    "W": {
+      "volume": 14.655449506835504,
+      "observed_mass_mev": 80377.0,
+      "predicted_mass_mev": 80377.75535421354,
+      "error_pct": 0.0009397641284731789
+    },
+    "Z": {
+      "volume": 15.027615015039348,
+      "observed_mass_mev": 91187.0,
+      "predicted_mass_mev": 93021.76711005706,
+      "error_pct": 2.0120928532105
+    },
+    "Higgs": {
+      "volume": 15.820714702540293,
+      "observed_mass_mev": 125100.0,
+      "predicted_mass_mev": 126997.84318267071,
+      "error_pct": 1.5170608974186324
+    }
+  },
+  "mean_absolute_error_pct": 1.176697838252535,
+  "ssot_compliance": {
+    "all_constants_from_ssot": false,
+    "hardcoded_values_found": true,
+    "hardcoded_details": [
+      "np.sqrt(3) used with # SSoT追加提案中 comment",
+      "1/bulk_total derived from SSOT"
+    ],
+    "synthetic_data_used": false,
+    "constants_used": [
+      "pi",
+      "bulk_total",
+      "G_catalan",
+      "boson_scaling.C_theoretical"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "computation_time_sec": 0.5
+  }
+}

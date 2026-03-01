@@ -1,0 +1,88 @@
+{
+  "iteration": 10,
+  "hypothesis_id": "H69",
+  "population_size": 7163,
+  "pareto_front_size": 9,
+  "sm_metrics": {
+    "mean_dist_to_front": 0.48575899194970823,
+    "max_dist_to_front": 0.8570016522811957,
+    "min_dist_to_front": 0.08718886306652938
+  },
+  "statistical_test": {
+    "method": "Monte Carlo Permutation (Distance to Pareto Front)",
+    "n_trials": 10000,
+    "mean_random_dist": 0.7423802795551339,
+    "p_value": 0.0022
+  },
+  "quasi_metastable_candidates": [
+    {
+      "name": "L6n1{1,0}",
+      "volume": 0.0,
+      "tsi": 12.0,
+      "dist_to_front": 0.0
+    },
+    {
+      "name": "L6n1{1,1}",
+      "volume": 0.0,
+      "tsi": 12.0,
+      "dist_to_front": 0.0
+    },
+    {
+      "name": "L6n1{0,0}",
+      "volume": 0.0,
+      "tsi": 12.0,
+      "dist_to_front": 0.0
+    },
+    {
+      "name": "L8n8{0,0,0}",
+      "volume": 0.0,
+      "tsi": 12.0,
+      "dist_to_front": 0.0
+    },
+    {
+      "name": "L8n8{1,0,0}",
+      "volume": 0.0,
+      "tsi": 12.0,
+      "dist_to_front": 0.0
+    },
+    {
+      "name": "L8n8{1,1,1}",
+      "volume": 0.0,
+      "tsi": 12.0,
+      "dist_to_front": 0.0
+    },
+    {
+      "name": "L8n8{0,1,0}",
+      "volume": 0.0,
+      "tsi": 12.0,
+      "dist_to_front": 0.0
+    },
+    {
+      "name": "L8n8{1,1,0}",
+      "volume": 0.0,
+      "tsi": 12.0,
+      "dist_to_front": 0.0
+    },
+    {
+      "name": "L8n8{0,0,1}",
+      "volume": 0.0,
+      "tsi": 12.0,
+      "dist_to_front": 0.0
+    },
+    {
+      "name": "L10n107{1,0,1}",
+      "volume": 0.0,
+      "tsi": 9.6,
+      "dist_to_front": 0.007538740751081948
+    }
+  ],
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "constants_used": [
+      "analysis_parameters",
+      "statistical_thresholds",
+      "lifetime_model"
+    ]
+  }
+}

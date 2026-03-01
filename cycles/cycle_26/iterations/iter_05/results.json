@@ -1,0 +1,108 @@
+{
+  "iteration": 5,
+  "hypothesis_id": "H69",
+  "timestamp": "2026-02-28T18:00:00Z",
+  "population_size": 7163,
+  "sm_particles": [
+    {
+      "name": "3_1",
+      "volume": 0.0,
+      "tsi": 4.8,
+      "determinant": 3.0,
+      "prob_density": 0.017031969845036996
+    },
+    {
+      "name": "4_1",
+      "volume": 2.0298832128,
+      "tsi": 6.0,
+      "determinant": 5.0,
+      "prob_density": 0.013402205779701243
+    },
+    {
+      "name": "6_1",
+      "volume": 3.1639632288,
+      "tsi": 4.0,
+      "determinant": 9.0,
+      "prob_density": 0.019963702359346643
+    },
+    {
+      "name": "L8a18{0,1}",
+      "volume": 6.551743287887868,
+      "tsi": 7.2,
+      "determinant": 20.0,
+      "prob_density": 0.00977244171436549
+    },
+    {
+      "name": "L9n1{1}",
+      "volume": 5.33348956689812,
+      "tsi": 4.8,
+      "determinant": 12.0,
+      "prob_density": 0.02415189166550328
+    },
+    {
+      "name": "L11a55{0}",
+      "volume": 15.820714702540293,
+      "tsi": 4.0,
+      "determinant": 136.0,
+      "prob_density": 0.38433617199497416
+    },
+    {
+      "name": "L11a225{1}",
+      "volume": 15.62112812032806,
+      "tsi": 3.4285714285714284,
+      "determinant": 110.0,
+      "prob_density": 0.4390618455954209
+    },
+    {
+      "name": "L11a362{0}",
+      "volume": 11.215504015501589,
+      "tsi": 3.0,
+      "determinant": 70.0,
+      "prob_density": 0.18400111685048165
+    },
+    {
+      "name": "L11a431{0,0}",
+      "volume": 15.027615015039348,
+      "tsi": 5.538461538461538,
+      "determinant": 112.0,
+      "prob_density": 0.19475080273628367
+    },
+    {
+      "name": "L11a528{0,1}",
+      "volume": 15.156670150795042,
+      "tsi": 5.538461538461538,
+      "determinant": 96.0,
+      "prob_density": 0.2000558425240821
+    },
+    {
+      "name": "L11n330{0,1}",
+      "volume": 9.312341316558376,
+      "tsi": 4.8,
+      "determinant": 36.0,
+      "prob_density": 0.05807622504537205
+    },
+    {
+      "name": "L11n387{0,0}",
+      "volume": 14.655449506835504,
+      "tsi": 6.545454545454546,
+      "determinant": 64.0,
+      "prob_density": 0.11377914281725535
+    }
+  ],
+  "mean_sm_prob_density": 0.13819861324398533,
+  "monte_carlo": {
+    "n_trials": 10000,
+    "mean_random_prob": 0.31514813043882917,
+    "std_random_prob": 0.0754514512297755,
+    "p_value": 0.0045
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "lifetime_model.stability_index_formula",
+      "analysis_parameters.random_seed"
+    ]
+  }
+}

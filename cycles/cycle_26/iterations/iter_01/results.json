@@ -1,0 +1,41 @@
+{
+  "iteration": 1,
+  "hypothesis_id": "H67",
+  "timestamp": "2026-02-28T14:30:00Z",
+  "task_name": "Jones 多項式の q = e^{2\pi i/24} における複素評価点の実装と符号抽出",
+  "data_sources": {
+    "description": "KSAU SSoT (topology_assignments.json, constants.json) and KnotInfo/LinkInfo CSV data.",
+    "loaded_via_ssot": true
+  },
+  "computed_values": {
+    "q_evaluation_point": "exp(2pi i / 24)",
+    "quark_phases": {
+      "Up": -2.5343,
+      "Charm": -1.9144,
+      "Top": -2.4801,
+      "Down": -1.5983,
+      "Strange": -1.2331,
+      "Bottom": -0.3507
+    },
+    "ckm_sign_matrix_derived": [
+      [1, 1, -1],
+      [1, 1, 1],
+      [1, 1, -1]
+    ]
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "synthetic_data_used": false,
+    "constants_used": [
+      "topology_assignments",
+      "ckm_matrix",
+      "knot_data"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.45
+  },
+  "notes": "Jones 多項式の評価において、LinkInfo の変数は x = t^(1/2) とし、t = q = exp(2pi i / 24) を評価点とした。符号抽出規則は cos(phase_up - phase_down) の符号を採用。"
+}

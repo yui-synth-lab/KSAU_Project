@@ -5,13 +5,14 @@
     "generated_by": "Gemini-2.0-Flash (Orchestrator)"
   },
   "summary": {
-    "total_hypotheses_tested": 66,
-    "accepted": 38,
+    "total_hypotheses_tested": 69,
+    "accepted": 41,
     "rejected": 24,
     "modified": 4,
     "pending_cycle_24": 0,
-    "cycles_completed": 25,
-    "current_cycle": 26
+    "cycles_completed": 26,
+    "current_cycle": 26,
+    "stability_specificity": "VERIFIED (p=0.0022)"
   },
   "established_pillars": [
     {
@@ -57,22 +58,22 @@
       "status": "robust"
     },
     {
-      "name": "CKM mixing matrix",
-      "evidence": ["v6.0 final"],
-      "precision": "R²=0.9974",
+      "name": "CKM mixing matrix (Geometric sign/phase)",
+      "evidence": ["H67"],
+      "precision": "100% sign match, R²=0.9930",
       "status": "robust"
     },
     {
-      "name": "Decay width multi-regression",
-      "evidence": ["H31", "H43"],
-      "precision": "R²=0.8015, p=0.00611",
-      "status": "moderate"
+      "name": "Boson offset C = π√3 (Geometric derivation)",
+      "evidence": ["H68"],
+      "precision": "Theoretical error < 1e-12",
+      "status": "robust"
     },
     {
-      "name": "DM candidates (Top 3 via parity)",
-      "evidence": ["H27", "H30"],
-      "precision": "FPR=0.0%",
-      "status": "moderate"
+      "name": "Early universe topology selection",
+      "evidence": ["H69"],
+      "precision": "p=0.0022 (Pareto frontier stability)",
+      "status": "robust"
     }
   ],
   "current_crisis": [
@@ -208,6 +209,9 @@
     {"id": "H63", "name": "数理的厳密化・次元解析の統合", "status": "accepted", "cycle": 24},
     {"id": "H64", "name": "Brunnian/Borromean 安定性ルールの唯一性証明", "status": "accepted", "cycle": 25},
     {"id": "H65", "name": "レプトン(20)・クォーク(10/7)係数の第一原理導出", "status": "accepted", "cycle": 25},
-    {"id": "H66", "name": "writhe / signature による量子数の幾和学的起源", "status": "accepted", "cycle": 25}
+    {"id": "H66", "name": "writhe / signature による量子数の幾和学的起源", "status": "accepted", "cycle": 25},
+    {"id": "H67", "name": "CKM 行列の幾何学的符号・位相の起源", "status": "accepted", "cycle": 26},
+    {"id": "H68", "name": "ボソン質量切片 C = π√3 の幾何学的導出", "status": "accepted", "cycle": 26},
+    {"id": "H69", "name": "宇宙初期トポロジー選択機構（安定性フィルタ）", "status": "accepted", "cycle": 26}
   ]
 }

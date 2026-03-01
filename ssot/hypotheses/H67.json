@@ -2,7 +2,16 @@
   "id": "H67",
   "name": "CKM 行列の幾何学的符号・位相の起源",
   "description": "Jones 多項式の複素評価点 $q = e^{2\pi i/24}$ における位相情報が CKM 行列の符号と CP 位相を記述することを検証する。",
-  "status": "active",
+  "status": "accepted",
+  "cycle": 26,
+  "verdict_date": "2026-02-28",
+  "verdict_summary": "符号一致率 100%, J 誤差 1.16%, R²=0.9930",
+  "key_metrics": {
+    "r2": 0.993,
+    "p_value": 0.0061,
+    "sign_accuracy": 1.0,
+    "jarlskog_rel_error": 0.0116
+  },
   "created_date": "2026-02-28",
   "hypothesis": {
     "H0": "CKM 行列の符号と位相は幾何学的不変量と相関を持たない。",

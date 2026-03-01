@@ -1,0 +1,36 @@
+{
+  "iteration": 9,
+  "hypothesis_id": "H67",
+  "task_name": "CKM 幾何学的統合モデルの精密検証（ホロノミー補正導入）",
+  "geometric_coefficients": {
+    "A": -6.283185307179586,
+    "B": 12.566370614359172,
+    "beta": -105.35053537556365,
+    "gamma": 1.125,
+    "C": 23.240692632779268
+  },
+  "performance": {
+    "r2_magnitude": 0.99298312121119,
+    "sign_match_rate": 1.0,
+    "sign_match_count": 9,
+    "j_error_pct": 1.1624261255182984,
+    "loo_cv_mae_pct": 245.76573832351096
+  },
+  "ssot_compliance": {
+    "all_constants_from_ssot": true,
+    "hardcoded_values_found": false,
+    "constants_used": [
+      "pi",
+      "k_resonance",
+      "boundary_projection",
+      "bulk_total",
+      "alpha_em",
+      "sin2theta_w",
+      "kappa"
+    ]
+  },
+  "reproducibility": {
+    "random_seed": null,
+    "computation_time_sec": 0.8
+  }
+}

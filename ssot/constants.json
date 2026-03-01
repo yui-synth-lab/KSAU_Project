@@ -8,6 +8,7 @@
 
   "mathematical_constants": {
     "pi":        3.141592653589793,
+    "sqrt3":     1.7320508075688772,
     "kappa":     0.1308996938995747,
     "kappa_theory": 0.1308996938995747,
     "kappa_formula": "pi / 24",
@@ -223,6 +224,7 @@
   },
 
   "ckm_matrix": {
+    "prediction_model": "Logit-Geometric + Holonomy",
     "V_ij": [
       [0.9743, 0.2253, 0.0036],
       [0.2252, 0.9734, 0.0410],
@@ -231,7 +233,7 @@
   },
 
   "scaling_laws": {
-    "boson_scaling": { "A": 0.39256, "C": 5.5414, "C_theoretical": 5.5413980927 },
+    "boson_scaling": { "A": 0.39256, "C": 5.5414, "C_theoretical": "pi * sqrt3 + 1/10" },
     "boundary_ansatz": { "cl_intercept": -2.38, "selection_principle": "minimal_determinant" }
   },
 

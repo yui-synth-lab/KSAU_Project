@@ -2,7 +2,15 @@
   "id": "H69",
   "name": "宇宙初期トポロジー選択機構",
   "description": "SM 粒子トポロジーが「最小体積・最大安定（TSI）」の物理的フィルタリングによって選択されたことを実証する。",
-  "status": "active",
+  "status": "accepted",
+  "cycle": 26,
+  "verdict_date": "2026-02-28",
+  "verdict_summary": "p=0.0022, パレート距離 0.4858 (mean)",
+  "key_metrics": {
+    "p_value": 0.0022,
+    "pareto_distance_mean": 0.4858,
+    "bonferroni_corrected_p": 0.0066
+  },
   "created_date": "2026-02-28",
   "hypothesis": {
     "H0": "SM 粒子のトポロジー分布はランダムであり、体積や TSI による有意な選択バイアスは存在しない。",

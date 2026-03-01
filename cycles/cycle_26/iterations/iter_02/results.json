@@ -1,0 +1,12 @@
+{
+  "iteration": 2,
+  "hypothesis_id": "H67",
+  "assigned_j": 5.204170427930421e-18,
+  "target_j": 3.08e-05,
+  "j_error_pct": 99.9999999999831,
+  "j_p_value": 0.4821,
+  "sign_match_rate_assigned": 0.5555555555555556,
+  "sign_match_rate_p_value": 1.0,
+  "monte_carlo_n": 10000,
+  "seed": 42
+}

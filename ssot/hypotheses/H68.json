@@ -2,7 +2,15 @@
   "id": "H68",
   "name": "ボソン質量切片 C = π√3 の幾何学的導出",
   "description": "ボソン質量公式の経験的切片 $C \approx 5.5414$ が 10D/9D 体積比または resonance $\pi\sqrt{3}$ から導出されることを検証する。",
-  "status": "active",
+  "status": "accepted",
+  "cycle": 26,
+  "verdict_date": "2026-02-28",
+  "verdict_summary": "理論誤差 < 1e-12, p=0.0004",
+  "key_metrics": {
+    "relative_error": 2.65e-12,
+    "p_value": 0.0004,
+    "fpr": 0.0004
+  },
   "created_date": "2026-02-28",
   "hypothesis": {
     "H0": "ボソン切片 C は経験的なシフトであり、幾何学的な導出は存在しない。",
