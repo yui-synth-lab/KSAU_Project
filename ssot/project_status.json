@@ -167,7 +167,7 @@
     {"id": "H21", "name": "DM Prediction", "status": "rejected", "cycle": 9},
     {"id": "H22", "name": "κ from Resonance", "status": "rejected", "cycle": 10},
     {"id": "H23", "name": "Phase Discretization", "status": "rejected", "cycle": 10},
-    {"id": "id": "H24", "name": "TSI Lifetime", "status": "accepted", "cycle": 10},
+    {"id": "H24", "name": "TSI Lifetime", "status": "accepted", "cycle": 10},
     {"id": "H25", "name": "Deterministic Quantization", "status": "accepted", "cycle": 11},
     {"id": "H26", "name": "TSI Universal", "status": "rejected", "cycle": 11},
     {"id": "H27", "name": "DM Candidates Top 10", "status": "accepted", "cycle": 11},

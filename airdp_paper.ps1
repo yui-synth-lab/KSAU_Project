@@ -132,16 +132,20 @@ while (-not $finished) {
 
     # ── 3. 判定（review.md の VERDICT を読む）────────
     $reviewContent = Get-Content $reviewPath -Raw -Encoding utf8
-    if ($reviewContent -match "VERDICT:\s*ACCEPT") {
+    # VERDICT 行は "VERDICT: ACCEPT" または "**VERDICT:** ACCEPT" 等の形式を許容する
+    if ($reviewContent -match "VERDICT\W+ACCEPT") {
         Write-Host "`n[ACCEPTED] Revision $revision が承認されました。" -ForegroundColor Cyan
         Write-Host "  最終 draft: $draftPath" -ForegroundColor White
         Write-Host "  確認後、paper_final.md にリネームしてください。" -ForegroundColor DarkYellow
         $finished = $true
-    } elseif ($reviewContent -match "VERDICT:\s*REVISE") {
+    } elseif ($reviewContent -match "VERDICT\W+REVISE") {
         Write-Host "`n[REVISE] 修正要求。Revision $($revision + 1) に進みます。" -ForegroundColor Yellow
         $revision++
     } else {
         Write-Host "`n[ERROR] review.md に VERDICT フィールドが見つかりません。" -ForegroundColor Red
+        Write-Host "  検索パターン: 'VERDICT\W+ACCEPT' または 'VERDICT\W+REVISE'" -ForegroundColor DarkGray
+        Write-Host "  review.md の先頭5行:" -ForegroundColor DarkGray
+        Get-Content $reviewPath -TotalCount 5 -Encoding utf8 | ForEach-Object { Write-Host "    $_" -ForegroundColor DarkGray }
         $finished = $true
     }
 
